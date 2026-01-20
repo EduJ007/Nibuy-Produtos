@@ -22,7 +22,7 @@ const FilterBar: React.FC<FilterBarProps> = ({
       {/* COLUNA: CATEGORIAS */}
       <div className="flex flex-col items-center w-full sm:w-[280px]">
         <span className="text-base font-black text-black uppercase tracking-tighter mb-2">
-          Categorias
+          Categoria
         </span>
         <div className="relative w-full">
           <button 
@@ -48,7 +48,7 @@ const FilterBar: React.FC<FilterBarProps> = ({
       {/* COLUNA: LOJAS */}
       <div className="flex flex-col items-center w-full sm:w-[280px]">
         <span className="text-base font-black text-black uppercase tracking-tighter mb-2">
-          Lojas
+          Loja
         </span>
         <div className="relative w-full">
           <button 
@@ -74,7 +74,7 @@ const FilterBar: React.FC<FilterBarProps> = ({
       {/* COLUNA: PREÇO */}
       <div className="flex flex-col items-center w-full sm:w-[280px]">
         <span className="text-base font-black text-black uppercase tracking-tighter mb-2">
-          Até que valor?
+          Preço
         </span>
         <div className="relative w-full">
           <span className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 font-black text-sm">R$</span>

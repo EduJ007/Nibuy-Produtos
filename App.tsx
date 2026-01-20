@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import FilterBar from './components/FilterBar';
 import ProductCard from './components/ProductCard';
 import GeminiRecommendation from './components/GeminiRecommendation';
+import Footer from './components/footer'; // Importando o footer profissional
 import { productsData } from './products';
 
 const App: React.FC = () => {
@@ -15,29 +16,25 @@ const App: React.FC = () => {
 
   const parsePrice = (pStr: string) => parseFloat(pStr.replace('R$', '').replace('.', '').replace(',', '.').trim());
 
-  // Separa as ofertas relâmpago para o topo
+  // Ofertas relâmpago para o topo
   const flashSales = useMemo(() => productsData.filter(p => p.isFlashSale).slice(0, 10), []);
 
   const filteredProducts = useMemo(() => {
     return productsData.filter((p) => {
       const price = parsePrice(p.price);
       const name = p.name.toLowerCase();
-      
       const matchesSearch = name.includes(searchTerm.toLowerCase());
       
       let category = 'Outros';
-      if (name.includes('fone') || name.includes('caixa') || name.includes('bluetooth') || name.includes('m47')) category = 'Eletrônicos';
-      else if (name.includes('camisa') || name.includes('polo') || name.includes('tenis') || name.includes('calçado')) category = 'Moda';
-      else if (name.includes('kit') || name.includes('casa') || name.includes('cozinha')) category = 'Casa';
-      else if (name.includes('sabonete') || name.includes('creme') || name.includes('beleza')) category = 'Beleza';
-      else if (name.includes('relogio') || name.includes('acessório')) category = 'Acessórios';
+      if (name.includes('fone') || name.includes('caixa') || name.includes('bluetooth')) category = 'Eletrônicos';
+      else if (name.includes('camisa') || name.includes('tenis')) category = 'Moda';
+      else if (name.includes('casa') || name.includes('cozinha')) category = 'Casa';
 
       const matchesCategory = activeCategory === 'Todos' || category === activeCategory;
       const store = p.link?.includes('shopee') ? 'Shopee' : 'Outras';
       const matchesStore = activeStore === 'Todas' || store === activeStore;
       const matchesPrice = maxPrice === '' || price <= parseFloat(maxPrice);
 
-      // Não mostramos no feed principal o que já está no destaque de relâmpago se quiser evitar repetição
       return matchesSearch && matchesCategory && matchesStore && matchesPrice;
     });
   }, [searchTerm, activeCategory, activeStore, maxPrice]);
@@ -53,12 +50,12 @@ const App: React.FC = () => {
   }, [visibleCount, filteredProducts.length]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#f3f4f6]">
+    <div className="min-h-screen flex flex-col bg-gray-100"> {/* Fundo cinza conforme pedido */}
       <Navbar onSearch={setSearchTerm} searchTerm={searchTerm} />
       
       <main className="flex-grow max-w-[1600px] mx-auto px-4 py-8">
         
-        {/* SEÇÃO DE OFERTAS RELÂMPAGO (No topo de tudo) */}
+        {/* SEÇÃO DE OFERTAS RELÂMPAGO */}
         <section className="mb-12 bg-gray-900 p-6 rounded-3xl shadow-2xl relative overflow-hidden">
           <div className="flex items-center gap-3 mb-6">
             <div className="bg-[#ff5722] p-2 rounded-lg animate-pulse">
@@ -81,7 +78,6 @@ const App: React.FC = () => {
 
         <GeminiRecommendation products={filteredProducts} />
 
-        {/* FILTROS E FEED PRINCIPAL */}
         <div className="mt-12 mb-8">
            <h1 className="text-3xl font-black text-gray-900 italic uppercase">
               🔥 Achados do <span className="text-[#ff5722]">Dia</span>
@@ -107,7 +103,8 @@ const App: React.FC = () => {
         </div>
       </main>
 
-      <footer className="bg-white py-12 text-center border-t border-gray-100 mt-20 font-black italic text-3xl text-[#ff5722]">𝙉𝙞𝙗𝙪𝙮</footer>
+      {/* FOOTER PROFISSIONAL NO FINAL */}
+      <Footer />
     </div>
   );
 };
