@@ -3,8 +3,9 @@ import Navbar from './components/Navbar';
 import FilterBar from './components/FilterBar';
 import ProductCard from './components/ProductCard';
 import GeminiRecommendation from './components/GeminiRecommendation';
-import Footer from './components/footer'; // Importando o footer profissional
+import Footer from './components/footer';
 import { productsData } from './products';
+import { Timer } from 'lucide-react'; // Importando o ícone corretamente
 
 const App: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -14,9 +15,25 @@ const App: React.FC = () => {
   const [visibleCount, setVisibleCount] = useState(18);
   const loaderRef = useRef(null);
 
+  // Lógica do Temporizador
+  const [timeLeft, setTimeLeft] = useState({ h: 0, m: 0, s: 0 });
+
+  useEffect(() => {
+    const tick = () => {
+      const now = new Date();
+      setTimeLeft({
+        h: 23 - now.getHours(),
+        m: 59 - now.getMinutes(),
+        s: 59 - now.getSeconds()
+      });
+    };
+    tick();
+    const interval = setInterval(tick, 1000);
+    return () => clearInterval(interval);
+  }, []);
+
   const parsePrice = (pStr: string) => parseFloat(pStr.replace('R$', '').replace('.', '').replace(',', '.').trim());
 
-  // Ofertas relâmpago para o topo
   const flashSales = useMemo(() => productsData.filter(p => p.isFlashSale).slice(0, 10), []);
 
   const filteredProducts = useMemo(() => {
@@ -24,46 +41,45 @@ const App: React.FC = () => {
       const price = parsePrice(p.price);
       const name = p.name.toLowerCase();
       const matchesSearch = name.includes(searchTerm.toLowerCase());
-      
-      let category = 'Outros';
-      if (name.includes('fone') || name.includes('caixa') || name.includes('bluetooth')) category = 'Eletrônicos';
-      else if (name.includes('camisa') || name.includes('tenis')) category = 'Moda';
-      else if (name.includes('casa') || name.includes('cozinha')) category = 'Casa';
-
-      const matchesCategory = activeCategory === 'Todos' || category === activeCategory;
-      const store = p.link?.includes('shopee') ? 'Shopee' : 'Outras';
-      const matchesStore = activeStore === 'Todas' || store === activeStore;
+      const matchesCategory = activeCategory === 'Todos' || p.name.toLowerCase().includes(activeCategory.toLowerCase());
+      const matchesStore = activeStore === 'Todas' || (activeStore === 'Shopee' && p.link?.includes('shopee'));
       const matchesPrice = maxPrice === '' || price <= parseFloat(maxPrice);
-
       return matchesSearch && matchesCategory && matchesStore && matchesPrice;
     });
   }, [searchTerm, activeCategory, activeStore, maxPrice]);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      if (entries[0].isIntersecting && visibleCount < filteredProducts.length) {
-        setVisibleCount(prev => prev + 12);
-      }
-    }, { threshold: 0.1 });
-    if (loaderRef.current) observer.observe(loaderRef.current);
-    return () => observer.disconnect();
-  }, [visibleCount, filteredProducts.length]);
-
   return (
-    <div className="min-h-screen flex flex-col bg-gray-100"> {/* Fundo cinza conforme pedido */}
+    <div className="min-h-screen flex flex-col bg-[#f0f2f5]"> 
       <Navbar onSearch={setSearchTerm} searchTerm={searchTerm} />
       
-      <main className="flex-grow max-w-[1600px] mx-auto px-4 py-8">
+      <main className="flex-grow max-w-[1600px] mx-auto px-4 py-8 w-full">
         
-        {/* SEÇÃO DE OFERTAS RELÂMPAGO */}
+        {/* SEÇÃO OFERTAS RELÂMPAGO */}
         <section className="mb-12 bg-gray-900 p-6 rounded-3xl shadow-2xl relative overflow-hidden">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="bg-[#ff5722] p-2 rounded-lg animate-pulse">
-              <span className="text-white text-xl">⚡</span>
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8 relative z-10">
+            <div className="flex items-center gap-3">
+              <div className="bg-[#ff5722] p-2 rounded-lg animate-pulse">
+                <span className="text-white text-xl font-bold italic">⚡</span>
+              </div>
+              <div>
+                <h2 className="text-white text-2xl font-black italic uppercase">Ofertas Relâmpago</h2>
+                <div className="flex items-center gap-2 text-gray-400">
+                  <Timer size={12} className="text-[#ff5722]" />
+                  <p className="text-[10px] font-bold uppercase tracking-widest">Expira em:</p>
+                </div>
+              </div>
             </div>
-            <div>
-              <h2 className="text-white text-2xl font-black italic uppercase">Ofertas Relâmpago</h2>
-              <p className="text-gray-400 text-[10px] font-bold uppercase tracking-widest">Preços baixos por tempo limitado</p>
+
+            {/* RELÓGIO */}
+            <div className="flex items-center gap-2">
+              {[timeLeft.h, timeLeft.m, timeLeft.s].map((unit, i) => (
+                <div key={i} className="flex items-center gap-2">
+                  <div className="bg-[#ff5722] text-white font-black px-3 py-2 rounded-lg text-xl min-w-[45px] text-center">
+                    {unit.toString().padStart(2, '0')}
+                  </div>
+                  {i < 2 && <span className="text-white font-black animate-pulse">:</span>}
+                </div>
+              ))}
             </div>
           </div>
           
@@ -96,14 +112,9 @@ const App: React.FC = () => {
           ))}
         </div>
 
-        <div ref={loaderRef} className="h-20 flex items-center justify-center">
-          {visibleCount < filteredProducts.length && (
-            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#ff5722]"></div>
-          )}
-        </div>
+        <div ref={loaderRef} className="h-10" />
       </main>
 
-      {/* FOOTER PROFISSIONAL NO FINAL */}
       <Footer />
     </div>
   );
