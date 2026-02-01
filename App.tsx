@@ -5,7 +5,7 @@ import ProductCard from './components/ProductCard';
 import GeminiRecommendation from './components/GeminiRecommendation';
 import Footer from './components/footer';
 import { productsData } from './products';
-import { Timer } from 'lucide-react'; // Importando o ícone corretamente
+import { Timer } from 'lucide-react';
 
 const App: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -13,19 +13,14 @@ const App: React.FC = () => {
   const [activeStore, setActiveStore] = useState('Todas');
   const [maxPrice, setMaxPrice] = useState('');
   const [visibleCount, setVisibleCount] = useState(18);
-  const loaderRef = useRef(null);
+  const loaderRef = useRef<HTMLDivElement>(null);
 
-  // Lógica do Temporizador
+  // --- TIMER DE 24 HORAS ---
   const [timeLeft, setTimeLeft] = useState({ h: 0, m: 0, s: 0 });
-
   useEffect(() => {
     const tick = () => {
       const now = new Date();
-      setTimeLeft({
-        h: 23 - now.getHours(),
-        m: 59 - now.getMinutes(),
-        s: 59 - now.getSeconds()
-      });
+      setTimeLeft({ h: 23 - now.getHours(), m: 59 - now.getMinutes(), s: 59 - now.getSeconds() });
     };
     tick();
     const interval = setInterval(tick, 1000);
@@ -34,19 +29,56 @@ const App: React.FC = () => {
 
   const parsePrice = (pStr: string) => parseFloat(pStr.replace('R$', '').replace('.', '').replace(',', '.').trim());
 
-  const flashSales = useMemo(() => productsData.filter(p => p.isFlashSale).slice(0, 10), []);
-
+  // --- FILTRO INTELIGENTE COM TODAS AS PALAVRAS-CHAVE ---
   const filteredProducts = useMemo(() => {
+    const keywordsMap: Record<string, string[]> = {
+      Eletrônicos: ['fone', 'caixa', 'bluetooth', 'm47', 'smartwatch', 'relo', 'carregador', 'cabo', 'usb', 'teclado', 'mouse', 'gamer', 'led', 'ring light', 'tripé', 'microfone', 'adaptador', 'tablet', 'celular', 'iphone', 'xiaomi', 'computador', 'monitor', 'headset', 'airpod', 'drone', 'projetor', 'magsafe', 'alexa', 'kindle', 'console'],
+      Moda: ['camisa', 'tenis', 'tênis', 'polo', 'calça', 'moletom', 'vestido', 'sapato', 'meia', 'cueca', 'calcinha', 'sutiã', 'blusa', 'jaqueta', 'casaco', 'bermuda', 'short', 'saia', 'boné', 'chinelo', 'sandália', 'bolsa', 'mochila', 'carteira', 'óculos', 'pulseira', 'colar', 'brinco', 't-shirt', 'conjunto', 'jeans'],
+      Cozinha: ['pipoqueira', 'fritadeira', 'air fryer', 'panela', 'pote', 'copo', 'garrafa', 'termica', 'tábua', 'faca', 'talher', 'prato', 'liquidificador', 'mixer', 'batedeira', 'sanduicheira', 'cafeteira', 'moedor', 'escorredor', 'organizador', 'balança', 'tempero', 'fogão', 'forma', 'processador', 'seladora', 'mini liquidificador', 'dispenser'],
+      Casa: ['casa', 'decoração', 'luminária', 'tapete', 'almofada', 'cortina', 'quadro', 'espelho', 'limpeza', 'vassoura', 'mop', 'aspirador', 'prateleira', 'suporte', 'banheiro', 'quarto', 'sala', 'ferramenta', 'parafusadeira', 'furadeira', 'lâmpada', 'difusor', 'umidificador', 'cabide', 'estante', 'adesiva', 'papel de parede'],
+      Beleza: ['maquiagem', 'rimel', 'batom', 'skincare', 'creme', 'perfume', 'shampoo', 'condicionador', 'cabelo', 'secador', 'prancha', 'escova', 'esponja', 'serum', 'protetor solar', 'base', 'pó', 'corretivo', 'paleta', 'unha', 'esmalte', 'cilio', 'sobrancelha', 'facial', 'corporal', 'gloss', 'massagem', 'depilador', 'barbeador']
+    };
+
     return productsData.filter((p) => {
-      const price = parsePrice(p.price);
       const name = p.name.toLowerCase();
+      const price = parsePrice(p.price);
+
       const matchesSearch = name.includes(searchTerm.toLowerCase());
-      const matchesCategory = activeCategory === 'Todos' || p.name.toLowerCase().includes(activeCategory.toLowerCase());
-      const matchesStore = activeStore === 'Todas' || (activeStore === 'Shopee' && p.link?.includes('shopee'));
+      
+      let matchesCategory = activeCategory === 'Todos';
+      if (!matchesCategory && keywordsMap[activeCategory]) {
+        matchesCategory = keywordsMap[activeCategory].some(key => name.includes(key));
+      }
+
+      const store = p.link?.includes('shopee') ? 'Shopee' : 'Outras';
+      const matchesStore = activeStore === 'Todas' || store === activeStore;
       const matchesPrice = maxPrice === '' || price <= parseFloat(maxPrice);
+
       return matchesSearch && matchesCategory && matchesStore && matchesPrice;
     });
   }, [searchTerm, activeCategory, activeStore, maxPrice]);
+
+  // --- LÓGICA DO CARREGAMENTO INFINITO ---
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting && visibleCount < filteredProducts.length) {
+          setVisibleCount((prev) => prev + 12);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (loaderRef.current) observer.observe(loaderRef.current);
+    return () => observer.disconnect();
+  }, [filteredProducts, visibleCount]);
+
+  // Reseta o scroll quando o filtro muda
+  useEffect(() => {
+    setVisibleCount(18);
+  }, [searchTerm, activeCategory, activeStore, maxPrice]);
+
+  const flashSales = useMemo(() => productsData.filter(p => p.isFlashSale).slice(0, 10), []);
 
   return (
     <div className="min-h-screen flex flex-col bg-[#f0f2f5]"> 
@@ -62,15 +94,14 @@ const App: React.FC = () => {
                 <span className="text-white text-xl font-bold italic">⚡</span>
               </div>
               <div>
-                <h2 className="text-white text-2xl font-black italic uppercase">Ofertas Relâmpago</h2>
-                <div className="flex items-center gap-2 text-gray-400">
+                <h2 className="text-white text-2xl font-black italic uppercase leading-none">Ofertas Relâmpago</h2>
+                <div className="flex items-center gap-2 text-gray-400 mt-1">
                   <Timer size={12} className="text-[#ff5722]" />
                   <p className="text-[10px] font-bold uppercase tracking-widest">Expira em:</p>
                 </div>
               </div>
             </div>
 
-            {/* RELÓGIO */}
             <div className="flex items-center gap-2">
               {[timeLeft.h, timeLeft.m, timeLeft.s].map((unit, i) => (
                 <div key={i} className="flex items-center gap-2">
@@ -112,7 +143,17 @@ const App: React.FC = () => {
           ))}
         </div>
 
-        <div ref={loaderRef} className="h-10" />
+        {/* LOADER DO CARREGAMENTO INFINITO */}
+        <div ref={loaderRef} className="h-40 flex items-center justify-center w-full mt-8">
+          {visibleCount < filteredProducts.length ? (
+            <div className="flex flex-col items-center gap-2">
+              <div className="animate-spin rounded-full h-10 w-10 border-t-4 border-b-4 border-[#ff5722]"></div>
+              <p className="text-[#ff5722] font-black text-[10px] uppercase tracking-widest">Buscando mais ofertas...</p>
+            </div>
+          ) : (
+            <p className="text-gray-400 font-bold italic text-sm">Fim dos achados de hoje! 🏁</p>
+          )}
+        </div>
       </main>
 
       <Footer />
