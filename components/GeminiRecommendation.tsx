@@ -19,7 +19,7 @@ const GeminiRecommendation: React.FC<GeminiRecommendationProps> = ({ products })
       setLoading(true);
       try {
         const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
-        const productList = products.slice(0, 5).map(p => `${p.title} (${p.discount}% OFF)`).join(', ');
+        const productList = products.slice(0, 5).map(p => `${p.name} por ${p.price}`).join(', ');
         
         const response = await ai.models.generateContent({
           model: 'gemini-3-flash-preview',

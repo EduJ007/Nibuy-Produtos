@@ -81,7 +81,7 @@ const App: React.FC = () => {
   const flashSales = useMemo(() => productsData.filter(p => p.isFlashSale).slice(0, 10), []);
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#f0f2f5]"> 
+    <div className="min-h-screen flex flex-col bg-gray-200"> 
       <Navbar onSearch={setSearchTerm} searchTerm={searchTerm} />
       
       <main className="flex-grow max-w-[1600px] mx-auto px-4 py-8 w-full">
@@ -127,7 +127,7 @@ const App: React.FC = () => {
 
         <div className="mt-12 mb-8">
            <h1 className="text-3xl font-black text-gray-900 italic uppercase">
-              🔥 Achados do <span className="text-[#ff5722]">Dia</span>
+              🔥 Descobertas do <span className="text-[#ff5722]">Dia</span>
            </h1>
         </div>
 
@@ -137,13 +137,13 @@ const App: React.FC = () => {
           maxPrice={maxPrice} onMaxPriceChange={setMaxPrice}
         />
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
+       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
           {filteredProducts.slice(0, visibleCount).map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
         </div>
 
-        {/* LOADER DO CARREGAMENTO INFINITO */}
+        {/* LOADER DO CARREGAMENTO INFINITO - Corrigido */}
         <div ref={loaderRef} className="h-40 flex items-center justify-center w-full mt-8">
           {visibleCount < filteredProducts.length ? (
             <div className="flex flex-col items-center gap-2">
