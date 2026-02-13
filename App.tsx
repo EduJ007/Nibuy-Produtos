@@ -59,26 +59,26 @@ const App: React.FC = () => {
   }, [searchTerm, activeCategory, activeStore, maxPrice]);
 
 useEffect(() => {
-  const params = new URLSearchParams(window.location.search);
+    const params = new URLSearchParams(window.location.search);
+    
+    // Captura a busca da URL
+    const searchFromUrl = params.get('search');
+    if (searchFromUrl) {
+      setSearchTerm(decodeURIComponent(searchFromUrl));
+    }
+
+    // Captura a categoria da URL
+    const catFromUrl = params.get('cat');
+    if (catFromUrl) {
+      setActiveCategory(decodeURIComponent(catFromUrl));
+    }
+
+    // Se veio algo, faz o scroll para os produtos
+    if (searchFromUrl || catFromUrl) {
+      window.scrollTo({ top: 450, behavior: 'smooth' });
+    }
+  }, []);
   
-  // Captura a busca da URL
-  const searchFromUrl = params.get('search');
-  if (searchFromUrl) {
-    setSearchTerm(decodeURIComponent(searchFromUrl));
-  }
-
-  // Captura a categoria da URL
-  const catFromUrl = params.get('cat');
-  if (catFromUrl) {
-    setActiveCategory(decodeURIComponent(catFromUrl));
-  }
-
-  // Se veio algo, faz o scroll
-  if (searchFromUrl || catFromUrl) {
-    window.scrollTo({ top: 450, behavior: 'smooth' });
-  }
-}, []);
-
   useEffect(() => {
   // 1. Pega os parâmetros da URL (ex: ?cat=Gamer)
   const params = new URLSearchParams(window.location.search);
