@@ -58,6 +58,27 @@ const App: React.FC = () => {
     });
   }, [searchTerm, activeCategory, activeStore, maxPrice]);
 
+    useEffect(() => {
+        const params = new URLSearchParams(window.location.search);
+        
+        // 1. Pega a busca
+        const searchFromUrl = params.get('search');
+        if (searchFromUrl) {
+          setSearchTerm(decodeURIComponent(searchFromUrl));
+        }
+
+        // 2. Pega a categoria
+        const catFromUrl = params.get('cat');
+        if (catFromUrl) {
+          setActiveCategory(decodeURIComponent(catFromUrl));
+        }
+
+        // 3. Se veio algo, desce a página para os produtos
+        if (searchFromUrl || catFromUrl) {
+          window.scrollTo({ top: 450, behavior: 'smooth' });
+        }
+      }, []);
+
   useEffect(() => {
   // 1. Pega os parâmetros da URL (ex: ?cat=Gamer)
   const params = new URLSearchParams(window.location.search);
