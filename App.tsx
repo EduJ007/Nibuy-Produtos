@@ -58,20 +58,20 @@ const App: React.FC = () => {
     });
   }, [searchTerm, activeCategory, activeStore, maxPrice]);
 
-  useEffect(() => {
-  // 1. Pega os parâmetros da URL (ex: ?cat=Gamer)
+ useEffect(() => {
   const params = new URLSearchParams(window.location.search);
-  const categoriaDaUrl = params.get('cat');
+  const catDaUrl = params.get('cat');
 
-  // 2. Se existir uma categoria na URL, a gente ativa ela no filtro
-  if (categoriaDaUrl) {
-    // Verifica se a categoria existe na sua lista (opcional, mas bom)
-    setActiveCategory(categoriaDaUrl);
+  if (catDaUrl) {
+    // Decodifica o nome (ex: de "Eletrodom%C3%A9sticos" para "Eletrodomésticos")
+    const categoriaFormatada = decodeURIComponent(catDaUrl);
     
-    // Rola a página suavemente para os produtos
-    window.scrollTo({ top: 500, behavior: 'smooth' });
+    // Só ativa se a categoria existir na nossa lista
+    if (categories.includes(categoriaFormatada)) {
+      setActiveCategory(categoriaFormatada);
+    }
   }
-}, []); // Executa apenas uma vez quando o site abre
+}, []);
 
   // --- LÓGICA DO CARREGAMENTO INFINITO ---
   useEffect(() => {
