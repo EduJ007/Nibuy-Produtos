@@ -205,7 +205,13 @@ useEffect(() => {
     setVisibleCount(18);
   }, [searchTerm, activeCategory, activeStore, maxPrice]);
 
-  const flashSales = useMemo(() => productsData.filter(p => p.isFlashSale).slice(0, 10), []);
+  const flashSales = useMemo(() => {
+  return [...productsData]
+    .filter(p => p.isFlashSale)   // só os que são oferta
+    .sort(() => Math.random() - 0.5) // embaralha
+    .slice(0, 20); // pega até 10
+}, []);
+
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-200"> 
