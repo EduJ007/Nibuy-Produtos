@@ -8,17 +8,17 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ onSearch, searchTerm }) => {
   return (
-    <nav className="bg-white sticky top-0 z-50 shadow-sm border-b border-gray-100">
+    <nav className="bg-[#ff5722] sticky top-0 z-50 shadow-sm border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 h-20 flex justify-between items-center gap-6">
         
         {/* LOGO */}
         <a href="https://nibuy-home-page.vercel.app/" className="flex items-center gap-2 shrink-0 group hover:scale-[1.02]">
           <img 
-            src="/logovermelha.png" 
+            src="/logo-nibuy.png" 
             alt="Nibuy" 
             className="h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
           />
-          <span className="text-3xl font-black text-[#ff5722] transition-all duration-300 ">𝙉𝙞𝙗𝙪𝙮</span>
+          <span className="text-3xl font-black text-white transition-all duration-300 ">𝙉𝙞𝙗𝙪𝙮</span>
         </a>
 
      <div className="flex-grow max-w-md relative group">
@@ -60,7 +60,7 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch, searchTerm }) => {
             <a 
               href="https://nibuy-about-us.vercel.app/" 
               target="_blank" 
-              className="text-[11px] font-black uppercase tracking-widest text-gray-600 hover:text-[#ff5722] transition-all duration-300 hover:scale-105"
+              className="text-[11px] font-white uppercase tracking-widest text-gray-600 hover:text-[#ff5722] transition-all duration-300 hover:scale-105"
             >
               Sobre Nós
             </a>
@@ -68,7 +68,7 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch, searchTerm }) => {
             <a 
               href="https://nibuy-help-center.vercel.app/" 
               target="_blank" 
-              className="text-[11px] font-black uppercase tracking-widest text-gray-600 hover:text-[#ff5722] transition-all duration-300 hover:scale-105"
+              className="text-[11px] font-white uppercase tracking-widest text-gray-600 hover:text-[#ff5722] transition-all duration-300 hover:scale-105"
             >
               Central de ajuda
             </a>
