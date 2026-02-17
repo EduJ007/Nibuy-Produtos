@@ -60,7 +60,7 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch, searchTerm }) => {
             <a 
               href="https://nibuy-about-us.vercel.app/" 
               target="_blank" 
-              className="text-[11px] font-white uppercase tracking-widest text-gray-600 hover:text-[#ff5722] transition-all duration-300 hover:scale-105"
+              className="text-[11px] text-white font-black uppercase tracking-widest text-gray-600 hover:text-[#ff5722] transition-all duration-300 hover:scale-105"
             >
               Sobre Nós
             </a>
@@ -68,7 +68,7 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch, searchTerm }) => {
             <a 
               href="https://nibuy-help-center.vercel.app/" 
               target="_blank" 
-              className="text-[11px] font-white uppercase tracking-widest text-gray-600 hover:text-[#ff5722] transition-all duration-300 hover:scale-105"
+              className="text-[11px] font-black uppercase tracking-widest text-gray-600 hover:text-[#ff5722] transition-all duration-300 hover:scale-105"
             >
               Central de ajuda
             </a>
