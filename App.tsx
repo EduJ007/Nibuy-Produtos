@@ -15,6 +15,10 @@ const App: React.FC = () => {
   const [visibleCount, setVisibleCount] = useState(18);
   const loaderRef = useRef<HTMLDivElement>(null);
 
+  const shuffledProducts = useMemo(() => {
+  return [...productsData].sort(() => Math.random() - 0.5);
+}, []);
+
   // --- TIMER DE 24 HORAS ---
   const [timeLeft, setTimeLeft] = useState({ h: 0, m: 0, s: 0 });
   useEffect(() => {
@@ -32,14 +36,101 @@ const App: React.FC = () => {
   // --- FILTRO INTELIGENTE COM TODAS AS PALAVRAS-CHAVE ---
   const filteredProducts = useMemo(() => {
     const keywordsMap: Record<string, string[]> = {
-      Eletrônicos: ['fone', 'caixa', 'bluetooth', 'm47', 'smartwatch', 'relo', 'carregador', 'cabo', 'usb', 'teclado', 'mouse', 'gamer', 'led', 'ring light', 'tripé', 'microfone', 'adaptador', 'tablet', 'celular', 'iphone', 'xiaomi', 'computador', 'monitor', 'headset', 'airpod', 'drone', 'projetor', 'magsafe', 'alexa', 'kindle', 'console'],
-      Moda: ['camisa', 'tenis', 'tênis', 'polo', 'calça', 'moletom', 'vestido', 'sapato', 'meia', 'cueca', 'calcinha', 'sutiã', 'blusa', 'jaqueta', 'casaco', 'bermuda', 'short', 'saia', 'boné', 'chinelo', 'sandália', 'bolsa', 'mochila', 'carteira', 'óculos', 'pulseira', 'colar', 'brinco', 't-shirt', 'conjunto', 'jeans'],
-      Cozinha: ['pipoqueira', 'fritadeira', 'air fryer', 'panela', 'pote', 'copo', 'garrafa', 'termica', 'tábua', 'faca', 'talher', 'prato', 'liquidificador', 'mixer', 'batedeira', 'sanduicheira', 'cafeteira', 'moedor', 'escorredor', 'organizador', 'balança', 'tempero', 'fogão', 'forma', 'processador', 'seladora', 'mini liquidificador', 'dispenser'],
-      Casa: ['casa', 'decoração', 'luminária', 'tapete', 'almofada', 'cortina', 'quadro', 'espelho', 'limpeza', 'vassoura', 'mop', 'aspirador', 'prateleira', 'suporte', 'banheiro', 'quarto', 'sala', 'ferramenta', 'parafusadeira', 'furadeira', 'lâmpada', 'difusor', 'umidificador', 'cabide', 'estante', 'adesiva', 'papel de parede'],
-      Beleza: ['maquiagem', 'rimel', 'batom', 'skincare', 'creme', 'perfume', 'shampoo', 'condicionador', 'cabelo', 'secador', 'prancha', 'escova', 'esponja', 'serum', 'protetor solar', 'base', 'pó', 'corretivo', 'paleta', 'unha', 'esmalte', 'cilio', 'sobrancelha', 'facial', 'corporal', 'gloss', 'massagem', 'depilador', 'barbeador']
-    };
 
-    return productsData.filter((p) => {
+  "Eletrodomésticos": [
+    "air fryer", "fritadeira", "panela", "liquidificador",
+    "batedeira", "cafeteira", "fogão", "microondas",
+    "forno", "sandwich", "espremedor", "cooktop"
+  ],
+
+  "Tecnologia": [
+    "fone", "bluetooth", "smartwatch", "tablet",
+    "carregador", "cabo", "usb", "monitor",
+    "headset", "drone", "projetor", "alexa", "kindle"
+  ],
+
+  "Celulares": [
+    "celular", "iphone", "xiaomi", "samsung",
+    "redmi", "motorola", "smartphone", "magsafe"
+  ],
+
+  "Moda": [
+    "camisa", "tenis", "tênis", "calça", "moletom",
+    "vestido", "sapato", "boné", "chinelo",
+    "jaqueta", "bermuda", "short", "bolsa"
+  ],
+
+  "Beleza": [
+    "maquiagem", "batom", "creme", "perfume",
+    "shampoo", "secador", "prancha",
+    "escova", "skincare", "barbeador"
+  ],
+
+  "Casa": [
+    "tapete", "cortina", "almofada", "luminária",
+    "decoração", "prateleira", "suporte",
+    "espelho", "quadro", "adesivo"
+  ],
+
+  "Cozinha": [
+    "pote", "tábua", "faca", "talher",
+    "escorredor", "garrafa", "copo",
+    "panela", "organizador", "balança"
+  ],
+
+  "Gamer": [
+    "gamer", "mouse", "teclado", "rgb",
+    "console", "controle", "playstation",
+    "xbox", "pc gamer"
+  ],
+
+  "Pets": [
+    "pet", "cachorro", "gato", "ração",
+    "coleira", "arranhador", "areia"
+  ],
+
+  "Esporte": [
+    "halter", "yoga", "fitness",
+    "bicicleta", "corrida", "treino"
+  ],
+
+  "Brinquedos": [
+    "brinquedo", "lego", "boneco",
+    "carrinho", "jogo", "infantil"
+  ],
+
+  "Relógios": [
+    "relógio", "smartwatch"
+  ],
+
+  "Saúde": [
+    "termômetro", "pressão", "massageador",
+    "ortopédico"
+  ],
+
+  "Calçados": [
+    "tênis", "sapato", "sandália",
+    "chinelo", "bota"
+  ],
+
+  "Papelaria": [
+    "caderno", "caneta", "lápis",
+    "agenda", "estojo"
+  ],
+
+  "Ferramentas": [
+    "furadeira", "parafusadeira",
+    "chave", "martelo", "serrote"
+  ],
+
+  "Livros": [
+    "livro", "devocional", "romance",
+    "manual"
+  ]
+};
+
+
+    return shuffledProducts.filter((p) => {
       const name = p.name.toLowerCase();
       const price = parsePrice(p.price);
 
