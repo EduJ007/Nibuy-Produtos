@@ -115,62 +115,77 @@ const App: React.FC = () => {
 
       <main className="flex-grow max-w-[1600px] mx-auto px-4 py-8 w-full">
 
-        {/* OFERTAS RELÂMPAGO */}
-        <section className="mb-12 bg-gray-900 p-6 rounded-3xl shadow-2xl">
-          <div className="flex justify-between mb-6">
-            <h2 className="text-white text-2xl font-black italic uppercase">
-              ⚡ Ofertas Relâmpago
-            </h2>
+        <section className="mb-12 relative overflow-hidden rounded-3xl shadow-2xl bg-gray-900 p-8">
 
-            <div className="flex items-center gap-2">
-              {[timeLeft.h, timeLeft.m, timeLeft.s].map((unit, i) => (
-                <div key={i} className="bg-[#ff5722] text-white px-3 py-2 rounded-lg font-black">
-                  {unit.toString().padStart(2, '0')}
-                </div>
-              ))}
-            </div>
-          </div>
+  {/* Bolinhas decorativas */}
+  <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle,_white_1px,_transparent_1px)] bg-[length:20px_20px]"></div>
 
-          <div className="flex gap-4 overflow-x-auto">
-            {flashSales.map((product) => (
-              <div key={product.id} className="min-w-[200px]">
-                <ProductCard product={product} />
-              </div>
-            ))}
+  <div className="relative z-10">
+
+    <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6 gap-4">
+
+      <h2 className="text-white text-3xl font-black italic uppercase tracking-wide">
+        ⚡ Ofertas Relâmpago
+      </h2>
+
+      <div className="flex items-center gap-2">
+        {[timeLeft.h, timeLeft.m, timeLeft.s].map((unit, i) => (
+          <div
+            key={i}
+            className="bg-[#ff5722] text-white px-4 py-2 rounded-xl font-black text-lg shadow-md"
+          >
+            {unit.toString().padStart(2, '0')}
           </div>
-        </section>
+        ))}
+      </div>
+
+    </div>
+
+    <div className="flex gap-6 overflow-x-auto pb-2">
+      {flashSales.map((product) => (
+        <div
+          key={product.id}
+          className="min-w-[240px] bg-white rounded-2xl p-3 hover:scale-104 transition-transform duration-300"
+        >
+          <ProductCard product={product} />
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>
 
         <GeminiRecommendation products={filteredProducts} />
 
         {/* TÍTULO */}
-        <h1 className="text-3xl font-black text-gray-900 mb-6 mt-10">
+        <h1 className="text-3xl font-black text-gray-900 mb-16">
           🔥 Descobertas do Dia
         </h1>
 
-        {/* FILTROS */}
-        <div className="flex flex-wrap items-center gap-4 mb-6">
+        <div className="flex flex-wrap items-center justify-between mb-3 gap-4">
 
-          <FilterBar
-            activeCategory={activeCategory}
-            onSelectCategory={setActiveCategory}
-            activeStore={activeStore}
-            onSelectStore={setActiveStore}
-            maxPrice={maxPrice}
-            onMaxPriceChange={setMaxPrice}
-          />
+  {/* ESQUERDA — filtros normais */}
+  <FilterBar
+    activeCategory={activeCategory}
+    onSelectCategory={setActiveCategory}
+    activeStore={activeStore}
+    onSelectStore={setActiveStore}
+    maxPrice={maxPrice}
+    onMaxPriceChange={setMaxPrice}
+  />
 
-          {/* ⭐ CHECKBOX OFERTA */}
-          <label className="flex items-center gap-2 bg-white px-4 py-2 rounded-xl shadow cursor-pointer font-bold">
-            <input
-              type="checkbox"
-              checked={onlyFlash}
-              onChange={() => setOnlyFlash(!onlyFlash)}
-              className="w-4 h-4 accent-[#ff5722]"
-            />
-            ⚡ Só ofertas relâmpago
-          </label>
+  {/* DIREITA — checkbox ofertas */}
+  <label className="flex items-center gap-2 bg-white px-5 py-2.5 rounded-xl shadow cursor-pointer font-bold whitespace-nowrap">
+    <input
+      type="checkbox"
+      checked={onlyFlash}
+      onChange={() => setOnlyFlash(!onlyFlash)}
+      className="w-4 h-4 accent-[#ff5722]"
+    />
+    ⚡Ofertas Relâmpago
+  </label>
 
-        </div>
+</div>
 
         {/* GRID */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
