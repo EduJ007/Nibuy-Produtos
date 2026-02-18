@@ -271,9 +271,12 @@ useEffect(() => {
         />
 
        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
-          {filteredProducts.slice(0, visibleCount).map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
+          {filteredProducts
+                .filter(product => product.isFlashSale) // 👈 só ofertas relâmpago
+                .slice(0, visibleCount)
+                .map((product) => (
+                  <ProductCard key={product.id} product={product} />
+              ))}
         </div>
 
         {/* LOADER DO CARREGAMENTO INFINITO - Corrigido */}
