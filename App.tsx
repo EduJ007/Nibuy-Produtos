@@ -143,7 +143,7 @@ const App: React.FC = () => {
         <GeminiRecommendation products={filteredProducts} />
 
         {/* TÍTULO */}
-        <h1 className="text-3xl font-black text-gray-900 italic uppercase mb-6">
+        <h1 className="text-3xl font-black text-gray-900 mb-6 mt-10">
           🔥 Descobertas do Dia
         </h1>
 
