@@ -1,10 +1,20 @@
 import React, { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 
-const categories = ['Todos', 'Eletrodomésticos', 'Moda', 'Beleza', 'Casa', 'Gamer', 
-  'Pets', 'Esporte', 'Brinquedos', 'Celulares', 'Relógios', 
-  'Tecnologia', 'Calçados', 'Saúde', 'Cozinha', 'Papelaria', 
-  'Acessórios', 'Joias', 'Bebês', 'Ferramentas', 'Livros']
+const categories = [
+  'Todos',
+  'Moda & Beleza',
+  'Tecnologia & Eletrônicos',
+  'Casa & Decoração',
+  'Games & Hobby',
+  'Bebês & Infantil',
+  'Automotivo',
+  'Esporte & Lazer',
+  'Pets',
+  'Outros',
+  'Super Ofertas'
+];
+
 const stores = ['Todas', 'Shopee', 'Mercado Livre', 'Amazon', 'Magalu'];
 
 interface FilterBarProps {
