@@ -11,8 +11,16 @@ const categories = [
   'Automotivo',
   'Esporte & Lazer',
   'Pets',
-  'Outros',
-  'Super Ofertas'
+  'Eletrodomésticos',
+  'Móveis',
+  'Iluminação',
+  'Papelaria & Escritório',
+  'Ferramentas & Construção',
+  'Segurança & Monitoramento',
+  'Relógios & Acessórios',
+  'Joias & Bijuterias',
+  'Livros & Educação',
+  'Viagem & Malas'
 ];
 
 const stores = ['Todas', 'Shopee', 'Mercado Livre', 'Amazon', 'Magalu'];

@@ -115,16 +115,16 @@ const App: React.FC = () => {
 
       <main className="flex-grow max-w-[1600px] mx-auto px-4 py-8 w-full">
 
-        <section className="mb-12 relative overflow-hidden rounded-3xl shadow-2xl bg-gray-900 p-8">
+        <section className="mb-12 relative overflow-hidden rounded-3xl shadow-2xl bg-gray-900 px-3 py-5 md:p-8">
 
   {/* Bolinhas decorativas */}
   <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle,_white_1px,_transparent_1px)] bg-[length:20px_20px]"></div>
 
   <div className="relative z-10">
 
-    <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6 gap-4">
+    <div className="flex items-center justify-between mb-6 gap-3">
 
-      <h2 className="text-white text-3xl font-black italic uppercase tracking-wide">
+      <h2 className="text-white text-xl sm:text-2xl md:text-3xl font-black italic uppercase tracking-wide whitespace-nowrap">
         ⚡ Ofertas Relâmpago
       </h2>
 
@@ -132,7 +132,7 @@ const App: React.FC = () => {
         {[timeLeft.h, timeLeft.m, timeLeft.s].map((unit, i) => (
           <div
             key={i}
-            className="bg-[#ff5722] text-white px-4 py-2 rounded-xl font-black text-lg shadow-md"
+            className="bg-[#ff5722] text-white px-2 py-1 sm:px-3 sm:py-1.5 md:px-4 md:py-2 rounded-lg md:rounded-xl font-black text-xl sm:text-base md:text-lg shadow-md"
           >
             {unit.toString().padStart(2, '0')}
           </div>
