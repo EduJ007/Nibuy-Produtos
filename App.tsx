@@ -188,10 +188,10 @@ const App: React.FC = () => {
 </div>
 
         {/* GRID */}
-        <div
-                id="produtos"
-                className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4"
-              >
+       <div
+                  id="produtos"
+                  className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 scroll-mt-28"
+                >
           {filteredProducts.slice(0, visibleCount).map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
