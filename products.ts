@@ -11,6 +11,7 @@ export interface Product {
   location: string;
   isFlashSale: boolean;
   link?: string;
+  category: string;
 }
 
 export const productsData: Product[] = [
@@ -27,7 +28,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1245806709/20199591901?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNDlWUHdIbVgxdXFUSEVZTVNaQ1VxNmg5L2d4NFgyYjJaQzBRb2prWkt3MEpUR21ZR0JtWUdIQ0libU4vMnhvdHhydkdiNW1hajE5Umg3TjlWbjJYQWI1Q2RUR0ZGV21CSHV6Q01DVGUxYllRRjNDbUIzOWIyVFRaV2lNZUVDNWlJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 2,
@@ -42,7 +43,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/644980753/22894269135?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdVhDUndsbllpSDZKNmhBMUpLQWY0SWhUZWJzRGJlZTR2UGVEVUN0YUxxUGRNTFZEY1hYN25yOElVNlJvWlZKS3p5cjdveVplV1VZMTNZc25rbWxOeDFVblJtWjMzdkFWZGw0TUY0d3FNRnpBcnYwVlROWXV3d2ZZY2VjYzRIK1cwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 3,
@@ -57,7 +58,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1188215663/20398322397?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNkp0bHp4akpkRDU0WGxnbUo0MWpuN1g3OEtwUzZUeXAwejRPRXUzeVVFclNNMDFWTUxoY0JUbFFtWTBTQmQvaVFJdEhOM2JyL1g2UDlRYnJ3b3Y0TEdBRkxheWdKaWVIMENrN1JpTWh5aU5DUjlaa0hteEpYY1FGNExVTFV5QTBrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 4,
@@ -72,7 +73,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/432069203/20497420250?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWtXZlNWQWNDT1k5Y1lxNnVhd2FEekJhTFdudzBKYjVNRU9yODQycVR6MHBlWUxRUDdPcFdnN1dYeXRoRHgyZkVqWXN3cmRiZmxubXJsTkF6aENzNjVQRE9hVHFhbUdGb2hxbVkzS1hZTHpJMEIxeFVrSlFVOXFSSEVpdGQvNjJRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Automotivo"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 5,
@@ -87,7 +88,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1345719405/18997974535?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN3pobC9yczJXSEF4NHNHYnBkK1VJeG9LajlDRFJBRG1vbXVaekovVDBCY1dPNlMxV1NmSGdSTzZRM3NiWmYvR0NKVDc4NG0zZlpDYjBUMmwrcVRocHVEVWM5OTF6L29Cczg5cHJjanVGeTBKZm5qcFJWQktYWGtBdkdZMmlSYWJVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 6,
@@ -102,7 +103,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1003351624/23194638529?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1ZpUFMxL2o1N0RPK0UxdWl1N3FMVkRBWHgvQWZyQlQ4VlZEZjFwZTg1eTJhUVNablNGZVBwM1NwS00ySkNNbUFCNE5pSkhjRUJ4MWl1Z0ZaTFdJSTY2bXBEbVRKYURpc1M0ZUkvSTZWTGdodnVDSThTOGNCd1BXYk1NbzQwREpnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 7,
@@ -117,7 +118,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1180920205/22093160276?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNkp0bHp4akpkRDU0WGxnbUo0MWpuN0NkL2JBcjJOOFhGWHFLcmk0aWFLQ05Ya1hGUllna3NOelVTRy8wM2JYMkFjOHNPTEdVWXhMblY0bURnSGRkRVdjWlpYNHNPWXFYMVduNXNRa3AwRzNRYkUyQ2N4QXZIdVBrdEhTNEJORG04PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Relógios"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 8,
@@ -132,7 +133,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/287513018/22693938292?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdjh2LzNiWTlmQnc2UUJEWVpmb2xmMm9QN2d2bGhtYW9ZOXJuVlYwZDgrNUNlZS80akxTNm55dlJvM24ydGZNYkJzOTd0Wi9qczJDS3VjTyt2cS96WVNod2NaQ294aHB0WnVLNTkyZk5EVkZ1bS9rM1gvOHJQM0lVcitOS0RYZ0FnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 9,
@@ -147,7 +148,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1399985810/22594543733?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN01mNmhVVGFUVHY2TURuZWFZQWt1dVJacjdzanlNeEpkenlpZlY5YWN6WlRwKzJjek5qQnYxY0NEZE9Ib3V5bDZmSEd4K3YxNzVSWFVkeVp4RUJrU3FhK05QeEEwUEJuVm90U1ZQZ2I2dGF6Q3A4ME1ZZy9tODd1SWF4ZGF2ZEdBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 10,
@@ -162,7 +163,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1215385259/53750943172?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0p5WlN0ajFLTzdqaTlQaERUZG41MzZLTG1JM1JQK01tUVBlMTczTXprTXl2ODE3RUxnTHF5S0I1WXA1Y1JLMXl1RTBZM2xNbjBtUGhCNlc5NDJ6bjhzd1R4c1M4SmJmU3l6aGNEYThEMm1PakVIRERpQy9nRUJvcXozQnNDeXlZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Moda & Beleza"
   },
   {
     "id": 11,
@@ -177,7 +178,7 @@ export const productsData: Product[] = [
     "location": "Internacional",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/528630780/12160962412?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXVVWlNNaVlKOWZYY1ZEY0hxOFZodERjSWY3MzB5WWdudVBTRjM2aDRXdUtpZE50UTJVQk93bjJwMm5NblgvNEhxSy9Ec0lhWm1rZm42RVl2cHAzaEMvaElaSUN3dVJrT2NncEhqMTJwQUM0NC9kdzRSODNTUGlDUHlxaStyanNZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Relógios"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 12,
@@ -192,7 +193,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1101178064/48950637633?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVRBdU9zazlxT0l6c3VUSUwweHVJRWdWS0JUWXdhaTR4eTdaUkQ0Qlc2cTAvN2MvckRjNGtyZkVHNDM0Z2FpTFAxenkyRXdVTlZsc1A0U3JhTDR0d1hEZHIvZ0sxZ0cwZEVYYnpjT2pKY25JUXdPMFBHVFoxcmRodlBkTTgyenhBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 13,
@@ -207,7 +208,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/295152828/20999869892?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWFKSkNFbFd1UTZLbVE5NHNZejh6VU83UUxTakZ3dURoS2J5MU5OM25uc1BEdHRUNm5CKzMvWjBVOXJPVWJZN2xpcWxPWXc0VTdNMm43SzhtUWVPNFJTeVhUczhGWU8zbmdOYjRGMnV5d20wOXNyUHFUWWcxaHF3WHVxWDFaZHhVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 14,
@@ -222,7 +223,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1580145778/19899844544?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN01ET3NBTkM4MXQrZ3FuUmxFTmQrZmJvWm45ckU4SENDQkpWcDBaamlaakxWZzgwM0VLclN5S2FEUTVGMzdmbjQ3dkN0NFB5M2RSdlJ6VE5KN09IRmN3WXAxY1FxL2tCa0tlcjFrSVVoVlZMakt6YXJqNmFtUnNTbmQrRTZ0VzlrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 15,
@@ -237,7 +238,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/349179341/22798781940?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdlo4OEhIck5JN29xaFR0QjJURTFScjhuanYxU3RhYUtGTzExb3FnT0srdzV0cFB4UHMyak9GS2g3QnQzaTBDeEcrL0dpNFU2M2FnZWpIbXVVMVE3OHlOOVJEc1h2dFdxalNOR2Z4TENsSGlyTDIvS25jS0ZVMjF4eUFrN1MrNG9zPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 16,
@@ -252,7 +253,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1177903362/20697874559?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN3R6clRXek84YVRNMWhSeW9MRFNFMjluUEEwc0FrK0NORCt4Vy9hMFRVaGdIcXp2VStocTZ0Uk8wQnN6Z1NjcGRRclNDU3g5bjJ4RkxoalJJNFRDYW5rd29jcXEvbGZqZHVhWnIyNjNRSDI1TUxGQVBjN0FNL1FSelVIY2NReGR3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 17,
@@ -267,7 +268,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1033351071/18197370345?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWFpQTlGbDR1SUwwMzcwMjJsL3RRdGVsRDlISmRwWXkvcURTNk1pTGw3QjJaUTZ2NVVkM0VlV3NTcGNaRWhycGdQM2dPVGQ4VjNBVnlmL0QyeHNQejJvV3RURm1PNmlESm00VVJySXdTbHFWMm1vZTgxc1JyQlJ3bk1Uc3MrU0swPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 18,
@@ -282,7 +283,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/322050038/23798676187?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdTRramhBWHJSZkg4a0JzL3Q4eEtSSmJWcXZZLyt0UFlXcnkvT0xTR09RWFAvNnhMMWlhNXp6REswSGpBUnlGdnRWWm5tcXQzYlp4Myt3ZjBwQ1ZhU2w2NTZwTWd2TFdPWnU0b0J5WXVlc0R3MTU4Qy9vZkdTT2k1TnhVcEtyL0I4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Casa & Decoração"
   },
   {
     "id": 19,
@@ -297,7 +298,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/376179356/20097732642?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdlFyR3VjUGNZWWhRNnNUSWFLaGp0WjJtdkd4ZmM1L3pPckkzQmswSjluaFkvS3ZFRjd6SERXM1BQaktaMDJ3RTQ1cE1OSnVkaWdTZnA1cUVod3dRc0dYUVFBVmdJVExoQkhGRFdidEJjcWI4dXgzeEk2aURqYTZLVi9GNVY2T2VzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 20,
@@ -312,7 +313,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1506941149/22893860899?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNU1mU0M5RWxpRUpPMTNORXc3cFZmbm9VRjllQ25iZnRZY3NYWDZ1alZ1L3lCQkc3VTVCY1ptQVE1b0lxNzczdHE2VS8yTXE2bTVmUEhGVzBFWmE4UXU4NU0vU29GcUNaUEIzNGpmUHpST1RscVErckw1MDNrWlpvcjRtWkp5c2JrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 21,
@@ -327,7 +328,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1125085057/23097292604?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnNncEZncWwwYm0xN1R5MnJXTThvTTJCcDVjTWlERWdXNWV0aGk0cEZicERQT0dKd3RQcUVNSUFzSVpZUWRSKzZ1L3pqZnd0MnRKNmRCelVRRjhESzI0ZjJjYmJNZTFwb2R1N1U2QWcrdk5zZ1BSWGx2WFUzWlJsUlN0b2x0MnpRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 22,
@@ -342,7 +343,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/763032428/18297680985?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3JuT1pJaFNLQ2F0SkZNVWpEUThXTjFNQ3Q5MkV3UDJWcHNvUzdKQnhVVythQUR4T2tmMjJ0cTdYL2lpUk9CeFVHUnoxVDlya1kzWGNBMFBUc3hTY04wVitTSm9aay9YcDRUTWJxMzhHbGJTR3pHK2xIMnh1Q2h2bVE2NGZSTGxnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 23,
@@ -357,7 +358,7 @@ export const productsData: Product[] = [
     "location": "Santa Catarina",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1363760188/40815806703?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNjZxczFjZUpCVzZMY2tOMHBrckhPQ3FRS3QzWDZ5VkQ2dkc0eFB4Wk83RExLSEFUMUR4anZWU0V4a2V1bTJRSGFiY3lINjI1d3cxQTExNnBSSHdEaFRoMFB5VUd5eHE0U3YzR3l0T3JGVDdFTFV5L1ZvWURSeVhTS0NDSTFIZFlrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 24,
@@ -372,7 +373,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1217782773/22097785703?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0p5WlN0ajFLTzdqaTlQaERUZG41M0kvQmhTUGQ2cGR5NXBIejNnWDhpSVdIK1FDYnhTalJuOXhoM09uZ0hjcTVqdFRmTjNsNTJrZ3BiN3d4Q3QwU3IrMzQrOFI4SU52a0RtMWFkYXYvVExkQ3hVN3R6blRiZk1ZYTVTWDUvbDhFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Pets"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 25,
@@ -387,7 +388,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1003085235/21097736963?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1ZpUFMxL2o1N0RPK0UxdWl1N3FMVnhqei9YckI1NlFvQXJKMGZXRUdOOEd2L1cyUER2M0lqcFUxdUw4VVlXWHI5OUl6azFHbHZPN1d1VVVhdTJUNzBHdnNzcWYwdnI3YWJUMUVhMjRxM1c3akp1bHlncmlpRXRvMys2b3JnalhFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 26,
@@ -402,7 +403,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/352576129/23993194954?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUsrRmY4Y2dKOWVxMlpoMktmQ1pjR2xUUGFXdWkyT3FsOHZXVCtYd1JJTjRudDlrcWRaM0hwNmlJaHhaSUIvUE5xMFlTb2thTXlLQyt6eVdNZ3huODhLRjJsNVlSZ0trTGVkdTZxV1BPdTFzMEVjNFRhY0FsOHN6WTFKbFJVWU1NPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 27,
@@ -417,7 +418,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1063352009/22698463643?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNloyRXJNK0dFZFZ1MzRDVXhpYVFrVk43NUp1OHBMRG10amdIYXpKb2pxREhzNm9UeXk4VFM0T2JibFoxUVlhdjJ5WS8waEJmcUduN05rZkYyRmZ1emkzVTlqRTBUcU5ROFB0cjdNTE44aEhlS213ZUtYb2ZUZ0w2RWlZR1gzRnQwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 28,
@@ -432,7 +433,7 @@ export const productsData: Product[] = [
     "location": "Internacional",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/662486121/20098940118?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXhpSUJQay9FYWt5UnlvTmtUN3NSMzhpRVNqZ3c0dlgzd1VpbEJ4cDg0bFRxcTZUZ2pwUnE1TjREbW9lbDJtaTc1d3J0RFV0UmlSMmpyMTB2anFkVVVIUmZvQkQ4MWtYYWNlYzlCek9nVmVCcWVzTTF6TU1mNnBCUGlvbm5KWVRVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 29,
@@ -447,7 +448,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1264013824/23594303474?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNFJWTjExaFdMaXlqUWNhOHVUQjBmZ25NbHkzY1hGNllxUHJScVErZnBxL3U0MWVhMlNaUURURTVyeUNsQXJxaC9VY2E0MlFRN0JHTHNlWElKbU5aMWlvZytTZFJmM1A2aU16Y2FPRndhUlk5Q2JmWHhDUit4M2pKLy9icDZuWUpNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 30,
@@ -462,7 +463,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/530578890/18897983973?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUNlU3pEdEwyejZNeFlhdWwxNngzbzhYdW44OHVSVVNMZVgwVjRPaGFJcUtKYmcrWHNZNVgrZW40M2w4QjNQakN2T2NUeGtLMEtkVkl6SVUzcmZFVEF3YUcrejVUTXU2UXRSUVdMMGpBZ0xMUzJPY0pTaXNGQnJTc3FuY0lwSzE0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 31,
@@ -477,7 +478,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/554656453/22293595777?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWk2NDNneW5FRk5TQWdEYVl4aVhBV094WmN6RllBYzdkdk43RFNLM0RHcXRwZkpLb3l1NHJEVW5hWU5ndEtlR2t3dFpmQkRBN0NRcWh1RU1WZ0JPcWcyS2w4Yi9sMjBxVUFUbjVKS0RaOHhWdDY1ZG9UK2dYekZ1aS9DU2hTcGxzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 32,
@@ -492,7 +493,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1168608130/20097760306?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNlBFNHVhak51MU13cGRKeklHTm1VZUtNMXVRajVNbG9INnltM3NhcU9qWjduRzdBWEh3VXpid05GVEdUcHQwZlg5SDJXb0RXd3hOcDAweEZqdDl3bmE2UXAveGU3V0tTZkZqVW56V1VvWHBMQWZVWUxKd1BRTUhXbjNkY2FleFpFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 33,
@@ -507,7 +508,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1420372901/58202126334?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNGhEWlZ5Z0VBbkhrTnpUVldDQzBwTlh1MTBoeUtIMHpaRFMxcnZJWldhZjFEWklYNWhCSE9LZ21QNWxDT0pqN3hrVFRUUEdJVldwYURoRHF2NVk3TjFWSm9UOUd6bW5Mam5zN01hTGhVdHRWRitpQXVmdllMUDdPTDAwdjB1S1B3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 34,
@@ -522,7 +523,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1414811075/23699184292?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEFrSUpWaitUS3NaQTFHTVJTQmhpZWxlUE5oZy9YdkN0bFRUS2NEQTdKelZVSVZmVndVSHVjUmJRNGs4K2lrUVpoWVVuMDJDSVRwRWpUbWtMaXM5MUtmU1BzUWpZcnBVMmtqKzJTMXpqcDhwdHozQitBb1Q5TXMxbHZWUVRZOEt3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 35,
@@ -537,7 +538,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/960891164/22098878065?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdFBlUWI4SjlVS2RUTEE5c1FaTG9oOXhEbUFsa3ArWldBSHpHRHkrWnVjQUYzNkc1TGRPcWpISUJqcEVQc3BvMmNzQUZTZE41TDdLRzBkMnoyb3Q0aDIwNS9aemJ4Zzk0dWVIWFRQOU93NlFqQXBjOTg5WmRwRnFHRkFJWmhHNEpjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 36,
@@ -552,7 +553,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/552896405/16692338189?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1VZT3o0R2xsMURocnROd2hzZzltZzJ3c1YvUHBVY1NCbGFTWUwrKy92dmU4RUwyeExmNHBWaGxwQWVGQzZmTkhyYmd0dStRenlyOW4yUmMvYmtETWNIQ1cwai9yMWFLUmhIN3p1ektERllpNnFrZnpDaWNDcDQ2ZnhtdGFZOWRrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 37,
@@ -567,7 +568,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/297931232/20607202803?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1Vtbks1UGZJeFdGS2Z0NTNNaXM2VlVQU3dLQVV4Wjl2N0FjbE50SFRySnFVR21kRnE3QzRXbFF4alZQM0thcnl6NGtpYTJES2ZVczZ4SElrSXE3MWF3dEhVRmk3ZVMyUGFtQXhqUzJvNFVqYVRRRm50OHF1S2VMZlpsNUNHaDcwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 38,
@@ -582,7 +583,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/993030695/22997555578?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUdaR002WnRQejB1K3RvN1lQSkhhRlloV3JEWXhNNkJsTytMZ0J1NFhNSU5adDRvNkFVcHpKbFBWcU1laEo3TlFCUlF6bzZqN3NkMStwZi9jaUMzRGpWbjhDaXZheFYxNk9xdlp0emlwaWR2Q3BoK1J6R0MxclkwS25SbDdsRG5VPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 39,
@@ -612,7 +613,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1167196167/22993233795?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNlBFNHVhak51MU13cGRKeklHTm1VZUxlRlVKNFJUK2xWelNhRCs0VDQ1VCsycFZlK2NoUlFiMUdzdlZLZTM1cUZyVC9TbHBhYjhzUUJlUm5CNUdmMEVGc1ErNXZqVEZ1SFRqekRIcDhCWDRNRzI2MzhBNU53ZVVOU0hXRkowZTFnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 41,
@@ -627,7 +628,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/408653169/22593915398?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdjNtR3FWWHRRMDYrYWRVTDJpWG4xV1NReTZrMXAzRmpZNmdkT1B6MnlJYTZFUnlqRlRxN0Z1aUZldkt0TjdsQWl4MjFMcUdoN0hrMTdPcGEwMmkyME1LMjk3bXBna29UaUNZWjk1bko4b1lXdGRFUUdlVHFjZVgrQkFiMDRib00wPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 42,
@@ -642,7 +643,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/552958714/44355109343?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1VZT3o0R2xsMURocnROd2hzZzltZytVS0lzMnNKMlJZRTh6b3o0TE0xQ3JVNUpqMXRtdTYwR2pUMGx4M1p0ckhpb2liMDMwQkhITWhLajBVdUtqYW1CRmhLRzBKKzV5WGhpaU10SUxhRkJFbjE5T0wvYlpTbTJ1RkwxYnlRbWVRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 43,
@@ -657,7 +658,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1052834124/18498130564?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0x6dFhUa1NUODlCTnp4OFk5RXpiYlAvblJsZUpxdjMxV0prckVyaUNTS1ozYlV4N2hhWE1RMWw5QlMvMXBwc1lDeGUycDcyNVhLczN4MVVaR0RpUzQ4SFFPLzVvRmF1SzYrdlpXWndHaTdPQk1yZ1NVN21paEkwK0ZMd0xLMlRJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 44,
@@ -672,7 +673,7 @@ export const productsData: Product[] = [
     "location": "Internacional",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1006215031/29379017291?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1ZpUFMxL2o1N0RPK0UxdWl1N3FMVm85UVpjejJGdGFxQWYvWm5KU2twckUyL2Nlblo0STkvbkoyVitzUmZ5OTQyTDJUZ3FJeDFnTkN5ZjhENWFDL1J0T1Z1a1NqVElOSVRmYlNPKzc5RkpneUNEb0xXRnFTU2xTRkM3YkJhd0l3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 45,
@@ -687,7 +688,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/520519892/19998089354?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdVFHbWZNMmMrcDhYeGVydkE4OGpIVGZmaDhNQlpPZmF3bXMrcERva0JNemtqQ21qZnlGZTJNWWdObkhmWExNNWpZL2U1V3A3YXBveGtUNkY2UTVrZzMwTFJZWU53UEZzaW45bkpsZERJaFdkQ2hHRWZpRGo4RWZjK1Fmb2ZQOTBVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 46,
@@ -702,7 +703,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1615431604/23299009075?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNmZRMXpFdjJvbVdrY2I0ZE52YXdKUExYc2JrVEFzWnhBUVlpMDljUTUxd2FXUnE5NXY3dXNvYmMvVkJwTlRvRlk4dmYrNVBxd3Y3Mk9nbVhEaHJYU3RPUk8wbGhSUDNIdjY2eEJ6S0crU3RidDBicXFUY3BwUmwxUllvWTFPRVZjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 47,
@@ -717,7 +718,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/832036467/22892833180?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWVQMWpXRHcxcklXLzV5NmpUU1dmR3k0ZDc3RjNmQVoxTC9wbHN2T3I5YlgxQUJnU2lsLyt0dXZlMVJzNm56ZUJuRUw4SnB4dGZjNG1EM2hWSi9QWm84bHlwRUtubWUwTEtQRElreEJkbmk2OTB3OGMwWDVXdmZQNExaK0x6blpjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 48,
@@ -732,7 +733,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1531826276/22694204664?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWNkaUJHS2dKRXlBdkd2dG1mZ0psUEVhcjQxd3ZFSUt1Zit3dnQ1dEtRVUhEMjZkU2xudVFvbmpNMldhMnNZNmVmOFpJVTh6c1FaRFBrbG5yblpGTkJENVV3L0xEYkZpZUgvd01hR2t2NG8vWFNFT2xuWXFWaVhOY1JGVFQvOG1vPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 49,
@@ -747,7 +748,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/406969593/22498946021?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdHdlZDRIZlV3Y1NwTEorc1p6NWhsK29Ya0VLQzByMkJkZG1wQnZ6blpUL01Qc2VuKzRuTzZwVFNybEVCdnEwN2hlWmRtd1ZvVXk5L1NjczBmNStyZEJjTXVNMnVxTXVQbXIveEJ0Mk5ZRDJQR3lDdklUTjFNUTl5V3pLVUhJVXg0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 50,
@@ -762,7 +763,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/698230941/44355224942?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdVRtRTJ0OFRtYW1aeVM4ZXVJSUhnQy9rWEhORTJSaDgrMldqUlVGSmxoTGtpOUVzTHloQ3dHU0p1eVMwNjl4bWREOU5FdTl2d0wzcS9wa0F4czZmM3FmSEhFSWxHamxQWHFTaDRFNDZRNFBuaXdOeW9Dc082WTZ0bFJQbDZZdTRZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 51,
@@ -777,7 +778,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1251161766/23793918480?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVkyaHE3aUNyNGd1V0k2Q3RjRFRaakhJbTJqZFlFMGx0V1MzSUwvcklxRjlEYlV6WXV1K3o5WGpNSnArV3B3UXVuM3Fkd3lIMmVmR3JFMUNKVll4OHcwN2svQ2FkdmFLV0Z1a28yNDZjQ3BTYjVFOStUcDZrQjE0NWlHN2wvbXJNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Beleza"
+    "category": "Moda & Beleza"
   },
   {
     "id": 52,
@@ -792,7 +793,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1366016602/23994650418?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNjZxczFjZUpCVzZMY2tOMHBrckhPQ3QwUkQzUFRkRHZ2NE5qNXJsN2wrKzVteE1xclRFUDRScEFYZm1PeDJ3bUR4eDA1Q1hxMFM5ejRFOTNiekw2ZzRxTFdqQXJkellJVXF0N3NHZUpzYW9VR3ZVNDRUUE91enJmaktCM1RpZU80PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 53,
@@ -807,7 +808,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/800287152/23193934812?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmdGWktwUW5FMzdmeDQ2MGpJaVcxa0dpWVI3MzE0emJRVlZRV210V1FTQWpIKzFhYWZTRTJKcDkvcWw5QU5VSFNxN21uY2VBbXB3Slo4bnhuRUt3TU9FSnRrQS81am44YndZakJzdnh1a0NKbzczK2pGRjBlMiticVJuYSt1UDVvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 54,
@@ -822,7 +823,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1547995492/22094689187?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnVJbW5vUmJMVEgxNENmWlJITkRXK3RwZ3dMT1l4Ky9PRlJHeDI3YmlWckFBOFJmY2JqQmxxcExIcURyYXNYVTFJclZMb0VIWW9zU21JZFhmVEE0c2J3ODhtSEtIanlQYk50bm94TkRDaXJmelI0SVhUNmVuU0tLNXE1SG1hTjYwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 55,
@@ -837,7 +838,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1082128432/19697619900?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNXlpcUpVdHpzVG5Rekp4clVZb3luMjlkMzNya3ZMaU5TMURBM3M2Y2hGVERQczViVmhaeW9ZeDJmb3VCdHZGTS9HWUFucjdGbjdHM0VBMUN2UUlpZmlQNENQOG5aTkpkSG1uc1lkQnUvSHZscnVBZks4RzFSZ1Zla3BxZ0k4MG1FPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 56,
@@ -852,7 +853,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1540426526/23198545180?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnVJbW5vUmJMVEgxNENmWlJITkRXK0R5aGI1bkZrN2Z0MmJ5ZVJMMCsrMmRnaWVnMHBhbkdSbGxoNldaVEcxQ3V3dVd3ZnN1bFNiSEZwbUZxYVRaajEzYWloYVExemdqSVdkU3cvcmRLdEFzSjdhamNOVWU0cGZVUHhjeHd4TWlNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Casa & Decoração"
   },
   {
     "id": 57,
@@ -867,7 +868,7 @@ export const productsData: Product[] = [
     "location": "Santa Catarina",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/445163047/22993201309?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdVI0SG95UXExcFd5UWpNZ2Fib0pGOWRINGt6cVJ5SzBwYlViU3JVKzY0S0svLzhsWEMwRmllbXJZL3VjaG5yOXI3YzJHNFFQQjZZWHc1R0hHTURPL2tEaEFjM3FMMkc3cVN5Z1NYay9Ub29OTDBpTU1nSlQxNmd4b0hWQjhxd3NzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Saúde"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 58,
@@ -882,7 +883,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/876866734/18098389170?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWRNbGNIS2haYnFYc0pyYWJkZEgvYWV0OFc3NFNJK2JJaGxrcnVCd0IvcUZSZzZ0ejQ5QlpVVXk3ZTFzREZuVUprQXhZM0w4VHdpbUFCMmVsUnNVNTZZdEhIQnhrMTVlMXdESzllZzBOb2M1cmkwMUpoQXlEVTVqaHBCZ0pDenlRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 59,
@@ -897,7 +898,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/722975682/22792880383?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdVNvMzlzUHZpYjdVSllXVG5vNktDQi9idk1kRFpLT2cyUExIUURWMGtJaVZNak1sZmxrazJDMFF5WDF2RXBBTk96SGR4L0czRWw0aDdSWGN3VUt2Q0xKOVpXTVBnOFl5amQ5cGgwYko0cUhmM2UyREMvTFNkNGYrSzJ1QUlZc2pzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 60,
@@ -912,7 +913,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/482786640/23893183902?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1hPL2J2Q1I2UXl0MHd6Y2Q5Ymk1TGpIKzZPVGorWEdsTUhoNXdFNU1TNExMT1hjMUw2ZnFpRmlFeG5BSS9TUUs0ZUFjY3BZOHJSdk5QdDhOamZOZWlzOWhCTzF6UVl1OGI3bC8zOFJpRWVpZm1IK1pmWlJVcElnVGdTaXA1a0ZRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Games & Hobby"
   },
   {
     "id": 61,
@@ -927,7 +928,7 @@ export const productsData: Product[] = [
     "location": "Goiás",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1421762996/22498420877?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNGhEWlZ5Z0VBbkhrTnpUVldDQzBwTjY2QTN4dGJzaEYvZkhDQmwzeXNNcnZ2Tk1VTi9RR2Z1RFUwK0RnRU1TVlVqS0dGYUo4Tko1WU1sbTZ6Y0p4ay9WQXFiWTlIYy9KUVR4bVliTnZwdVhncDdVc3FrUVh5WEdkUnNlNjdHSUw0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 62,
@@ -942,7 +943,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/732131461/23798119171?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdng2VFJsOUY4ZjdXY1RyenF0anJUQ3IrOHYyelJxUWw3RkE5OFBVN3NKZ0VsREVBV0Y5YXQ3dHRtUnBkblpEb01vemxKRVdlYnl0MXFaeGc2dGV3YzI1ZGVtb1I2bTZMb1F4SHZETWM2U2VVNXJDdnNMWTR1VmpuSXMvU2hacjljPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 63,
@@ -957,7 +958,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1177903362/22792887317?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN3R6clRXek84YVRNMWhSeW9MRFNFMnpGMmZpc20xdUZCU1pjbGF3cnBUUjFRS29ORmVsRlpubUU1dUtra3drbG5nMkV5aFNpdDJIQ1FxMmd6T05EeEhvcC9yME5wSmlvSnJqL0hwUGk3am5lU1psd0VSczh6TCtXK3M4Qk9OK2prPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 64,
@@ -972,7 +973,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/476363079/58200747988?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc28xU0x3dkYxSUMwaFJ4dC9vQkJFU3R6ZU5hRythM0JIQnVrN0xYeUhETmp5SkptRHFyM2ZlbFkxZ3krdEJEOUl0SnE3QTMwcGIvcEFsREozKzBBZnhGRTNWeWZjaURad3FFdkpIaGhKeWN2dElWNEJpL3JXN2ZoeG1KYkRTUzI4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 65,
@@ -987,7 +988,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/818350485/23694153615?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdVZZTGkxRXRxOThjblZuVW15cTJGNVppM3VqYVhSanJ1QUZYa1RoU1lRL3ZGU3gwU3pUWXlDdzl3bm5DSjBiK3ZCQ3JRbDh1UUZySU1WK1lpaXlmbWptZ1ExdzJzVGUwa0VYYU1wUTg2d2J0bU5CRDNNWDI3Nms4OWdDZ1U0eFIwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Automotivo"
   },
   {
     "id": 66,
@@ -1002,7 +1003,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/511410160/23793045074?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdkFJRFdYcWx3TGZjb3g1enh6bGgxVUFGNUg1UjlVYVRDZGdLVldyODZMZUkxOVVoaDZYRU0yOW9vQ1pMQXU5RnJtZnVpcjN2UlV3dDdaTEhKVlF5S251emptQ2xNZEdtRnZWRW9WcnJkUlBHTXU4aGhwb25jTk9BVlI4ZGdVN2ZnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 67,
@@ -1017,7 +1018,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1499661843/22294530156?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEsxSUFHRCt1Zm5YN25nQUlHSklKSzV4YnAxd2diVThFZkpSU2FNczFndGg1dnkwUTVaOU1uUzNkUGlZNWR0YjlkYXpxSVkrS0Q3bFJWb1d3YWxKTExnMXo3ZVlzL1ZaVHY3LzVNaTJjbUpJbjZZVm9xZDgyeWR6Yis5cDB4dlFrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 68,
@@ -1032,7 +1033,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/326454501/18597375237?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc2JHSEliYmx5TC9jbDdkUGNldzBqSHRZTG5vTXB4d2pibDJTbGFIcHNXK3U5WEJuVFFvOUN6OGJmNVN2UkVjems3YnhzdlR2ZVluRXgxZmszUWxGY1ZKRzUxelpvb2VvMk1hMHFqc2hWUndQVERta2RFYjVJQ0dYbXhIWnZsTmJRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 69,
@@ -1047,7 +1048,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/676651970/23398855828?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmZ0WlUrMys5TzVhaXJPNmpEZ0N5ODRzbUZMQzcyRU1HVmVoRWx6b2QxVnNBckxEWUJSR3N4NncyWkIxZFhWU0xPY3NxanVwNUN2RE40SVAxcENoMGNTRFkwbXl2dXdaelFnZUJGdUtHaFBEekRaaG1MYytFRmorcmtDbVhSdjNjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 70,
@@ -1062,7 +1063,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1509346262/22498645087?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNU1mU0M5RWxpRUpPMTNORXc3cFZmbkxQYSt5T1BjdEZCSTFiWDNDaUNUUGxmRSs5VWRjN2NyUnRBU2tRVnUwL3JONi9yYmdXZW1XVUZqV2MrdERIMjVCcXhoT3FGUnRQVHJIVzcvdTI4MTl2K2RERURjYVlmb2s5L2xYbnBWVlNVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 71,
@@ -1077,7 +1078,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/309518023/9046565871?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkY0tSanlKZU1BU2Y2RTJzOS9neUtnZkg4NlMwaTFZRWhMYUFHSDFkUUoycGpncjIwVTYweEo5a3cvSldzNFNjM1puS1IrSDR5QVVBaTc2MllwUzBTblg1NUMrSjNCNmlLSWVzRFhqQjJyTDVZZTlmMDl0a3hhVEVNM2tBM0VZRHMxd3c0d3dMRmtlUTE4MHcrcEdaWkhVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 72,
@@ -1092,7 +1093,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/984950642/27430933127?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdnJ1NHBRNFJkeEs5ZHdNY1VNQzJlZWJ4ajNtMzJoV3ViNVFVNDVZOHJLWjFIZFpxKzc5K3FFTFdRNGl4MldQeEFpNGZGTXE2SXcxNlU4OUtxSHlFbGZsZE9QM0Y3YWNzc25iTGNzNWcxRmJoazBlYnRia1ZvSEdtaElhOHNiRzlnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Casa & Decoração"
   },
   {
     "id": 73,
@@ -1107,7 +1108,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1082128432/23798844531?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNXlpcUpVdHpzVG5Rekp4clVZb3luMjBjbTN2bDVWUUxaQUhLNjZsWTRYRG9wVVh5am4wSnpZVE4vRll5a0x1OG5LdkpJWS9oMmVvcStMa1JQQllYOVdJOUVPbG05dkFaU2hvSkU1aWlZOTlqeWNXbU1pU2pDOEFQcXFucW96amQ4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 74,
@@ -1122,7 +1123,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1354787518/25139057687?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnFlajJWZlQyRjNuVGtydksxZlBaek54bGdnNk5HZVJqdEZ4SHhEVkRZL2M2MDV5SkRQV0o1aVJKeW5PK3NpMkdjS3JnQkVPVHl3eU94MDQyemlNdGllQ3cvSFBtS2hMSWZXVDdqRlk4YXNLdk9WSzJYVmxQdUdYOFkvSWExOXhRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 75,
@@ -1137,7 +1138,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1540426526/23098905031?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnVJbW5vUmJMVEgxNENmWlJITkRXK2VpenhvYjRlVG5xT2dVVUdYK0NaZDE5a1hRZEdYVWw0dUdzMi95bnRBd1djWE1hQUd1SGZGZ0N5ZGMwSTRZdEE1V1pDdmNKVmdEd1ptQlNuejl1emQrK0swQVk3dW9NSXlLT1FYdjV0LzdjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 76,
@@ -1152,7 +1153,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/883610232/23193984372?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdkc0ZmJkd3hzYXpGUldKRWJJMCtyYkhzSUdZNUJKR2VVelM3OFJ2OGRUSE9od1FKWEJSNlBmMk5tWXcwaTB3RFNBQ0x5YkczcDlUWmV6OXBoc096QnpmQUZ3TDJmLzJWeVpIL1NlbHJuM01lKzFOeUM4MG4zQUI4U0Q0MzcrS0hrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 77,
@@ -1167,7 +1168,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/382454047/22197320069?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUROZUVHUHRHTDBVbEpmeXRMV3pnNDF4SWVCaHlibURyclNMVDIrOExNcTVKVGlYRUdydndjZ0pwRGN6aDlhVkMwYTBkSG9QOXhVb0NCYkNvTi9lTlZVdS8yZFZoenBJMUlESDZUYnVBSEo3cW95OTkwd3l6THpBL04vMDhEd1dnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 78,
@@ -1182,7 +1183,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1384073074/23293909383?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNXBkczJ6U2l3VEh5T1haODRWd1FPaWxCNGkvWWkxNGZKL1lwQm56Y3N0eW01V3R2L3pzbjIxMlE0dC9WVTNSVmpsTDJEWVhpRldXaVl6L0FqUzlkMi9WMExHZFdWSHpuSEYyUldjWjk5ekMwdlpGUVBCK0tYNEIrdU5nenhUQU53PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 79,
@@ -1197,7 +1198,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/995022276/20099845178?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXpyZUdJVEFVZ1Jzci9iZGw0QmhnSlFqam96b0pCUDlTbzFSZHBTWnFEM2svMit6SjZWQVRjbnBRZmpLNlZ5Q2pvaHlrbUh1LzFRWWphUGsyV3FCM0Znazh6MTMwRkZIdjZWcnpLVmhhM2c1VUgySnFWbDl0cFFOc2JOOEhzeTRZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 80,
@@ -1212,7 +1213,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1553822215/23194769169?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVlabFNqaXpwaEpuOUdUcSt2ZEcybU5JbTNLRkloU3plQ0FiNFowcVUvY2ZjaFg4TWR3Ylp5cytIQ0J4L1k3akZhRWMzaEpjWTRQUVRVbU00T2x4M2FZWm1MdURrbC9QSElmR29qbFV6SXhuNWtYZExQK3BEU3YwMy9aTXVNN3BBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 81,
@@ -1227,7 +1228,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1496667000/23393954772?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEsxSUFHRCt1Zm5YN25nQUlHSklKSzBOMnZUQ3c5N1B0Qlhqb1Y4N2xjY25tdEJUNHFpemgwM1JpTm9GeHU1R09sYjFnek56bmg5eUNKNjE4cEd3TG1PaytEUjlrRW9JQ0RiWXdOU3U4SWlhUDhaWXBmeVdwZzJHdUVsWG5TZGZRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 82,
@@ -1242,7 +1243,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/322050038/22294351861?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdTRramhBWHJSZkg4a0JzL3Q4eEtSSkNQMnZuUTgrL054VDNlN0xvM1FrSDBVT2ovT3ZiSDNocVhZTHprN1pPb3JRS2pNajI5dEY1amxTVk9WeERzanlNMkFKZGRCeDhnWXJMd3JUTXlDM1BMTDR1QWF3WTlJUHU1aHAvcUpZK2EwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 83,
@@ -1257,7 +1258,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/275739347/23998648815?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc255U3VzTG9tSzRGZk9zUE9FUlNmVWkxYnVaQjRmUEZ1WEU3Wkp5NFR0SlZXaGhleUlSZTNDT0tFUWVnN0lueTQxeDkyaFRKa1V6ZkRDMGVheWtiZlB6MVVZYU8wSlJMeWErK0FNM0JISGpVMGVBNm16UWlFbklzVjVydXZjZWE4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Automotivo"
   },
   {
     "id": 84,
@@ -1272,7 +1273,7 @@ export const productsData: Product[] = [
     "location": "Internacional",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/778770826/24383217820?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdkpEbVpqMmNKVERUT283MmhLdkVwd3E4WXZzZzFVNm5QN0xKb2c4ZGpGeGRqZ2hNRXlremdIVGpucWE3R2tSMEZtT3l1SVdvbEN3cjFRdEU0Mm9XRm5xdGFuWG1vVDZXTVpQYS9WN3lYQisrOVRMaDNDQU50ck9wNlB0V010WXpZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 85,
@@ -1287,7 +1288,7 @@ export const productsData: Product[] = [
     "location": "Sergipe",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/815700236/23293489282?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdGgzZHkzWEYxRVp2TUkzTzFIbUtLUW5XZytyd3ZhTWFMaURSaTFXTXBQNTZFUEp5SHRKRDJGQ0o3VThlclA3Z25uQXFheGhSVUloYXZyazhoTktjY1NRSW5aY0c4ZmZVV0FyZFNncnpKM0RheTRmUmJZOTluMGVrRkpWSXpzNUlBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 86,
@@ -1302,7 +1303,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/384582961/23398776792?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdVhXc2ZNRU9BNm5OMDBOaENPZkg3b0tLemc0dUQyN0VpTHh5TXVyZzZJMGZDOVBiSmhjMGxiYUgyTlVVU0NPNmM3RVVpWUhMV2tBL0xEcCswQy8wRHlmZDBDSk1JemhkRHk1K2JOOFNPMXE2cFEwZWJDbGhKczhOTWZPL1BxbGI0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 87,
@@ -1317,7 +1318,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1393520997/23194075841?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN01mNmhVVGFUVHY2TURuZWFZQWt1dTVZVW01RjVGOXdZbnFPSXdITUdiTG9EYk85TWFaZmVwNlBtb3RnL1RCMGZTNm44Q2NzWkV1cjlsZ1NnUVYxcnlZSU1JbVdFOXRLN3RxT2M4YWZRNE9JbXNwOTJMaSt2S3Rmbm1zK2paTlJVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 88,
@@ -1332,7 +1333,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/332130069/23693822652?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc0tEbjUyVTB4cjMvVmtxbnRCbzQwL2QyWEpRNmk0cmpTZWUySDJnMU5sb2R3OW5Db1piR3phdjZsVWxMUTFvZ1pHTktjaXU1NFNrRVNZRFpTdit5bWQrV2ptdC9MTEQ5RmsrM0ZTQk1xbTN4NXIwTy9PdzJESXpua21vRWVvelQ4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 89,
@@ -1347,7 +1348,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1285485572/18698147487?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWNqc0xWZnFmQTlhNlJ0b1RiNGNUSHNCRHhuVWpySWx4WjNSQ1BvN0JMNkZWV2NMcHRmZ1J6NXNGNGJWT1MxdFY3RENMZmZNbjlXN0NNMklIdGNCeDJSeERzdmRMZDhmdTl3OVlUYzVzREU3TjZ4Y2ZvanV4UzlLZnlBdTBDd3dFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 90,
@@ -1362,7 +1363,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1298416721/23098172010?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNGE4aFpPSitIdGlRMWhhWS8yRkUvQ1lOVnNjcVFQOFo2anhLcE9UZWRIdUVOb2oyRVp1L1dLa3RweEFxUnR6OU5tbTFPU0tMRTh6VFF5T01hL1hNdDlPdTF2cCtJVFJFKzZnWGxrSDcrTFM0S1cyeC9NeXhuS01FRFFoNjhxaHRJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 91,
@@ -1377,7 +1378,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/875039015/22493572369?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdENNeFR3WjA3WlM0aHM3MytzVWQzT3ExeVNLSXpjSEF4QWNNTGlQY1JadVVON2I3V1lmczlwRFJlMlFIUjlHMmJrcHFUTktXUkdQN0RlcTIwU1phRkNHeVQ4M3hrM2p0L0ZnVjJyVkZTVW02SUtBZkcvSmpYYVNEekdQUitscWQ4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 92,
@@ -1392,7 +1393,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1264719671/20397971318?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNFJWTjExaFdMaXlqUWNhOHVUQjBmZzRoaU9pN3dRckQ0RmlJRngwMUZ0YzF0Wm4zRGJ0WjA4aVZrY3VKK2dRZGU3Y0owYkFYRy8zcjBvL1ZsOE0vY1BmUUZjTndySFA1NmVzaDY4Zi9xYXd0RjVadFZxQVdpVnBSc3lHWlkzUGxrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Automotivo"
+    "category": "Casa & Decoração"
   },
   {
     "id": 93,
@@ -1407,7 +1408,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1273491356/23898643006?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNzhFZVJ4NGxLdFNvVzNTbHJ5SUtuRUh5Wmx4OTJpbFdIaEJlQXFHODJkcCs0cXN5N2dUZGdpdWdXVklxK0tLQ2NqQU9yUlNNbVh4MnpUOGZHYmZXQ0RCL3l0Mld1aTdUaVh4bHZKQkt0NTMxeW1SbkNnVVNIRFkvME5kQStXN0VVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 94,
@@ -1422,7 +1423,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/482786640/21699182944?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1hPL2J2Q1I2UXl0MHd6Y2Q5Ymk1TEFGc3kvUTE5ZG1kU0ptRDQ2WEpmUnF2ZUQrUXVZalJzQUZHbEpJMy90NkdwOThKa29TaWJyS3ZpMURjVGN2TVBWUDVBR3pUZnVXOUErKysyVXI1K3padWZvOThrb1BtWEczcW5LK1F4N0M0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 95,
@@ -1437,7 +1438,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1423372949/22698573590?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNGhEWlZ5Z0VBbkhrTnpUVldDQzBwTnNkbGlvR3hndER5RWFvdkNpMEgrWklRdFdwcHVBTkdWWGc5WDZzYmZISUpBT1RmVzBUTTYwMTFLRFRydWVKcXE1ZTQzN210QitsVUhldEtPNUh1UjBSVmdEclFsdXlWUSs1ZE1SVDhGZ0FnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 96,
@@ -1452,7 +1453,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/287513018/22398439646?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdjh2LzNiWTlmQnc2UUJEWVpmb2xmMmNRQnE3RFpsVE93dGliTkNkT283ck5qQmljY2ZHMVdPWFY4OFF1K0pwNGlyRnMzenUvUitZVGU3UWdSbWc2aW4zRmxIUmNKbG0zKytFOHhtMTAwOHRTSlREb3JuYVoya2ZKOE15L245RFJrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 97,
@@ -1467,7 +1468,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1284769631/21099552315?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWNqc0xWZnFmQTlhNlJ0b1RiNGNUSExNcE1XQ2xIM1BDczRobVE4NnpGTWQrVzhvQlU4UXhmUUJsTVErY1VWUnpUK2FyM1g5OTFKREQydmFGM1B2SjI2aU9qQWRrckhyd0tLczJzVk9Xa3hjbnYxeTBRUCtxTVU2eFE1UG1GOXJ3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 98,
@@ -1482,7 +1483,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/832036467/23391178260?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWVQMWpXRHcxcklXLzV5NmpUU1dmRzFNMy95Zi9oY3EvNzc2NTdvUm9TaVBGTm9SWXg2cUpDMzhxckVkb2dJMVRzbFduWDdyTDcrbEVNazMzbFQyeWFpTzZtM0x5MG1yemZTQStaekwvN2JId28wT3FvTUlJSU8xZ0lBWHJqMzg4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 99,
@@ -1497,7 +1498,7 @@ export const productsData: Product[] = [
     "location": "Santa Catarina",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/523145812/23398794668?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmxyWGJOU25yTEdoUDBtaXJIdnA4eW5OTTdydHVTRnBXdnhwTFpFdi9OTjN6Y0RzY01rSDZFREtWUEFSQTlWcndFeTZKQjdIdVo5Zk1rRWFQTk8valhwV2RWdGFQTnh3Uk1YZzIvRTQ2d0lmb0Q5R2t1UUduQ1gyN1lQMldFenJJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 100,
@@ -1512,7 +1513,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1003085235/23297493497?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1ZpUFMxL2o1N0RPK0UxdWl1N3FMVmRRN21MTkh0OCtlaS9sdlJYK1BVWmxlQkdHZVNEeEtOK3dpQXZ0Vi9qcFRWVUs4cmM1Y2RTT0lqMlE2aFFQQmdjQVRSUTBMWkNudG4rSFNXR29HUS95Z0xOUXI3R3NjWnQrZ2FSaEtqOWJzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 101,
@@ -1527,7 +1528,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1573183881/23394516221?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1lxZTV6UUVYb3RlQWRpOUpoak9scnNpV09QZlVQbldjc1E4M2U4YWRDbGNhM3c2ZFhqdXBaVmdyaXVhUjRSbFhySTNiSU5kWjZMQVBveCswOHpRRE1zdnNZNFdLc3JDeThobGNjQUxJb0F5NjdFMmhUNGdTNlBSL2VpVHhxK2xzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 102,
@@ -1542,7 +1543,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/832040275/23095679991?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWVQMWpXRHcxcklXLzV5NmpUU1dmR3hXSVRXak1RSTZHcWZTaWpqOWFWekxqYldTcGpQNVJET0dTLzY1VUh5QjRYa2Z5K3R0NG0xdmM3ZVhHUDJaYnNWNU1DdXBRaWQzSDhJNEYrZlpQNnJ5SDdoMlpDWHNzalBNaTVUN29FWlJRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 103,
@@ -1557,7 +1558,7 @@ export const productsData: Product[] = [
     "location": "Sergipe",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/415835973/22193541398?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmluYlR6bzY0VHE4SHVGL1FJSEkrVStNQ1d2VmdsQ2xmbTZMcTJHNFg5eWZJWnVaMTY5cm1uSnl1STIyaTVId2p5TXpabXRSRnZMMFExNjYzRzdnUE5oVmhzQ2J6R2VKbjM3VUtyOXBVMHpNYnpjYzBOVzQ0QTFmMFhkd1laeHJvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Automotivo"
+    "category": "Moda & Beleza"
   },
   {
     "id": 104,
@@ -1572,7 +1573,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/359168917/20999203046?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdGlpMkVjeEFWM3BNUDBNNkdHSFFIK3NzSWlHdnYvRGJNRWJ6eG82RFltZ2NSRjB0VlZTNGMzbktjdG9tdWlhZ044MmhDUjdibDVvaWM4Qll4aWhISzBQdE5aV3QwUzZSclV5MTBNQlUrN014azZuZ2FRaWJFcmQ3QjJjZExWemRjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Eletrodomésticos"
   },
   {
     "id": 105,
@@ -1587,7 +1588,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/346235717/23492820774?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3dIRmZia0p2ODRza05FZ0lhajN6MllEWmVOTFAvL3d5Qm9SWm9lYStNZDg3aHRWS0Z3ZWo1WjFLL1F6OHF3aVFhTXFoVUJJTmFiZ1JWNm0wNnpIZ3pzY3hxQzJpL0Z0QTM1TVM1b0dYaHhlREg5YzlmMmpaZ1JVS2NpMEZ1a1R3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Pets"
+    "category": "Casa & Decoração"
   },
   {
     "id": 106,
@@ -1602,7 +1603,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/691142802/23698091239?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc0dFdk1SK1pqQk53VUlMVy9IbDBCQ2o2MkhJalFDRkVnZEk4TUlITWlUT1lMN1FNbGxIVDZPYU8rWDgzMGM1MDNIVUJrMWo0ZXl3MEs2bWpFVU5vanF3UThmb1I2bStWOVpzSFVIWTE5c3Y2YzNPTit1TFlSQlhmcjhNZlNZNVRVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Beleza"
+    "category": "Moda & Beleza"
   },
   {
     "id": 107,
@@ -1617,7 +1618,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/594157579/21599248399?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdHRUbktHK2ovUWZRS2NpeDZlZDdkZkJKYUhIWFgySnM3UXpFVDdBeHU3K21jbFROMHdxRENzWDh2TnBzcE5NTlZ2b2tSbVNvWGZnU2pUMkQxMGtoSWhKYnA1Zi9ZSE5GTTVYMXBNemUxeTdWZUpCdkRWZGU4NCsxb2ZCQ2o3cnBZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Pets"
   },
   {
     "id": 108,
@@ -1632,7 +1633,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1177903362/23498814546?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN3R6clRXek84YVRNMWhSeW9MRFNFMlFIa3lWOWFOZ3FaZFBEVnB1SVVpZGVqcTJJbEZoMVhGSU04TjVTMTZlNXIwbFBmZHU5VXY4U2RVSEZGTTRUZ1BJbzdsangrYStQbEttR0hyUlBJZHYxTXIvMEVydDNXRVlQT2pTTTNJelhBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Casa & Decoração"
   },
   {
     "id": 109,
@@ -1647,7 +1648,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1340752713/22998068286?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN3pobC9yczJXSEF4NHNHYnBkK1VJeEdOUEZ2MEw4OXpjMDVuK2FTMzhTcFdzeWE3V2NQOE0wNmhaLzl4M2lJTWJTUDZxYVZCa0k1d0lVdkFrb3MvcWtFeEpRRFlaOVJucjFEbnAzbW9lL2l0SDlUUExTaEtKWU1qYzBTYThyL1YwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 110,
@@ -1662,7 +1663,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1314243679/23698941051?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEpRL2FlUlcybzF4QXBObW5MVjVGZHEwNFhNZEx1aXoxR1pybFZpbjgxcERBY2R2NThmb1pkeUFXSzJyQnlKQ0h3eE1jZU9xYk1KcjJ6UGJvV1lxL1NoZlcvK3dVbFRJVCsxb3d2VnNOZXk0UnYwdWFGNHFnd0QzVGY3VG1RM0dRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Moda & Beleza"
   },
   {
     "id": 111,
@@ -1677,7 +1678,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1429973941/22794670538?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNGhEWlZ5Z0VBbkhrTnpUVldDQzBwTmx6Ny9IbUcxbDkvYk1TRDN4T0M3VmxXYUYwc1dwUTRueCtsdDFmMlhVaHFPeHhCdFV2c2NyRFl2bXZIcS84bWlJU3JYTUloanZYMWF1ZGovc1BKL1NNa1VGMEhJUitPVm5hc2hwbHVybG1RPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 112,
@@ -1692,7 +1693,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1527606931/23198815933?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNHV6MnZ3ZU1ZWjZ3eGdVVlFiV1FrRTQwcmVJUGVtL1ZOWFFhSG1QTXY5eHcyNkxrRVNMdHlWMUY0YWR6RkxDR3RpS2RMbjdzdENOSXNFSmlsNHJadmxVYkJIaTg1cVBsMGFqR3Z3NVJiQTdPQmo3MnVhSWNwY3djV1lBNGhFV0E4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Casa & Decoração"
   },
   {
     "id": 113,
@@ -1707,7 +1708,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/552958714/44110578765?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1VZT3o0R2xsMURocnROd2hzZzltZ0hLMUc3dnRzdE1wc0tTLzZPWExqbFhFSjJOYnU2aUtOeDN6Wng1MHpjU0JTU3k1cEk2UzFpM1IzRFJ1MjR2MlNvbTE2TlBzVlpZQ1YxMjRtZE9xVU82OTV1N2c0NXRLKzlLQ0lZcDlnZEVRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 114,
@@ -1722,7 +1723,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/407952755/19198262974?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc0NTYzRvWW8yNm9BTzN0Wm5rQ0VINHU0Y1dQdDBKSVB1NmhOTGZleVVMQnpSaElTVkdnYUo5Ty83bnNNRWFPb2c0MnJaOFUrcmh2a3pkK2NaaHZQUXRWelZPSEJ6NVNqL3dkSjJhdE1vd2x5MmV3L1FwVWU2d082RlhEWWUwcFZ3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Casa & Decoração"
   },
   {
     "id": 115,
@@ -1737,7 +1738,7 @@ export const productsData: Product[] = [
     "location": "Santa Catarina",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/322387387/21034795993?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdTRramhBWHJSZkg4a0JzL3Q4eEtSSlRBNUZnc1NvRUZyTGpVcDA4N21uUStKdHg0TzRvVUZiRmZWOXpzcW9xdXlnRWtCaGhoNTQrSlBYQnozYm5PODFHZmtSTjFaSm5PQXpLd1hDVEJNcHY2dDhjamtKS001alNhYThYYnNIZzVNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Pets"
+    "category": "Casa & Decoração"
   },
   {
     "id": 116,
@@ -1752,7 +1753,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1060693413/21997304330?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNloyRXJNK0dFZFZ1MzRDVXhpYVFrVnEzbG5PR3pTcGUySVZ6UUpDWmVzNmJoWUZhb1NjeXBjNmtGVjdqOWVyanEwVC93aFVjOU5aQmYzb0x2SVNuNkhEZ0J6VU1xZ2RDSTJrdTQzZWdXRFgzSGtPZnNZaWt2RDBodEkrOEdFQldjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 117,
@@ -1767,7 +1768,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1280891274/21699886642?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWNqc0xWZnFmQTlhNlJ0b1RiNGNUSHlna0VOSmRGWTFXbWJoWC92ZVpXeDNVbjZFVGtXS3R3ci9UbGozVTc2L3Y1UkExZ1hOclBSb2kvMUNzMk5zZ1Y0V291S3QvOTA3NkJNWG54elNUa0JaMlFWWURRSEJDekV1UnpMbUJ6aTB3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 118,
@@ -1797,7 +1798,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/785152897/22494372775?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3cyYjFINUVxWWtveDdoMjU2VXN2eDlXSXhTM250OGtDUXZoeDdIOWFpMmQzQUYyaHBEVUYzNmVVenNsU0dTV0Y0YkNDMHdEbllnd1NKbGhFZXFZNUtHUW1UaGY1a0hKNDdmWHJKWlBmVHNZMW95YzFieHlvZnFFOVpZcS9GQkgwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 120,
@@ -1812,7 +1813,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1595320313/58250495324?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1ZMd0hoWWdZV2M4ZmtCcVRONXpQdjFBb095cDZzZVA4VFVVMmZOL0p3cy9XOXNNZ3BQKzJUR1gzaDNhdnUyenE2NGFQTkppMWVlRmN1RE5XcEVGYUNwUFlzUzR3b2tia3Y2aDFMYmFsTDU2UGlBd0pkamNpYm5MVU9XZDg1dGhzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 121,
@@ -1827,7 +1828,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1446736568/18299653957?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEdoZnJQK3J6MXpCYllXdytGNVFrbWtYenduOGV6WmV6MTZQUTBwdGVUWUl1WDRuRk1RWWFwTDhJcUw1b1MvOGdBcStmRHNTYjdtYnR2TE9DWGpZRFhOT3JtNEFFYkczYVpscU8rdmdlQ1BSTXF3VFRZSURjMThudEgyRk9DNmFRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Relógios"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 122,
@@ -1842,7 +1843,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/395166866/23994387054?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWhzaWc2a2loNG84RFg4TDM4Qjk3ZnNiOE0yTS93TnpSbVlsVktvM3I5ajlHdGFKTWVPb3R4SXdkU2JreDRaS1VpUnN0dUVTL0Ixc0NiNzNhaFp6QXAzdkw0Uy84UzV5TlEwUHhaZTBxZy9JWWJTcUhZZzZTVUpNMmFZajRiMmJZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 123,
@@ -1857,7 +1858,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1550289868/41506401000?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVlabFNqaXpwaEpuOUdUcSt2ZEcybVVOWjFiUkJvTWI4M1JaaG1TVGRic04wbWFwQWNZUU1LL3p5QnRrTWtmNkdZT1RNUFdoQnRaTWQvZXZWcXpyV2tiaE02NDVrWXhjVzVvaWJqeHU1bGJ2SExmZ0VwT1N5cHFxREtRNHBOVmNzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 124,
@@ -1872,7 +1873,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/300779622/22591754767?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUwvcmJtczYyekk2cWRKTkxoc3BMRmVXeWwwQmYzTGcvbmV5V1FHLzd2QXphdno0RXJ1eHJ2am82SG5VcTZaWVppM0MvNFVzUmM3SExSUHhETmozRjZTdEJOTnBwVVB6WDBoRkN2K2l0OHl6aGhJeVIyU0ZBNTVrRzR0OEIrYjY4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 125,
@@ -1887,7 +1888,7 @@ export const productsData: Product[] = [
     "location": "Santa Catarina",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/445163047/19997613607?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdVI0SG95UXExcFd5UWpNZ2Fib0pGOWdEQkxaM1BzQUVkUnBZNFZhQ1ZsYWFpa2pZUXVhNVZDb2JaZUdiWmcxRkRRZlVNYW9oTkl5SHNDdWlXVFRMK1VNa05ESVNJWEJkK0FRNEUxVkxJdDExdDFnV2pVRVZsZHo1S1dRZXo5ekU0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Saúde"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 126,
@@ -1902,7 +1903,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/710045240/23291901024?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdGxuNmIydlJtVkR3L29Qc3VBTVBzcUZqN0N1K1gwNU5kM1FHN1A3YWQ4M0tSTnRMMG5JN05YcUlhaW1xRVBUNmJVMjVxRUpWaGszOEEwUFNlUk94dVdHNXNEL29FTTc4T1ptQXhPeDFuVVR6cUZaL0I2Rjk3VENBYUpVd0tBS0lBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 127,
@@ -1917,7 +1918,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/593088966/23118736011?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3RIeTNoVXZvVDdUY2VlemdPWURwVmlqdXVwRGswTXVRQ25wMmdVVFVVK2VrMmgxRWNNWGczWnNLMzRLMjl4QjJmd09OZjVmY09vTjJlbHpWQlhPaXVCcU9TYUVKeW1YcmRxeFpqZGxNMEFnUVl0Z2xTdURUcExFQU9Ja2JDc1hZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 128,
@@ -1932,7 +1933,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1262426765/22697573161?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNFJWTjExaFdMaXlqUWNhOHVUQjBmZytXSGxnU2M0ZHhReGhLVmcwQVliTjBaeVZaZUVyWXNJUDE2UnkyeFFGMWNma1JMUWU5ZDNOdEZxY2piY2lJQjJ6ckU4eXlGUW5aNHJyNkZiU2YwZmRoa0V3RTZyRjdhdzJyWU0wMjZyN2drPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 129,
@@ -1947,7 +1948,7 @@ export const productsData: Product[] = [
     "location": "Espírito Santo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/340477685/21199651355?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3hNbUFEWEpWOUwxZnJxYVlIcVhHRmFZZHJQL0VQMHoxc2RzUmY4VENyWG52QWtjV1JoSFBodUR0R2FSTGpmVlVpM3JTd0JqUnZEc2FRMDcycFlsd3JRdUFWd2ZQWmRPRWtXcW1JQmF5V0s1NFl4TmVhTGtSN0dBT0pHd0dneCtZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 130,
@@ -1962,7 +1963,7 @@ export const productsData: Product[] = [
     "location": "Internacional",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/380553543/20349993162?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQczg5Y2xVckNMN1Yya2dFSU5ibHc3WCtiWk4zc21xbFJGSVZkZmdJODRCOUg0bHVBQzJnRmdVVUFFMU5qQ1ZNR1FQNEY4WnBPK250TEc2eWZHV0hvRmk2WWtldVQzUE5UVWI3Y2l0QVJWdTVGTEM1emF4S2I5U0ZhZnI4ZHQ2V000PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 131,
@@ -1977,7 +1978,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1423372949/23998685581?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNGhEWlZ5Z0VBbkhrTnpUVldDQzBwTnpUR1Y3ejZmbWI1TmdqTHBDRXpvTDhRaXVQQld1U1o0QXdXcGxyWHZuN1N4UzVSTHBZN1ltMlVZL2NKWWhqQzdiTlBaOGswV08ydHczQUt3emxTQUpwbWFGckVhNnJjdmNXaW5EdkxPeW1nPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Casa & Decoração"
   },
   {
     "id": 132,
@@ -1992,7 +1993,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1284751573/23194236443?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWNqc0xWZnFmQTlhNlJ0b1RiNGNUSFpsOXpWSFYvWlJBQk9adVd0K04rc0pFUDc0ZTVkSlR4NzkyYnV3WkwyNzh2QnlPRjNNellMNC9WV3F4WCtGRGFjNHVncXF1T2pML3U1Q0lxc3VKc2tEc2RjUTRBOHhCN2xGZFkzVEVBSm5NPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 133,
@@ -2007,7 +2008,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1240652277/58251519281?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNDlWUHdIbVgxdXFUSEVZTVNaQ1VxNmhxTC9YRFZCcjJKZ3pOZWNZRWd3UUhyYW1ZQkFrOUlWeFdyV016KzlLRUtUVUo5dWlWTjl2NzBlWEdNZ1RSelgrUksrUEpxS0RXSWpxbHJsTWMzUy9BazJDc1A5VHMwNjFxd1I5bDhQNUlFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 134,
@@ -2022,7 +2023,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/832040275/23296219257?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWVQMWpXRHcxcklXLzV5NmpUU1dmRzNTbFNiQVdOSElJT2c2TlM0RnR3ZlBZT1NjT3pDVG9PZEJoTklqL1RRUXdvOFQrR01lNFA1TDUyQy9iUnFiNkpxYktWdVhBazRZdjdsWkxuVzNJQXZUYVFXaDl0Qnk0VGhXby9sdXZza1ZzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 135,
@@ -2037,7 +2038,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/883941882/22493498986?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdkc0ZmJkd3hzYXpGUldKRWJJMCtyYmxGbFEwUGoyVnNkczRZZitWRmhGVHlmbTh4emRUb3pjV2NQY04rdys3YkVWQ3U5NVlVbDYyd1k4d28rYmRpSnVENzNvRzVQU1BOMnRlWnA0cVhyNEliQUJoeG5PV0gzSDRBQlJHYWNLM0FZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 136,
@@ -2052,7 +2053,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1252771078/22493661023?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVkyaHE3aUNyNGd1V0k2Q3RjRFRaajY3aXoxRTdOblZwamZxUzdDdWNYVlJSbmdQYzdSZWFRMGMvNytSNlVtSjNGZ0xXbkgvRGx0dU9PcDgxbjdpNmpCMWJ0QTI0T2hycFlPN1hrK25hSEwwdUdhaVFoRk9yOVdmeHV2OWk2dkFBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 137,
@@ -2067,7 +2068,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/332059670/23697300428?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc0tEbjUyVTB4cjMvVmtxbnRCbzQwL3FJZ2Uwazdya2hPeUx4akFxbHpsQW9lSkxOTWZMMWozWXg1ejBMVUhGS2RyUWVVZ0lNRmduNjRkdXZqZFBUdjJ4TzBGT0Q4VCtkd2I2WEIxNS9yTE1BQ2ZnWXFLMDE0K21zZVhuWWI0TzJVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 138,
@@ -2082,7 +2083,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/378736432/23837888809?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdHR4N3hqTUVpcFByZHY2eHVXU0dPeUFNSzBTVE9PRWFnb1A3eW0zbFJXOURyUHk4Qk1tNUxVVzIyaVdnN3RFYWZZY1FMNU9rWUMrSFB4T21hM3M1alVta1VJRHYyR0V1YTBheGFGYWh1TGRmNDNnZEMwZmxuTEJSZ2FqMFJpdUdrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 139,
@@ -2097,7 +2098,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/763085885/21397806660?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3JuT1pJaFNLQ2F0SkZNVWpEUThXTldDN2lhYU04QXNDOFEyVzhQYkJyVXVhRHVuS1IvOUpyWnlwbEZaQTNac0lLTW1mTlZYaXVSNGpRZXE0Tlk2Rk84OHNWUlJFbUhmRHhGVDUrbTU5UmhvSFZqNWdGL05GUnVXM3VxUUFwU3BvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 140,
@@ -2112,7 +2113,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/747680766/22093119729?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdnI3Vy9QUXVuRG9pcmFsc0V4K1hDZGhYbHRRRG9LOVlpVEE0WG11RENoR2QrZXZnYTR4dlJUWUg4YXgvbmdtdXhvZ0hhQjM4YjREdWF3cUZJQlJyLzQzOEpydVZyMHV2ekJDci8xSllRcEtqRTdCd0h4dTdLbHFZZGRxNnVRcy84PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Moda & Beleza"
   },
   {
     "id": 141,
@@ -2127,7 +2128,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/413049152/23994621968?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdGRUUDBVaThIN0oxMGI5bE96UVkwaGtTWEpPL1I4WkdjMTAyODh0RG9uakJzWG14TGlFSUxuOS93amdyMWFhQ0hGVWc5VXhGMjNKMkdNVHEwUENHcTIvdnRRNVVkQS9UbTM1cXl6c3JONnQwdWJYQnlpWDZzTE1qVkVlZFV0M2VrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 142,
@@ -2157,7 +2158,7 @@ export const productsData: Product[] = [
     "location": "Espírito Santo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/340477685/23198354468?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3hNbUFEWEpWOUwxZnJxYVlIcVhHRkxLQ0JjQ3VUYVdIeVZ4dTRWTHJEWXlFdFNtRytIa2gwanFGcnhSa3k3Zll0Qk50b1JMY2FqbDhZSHM3TlVsc3J1aDh6RllpVzVXcDNmNWhBb2ttYVp1d2J1MlVFbTQ2OWcxYXN6d1Y5eHF3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 144,
@@ -2172,7 +2173,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/392003162/19899562262?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdklNTFkxMDJUc3JVWE56eWdmR3ZGaDh5MktNY3BIcWcvMy9vTUp5UDBFRGlGUkNMLzdQckEwSnp1c0R0Z1R6UzVVTWpoQnRkWXQwTEN1dFY1dkNpUE94bFRCOCt6a1VPbmt5Uks0NmZxZFhzMGNmYzFsTjV4bWhWT3dMQkdTdmNvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 145,
@@ -2202,7 +2203,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/222975446/22394186914?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdDRPSEhqTWdkaTUzc3Q0U2ExLzgxbWVVLytXZE1qbEpKSUdyVm1rWis2NVlBRTIvbjdpSkNhdmVUSFNRZlA4SXowSzhWTWZOYXQ5R2dyQTZGejB3YW5sVW03Z2JuR0hJWmNneU1kbDlUdlVYUnd6SjZLLzdTZTlwMGRCaFk3TkpnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 147,
@@ -2217,7 +2218,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1393520997/41819218483?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN01mNmhVVGFUVHY2TURuZWFZQWt1dWZYTU5VZDRhWVRESWZIdGY2aWhXZlh0My9ZaDN3T3NIQ21ZUGZxdmJ2Q2FZVjhZVDhsV3NLVWszdzljRXJQZmlVS21Jb3hVckFNOHZJOEh3WE1RMVZrS3YxYmNBc0VjM0tYVWtiaXI5QzQ4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 148,
@@ -2232,7 +2233,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1220447560/21798266830?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNG1aNFMyQ1B0b04wNGNvN2huVEV0YXhNTkt6ZFA1Vy9KS0N0UHdtYXhQYVRDMVJsaWNFdlVrZWh5OXl2M0MwbWNranhKblNWYU5CT3gwQktuOTFRVW5qK3lrZWQ4NlRDK3dtd0E5UzZRL0RoTmcyaVFkNzNRVlZmOXVmQk9YZVRvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 149,
@@ -2247,7 +2248,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1543234138/43254372497?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnVJbW5vUmJMVEgxNENmWlJITkRXK3ZTMmJJMUp1amxiU09aZXRpZmJMczlRZlNIcDRjNVFxN0pIczZGUXBvYmtrL1VlaWp2NnBXajI3SEJNSkZaNFo5cHRzMWVqb3BjL2dROHlULy9ERXo5MEQ4U0ViTlRlRHdnREg4LzJsMVI4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 150,
@@ -2262,7 +2263,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/291265983/40708740721?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdjhEeVZsNEJhQUtpVlY4bVpKdW5hcFdEMFVpTjByL0NSaXVPQmdiVWhTVDRBV3VROHltSnFJWXQ4QTBFbks1SWZUUTJlWFJ5bE9RZ1oxUERSMkdCY3hLTEZ1bnlsV1pBVDV6a1h5WHM3dmZYWkNIUXB3Y0pvdVE5dlhXVlZoVzZBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 151,
@@ -2292,7 +2293,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1296642221/22993672474?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNGE4aFpPSitIdGlRMWhhWS8yRkUvQ0xpOTlrUTBoVEg5dHNPWUN6QUNpNjdhY291Tnp5SnRaaWJ6cVNnWFpGUFlJTnZCNzF2KzFYeEF1ZUg5aFJwUXViNlEyUFViR2RqaXpybVYrRmtWTWNYOHorbzhCQmlYM25ETnF2U1pNbVpZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 153,
@@ -2307,7 +2308,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1103946075/22597120770?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVRBdU9zazlxT0l6c3VUSUwweHVJRXVlSWMydFJVcDdPdUtkTWtYb3VvejlsQkNwQjlLWHMrTEt3YUFKY1lHczkxeHZUNE9xYXQ1b0swZGRibjZqeHRpK0NpbWgzVkZnd3o4SWtQYUc5OUhBVzQ5WWhFbm9ybEhsZHB3WEtSZWRRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Eletrodomésticos"
   },
   {
     "id": 154,
@@ -2322,7 +2323,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/470756531/22299158078?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1JDMWRHOXFVQlVaZHVaUlk1TFRMRWJXeG5pYXo3R0hFRVBCMkVLZG9lVlFudzlTYVNieWpSaGcxc2g0aGFWaGdaYXZYeWk4ai9ITjJyQ3BON0FQVjlOMnNJUkRwNGZsQWF6a3FXc2NOZ3d4T0w4SDQ5NEQrSlFjWDJFWFlZNHVRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 155,
@@ -2337,7 +2338,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1042165059/22093632236?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEdUZEI0NXFzRUFLRWhUSWtPTm1ZR3dSTVVqbGpVMHlUNWFpOEhxRXArTmc3ZjQ5Z21udXEwdnl0TUdQUGZJeHBKSVlpZXhvbWJ6aHJqWUxUb2FFalE3ZzcyWlhsUXduSXdhY0ZXbEs4U2ZPR2JVVXJoYnR6UVc4eURyQXk0YVk4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 156,
@@ -2352,7 +2353,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/389806204/19274901686?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUx1Ui9IVHNkekQzSXZXR0Yza1NRRHYrMG13US9aVmdFRElPZkxRc0RQUXZXZDVjcEtCcVZ0WXZSV29jaEcwZ3NIQWs1ZDFOa095QlRCZVh0dEpSbW9WMUtHMEJLbUlIQ3pmRFd6VlcxMDBaOHh5Q1RTOUZHelhYeUY1anF0dzdrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 157,
@@ -2367,7 +2368,7 @@ export const productsData: Product[] = [
     "location": "Santa Catarina",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1320660045/22098945420?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNTkrc1ZUUkJCVzhDNG9GeUVWU1NleFdkSTdpekplVUV1alF3N1VQTGpwMFRXNzhaaERhMGJzOVhIQ3FGdEVmZ3d1bDcxenZaVlNqQjA3VUdFS0RmNmpFMU1PVlpOQnc4blYvemxpdW9aL2NVejVIUXpiQzdkOStsR0xxeUhEV0t3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 158,
@@ -2382,7 +2383,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/359168917/8020679826?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkY0tSanlKZU1BU2Y2RTJzOS9neUtnZjMyQXRCK2diUnY0TzJKZFZsMmF5VnNuaVd1S3VXcmhSbDhUaXRXcU95YXBWYkVNMGV1L0k2YlFaMVR1dmlvMVlnaWFKTWdwd1UvdDdFOGludUVnWTFwQUhhTTBJdGRqYklFK0tHaGR0aDA3TlZmanA1UHJXYnNlVHI2N3JpMWR3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Eletrodomésticos"
   },
   {
     "id": 159,
@@ -2397,7 +2398,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/944725778/23892665618?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmdhNGE4SFMrZTBEWTN1Y2Vkdld5WWJHMWtyQVBMMER3c1ptbytrRC9QbG5XRDhtSHE0NjYvTGc3SkxETU9USU5tMGpVNXBrcVFjRkovV3pmaUhaM3VGdk1IOWcvVytTQ29qTitQUkt1M3NkbkFYckVBcnNHNzFyRDNqOEczYTZNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Automotivo"
   },
   {
     "id": 160,
@@ -2412,7 +2413,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1136378529/18599265044?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNkRpeEVpK3ZJVjVmMzFMUGRFOXVoUlcwaDRTeWZ2UEY3anFjREllb08xU2UrMWw0SWhnUk0xa0M3MVU2V0puSHFSUUdjcWtONStVSzJxM3pJQWlPVjEvM29ReEQrRkxYdEpMWnNsUnZGdGczQklWVW81SlhJN2RTVmloOXlTQlJrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 161,
@@ -2427,7 +2428,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1616739814/22894362936?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNmZRMXpFdjJvbVdrY2I0ZE52YXdKUHRkc0dGNjVEQ1gwWEYvWU1ONkVIc2FmdEZWMFpFS0pQd2dTeDdiMFdyMlZGMHF0cVN5TWg3WnJWT3ZZdWFnTWFzT0VtMnNxNmJIRXY4cG9zZVhENVNVMTkrRUZORU5PRUZFY0VGazVycGg4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Bebês"
+    "category": "Moda & Beleza"
   },
   {
     "id": 162,
@@ -2442,7 +2443,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1264013824/23994308883?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNFJWTjExaFdMaXlqUWNhOHVUQjBmZ0VjUUFNazkzMmgrMlRaY0RlZ3Q3dTQ1U0VRaEVqY2V5WHpXT0J5Wnp4T1JUWjFid3F4V0t5VEdTdTF1QTRRaHB1TklCanJnWHNjZjlPR01ObTBENWxjSVVPbnJWV1VTZWxBRms5bjBsUkFFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 163,
@@ -2457,7 +2458,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1098377122/23098368787?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNncrczdna3lWdHlHQUREdDZxTGQ2cjJNejZ3R0RSblBPUEwxQ2MxUmNickpmaFdtT3JhcVJqSUN4ZVpMMGZacExPMDVKbXFSUWEzY29SU0RDa3d5UUdhNU4vdDAyRWFzdUxabjVuVmtnRUpYNXpIZmQ4TlJmczNsUHZiU29sbGJnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 164,
@@ -2472,7 +2473,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/811924245/23693563192?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1VFM1d6TklWZjJFVjFIREtRUzNiMm9TekdGMldicnArZUpqN2NIbmpEcjMwaWxBSkZxU2RHbEh5bXhsbDgvdjlOcldlc2hkNlBPdU5rNHBJTkxKTUZ0ZGZLb1RjMUxBTnBOK1NMeDJjUTB0MGtpanBWM2dJbEhGOGxuYU5ubXVjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 165,
@@ -2487,7 +2488,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1404215442/47550807236?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNFhESTRDay9qVlFVdHRubksreThIRXlTc1grT2x5bmQvdE9sd0xMaGFEK1VCY3hPSDUxOFZFcHMvaHRSQmovcmxCTmJWMEppY1NoQVZRVGVhcXBuMUJKUXNlNXZEQ0FxZ094K3Z5T1JGbm5iN1duSzY2RzhDZ2tNTU95djA2dnY4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Moda & Beleza"
   },
   {
     "id": 166,
@@ -2502,7 +2503,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/422764082/22194331598?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdU5IRjJtOEhBdGY0MEtERSs0VmxydlJneUVFZjJ4dWQ0c1FHYWdtQVB3dHZrVk5DdWZjMWZ3UlZIYk40b045WUlHVWVZZTdEQmlUckFqUDJEaHNlcVQ0VEx2VEk2b1NyQU82WHc4R3E0Q0ZlcS8wUnZ3L3lFbmZFM1B3bUVQRDMwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 167,
@@ -2517,7 +2518,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/832036467/20347984785?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWVQMWpXRHcxcklXLzV5NmpUU1dmR20zQ0wyRksvWDRlcDVVaFJVMlkxYVA5cERZbzNZYi9tNzNHc3pNVW5wQzA3dlF5VENCOGkwQlJVVkl6OGVqS0pWL25VQ3VGZ2RTWVJqaEwrNk1abSt2cWdLRU9NZitSdEdKWjJlYXVTZWk0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 168,
@@ -2532,7 +2533,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1398191070/29028867072?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN01mNmhVVGFUVHY2TURuZWFZQWt1dXdJSFlTVytVaXNkaERjUzljalU0SldydVkveml3am1nUStiYW5UNWlDQzJRRnA3U205dmdVVjNEaUM4KzFzRFMrTmVtZzd0d0ZMSUNMa3Q1bFY2WElDWWEyVDdUcEYxZ2t2cVZTN08ySEVrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 169,
@@ -2547,7 +2548,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/315910874/22998765570?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUtqUWtsazBNUFhrZzVnQzFNbHE2OWNkNzFXMEhIc2EzTlhWRzNyMEJ4NWdsZTRJaWVuMkpuZlh5ZTZsNkJPcXhmelEycFlGYUR4YVN5OU80N1dhQ2JKcUJJenFmcnRCVVhRUXpzOGZYWlhibElVZlBnYXFoemVyVUtNUWVOS3BjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Moda & Beleza"
   },
   {
     "id": 170,
@@ -2562,7 +2563,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1168608130/22897685273?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNlBFNHVhak51MU13cGRKeklHTm1VZXJSSGVDS1ppZWxxdm54dktScGY3TTZxNC9YNm8wQ1diU3RBbzBhTTA3aXE2MWZITzdUNjh4YnQ3Q0VDYVhuZXQ5UCs1bFNLc3d1SC9QWEVYL05lWVRnVURmUkZXREkxUmRQKzlwVy94UFQ0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Pets"
+    "category": "Casa & Decoração"
   },
   {
     "id": 171,
@@ -2577,7 +2578,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1613179517/22294375853?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNmZRMXpFdjJvbVdrY2I0ZE52YXdKUEVzNG1CVmJLa2FLM3h5d2FPZ2Y1MmwyOTZoYUQ4MWJ1TXZackErZ0dKK1Qxcm82VWFYZElqRG02TlFYby9VNm4wSWVoSnY2TC9GR0M3SGZKbWp4RFR3MmpvTFJsR2xsVmE2SmwwWVh5Mis0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 172,
@@ -2592,7 +2593,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/476936005/20797274812?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc28xU0x3dkYxSUMwaFJ4dC9vQkJFU2twS3RJcUdKRjBmUDBEQmFxVWlJUmxSQ20wRmpvZ0ZZQk00eUc4NTZzMGl1U2FFLzc3eWJHNGU0RUZkNzREaHBWOGM1QWxJOFdaRUpIOWtNT1VURGZGdVBjYkZFQi80WDMwSzVxb2VBczJ3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Saúde"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 173,
@@ -2607,7 +2608,7 @@ export const productsData: Product[] = [
     "location": "Espírito Santo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1464833466/23594534540?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN2lKbXJsVS8yVjMyc2o2ZmdESXoya29LYjRlK2ZraDgyTlh6SUtuYlM0MTlMUnBwMS9CM3k0YTcxeWdVdTEvVlp4WWZsT2ZueUZ1Mmlmand4SVZIekR3WkZhaWtSNzFaWWJDZVYzYXFYMDAxMkR4RTNnUnhjYXFtUG9NaGdGQ3pvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 174,
@@ -2622,7 +2623,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1531826276/22694066991?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWNkaUJHS2dKRXlBdkd2dG1mZ0psUHNjaVMzTUtpOXdNUmJYVlN5UEoxOFBrTUtSM0hXemxhWHhvaFdNSWdnYXE3UEpvVHpDSldubnBzKzVZUzZOdDR0bGp0RGlzbWdBTUY4YndvMHk5eXNHeFdRZzRYOTRsZGlkb3NYUDJ4MUM0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 175,
@@ -2637,7 +2638,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1394198147/20099675334?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN01mNmhVVGFUVHY2TURuZWFZQWt1dUdsNHlaMU9LcHo3S0FZSFgvTG1hYk1ialRCMm5UZVR6WFk1L0lDZzJqVjhPWVVaYm5RbGRVcUFKcnZ5L0l6U1RXQjlxSWFwaWJsQkI1UlVQNGw2MlU5OXU5QkhUVkZvS1pNTEhmTmlubldZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 176,
@@ -2652,7 +2653,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/583326427/20997919456?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdC8yR1cxcmhSZ1hoSmUzYkgyU1NsTWNFdlA5WnZSaU5aVHhldjNDalVrZUNlbTZBb2xyMjY2Z3hlM3I5RGtLeTU2N1VadTdoNDZBZnc4K2tVZEhEZzdndWdWS1dFVDY0SHN1VGRoaUZrajJLREl4SlkyODNiNHNuT0FXcVRiVXdzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Moda & Beleza"
   },
   {
     "id": 177,
@@ -2667,7 +2668,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1108921660/22192647025?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVRBdU9zazlxT0l6c3VUSUwweHVJRVB1WEZZZGxKS1dqRHFFNVl5WDhjcW1HdjkxMFo5ZlhMamR1N0FuMVJ6TWE2dnNVNml4bUJNd0tPQzVzS2pyTWRaVzYrM2RqRXdXZnM0WHRoZ01ManlhbHdiQmNad2V2VFN3R2dHb1Z2OGJvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 178,
@@ -2682,7 +2683,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/300692985/18699848648?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUwvcmJtczYyekk2cWRKTkxoc3BMRnJsRnFPdjlDQ3V4bjUvQlFXcUgxc1VjY1l0VGpHMXdxeDgyZ2xsMW5nTU5nUUpod3k1cjllNVV0aFlaTVN4bDY4bnhNdHhIMkovbnl3Yi9mNG42b1NPME5icGVGVVY2eUltcTBnUkJmUVVJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 179,
@@ -2697,7 +2698,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/617614410/23394523519?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWM2TjZYZ2YxV3NTY3didEJVVEExUnpmUmNjaldianRVZ2NFaTh0VlRBUGl1Y0FHREV6RmFEVU90Y0pTMWh2U3VIbTQrbGdBVkFKblhZdUpweDNxNHREbkxZU1NJZzROVVA2Y3hYdlM0b2dMNjhsWllWUWdGZVVTbFVkWUxWSURZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 180,
@@ -2712,7 +2713,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1040361865/23198172833?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEdUZEI0NXFzRUFLRWhUSWtPTm1ZR3YrcjJSWjZabWFlckNJT1lKKy9SWDBManpLbHl3ZVZBS2R4Qnl3eVBWK1gyVEEyZnpSSDErYU8xUmVNUzVWQjZhL2c3N0NDSjdXYkNLMjBMWlNndEtDOXo3VEliRi85cjRCZHNXQk9rWmcwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 181,
@@ -2727,7 +2728,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1669666744/23394672826?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWtuV3RNZng5UkdXSzhWNjJzcis3SWRCdjZka0pBTDlCRlNkOW9RSkMwRzJzNkRYZHppMThjak8zMmlybHVqaG5xWnVvMkhnMTFyS3hXSVMrcjdBUkxETUtLMTEza2xCSzJyU0huY0pIeVcwcTkxSlZLWkFoWm44VXJqMlY1SjE0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 182,
@@ -2742,7 +2743,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/580059933/22398529479?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQczJBc3RFT1hWMmdaazJvYit4Yk05YXRBeWEyT1ZGNmF0SlA3OUx4VFh3aXhBTUNWa2VRbU4zWlRzT0hXbWxVNmZrRUFiam9Oa3NHT3YvKzJ4S1dyM3ZIUEQyVGpERHBkUEFvZ3NWeit3KzVuSkQ5K3RmOEZqU21ZbFFvZ0xWT1I4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 183,
@@ -2757,7 +2758,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/552958714/22693426012?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1VZT3o0R2xsMURocnROd2hzZzltZ0cxVTliclJEb2wxYU5TaHh0cVF0ZTZIYU5MYWo3dzIvU3huUXZ0Z0JrMWowNjlnaFBZNnZjNzNWaGhuY0cvZGtoY3dDRFNJVURvZDUzK21ycmd0dFpkM0FQOVZTRUFjVVVobURFeEhOU2hvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 184,
@@ -2772,7 +2773,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/898139096/18097390987?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc2lPRVpCRTN4Y2oyNWc2TzIvRVZ0UXB4NzRBK2lsaElkc215SHRHYklBSEJIMkRrSGFtVWNYdVk3cEVXOTJJd1Q1Z0trck5VSUljSG4vcStwd2x2MEhTR2UwNWJmeWZrRmwzOUhzTkVFRDRHVHVPTlJYWnBsZHdOUnRka3hSbjlvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 185,
@@ -2787,7 +2788,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/415175805/22392992790?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmluYlR6bzY0VHE4SHVGL1FJSEkrVU50Y1htemw2RG05QTViVGErRmJ3Y1F6QnhUbDlEcHZyRzQ1cUp5aE5hZCt6d3A3MnBXejFSOTM1YUJRWU0xUFNCM3lwN3o0WkpETGhpMFd6b2lzbnlQNEhZQUVSdHVYd1ZGV2Y4OCt1a3E0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 186,
@@ -2802,7 +2803,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1166391508/23093473183?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNlBFNHVhak51MU13cGRKeklHTm1VZTNyZ3hwbnhOVEpmT3lJc3NPYS9IbWtJNVhGM3FVWHo2c09qczB1WGJTTDZDV09WdStLMzRXbUdsVWRubDlacDdUbTk4OUphUGNvVDBvNWlHcEZwZTZvbWlvTk1JUlVobGJ0T21uYXJFd3dvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 187,
@@ -2817,7 +2818,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1220447560/21699840214?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNG1aNFMyQ1B0b04wNGNvN2huVEV0YXlDRWxab0wyNk1Dbjk1b3hFOEhhNmNSRUw0SDQ3eXhqdUxIWmtRSlg4Y2NycXZsa0xCa3N1b0s1VE1kNTB5M2FRMW11Tm5yR2hQNUJKNmdnd3NGMjQvbHQ4WEdJM0xHRDFnSnVleFN3bUh3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 188,
@@ -2832,7 +2833,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1362617427/26777234214?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNjZxczFjZUpCVzZMY2tOMHBrckhPQ2FyaHZrYkVpLzYrRTI1VzhkUHRNZnY3SllVT3hqMkRseUp4c3dTYzFTb3FmWGVXTVFRUmN3dzBkV29veUF5ekNzY1VVVDUwYWhVMTYrd2R6SFNHMUt1eGRQOFhHYUFhM3BKMDdtUVBMNHU4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 189,
@@ -2847,7 +2848,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1151213812/20999888733?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNUR1WU9sT2ZUZkNjYWh0NDNMRTc4VnFOTXpvemMyUmRhZnZYWk52SzI3a0dNcXQvRmtsQU1RcUdWUW01THpTRVBxam1sSWRRb3Jka1RCeEhKMWhZSEQ4R3p3TGE5OVREdm9qNG82L0E1T3EwMVBHckozNENHSzgxeTUvREhWRVk4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 190,
@@ -2862,7 +2863,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1489659102/26830891279?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNk5ZT1dQell2eDl4bW8yNkZpTjAyWUw0bUc1YnZ0Q3puYURPdzZySVRTazR3OEx6SmFHYnJNQ25FaVVSdEc3YzlHUW5jeVdzdGpDSGpvL3JzMnFlM2NQYzhGZ0tNV0tpMFloOWhPK2tZdlBSeUlVOUJ6dU5iM1l3Q2tEQVIwSGMwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 191,
@@ -2877,7 +2878,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1136378529/23293716378?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNkRpeEVpK3ZJVjVmMzFMUGRFOXVoUnpWV0dyVXRFME5kVlQ0bE16WUFzOEkyNkliWVNWVXc1ajduU1l1NkFIdUhqLy9mcks2VUt4eFNMaTBuTWRySW5PK0NvQU5DUm0vcXp4TWFxaXNramVROWREM1FUK3JOaGxqb2NWS2t2c21ZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 192,
@@ -2892,7 +2893,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1258554467/29535501772?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVkyaHE3aUNyNGd1V0k2Q3RjRFRaanZxVnh2VVhTcTRJREZGaFlkcEVHc3dOS1dQckdHMlJGT0Z5aXhTQTdiRkpxK1M5TjFSUi9LTFBqN1VzUmhJUUxjR05QRFphWU53ZkVPenlBUy82QWZ6d2p3SXlsNlJ0VXZJVkF6emhlN2lnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 193,
@@ -2907,7 +2908,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/395240332/20497996975?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWhzaWc2a2loNG84RFg4TDM4Qjk3Zi91bVc3ejdFSEczRVV6Y2Rhd3BVSUt4TTNXU3BIcWh6OEhIZXU5SFY3Y0xYb3FhK2ZOMlZ6VVlhaHlyR1FQOWJ6bUZraUxKWk9yVi9GYklYNTc0bDdLTCtnV2xEY3hFbTZUODhwMmZSbjNRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Moda & Beleza"
   },
   {
     "id": 194,
@@ -2922,7 +2923,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/832031799/22393689713?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWVQMWpXRHcxcklXLzV5NmpUU1dmRyt3dFh4YUorV2dIMU05Rkk0dk5COEtsWHFCT25DcGNLMHdlQVYyTDA3cHp5YVRqdmwrV3QvRHNRNWZoRjFKcGRpWE50ZVhDRGo0bkxpQW5rY05OTElkK3NWZjJrdVBnV0I4ZXJVaGhyUGkwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Eletrodomésticos"
   },
   {
     "id": 195,
@@ -2937,7 +2938,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/371135946/18237400710?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWVHcytlMHd0MVAyWmtaZk9oVVdIMTVmQWtDcWJzdng3bmh5VnpXSC80aVBUclU2ekNxQ0xuV21qUkIxbjBpWml2aGJOQjJaWis2aXR5TUVsa2FOTHZ4Um5jMjVUVGR6R0RCOUxBSG9XQzB4NU1LczA5NXB2Z3ZvSDRxdkFjSlNvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 196,
@@ -2952,7 +2953,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1258744084/23093716368?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVkyaHE3aUNyNGd1V0k2Q3RjRFRaalgzTTF4WlJQS3creEdGalRnS3FjeFNEa3RuMEZ2em9YN2s3RmZKcVFCRk52VUJqLzFoSlFKb1d1b1pVdlorN3ZVN3lTWEZDeWs4WTRDVHVBa2E1eTVtdjdzZXJwQ3dWOHZOaTh2RGJZRnZjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 197,
@@ -2967,7 +2968,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/552896405/19472058506?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1VZT3o0R2xsMURocnROd2hzZzltZ3Z2dzd4UFU2Z2hOS3E2ejZFQnBqemlxY293YUJ2cG1UTFhkTmVQWXJ3RGxKTllEVHRnQW9paVZJSlp5NVZ6SGt2Qk1oNkR2ekhDL2NXZ1ArbjNRaE1DaGFzL0RIM2N1SkdLa2hxOEtFTG5zPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Bebês & Infantil"
   },
   {
     "id": 198,
@@ -2982,7 +2983,7 @@ export const productsData: Product[] = [
     "location": "Santa Catarina",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/342898831/26088354720?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdnV5MEkzU2hZOEh0Y1JZazlVTEsrYk5MQXNBYTExbDZtU1MyK3krcVpCbmpMbXJkbTVsTHU0SHlES1NyN1pYM01RN01UbTROYkEya0hRbXJkUW9SejNnKzgvNnFoOFIwaHEwZkJTVHBmRmRRbkJXbnU2bnhJeUIxTThVcVAzcC9BPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 199,
@@ -2997,7 +2998,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/231816406/23897892314?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3NLTHBUVFRHcUhSOW1DZjNjUTZrT3B5MkxRajZocGZCdnFOd1U4bjZ2NVVNZEN6WHRtTk1XVUhMaHJGeEhveml5K1hjY3NPVFNXUnA3ZHJ4RkJmeHVEZkQvZi95alE1Yjk5Ty9mR3kwb3owWE9TYnlOUFkwTHJSSWRuL1djVUkwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 200,
@@ -3012,7 +3013,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1258744084/23198093485?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVkyaHE3aUNyNGd1V0k2Q3RjRFRaanFzSWRPK0RxVEM3L3VwMTlNRHhJc2N1eEJXaldXK2lqWGc0YmRJbDRZV21NV25rRFB3ejh5YmlXU0crUlJBdFdJNDBnUGhoRkFCRGlqVFJsY2dFcWwwV25XR0tONVRHN0hVT1ZLRXYrZ0hZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 201,
@@ -3027,7 +3028,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/448670448/58250391299?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdk1FeTJ4bEszSHNSL2hJdllKbDNxdzJycmcvN1F4MFpxcWRScU5mb01wbFk5WTBxTzZQc28xbWZELzZpNWZsQ3NaOG5Yamx4MEhkeWlZZ1VIWmF1K3B1cUVUVUt2ZGkzNlFmT0JGc3FKSXoxTTlXMEpDUzF1bnpoUkVnMEZRVUJrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 202,
@@ -3042,7 +3043,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1032838083/22298151589?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWFpQTlGbDR1SUwwMzcwMjJsL3RRdG5QOXNDTGd3UEhTWm9jdU1rM25ENlVUSUlsRHBZYlJ5N3F4cUxSQWFWQkJuZ3MwVTZwYkFibjRpeGFVR1pQakduV2JPNUQ1RFk3YkpVYnF6S0N6QTdsUkFWUU1naU1nK3NhL0JCRGx1NFdBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 203,
@@ -3057,7 +3058,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/747680766/22393485784?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdnI3Vy9QUXVuRG9pcmFsc0V4K1hDZHo3NVpBRXJNZTVDZC85d243MWo2T0d1NzR6eVd3TVVtemdleExuQzdjYkFKblpKUldLajNnV1d3YU1HNGlEbitsaEhqWDh4eTVoZitZb2RhclNMeXhqVHMwdEZGR29WSnplRXVISWFDVFFJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 204,
@@ -3087,7 +3088,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/398664690/22492029557?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdEE4SGRnZWNwRVljQjZsV3BaeEtEd2JWd3pvZU5ySDBVZGJ0WTlrUFN4U0FIc2dBRmozUjZueTh2cmRiMElBbXR2QTlvTytQaUw5ckxseVB3MHdkVjdKdjdTbEppWXczTzhHUHMvNlNFcG1aZGV1QkliU2FhWWVmQ0tMQW1JR2VvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 206,
@@ -3102,7 +3103,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1059914301/20997312821?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0x6dFhUa1NUODlCTnp4OFk5RXpiYkVIaGJoSzZJRmRISjl1R09KNDA2Z0VtZnlhLytobHc0cEJTNHZVY1RTcjd0U0FQd2ZSSWoyd2pYQSt3czBQTTRyMWF1MWJEWTlxKytISndFL2prQXZaMGtVRWt0anBhaTdHNFhEMlU4MDZRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 207,
@@ -3117,7 +3118,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/406969593/23694289001?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdHdlZDRIZlV3Y1NwTEorc1p6NWhsK1drQzc4NXQvd1Y1YjdER2hibmxlNGpQaVJXU3hOYjNYdCtNd2szdFE1V2ZWYzkraXpxd2hOaFJvMmdNd2Z4ajBvRE9NdXUyYnAxUkNYUE42WXlxSkZ6Z0F2NHBxczY3TmxGc2ZPKzhRY2V3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 208,
@@ -3132,7 +3133,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/655304924/23893477407?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdEpkS1MyM0xuc0lsbTFtNkFMM0EvUzNjcEtTMk9JWnhFL3VQTXIwcllpS01HeEt5eGo2N0tnK1pXbzJuM0JkT2dhTndwd3B1U0xoQlZKcFR1Mjh5RUJjajNHOE9COEcxZ2J3VG5NNFdNcG90MzloS1lLdGtLWEIxOW1vWXk0ZVFjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 209,
@@ -3162,7 +3163,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/491125955/23098743173?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdFBPclVjcm41R0xnM2tCNFRMaEdxMGQ1UUV5UUpVdVZCUjJycFBJaWlKcHB0UXBQeFEyQm9INUpET29UOUh6WTFxREJ1NHk1ZVNORU1rWWNSWGRhY3V3bHZqdExONklMalc0TVhQTks0KzRmZEt5WWtnM0poQWtzSWlyT3ErZk5jPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 211,
@@ -3177,7 +3178,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1103946075/23393173375?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVRBdU9zazlxT0l6c3VUSUwweHVJRXlVLzRWL0tXWjNUYlBUTjl3SDAxT0FyOExCbEw1WlhtV1dRNVhjTkx6aGJsNDlxb3JPbGxUcERWMnRtQkhjMlN4Nmp2VlBwYzRSSEdNc2x0anhnM1p2QlNHeUJiN2phNUxlRUtWKzN1WHRvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 212,
@@ -3192,7 +3193,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1231924500/22998179385?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNHU0eGxTN2lFL1lSYkZxZGhhbTBpRy92TVk3SHlXaWNiNXNJVVBuTjdwUnNtb0JYVkMrcCtZamhvRElCK2UxaVlGZTRldmxqL0F6YmVOZHhqQXJEMGkrSEYrT08waGkyK1NVUWtESHJiNXJzdnBWZ1p5Sk1BaFJuMUJiK3RPK2d3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Moda & Beleza"
   },
   {
     "id": 213,
@@ -3207,7 +3208,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/532455428/58252361284?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3lRVnhSb214dWRiL3BCNFR5K2JWdGJaYzYyZFFiZEljVktFRC83MlNjWFNzeDdrSTZDV0RNU2g2WU1UWktqM3FRK0FQQVppelJ6TG43Z2RKTWJtcG9ZMG1TVVhUNUtuRXZ3KzJiUmd5LytULzlKbEhBSlJjaHdTN0ZNd1VRbUtZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 214,
@@ -3222,7 +3223,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1443015777/43251648272?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEdoZnJQK3J6MXpCYllXdytGNVFrbU9BQzNDUlFYS1o5MWhLUlJybldhYUtzWmE2UEJQdHhmVStKNktsYndpc2RpS0p0c2tMT091bkRGSC9DVTJTQ2hSZnBlMytoR1FxTGxyL2ZJSXloQVNjNSsrUnBUb0xRRHpWTjVrYzBmd1ZZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Saúde"
+    "category": "Casa & Decoração"
   },
   {
     "id": 215,
@@ -3237,7 +3238,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1404215442/23498313678?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNFhESTRDay9qVlFVdHRubksreThIRUhhcWhPa01Dbm1QTXdHam4zZjZ1aTQyYkRHamJOVzV6eWdvYmMxTFVGc3h0K3NXZUJ4UHp2TkRDcWlkWnZiMWhLWEprMUlScmpMVlJwWVZVZnMxTVZRaXdyZVNVV3ZjT2syYXo2OGtlSC9NPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Moda & Beleza"
   },
   {
     "id": 216,
@@ -3252,7 +3253,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/980152381/23593093649?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXVVTTVrcitvMlBwK2trSHFPMlRWbDRxVVJwNDVjekhUZWM5UVFwZFkwbUpLSkRlMDZacVlSMGN4Q1NMY1ZUZUJPR2ZCdDN3KzBzSFY3WTBUcE1RSGR5Y1htTVNTMWJKNkQxRFFmRWMrSjBrSVd1OGFIQ3Y5OWhjZmlBbjY1VU1jPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 217,
@@ -3267,7 +3268,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1009975506/20799863272?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1ZpUFMxL2o1N0RPK0UxdWl1N3FMVlg5WUhxWWduTkVEY1lMVkRaQklyWTFLeGZLZEdQMXMyQlVWcFhjRFN6YjlQbW1mRzl0YmJEZVNJYjFZcDJ6MTQyUTYyeEdZWHhyYVZXZVNodFh1RDdOQzNCa08yTFQxMmN6eE82eGZ0Q3RJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 218,
@@ -3282,7 +3283,7 @@ export const productsData: Product[] = [
     "location": "Internacional",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1062187538/21285826367?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNloyRXJNK0dFZFZ1MzRDVXhpYVFrVmhtcVNMbHpJWjlobnhJb0w2S1Z6YVZLZFRqc3B2VE5ONGRQVzlabGI3T2hUUkNvU1l6REp3SUUzMjI3MDFNTWxicFlTYzZ0d1Byc2ZvNmhVR1hVdEF2V0UzdUxPQnJ6R09Pd0hhRHZoVkdZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 219,
@@ -3297,7 +3298,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/434195734/24392792938?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmJCR242bk9vZElnM1I3dkZDdEFCN1N4R0Y0TVhyYTRDbEl4ZjlzNnJ4S01nc3lzbTVPblJoNlpLOEp5ZkQxQWxVUWR4Yk9HZjRxNzYzcW1obU1ic0VSY3hjTE5WSEl6NFVKYWFPZHBRVjZSOTNZZnpwUXpHY3R0MVdiTkR6Q3ZRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 220,
@@ -3312,7 +3313,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/462404558/22998238906?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdVZIRlkrZS9uNE01NzEyVkN2bWVDWUsvOUhLTzZWL0ZVamtGN0RGckZ2M2MxMFNCL2czQm5scFFRNjZ2UjlDT2lvaDlGNEQ2OTlpT2Vqc0RkeUVXMlhVRHhLaE1jM0pVai9yeFRwYkJaKys1NStwSEFXY016TVZtQVgvcHovVmY0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Automotivo"
   },
   {
     "id": 221,
@@ -3327,7 +3328,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1526576446/19698201316?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNHV6MnZ3ZU1ZWjZ3eGdVVlFiV1FrRTlZRTF1UVR5Z0xkUnExVUtoamtuN2IzK2JjcjBrWk5SNEdvRG5ZRzZidGt4Z29wSFluRmowK1Fuc1B4d3NvcFdWcFNVVkRaU0RKTEtaRmhCc0dRSk40T2pQNHB3dm9DTjBuZWRIWk5qcFl3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 222,
@@ -3342,7 +3343,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/807597901/23497309877?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdGM2aU5HSndWVUtiNFdnN2FoMThybVZsU3ZJK3Rmc290M0RZVVR2WXdTaU9FVVRzTnNTaitCdHRYWEFQc2p4MVVKMUtHVTVPcTNDbnFReGFPZis4alg4VmdERFlyRTZTWVh4MG5sUHpIQzFGYlVoSW5SRUNFWE1FaXYyNjRvMGlrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 223,
@@ -3357,7 +3358,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1454188932/22993711209?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0lRanFYdEZNbWtLdlh3OWlUUVBCY2xLWXc2OFRDbWFyVnRwZjVMbXF1eTIzUmo3RkFIZGFrTnlnNG0zbGtaWjhOTm5vUWRIc1pVZHpaeFdMZklwdTBGUXZLMEp5TEpmZlRoUDE3eER4eldMU2ZHTThBL0pTVjlVN3lKTjhoRHVnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 224,
@@ -3372,7 +3373,7 @@ export const productsData: Product[] = [
     "location": "Espírito Santo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/275158536/52804055938?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc255U3VzTG9tSzRGZk9zUE9FUlNmVUFNR0dlcHRsNmdnUWdsamZPSTgrRUJrOWN2Qjg3MlJ4akZOdTgrcWZDb2hlS3E5REY0UEJueE84MjY4MXBMQXNTaVI1Q1JRTXpEbkJES0swTHljc3ZicVdNUzFldVBHaXMyZ3k3T2ViSHBzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Eletrodomésticos"
   },
   {
     "id": 225,
@@ -3387,7 +3388,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1041517511/20499076749?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEdUZEI0NXFzRUFLRWhUSWtPTm1ZR3VFZU9YRFgxR1k2cWJTdFJTVDV3TDkvdU9ZWTZiVGZlT3NmclZLUWtxTWVONXJPSUlxSXU2SmxGbENEMXJrcVVCWVpTSlVSTmhwYTV0cHNDVzVEVzhXU3NoMDNIaFZXNkZnZmhLM1liNU93PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Casa & Decoração"
   },
   {
     "id": 226,
@@ -3402,7 +3403,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1005980154/58250856565?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1ZpUFMxL2o1N0RPK0UxdWl1N3FMVnZrMEoxTzFDa0xhVmtCajJHZVBrdnVZak9FenN0ZW01M25BUDBHaHdsTHlMUGRJcVpSYTByT3VOY2MrcTg4SFI3WXF3SVBOT1JiaWpqRlZMMlBrczAwbFAzRXV0V3I0bEVndWdCakpnV3pnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 227,
@@ -3417,7 +3418,7 @@ export const productsData: Product[] = [
     "location": "Internacional",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1096312594/24428572519?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNncrczdna3lWdHlHQUREdDZxTGQ2clZxSnZ3b2hzQ0VaN0FHdXdKWStkNHFOM0pFK2Z1UHZ1bmQ5dm5udmFGb01YL3l2MDlDcmdQK0Q0NUQ2R2NyeFRXZkNpUC8wajhyT2lGaTVHeTBPMDBOQ1VDMDNtOHdJOCtXdG9RT2MzNnJFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Pets"
+    "category": "Moda & Beleza"
   },
   {
     "id": 228,
@@ -3432,7 +3433,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/326498052/23432311163?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc2JHSEliYmx5TC9jbDdkUGNldzBqSEN1QTZZY3lKWjFXcFIvWEROR3hVMUhVSTZsREtBWldwQ2pvdHFhQ2xhZVVuQmhlMWhMOWg3dTVzeVpKdHZQaDBjdVRLc0pWVWVGSGFNb2hxSVdpblgyUlRzbTFmZUZQbFFPLzFET1Jtak9ZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 229,
@@ -3447,7 +3448,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/349137150/20499031976?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdlo4OEhIck5JN29xaFR0QjJURTFSckwyOVgzUWp0UHdoTTRDVUloY3N0bGF5RHdHZW9TYzVka2xXOUh0czlrSnZqNFJqQm8wYklrcDZ2U3BicmxUL0xRN3F0djJxSXp0NjRCM09RaXhCTmxGcW4rc2t1TWRENERhVDhURFJiN01zPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 230,
@@ -3462,7 +3463,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/328179142/22793614656?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3NSM29YaTdCREIyVHpST2ZJd1VwLzBXZmZXaDZQcmFhdDA5OVBBUnRXVzlOdGJMT3h5SjdRcjlpU2cvR3JONkVxZXBmZy9NV1J6WG9zQVZuR2dyT0lwU1diLzhTYVJLT3cxY3h0cTBXZ2pSdmRHRUYzMDZrVkpHZnhYYnVkZjFRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 231,
@@ -3477,7 +3478,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/415175805/22693482091?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmluYlR6bzY0VHE4SHVGL1FJSEkrVW83UjNJMFJ1M3JIMy95R1loYmJkNjlpeGY4K1BmRkVIZGNEY3dhQm14SlViZk1YZFVNaXRtRm9ON2N2UEdEYWdaYTFHSUE2UHN5ejIvVTNlVnAyNGtNZkhzK1BINXhDYzRoSEI3WXhxOVFRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 232,
@@ -3492,7 +3493,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/951290141/23498370145?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdU5DN1JBb0xLdG1yYjRJRnJ1Z1k2SjhNMXB0NlNPUWtIdmRvRXJENEttMDBMblBLL1p4NHBtMXFYME9XR1ZRL2hGV0MrdTY3VWZ1YUVhVHhlZ3BEQmJ4U1p0aEthMCs2c1Y1bWIydVdQODhQa2MxN3RyVUpMM1dUMTdCK1NyVi9FPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Saúde"
+    "category": "Casa & Decoração"
   },
   {
     "id": 233,
@@ -3507,7 +3508,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1243683750/19099664173?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNDlWUHdIbVgxdXFUSEVZTVNaQ1VxNnhyQVVIeHZVcDA2SzBLVDNXaTFDODlBVmwyK2s3SUVOVEN3YjZKTllic2xSRjlsaSsxN25EbWhISjVabkRVbXY1dVlDekpBUDRSUlJVUDFpQjlWbVlOTnJ6WWdLOEpvdUZ1SDlrYUFhY3g0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Casa & Decoração"
   },
   {
     "id": 234,
@@ -3522,7 +3523,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/930987223/22993915163?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdU11SExhSlo2elRKQ3MrU2RTZlhzNWlGckRWNGM0R1FJOWdTWGwzN0piU2hiWEFQRjhEMnVMMGdDSy91R0phd1Z1Vzd0eFZ6L3JqYVp5SEoxWkJPODZINTlxaTZaQTVJNWVNZkdlREZtdzBDYWdJN1NCQzdMcmxtMTEveHF2S1k4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 235,
@@ -3537,7 +3538,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/805304894/20420779647?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdGJjOWdpUFRESzYzbkZFMjNzSndVbWJ0TiszMGM2akFTVjUxekN3Q0RwZVVqZEFpRUsrM01yMWpzVjc2eDFPdUhFK0xJZEVQdmMxSVR1UjhRbmVOMjFxTEYwRndIRCtWT3FlclBFN20yUHBsd0svczFjNHVzQ2pLZVlKYUV6ZGRjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 236,
@@ -3552,7 +3553,7 @@ export const productsData: Product[] = [
     "location": "Santa Catarina",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/333540705/19398150765?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXpxcnMwMVM1TkM0aEFJSVlvNFJsWWd0Rjg5RkJ4VE11TGIvQWZvMFNNUkVvVlpBTVVmN3BsOFB0TDVTTm5UMWVlL205YThFMXVuSGZOVTFlU0crbmpsQkl4R1UrSEVITElKVzc3MW1xZVkra0JqRzFxTGJXL3E1Z3ZxSHFLbUR3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 237,
@@ -3567,7 +3568,7 @@ export const productsData: Product[] = [
     "location": "Santa Catarina",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1235119294/23294227255?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNHU0eGxTN2lFL1lSYkZxZGhhbTBpR0RwODhYb1FXbEU0aWZRRDJONFNuZVB2TVNsaTJUSFRBZlJyMmFGUkF2Q0N0TnJwNSttZWNQbWZqVEpNRzRIU3B2QXFKRDRRSlAwQVpqNm4vYkRkTmpsQUtBOWMvSzVKZU5UcGFONCtvUlh3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 238,
@@ -3582,7 +3583,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1252131778/58253326165?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVkyaHE3aUNyNGd1V0k2Q3RjRFRaajRiZWhFN0pMUE1iSEUybFIzNDQzRVpqTUZ3NkFkWU5LYnlrVFNaMDB3OTZGK0l4STNZeEhhWkN5dis2NW9iei9pbjI5Nm5KZVhNUTVpWkdHbkJTSWpqdDFmUjJxcHF4M09EcWpOYVR6TUJ3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 239,
@@ -3597,7 +3598,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1394205374/23998145129?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN01mNmhVVGFUVHY2TURuZWFZQWt1dXNFbFZaemJzMnlubjltNUpHWHZJa01seFVEeHFwWnlXYlZqd0R3anNOMkdoVjJIemlXdHdqbGZPMERJV0piQWl2cHZ3V3M5VHE3ZmhNY1BLYzUxRjJZaTBwcUI2bjBsd25YL2xqSS9ZRnk0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Pets"
   },
   {
     "id": 240,
@@ -3612,7 +3613,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1362613415/44000429585?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNjZxczFjZUpCVzZMY2tOMHBrckhPQzhPbk9oU2JSR1NoWHpaanVPQiszdXFYdFJqaTJyWVZuYklsRDRqaHpDVTRGMmhxSU1yb0ZJNm84K0FOeVUxYVRzRFRRY2doN0RCRDVLVm1QUjB1UzFYVjhjb0RnemRGM3IzVmNXYlZ6RTFrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 241,
@@ -3627,7 +3628,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1497311432/42812330707?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEsxSUFHRCt1Zm5YN25nQUlHSklKS1Q5aTdJb2VuY1luZlRRN3NsZ053dzQyVnZhTXVBdTVnNmNwZkhvbXBHclo4MDVHOFprc3doblBXOE1XU1NOWXhwYUFZSGFreHo3MkFmUnhOV3R3YzV2QUd2ZWRuSXZWcEI2T1lKNXZmc2E0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 242,
@@ -3642,7 +3643,7 @@ export const productsData: Product[] = [
     "location": "Internacional",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/345767384/48701103391?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc0hkQUU1emRFZWg3cGF1c1Vuekg2eTJMTHR0c1JDdWVhL1E3MlNydHowSkNKeENSUDEzaHMrK1hnVmZoSTQvOVpmUG5nWDIyRXhuMmsyMUNiUERLZU1mbFZCQUYvbFFBNUdxU25hN3RReFNVdU8wSUx4d2pvazJ6T09PQ1FKcWh3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 243,
@@ -3657,7 +3658,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1177369665/22898359245?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN3R6clRXek84YVRNMWhSeW9MRFNFMmVidDRNb25CK1JWWUMrSGZMTXl4RFJOcFc3Qk11VjdJRERzeThldVVLMktqditYQkkzSzhiL2E5a2R3SERoQytsVzhicEt1L2ZZM292MnVnaFJ3ZUNFY3RuaWJ5WERXNnFhZW5XbFM4TVg0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Moda & Beleza"
   },
   {
     "id": 244,
@@ -3672,7 +3673,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1362617427/24093330211?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNjZxczFjZUpCVzZMY2tOMHBrckhPQ1ZVSENJeTRUK29yVzN4YlVGR1U5N29Na04wWUV0dXZnN2xaWEJzRmZTZU1mWDRDajczR2k3MTJiM3N2cUdBaUpENVlrazh4YW4rWFNrODVVZVhWRzhiUlN5MytXU2RMWHJUZ2kxbWhMeFJnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 245,
@@ -3687,7 +3688,7 @@ export const productsData: Product[] = [
     "location": "Internacional",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/393479426/22018175707?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdFFEbXhRdEJlMmplTlJNNmpJNldTQStsdjdxNWQ0ZGMxUzFlalhkTStmcTAyZzMyM0VqSWhNaWE5NitYaDBCWHZTcEQxR21yaER5RFYza3lvR2Z0TFQ4eGxEUzlwUnVvekVBd1JOanM2QzE2b0lZMnV0bmU1Y2U0QXV6YnpjOFFzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Moda & Beleza"
   },
   {
     "id": 246,
@@ -3717,7 +3718,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1534000949/22198720915?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWNkaUJHS2dKRXlBdkd2dG1mZ0psUEIrMTJlYU8zc3g1N1F1QUxyNFIxL3pSREJqNDlKTWpzK0JqaWJwQkw5V3VkdURsSVVobGpHWGFMQVhuSWwyYzRpVWNSb0N0ZVJyWUo4bFNpMXNWSTFQdlg3UGc4bzkxbElEdUorUDZ4MHlvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 248,
@@ -3732,7 +3733,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/422797670/23797604605?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdU5IRjJtOEhBdGY0MEtERSs0VmxydnhKRHNOOTBRTlpnZTljWlo0UDZIVEsvbEJpMUx3KzRMNy9uNkluNzRjSERJLy8rSGdkM21Nb29xU3JsOFd4VEhsOXFJaVBBY2ZzOXNYeWQvZ1E1dTR5S1pkWHhSOCttY0ttbjZuUUl3SWE4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 249,
@@ -3747,7 +3748,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/434195734/22291459259?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmJCR242bk9vZElnM1I3dkZDdEFCN2VQMVAxYjR6YW5ua1BCQk5MdWZxb2NPOXdpYWt5V3pVZGRrTVE0K2tQWSsvNG1KT0dZcjlVYmN1cVlKU2tXcGxkS0NXTmFZclNlcXVEME80bTVGc0FCcm95Sm1sNjZ1dmVnSW9YcmhDVmk0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 250,
@@ -3762,7 +3763,7 @@ export const productsData: Product[] = [
     "location": "Rio Grande do Sul",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/349667948/58202501993?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdlo4OEhIck5JN29xaFR0QjJURTFScmVsQkgxVS9NTVlsL3l3T0hPazVWbURhRS94QzBOcVA4NDFTb3QvQTVFVy9yK25RYXZzYnp1cW1HSmdDWm8zK3p5emJVbmpkWTRuRzhIai9IeEZtbU1lczZIYlFyZmV2enBhL3grMHRPaWxVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 251,
@@ -3777,7 +3778,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1272600089/19499664591?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNzhFZVJ4NGxLdFNvVzNTbHJ5SUtuRXgrK21CY2sxalpublA4bi9YSmdrRE1EeVpSeVBnT1U4K3hKQU9HV1BkbGY1OURKeWdEQzF1eVgycFdoN0h0Wm5zaGF5R0JlaURsWTZiazNpV0tFQjZqRWlkRXpEeGtURVlabWp5L2NTSDh3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Eletrodomésticos"
   },
   {
     "id": 252,
@@ -3792,7 +3793,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/300779622/22992945609?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUwvcmJtczYyekk2cWRKTkxoc3BMRm9ZUi9idU0xR1htcEowdXE0SnJXcURJWnFmcXZDbkd2dCtZRUZwTXN0N09uYjZOY3EwcmUrNTlncmczekIrUE1JOXNhR3d4ME1aMkl1Y2t2RjgyOURlOUFpR3ZLYmt5WlN5TlpQZXhDaXhJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 253,
@@ -3807,7 +3808,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1538458269/23294207241?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWNkaUJHS2dKRXlBdkd2dG1mZ0psUDVaNVUzV3Ewd0s5SVduakN6RWRSNU9VNzZvZ1BiYjVZMGJoU3ZKeGhPbHhPNlR5QWpZUkZXVXMzU0srNXkxYzVEVFlJZHRDS2ZZb0kwYkxpMzNkaFdPKzhmN1dXRzByM2Q1ZnozN3FBSEpJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 254,
@@ -3822,7 +3823,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1339254692/23493478982?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNTVkZ0xWcFgrNGt2QmFEWnQ3QmdtZzgyTnRqV0xsUVNna0JjMnVXNUUxMk5HdkJkVkJuZ295czBDV0VhVWtERzh4V29rZUFxcVJtcmNaSXp4NnBCbzl6YndDSWJ6bk1TVzExYU9XRHVabjdSSytrOEJWRGVMMXVraTRkSjFySTNRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Beleza"
+    "category": "Moda & Beleza"
   },
   {
     "id": 255,
@@ -3837,7 +3838,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1284749663/22493868983?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWNqc0xWZnFmQTlhNlJ0b1RiNGNUSHFIdDBEVno0TStvNEYyTVZzL04zaWJvNzdMQ043L2oyWUM4NWsyVEtTS3lNV21kaFdZV0VwMDByVEI5VkxFZ2I1L2daTUZLcFJTaExVTnZpUFFYUEgyc1J1aHpHWE9lU24wZVl2bERJSVZRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 256,
@@ -3852,7 +3853,7 @@ export const productsData: Product[] = [
     "location": "Santa Catarina",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/673388668/43560586895?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdHpKUDlHdnNncFMwZnA4OHlhcDB1TlluK3lpc29ZWmpOb3YyallBTVdxYXRCN2JiODRQdFZhVVNLaXFLTlBIMWZoWTh1QUVKbFNBd1c2MmtkMEI5Y1hLMnVwRHVYVHEzK1dRMWY1d2tpSU1mRk5iKzhqbDVmOW9Hd0pSNDFiZSs0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Pets"
   },
   {
     "id": 257,
@@ -3867,7 +3868,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1246432862/23593802699?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNDlWUHdIbVgxdXFUSEVZTVNaQ1VxNlk1cFJQc2JxTU1KTjFUWlVNSTFoa0N6cEMrb1pNTXVPRkNINmExUmgxZDhldEd6NGZjWERvWGxnM1NTNG4vZFJYcVk1TkRxVnhHaU8yT2JVZXBlZFExYm50S2ZsTzlZSjIyZE5yU1Y0Y3BnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 258,
@@ -3882,7 +3883,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/599271358/43124797776?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdnoyWXZVVGlBbE5vYlJYMHhWUnZza1NGdGJsbDhhSGZndVJoWWxJaEJKMld2dW9DbHJBSGFieDZtTHpkaDNDSEJRd1ZEcmVLNDU3QnVseERmcW5WRTdsSWNEaE5PVUNyRSt6NnJxeFdVREVHS1FXRVR4OTRqMFFqMEZpRTdWS3NFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 259,
@@ -3897,7 +3898,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/338251868/13590189810?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXFMN2kzZEpkR2YwNW9tbWZpVVNFdWhJc1RFL2N0ZkFPOXlrekdOTFhQeEZNa3BqY1VZbHlCWllJak9SQmFzdUNXUzNtTkY4d1MyTjV2cDlGNzlNajhodmU3NjZpM0tjOG15aW9pWU13UVJvcEdpSkluK0NUWkVGTzJpbFhlajE4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Bebês"
+    "category": "Moda & Beleza"
   },
   {
     "id": 260,
@@ -3912,7 +3913,7 @@ export const productsData: Product[] = [
     "location": "Internacional",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/471877634/17947452492?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdGI4TE1hM2RaRzI2d3dvdjVua0hSUzhBRk1xdGQ3STBYOXVFQmhMNHpwVmFuTS94YUNUekhNYklhMVFrT2hXa3RBME1GbWd5WWl3N2p4MjdvY0RTMmRIRzd5WnlJaUJ0a0lEOElVeUtKaHNZRE1yYmZMMVE2dUtZdGNOYklvRDVZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 261,
@@ -3927,7 +3928,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/997025684/23298103363?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdkdjNUNOUVNaYmh0ODZFK29nSGZvL3FBbFlCNmhaZzQwYUQrdkJHakluWEFGS1ErWjdRNWJQemxra25RMWhHRDR1VGJIUFRXeFFJU2l0VmtPWFIrdThmZ05nZlZ2UEg3TGVQR0lGRXVvclRvK1VFRWpUV01rZUx5dlpnT2Y2ck1zPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 262,
@@ -3942,7 +3943,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1251924206/23093156561?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVkyaHE3aUNyNGd1V0k2Q3RjRFRaanRMR1M4RnZUMFd1MlB1aVIrNjVFUVpTdFJseldUVXdBTU9ZU2ZjY3pjNTJGdWpacXpQZURKdzNtOXczTnR5RFVCYjNQQ0k1L2ViZERXcGdGaGUycDNXYm1lUWpXbnFydUlyNWgrdVl2bGtVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 263,
@@ -3957,7 +3958,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1259153662/41054360696?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVkyaHE3aUNyNGd1V0k2Q3RjRFRaaktZd2pOOFVlN0lBSVl0MVRKK0picW04R05ob3VBK3lpZ1dPYm1sVkM3UHlwczA4cERuREx3Y1VUWWVrWVNMUC9ZeWFFaGViQ2dsV2tnZFpNWUdqWVhCSUxRcVZuK2dIbm9JUUdhTWRCc2lFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 264,
@@ -3972,7 +3973,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/489746899/23898332531?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdlRyQmllaVZMSXBPYXZSbmJlazZaN21sQStzNDE5dmUwNzNoWE11OGxkSUpIbGI4QU1hNmNHN3ZJeDMxVTRvdmZzamhZTFVRQ2ZHTVVFdGpuSWplSmN5SzFQbWQzSG1WanI4WTZ6VUhTdHdtTlp4LzM4b0NiWmE1V0JrWVF5Wk5jPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 265,
@@ -3987,7 +3988,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/869284328/22297319075?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc0YvRll1aE9nQ2FFRXRMbEZicGc3c2FjSzN6cEphYllFQnJJWUVHUHk4c1ZISXl3NzN3amNObml6bEpvemJabjE1elB2R01BNUdNQkZBNEpTL1d0STQzYXdCU0dxZDhCSXYvc3J0YndTVmZuZ1Jaa0JDaDJQZWtwRkZKaCtEUTlvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 266,
@@ -4002,7 +4003,7 @@ export const productsData: Product[] = [
     "location": "Goiás",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1130709368/22393559199?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNkRpeEVpK3ZJVjVmMzFMUGRFOXVoUm8yNHg2NHJ1MVpIYmNJaDhOcmJ1QnZMVVZDL3hpS1JNV3k5dWlyRDRCdzl3WFRiRkk2dFo3dUVlblpmbnJ1ZFNUbS9ZeVBiQ3pFTnZTR0NnckhPcjV6ME41THo4b2hSc2s2VjZCbFdFUEpnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 267,
@@ -4017,7 +4018,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/974102638/22594367281?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc0xRMEN4MUFmNkVHMVc1Njh2VHdVL0pQZ1NjMDJHVWtRY2gyUkxTU09xMkRjSXYwWUFEL3dYTmh5WmM5ZHVoYzgrdzhFVVROTld6SDhzYnNUYUM1eXBvaGtjZVNzeENrbThmTVE1c2pROWY0RHQwQ0YyejE1WUNKR0tPbXdiVWpzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 268,
@@ -4032,7 +4033,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/398172584/23694390124?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdEE4SGRnZWNwRVljQjZsV3BaeEtEd1JMdFYrdWt2a0tkOG5Da1h5U1NSaHk1R1FDemVkNTNmR2NZUzgvNSttQ3FmTDdLYzFUMlBzbEdESXE3ck02SDRZSFRrYkdWNkZzdCsxQklMbkdoZnNycWo4VDNnbmgwbG5qLzVRakExREVjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 269,
@@ -4047,7 +4048,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/964196467/58200677770?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc0FId29tN2kwSHhxSW5aZVBxclZKOTR6eHZNUWd2N3NGejkzbXFhUlNXTXEvN1dsWHVuditETUFEVDVIWUJVQnpkTEsyekZVa01Oclovc2hRYUdISFBRWitCeko5N08zSDdZVjgveXNjOEYyVEdjbjhhNkJ5SitFNVFjeTF1Z0N3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 270,
@@ -4062,7 +4063,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1097194799/22193958985?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNncrczdna3lWdHlHQUREdDZxTGQ2cjRRWW45RS8ySkppVEc4NU5qRWJWVWxiTzlPYjFkVnJNUXlmWThZOThBdjVkeW1IUm1OZGJDWWVYekhYTjUycU5rd2NKenJ4SThCYkJkUy96L1AvbUNNMFg0bFF0eFhIRnZkeklTdHNFNlFzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 271,
@@ -4077,7 +4078,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1502139050/23193869574?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNU1mU0M5RWxpRUpPMTNORXc3cFZmbnErdTV5TXkxRW1LRG5hL05QT3VxWS9KbG55R3ZVdDd0KzRHa2c2QnBibUNUM2E5S0JuVHpMTkFxcEZnVjc0TVM2cnBJOE1XckcrWFJmYTRVdDR0elFYR0hkUjlNc0dNMStPYno3ZVdGSFcwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 272,
@@ -4107,7 +4108,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/372103398/20597664676?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdEtNSlczeHMrd1N3UlFueDd5cm90dzJUYTcrbGhxQ2x1L3Ixb3MrbXJ0bzB6N0dNQ1l2N2NxZ01CRitXYisrdnFKN0t0ZEt2VzdnY3ZpUGs4V3VpMVpHZWErWjlCbnhVVjM3eEpLZ2w1TFJvNG1hekxROEdnOEwvdEV1RWN0bjJNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 274,
@@ -4122,7 +4123,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/289587603/22894431104?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdFdSMk9Oa04vYWVHdHZTd0QwVnRrWGxFNnBqcHh4K21xN000YnZibXFuMmY2ckg4b2VJMHpEbWtrMGFrVU9IUmRKTWdWYUE5MG1XVldmNlpYMXUwcURwd0dpdnpRa0ZlbVNIMUR3a3I1S2drcEFjMkk0VkZZZlBRd2dOdmNZRHNrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 275,
@@ -4137,7 +4138,7 @@ export const productsData: Product[] = [
     "location": "Internacional",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1541967478/43927876110?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnVJbW5vUmJMVEgxNENmWlJITkRXKzBjall0TE1TT0VYR0hGcUFuYmFYb0pIcG8rblhoMWs0d3lEZTdPNGQvcXRRL24rQVE2ZXJQN0twRWtGNWJNMlh4cThyR2RvYi81WHdMaHQ5UG94QU96eFdmdmpjTjZraTc2anJOb082VFVNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 276,
@@ -4152,7 +4153,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/955916828/23397908817?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc0R5aVY5dHBIa2JDZUtUbWFhdVY4cWtuRytWbW53aGliQkQzZUovVXFpZmo0d2FIRFpNK05YTldVTXVob1E0cXFRVHJsdk5FdlhZRUN4WWE2QnBpd2h4Wkd1QkNYeW9MTGJUWUhCQTE4aXdxWUxpSVh6Sk5YNXR5L0FXbjVEWTZNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 277,
@@ -4167,7 +4168,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/326454501/20599568521?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc2JHSEliYmx5TC9jbDdkUGNldzBqSG4rQkFvMS9GNnNsOEtyNzNWSm0rNThNbDNYNktxSzNqcEFvY1VCMUdsZlRDbnBtUTNOVEZNNGZ3NnJIRXR5QTdMNkpCN1lVL2QvczNVdm5FRG1KQjVSRFRxVUttVzBjWjZEWFg4c2IzYzNBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Moda & Beleza"
   },
   {
     "id": 278,
@@ -4182,7 +4183,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/378488048/14447025819?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdHR4N3hqTUVpcFByZHY2eHVXU0dPeStDWU02akNnWnpTODhpRS9yZWwzVzhlSXNMRTJNQWZHRUJ1UkJYdWNQcHRsdEFuMGF6SVZQYU9lUzBHdk1JamkwU1FYallUNFd6OXFmZlB6Y2JmWEs1REJVczVTMHZHaG8yaVRVeEVld01rPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Automotivo"
+    "category": "Casa & Decoração"
   },
   {
     "id": 279,
@@ -4197,7 +4198,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1327532395/22797897571?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNTkrc1ZUUkJCVzhDNG9GeUVWU1NleGFjT0RzeDdGZkR2Z2pDV043WnpKNUdxLytTNDFHU0V2dUxPRHQ4aXZFRzJKcC9BL3N2bEVoWlZOdWNZV1lQeUlmNEpJWUdqdnpXamtRemZUUElWL1lab1U5d3BhTDZVTmhXdmVidGE5VmhnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 280,
@@ -4212,7 +4213,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/821115255/22298731270?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc0phS0lGSnZGa1dTUnVSRXBTaDNEcjFGdlBZUHl1Z0NFSGF2RjBnQy8wUWZsMTk5TExvRVRaU3o2UWpoMldGa0VQcGdvdjVIRFRPYjdTdXUzRnduekNWa1FIdlhJMmd6ak03Yk5OQTliYXdGTVhKbDZ3bS9nTU91MVF6dEpsVjEwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 281,
@@ -4227,7 +4228,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/863490285/18499088730?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdTlBTDdEdEZWS0hrdFJram1RNHJ3N2w3ajgrZitLckhmdzZhNWc4TkhQYUFBVnJMWGo5S2M1TUVIZTBCVFNLK2hJcWM4OHZ5ZzFENzQ0bC84NDlmUkhiUVBaaTJQcGFaYlAwWGJnS2hxV1g4eE5PQnd6eFMyRWdyNmh0QnJsS0x3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 282,
@@ -4242,7 +4243,7 @@ export const productsData: Product[] = [
     "location": "Santa Catarina",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/561341313/22298078894?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdjFKWVFxbXdSR1JrS3ByUUZHZG5rNldPMnRQUVNhZUgwV1pVMGJvU0Q4SStaVmt6UXlPYlNwM1VYWlo1UUltazJiaXM2cTVHRUdKbXZYWTRIYzdyM01GUjdkQTd5Wk9NaWxIOHcrTXR5b2VuUlNNcGs3KzJ1WUpqeklHclN5TzRRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 283,
@@ -4257,7 +4258,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1127030290/23193543048?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnNncEZncWwwYm0xN1R5MnJXTThvTWY4eW1hWTdpdEtLb0dwY3RlNG55d0FJUVFuQk5XemNaWDVPcXQ0aGE1anFSWCtpNkFXQVI2UXFlbWkzZDhTK0tLVTgyM21OY1FaTk5kTFJkUmRjZHAwcUpnRUZvOTVYbnM2dm9Ka2FhN2E0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 284,
@@ -4272,7 +4273,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/500048879/23392497008?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdnk0SlJoVTFUVi85QXkzM0x6UGdTQ3JXNnhoZVNKVmhFV0lHWjBlV3R4enhQNnBLNStoY2pCWUdtS3NDSGdRUUplQStsNjF0b0FLVnQ3dTdmOGtFOWV5S3ZGUVJYWnNHTytibWdvd2tkRFFtcnYwSGptNlNKdUZtbTJOOXgxdk5jPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 285,
@@ -4287,7 +4288,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1122483480/22397348564?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnNncEZncWwwYm0xN1R5MnJXTThvTU0vRVhkLzNuMFAwdXV1Qjhrd2ZYdFd6S05iOVBFa2lIRkpOZXZwSzByc2J3eENaTGY0VTFBcnh3a1ZoU2YzZnhVVG16MmFGOUF3YWptb3hMYkV6eTBvd2prWkxYckVlc0VuWWdSQVRhNHNnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 286,
@@ -4302,7 +4303,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1297503014/21898101420?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNGE4aFpPSitIdGlRMWhhWS8yRkUvQ2RhRmQzb2xqSDUvN2RFQjlIY3dMOGpMbjdQNHpNYm9ZZUE5R1J4NUozWmlqUVpXR0gzekM2dXhWMEVVK0ZNNlZzT0t2L0RwZzBMWk9UUFZYL3NvZXhvbFhQZTJPU3VVcE5NUnJCd25wV29NPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 287,
@@ -4317,7 +4318,7 @@ export const productsData: Product[] = [
     "location": "Santa Catarina",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/322387387/19399663917?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdTRramhBWHJSZkg4a0JzL3Q4eEtSSk5iczJvR1h4bThUWmVJZ2dYUmwwSGhQZ3hBTXdjcnA3Q3NYV0lRcUtVK2JWd2xtTU5xNEw0NWFkb3NPcmhMVy83SHgxc0lGY2s0U2dyeGRrRUlrLzJxSlB3YUlkTEdwNElQb1JtbHhCaXlZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 288,
@@ -4332,7 +4333,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1142052307/23097635238?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVFHMm5oTEVVSDVPNDh5MmdoNnJxUEhlY2NBSmR4T2xyMkhUVmZuSjF2bjRXaHBjUjRjd05Yay9IR2huU2FMc0hDUU1FVFJXeXoxSDZ5YnkwcDZCMGIwSUJsaHZ6dkNST0ZXVVNmeUhhWi8vUGM3ZUpVMGZMdTR3ZlJZeVBlWDFVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 289,
@@ -4347,7 +4348,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1127030290/19997795330?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnNncEZncWwwYm0xN1R5MnJXTThvTS8xZDd3bTBoVVZjaDJxYWZmUEtHZjNvdUpHdk8rZzZNbHNBSlNoRHJEWW1oU1BwRzJTOS9ubitaQTcxekZydW5hcWJjaVAzNVU4T3Y4VG80dW5JTzBVZTZSWmtVNHI5cVNuemFWSWEyWFU4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 290,
@@ -4362,7 +4363,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1265597786/28944042529?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNFJWTjExaFdMaXlqUWNhOHVUQjBmZ0xjcFUwSXpyYzhVZ1RqR0piZ2FaRkV5OStEVmdJd0VodUhqMm13UVYydVNvVEVPdEZ1TkNmNXpwNVZibDB3UXQ4dmFyeTBEY0lPcXR5YklLNzVPN3JmVEdNK0NHOWwwcnhIRjlSYzI5M0pBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 291,
@@ -4377,7 +4378,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/511410160/23498052271?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdkFJRFdYcWx3TGZjb3g1enh6bGgxVVJzQ1Zaa3V0eTZCNWNUTmkxY0VTTEJMKytJQy9NN0hVWTduVWNNUGM1RGlWdWxvYi85Z3Rjakgyems3VUZyN0xVK0hsWmpDMndKZUV3TEEwSmdkV2pyaWc0aGdQMmJ4U1BDRnlQQkJwcFdvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 292,
@@ -4392,7 +4393,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1285485572/23798473941?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWNqc0xWZnFmQTlhNlJ0b1RiNGNUSHgzZVJFYU96ajRKWGJUcXVJL3R3WkxIcVVBMWN0R3dTWjVDeWVYTUd5TzJrekovLytXclA5UjRxYUtzVlVlNjBRM3pjS1JEUlpzMmE5VTNpK3JJaC9EVWNPYTRPZHZpYmlGbUlhVEo1bjJ3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 293,
@@ -4407,7 +4408,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/329076450/6065453750?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkY0tSanlKZU1BU2Y2RTJzOS9neUtnZmlWVW1lUUxxbUdhR3BKM0c3Z1RCdVc0TFM5eG9uQUVRK05IN1lTNmNrVStidjh2TVdtQXFrQUhFbDlTWnFycFU1WGNuWlNxTGF1Q0N5TDlzaVE0ZDVyVnhpMTFTSVhHVHpNcFV6V1NBY1Z3NFpMbEhPWDRLaUcvY1JDUnRwcDlrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 294,
@@ -4422,7 +4423,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1312114484/20599334746?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEpRL2FlUlcybzF4QXBObW5MVjVGZFpuL3YwZnM0KzlrWkpra2JPOFVSRDl1WW91OTcxaFBWL2o2VnlVVWRxOHFReFZrUTcxbEZUK3BoOHpwQWx4aUZYeGNqNVREWmtWcHREODR6SHpsaWhOUmZiUDg3T2xMdmN4ZnU5enZYSVM4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Saúde"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 295,
@@ -4437,7 +4438,7 @@ export const productsData: Product[] = [
     "location": "Santa Catarina",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/764837298/19497502376?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdEZkckJhaHdubzVYNC82R0d3anRsN3QrQXZ1Z0cyV3hzMTMyQVhrT0pQNUhOenBVUHAwME90REhiTHdWOXJ2NnlBbWxDQkRGS3RnQ0ZEWXMzcFpQYTZXWDlpY09tKzluM0tmeDhsOEg0Q3lxdVlRZmc1Y0lNWEVhUFB1d2p3YVlNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 296,
@@ -4452,7 +4453,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/998773037/23698065593?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUxxNzFhN0J3T3NNS3pqSDFVcWRNdk4wdWlDZTFqcHNReExZa1VpaEQwSUQ4M0lwdFgxRFR3eEw1ZlFGc1M5RU13M2NvQmZtQ1JCRzduWW9WL3lsRk5QcFdKeXR5b0ptTzBYY0t4eHdRVUU5bGh5YTloQytXTDQwS0hMcFJqZlpNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 297,
@@ -4467,7 +4468,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/504121816/23992203456?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdjB4bUNZTFAzdW1wamxFUXozbmhFanhKakkyRjdOMFJKd1dIZjhPNTFRSmhKczIrbnVxWFR6ckorS1E3eXpMQm5sdldrNFphWjAxZE9tTWljeFd5ZzRIRjNiRU1mRWJEUzRyS3F6YzdiT25DdGcxQjB4OThRb3pXaEgwd24renAwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 298,
@@ -4482,7 +4483,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/569114904/15461251514?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdGsrR09VOW00VE9Vei9GWmpsdndyUzJrSG5LbUpUVHpReDhZb1M4ekljbWQxUTVXSUVocDgvd3NkekxvWmJ1YmlUMFZ4Y2RQeExlNnN5Q213UHdvV1N0UFJWa3FrOXdEWnJVRzVwYUE1bHNhUUFQeHlCVzN2MDlsWk5KbjNiOEVvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 299,
@@ -4497,7 +4498,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1053378287/22297168365?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0x6dFhUa1NUODlCTnp4OFk5RXpiYlk2ZVhma0JzTWxkZEZqSE9EVEladXhZNERBQ1R2Tk9NZ1UzY0JJTUVVK1JWT2FsM2hxM1h2MUpMa21Ha1Fjc1ZvWVhlSldCQmkvQWdtTGdnR0J6bTVOeFozSUFRbEsvalE1d3hTNXFuMVBJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 300,
@@ -4512,7 +4513,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1593740983/23194419020?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1ZMd0hoWWdZV2M4ZmtCcVRONXpQdkN4WHBGeTJFSi9Fd3VsbmVoaWRqY2FZbkNYcmNmaHE0STJDRk1EbWpXMnFQYUtZNCsxUm9CUkc3NmhRMXlQZm44MXhpL3ZmWG8ybXp2cXhFM1FVbUQ1WW5ndTBENWpNcFlMU1krNm1sZ2ZvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 301,
@@ -4527,7 +4528,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/383034422/16203857482?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdVJnemVzelowelJ5NTNabmhocDBKMVU5R3pKWTd0TUsvNjVvMEtRSnVlYks2SmhpQlVlMVdWNGFSc1hydW1FQXRVbVhMcDgzRjVYSnpKYXIwaFBGU29adHZsb0NmWU1NSDZRNjgyc1Z2K1B5WUpha3lrWUUrQnpCblhjbVBKMmJJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Pets"
+    "category": "Casa & Decoração"
   },
   {
     "id": 302,
@@ -4542,7 +4543,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1251924206/23393667132?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVkyaHE3aUNyNGd1V0k2Q3RjRFRaanJrRlg1QXBEN0kyK0g3RGdNRDhSR1BrK0JHMVBEVjZzNXNwWmhyM2lBMXV5ak5XbS9kYzhmTDU1VjZKZlg1NmNrQ0dya3loZG9WZzBVSkhoSXJ2NWxSS0xDT3FzZUNPdXRpZk41b2h0Y3I0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 303,
@@ -4557,7 +4558,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/343832749/29737157267?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1E0UXRIMXlqZUVIazBialNkMlVnUmp4SFdvQi9LcVcwcjhNc05CbDBHV0F3cWhjSVdlaGxubUVxR1pkY1lXNEk3YXZQR3R4UUNxcjl1VTRmRlkzdXc3UU85dmI3bW4veVkxK1UvWDZCNFJUcjdsdUJkWUxQMXVycjBtT3ZQZnpBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 304,
@@ -4572,7 +4573,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1432047639/27774205292?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNDhpRnBPZkdsYzM2NWF6a3EzN1VwY1k0UGw1MzdXT2h6L3JMV0ZRT21lOTgzOGNRV2lOVlVCbGxoUjFRMFdmSElXRlp4cUJzYUJ4SFFWMUdpekJrMW52dGhFK3l5cVBSSnN3ZTZZT1V6Sy9vazBGZjM0QzdaYi9ud3lpeDhBNzB3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 305,
@@ -4587,7 +4588,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/390307022/20155524471?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmZmNzArRmlsQ3ZmaFcwYUtGaWdKb1NWaWNIRyszc2h0UC8zMzdTYzVFVmVpZ3RGTXFmTWdLTDdaTWJkK1V3aVljN29oRjJ2Rk1JRUFUMnR5VkdCZC94Tjh4eXBHTGJva0dOWEd0dER6SHM3SjZWL2tsTi95SVFXaHdtN0dlUVJRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 306,
@@ -4602,7 +4603,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1097148583/22998323620?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNncrczdna3lWdHlHQUREdDZxTGQ2cjRmd1JXRW9TTnNJTjFqZUIxTGZQdWFLcC9NRThpdFlmOERHak5UN2tZVjFSMWc4a2k2MnQ5dEtBOWx2anh6YXVPd2VtOHZhL3lndUV5Mlp1aFJwTzAwWm9pL05NR0Zld0ZtZkRSYXR0ZU9vPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 307,
@@ -4617,7 +4618,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1362617427/25439645610?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNjZxczFjZUpCVzZMY2tOMHBrckhPQzZSa0pmRURDcUNPNytVSVZnS1liQU02MmRnZTlJQ2gzQ0NIZnV1TUY1bVU2cXFHNWJDd0RDclU1MWVZYUZvcHJLMUV3RU5NRHVJMHhIRVZlaCttUTIvTmhXRDRrWTlzM1dLSUFTNWU3ZFpRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 308,
@@ -4632,7 +4633,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1530956550/58251737406?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWNkaUJHS2dKRXlBdkd2dG1mZ0psUFBkZFBhUDkvWlhGTDJneVQ0S3diZ3dMV0ViNlNGMWFWMm1EQWJLc2sraTAwNmdWR0FVMnpSNTRSZDQ3WXRGWlNNQzdWNXo4L0dnYkNrcWE1a3plYVlwY05rdjhBaXBneGdta0ZsQzkvMmZBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 309,
@@ -4647,7 +4648,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/298298179/20699834914?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdnVNNkwxVm5FV1ovcTYxSTZLT0IxcFJrUk9BYit0WXN1NW1aZklTZlNwTzJjQWErbUc5dTlUNk9jSWVvR1hNTVNXTlorc0dLb0gzZytvV01tVFdVcDV6OEdyeGtiU2xzcG9QSWFPUjFpYVpZUTZSWUMxRjFoYmRFdG16blF6QUI4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 310,
@@ -4662,7 +4663,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1343318906/40873387489?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN3pobC9yczJXSEF4NHNHYnBkK1VJeEJjQzJSMW9tTkZ4SHMzMWFqdjZHYzREb0JJYk4vQTRlWnV6WHpZU3hQTzFvamxDamNENWdab3oyQnk4NWQweXh2aXN3MDMraGJ4cHJrVTI4NG04TThZNTA4YVI0OEhiZmpHNW5tY2JXdW9VPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Gamer"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 311,
@@ -4677,7 +4678,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/348571802/18699719121?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdm95QzBFNmJIckxpb1pUODA2SVlEMmFBbG51WlJrTklDam1aM0RmMWdIZUlSaXdrMllkbEFmamNkZTFCMlg1QlI0RWY5VjBrL0lZY2lrS1BERERHbFU0eVJ5OUt3eTg4bGk0emcwRnRiM2RwNWY2ZHF4WlByMVFOTm40MlViZkNRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 312,
@@ -4692,7 +4693,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/489001115/15848213372?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdlRyQmllaVZMSXBPYXZSbmJlazZaNytJaFBlTlZoOTVjN01mZW9UYjhsUFJVengzRkVaOFk4UFVQbmxIWVB4RUJKaUQzTVJSZFZ2TzlMN0ZyMldhQldTVFF3SGUzR0tWS29nd00rQTlWalUySVY1YVJHSDZ6cHRmTDRoS3B2Y3lvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Eletrodomésticos"
   },
   {
     "id": 313,
@@ -4707,7 +4708,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1124979552/21997793825?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnNncEZncWwwYm0xN1R5MnJXTThvTVN4bXdYQnFqb0NaSHNOVkV2bEo2YmNseUxZOTFHM3NuY0ZJVGdSNkNtdWpCYzNaeTFqbGJ6YzdNYnl3RmFBdUVVOFlrUVpkYlNqM3VCSExueHNNU3J3RTFjWVhLUEUzNXYvUzdQSFRYa1hRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 314,
@@ -4722,7 +4723,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1258556175/23197974712?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVkyaHE3aUNyNGd1V0k2Q3RjRFRaamRwSkJmTlZlNWRhNWlFanFCR0dvNllmWGh1QjB3d2k5RzQ0dS9PODNNUHFsNGVNSTdMcTc2RmRIb0hLZGdheVRENWVzTzRvY3BySFU0cDJ6QWJ6SEtacDdYM29ITWZhYzFxSUN5dGtMQlRZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 315,
@@ -4737,7 +4738,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/313660590/22893738408?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc2xsV0toV2FuVUJpN2ZFTElVa2hwU0pwSzJzcElLMGppSXQxVHp4aGRscTZFOWszNDdNNzdPakNrbzB1RFVzNHR2aWY5RXM4NkZuZS9vakNJRWwyVXE4KytWRFUvRmhVNVRnVjM0WDhENElMMDFhLzJMcFBEaDFOTmZjMUsxRjBZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 316,
@@ -4752,7 +4753,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1335110926/21399376704?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNTVkZ0xWcFgrNGt2QmFEWnQ3QmdtZ1FvZ3RyTFZDb2MwTFBjQlBKUVRuNDJFVDlIOGhUSnJqTkpCSlRHMmFLWWl1ZHdhVlpQVmZxYUVCL2FUM0RWYUdJUksrVHc3REMvU290bVJJR2ljMFcwektIbUR2d0IxNDlWcU5udkNjWHZBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 317,
@@ -4767,7 +4768,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1007375842/20899254008?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1ZpUFMxL2o1N0RPK0UxdWl1N3FMVkF1ZUdyNUc4cTJnejJwYndQSm9lM3JxcEpHNXRQSnA5RHJianN2MXFVTncreC9iMXRSajR3NWpaaDVKVE9CVXp1MVJDMEtMQ1hnNmlyOEJWMjBwQUw5cFk5TzhCam1rUkRSWEUrZnBWaEc4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 318,
@@ -4782,7 +4783,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1467965749/23494220015?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN2lKbXJsVS8yVjMyc2o2ZmdESXoya0NMY05OSE1EQ1Q5RlZNUlRtN1ZsdWFNTGt5ZHBtd1F5ak4ycnk5OU05d0cyRktXTElsZ205MENWTkZrc0U0eG0vT3dmM2hZcFBCWERzTTBaNVM1c3NZNEdZRzVLMWRTOE1rOGdCMmxST2JvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Moda & Beleza"
   },
   {
     "id": 319,
@@ -4797,7 +4798,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/811051540/20199889988?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1VFM1d6TklWZjJFVjFIREtRUzNiMkdTWStCN0x0WTgrNHdYejFlM2QvU0RFWU9PemZCWXRqazBwNDF3cW8xU29MdStiWHcyL0F5VGJIc3NCVEhMa1BweDNGdGlQbkJaaC81elhNZVdaaDhRMlNmSGIxNkVMaVhyUXFTVkdtM1gwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 320,
@@ -4812,7 +4813,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1003127601/22993197153?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1ZpUFMxL2o1N0RPK0UxdWl1N3FMVmNHSHMvbVhOa0hVTjUzQURabTJ4S0p3dDZ2VU1lbm81cUZQYjkzaDZveTlvT1NLclA4MzV1Z09hTFYrc3RuOGxoOXpPNWliTCs0ajZ1UC9GOWRxU3RiRFhXUHBtcFQvTXFZUzc1aXE1bEpBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 321,
@@ -4827,7 +4828,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/997025684/23998338580?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdkdjNUNOUVNaYmh0ODZFK29nSGZvL1NuUmQvUTF1a0JUYjhSTDlab3NoODdXTmQrTzd3NlcxeERIQ2U0OUNUejQxdStzWEQ2N29wcXdkTFhoL3A3MTROcUdlaTRUZjZnRkNDUkNEb3NxZmJyQklOUDl4eTVTbEhGc1U4cHMzeFQ4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 322,
@@ -4842,7 +4843,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/482840775/41158748466?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1hPL2J2Q1I2UXl0MHd6Y2Q5Ymk1TEgyUWROTDFsWWwvYVcyZHluSVdld21UY29iZThmeVpxRzBIb2VIRVR3MWVQRzdUMEZHMjVISEI1Z3dLTm9hc0o0ZHlxTWtPa2cycjNHT3NFVDdPRGszM0piQUo5YmQ2SjJKTkQ1MkF3bGxnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 323,
@@ -4857,7 +4858,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/409173014/23694084699?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXZ1NkNLTjRvc2dSclJJZUpwS2JQWnBqclBDRUl5dG1FZkVjS1UxWDJMV3dKZ0Mzd01hcVg5bHZFWEF0amYzejNnV0xZWnlUOW04eVAweHhjbEFybGFNTkhEMUU0RWl0c3QzTVhEZG9YWVNFSkFVUGNPaHEzbW9takhjSnNvaXMwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 324,
@@ -4872,7 +4873,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/612142360/22298321292?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdGRxQVdXcnZiQnpqaW1VZTF3L0hiTzJWbVl4RFByU2xia3VBaXN5c0xvdVl1NU9QV0hONForVlptRWhGZVRPS3RhU2FHVGltRWx6NDVWYWFOTHh1Z0s0VmdmN3pGcXZ3V2dSTDJDdmdsREo4Rkp4NjlmWjVxUzBIOUFMRGRINDFRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 325,
@@ -4887,7 +4888,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/322050038/23498679662?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdTRramhBWHJSZkg4a0JzL3Q4eEtSSlBya2NwNVNFWFdzNHY3WEIvMDI4NVZaRkc2VWlZQlNIenNBMzhqK3gxeURZblFqQmxLSDlSR0FITkVmSkVaK3k5bHY4UWFyK1FUWVlnQk9BY3FrU3YxYTg2R0pXNDMrN1dQMWtyMWZBZlQ4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 326,
@@ -4902,7 +4903,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/832040275/23096150316?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWVQMWpXRHcxcklXLzV5NmpUU1dmR0l5Si9ORWkvOE8wajB0c3NJYkpHblkvWXk5NmVxOFdhenlqMmZLY3RWS3l5cXJYVHBjWm5ZK05TeUkrc1FOSmxZMUZ4S21aUkJIMk9EcUVPb0ZOM051Q3VCRnNNYW4ya05vTGU3c2FWbm1BPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Automotivo"
+    "category": "Casa & Decoração"
   },
   {
     "id": 327,
@@ -4917,7 +4918,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/328017176/15496690711?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3NSM29YaTdCREIyVHpST2ZJd1VwL3hRWUp5U0tpTm1vSllGK2g0U2hCOE40cENMazhpMnlRZ1REYllpeG9TdEphb2RxZ0ZIWGU1VjBYdlUyOTFYU1FmSDNLSEVHa29NMlpqdlFuVFkrNFphVVVoM3U5c0p6VHZldTYzNGMrcyswPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 328,
@@ -4932,7 +4933,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/340096629/18569891295?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3hNbUFEWEpWOUwxZnJxYVlIcVhHRjFyWHJrSktIMGtyR0RuS2hlSTY1SVBYNis0aWszUGx6YjVFUFhDbmlFRkdkZG5SQnVzdUJGcDVEN0M2eVNRZFAyMnFOZ1FGYTREWXlLVGUrK0ZnZWNac2FmaTRTU2VLeEhFYXlqeDZCZXRrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 329,
@@ -4947,7 +4948,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1186634091/23698370965?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNkp0bHp4akpkRDU0WGxnbUo0MWpuNzJqeDhCdTUyTFB5M1QxeHlyem1ZeHlSUEl6bXJzd01TYlE5b3k0eE1uTURvQkJmUmNTaXFJY253U0YxRmJaS0RDU1BUcUZnYjVUUmFJZmRTVkx5Q0d0WGZ0MityMFdadzFOT0Z3bmFuelNzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Brinquedos"
+    "category": "Bebês & Infantil"
   },
   {
     "id": 330,
@@ -4962,7 +4963,7 @@ export const productsData: Product[] = [
     "location": "Espírito Santo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/340477685/22297450875?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3hNbUFEWEpWOUwxZnJxYVlIcVhHRkNaVEVOTS95Z2owYlJEMmgxMThkdXhlWjF5U1ZDUkRlMFFJMEFFTzgwL2FIbW8xaTFYVndxKzNRVzFtUis3V3VmRjhQdVFoSENmRjRuaHlqV0xtZUU5QXVwOTBsMGZPWnpQc25nYzRFRjlvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 331,
@@ -4977,7 +4978,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/998773037/23598541366?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUxxNzFhN0J3T3NNS3pqSDFVcWRNdmJzY0YrNEJPWlkyZ1EyUjhxYTZCVXJVbmpaU2xYMkVsRmFiK1pETlFBbWxCN1hmRTdDdlh3bWppa3NIQU4vTGFqa2l0d21EWXFwVVp6MlZPTFFzSEtOcHBiMmU0SFVDWUZnTisrZ25XS2lZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Automotivo"
   },
   {
     "id": 332,
@@ -4992,7 +4993,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1259086167/41861770942?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVkyaHE3aUNyNGd1V0k2Q3RjRFRaamJYTW1rejNRTzhqQ3oyaDg1eVdVQ212UWdkNld0MjVyKzNscTZ1V0xLZ1FDTDBtdVFMWkUzZlNFZE4vUFZ6SmY3OEkyR2Q5emNEK2MrMmlQV25tNXF2QTloak1ld1N1ekFSOEx2MkkvT0RBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Automotivo"
   },
   {
     "id": 333,
@@ -5007,7 +5008,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/378772460/21419869737?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdHR4N3hqTUVpcFByZHY2eHVXU0dPeW00TnVzb0JXV0ZwaW0xSUhJeWk5YzBpUW00V0tTbGlxRXErdUtUUVUxLzExWmZtaWxHdUVmMTJJd1VOLzBsMFZ1MGZGRDFiUzFTaHdYdkRlUmUvdmdPWGdzbUU2VWcweVN0SFBoOHVXcVowPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 334,
@@ -5022,7 +5023,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/532455428/58252349134?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3lRVnhSb214dWRiL3BCNFR5K2JWdHN3eXJNbmxJc3E0R3JZNncrWWt1Q1BzMXhhZlkydUd4a3lNL085eGtmb2VuTzJrM0dCcm0zSWRVQzJpWmtjeEdCaUpIUDZtTnpWWWtTODE5b1lvdEIxbjErZ3VnazJZakQ1SGlDdiswUUlZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 335,
@@ -5037,7 +5038,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1042165059/20099239715?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEdUZEI0NXFzRUFLRWhUSWtPTm1ZRzVQNHB6ektzbWE2bERpTUw0bVRUMGI5b2xkZkZSQU01YVRXaEVzNVpHODcvRDRRL2NxNjRIcGFNaEY3b01ycVVsY3N2M3Q2aENTeHJRY084c3ViQkV1SklBVTBXN3FyRU9wSHB0OXFuQzhnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 336,
@@ -5052,7 +5053,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1271154392/18798274834?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNzhFZVJ4NGxLdFNvVzNTbHJ5SUtuRURlRTBlSVM5c21NdTFrbzBuMnpFWjVqOUFqVmsxM2M2YUxmeWkzTnhOeXFjcDJ5Z3RNQXdQTmQ0ZjYzL0RKWitVMkpnd296NVRoRkhjemcxeE5jVUJ1UUtWV3NLeDEvSHUxRGZYamRrUkJNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 337,
@@ -5067,7 +5068,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1066052934/18297687418?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNloyRXJNK0dFZFZ1MzRDVXhpYVFrVjlzdm1IRXZsYkFubGFHcndkMTJVL3J6dHEwN0FIbUJsWFRudVpOcFUya0FWTXprYXZmL0dmakswWEo1NzZhb0R2UkpjcWRML2RCSUpCNmNHSzI3ZUUzU0ViS3ZnaVJidHlwTThWWVZFamU0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 338,
@@ -5082,7 +5083,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/473616631/18198763923?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmFuYnV6VXY2NWxZSDkwb2xYQWlRaWNLaVduUjVHeUxvVVlsbHBCNTBCSm8xbnBKZlg4SmhENVVNdUZaQzRucGhGUmFQL0VYNGJ5QXNoYTZxeG9ycFA0RkEyUW9wNFB3VkNNZHlHRnZiWWw5aTl3RkRHc1FxUjNkSWVvR01xbXYwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 339,
@@ -5097,7 +5098,7 @@ export const productsData: Product[] = [
     "location": "Goiás",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1463484615/22293819530?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN2lKbXJsVS8yVjMyc2o2ZmdESXoya3hWR1RxWWZablpuQWNwVnRpRloxK1NnVkRXS3VNNXBwRXRucU5TU3AyWHBLN2t0VENIVWI5OEZFeHpPYTdKOTRVN2prNHVNek0wd0dTYTl3aTUvTWFFb1J1a0tzL2RoTTM3OHFKc3pySEx3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 340,
@@ -5112,7 +5113,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/379173812/22394409850?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdkdmbHh6elBTQzQxM0lpOStvSngrTFlJWEJZc1lwbk84NlNFZnBTNld3MkRTREhnRG9FYTVsbk00ekdzaERHZVRqUGRqWXpwTXNjVUFKZGR5Vy9NTE1lWjBJN0JKSTBjQW9OU1NzN2g3K1lDbVFIOVhnaER4ekx3RmcvVXNlbWxZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Moda & Beleza"
   },
   {
     "id": 341,
@@ -5127,7 +5128,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1512108548/23698384152?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVNCRzJrdVJqZ3lReTFNVjgvS3M4SWJRY2Y3OVVmMXFaUzJKMmx4emJTSjFLQkV3WlRUOXJGdmZ2SU50QlVsTkhuTEVoY3krWjM3ZlIyNDllbWljbmV1RENaYjdPWWx0c1c4bHZ6NEovQ2N4SjYwUWJzT3JNbUo0aStTOCtuQ2FvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 342,
@@ -5142,7 +5143,7 @@ export const productsData: Product[] = [
     "location": "Espírito Santo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/340477685/20197668719?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3hNbUFEWEpWOUwxZnJxYVlIcVhHRmRnaHh5eEpvL2NEZVFJdVVEbk5JMktRSVZHRVdyL29PUHNMZnUvS0dTeW1kWlVDTXBrWjgwYlpwYjE2RUJTNHhuek9VaDRFZjFZdnRQZ095M3g3ZTk1eXJpS2QvQTlrd2lmNythSDhJaWFNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 343,
@@ -5157,7 +5158,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/720952207/21397760996?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc051bzJVZVl1d0RhQnpGTFFNWmlmczdIZkJMbEkzdlY4dzV6U013QnFiWWNrVjVuRXlUcEh0UjVNbDhhRDE4V1dLbUE5ZHZra0M2bENrM3dySFQ0UzRyU2JKckZEK0dFVDdTNDErUlFHc2lTdm5Ha1FLTi9YQUxpZ1FEY1NrcWgwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 344,
@@ -5172,7 +5173,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1504466128/23599183647?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNU1mU0M5RWxpRUpPMTNORXc3cFZmbmxrd1NtRjBBUS9rV0liTU9xRC9hcjdPL01jNk9YNGtQeDdGRlVONlVrQ1hiMVp1TVBOcjk4L21xekNOOTYxUWE2dXdvemNwWFg0ZzJ1bldaWTNDYWZvKzMxRWJjZktzc1JwLzU2c1ZjN0tNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 345,
@@ -5187,7 +5188,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/369006714/21299575030?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdThuR2owcEVwMzQ4ZkhnYUI3RG42SytHVklIaFYxRnk4RVhQRWJPSENqOWwwczdHc2I2TXgrd2w3SnQ3TkEvQTBuR3lhakRyRHVqY2RJWWNzT1daMFZCS202N2xHdWFmTldHOTJkTGZNYWdaQzFvNkY1ZEVHeDJlUC9qT0VlS1FZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 346,
@@ -5202,7 +5203,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/298298179/22893963394?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdnVNNkwxVm5FV1ovcTYxSTZLT0IxcDZFQkY4aUJwNDVvRk05OWZzZXJsREVocjE5OTRxWTM5NUVaUGxpSVlHUnZmYzMySFp1aGwrVWorT0NsbFhGb3ZJMDZsVkJVbVJTTVBsakFzNlV1MVpDV3lnMHpQbDZjZ284Vk0yY2ZxY1lFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 347,
@@ -5217,7 +5218,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1101178064/27939173914?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVRBdU9zazlxT0l6c3VUSUwweHVJRUZkc1BMeVp4TU5tMFNmNWJER3AwQXVabmIzV2lhM1gyR0hlR3BrNFNHTHp0OWs5em9zbWdRUUczcmhyRnBaekhxK0VsL1RLVDJUeW02eXBYMTVsMkJtcHA0aFNkNjdmcXpjenBtTGp3Q1NRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 348,
@@ -5232,7 +5233,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/489001115/12137161488?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdlRyQmllaVZMSXBPYXZSbmJlazZaN25sb2ZHbGY4QXZ1WnRpQU1laG96UStYaGp1VzdXYWpKZVhzcTJIVkp2RWNHMnlRY3E1ZXJCQTNLa0pGSk1wVU1aM3lBSFZucklYZWR6U1o5a1BINjNwejlGanI4Z0NHZGJNVkNUbEQ5TWxVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 349,
@@ -5247,7 +5248,7 @@ export const productsData: Product[] = [
     "location": "Santa Catarina",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1363760188/44172326699?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNjZxczFjZUpCVzZMY2tOMHBrckhPQzVIWkFBdXdUOHNteXpwK3RTYkR1VVFGdXZhY3BvUVdpQmlqb1Y5Z3l2RHRQV08rSkRnT0cwUmlFMzBUdFlmR1l0WnNjS0YwWGMrWW0yOHJtWlNtVVNnTjhva1ZXRVluZW8zaFRVUVNDYUQwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 350,
@@ -5262,7 +5263,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/785541033/23992806766?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3cyYjFINUVxWWtveDdoMjU2VXN2eDhhN2pPanozS0d4WXlQRTZwSHNQZUY2aHZVUk5ENHkwejB3Zk1NVmVUYzRPWnduR09PM2hwWkN5S0J4TGJBSks4RktzMWhvQStnUWlRcXVKanU2alkremRzT2ZZc0dwSFhnMS9vTjFiZDNNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 351,
@@ -5277,7 +5278,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/512962451/23193680985?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWJlRHV5OGZHWHdvbVY0Sm1jVVpaUFk4K25VY2gwQ1pFZXBJUWtNQnJPaHpGbEtMNnpVVEJMNERORWhEVyszWldzdWFRUFZvTVRtVWo1MEdJeVNpK3lMUm83TUhIYjBGMnFzVGlaNllpUS9vTWpHbjhnU1h5SnJTSDJiUndYL2c0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 352,
@@ -5292,7 +5293,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1403314809/19699852350?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNFhESTRDay9qVlFVdHRubksreThIRU9GVmV5TnlOWWs2UlE2RXFvYlB4Mm9rYXVpYlVlQzdRQzc5RmZINWxLSXZMWmVkQXZ3QkhJQmYxbUxpNTRWczY0NE0zcWc5TGplWWlNZ2RkaFNGdDlqWjUrOG8zcVpwYkljR1Y2NHh3dzQ4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Saúde"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 353,
@@ -5307,7 +5308,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/295736938/23393862598?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWFKSkNFbFd1UTZLbVE5NHNZejh6VXpGZk10NFM4cFlQZEsvTEtGNHFtdlYvNVp2c2NYL0c3L0kwbTNUZFA0d0NXNC84UEVUNk10RzVzeUVpVytpR0Jzc1grbmZySURVSkZsYVNqUjV0VVg1aGh2KzVLcXN5eDJmME1SL1FRM1pzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Pets"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 354,
@@ -5322,7 +5323,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/299569156/17686486549?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc09LOURCRHlFSElVMkpObXQwZ3ZySHpxNzdpRDNMVk1ISUlmYmtYajhxQzFOY2s0aXdCVG9WSVY0SFJNVTdTSFRaeHU3eXM5Wm41RW1RQjRhRGJOUmhTdXBidGJnejVXaFI2bytMN3g5cmJnMjJnZDMvTVk0RGU4dXNDYjVhT3N3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 355,
@@ -5337,7 +5338,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1317252147/23193177614?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEpRL2FlUlcybzF4QXBObW5MVjVGZDBKVVpWTGUvVDB0ZVo1TlNkWi9PajlzUHF5RURhZTdqcXF1dm11WG9KeFlNcnhxZGR5Y2trQVVEbVBDWVNBZHIxWDlLdk1jczRpcVdNaGpUMjIwNXk1ZURhZG5wdGtBcWZIaTFoTVpsQnljPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 356,
@@ -5352,7 +5353,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/326454501/7861157565?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkY0tSanlKZU1BU2Y2RTJzOS9neUtnZmNJY3M2QjNxdnhuc09IVmRjc1M5Sy9vVTQ5QlNxZkhWUUIzelBtM2lsWTJXaU5Lb1NTUU1ESFpvQjZFVFhiYk9VYjF2RHRPWm4rd3VRclVxR2QyVnEwZzJmaFM1MmhFNXVlTlFqdnMzSE1aUWNDQ2ZGb1JrWUtjVlFnUUUzcXpFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 357,
@@ -5367,7 +5368,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/552896405/23892669878?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1VZT3o0R2xsMURocnROd2hzZzltZ0Z0N3VkZDYxeTBsQVFYZzkyYm9UTzM2LzF0QnIxbktpVlZycGdCbThiVmdGOXE3YTY4cTRISDFnQlZPbXp2aVlrTVkvTGZzdStSQmlxQysyZ1FreEpYOURwTDZSeXhSb0lVK1VXb2I4U05jPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 358,
@@ -5382,7 +5383,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1351844299/21498186108?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnFlajJWZlQyRjNuVGtydksxZlBaeklyVUx0dkxHdVlZSlZuWjZIcWd4Z3g5NWJNR0NKOEhwWFMxN1RKdzBkb2hhZjlXdW5PTVR4bkhDNDRjS1RMTTJrQVpyVmpTMnVyMkdEK3dxNk9oWDlaeWpnbmYwRlZ3Y1lGeVNNaHBUS1JzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Casa & Decoração"
   },
   {
     "id": 359,
@@ -5397,7 +5398,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1384141139/23798147938?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNXBkczJ6U2l3VEh5T1haODRWd1FPaTBFTVF1aWRFSmVtRFJtZzNQbnBHRTE4alVQVmprb2lES3RrRDFRdmpwUWE3Z0RDYkYra0h5VGN1aG1sMEpiZ0FtdDdWbEJKdDQ2MTE3TXk2RGk5UzNjTWJ4Y0JLNXNIR3lZczVoOC81b3RRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 360,
@@ -5412,7 +5413,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1103768108/19199215391?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVRBdU9zazlxT0l6c3VUSUwweHVJRXQ0anBiQ3hBczdudjRTb2pob0dHMzNNOTNzNzBwSnd0MmtDYjFueUpWWUFnUGJGN3o1TnErWjlDK1pLSXRJaU14WXJyUllMZ2p5QWs1cGFQWVMveDBSQUwxZDFqaXNtMHhOMXFqTDNyQXhVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Bebês"
+    "category": "Casa & Decoração"
   },
   {
     "id": 361,
@@ -5427,7 +5428,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1005980154/21697919241?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1ZpUFMxL2o1N0RPK0UxdWl1N3FMVmNQdVZtZVhmZngyQVdOV0JHS0VUbmI2NHd3Z21UMENnSmdrUHB0UGdXMEtpcFpuazhDUC85clFRR3U1K3hrenc4QzlSRENKWHJ0VXRLcyt2VjRQMnRGNTFJc3NnYlpDdnB0MkZyVm9IUnJVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 362,
@@ -5442,7 +5443,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/768604265/20846672583?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdjNvQU9TN2hYRnhxZmxmNVRRdWNJQm9mbWE3U3pIWUVwSjNrN0JNL1pCKzNKdlJNUWRyZDVOeENsWitsMDluNmNOR2tCbHRuUEhJTFJnQmFDMGIrelU3ZWlzNlNWYnZOays4QnBULytxUURtWDZEQ2w5WXA4WUVudTZraTFJZVhFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 363,
@@ -5457,7 +5458,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1388617340/22494247394?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNXBkczJ6U2l3VEh5T1haODRWd1FPaXczL0FnZGRldTdWQWREcnA3MzR0QjNxWW5QL1BSZ3cxdk9IK3hXOFdNZVZiRnlRa0lTTUdod3R5UFpYU3kySUVVTW9mcllrYXZqUnpud0EyTTVpVmZaSE92UU5oakwyQ2pFem9tbzArMk1RPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 364,
@@ -5472,7 +5473,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1134878903/22798765916?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNkRpeEVpK3ZJVjVmMzFMUGRFOXVoUkI1bWcrNzNDbmdQcjVQVVBFenNEM2ZaV3haQ2MzZGZ2QjZBK2g0TXNmRytxdHh2SDdFdU1uN3NRSjk2eFNYNmU1YWNuTEZiK2hKUTN6WjE4RDAvVkxicjFHU290Y3lmb21DdHBsOTZRZGNjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 365,
@@ -5487,7 +5488,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/533721513/19297426343?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc0lUSGZyekdRWlVKL1FISWJXU2Rhd05SdnBGNzMrYngvdG9WR0x6TlNRSUx2WnZwNmZBZlRKeWFMUWtFVWNKQ2N5N0FKaTkyZHhGRjVmTzdFTmdWUi9VOVAxVy9YNmhvZVhncmY2aE0xSGlnVmFMWHpTS2VKeU9IaWZLVWgzQVBnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 366,
@@ -5502,7 +5503,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/383034422/23297437603?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdVJnemVzelowelJ5NTNabmhocDBKMU1XYktYOE9jVlhLUDdPQUUvMGVCeHhmWWdJcmZnSUJDMlJMWVJHWEY0TlZYMlV4ZDRJZUIxeUQwZFloVFhiQ2trb3ZBM2QrQWZHOE0xSGRjYVdOZGNLcm1uQzluWWxZQjB5VGFYblljeW9FPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Pets"
+    "category": "Casa & Decoração"
   },
   {
     "id": 367,
@@ -5517,7 +5518,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1461932061/22598306022?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN2lKbXJsVS8yVjMyc2o2ZmdESXoyay93Z2xra0laSllsWVhwb3AvTmlTZkFmOTBwdlgxTFNRcVVtRUd1bWw2RnRqQ09KejYyT091YXVWd3phMDBmNnRRS1Z0ak5oM2U2S285ZkFrUWhhV05yNGRaTWhhVFFDY3hKVVc1MkxEQ2dzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 368,
@@ -5532,7 +5533,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/378486098/23197296055?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdHR4N3hqTUVpcFByZHY2eHVXU0dPeVk0Y0J6eWIxc0s4cUFZTmdoUGZHTjlWZTRkSTJJOVB5NHAzMityWnF6K2dWbGJvVkdmSzFTMVExNkRQU2laaDlrQVhWak9hSTVBRUlkZm9rQnFwdVpweThTQlZPTzJkc0ZvSTBXazdJRzc0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 369,
@@ -5547,7 +5548,7 @@ export const productsData: Product[] = [
     "location": "Santa Catarina",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/601021305/23597767441?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdDZsY2pVTjdzYnorTXZNeWw2T0tUaTFrei81Y283RVlIQ3Rtbm4xZFZUMEIzSXhIbmpiQTlMbnlTRCtkcWUyZ1hJanZjQjZhaVNnYUZONmN5N2N3cjRIa3p6alAzdlIvS21SSTR3M0JxNHg3a1NEVVBOa2FBMWpqTlRKU0lMZmhjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Saúde"
+    "category": "Casa & Decoração"
   },
   {
     "id": 370,
@@ -5562,7 +5563,7 @@ export const productsData: Product[] = [
     "location": "Santa Catarina",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/827490673/22893534111?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc0hFMEdTRFhhZllWMk5LeDloT0xmdTNibDBCNkluR21PVzJmRnVuTjd3emFsbXpUazF0dzNUVHh6VTgvajloYnc2aW5pbFAzUkh3aW1PWGJUMmEyUlpWQUpSMlpiZlh4Ri8xSE5nSmxrVitTRXRUMHNlTkdyNFlQTGV4ZUV4MFNnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Moda & Beleza"
   },
   {
     "id": 371,
@@ -5577,7 +5578,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/422650277/19698315702?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdU5IRjJtOEhBdGY0MEtERSs0VmxydnNpaCt0YjhHeVkvT2Y1V1BNYVBtYWVHNUkyQklEeEpRd05YYXUxL1hWdFJORE14VytiOE5FckFpejNYYk9MRTBpWThwQVZWQkNBMyt6SHNBb3A1em1tQ21SNElqMXdSamJMZXlMMGRjaHhBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 372,
@@ -5592,7 +5593,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/482786640/23394366238?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1hPL2J2Q1I2UXl0MHd6Y2Q5Ymk1TC8rTDBvUGd0dFA4dGFxQnM0QXEzYU1nZW1yUGdDbEluWGtLRGhpZERPcGE2RVVxamVBdC90Vi9LTnA2Z0FtSk8rdC9XV3V0UkZjWExyb3FXNzRmMmRwYlY1dDBoMzlmd091cEZOOHlLQkdvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 373,
@@ -5607,7 +5608,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/480622455/23197416358?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmJSVU1QSUlNcGNaaUdjWGxYTGRLNDdUUVJheCtQcnhlcGM5VUsrRUhGY2RHSnZiM1dZMU9xRGJzMXQxdnFsRkdSM3ppSi9sRmpxRUZFWHdvNUR1MEI4QzVzM0paZDlBdnZrQ01JU3gyLzJFV0lxTE1WN2RpbHhjNTZCSVplQS8wPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 374,
@@ -5622,7 +5623,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1443637814/23594455075?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEdoZnJQK3J6MXpCYllXdytGNVFrbS9kdTJkTTRPTGd3UmxLRUQ4ay81bEV6Z2llVkEwQnZTcy94blYyeGIrQzdSZE9KOGhMcUJtZE5lZG5pTjlkdE9xVmE0QWNPZGNrZ2lkRURHQUYrWnhqb3FQbG9ZaFhwR0dQK0JHaC92M3hRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 375,
@@ -5637,7 +5638,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1524474902/23299003849?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNHV6MnZ3ZU1ZWjZ3eGdVVlFiV1FrRVI1RjdyajM1TUd0NVppUlBFNHhCT04waVFtazVDS0UxY2xPa2RqRGJDSjVML3RuUXZ0di9KODR0T3ZEU3JYOGNpR3FiOWJWZTEyNldBWEtFS1FnWHpMd01MWVlWUWxpY2ZSVUx5ck85QnpRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 376,
@@ -5652,7 +5653,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/448670448/23593588164?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdk1FeTJ4bEszSHNSL2hJdllKbDNxd3dWOThQdWhhOU9zaVJmVTZtZmdxRXprR0hOM1d1Tzd2U2VibnptdFRkR1RzNnZXRnZjTHBSaThMei9DTGo4K2FzUDNnbzdSZ1NCNnU0ZHh6VEZmUHp1ek5XakRQbkZJNlVWdEF3dTJIWmp3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 377,
@@ -5667,7 +5668,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/242736234/29781505599?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdlo0NlhsektFNmtsYWFpMmJhbWZUUkpJM2RuaE1pVlVlZHU1aWs0SnFNL3pXM0lKYmhNd3YvcnhvekVsV1JWYmZXTWd6cWYxZ3lVWEZJVlYrYytGRHpMWUFMZUZ2OXZXcDZkV2xuT3UxdjlxaEd0OWZMS2gzUUhEa0VTb0NpTlNnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Gamer"
+    "category": "Casa & Decoração"
   },
   {
     "id": 378,
@@ -5682,7 +5683,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/309437445/23492991813?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdVJ4Y25KTXp6dnl2WFFvQlhTeDYrcVc5N3AxeURuVndZZTJ0Qi9BNncxZWtLdWhTQitYWndORTkwR1N6QmRFbVFRU1pyRjEyN2JtcVIwQ0c4a2xVYmM0VXBrYjNpcElTbkJOMmpvMzhQQm44VCs0alp1OWFOZHlNMDZ3ZGtjSTk0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 379,
@@ -5697,7 +5698,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1045085918/23793082548?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEdUZEI0NXFzRUFLRWhUSWtPTm1ZR3hKSGhHaUxDTlEvNVRBNXJKOFpPYVNOajVhM0FnQkl3Z2pxN09pT2JJTXBya0NlRElVYVBQcmZyVW00YnNZd2QyZGpPRlRiV1RZTnRIYkZhc1U1UjY2Uk9NV0FnZkY2VlNSMm4xN3J3MVcwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Automotivo"
   },
   {
     "id": 380,
@@ -5712,7 +5713,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1003085235/18996959926?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1ZpUFMxL2o1N0RPK0UxdWl1N3FMVkZxcE96SGJ3d0tsRmlkMW1RRmJsVjNUSHBSRjVPQVROR2tDSnhmOThRa3FsOS9HK3puejBIYmtZRjE2Y1o2eGh6cDk3eWVTRDdFWC9GSklXY1ZnY0I4V3JTTmFLZDhJc3hTejdWREVmQWNBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 381,
@@ -5727,7 +5728,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1354073776/22794341423?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnFlajJWZlQyRjNuVGtydksxZlBaek9QNXpQTlc4a2dNM1FGemZvVk5aZjk1L3pJYUlEUkdhTVU4T284bnNES3lLZHdNTUlUQmJXV0JZREd6Vll4anBIYkR3YTVSUk51L2xEVWl3cG9sM0FxV1lKdGRQNThVTzBuYmFiMTdlSWxNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 382,
@@ -5742,7 +5743,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/449141878/22694336487?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdFh4eHFBMTZET1ZuZE5PRWxpdGpGaUpmVExzYy9PK3IySC9tT2QrWFlXSkg4aEsvUE4zWTlHR0hYQVZ6ZjQvT21nV1FFR2psTG5HMDAxVWNhY2xaNDMrZFlVYmZCZzYxbDU5bndDZVN2Mk9lNTFOMFgzTVlnL3NDRFFqaGRQTWpJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Moda & Beleza"
   },
   {
     "id": 383,
@@ -5757,7 +5758,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/489001115/12387412163?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdlRyQmllaVZMSXBPYXZSbmJlazZaN1RvY3dYQnJYbExULytlcVFuR004Q2hUdG90OEpRdnI1WDRTOHBqWVRROTYvaUJrZ1ZhUXFJVFM4QUpkRXMrOVZweXJQSUE2dk5IUHloVi9OeFVRa2tSSWkxNHh2d3RyT1hnSFZlenhER1ZVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 384,
@@ -5772,7 +5773,7 @@ export const productsData: Product[] = [
     "location": "Bahia",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1050213612/18397624887?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0x6dFhUa1NUODlCTnp4OFk5RXpiYnBoTVo2MEx6T0hISVlJVzlJRHcyTHJqdnBrZXEyNXg4dTJJQnI1V3B1MVhNZWJZWEZLWlVDU2lRbjdXZUUrSWJXNHhEV3FQbDF6bmtxdkNxVS9BSG5rNVdwWFNBWkxSNXViQUk5VEVDY3kwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Eletrodomésticos"
   },
   {
     "id": 385,
@@ -5787,7 +5788,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/404104847/20540977499?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUxETG1JRUFuSEl1MSsyTkxwa0R4VHZHRHVJcHE0Q2xlbzJJbXZ3c0w2aEtZbUhtdXY1TlgrUkJIKzY2UG9PTVp2aEZHenZrY0pUZ0JHK3NUWGxjVFc0RFprRTdqN0JiWGxUSExBNlg3TGNXQ0MvZkFPOXdiVkxqbUdMQ3A2S21jPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 386,
@@ -5802,7 +5803,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1509457209/40251350341?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNU1mU0M5RWxpRUpPMTNORXc3cFZmbmFwUlc3c0xEYWx1cmlGK2RSYU5nUDFtM0lpcjlaS2pweENMSTV1ODVreXJsZkF4dUlqRnBrMEpZMjJleEN2bGp6YU1XUDZJYlQrNXY1a1ZSWDg0L0dnY2tCYXRTMklzTGR6dW9HQi9vMUs4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 387,
@@ -5817,7 +5818,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1515741369/23094198563?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVNCRzJrdVJqZ3lReTFNVjgvS3M4STlWQ1lJY1d2eC9NaHlGc2Z4a2JTc0FKNEdBWGg3V0JtTC9RKzVwYVQ1R2YyZ21ZcExHMjNvZTQzb2hyQlZFQUg3WWI5cVl5dzFIV2FvZ0V6QlcxdU1iNDFmYnY3UXB0ZCtxcTdqRW0xZjRnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 388,
@@ -5847,7 +5848,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/330139332/20198090955?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXpPdVY0bFhydml4ak9xcUc3NlZrc0pFeU82YjdqbW5rcy93aXplb01zNWZRMFd2cWFxR3hDYjFnRHNCN3hEb1VTV2poV1ozUGdzRCszZHFPWEFKQ3pEekFQVzJ5ZGpFMnRMa2w1V2VpOG9sYmFJTWJFMWpXZFVlNndQbVpTSzJzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 390,
@@ -5862,7 +5863,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1264719671/19898262570?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNFJWTjExaFdMaXlqUWNhOHVUQjBmZ1ZadGRiQ0xoZm1pczcwR2lOVTFKSGZNcDh3TGdsakh0VlF0R0R0QWVSQno1TU1YUFJ6Yy9LTUZ6dlBCNXQvVzJxdmJaSk12Z0xoVlIzWUF6SDZSS24xWGZpMlkrMHFPMitMY2ZZcGtMaHI0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 391,
@@ -5877,7 +5878,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1389945622/19199648882?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNXBkczJ6U2l3VEh5T1haODRWd1FPaTJGbE1PZ2czOUNVeVFjbGtUUVBON3ZTOURPNTQzZUEyaFJQSXV5ekV0bjZGVjU0ZHhoYWNOS29YajRNWjk0ZFlycWZ2VVNDeUZRMWpFaFA4YXVYaW1SdGQ4aW9iSXVPZWhwMFN3TzcrU3NnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 392,
@@ -5892,7 +5893,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1061277659/23993384831?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNloyRXJNK0dFZFZ1MzRDVXhpYVFrVjI3T2p0Vm9ORHVXeWxTa2x6MTJVNjRadVlFSURsT2Z5UVNoeWgrWk9lN0NNWUhhLzJWbmtvd2oxZVAzRkR0b05EdTJpZ0E1ajRpR21rUUlDcFJRUFNHeXdwblN2Q2cxT3RNaUxIRWNkakRNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Eletrodomésticos"
   },
   {
     "id": 393,
@@ -5907,7 +5908,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1473898517/23599043776?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1JocS9UZVVlUXFINkZubXgyUWNZYis4NFZqRk83WlNaWXVGOFJPUGthVStSSk1WbUluN0VGNCs4U2lQaWdBNTVEYjRacER2YzVpM3BDK21KTkczZGNiY0NJdW45SEhocDBtaW1mOGlzaEdSeDQ0VXo1SEN6VVlZejFCWVZ6QzFZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 394,
@@ -5922,7 +5923,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1457299928/22498211015?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0lRanFYdEZNbWtLdlh3OWlUUVBCYzZacWowN1kva05FQjBxTXRpT2dhU1ZsR0VjaFZGSVFxdXAwMzlJTWdHSkIwY09iTlVLdjluZ1hQMnBqZTMxaU9ad1dKdjhGZjFvNWd6RTk3RVlnc0I4SHN1VUVONm5PV080emt2RW5tZGYwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 395,
@@ -5937,7 +5938,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/992612253/41368657771?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdnhNWWpBb1MydFh0cjNHMWN5VkRvQnJzL2kycXEwQTFjSjV4cG8reHN2Q1JpaXkzMk1XMmVhSkcwMnJtR0VSdEN2M0pWbjZ4NU1DUDVseVg1TW1DelpKb0ZNcG9lV0Z4V3R0OVBNVDFWSVJRUzNnUWY0eHRvZnM1NGFzZ0hmKzdnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 396,
@@ -5952,7 +5953,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/375556621/23798166298?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUN3dnpTV3pTSFZRRHVlQWFEckNQbXNUc2hzNlkvNGljdDJPLzZRQnFRQkQ1NWVqL3Y1d2tuQVJLLzRDWFhwZ0FweXhIVUtjNDJYQ3owaDVJQkpjU1g0dmtabUppcFg4V21ZZlFNTngrSG83QlJuTDBwLzkvbzB1bWdSYjh2dy9vPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Moda & Beleza"
   },
   {
     "id": 397,
@@ -5967,7 +5968,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/462404558/22898457776?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdVZIRlkrZS9uNE01NzEyVkN2bWVDWTBHNDllc2I1ZHN1MUtNTnZPVzE0VWhDTDRsdlRkRElBWi9oNjAraTVzSHZRUWZ3K3hNUlBUQU40RFNjK2d4ZjBZdktNVGxGeGx3QlVkWEtPNnI4Zld4Y1UrTlgydTh4SjNTemtiL3lkcWtzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 398,
@@ -5982,7 +5983,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1127030290/22098162297?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnNncEZncWwwYm0xN1R5MnJXTThvTVc2SERRcEtsR3crV09BSW5GamVVTjVRcHNjUmRDL0l3azFsVzFabEpyT0hFZEJrKzVyZTd3TThGUDBud0tDNWtoOHFUbzdBeEd6UisreUlpYW8xcklHbDlkeXZIVUJPZ09JUEI2bU90NEVjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Gamer"
+    "category": "Games & Hobby"
   },
   {
     "id": 399,
@@ -6012,7 +6013,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1545920213/22598770361?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnVJbW5vUmJMVEgxNENmWlJITkRXK3U5NVRzNmlXYUoyeWZBbDd0N2RPVGwxdWU0eWZHdlVDV3B0d2lTSE93WFIvaHhnOFZCNXk0U3BUVlpLMnpibEtqbE9SRFRFNmJBZFR6MW54bmtEZFFlampQTFRiVFlVYVA3YjRFalcwWFc4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 401,
@@ -6027,7 +6028,7 @@ export const productsData: Product[] = [
     "location": "Internacional",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/401316974/28917726464?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdTYyK0NiNU5EdnJkblh3MHFzSTlqeXFETjhyZ2xzWWtWRGVFanJ6RStIU2tPbk9PQ0FWaXQ1aWlZcHIvelJ1YUUySTFXVUV0Ti9hanJPMEo2aW5FRTNPZkRxMlc0WExhYWl2cmRwMmEranB2d0I5TFJNUVBoemV5ejJJUEM3cXVFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 402,
@@ -6042,7 +6043,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1018414668/22096563893?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNFEwdzR0cnZQREgzMG9ONy84NjgrbnZ6eFM5MmxmTzZZTDdqcmh4YXV4N0JaeVNEMmVybnN2NFRuTWNoTzVIZVVvVUNpMUZsUVM0cWZsWVpoQ2UwdStoOWJEYkdxS1NqcGo1bWxSaDhySkZnZCtuK21oektNL1V6NzVoMVdCdFk4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 403,
@@ -6057,7 +6058,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1530229780/23498911966?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWNkaUJHS2dKRXlBdkd2dG1mZ0psUG4rRTZsMlpCb2QzRTZJL3Z2NlBRdkhGTFJTcFViY0paR1c3L2VhbUhweDJSMy9NcHdVN1RqSXBkVG1JN1pIMlZCcnhaQ2RadXgvcER3bC83R0hLMUJFczdHVkJHcTJyVFJmS3hWZXNVbmdBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 404,
@@ -6072,7 +6073,7 @@ export const productsData: Product[] = [
     "location": "Internacional",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/662418492/48800631375?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXhpSUJQay9FYWt5UnlvTmtUN3NSM0N6SGpYK2ZuUWxvcGFXTmJ3d3VxOXcwVllzZnFla2ZDNHd6REk0Qi84OWF1cVJtV0dweldqdW83WHRuUkorSFlBNnlhMndFaFQveGhkdmdDQVJ0bU5tSzJWdGtSeEJqRW16eFppc21CS3pvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 405,
@@ -6087,7 +6088,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/464951623/17529976396?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmZvUXQ3NFJOMExDMUdUTnhsVHJCdys3aHhwZ21mdGpTZjlWYjFsZW0rRUFrRXRvbXc0MnlkZUsxT0lMWW1kNnN5d2FDNUhJWE9selNBL3gyNDlBdU1YdHRCVDVnd2pEemNoNTFDM1NySVVMOGZneTZFd3hrWjZxWlVaL1J6VzlBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Moda & Beleza"
   },
   {
     "id": 406,
@@ -6102,7 +6103,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/409856741/23710171318?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXZ1NkNLTjRvc2dSclJJZUpwS2JQWlBxYWtlcFI5RU40V2N2NUFMZzhjekZOWFhhdTNabnVydmpBcmtNRy9CN0h6eDFmN0d3Q0pwQytURTZpS1JWUUNxcUo4bHdtVmtoZFphWElpWWlzTlFZa3ZvVFZaR3QzWHlCS1BWb0pVZmY4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Eletrodomésticos"
   },
   {
     "id": 407,
@@ -6117,7 +6118,7 @@ export const productsData: Product[] = [
     "location": "Internacional",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1243138679/24147143100?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNDlWUHdIbVgxdXFUSEVZTVNaQ1VxNmM1NGorbW5sLy91WVlUU1NNTE53YWxzRnZiZWphSG9HV1ZTVlg2Y3o4U3RUMUxBeng0K2dIOERHTEFyVW5HUUNjbDF1djhTMFlHMWZHNkI1cUNIc25pTHFWWE9WREg2QWlwTTN2MlMrT2JBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Moda & Beleza"
   },
   {
     "id": 408,
@@ -6132,7 +6133,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/378597608/22497508879?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdHR4N3hqTUVpcFByZHY2eHVXU0dPeVJUVHVMckxTbXVCTGhhbGFNaTQ4L3l5WEFacHNpMVpsbmdXSXhOVmlIc0RsanhnblIxam9zeWFsdmtLRTBVelNjUnFGVXdkWUk3OWNDUGlLNjMwaUJvY2hWOHdoVWNIK2I1ZlNrV3V5T3hzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Gamer"
+    "category": "Games & Hobby"
   },
   {
     "id": 409,
@@ -6147,7 +6148,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/489001115/12237278339?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdlRyQmllaVZMSXBPYXZSbmJlazZaNzg1OGY5RURsNGZjVS8yUlVKY0MwZTdzRmQ4ZnFPREgrTXVJNmNOd0pOQmh0SmluTzBvY1Rpc3pYdExETGNiSTlPQk9LVGVzWWdTT28vNHliVGUyNCt1dWRCUFcwNUtqOUJXMks5WXhveG5vPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Eletrodomésticos"
   },
   {
     "id": 410,
@@ -6162,7 +6163,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1493498632/22493811573?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEsxSUFHRCt1Zm5YN25nQUlHSklKSytKQmIwK1VZKzJWNVVFQjdVSWNVNEtkeCszbFlOdHhTODkxOFYyZy9wVlU3Y0lUdThyM2d0T1B4a0NBY3RVMzFLNHQvTllveXVNbWJNeDRmSWRIQUdsdXVOTVdzZjY3WGpyRENmZ0hHNDRnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 411,
@@ -6177,7 +6178,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/717396632/20997608223?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdURDODdOdU1HbTFtV2E2Zkk1Znh4eFVTMG9HZVJ4czFFaEtOV1c0ZHVTaFRaTjJuZ1ZPK3JrZllOUjBJQzZaTFgxY2E2ck9NcHh6L0w0TjNKN1VFUEJlU2ZvQjNmOWttTktIMWU5QUp0OGVzcURRdm82N2Qrbmp4WUVxakxES3FjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 412,
@@ -6192,7 +6193,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1349032674/19797805376?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN3pobC9yczJXSEF4NHNHYnBkK1VJeDVPMDZ5UGRpVlBHRnRYckM3QUN5L0hzeFlxVlp3dTE3aXovOXBCd1N6d3dEaFI0elU2VWp2UjQyVlZZek91Tnljc2RqV1BQSWdQR2dHQWg1SmE5ckMvY0xIR0N5U1EwZEZuTHJCdGpvV2FRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Brinquedos"
+    "category": "Bebês & Infantil"
   },
   {
     "id": 413,
@@ -6207,7 +6208,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1340752713/22198115518?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN3pobC9yczJXSEF4NHNHYnBkK1VJeExITjd2L0RWUlNxZm1zZ1d2RkExUlVZRXhBazg0azI5VEQ3QUtDVmhuY2gvZmlLdlM5cG1CazJKS240VitkYWVHNS9lK0hORURxbUZFVjBkWUE0Q3g2bTUyemFWanZ0T1N2YWk4a1BUOS93PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 414,
@@ -6222,7 +6223,7 @@ export const productsData: Product[] = [
     "location": "Ceará",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/823746458/19297732334?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdEtmNlFHMnE4eWFNODVOWWlQbGUwNFJZZFlWT0hubnpRaWM2Z3BYeDI1TWEyRml4ZWMrNUk2NTlxb29MT3hZVVF5MG8rck94TmlRWldEby9oUU80RndzQk9KWDIrYUsvWEZhZkx1OHRYOTUySHlaOUdRVlBhOVJqNDEvYkJPVWdnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 415,
@@ -6237,7 +6238,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1251161766/19298269422?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVkyaHE3aUNyNGd1V0k2Q3RjRFRaam0zNEM3QUN3RVVrTFk1Vi9VTDVlbVlNTmRsS3JHdXdtem5PZnJmVlZveUUrRUMraXFuZ1h6Tk5MNnJYdjNwR21hcGUxQmF6QUNVcEJvNWc3M3pOSkxHWU1tMUN6NDlRMUVya2k0a1VrQ0o4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 416,
@@ -6252,7 +6253,7 @@ export const productsData: Product[] = [
     "location": "Internacional",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1217466513/43662858663?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0p5WlN0ajFLTzdqaTlQaERUZG41M2lWMnZkS2V1SGcvTEp5U3hLY0x1Qll6Smd6SVNyVWNiOXVVUE9oME5mZHR1aEJLTExiUVZ5bno3VTY4ejc0SEN5NG4xOFJwMXMwUk9YaWNmVTB0NmJNTWUrZGFraXhsMjU3akVMVVNOMktJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Moda & Beleza"
   },
   {
     "id": 417,
@@ -6267,7 +6268,7 @@ export const productsData: Product[] = [
     "location": "Internacional",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/401316974/24479561315?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdTYyK0NiNU5EdnJkblh3MHFzSTlqeVBqOTYyRCt3ZGtueGpOSmo4M0EzUkhtWUlNcXovWVROWGhNdS9uWHJUaUNSNWJuc3hHUG05bnYwS2JRYXJON1Y5eElqVUZNNkI3OWQ5U3hETXMrd0N6VDMvcTcrUXQ0Rnp4WWYzVkxJaTI0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 418,
@@ -6282,7 +6283,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/832031799/21449768277?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWVQMWpXRHcxcklXLzV5NmpUU1dmR3J5NFdNd3JOL1JMTFRXZVVnaVpxbUh4MUFMRS9wcW91VmRKazh4eW4yb2tmRFp5M1BTVXo1Qm5SZDdnS00wOFF5NzQrMVJGeDVHNWUycDltazllTlUya0hpV1RiWUd5MjhWajRUZ2h4dnZJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 419,
@@ -6297,7 +6298,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/338251868/28484087175?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXFMN2kzZEpkR2YwNW9tbWZpVVNFdTVQNTQvWEoxODY2R2R3aXJJQW01UUo1R08yNTBKQndXM09tOHBNSGVjUzk5WW84d2gzWlFpR054OW05a2g0OWJ6a3dkaEVCZ1R5UVZZSVVoNTdpa1VXU0dCSVdMSHVEVVpCa1VKUjh1d1E0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Automotivo"
   },
   {
     "id": 420,
@@ -6312,7 +6313,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/902146556/22396133309?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1FuR092QmhaaGpvYjVHbUVOelN5QmVMbE1DeHdXRzlBaGRWQk1xeEJOY3RQYVkzMU1DdDZPMEl6RkcwNGZNUFR5Zm0wSWZINWF1OWxBdGpoME1aSHRQVVVZb1FERHpjYUlqdDBSZXVob3U5elUzS1BJSjNvaHIvK3ZGekt4elp3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 421,
@@ -6327,7 +6328,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/328666563/20899256564?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3NSM29YaTdCREIyVHpST2ZJd1VwL2FlaUIvZHBZVzcvY3krbHpoYzlCWGRNOVBiRDVLMTJUZlpNcDZJdHEzTE1vMWUvckMzYWdnVnZOS3ptTFdlYWhMV3dxZXI3K3dKaGJEaWhKYTJwVlg0M3A3RlE2U0xQYmo5K1V4TFVBYzljPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 422,
@@ -6342,7 +6343,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1339065761/22998907105?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNTVkZ0xWcFgrNGt2QmFEWnQ3QmdtZ2ZFR0ZKcmZKSjRKc0wvQzltQjYxRk1QVVFkSTA3c2tyVnFjNnpHWnNrTDBWL3R5MlpSY1BGdkw0M3p1SWlUcVcwVmkxbVdLT0k5K3NTK2V4ZEUxbjd3ODJmRExLaVNRb0RJMFp4SllYZGRFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 423,
@@ -6357,7 +6358,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1508524367/58250436977?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNU1mU0M5RWxpRUpPMTNORXc3cFZmbjF2ZXlDT0p3ZTdZbGlFUUJtRk5DQ0FXVHVPVG9GZmVSclA3Vnluc3dmMmpFbXcrYlh0UVFmdW5maW5lM3ViYjBaR2Z0dklZYTJUTzVEQjdHSjdMVkZ6TVhUdCtRbElNSnFDeHhER3BXRUVRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 424,
@@ -6372,7 +6373,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/325008325/21399263667?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdDJBNnZ5Y29zcHhTaDREVERkOGtESmJKZTdzckRmeHhWMDZ2cy82bi80dkcrK2F1R0F0VzltaHMreEt0V1hlM0VyUUhub0JSdkVVdnVidCs0Qk1zUjRmdkY3VDRBYjdzM0tIMjhESDFLeHBtRU1OSXFzclZTV0x5UlpQa3prbDdzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Bebês & Infantil"
   },
   {
     "id": 425,
@@ -6387,7 +6388,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1112089450/19599722618?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNkpIUFF1UVkwQm5VVS9SdnB2dnJJQlRLNUR3VHg3N0ZDWFdWOTluR1orbE13QTQrQmQ0dU1hMHRGRm0yZDBTdUhGSHRLNDJCUXBYMjhQVnpySC9ZdlpqQ3BLRjNTazUxNjlRR2VCVWxKUDlQUHIreGFrQUl4cS92QW9FeTUzcHdZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Brinquedos"
+    "category": "Casa & Decoração"
   },
   {
     "id": 426,
@@ -6402,7 +6403,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/847598018/17191520281?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQczg1WldNYkxxMUtCa2o3Sjc4aCtCekhRYURpR2Nnc1BvaDh1em50UzNmS3NibGtwai9Dd1ppc05rR1pOYWFDOW93NGJORkpTSWNrK2lmRS9GMW0vNlloUEI0NU0xUEVZUGhxWXBUZkM0YU1GZGxiVHZFaGdaZ1kwMjg3YXlOOEhRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 427,
@@ -6417,7 +6418,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1420372901/23094739178?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNGhEWlZ5Z0VBbkhrTnpUVldDQzBwTlNTYmZkRWNCYjlYbzJLUDl5REVKcFlHN2pzTEdMbG5xa1puMUtlYXFscDR0bUdieVY5ZXR0azFBcEx4d2s1OUV0eGw5RTQ4NDlzWGozK25Bb0FHM1JiZDhRSitPTGI5Q3BiOEFlTi9JeDB3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 428,
@@ -6432,7 +6433,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1362240140/22894206373?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNjZxczFjZUpCVzZMY2tOMHBrckhPQzA1ajlyZzVoVjMra2hPNjhkOXpaNmlCeDNSN3YxdG96WENxQlJoaHJiN3FtN1lZSkpRdjdkcXRKNlR3cjIwQkhnQWYwRHJTUVI2ZXdNVWNZRHNydm00Rng2OW03L3dna1hOV2N1bHM3MEU4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 429,
@@ -6447,7 +6448,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/435977532/23793406757?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdEUwV3BRRDBRNDNuWmo3T1Vta1BNb1YyaDJiOHMyVmU4ak1LRS9sbDQvMXVsWHZRWW1SOTFRSEVCbGpZR0JhMW0rVHA3RFExcnRUUjNGdVJuQVRwTmRtUmJwSHRJUEtWMkxZSGUvOWxtbjl3Slo5YnpvY2JNRUk1U3pJZklMWTB3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 430,
@@ -6462,7 +6463,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/349179341/23492958232?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdlo4OEhIck5JN29xaFR0QjJURTFScmI3QmVNYUFoWUlJUDV5cGJQd1BLSEorTlJRY05EekR1NnUzSWVHRGhzZTJwemFaZ0lhVVFtbFZjZVRxUnQrY0RPWENpQ0pSS2JRZ1BaM3VVeFlzNkVuZWNlcU9zVFd4NEx5WnhmY3hpa3FZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Moda & Beleza"
   },
   {
     "id": 431,
@@ -6477,7 +6478,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/727094907/22493675780?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc2NmNHhjMjZIeWtkbnY2MnBMZ01MRlpKUmw3QkVyT1I3bG4vcjB2SHBLM2tOTmxDRVVLWjJKc1JUWXBkZ0J4aU9iVmNJaEVnbERUb0hWMmRYaTlXUVBUSkxtRndSSWVaRHhBRTFpMVl2VkpJN3RMa3M4ZzlnUWswYTBBZTRaUGNjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 432,
@@ -6492,7 +6493,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1404786902/22298200684?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNFhESTRDay9qVlFVdHRubksreThIRTRkSFR6bE1mNzg5RGVoQnJvMGQ3QXoyV3ZJbnAwNTlKc3dZZDB0ZU9ZV0pzdm52Q3F4RE5mRjNPRWpuZTNRNUdxcnI2U1ZqbFJYT0NYY2NycWMwU3NvSVEyMFhtNXJLSlpRbWtyU3kxWVNZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Moda & Beleza"
   },
   {
     "id": 433,
@@ -6507,7 +6508,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1528075683/23294184706?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNHV6MnZ3ZU1ZWjZ3eGdVVlFiV1FrRXVpTFFBblZFQktJbHM1MHJmeEk3bWU4YzhJbEFwYm10NEJNSWxzWUtYbVRqaHkxZzd5RjRuRDdSc1NwbDFlOHdYd2ZrYy9LZCtreGhuRzRSaElhdGxEK2NSblNWd3NxUWxZbGloVDQ4S2ZVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 434,
@@ -6522,7 +6523,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1501302960/22798733045?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNU1mU0M5RWxpRUpPMTNORXc3cFZmblVlNjZIcGRWUmtpakcxQWhZbWNoMmwzandVbHI5WllDcjBoMm9YMkNLeXI0MlJXMEJVdDl0ZGFOMVFnNGRlT1c2UFdGZHVmZWNBbzE5TlNBdGZwRzh3d1UyRFlpWjBVakJJd1VQMmdETG00PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 435,
@@ -6537,7 +6538,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1344393145/22498544276?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN3pobC9yczJXSEF4NHNHYnBkK1VJeGYrOG1iaUFmZkZuRTlQbUM4WkR2dEVOTlpEai91eVBqcGROYzNibWltWmVERXVJdTJzcWtJallIQWtJbHhVSDhJbUwyWU41RFY5TnJlcWZGRkdLV0hUVXltaTU2ZTFNZW5IS1I2VnhDZ0ljPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 436,
@@ -6552,7 +6553,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1567171530/23298681988?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNW9hM2xHeVpFYURIRUdOL3MzQTAzeHV5bTZGS1NmSjIrNTIvUGhwbFl4U05xSjlGVktBalVxVm83RUxmeHJRR2MrUkVEV0FHWUk0UWhHczR4aGhlZmFxUmpGNkYzOUxjKzFxMEpVQ3E0aDVkZFRHcm9zWUI2M1dzTVk3RFNSOUJzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 437,
@@ -6567,7 +6568,7 @@ export const productsData: Product[] = [
     "location": "Internacional",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1641832297/42472460266?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNzdkNGpzZVRDTW1BUjRPSTB3aE5DZzNrSGdSbUR3U0tvQU9nZUh2cWJDM00yejZ3dGF4aFNYZENyUzZ6RWVoZExPVjhrQlhhTDdPZlhPS3JDNEdQY1F6bDgzU0d5UDNGOU1xUERFTFVzeVFRUklQUVZweTQvZkxrMVg4c0g5MndjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 438,
@@ -6582,7 +6583,7 @@ export const productsData: Product[] = [
     "location": "Internacional",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/902265846/51401454741?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1FuR092QmhaaGpvYjVHbUVOelN5QmVialJ1RFM5bUhZTFNsVTVRS2hWVDlwTzVyRGduQnBSRWdXSlhlU012U1FHY2RGbzYraWRST25RNkR1azBFUDNRbUc4c2dVUGwwSVMxWW9nT3Z0NFBkMkpBQlZJWGpKbXRKN2JjNGovVUtjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 439,
@@ -6597,7 +6598,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/932850533/22192886850?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdFF0NktSeFdQL3JzL1IxYXN5NnI5eXhOVTFMMWFsd1MxOGZ5RnF3bTlPQU1OQlRydnJySzhWajV2Q3pNVFlxaHRCNmFMWGcyM2dFUWw5OHlidHIxR0lWZ3Q5ZkRVSHFhN1ZEMEhmdW9NdFkzRVdES1VCSWVpd3dzNlgwalVNNDd3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 440,
@@ -6612,7 +6613,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/300445191/23798093895?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUwvcmJtczYyekk2cWRKTkxoc3BMRk5XVU1LRUVzKzhndEVkU0FOa1VNS0VYRWxUalFMVXZXd3BaenRrWElUUmdEbnlWZVBaUFFwcGpTQ1JNT1ppcTNoNWRiajVxSk9LbmhJR3Yza0k0NGhpM0dkYmV3K2ZocU1wZlFNRDJQd3pVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 441,
@@ -6627,7 +6628,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1118731806/23393946244?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNkpIUFF1UVkwQm5VVS9SdnB2dnJJQitIdUdCT3dWbzFpTHFtMDlGblg2TlNZeXpsOGMwRGg5S2xUd0R6bWQxcEVyYXVHVHEvR0o2OE50VmhDVjRRdGZZbktDRUxWMUowUjczbmlwRmJ6enpHb3BEVkJHeG8vUmRNa21MWFZGTlBVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 442,
@@ -6642,7 +6643,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/331517678/20497132758?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWM2cE1VSzMybVArNERHVmxqWTMxaFY3bjgrMk1hY2docHp4c29ZWHRzdU9mdDViaUR6aE10MUw2N2syQ0tPdStMT29ma1pkSzk0WjlNcTl2UW5kbHAwM0lNTXl0QjZXbVE4OVR2SGM2ZlIwSTUrODkxLzY0cStjY1ZUcmtHbk5zPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 443,
@@ -6657,7 +6658,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/392260640/19597516271?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdklNTFkxMDJUc3JVWE56eWdmR3ZGaEZRUE1obUt5cEo2ekJrV0czOEN5SmtvT2NSRHd1MGQxaURzRGNzQlJjR2FteWFjYUVPRng5WmRGREFZMGFiWUpFOGhZUW8yNUtJQjFuRWwzaTY4VlF1V3lhZThMN1Qzb09DRlFnYlo3Y0Y4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 444,
@@ -6672,7 +6673,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1169146045/20799757649?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNlBFNHVhak51MU13cGRKeklHTm1VZVNMK3dyc05rMzg3TUgyTmE1SFZjd2pYamV0cHZ6TTVHSktnaXlHSnFiL0J6ZXBlbytEMGNxRVk0cndwVk4vQmxUQ3VxclRKKzR4bWJEcjd3dmhBRitrTXdSbFdUSjlGRVVCcEU1WkRxRmdVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 445,
@@ -6687,7 +6688,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/390307022/21498988277?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmZmNzArRmlsQ3ZmaFcwYUtGaWdKb0Z0eE5hSytkS0hKRlcrN2hBdzRydkNYR2h1N08xT3pzNjdpQk1mcTI5SWttQWFrT3lkV2w4QmRWWHBhSUVxdGorRG1WbWFhU21nTUIxNWJBY3oxZXg1TndVSDdGdHZtMEkvanJBejBJbVowPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Pets"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 446,
@@ -6702,7 +6703,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1499852820/22199186045?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEsxSUFHRCt1Zm5YN25nQUlHSklKS1Fxb3pYb0xRTnV3TlJ0VGlvQkZwdFJLSElOcms1cXdqTFk4U0I3Q3VuaHhLdEpEeFdXOElwTzVGY005V0lkYVpTVGF2VVZncmxIc2NTTnd1TXMrczAydWlhditwekRCaVlmNVYvbEVQSks4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 447,
@@ -6717,7 +6718,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/927942322/22094852472?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdnFCL1BWL3lpQUJRazdhSlZjTlVCQStsVVNCSlVXZUNoS2Z4Njl5elY3SCtOQVNiNEppdDdyT0dwTGZENERMOEJvNVVnaURTbTFHL2p3NytEY2xHdlAwaWo1b0N2M3M2eVJ0TmsvNTk1eVBMMUh0eVY0d04wWTNyRG5EYlRMWFlvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 448,
@@ -6732,7 +6733,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/874603044/23511983921?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWFEQy94M3hkMWJIeGhoMEpVTGhCbk55QkY5SXN3RVIxNW5nTWxpUHFGSXQvc0JsWmg4OU0zRzBJUFdyL1ZmMjU0Qzk5VlBMTUJXNk9BQ0JrMVJNZktkSUI5czE4Unl2d3BVYU1yazRiY3UxUUN6bmFpT3pjcm5EcVZaRDZHWFVBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 449,
@@ -6747,7 +6748,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/489577930/22292524141?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdlRyQmllaVZMSXBPYXZSbmJlazZaN0F5STdLR1NhdXRBV1lyaEdYRW1ZZ3c2VkhyTVdrc3dzMkEyWWk5OTIwd2NQSVFRYWljak00SG1CVkpmbzBWUzBTSEZyTkpReDNIWTNNc0xVR3RVaWxyYkhadXZRQWl6WVFFeWx2VzR5Q2drPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 450,
@@ -6762,7 +6763,7 @@ export const productsData: Product[] = [
     "location": "Santa Catarina",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/581652760/20298318162?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWZNRk5UN2RFZzV6a2R0STduZ0I1cVphOW11YVJLUFpVZUxLb0pFODVhVXVKaEJKLy9WdVgwdnl3S2NOc2dTbGx6cnQzajA5TEpBS29rSmF5TFRNTjNTaXoxL2MwOHBsVGJINC9ROUozZlAwZEZsSEtGZTIyZ1Q4dXQ5VXRrUFpNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 451,
@@ -6777,7 +6778,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1274089510/22493912124?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNzhFZVJ4NGxLdFNvVzNTbHJ5SUtuRXNCM2xtZExWYmJSTFdKQ2x6WVVHL2U3MEJndStXNmxYc0FQSmdhQ0VKY3B4S0hOY3ZFSjZLYVVVZFhEb3N3QmdUQ3dLMmQzZEtVNW1zRmc5dWpXVFR5YStSOGVFSStuSDQxWG5wK0t6TDdJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 452,
@@ -6792,7 +6793,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1620426618/58200509252?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNmVtVTJ1SS8wUVVwZWNiMDZUTXRYUS9VQmN0aCtLZlZQaWVSNy9OWHlIbk93SmJ3dFpCVUQySFltWmpGQ0tOY3lWQ3lqalBtY1RZVUNPU0tGeGU3aXNxSGRURnJkdytWSzlPM2VlL3ZBekQ2aklkd2xVcnNsUEp5MzdmMm15eWk4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 453,
@@ -6807,7 +6808,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/465623800/18797152885?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdFM5eEVrUUJjSCtLL0lKRG5zdEFDZkU0TTNEak00QUJMZHNMSFp2RWRNNTl5bExSY3B5Q1Bqc3FEa3c5Wk84VVVZTFVaL0pOWVU1aStmUjdIYUphdkxkQXpOejQ5ekU1cFltMWsxT0I0V3AzMWQyV01nQ0g4R2tuOEJGL3IvVDF3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Automotivo"
   },
   {
     "id": 454,
@@ -6822,7 +6823,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1384322861/23093506968?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNXBkczJ6U2l3VEh5T1haODRWd1FPaW5kQk40YlhpYVphd3VhMzFocGZBK2l4TjJMdlZiTGl4MmlUaXhhMzZOVjJqVmovaEMxVmM2cDc5dUI5Ry9nK1hOU2h1dXNuc0xNbkkxUDdhcHNhdklUTGFTc0VRK1FSd210Rkl0UkdBNXpnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 455,
@@ -6837,7 +6838,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1521699574/23898692172?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNHV6MnZ3ZU1ZWjZ3eGdVVlFiV1FrRTVRNjhjck1xSHdSOHlRV3E1czhQaHd1TkFIWE82dExyMEhLYXp4NWJZbDJvV0tpbFpMbmhvUUV0SGp6Y2pSUERod2FGL2MvWk1FYWF5M1BrZkt5NnRzNVZuVk04TFhKRk53RFlFM05lcnFvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Gamer"
+    "category": "Casa & Decoração"
   },
   {
     "id": 456,
@@ -6852,7 +6853,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1407668219/22293918270?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNFhESTRDay9qVlFVdHRubksreThIRUVRUHcvd0RzV0o5TWZyRktDdmVOOEFHcTd0VGF5WGVORVdUcXlKemZuUE5RcitNY2xrTDRPbk1FMWJjdXdjd2ZkM0gzYXZQTkduN1hiRTU3WWZxbUxoV0Z3eFp4dmxwZVA4d1RxSXcxMWI0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 457,
@@ -6867,7 +6868,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/461716349/58204703910?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc2lMb0lUVzNFa0dEL1FwTG10ZVJYRkhDTUNGOUQ3N1lSYXpxVGgwTzVWYVA0YXYrZTZySzI5Zk5KRGZmNUpZN1Rla3kyNndSR2NLVDUwQXFBRWJXZFpEdTNBU3g3cFdLN05QaHBzK0MyS3BPMzE3bThBK0YrNnVITDhHaHFNRTVBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 458,
@@ -6882,7 +6883,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/395174202/58202450220?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWhzaWc2a2loNG84RFg4TDM4Qjk3ZnlMVzhxMkhsSnFJZUJRYVBtZ21SaWZTUU1MdGZTdEwrVVJ0NEdIdzY1QXcxMlA2QVFKZXU5YTRBdjVZbml5ZXQ0VUFhdEh2RTVtZTBSTFYyTkppeGI5by9yUDczMUhDeWhvMDNkMzQwQVgwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 459,
@@ -6897,7 +6898,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/394194180/20599240912?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdGFwWU55MEl3bGo5cHhWZU01cmFncFg2RGxRUDZkRTN0YXA1UDVaNG9nZ3lSUmpZcGVXSDFJMmRjL1RLUVA5M1NFVjlIMStiVlVpeUJFSUxwZ1JIREN2ZklPc3Q2MEkxSEtBeGJHa3lpWjdCODJkbi92S2NUVDI0UmFCaEN3a3JBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 460,
@@ -6912,7 +6913,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1613990868/23499259791?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNmZRMXpFdjJvbVdrY2I0ZE52YXdKUDA1c2pjZVViRTVEbmdZeHQ1TG1KaC9zSTR5bmlJc3c5UXZjb2xXRkhCWDdYeElOeVhadHZTVDBhOXZma3RPZS9QSERZaGFTcno0NEVhYmt6UXM4UndlcG1ndnYyejg3cWsyaW1ZNXA3cnNrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 461,
@@ -6927,7 +6928,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1075703369/23499148478?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN25yakJrbS90NzFHTVl1UjRXSmMyZWlsdlJESjNtTXVmUEtTSUxVd21rUmRFWGFnNFcxdDV2ODRhTHg3Y3dEWG9xc0JUU1EzdmNKaTBPV2w3ZFZsRmF3UDNQZk1KdmdGaWpmRHVZUXQ1Y2RlSS85YjRranpQMGwvcjd3R1kzZjRvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Beleza"
+    "category": "Moda & Beleza"
   },
   {
     "id": 462,
@@ -6942,7 +6943,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/522345285/21497626493?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc2FnRGNmWEFJdTlIcHdaU3N1T25vdnhkK2JScHVpa20yK1JML1lDWEU1ZjU4dmMxUCtmL3QwVjNxeWIxektiS2hBbEQwQjZSTk91SndLSCt3SCtXdmlNZnV1RFhSK1ozZXQ5UGx1WTBZaEt4TlMza2hzT1NyOHJ5VmFnVDF0YVdZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 463,
@@ -6957,7 +6958,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1177319319/20597974792?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN3R6clRXek84YVRNMWhSeW9MRFNFMmNGa2FDQmxTWXh0Q2taY0JpVVoyaXRTeUszQUtiSkJjRVFaUHFZT21vLzdNc2o0cTBPSGlpaGlpSnZSMkdDWVM5K0N3QXF6VlhzRVk3OXliQUdoOHM0Nmt6SVd2NEQzUFRFZjhBQlFVOFhrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 464,
@@ -6972,7 +6973,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1367598261/23798866617?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNjZxczFjZUpCVzZMY2tOMHBrckhPQ3crcmZpQmNMdUhQZE51YlFVTWFDbXRwdTFHeWJIemVoUjI4RHg5WWdrYk9PUnQ2VHpMblJOdmhMSlE1NFVkeEt4czBtaklhTStneHdleHF1Zmp2eEZCZnd4MXIrTWlWVFlLVVlyQXdGTHZvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 465,
@@ -6987,7 +6988,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/720952207/23892669902?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc051bzJVZVl1d0RhQnpGTFFNWmlmc2hWOWdta3FuM29SSXpyRVpVYnNWa0QzcGhBeVp2Q2tlK0loRlpSNWtTYVFuVm5BTWhqTVpPZWhJTDVCZllQQUN4Ynp0ckVyaXJ0VUxldGdqaGViTW9iMGF5MUlaU3hnNlZvNFRPRHdMZ0RjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 466,
@@ -7002,7 +7003,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/322874822/19197728630?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdTRramhBWHJSZkg4a0JzL3Q4eEtSSngyZ0NpNlgyNiszTU43SlZxVmRkY3NnSE9lY1R0Y3J5ckNKNDVERHJFM0VLaDVmNTU1NVJ2bEN4RVZJYWZUVFRSRTgrWTN4cmp5ZnVOb0gvcmZZVVdRbEluVWRzUWszQlJDZFNZNHBhVDFRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Relógios"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 467,
@@ -7017,7 +7018,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1160162236/18498026332?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNlBFNHVhak51MU13cGRKeklHTm1VZXBDZWRzcU5zZU1qenFQUFlzajZ3dnY3cEptcmNpL3RkL3JDVTdWM1J3cWh5dGd4SWxIaXJRSlRCbGlZNkdrN25CWnVFQzFzOHZsSzhNaWZabUZZWm5LaWRzWWlYclp2QUx5M01IVnJzQTJBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 468,
@@ -7032,7 +7033,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1537142489/58250276673?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWNkaUJHS2dKRXlBdkd2dG1mZ0psUFFON1ByUnpIL0FERzJNeHZtbzY2RUtrZkpsaG9XTGFKRDNTdFJuLytrT3NDc01jZ1EwYlg5RnNVY2UzemdXRTJUU216V2xiMkVCWDRzdzVxNGZ2K1NiMUVYR3pIK3BtR3BFM3JVYWVpVkJzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Casa & Decoração"
   },
   {
     "id": 469,
@@ -7047,7 +7048,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/687253059/58252401715?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmtPNC90ZDlnWWY2VTEwNGpkUnZpdVVWUHlRcjhqTlBIdWVFSmhnMWN4cjlTdkQyL1RUczZ3dXBGaWJWV2RYeFFEUGRhbExLeXh0RHFkUjdDOHV1bUhudGRJSVd0ZHIxMmhDZzJwbGNJaTV6RE5neDByR2lCZWc5Tm5uZnNEckxnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 470,
@@ -7062,7 +7063,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/979724994/21697102620?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUhWMTBkUnErbUVvMDcwMVMrS3VoMzYxYm5jM2dBWHNPWUlaOG1HenB6c1VMa2ZySFRFNjQvNmRkUUpCMUd4L2hkWDZxZkhvN3pBUTNpYkU2cXV0bTFtRlhUSXh2WVZ4S2dUKzNmMlhLY0MxSzg5eVlydjI2blBhMmZQM1ZFNzI4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 471,
@@ -7077,7 +7078,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/561955327/20699665137?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdjFKWVFxbXdSR1JrS3ByUUZHZG5rNlBJalk0OWpuZDV1b3hKU01LQjJxNWRoam51Y3IxMzh0WDFoR1F3VWFHanhUVVV1ZU1pOEJIWmxXd0FGZ01TUENQTE5GWG1FdG0vb0Z1MW9JaVFNNmVMSE90a0d2bUhNaDBoY2JVdXNFWW5zPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 472,
@@ -7092,7 +7093,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1066052934/23297243779?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNloyRXJNK0dFZFZ1MzRDVXhpYVFrVlZxTXpQWmVQdjY3eUJ1a2IrUThGRW9wVlI5bkhVQ3NXWWZkYU14dndrUW5YRXBiZmdvY2Q0UUcxVEpULzdtcnlKaWdNekxvZWpBMWhKK0l5U3ByalhMeHhMa2hMTFFCUE9ZaVNKOWZJV3hFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 473,
@@ -7107,7 +7108,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/465623800/18099356042?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdFM5eEVrUUJjSCtLL0lKRG5zdEFDZmd4ZDBnRmVzNzdhQXJQaW8rUVRaUXlydE96ZmlnRDA0MHNaQVMva0t1NnBqSFArM2Jra2ZDckE1KzZTY0pBbjZ3dllORllRcUw3VWRjdTdneCtPc0pIM1hyOHNyUmRkQVl4VlUrNkk5SjZzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 474,
@@ -7122,7 +7123,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/390307022/20599569632?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmZmNzArRmlsQ3ZmaFcwYUtGaWdKb2V5REMwR0F3R3MrWXpTSUxCR2pvdlNLOTFweVR5WlJoS2JRa1VDVS83Y3NnVmhwc0JSdlFNcTYyY3JDRlRCNXlYVXhuYkRvTEpEOW1EYWttTitVdFQzQ0djektJTnRRY09pYlpPOGpzTUk0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 475,
@@ -7137,7 +7138,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1624354211/58253607012?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNmVtVTJ1SS8wUVVwZWNiMDZUTXRYUThHME1OUlZ3aVAvYWZvNWNEeFp1TDIrY1RqbHdMTklNVFZBdE9ySHk3eTV5aVhkclQ1Ti9IS1I0YThXbHZJMy9zVTVrenQrWVI2aVplM3VKR2N5S3JDOGF3WU85Tk1rR1liaDI3YTc3bVQwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 476,
@@ -7152,7 +7153,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1176639999/18899661307?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN3R6clRXek84YVRNMWhSeW9MRFNFMmN1cmJ3RUpNdHQ5N2xPMzRHNnBuM2h1b1BuS3hJdGxhSXdKSm5nNktuOTRFMFh1eW8yTU1zVmQrU3J1UUZuSVNSa0JTdVJGWkd5UlZsMWZmTTdPZWxscUVPQVA5bktsMXZGMGpFVHF0T3BBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 477,
@@ -7167,7 +7168,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/728534865/22227000645?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdlFnRldzWnZnQmR6VHRBY1IzMFhjcDJqQlZEZmpWcmxoV2U4WmlXZXZzbDJVb0Z5d2VEY1lOYjUrOXhlVjFVTzlCRGNUOURocytVVTQ0ZC9CV1U0Nzd4TlY1RG1RdTZxUUI1T1dUQkxiODFxNTdQU0NtR0RRek00dTR1NmU5dEs0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Automotivo"
   },
   {
     "id": 478,
@@ -7182,7 +7183,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/391739739/19197735852?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdjNrY1NPeTBsb1pnV0lOaWYzak5Wa09LYW9uMWdDVHFWemowOWVhbmVVSDRIRUVqaUxZMm5xU1M1M2FiSVFPVWFjTkx0U1dEUm9xQW92cnBIN3lJQk9jQzVWaTZXMzUwaitBdUpmb1hMa3FOTkJENE0vdjJiZWxORXVkZVR6R1RBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 479,
@@ -7197,7 +7198,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/832040275/23091546001?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWVQMWpXRHcxcklXLzV5NmpUU1dmR1Zralp1WE9KN2VBU0RqVXY5ZWVEVGllZ1ArV1RVVXd0d2c4RURqVG5nbDZkMDcwb0dkcWZra0xMMldYcHBqM1Y4TXFYU3NCRnhERytmSGRsVm5BMmVhOVRVZmVxYXZtK3RxVXVEcUVBaGdvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Casa & Decoração"
   },
   {
     "id": 480,
@@ -7212,7 +7213,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/392260640/22394412338?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdklNTFkxMDJUc3JVWE56eWdmR3ZGaDZ4TmZlNllWZFdkZnFyY3lraGNjbkxIaXJWK0NUWG1BYUZ2K0lxN3BoRUdKNS9hdnUrSVhrU2hnSDMrTXpQY3V4bitaa21Ndjh1bDRtOFJjb0pvdlBTcWF2K0hUWXdpaGl1ZXFVSG9MUmxjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 481,
@@ -7227,7 +7228,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/972503733/18377415689?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXA4Y3I5WUgyTTFZbGJDQnQ0ODJQMDI4WHJKckR0cmxWK3RldXFjZVYzanpMaS9wdG42TXBYYjJWMVF6TW0zSTBKcS9WODQxbzZnVFZOSXFtYW5hRVNOUUU3OUMyRGNsbDNNT0JtTjJKSmZuVjl2MDN5V3RjVGJFaHBxWCtET0hvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 482,
@@ -7242,7 +7243,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/859540579/22392752967?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQczZadUJkN29WQURnL29xc3owZC84cXZWZFFObGVMczFpMVUwZGU4emxDdVlidldvMkdWMnQ2eTluUGFHUk9vU1o5ajJmeFZuQVZuL0YwMzJhazNnZkliTUdrZWI0UW9WZ3BDWmczUzd4RHBHUmtjbFNqblFUMEs1eW4yTnR5Sy9ZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 483,
@@ -7257,7 +7258,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1019693340/22893970041?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNFEwdzR0cnZQREgzMG9ONy84NjgrbjJHRWc4NERtbERkSUhEKzdXRUJNVG1ybjE4RGRrMDhQdE9uNzljekJYQkE2SnkwdjJrZHkxTHJNbnRFUFBwakNSeExiTzh1U3lqcThnODV2ekN3OExBZG1hckNXaldseS9iK25TQXJjbTJ3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 484,
@@ -7272,7 +7273,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/691362709/22894684989?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc0dFdk1SK1pqQk53VUlMVy9IbDBCQ05QaDVJc0tSZEVBYjJhODdDTW1zRnRNbU4vY1NYQnlmcFpWakswMkk0VmhxZmNTRXBqUmx1OER3QUlxc01lQ2NxbHkyRk1IVXhwMjNnNjNuc1E1eXpJejU4N0N5aVdGWXRHUS9yWGVDWk53PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 485,
@@ -7287,7 +7288,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/300779622/18899319074?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUwvcmJtczYyekk2cWRKTkxoc3BMRm5MQnk1NGJkdS94N3crcTloV3RJL1ZYdENvOGxZYWV1SzdWWjQvV1cyVkFTejZvTnVoMVlvd2d6N3Z3ZWdzRWFQdVhhTjErTTNzWUJtVElOb3NmZE80dS9xSDZJN1N0U2FNNnFnM1prZmJJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 486,
@@ -7302,7 +7303,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1005980154/23494354509?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1ZpUFMxL2o1N0RPK0UxdWl1N3FMVlZhaC9vbDN2bnpTQWlmM0NGZ2FRTE0xZThybHVPZ3FvWW9IUlBqMXpBS0E2azBtWjZkVDRyUHp3UTJLVFZrL2ZXODd3a0RsbTZYeGlRMnZUT3F1UGgrRFVuVjBQRHhuYVhHVUVuVHhlVzJzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 487,
@@ -7317,7 +7318,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1126064857/58253194346?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnNncEZncWwwYm0xN1R5MnJXTThvTTdxR0dlanBra2oyY05jV3UvTURxM3JOUE1mRWhIcTBVZDBtbFg1Snk0MnJtaDY3OG9RZk9lcm5HbUFHTGFiNUZuRDF0aUh5WWRBcmtUVWtnN2F3M3VQYnZUUEdMZlZhWEx0QTB0Zlhhc2hZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 488,
@@ -7332,7 +7333,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1371973455/52956146249?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNGVCUjlYTnE3YjFXWnQ5VUduNWRFaERjMWdJMmJ0WW9jU2lSRCt0VXpGakxqd2N5dllMb1ZjNklSY2t6TEoxd2hVdy9BWUwvNjBQSTFWNDFqRHNQa042WXBIaytEYTB5V2U4V0JadWtkZm4xUDBnVzAyTHY3MWhKMGpXUjBLWldrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 489,
@@ -7347,7 +7348,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1243683750/21898277219?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNDlWUHdIbVgxdXFUSEVZTVNaQ1VxNjlmb2Jla3JSTnRvR1R5Q1hWNDhBdGFhNnM0TjY0aXM3UGpqaERLQjkreGowT3dRTWhtaTZBL1RUSEJ2L0xaK0I0STJDdG4zZ3Q4bDNqcHc0N2R4aUdGbXZKdkVuTDlLNzZCaE1OYXRuTHpFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 490,
@@ -7362,7 +7363,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1499832192/20198142300?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEsxSUFHRCt1Zm5YN25nQUlHSklKS1NvRmxkNjVPVHg5aHNtTFhtV0JtZUVkVkQ1d25YbllZYVFIalZFZXZzUE9ld1pKZWd5VUQ2VG9sN0M3UGp4TjVCTGFyaHNHRk9QKzBseVZaVDNmK0NneW1PemF6RmIzUTFEbjJoQWdOdDMwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Moda & Beleza"
   },
   {
     "id": 491,
@@ -7377,7 +7378,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1494860302/22198362654?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEsxSUFHRCt1Zm5YN25nQUlHSklKS2hQWEdXc040NlhaQVdJRkZScE9NWE1Bamo1emhmZVQ1L2RkZEhtd0J6NDI3cGI4aTN2QXRPLzdFZ1NzMWY4RVVxZ2kyL1VHZnZpaCs5UXB1U0tSNmlnV1pYMjJmelE5N3QvVWJHWlpyMWFVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 492,
@@ -7392,7 +7393,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1049574748/23394650470?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEdUZEI0NXFzRUFLRWhUSWtPTm1ZR2h5cWE5alM3dkFpR1RHY1l3cG4wNW5BN3BmMEVERFJsVyt4TWNwRC85eERzSlZOUEcvS25mdlJJNE9odXA2RjJUOVZYOWVkT21OWlo2T3FndjhJNG9xdDFRcDhsNXo5TG05QW5zMjRMaXA0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Gamer"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 493,
@@ -7407,7 +7408,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1605400328/22694645105?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVdYZVJwMHhRL1JOQ2k3SEcrRmF6dUxtdU0vcStERjZTWjJHam0wWTNZL2JsK1JXemhEUnhyWVlLYU5rUG5sRjdhc2tkVUZ2b2Z6OGNZanJNL1lHbkNTZ1FuT3NyZ1VXNUc0Y3V6WjNHVFJkYml2TzRGR0NGYm5rM2UwTDlhcmdnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 494,
@@ -7422,7 +7423,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1528310601/23098579259?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNHV6MnZ3ZU1ZWjZ3eGdVVlFiV1FrRUo1NVNld1lOb3AxbWM2a3UwOHl3TzdreWhUOERGU0JJWnFqNXVIWXVjcjlSWVJWQ3FYS1NGcDdBYThOQ3h2WG9jTGhjTjVMS0dxMWZpdk9uWFZHWnlXWFZMcjFRYnBwOTFhZXpTMlVvdlBNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 495,
@@ -7437,7 +7438,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/424349311/20497726820?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc0MrMFd4SmNYTnlsaXNXOGZRMTRWYjhaQ3cvb1BZcXAwWUxIeUszeCtJcU91endZMkFzeWtmeDN0TXhTK3VKUkRlT0toY3dBaEN1QzNVV09PTUNiR2hJbDVTNjFtM0J5N0t5djVlTTh3cm5wMlBodHlOenk1RlB6UC8vTFNic2hjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 496,
@@ -7452,7 +7453,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/305047922/3003254620?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkY0tSanlKZU1BU2Y2RTJzOS9neUtnZXNzUDhybHBJSlZQQTJTYW54dSsxRXBTNXc5SDg2b0hvZnlIcklIMEVjMzh0alhqMlVta2Y3TUtNMHJPbnVCbTFOclk0THJyTEF3M0t4MG5QM1JqWmZtay9yTTJlbVdUdUY1aGtWY0dWMEl6MGoyd3gvc2M1Qnd4amRpZlVWOGhZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 497,
@@ -7467,7 +7468,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/410705973/22898235686?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc2xPTjBENGxRUExtSkNiU2hzOXRGYjJwOVdLMC8xcEh1ZWQ4ZVdmMDVybnFGclVNZ2RmZmVYVUNqdU5VZ0p0ekZJM1l0WmlpQzFJNXFxbzBDekxxcjZCMXExM2hVcFFYVGdUbFAyQmY3aC9kU2NvMFhFOGk1U3FsT3FGK3NVcGRjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 498,
@@ -7482,7 +7483,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1083272989/18397625485?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNXlpcUpVdHpzVG5Rekp4clVZb3luMmFwODdlZ3RUblQzNUFYbEVHcWlUNkM1M3lNN0JJOWRXNFFZU1JYTjNaMVZKblZNdE5kNkVydlduMkE3eDNBQWhYdGcvTmxhaUNKOFdReXF4K2MycDZOZm5paEIwVUJoTXluNWtGd2cwK3NNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 499,
@@ -7497,7 +7498,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/997025684/22193574324?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdkdjNUNOUVNaYmh0ODZFK29nSGZvL3ZodUVMWWp3WlBWaXdpekFwWEg0WStQNzcvclFsZTJBOGlESWtiS1pEVXRJR1daQkcxWDd2WTFwNWlkOWZiOHowUDhFT0UvZzVMM3gxTS9Id2ExOTRVL2ZITzBnZnRZc2NFYjZCUml4ZDJVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Eletrodomésticos"
   },
   {
     "id": 500,
@@ -7512,7 +7513,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1311907820/22293171289?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEpRL2FlUlcybzF4QXBObW5MVjVGZDEzaTJ0OWF3azRPRGRZUnJwdGE1SjZlS1doZCtqSzBMc3JYbjhlSzIwaFpvUlRjeFB5cWZVSWtQTER5czlvQmVDTGc0MHJhd0JGRGMyOHFVZy91bkQ1WCszY1ZxUnI0dVU2RWZCbG04VWZNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 501,
@@ -7527,7 +7528,7 @@ export const productsData: Product[] = [
     "location": "Internacional",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1062180512/23592301857?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNloyRXJNK0dFZFZ1MzRDVXhpYVFrVmU5aHo4UEVtbEpvM0J0dzhzcWhNR0dpUGVaWE5NeFlRTmkrZng1WkJtcnBnQ1M2UUIvbSs4SnFzMDhkSnpVS204L2V6VHozcHROL09jenJmbkF3MUFzbTY2S21xREl0VFZBQjRVZHJvQmNRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 502,
@@ -7542,7 +7543,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/409893823/15792548903?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXZ1NkNLTjRvc2dSclJJZUpwS2JQWk0xMFMzeGZJckI3NkpNNFFyWWphYnlzN3FydHdEQzJuTHkrbDVFang1Szk4QWE4emQydEljcDd5bE1SZ1cxRjNxRmM5dmJUd25QSmIvdWdkVnpKNUQ0dnU1Q1JIaU9lZW9ma05kVnB1b3Q0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 503,
@@ -7557,7 +7558,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/664231577/21799715541?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdVFZRVJReldVRXhlNllVSENPYjJOZm0wMHpLemMrbWdEMDJjY1kxaHRzQS9vTEhGUFE1SUlKTDB0YWlmY3VCa1hIV3RwUnZVSGhTR05zM0F6NmtQbjZhVG1lekhQQ3FiRXdCL1BYcFJ2ZUZGVVVObnJPOXFSYk5udVUyTm1SV01VPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Moda & Beleza"
   },
   {
     "id": 504,
@@ -7572,7 +7573,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1288270424/22199182572?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWNqc0xWZnFmQTlhNlJ0b1RiNGNUSE8ybFVqQnRPSk04YmNLRWNDdUVJUkU4QXVhU0FrblJJWmJtbmJIMWhvUXRRSDBMd0VIWDZ6bzVuOXZ3WkI0TS8yd1FNeXF0TFJ5MkQvcERaeVp5K3M0VzhPVGtYTEp4Skp5VUN0NGZVYUtVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 505,
@@ -7587,7 +7588,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/340096629/7563977602?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkY0tSanlKZU1BU2Y2RTJzOS9neUtnZDJkU3Jwd25yZVhaTFJabnFCdHZPSE1rZHhUMm4zcXJ0UXBJSnhFdmhMZmZhUW9ySkgyZGsrZW1nUDRkbndaMlBqT2MwNjNCaXZsVUl5VE1HZDYwNEVBelFXdHdqa1cvVGNzZ1pHWEoxUHZiaUxBZ3F0MWdrZktaTmw4K0ZvY3JrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 506,
@@ -7602,7 +7603,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/478697224/23492790112?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdnF3SGk4bWdROEU1ZlFyaFBKa2x3d3o5akkySzNDeXpiWGxlWHdxYnd3VXFRNk91bVYzY2V0Sk0xTUlDTDJsbm5WQjFSc2ZDOHB5ZGtUS0J2SmIyaXpGaG5WM1Z4S0hOZDlJL0dTWkFTTlc2aXU0eXJMcU43RjlYY3FkTmMzVTNJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 507,
@@ -7617,7 +7618,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1509878299/22493914849?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNU1mU0M5RWxpRUpPMTNORXc3cFZmbjNKem9IT3lTWU9YRHMxWjBVbzJXTjF2bzRESFdvR0l3MG0xQktZN3V1aVkrdGZIZjNxOWI3L3BnVEhjaFRRMkV5dUxIb2VpQVZqOGZudndWN1V0eU1oUGFON241UTd0WFYzSFRuaWZSWWlvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 508,
@@ -7647,7 +7648,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/827523690/22498849902?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc0hFMEdTRFhhZllWMk5LeDloT0xmdUZyWXJYOGpPbDRLODN3MmZYcGQ5RDVvZS9xekpOa2VEbmVLOTVpNU03dG9ESlYxYTU2K3cwT2VjNmtZRm0vU1QzZHVtMXdYWXFnWElpb2Q1MXcxeDNIbk1sOW1aQmxSS0MzVVd6U3JBR1pFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Relógios"
+    "category": "Moda & Beleza"
   },
   {
     "id": 510,
@@ -7662,7 +7663,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1210714652/19598315098?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0p5WlN0ajFLTzdqaTlQaERUZG41MzhkcG02WG1rWlM0L0NCWG5rMzRTSkdYdjVhR01iUWRKSU9qL2FEbml6cnAvdlNXZjNja1JQWTJwOWRDOHFFK1Q1Y1N1aEpYcVAxWmUyK2dpb0FCRGVWUURVN3ZReHNYZis1am5pTnhYbTlrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 511,
@@ -7677,7 +7678,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/265220244/23793193215?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdFhHVCtRb3U5dU5jbkUyRmEyNzY2b042aVFHVXR2NS9nZzNTd3RoZ1JRYVE4ZjI0SlFaRW9HUWZEVVlTK2dPR2Q0NU9SWEZWQjdBbHBldWlPVmR3OS9rbzhrSmRnMXZOUCtxVE1lcTE1T1JEcjhValhKL1Q1cFZaTENONC9KU1RvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 512,
@@ -7692,7 +7693,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/495281968/22198468997?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdTE1WkJKU0RBaVVSRnlneHVVbnB5a21CUmQzdEkzM0dHb05TM09YVDEwQ1JnSExkaTRIc0cxNlNsdmVBMTBYRUhTTEJ0SnNHV3hueG1OUkFpTThLY1pwemszK3JqV3dHbXFzSWNZVW4vVXJ5RFh4bjBjbFc5UzhLcUdCRVpla3lNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 513,
@@ -7707,7 +7708,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1274089510/23698160727?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNzhFZVJ4NGxLdFNvVzNTbHJ5SUtuRWVhMHhsc3d1ODUxSVdjQnJvbnE3bE04SERlQmtYM3htTlBCTUluUnVrSkJ6aStCamNjMmRIZ2JVMzZibHdnZnpySi9WQlhxYzB3ak8yT2lGbCtnaUp3NmkyMjZXUG9PT1VHWTcrRUdEcVMwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 514,
@@ -7722,7 +7723,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/380539760/8814411028?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkY0tSanlKZU1BU2Y2RTJzOS9neUtnZG9HVUlJTXNyRzlDVW5NSVF4cWxyQlE4UHl1Mk9SV0EvWFAxU1Q2dkFzdWg3OVowYzVEaGZPVHJPOVJXWkdCMmlJN1Rlbnd2SS82eEZ4SFpKK3pUSGlmMXdGK3NLaGk3TmFmNlVKR3I5eGFvcHFqalFlOVRuckpxMjhNZGh2RTVZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 515,
@@ -7737,7 +7738,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/960915983/58254327591?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdFBlUWI4SjlVS2RUTEE5c1FaTG9oOUdDWWJJUmZTVWp3Vm9VRFM0R1UxVkcvdFNvZDNuQnlBNUpNK3FWNWExSWZnS2l3a2ZJelJFczN6b1VvRUluSmRxOW94QjRvcVZqWkxLbkFwUmIwaktyNUVyZTZUNFB5ZG8yTmR6TXIzc0tRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Casa & Decoração"
   },
   {
     "id": 516,
@@ -7752,7 +7753,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/638380156/18297619389?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc2tPZUh6dG1JZ1M1VDZEU0MrdktWamVwRFU2N2M2MjhkdGtoN1h1anpPa3FPek9JOXV1ci9hL0g0eDFucGtwbU5EcmpGTDJudVJZSFVzT2thdjZ3clozclBLK0V4WjZBd3VIaTFGOTAwWEY1SEtrbDZLbjJmTHA2TUtPSzdQWnNNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 517,
@@ -7767,7 +7768,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/408398521/11721866597?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdjNtR3FWWHRRMDYrYWRVTDJpWG4xV1YyNjAwcTVyS01wT2k3MDdBQ1VaQXQ1dTVsV0dCNkZ3dGhacThQVWsvS0pLajIwWUgwTC9seHZtcVRTS2wrVXZha1VyQitKdmR3WUIyWUFOaGxSZ2VQOGdzWWlxRm1GZWw0OWtpOE4xazdNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Pets"
+    "category": "Casa & Decoração"
   },
   {
     "id": 518,
@@ -7782,7 +7783,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/380575792/22291994450?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQczg5Y2xVckNMN1Yya2dFSU5ibHc3WGphbWIzNGx1NUN5U3ZXbk1Qa084OEFKcVpPa3BYUUlTWVZUN0hjRWZHK09KOUpzUzNVQ1VGeWVQSzFJUnozR0xVcDgvYWF2SjJlVXdHUEVRS1dEWWVLN3pZNHQwL2tDVlVUYWY4UEh6NVJvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 519,
@@ -7797,7 +7798,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/458840836/20699849631?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdjlSU1d2SVNMSlhSR1IzTk5RNHdYYmlIelpCS0VlSmlKZnM4NjlDZjRPYjZKeUNOUkhhRjlBMHRaakIwMm1KNVl2Vm9CNFJXK25weVVEVC9UUC9kMXc0V0FuT1QwbDlrV3Q2RXlVNUtJNXFDM2N5dmNPdWxkK0ZCSkZIbmgrNmZFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Beleza"
+    "category": "Moda & Beleza"
   },
   {
     "id": 520,
@@ -7812,7 +7813,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1508524367/58252152185?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNU1mU0M5RWxpRUpPMTNORXc3cFZmbnNjcW9PbG1CNzJKMEJid09aMXI0L1grM3licEJLSEVFdlYxVUJ4dDBld2tVY3BFUU5EN1ByLzk4bUZXWmg3ODRvQlFXelFaOG9GT3Z4ci9tV2swZnYvZC9TREhvVEJUd0Rtb0JUS09Ca1BRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Beleza"
+    "category": "Moda & Beleza"
   },
   {
     "id": 521,
@@ -7827,7 +7828,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1577082066/22494218685?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1lxZTV6UUVYb3RlQWRpOUpoak9scjU1WVh1SzV6bm9BK2xnSFdDcTJURmxBNldONHB5MjBxd1V0S0Nsdit2a200V3IvcTdHZVZXTHVtSGVQTUNxbmxPK01DazhwZzZOK2ZLT3A1TU5xRXhNYkZwYkloUlRIWTc1bFU3QTRaUXFVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 522,
@@ -7842,7 +7843,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/768604265/22894394613?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdjNvQU9TN2hYRnhxZmxmNVRRdWNJQmx3K2hESlJacXdGZm9PRXBlQTFCSVl4K1FTY3R4Y3JIc3NRcUlhT01WUnVGS3JxdXErK1prSm1LcmFPcm5rMFN6M1Nyc2I3bk43RklaVVBQUkkvbHA3aERQR3FVb0FDT0lESlI2Wmh5MktVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 523,
@@ -7857,7 +7858,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/530370669/21663589221?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUNlU3pEdEwyejZNeFlhdWwxNngzb3g2Z25hamw5dmRaYTZVWHVvNFJ3TTNvWjBncGRrRXVyVWVIenZYVFpnbytpTW1hbVY3OGtPM3NQaWswWGE4N2x5UkgzSGVxalhCRWpaQ2k1TnUvZCtqSnp2aXRrU1o4bThGMnlvUVgycmJ3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Casa & Decoração"
   },
   {
     "id": 524,
@@ -7872,7 +7873,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/430146238/22897668634?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdERhYTdXelVTeFZ4QTB0S1ZMQitiQzJIZnR0NkRhMUxCTExvZkQxMTNzMzExVi9uR1F2OUYwNmdmVGlXWnVGZUxYa0QxL1dsYzBRaCtKWHFHT1dWK0VLVExFemwrdTFQVnl6RjIxbTRQVmFCaU9kUElLZjFzOFpvc3FscmJhejRVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 525,
@@ -7887,7 +7888,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/225117529/23598688411?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdEJxQjBOYzF1VDVjZXZ6MHBLL3JtcFlFR1V0ZFcrcDR5bEFMRWtROUFoV0gyTmNIMHExc0tEYVRjYWl6NlNmSVZtQW9PWW9Yd3pJaXlRamNtOFFTUmo0dFlHaVljK0dlYmtLNHJUdi8vaXhnNXlUR1NtZWU4MnBvZFp3RE1vbVhvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 526,
@@ -7902,7 +7903,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/430146238/21299714886?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdERhYTdXelVTeFZ4QTB0S1ZMQitiQ3kvdWhxUi9KaVk5eUhYS1d4RHNpV2NYenk5aWtUTWlWUE0rREdzWGRhZG5acDBDZG1xMlYwKzFCbFJZYTlpbE1CS0xJRFpNUmxOWVB2WFp3VUZUcC91R1QzWDhWNkpoWG1DQXlsRTJpK2lnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 527,
@@ -7917,7 +7918,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/728534865/23492619475?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdlFnRldzWnZnQmR6VHRBY1IzMFhjcG5SNlFxTXdLTXhnY2Z5amRncXBUWmloUThjQmVCemxwb3pIcXVuelpRQVdnT3NBZ0Q4WjNXZEhQYlVvM2pieFdZZElQcnJPVFZBUkpmNi9zQllzU1BxZ05RdnIzYW0xcVAzUEtvUHhCMXNRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 528,
@@ -7932,7 +7933,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1592243578/58203048764?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1ZMd0hoWWdZV2M4ZmtCcVRONXpQdm1Cb0pyK1R6akZGYnJERmFuMHcvdmYzdlZtZ0Fqbk40b1RUUE4wRHJDSjNQY2FQMmFvTUVTVGM0b1I1d2FHMitOa2h1ZWo3SC9MTHZFbitVMGpEQmN2L1RNeGI0Sms5Z1ozb0xCMmdSSVVVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 529,
@@ -7947,7 +7948,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/580791382/22993873081?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQczJBc3RFT1hWMmdaazJvYit4Yk05YTNreVZtcy9wV21hUFBPOTE2V3lrUWszQiswVmdlTWF2anIxNGpzQ0lSeW5IYWdvdkl2SUZYWnRjdE5YMFk2NkRXTlZtTnRLY2JHNGttdW1KeEdlT2pUNDJBMHlwTTZQY0pjN3A1ZHNqM1ZRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Casa & Decoração"
   },
   {
     "id": 530,
@@ -7962,7 +7963,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1534896372/58254524651?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWNkaUJHS2dKRXlBdkd2dG1mZ0psUFFJVXZjYzNRUlphQms0OXpEZGRJS0N4bXloM0h1RThjbjNnZldOYkVNelNiVk1nVTQwK3prMzV3elkya1BYLytRV3cxRitNMGQvWmk1WE9BMDdHZkgvY2djSE4zQ2k4TUpJRWtoSWcwcGJBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 531,
@@ -7977,7 +7978,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1355230507/58201326894?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnFlajJWZlQyRjNuVGtydksxZlBaenh6N25Ed2VmTEVnd2hZSXNuOUVsSUZkcGhrY3JyOEd4V1pnelN3RExkUXpITUxQQ2FvYWtMU2lSZUFhS1VMblUySHZBSGVYbXV2V1pBTW9jdi9ERE5iT01RWHZpMHFKcHJML0s2R1pwT3FNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 532,
@@ -7992,7 +7993,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1279944913/22894380209?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNzhFZVJ4NGxLdFNvVzNTbHJ5SUtuRWg2NDh5Nmo3dVVXYjR4UFdwMW1HVlR5MUJTZm12SzI0M3ZLT2FVbSthbWVxTlNnSzF2bXBxaHdKeU52MUtDc0VpQXdwODdZYU8wTWZUVVNqekM4aVpidHE4QnlKQWZWWm9nSFVoUWoxSDFzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Casa & Decoração"
   },
   {
     "id": 533,
@@ -8007,7 +8008,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1718394846/58204742149?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNHF2bHR1Q3pyNGhvNjZhYXpBclNSV3hvWTg3TjNyQUFXb1BPa0FWb2NSRVdlWkdvdDVXZjZkd2U4dk5CRS9JZEdXT1lpWWNqNUpFaTVBRWNoMVFmYzY5TlV4UXh5c1NPWFpmOHg5czEvdHpJeEl6UUZFQ002RlJwZVh1N0NDRTZnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 534,
@@ -8022,7 +8023,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1485858369/23698395499?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNk5ZT1dQell2eDl4bW8yNkZpTjAyWXFpeXdDR2t5TE1mRGtZL3llMWswdlB1RVoxUnhnanNNeTl6MTVjbS95endnWTdjNmNtL0l2WUdKYStoZG94Tk9vNzRZajJ2L1VROWw2amtSY21zTkdTZjlqV0JFRHhnUnh3bW5xc1YycWJBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 535,
@@ -8037,7 +8038,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1063329222/23898830666?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNloyRXJNK0dFZFZ1MzRDVXhpYVFrVkRaNnFmazBCT1JPSHkzbE9WWTJBb0F2dm1QYTROUDZDWThpb1c2TG12YVR6R3BDNGwrOFdrTmZZRURneG1EVXpqWklLK0lGQ0RvcFBYWWpDdUw2eVkwU1ErakFsaFczNXJ6QlVaVkV1RiswPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Moda & Beleza"
   },
   {
     "id": 536,
@@ -8052,7 +8053,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/430146238/23393954691?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdERhYTdXelVTeFZ4QTB0S1ZMQitiQ282RWJxMjcyRkN0Qjd2OFJHOE1MWUhBb2g0YmJDTlBWQTNjNDhldzhhb1o5VzBxMVBCWGVUWEFtTFg2NTdFRjk3M0VyQVBHbUE4VWxDQmZwTktWYzUwRS9ia0U5Q3psOXdZV0kraVFEbHhFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 537,
@@ -8067,7 +8068,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1303713502/23097706625?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNjBqS29UNHNHQVlWREc4aC9FR0ZjRDJFUTZtQUxTeVd5RXBBc3hGaDJsQUszeitYVEFUbU5QRi96RVhqR21VdzV6NkRTTzRLMXV1N1hPRWZ0dnR4WEN3c1d5ajhIV2h1Z2pnN2hIUnNhbERPU0lUakZhREVabXdmVmhJYU9qVEtFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 538,
@@ -8082,7 +8083,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/422903557/22298841675?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdU5IRjJtOEhBdGY0MEtERSs0VmxydkN6bzd3Rm9wd3k2TGxNNnBJYkgzTHVmckhLS2dIM0JBODlMbitWRHFESFdNRDlXMGRxN25KSjNvOSt6QmRObDBkMmsvWnlwTy8yZmxneTZSYXR3bEh4bDNRcXpiYndNWk4rc0hRR0FkQkl3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 539,
@@ -8097,7 +8098,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/437179409/20597673467?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdHFlTUZWcE9paFdZbE44R3B4aU1maFVwWHIraE9lc2Z2Yko4bkNNTmF0djJ2TWZjazdUL2IyUHoyOFFXa3lINTY0VUZiMldxR3A1U2FqaHk3RkQwM3VYRytOSXpiK09nUTVrL3BKWVhjc1Q1YmQ2RXlqVTdzWnV0T1gvV1ZnMXhRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 540,
@@ -8112,7 +8113,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1367489513/22898322610?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNjZxczFjZUpCVzZMY2tOMHBrckhPQzhzS3FBVnkvTVJUMkY1ZFdBdEFMUlZXeU5WVXVxVUFuL1d4dEtFcnRrWUxINWI1dEJVakpVLzJJQ01TN3NtMFBnWlZ3TVNBL1ovWkhjVnZSSnRFUXdMaDV2S1RMeVB4YVhNNDlJMjFmQ1BrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Automotivo"
   },
   {
     "id": 541,
@@ -8127,7 +8128,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1160410656/22398418785?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNlBFNHVhak51MU13cGRKeklHTm1VZWprY0U5NkxzU3VFMmJ0QjVPTE9hMUlkSG13a3JTdXVpY2tpV3ZwRisrTXBNYVMra285U3AzZWZjbkpEQjFLbitTTE80dXlxWmY0UG9kZXFsK0RSaWZZQ2NQMWYvME03Y1ljWTRmRDg0SmtzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 542,
@@ -8142,7 +8143,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1195620126/23993270251?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN01mNFFzOUZXKzNHRUpybTdwb3ZFWkJxajJURFM3ZGZwREt6d0QzM0NvZGQrVWNuQnhhcDhjOTVWczZ2WG13Nnh3ckNOY0ltTUptakpBOCtNa2FhZjd6RWZzYWxpUDY0dDBRSVo4b0YzcytqWXBXM1NaeTBBaFNPSE5QY0ZORHZRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Casa & Decoração"
   },
   {
     "id": 543,
@@ -8157,7 +8158,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/733998429/20297618642?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc29HUlYxN2ZlVnk2eG9EcHJSUGIyb2F1V0VNVzlSNVI0d0FXclAvbDJlSDFvc0VIenBaSDk5ZWxYWkpneTMvWitXdUwvYnQwUGRNalFyMEI0MUVQUmQ3R0dNc1dMZENXdEI5Qi8xeTRGQ1d0MmlKajk0cm56TjAxZkdEeVZwZ3NvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 544,
@@ -8172,7 +8173,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1077139873/44451988896?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN25yakJrbS90NzFHTVl1UjRXSmMyZVo0MmRKcGFKRmRBMnd5NUt2eGxrb3FpYXUybFJ3U2lBRlB2UUlTckRkSEN5S1RtSWlGSXpBZnJ1SE8rY1BsRSswWTdXdFJwdGZwMW5zRFNCUVpxVlZVR3crczUrNmVhUnNnL0txa1RPZE5FPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 545,
@@ -8187,7 +8188,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1255026952/58202344161?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVkyaHE3aUNyNGd1V0k2Q3RjRFRaajdGemhkVWRieWVuR3ErWWVjaGRxVEQ5Yyt0dEF1ZGp2SjJYdjhRL3d2eGtTcjRERngzZUFaQ096K1g2TjBNaDZNaWNROTk2RS9BcGJNVnZtSDJKbmdLcTkvM1RXd2IwMHV2Q1JkaFU2NkdJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Eletrodomésticos"
   },
   {
     "id": 546,
@@ -8202,7 +8203,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1003284429/23597640570?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1ZpUFMxL2o1N0RPK0UxdWl1N3FMVmo3ZXBiLzl6L0xQU0plQTJTbjBlcXc0QWsxRjVvcU9aOHphVGZIT25WRE1scXREbno4R21DejA1SlhwSmVDeWx5bWRNNWNBQ1orTGQxQ2JENkFCZDNVWnZoR3p5b1RxL2kvYVBtNDRVa0FZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 547,
@@ -8217,7 +8218,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1171546418/22299212972?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN3R6clRXek84YVRNMWhSeW9MRFNFMlJHb1JmYnNJMXl5eHlMZVg0NjRWdU9QN2xPQVlBWnU2VDBaTTVvT09ENDVEbktnREV0NVpIK2hWdkxjVFpYdStGSG4vZjRXUDYyQ2VsR25VaG5VWGNPV3UwNzFZZVAxMDA1cG5kdXhndVMwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 548,
@@ -8232,7 +8233,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/225117529/22498781791?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdEJxQjBOYzF1VDVjZXZ6MHBLL3JtcDFjU0ZCRW95WTN3QlV0YXE5R3Z6OHZHVlJvS0hvZk5nVTV6L2ZpYTNBczNCNzJ1bDZGbU00dmNmb2tDdEoxNkxiRHBmdGdEVkpRdkM3elNJcTdSaGI3bk4yaUVId2JZdmdqZ08yaHkybHV3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 549,
@@ -8247,7 +8248,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1171546418/21598077638?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN3R6clRXek84YVRNMWhSeW9MRFNFMmVQMWR6Zk1PTFgwRnY4RW91cDZXdHFkYlVhakdYSHc0SXpyd0pTOTRKYXBUL1JzMGkzRitPb0l2WTdocXRmNldyZHlyb0pYQVhDLzN0SG0yRUE1Sy9hTENBWmRqQzNybVg2bzh5RkhEc0xnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 550,
@@ -8262,7 +8263,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1179613076/42821781287?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN3R6clRXek84YVRNMWhSeW9MRFNFMlFLeDlLOVdoZ002L2taZDFoVWs1VmVEdjNuYzhSVXJUWmZCVmZ1R0dEalhDNEYwb0lpcGhuL255cmZubVZySlFkc1RodDhacUxnNThrUjRMOVh0Y3dlOFFJSkpHOUtvNlV6Zzk4eFNkMGNvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 551,
@@ -8292,7 +8293,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1526753256/19999775801?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNHV6MnZ3ZU1ZWjZ3eGdVVlFiV1FrRVg1YnRlRHNTSlg2TlJ6VTgvVlhOWWd1THRldVBsM1lGWDcvMFhBNDczdUh6VWhWLy84MnhiRkZCM0RjVE1KSzc4Y0Y3VyttckVzQktjWVYyNmhuaTFJZ1djTjIwSjY4MUtRVTBrSHAzcFZZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 553,
@@ -8307,7 +8308,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/900960477/20798548218?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1QxZWl5VHFzcEFPUDBqRWdrS1RtUWJhK3F3ejJxWGQ0bmc0TTJIWXYwVTFkQ0Q1T2JSdEc0dVZCTXh2eXdwcDdSenlDK1RDSllwNG91NHp5T3lNRXlYL3BONGZLWEZmWUFsOWVCVnV3WFpJNmc4RXhkVng0bFRNK0lQZU9DRndJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 554,
@@ -8322,7 +8323,7 @@ export const productsData: Product[] = [
     "location": "Santa Catarina",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/445825241/22098156303?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdVI0SG95UXExcFd5UWpNZ2Fib0pGOWlLV3NZQ3UxMit5bzN6MWZPL0IvdmNjcmlwVEpCaW01RFdPS1RpWnNkNXZ0US92Qks5UUhSWC9ERWlaOHA0YysvNlR2VER6UkQ0TFpxQUsrQnc1Q0RuMnhnUHpVaUFRV1E0Ymh2RWlOUEp3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Automotivo"
   },
   {
     "id": 555,
@@ -8337,7 +8338,7 @@ export const productsData: Product[] = [
     "location": "Santa Catarina",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/363220493/23994288266?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdGErYlJLZXNtbkgvcFd0QXlwYzNzVDY4a3JZMmViOTQwZ3F4OUJmWWErS3lsazNZaEhlOG5rd3ZaeWJuYyt4NWVPNFZHZEhuQjBxNWNycHlybXE1R1UrTGlaZlVXWHBjNk50UVZqNFN0ZEg1S0dCbGE3SExCUTVUbDVqZzkxTS9ZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Casa & Decoração"
   },
   {
     "id": 556,
@@ -8367,7 +8368,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/518270617/23592798319?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmZNck0zQTBMcFVhNnErT09RaGN2aGtwTVVIQTJzazIwYVl3YkI4OFRpYisvd3hlMmQ3VUppcTlHbTVnSzN1WE9GYjc5SHVuTDBaQmxLa1VMRnkvSnFaN0o5M3gvT1E3YzFYMTJZZVhJR21TeFpyRDArMDIwei9qSWluUWZJVE9JPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Casa & Decoração"
   },
   {
     "id": 558,
@@ -8382,7 +8383,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1602405491/58200104559?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVdYZVJwMHhRL1JOQ2k3SEcrRmF6dVVubTYwaHd2VDdPeHE5TTRROVFCY0tRdUVxc2tsQ2ZDS0lPdksxTjFtclk4OFhudmd0Qk9nTmVuZ1JKK290YmZXSzIxTXlkOG5Mbnh6SHYxK05jRUh3TnZZSmt3N3VPRFhnZXZFSXA0d2NBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 559,
@@ -8397,7 +8398,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/378982950/23893606449?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdHR4N3hqTUVpcFByZHY2eHVXU0dPeVVVVmFhVXVvVXNzM2lvNGRpdVVjaStRMWdiNmx2cnhnK3lpYWc5UlNBaXE3bzdqbEY0WWREUUI2MWdoVXNPejI5aVdDSTVHaFBPYUJqR0t0bWlIN2NCNEs0SDE1VWRnczlNMzdQVFFhMVdrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 560,
@@ -8412,7 +8413,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1169146045/22393226536?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNlBFNHVhak51MU13cGRKeklHTm1VZUMreFJ4S1NBbUlQMUt5SndsWnhhSlBPZXBaelQ2dllLbFZESlNQSnF0bGREQjV1NHl6eWxRaVhKbk81Uk5VL2ltMXo4UE12dy9HakEyT1pDTmFzVnVKYnY2dXB5bERBUWFWa0JzTFhLemNBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Moda & Beleza"
   },
   {
     "id": 561,
@@ -8427,7 +8428,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/323192182/19298034026?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQczU2a09SeURjOXExVVZKYzIxK0RVbmduN2VxR1ZVM0pLKzVGMitsVDhEdDEvMkVQV2RVQzNXVmIyTENJZU9DcFJsamZYRDBvV0dJUjdoRzdoN2dXWVgzMWlPRngrMmM3cGJUWUlERXZhbWN6WGNtOVJFVzNhMkY4b2VpMDUzeGpjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 562,
@@ -8442,7 +8443,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1502978038/23994010369?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNU1mU0M5RWxpRUpPMTNORXc3cFZmbjVLRFlOVXFNZ3V4ZGlSdnJBWi9XdEtiS1RxS0xCZWlvdU02UEdCcW4rd0hqNEtzSUhUNjR2MkpCMDBLYWdHZ21uV3Qvakg5T3BRakZ4eWtjRzdXNStXVFBNcCs2VVl1RTkvUWtYNTI1TWRjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Moda & Beleza"
   },
   {
     "id": 563,
@@ -8472,7 +8473,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1421340193/22198981473?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNGhEWlZ5Z0VBbkhrTnpUVldDQzBwTi9qN0tnVmhndXFCRVJWSEVMa2JTZ2w0aHdGd1NHRWpNR1psMjF1WkxDZHdmeGRvbjhWdHBKV2IrZUlOem9KTzN0V2xKQmt3TnF2MXZnT0pheVhtWTZSbm9jL0VuZ3l1RUNwbnUxRW5ybkJJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 565,
@@ -8487,7 +8488,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/391739739/20505642558?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdjNrY1NPeTBsb1pnV0lOaWYzak5Wa3ltbWVxRmZ6VHgwT2NaTVRJVERiQy9yQ1J4RUhrck5OUmx1Uzc1cFFTWlJwK3RKRG1qY2RqRGRmb1cxSjBHc2ZFNjVvUjc2YmdGWndqNXRiQ2dmS1d2WmJmaXJGZFJhU2dYSnlyNU54RkdBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 566,
@@ -8502,7 +8503,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/317236755/11044644812?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdlYxU1VCL3lXTm9IVHZTclRHZXNjN3owU1ZERHhBUXUwQm5SWk9aVjdGbUZVWEp1ZkdMYU85L2JodmVYWmgzTCtwbXJXMnFqTjBMQnNPaHJHOGl1Qi9QaGJhcno0bmhERDdCZThYNTZ3QzAzSlg2QUJyK3h4Y0IwdVBUeHBoZkU4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 567,
@@ -8517,7 +8518,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1497334401/23799195013?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEsxSUFHRCt1Zm5YN25nQUlHSklKS3h4YzZFdTZ0eHNnRTJsRzR5YXk0bmtxdGN4amVkVlBhOHJmUlZIaE0rRThhL0ZjaXhzdW8ybmZkM21uM04zRGRyVnhOS0RaVnNSOGlVeG5mOGZrRkNURHhMUUZTVlo1MUZrTmh6cFVZcFlFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 568,
@@ -8532,7 +8533,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/409164022/22693832771?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXZ1NkNLTjRvc2dSclJJZUpwS2JQWjNGSnJoKzhxRzVmaFFSdEQ2a3VxZi83WEt2ZFdlMklMcTdxUjU2eDRhcDBUNFZyWFZ0SkxZSVNlbzlYdHpsbFEyK2E2OFEyeEo0WEFXT1BEVHVlcjFwYXhwK2JNdDF6OUd2Ky85dEt4MVl3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 569,
@@ -8547,7 +8548,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/695249516/22494186665?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdEFxcGFnL3VqYVpPV3UrR3dVVnhPNFJjcDdMK2trNjk0UWNvcy9sMHJsVjk0QzJ5NnhTMzJ5UHhsSGI4WE1RaklRZkdjd2VHd2xGMnM2ME1HcWZlVGJkamdmQTZZS29oY2F1bzdocTBQUTNBcGVxTFJMemFpb0FNK1A4bEM4R1lJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 570,
@@ -8562,7 +8563,7 @@ export const productsData: Product[] = [
     "location": "Goiás",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1013764152/22398939892?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNFEwdzR0cnZQREgzMG9ONy84Njgrbis4Q2hBVERCSjlHVjArajU1MmNzZTVGVmtmWjRpK3ZMSkRrN0YrY0FQUDNXTnlDZUhHSVpRZGJqckFkTWgvdWhiNkhLeExoSnZKTHB6dUltcTI1V3UxdHl3WEFBbTZuVngvY2l5VnJzN0JnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 571,
@@ -8577,7 +8578,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/407760070/49603251115?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc0NTYzRvWW8yNm9BTzN0Wm5rQ0VINGdUS0ZmWmNIMVBxd3E4Q0M0QW5lRGpKNnI2NytWbDNGdkVoUHNhdU93b2RGVVIvdWZldG11NzR2OE1UcjdzRUZnWktoMUhTaW5JMktxYldIWDZRTUhHUkRkYnlqV0pVcFY0L09RQng0VkFNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 572,
@@ -8592,7 +8593,7 @@ export const productsData: Product[] = [
     "location": "Santa Catarina",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/396876264/22498781630?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdlo4bXROYVZINzh5dWhBNkViL0hERGl6aVhkOVdIaGZyRmhrTk0vNy84TWRmYUNjYmxvZGROeXR3TUlCVGl4dFRFMTN4aFMzeHJzREc1aHNSOEhETmdrVUNyY1VCeEkvV09ML2QwR0JBeG9SamN0cEcrSTF2bURqbHF4NUN3NklFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 573,
@@ -8607,7 +8608,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1410617268/22393557777?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEFrSUpWaitUS3NaQTFHTVJTQmhpZXdwVjBWdHRwYXNRenhub3IycS9Sa1J4SU9lMmNOeXVFRkpRMUV6L0NpREMxUnh2aGZjWjBIVjYxVm1OdHMzWGpyVWp6dGJYTXI4VGJqK0JsNnIzamhaeFZCNElNOEV5aEhwcGtPQ05OT3pNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 574,
@@ -8622,7 +8623,7 @@ export const productsData: Product[] = [
     "location": "Goiás",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1139650317/23294737280?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNkRpeEVpK3ZJVjVmMzFMUGRFOXVoUnpab0lmYmMveU1SK3dQSWFtRmZuQTNrSWVILzkyMkFEaUF4V3AwTlZXcVBIbEh6ZXRJeHhnYlVDdzNjZzhLS0pROW1BZEtDUjZlcXA4dm51VmJDN1hYVVFTRk9qRzRoTktwaGg5M3hVcGhrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 575,
@@ -8637,7 +8638,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/376022922/21027986476?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdlFyR3VjUGNZWWhRNnNUSWFLaGp0Wm03Q1praE0wN2YwYy9Cdm10V1QyQzVoVHRTc1d0WXBheVdwZ3JKUXFJRUdpOEkzVjVjRmk2azIxYU12Zit3UVVBM3BSVU5DQVVNUVNrbkovY25JSmtibk8yeXhsaTBZV3hhOTJ6NzgvamxjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 576,
@@ -8652,7 +8653,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1429781525/18199635561?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNGhEWlZ5Z0VBbkhrTnpUVldDQzBwTkRFY3MrNTJqb1NPMUhLb3hRVTVldzBYSEQzRTlFTGVIdURid0ovMGlMMXYzSTFZZTBwSVNYdnhoNW1TMFJyU2JrZkZneHhPbmZPVEpxZERPQitJUDdOeTZOS3Rya21ZVStsZWRIbGd5OG0wPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 577,
@@ -8667,7 +8668,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/982145366/58203898930?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdGVPb3ZHQUJaNmtKVmttcVh6aHkrWU5xVVJ1UlQ4OUNNdENRTVZaRjJ0NkE4YW02bjg5TUszMi9sMFVDYlFLU3oxa3FGcTR6VHdqRTNLaTEyMCtKcU9XalZGZCthUHk5cSs0aC85cXhXY0xsakhYVW5GdXprbjhFeVNwMURjSW5jPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 578,
@@ -8682,7 +8683,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1299283009/22793133379?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNGE4aFpPSitIdGlRMWhhWS8yRkUvQ1YzbGYxendLaWZFSkZtUVVvOTNDd3NPS1BqN21SNmowNmhnNlBhOVZxTHJ4am9sUlM4Sjd0cG9lUjBYZ0FINkFNRnNXVWk5WlBlSWhVY0dWTXVqSU1aS3pzSVRPU09qVFZPSjJ2bFlBVTEwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 579,
@@ -8697,7 +8698,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1534896372/22594231608?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWNkaUJHS2dKRXlBdkd2dG1mZ0psUDNYUHN6RGxTREt4bmIzdmlJbG05ZCtySGU5ZHpVczBPUmhKMTJwUU1wdUVWalExUUpkekk4THdVc21STlFOTjEwaE9vSGYyT0xIQU5QOGxsR2p6a0FWbU5RQ04zcHVKUTdpUXNKWk1XdTVRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 580,
@@ -8712,7 +8713,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1635161050/22494540972?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNTVmUS9CZk9FbXBXL2l5cmxuVFVOaDlQVFZJeURiMkgrckpWSnVxaTBYekFELytoeS9pRkJrenAxT1FsWlBiWHBtOVVtOVQvZ3lKZmlJd2IreTQyOWFXcmgrNjdkUk5sOFk1Nytkb29tTE1PcmxyMDdxTVNYcEhlcmsvNkJjb25jPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 581,
@@ -8727,7 +8728,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1021751851/23691749781?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN2FFWnJLSG1wUkVCVmdvV21GWWdSc2FhVDlKWFA2eTRZWXRsUVZtcGVEYW5nZjBFTjlQbGdFaERBQzV1emw4NjZoaXliMk9XNUZuZ09IU2JpOVl2Z09YVHJIV3hvNFIxY1o5TE5HakphU3NWejcrRFZzdVF3eTcyRW5oZGJ4NjVBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 582,
@@ -8742,7 +8743,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1220444950/23798560672?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNG1aNFMyQ1B0b04wNGNvN2huVEV0YTNWUC9FQlpKQzU4R2dLNVpEWG9RcHZjc0cyNE16L3lQVkRNUjUxWHRTa25Sd2pQamg4ZGYrZEk0UXI5SnIxNlByWXV6WW8vK0hWemJ3VkpYK2tJUE02ZVpPMFFjOSs0QzEyUzZ2YUlkK1Q0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 583,
@@ -8757,7 +8758,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/392262515/42761937194?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdklNTFkxMDJUc3JVWE56eWdmR3ZGaFRMQnVReldWT0paaUpvWGVMTHVDZlVYVUJNd2dDUTFORHFiR3ZKeUJpZlltYzUzNnY1c0tHU3Q5MEZ4NU9yMXk1ekpnNFhsVlVJa0pXZXcvSGZzUzc5WUY4bjlBcldZcHpKVDh3czNvN2N3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 584,
@@ -8787,7 +8788,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/552896405/23693732086?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1VZT3o0R2xsMURocnROd2hzZzltZ0d0WWQ3RlJTaUt3eWN4MUVmdktUYXdaT0FtTnVCa2FFdnVRbXJIcTlBNTlqcFRRWGZwYktYeWdnelBqUVZYTE4rRStOR1VTbnR5T3FqdVlNVkxkZ0hUQytJbUZJVE1SL1Nya2lSRXFYNUZFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 586,
@@ -8802,7 +8803,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1161864261/22398861389?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNlBFNHVhak51MU13cGRKeklHTm1VZXpzM3djbjJ3UGY3TmtkbG1GbS9XRjZoT0xJQUI4S3ZPekpaWThGSUxwSFBwc3hsV0dZQlBIczF0QkJpR1BDaHMrdFhLbEJFOHl0QTBCdTBXYzlRSVhXWndVWmNHcGUrUlRRTlVPN3R1QnNBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Casa & Decoração"
   },
   {
     "id": 587,
@@ -8817,7 +8818,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1508524367/23499240514?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNU1mU0M5RWxpRUpPMTNORXc3cFZmbmZJUjNWRlFXcTFyUkdRMExYUlNETDVBdTNxLy9wcW00Nzh3ckcrQUNIYnJnMFdsYklMNGVoR0FMRkRDeFVIUGhEMlpya1FGL2d1TmxuRmxOaFhxdS8yM2gxbGxyTlRPQkdRRDZtam1XakpBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 588,
@@ -8832,7 +8833,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1274089510/23893779066?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNzhFZVJ4NGxLdFNvVzNTbHJ5SUtuRTR0SUxGS0hYMGZRRmpUL2lFa2k3UkFsNjJ1MzRJNUhrQ2RQWmJmYTJibW5oYUdweEtqYkZqOVFlVmI0cjlZSnd1RmV1UENFQzVCT0NXbjV5OXlOTFJNeVQwSG9zUlJPRVNzcjVmU3lFZ3BzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 589,
@@ -8847,7 +8848,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/409164022/23494814284?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXZ1NkNLTjRvc2dSclJJZUpwS2JQWllkWThHMGtmOFZFZmdCQi9kVHdaY1dOMUdIc1k0c3c4bjlUem44dk5MbkdqM1M5b1RBRjFTMmQwR01hMW1xR1pubkt1Qm51cmlPc1N0RWx0Q2swbVU1bXNiSjByaTNhL1psdVdXUUNUL3lnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Automotivo"
+    "category": "Moda & Beleza"
   },
   {
     "id": 590,
@@ -8862,7 +8863,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1467162087/23298764321?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN2lKbXJsVS8yVjMyc2o2ZmdESXoya0N0UzdLMW10aSt1a0t6VlQ4K3VldnZ5MWZNZUkwYUFLR1JZYXdCQUp3emtCbXhDV3dVTkNxWlVYeXphTW5iZnRpNHJ6bE9FeDZIMTUrQ3JQZml5Z1lweE1FSUxDK3RNekVSRy9JdDk4bFFRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 591,
@@ -8877,7 +8878,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/512962451/22794296585?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWJlRHV5OGZHWHdvbVY0Sm1jVVpaUDRheUZ2d3BISXYybWVzVCtQNVB5NnJuYU05Q0pWRlZVbWNoTFRnR29OUkhLN0tiaWdpc0Y2QTFxeVlhMDFKVFNYMFJ2MUVRSHYrdkV3azJnZ2wyTzd0bTdZWVRScEJkVitaTm5rc1lSYVFZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 592,
@@ -8907,7 +8908,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/222975446/22594448627?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdDRPSEhqTWdkaTUzc3Q0U2ExLzgxbUd1THFZWEo4VkFMNGMrOWFSRjdPdXJqSjUrWk5vY2JmU1RDa09zMlVqWE1va1lTemFDUUllWDMvWVhwcnpaWm56TEZUYXdKTEgrQ3IyQ1d4K1hrU2FkOW1hT2NKTVJuckpUdHN5UUtYVXJjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 594,
@@ -8922,7 +8923,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/526596865/19699092254?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdDAzbHd0UXVLaGFVZlFlVStxT2NUYTJNMUdmOFJCMHJNZGwyWGV0Y2pJQjA2ODN4SldLTnhBZGFMV3crc0d3NEp6WmE2ZjQxdnNESUhnSWJ2d1ozZ2Vka0YyWVlMZWhGWlVVT013cmRhS3BUUHBIdU93NWlIQlJObzFMNlFuYUpVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Casa & Decoração"
   },
   {
     "id": 595,
@@ -8937,7 +8938,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1222999175/21998270875?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNG1aNFMyQ1B0b04wNGNvN2huVEV0YVVqOWw0QXFlSUZjREJNU1RLNDFVOFdFSGRzSGl3WTNMdFZKV2dQOUp0Q0gxZVVGNXBkSjlrNGpBRGZvNHQzaWlqT3J3ZkdhME9CNUVKSnZGYURYQU9Hc1dYQitTM2tlUU9NaDJWNzNmZGE4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 596,
@@ -8952,7 +8953,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1282441334/22297742188?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWNqc0xWZnFmQTlhNlJ0b1RiNGNUSHB1QzJzc0ZVTzVUQmhEZlN1SksxdjZCVDZxbGdDZ2F4THh6TzRoREw3cHM5dWlaSTFTRExTUmk3R3F5N21LTmN6dzdhTnYwV29CMzhrckVsTG5LclNaUFNzR0dkYnVjeU1UM1ZiMEUwT0JvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Moda & Beleza"
   },
   {
     "id": 597,
@@ -8967,7 +8968,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/294602625/23993883268?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdW9uR0NOeEljb1J5YlFjRFd0SUhCRVNLWk52Y0d2U1hvTWJaZ0IwOXlCS2FPeWZEVjdKcTkyVXZjanB0T2w4dHhoVkNXZFhVenR1TllhTmZmSk1BQ0s4TDUvcXRFTktGNDdCbG5pVkhSQkxUMjBYQ3h3RnJrN3R6clNkdVFJVUVzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 598,
@@ -8982,7 +8983,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1691846378/58202416470?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNldJZmU2RzFXU09pdml3THNRdUNmcWdVc2dsaWhTZXFMSkpzbllvS2M0b20zYno2dE5HMjhpQ2c1VEpCa0M2d1R4aTFFZWUyLy9lRDQxTjZpUnVsdnFuVk10WlVvUnFyVUlCa1lXRElRNVBmajc2c3dPYWF6UTBxODdPdFlwM0o0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 599,
@@ -8997,7 +8998,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/418205360/23498080942?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdTZTL1k2SzdLckt3Q0cxMTN2emZleFRyYzc3ZUY2Y3ROL2lJOENyMTdaZHN5OFJMQ0kycnp5ZThCYys1bmloaUNhL096NFhCNzhWQnFXNFdnUzlVWDhrM2pLOFQ1bW9KZTcrU1FZWTV2UHVpdklRdENxbmNwMnhBdytKK05kSmtVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 600,
@@ -9012,7 +9013,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/311205249/22193861045?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc2ducTQ3WVgybS9qSFJnNSs1ekpIMjJTYVV1ZllKc3FhTGI0bldtWWF3UXdDU25KdXJyTmdHUFk0dkUwd3pWcUc0OWRaRFJQb01wSnluNjRqVE5xMENocEJENmpxbGUwditRL21jUnpnTEY5emwwRU1DNklZL1ErRHpJTkRQSnp3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Eletrodomésticos"
   },
   {
     "id": 601,
@@ -9027,7 +9028,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/487528018/22094181954?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQczVlb1Z6c3FDcWFEVjQzZkxreXZOdDV3MmNrek5oamRkTk1NQm1yRFJiMUUxWUhCSUY0WTV3eDBuNGRqbUFXQUd4azNRb2krK2xzY3premFnWlVsblhMemtuYjh2dU5ObHdwUG5sYUhhZ0J2R0RVZzRwR2NYOGJjY2hGOVR3MnRrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 602,
@@ -9042,7 +9043,7 @@ export const productsData: Product[] = [
     "location": "Goiás",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/520745135/21106245892?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdVFHbWZNMmMrcDhYeGVydkE4OGpIVFAvcmpoWklKUzA0RndmK0t6ek5PTDR2Y2tscGQ5U3k5cjQrZUUrMFZGMlRLLzNrTEovUS8wd2pIZHYyT0hWMVFMZUFqL2tXYWZ2NDVJaTZYNnUzandsTmxrcVBOVHN6dTEwbGxWQVhiRWg0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 603,
@@ -9057,7 +9058,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1429781525/22693602885?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNGhEWlZ5Z0VBbkhrTnpUVldDQzBwTjJHZURUTWNVNnU1NGt4ekFrYXJVTWMrNVVDVzQyRGhJeXZuM2I3SlVPK0ZOWVVMRFJyOGt5ZFlnVWovUlR1Vy9zekV1dnJ0cWUzYVc5d0JWOEdwcUxQUFZKREN2U25iNVR1Sk1GNFo3dGhzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 604,
@@ -9072,7 +9073,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/512962451/23994342965?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWJlRHV5OGZHWHdvbVY0Sm1jVVpaUHh1QUZNQmZzN1NOYlRxb3NPU09JVWRMcnRnTkdnSENoKzRyRDZycEJwYUYxOEM3dWxsYzFXMlYrb0J6VnMxeG5uUDRQTWl3UXMyUmNycDBnS3ZIV0NmNzl6VUdjdGtNTXROcVErZW5veEFNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 605,
@@ -9102,7 +9103,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/299222557/22492837356?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc09LOURCRHlFSElVMkpObXQwZ3ZySDZJbVd6Nkp2dEV4bTlkYWpCY3VjYjNwSlVQZE5ZVlVmc1padUE2YWcwNWlFQ3V6ZFhRdlpuVjRDN2NjRU5vWTJNL3liN0VtcG9UUUsyZjJzZ0twVzRxcE5QNUR1SWxINDVBTDNrQmFOaDJBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Bebês & Infantil"
   },
   {
     "id": 607,
@@ -9117,7 +9118,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/503829551/22293918982?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdU5pYTJGVnphVzRkc2ZNSTRuUWQ5bzlMZzlpUXp2WmRFVWhXQmtwNDBYdUFxU3NieFg3MnFYWGRJNlVmSmJRNGl3MXBLTnhXZ3RLdmdXM1hjRU1QWEhBN1F1eUxEcklPMjVPSXV3YjZHZlZvMkk2WHRBbnFJVnA2T0dXSmI3Q29RPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 608,
@@ -9132,7 +9133,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1534910933/23298778616?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWNkaUJHS2dKRXlBdkd2dG1mZ0psUE81ZjVtbEExMGtvZktQdjk5MTJzNjc4YWgreStvMnpNZlFJcjZQZ2lJTWhGYlpKbVFxZGFxdmE0NkhrZUgyOHZ2Q2htRTEwMlFHQTdZOFVHcERzQlBxLzY1R1M4czhYT3htNmEzcWFneWd3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Casa & Decoração"
   },
   {
     "id": 609,
@@ -9147,7 +9148,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1064487211/21899049199?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNloyRXJNK0dFZFZ1MzRDVXhpYVFrVjJ4MDhJemJRMHQ0THM2Qmh5V0ZOZkNPQ3cxeEtOM09XV2R3QTFDbXNjMzc5N1laMDZnK1kxOElEeUg4bDFSTkMybTVUUHBxOEZJYzg3dVFLdzBJcHNnNDhWSytSczJBTy9maXBjOU9NOXdVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 610,
@@ -9162,7 +9163,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/461633669/14241654483?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc2lMb0lUVzNFa0dEL1FwTG10ZVJYRkNGZHh6TS9ZNnpqWG5VbCs4U0JRaFNtRXVldHNMbWxVWWhrclZsWGhxNXdWNVRIY2VEZ0FuVVg3SFRKNXpKSFNSMURyTUZTZXp2NEVNNUlmeHBsaGd3c3l0T1J2UVU0bXFRcTBXVmNZWVBjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Casa & Decoração"
   },
   {
     "id": 611,
@@ -9177,7 +9178,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/950037595/23097730014?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdnoxbGJTVk4vMEdxcFFHd1JRQXF6dEpIWkE2UkFtaktZQzAyVU5zaDQwcnJSd3NnbUtwcjRoVEhOczNVK2E2VWlvUm9vcWFYS2RLUmJNcy9NREF4M0tVNmpTbkdXR2VRVzNjb2FHQjd2NkN2Qnl5YWloUTA2TzIzSWlXMTNUU1lVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 612,
@@ -9192,7 +9193,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1399363201/21499885130?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN01mNmhVVGFUVHY2TURuZWFZQWt1dUQvN0lOYmVyWEJTNmlQeEQ0NGtneXpBcGg5UTMwV2E4WktxSysydmxBOEVzYnMxZkNmckpMRXRWclVsZ2NjOHZlRWZPNXpFR1FPL245K3Rrb0hMNVBkQURaVGJEM0dCcHQ3L2l4OERvcm1NPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Automotivo"
   },
   {
     "id": 613,
@@ -9207,7 +9208,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1229345163/23993269970?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNG1aNFMyQ1B0b04wNGNvN2huVEV0YTV6OU8xakZ3dE9CSkpGYVl3THRUSlhoOXoycEUyZTJLeDc2bEVBRklyNVVIRkViLzlZcXBiMFkyZ25NYllNOHN5dTZPREpva0JOTTFVWDBMcFVSOUJySmxaWGRqTWNUUExlRWFYR2N1Qk1FPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Automotivo"
+    "category": "Casa & Decoração"
   },
   {
     "id": 614,
@@ -9222,7 +9223,7 @@ export const productsData: Product[] = [
     "location": "Goiás",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/520745135/19796963361?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdVFHbWZNMmMrcDhYeGVydkE4OGpIVExxSTcvUXhHZGl1NnUwMDZEaFRDVThYZW9sbkF4S3hwVnZuRDJiUGdmS0Qya0VKS2RmOHgxcEF6QW9iWnVpL2tUU3BtVTJrMHNPMUpTNHhUSFIzOEN6Vzd2cVM4Q1d4VWZNZy9BZVN3aHVNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 615,
@@ -9237,7 +9238,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/343246764/23592875532?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1E0UXRIMXlqZUVIazBialNkMlVnUjJueUh0VXZoeXhXVkppSHlQMU9EUnVrM3h6RkdHanNDclNmdHhUQUI2OHpoekw4WE9WdlRjbEpMcVY1V05MdFhwKzY4SUpwbzNmRjF6alpOYVlUaSs0YmxPdVJoWTlIWmExd016eWw1Q09JPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Eletrodomésticos"
   },
   {
     "id": 616,
@@ -9252,7 +9253,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1429781525/23394276680?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNGhEWlZ5Z0VBbkhrTnpUVldDQzBwTlBiTGFJQmFnTjNvSFYwbVRhZTJrSktqaFRRZUVZVlV5bGdFNDJKSUIwQmtUSHQzWlBaNGhNaXhkb0FITXRNY20reWlMZVhacVowY1k0UFVqS3k0M2FmZWNaWkVZYWJLT1ZSRzdNQTkvcVZBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Moda & Beleza"
   },
   {
     "id": 617,
@@ -9267,7 +9268,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1600780899/22294319300?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVdYZVJwMHhRL1JOQ2k3SEcrRmF6dXl0VHBla1ptaDRqYlJ3cE55bjFQR1hsNGdjN3ZSUENzc3F1OVN3ZldGcDdKcGlXWlBLN29kYkhTdWRUZkFkZWJwSnlyNFAwcDcxenJKS3RFL0NCYmNmcGNhQkZua213WE1YaHpVc3F6ZHBvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 618,
@@ -9282,7 +9283,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/386512962/21699237965?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdEdQNi9KdENMRFg3TEZKRlNqME1hUlIrZTdiMlUvWHd3MnhXS1daYlp0NXVnTGtvV3lZNU9leVhra0tYUlQ3ZzR2ZlJHTzdrT056RkNIMDJXdEhIdDUxVkNxR0orb3ZvNzR5NFVzZ3BZVWY1a1k4a25uUkVRdEkybWZoSHJkLy9ZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 619,
@@ -9297,7 +9298,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/644998403/22894203019?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdVhDUndsbllpSDZKNmhBMUpLQWY0SVBlM3hSZjhLTU5iYy9LcjRYdS9vR2s2L3pNcjFpTUxETzJrQlVJU3ViczRNekpObml3MTR5aEdrVFJqK1ZsUTlNdkxWOHFuWG1wK0ppdHhheWNRVUNLbGU5blJnQXhsdUxPMmo4djNxd2FjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 620,
@@ -9312,7 +9313,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1210495282/21999714912?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0p5WlN0ajFLTzdqaTlQaERUZG41My9ENGNmU0V5bWdHOC9DOFVGZThkRFFnaCt0ekFxWlpCcHNUdTdHYlM0bFh4NWwzaHVBZVlSTjVQdTVLeVUyak5kWDlyZmlYUkxiempwbGoyeFZPYURmVzExVWxmMCtnNXRhUVdHd0tsWW5FPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 621,
@@ -9327,7 +9328,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/482077195/22598959647?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1hPL2J2Q1I2UXl0MHd6Y2Q5Ymk1THZaNWphVVpRdlZRbkpnOEhNOXlCeldEaG1ITUJGNjR4MkVEVVZTbEFUR3RsOVBuS3pRbDRjNG5oVDdPZm0vNUtNWWFtemZkK05OTGN6ZVRIWnIxTnM5SjNMTjdyVUNFM0NvZ3MwUnYvM2s0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 622,
@@ -9342,7 +9343,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/694125365/23493849040?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmJ6Mk9QMkU2S3VMT3lZSkdybEEwVnpMcjdXYmx3WkpaazZwb0gyMSt2WVJNN3F1ZlJTU2hSSFdUNldWa2JqWjBKUzVKNENXZys3R1I5ZWxYOEI5Q0hzWEYwTW9Zb05xZDZ3aWRZUmsvemJIUHlteGJrY1FyMWpJQUxIRG1iTUhzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 623,
@@ -9357,7 +9358,7 @@ export const productsData: Product[] = [
     "location": "Espírito Santo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/351913925/19399558421?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmgzVWRsN3h5cWpGcEZFaXViWjhJQVdlVmIzaTZCbm1sZ1ZWVFdzVS9RQVJyQ2t2K2xEdEt6LzRyUkhEd2dxS2lWZjE3NmF0VlhsWDFMcFZpaHgrUVhHVHRyNzk5dUxpWHVhbjB1SG9JcThBenJ2MjQ0azI4T3ZvU1dxTUUrcWVNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Saúde"
+    "category": "Casa & Decoração"
   },
   {
     "id": 624,
@@ -9372,7 +9373,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/305047922/8016132316?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkY0tSanlKZU1BU2Y2RTJzOS9neUtnZXNzUDhybHBJSlZQQTJTYW54dSsxRXhibVhrQlF0ejJHTTVvKzZBNTZBcG5XT0NRblNSb04zNmt2aTlObktTZ3Jua1ZHL2pqejlJWnFyTmR5TVMwc05BVWluV2RSSExKTG1UMU9iRnNMd2pmUFlVSU1WczIvZ1hTNDRudC9VNzRJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 625,
@@ -9387,7 +9388,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1120968356/22092666843?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnNncEZncWwwYm0xN1R5MnJXTThvTVVrT3lvbytoWFNKVlVaOVBycDV3cVdzZmRMaEpveElJNkZSL3IwTjdURVpFcDU3QWYxUFQ4Z0lvL2ZLOEFpQjNieG1acW9iOFNkZExYSDJJMkVSUklzaTZIRm92V3VIZUxhM2tHRk1iQTBJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 626,
@@ -9402,7 +9403,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/409164022/20497989875?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXZ1NkNLTjRvc2dSclJJZUpwS2JQWnBkRU1LTnBKbzUwb3dWZEp1aGxqQzUwS1V3YW5ZZk1YczB0T0VHVFl5SnZPYnVKcmdYclFlYkt6cHRMREVmcXdwWEpBK0VYV1NoS0g3TWlOWVFjYThsekFobS9BT3RNSDRsRXNWSEN4SWx3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 627,
@@ -9417,7 +9418,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/958996125/58201012752?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc296OER6QTRRSTM2SFRRRmFmWHJWSE5XMkkyOW5sSS9Od0VzTDJ2V2pmcWhGbU1rV0NuODJ0SEpJa2ZOMTRER2tIOVZ4S1lDQ1c4dFp4eFp0Wk44REhKVUZpMEZDM2ZQcDVubStueWpUb0tlUmpmTzJwNFBxS3JGcEpxay9RZC9vPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 628,
@@ -9432,7 +9433,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1650882478/58201971757?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNldidFQ1UzZwa2YvODc3eGR3ckp0Y0xVNkZvU3RyaTB1bE9CNjhZYWlqd2ZBQXhIenp2UmZnSjNEaG4rb3RRWkhkVFdTbGFEMnFKaGUrRU5KKzgrNGRzaFRtWWdjOW5pblRyVlVuNXFreTZTTEVCM3lKaHM5N2RNUytwMURuM01NPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 629,
@@ -9447,7 +9448,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/460858150/22192826603?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQczE1aEdoa21wT3FGMFJGQjdSY0NFSlVwendycE9zRW9pUUFGenhPdzBSTkUxM0xYREVjbFg1SCtkZnp3MzVzNHBwZXcrVlphbnQ3WElQR1VuOUJ5MWdPSXVJUXUzSGFVVXRKTTlnbUxzbDhBZzdjTEt4U2lrYjRCREozcDdHYzBvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 630,
@@ -9462,7 +9463,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1410617268/19297998207?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEFrSUpWaitUS3NaQTFHTVJTQmhpZUJxb1REeFJucmNleGE3NG5qUFl1SmJiRjNUVUJrbjVIcFVVUTRTS0lzV250cERNKzA3Ly85Zng1SnQzWStZZjBEdXp4bzl1MzZIUklCZWtXSGxwNlVqMDdzOEdRVXB6ZEU4QUVzdTZ6M3BvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Pets"
   },
   {
     "id": 631,
@@ -9477,7 +9478,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1110838097/42118979208?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNkpIUFF1UVkwQm5VVS9SdnB2dnJJQnZRUHY2OTVOS25mZVI4NjVnZEl1M1JSenpKa0U5MXdWb0pGZU5TSlQxbzJYNDNwVUkzT012YUh3REF1c2pSZS9zWUFlZ2RsTmplcnBLM3MxNXkyVHdQVWdDaFdwL28zRktnS0Z4bTN5TGdRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 632,
@@ -9492,7 +9493,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1501927241/23998875957?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNU1mU0M5RWxpRUpPMTNORXc3cFZmbmx6Yis0a3BDeWUvbjV4WXR5Tzk5bExOVFd1czAwR052RUt3YXM3U0VidTlLbnFseERIdnU5OW9QQjVwcjZjWnZ2T0doRGRVQ0FkanZSRWFialZwSkFRbnhWOURmbkdqUTlIcWVpWjkvZFFZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 633,
@@ -9507,7 +9508,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1337585999/22697764308?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNTVkZ0xWcFgrNGt2QmFEWnQ3QmdtZ0pzNDVyZHl6NVlmaFU5NEVUWDZaU3hTd3kzY0JnVXBhSnFRMkZGMGhSWHBjYVFERzZrTnUrY2J5ZE5kdjYrMSttOWVHSHpCb3JMSHVLaktjZ3BoNTluL3Z4dm1sMEN0bXBrbGd1RWlhR2tJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 634,
@@ -9522,7 +9523,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1574600715/22894281706?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1lxZTV6UUVYb3RlQWRpOUpoak9scmduallxR1h3d2JXa1NCclBib1pVdkhuTHlZSXFiU2xnbHFkWXdZbGhaeWVWY2xHMUkzTEdKMXdrWmpURGVDU3V0VlNoNzhaQ1Ezb0l2K1paaHFlMkUxRk0rWE04TTVsZjhnUU42ODg0RkhvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 635,
@@ -9537,7 +9538,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1459307687/21798020078?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0lRanFYdEZNbWtLdlh3OWlUUVBCY2taNGxZMTFRdHY0VmVuSnBQSkhSWTIwNklCcEo4ZmdkakVmbTQzdCtwTWE2bjRGVGlBQVpkS2dSQ3Bja2ZKVmVIZHpqYnp3eEZwUjd0MDNtYjVMazhKQklzRTFTcjBIVDJlVnFRUzkyQ2lRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Automotivo"
   },
   {
     "id": 636,
@@ -9552,7 +9553,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/410705973/19299724564?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc2xPTjBENGxRUExtSkNiU2hzOXRGYlRXMG80VWZBZzV4alRyK3kxN2M4d043Mjk2MURYbHJVckMyUGJhWkd5blFzbHE4TFZmWU9DMVc1ZzJMVE12dHV4SmpqL1N3VTZtbGlqZy9YcEg2dFFyNzRyQ2w5blZQNXZ0OGpmeTNuL2NrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Automotivo"
   },
   {
     "id": 637,
@@ -9567,7 +9568,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1215352474/19797725201?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0p5WlN0ajFLTzdqaTlQaERUZG41M3B2SmFZdkZGd2pzdlFtWXU2Q1BMa0h0TWdab29rRVN0NC9abzZPS3QrSmdzZE55TXUzVFNmQlNGbGhMNmloSkJZQlB5Rk5FZDVPZ2JsMGJoRUszaG9oV09WbS9udTN6enR6Q2REbnU5Wk93PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 638,
@@ -9582,7 +9583,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/372103398/22893419815?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdEtNSlczeHMrd1N3UlFueDd5cm90dzhUVTZZZGQ2Z2RxOVFjSENqWUZHQjhuWHVWOG9pYUF6andKNTJ4N0xrZ1hxM3BpcU80MnNLOGFJSFVXVDJVbDJaaGZGTXdHZ3JZdFBoZ2VaU2JOU2JiUEFQWFZ6cm5YekVBRkt4ZHh1djRrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 639,
@@ -9597,7 +9598,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/323192182/18799077536?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQczU2a09SeURjOXExVVZKYzIxK0RVbld3NVppaHNsUjAzQk1LUVI4M0ZnR043T1AzbCtJRjBCYXlNdmJzYkxQV1Z2OFdxWjVzc3RmOVA3OEZDYmh6cVZ5dXdHZElMVTdPMmxBUUlraHZDRXRDakVtM3NzL2FLcnU4eER2VkRCUTRzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 640,
@@ -9612,7 +9613,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1234356004/23294049109?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNHU0eGxTN2lFL1lSYkZxZGhhbTBpR01uSk55aXd2Nk0zMHBIdmJZUFRmZlBZYjNNRGttd1czVjZ4K3BXOUw5djg3M0l0bW5rYmJ4N0Ntdk9TYlc0RWNYMXg0K1hZWUtqZFN0U0QvRUhkdUs5RmlCblJlakcreUVBS1dEbHMrUEVRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 641,
@@ -9627,7 +9628,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1023760886/22996121313?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN2FFWnJLSG1wUkVCVmdvV21GWWdSc2VaVUQzdExLdHFiUHQxZDBZWXViK1Z4U3NFZnVreFpEMUdzaWZya2Q2TWJnc3Y2dzhDRlZlaWtJL2Nra2J0UzI1b1VqK1FVUWtBaEhQL1ltdEVjVjhvT1MvSzBPdWdWU0JETmJCY1U2c1prPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 642,
@@ -9642,7 +9643,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1360570792/22193851388?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNjZxczFjZUpCVzZMY2tOMHBrckhPQ1FYc2Jxd0RjZkllZnhVNUZPWTZHUzhVVWlVcUR4ZStFRVM1bnZuRGc2QzdwNkg4akd3akFSb2dKeDZyRU9XNXdTQmF4ZUVRUFNCQVllb2dHczFzR1JrS2FqSSt4L2RhL3NCbDQ1UXpRMVhjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 643,
@@ -9657,7 +9658,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/391739739/19699092217?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdjNrY1NPeTBsb1pnV0lOaWYzak5Wa2Q0bkxCaW56UDJWZDNURzVLd1M5QXFPQW81NnNEOSt4ZGpVVi80UUc0ZTFoam5wQ28wRVh6L0ZTTE1vTXlGck1xRSsxVGszK3JKM2hEM0drc1YzcXo5T1JOY0lVeWoyRXNEMS9SeHRDbTVnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Casa & Decoração"
   },
   {
     "id": 644,
@@ -9672,7 +9673,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1553736756/22294546482?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVlabFNqaXpwaEpuOUdUcSt2ZEcybVJrQW9hZno5VE9jcXAvM0pKaW53aFU3T1M0WWlQMlN4Nk9HQmZTaXpncTd1TmxFTzM0anNNaEFWUnZrbEdWY1lYL1pBYTduaTdWZmxMQlRBSkFrMlR2TnAvU1pON1dnWnA4V3l3K1U5Q2c0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 645,
@@ -9687,7 +9688,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1307017279/23093412675?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNjBqS29UNHNHQVlWREc4aC9FR0ZjRHJ6clkzR0JGQjJwVSt6eDQvVkpad0tiVGUyZlRTazZycmhKaXgwdFduZjRabUtnaUk2VEZzTjNLMllYVjdMblVVTWkyTThuQlpwbkZkcjdNRTNvZnNJcEVEbStVVDg4ejZnZzV0K1NsRWNjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 646,
@@ -9702,7 +9703,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/482840775/20399499717?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1hPL2J2Q1I2UXl0MHd6Y2Q5Ymk1TEVyZU5YNjZpQzNLdWVhZ3NPcU9JTHg3ZlN1Mmt6U1lNM0pjUUZtaEVINm11MTV5VGI3S2twZTFYNlU1dit0amlINXdKbHZ1WUV6NkowSWlmSERzd0lCa2F1bFE4eDNqTkQ5ZXo4UkhoOFlFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 647,
@@ -9717,7 +9718,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1447049473/23899308885?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEdoZnJQK3J6MXpCYllXdytGNVFrbWdIcUl3VDZxK1RCUU9UUWFQTHlLTm9DTEp6WGRvQzBVRHNHbjZQeUk1UmIvVHFwOVpZTm5BdVBTcjBIUGxJQ2V0b0l2cnZMQzZnQ0VKUkVSZVlvY2J6a2hHNFlKek1SSUlOSkozVU1STVFJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Bebês"
+    "category": "Moda & Beleza"
   },
   {
     "id": 648,
@@ -9747,7 +9748,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1314319924/58200332737?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEpRL2FlUlcybzF4QXBObW5MVjVGZHJDUy9yN2M3dlZNMmdrTE9kRGtoQzd0TUE5RVViQ0s0Q0RqZTZQQjIvWkxKRTVmZ0RMYVUwa3NjeXNtQ1JtU3UrT2RrRzNUN3gwTnQ5WUIrTHJqdGlob1BIK0Q2OWw4bzFDYzZMSGVzR3lnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 650,
@@ -9762,7 +9763,7 @@ export const productsData: Product[] = [
     "location": "Santa Catarina",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/882785833/22794356903?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQczRIakNwZzdVM2xBMVNKNnJWWnhkWml6dk1RYXdxenpiRkNWQUZvZzFGS3VFUlNTM1pGVkc0UTNPdWYvWG9SSElKbVRhTllLNHAybDArbmZmaDFsUGg2VEhoWis4TThOeHZ6aFF1RFhMTjF1TVVNeHRvQmlsanNhaHBKbFJHdGlRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 651,
@@ -9777,7 +9778,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1607457575/22994426945?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVdYZVJwMHhRL1JOQ2k3SEcrRmF6dWI4MWhCUW40dXQxODFHZmpGYy8vb0tUNFg2eTZpYWgwc3pZZTRFSkpnUDNJblFvV2wrV2ROVEJhWmRtRHFCTldCeHBxVVZWcVVKbjBybnRkVjU0ZVJkM2crODNRazRCV2JDTkdMa1JyTCtrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 652,
@@ -9792,7 +9793,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/938901136/22097173000?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdjNSbnVXNTkrZy9Ec1pRalU5ek1iN0JzRzFRVDVMYmg4a2I1RWZ1aUFUemVNSzJGQkc3dFZDOHVSRFZ5QXVSTEdZK2kxMVFEUVgzVS9IVTZzcVFKK3BKYy83VzZpMjFOd1doOStDZXhma3lmd0RzbEFZWkpoYnIwZVYzMk5LU1FzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 653,
@@ -9807,7 +9808,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/465623800/22196815652?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdFM5eEVrUUJjSCtLL0lKRG5zdEFDZmJTSzI3U1NRdXo2Y1ZkRzVRelZLb3k0RFFOUVZKMXV0Y3RhMG1Td29zYzBraE54NzhFUHROQUhJbzZuYjlWU0FiZU9kVTJnck1DaU5MR3Z6anJGbDNhMHBWTHhlaUxvSFdMNVp6eWpkeVN3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 654,
@@ -9822,7 +9823,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/371687721/18699863922?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWVHcytlMHd0MVAyWmtaZk9oVVdIMW9UQjU1dHdUQTJzT2YyNXJJcVBvQmJPTk5ERnJNYUsrRmZZK2d2cGozSEVrREF2b2RaUEhDUzQ0Z0tNN1MwT1cvRnJUcC9ud0NFdENmZFBHbVFrd2xpaEQrdFkweklWNkdSVWNlTmtjUHhBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 655,
@@ -9837,7 +9838,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1000600120/23993710118?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1ZpUFMxL2o1N0RPK0UxdWl1N3FMVk1ZNjAxdVg0SmlHOVpwUk4wejg3VktiTUtlcFQzR0MyYzY1MGFQRFNwSExsWGJVOHM3NnZnZ1Q5KzUvMWxxR3paRHR4bWdvbk9ZRHkyNnhlNzl1NElMaVdDcWE0T0szVkphZUpaZXJUdE1VPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 656,
@@ -9852,7 +9853,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1526528168/22094401025?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNHV6MnZ3ZU1ZWjZ3eGdVVlFiV1FrRW1QSG9SREFtYnlUVmM5RmhYMVRsMlNkbEY0NkFtM29wb083eFVIcTA2MitORmFNT2VtTy9QRUJMZkRXeW5Bb015bEZBTEd2S0Z0OTdqVUFnbXJnUFBJbUxUVlFiRE1BQXNOcmgwcmVnZ1hzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 657,
@@ -9867,7 +9868,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/987393610/18997667165?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc2pyakVNcHZIblF0aE9KcFUwcnFvbU54UE11b2NZc1k2MzVRSmRQSlo0V1F2S2Fmd1c4WXhWOTZmNjZHcmFYRWNoVUFzWmwwdEwxNlg4Rzdpd2wyUks3clJIVy9DSlRRR3NnMjJuZXp2dWZRb3hIU2ZHNkdCMVNyNkFHV2lwdzVBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 658,
@@ -9882,7 +9883,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/940004750/24793355880?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdjhleUZMMEw2T0UwZmN1c3hobHdQVFQ3VjJMY245aEg5STRLenBHQnh5bTIwcGNNYnoyYituOHlwbEhzUzF1LzlKVFc0V2tsdnMyaElDWEZ6VVlQZWlyVnRMNFVBejR5SU9OdFNVNEE5MXgwQlUxYTlGS2R0c3VMVUF5L2crZUtzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 659,
@@ -9897,7 +9898,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/419742906/23593396041?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1U4ZDI2dUxQYUs5M1lFb2xFdTc0a3ZzMSs1VllwWWdNREZVdXlYUzdHbi9KWG16UC9ZWjY3V01YTEJrYzhDeXFKRTVFSzZPLzRLdEJPOFVxOURidmxOYXhnanN3ZlRwVCszVWp0emxvZXVsS1QyMUxIV1NJdDNCZE1ESW5PclhJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 660,
@@ -9912,7 +9913,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/341157494/19397385464?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdHBlaWkxWldMV0VxT0E3aVFEdGdtY3pCK3UvaGJTTmtQcDZTTmlKR0dXTUNLY0paNVFYSGNRcXpPb2FrMTlTWmNtMDIralM3cVNOcEc5QmZSYitybFBjSkJZR3dQZ0o5TEpzd0RuRlR6bXJTMFB3SHVIb3NjVzEvY1lZVTFXQU5zPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 661,
@@ -9927,7 +9928,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/437927074/22197389409?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdHFlTUZWcE9paFdZbE44R3B4aU1maFRqUTQ2bjdycWQ1K0l3SWpVblFYR1luTGZxWUR2UlVRWmlheVB4MDRtTmM2Z0RBMEhtcEFaVHJwNlM4OXRMYy9jWWU2bisycGdUbGRNTjZiM1E1Y2U0N3ErMkt6TkNkOHZBRlYrbnNiby9vPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 662,
@@ -9942,7 +9943,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/418205294/22893054360?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdTZTL1k2SzdLckt3Q0cxMTN2emZleEorTk1OWVN3YUROZjB5dWhlWnozVmhXQTczcy90UGlhZGd2b1V1YXp2NGlsY20wL3NLcjdtNmtDQ3paYk5MY3NYYnVEaml2L0d4bWF5MHBZbmhGU0c2MVU2Yi82U2xYTUhJMTIvQ0FyNzBnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Moda & Beleza"
   },
   {
     "id": 663,
@@ -9957,7 +9958,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/709759573/19630893347?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdlVXTE11OWhhUVdhVEo2MXM5aE1IWWJpQWJCMm01SzNyYlZzV2VVT0tTVnloVnRyWjZKTFplSDFRRlhLalRDZForTUcwd1lRZzZwdDhMM0JYckw3cjczdnhqZXJ1Ym5mSEVMSVFlcXBXMzhFNEZ0NmJHQldhcGEyYzhuenJUM2pRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 664,
@@ -9972,7 +9973,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/465623800/18598768893?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdFM5eEVrUUJjSCtLL0lKRG5zdEFDZjBSYnRRQXUyUXdhSGgzUURQcG40a0dtTGh3SGYvLzJCZjd4VDkxcER3ZWQzTUtuV3FVSWI3Q0RPaVUwcXkxSWE3MUJkR2dtUFVobnhsWnhpMklJV0ZkNGRpOG95dDA5WFAyWjcvQ3Y4R0cwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Eletrodomésticos"
   },
   {
     "id": 665,
@@ -9987,7 +9988,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1412103756/23693573414?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEFrSUpWaitUS3NaQTFHTVJTQmhpZWszcnc0b0U1bjIyVGVsQkpiMnBsUWJ5cytWU0VOcGdOMTN0eGRVdVRpTnlPMmtHSlppMXZ2ZzJQbEMxTDdoaC9SbGZoaTRtUVRjSDBIZlI0c0FHcE5DdEtyQzNieDNrRzZVMHlwWm1YY1U4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 666,
@@ -10002,7 +10003,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/823701691/22797675560?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdEtmNlFHMnE4eWFNODVOWWlQbGUwNElPWm9XbkllNzUrWi9iQy91MVJDWll1OTVQOENpQnpLQ282UE43SlExWlFvTTFtajVFUmhwMVFHaDc4YzQzdTVCYUdWb3JiSDZGcmprdHUrTWU2MjQ5elhLallpRWY2SVZXQmhONGZhSkpBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 667,
@@ -10017,7 +10018,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/371656735/23797467300?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWVHcytlMHd0MVAyWmtaZk9oVVdIMVpvUXY2dVptTXJyTVlEQ016a0RBaHpjekN6ZzdoN1dhMFdHdm9sYXIwN1dycGgyZEc4MDMrdGpqcmRuSTduVXErSzdYYURONkdoL2IrU2FPanBTazh1RG5aZy90RW03QXBhdFdjNURBWUN3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 668,
@@ -10032,7 +10033,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1507897984/22098416609?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNU1mU0M5RWxpRUpPMTNORXc3cFZmbjJCbXRqZ3JSM01xOU9GZTF0ZzVHNk00blkwd0p0K1lXVGlEL1ZtSWJzZmFPU3ArUUJIK1FSN01PNEtERW93RlZvSjBVd1NqTHRjbnJ2emJ6djFWeGhwS3RIS3F5WVBaVk9IbU94RXAwYXk4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 669,
@@ -10047,7 +10048,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1311162884/58251881583?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEpRL2FlUlcybzF4QXBObW5MVjVGZE1wUDNybmV0VStyck9rd0ViU3B2UVh2aUV0WGdIMGRWOGtqVW5SamlOT244bndLODdjb0lXaXB1OXpmTDRTN2haNW1nNUhQaDlSM2VzdzFLaG5Pc2lRWlVLRVZkaVNCVmVhUnUxRlpZRjhJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 670,
@@ -10062,7 +10063,7 @@ export const productsData: Product[] = [
     "location": "Sergipe",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1397812753/22594399731?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN01mNmhVVGFUVHY2TURuZWFZQWt1dUlaOVlpM3YvUWVvcGUvd1hueE5idmFzUUpsQkJsWVFqRnFVaXY1WnpIcXFLZFIxWWYvVFg4WWc2Ym00OTU1OGwyUWp4bHJvVGRFMTNtQnJ4VlZTOHBmZjE3UFZnR2Y1VldXaTFzUDkyYmVrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 671,
@@ -10077,7 +10078,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1508524367/23798655797?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNU1mU0M5RWxpRUpPMTNORXc3cFZmbmJkQ0tpZUNPZ1BXSlA5SUtOSlIyYktmQkExVG83dFk1SmtUeGhqQXlCcEthSHQxT3BRSkcvUnVCalpHc0R4WE93V3k1N2h6MVhDeUNOUTNBM3dPT2RoQlA2NWpSaG1YcnE3R3Z2VVFoaFhRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 672,
@@ -10092,7 +10093,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/414447070/18998140953?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdlBVVlZFbG5TRyszeHN3SWh4TFhONkFwQjBXb2VZUEhOZTNmYWJQWWdFK2FSQXNGZ0dzQ1ZWRGcyWjlQTEt1NjMxQ3VyVTQvbFowSXd6L21TTWx1TERpZHFBNFdva1FyNkJ0cU5XZFlVdlJnRWNFTStXV2JaSUFGZ1B1cUFWeGpFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 673,
@@ -10107,7 +10108,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/288118770/22198812558?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc2JSdFNtSVRsMUdsQzNmcGpqTktmWWFCaWIxcXkxRmE0aWwvQnFESmVVV0NTM1FxYVJpWmJlRllVWFFPY05LL2lzbytqN0xjYTFjUTF1SkVRWWcwc2dQcldueUpaQzU3dTVKaCs3MUpPUDk2dU5Rd3pDMkt1ajNjd2hnYkZoVzkwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 674,
@@ -10122,7 +10123,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/717446653/23492496206?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdURDODdOdU1HbTFtV2E2Zkk1Znh4eFJJSHhDSVUrSC9mVVpjWDBoTHg3NGR2OFVad0VVNGMwd1dTYzgwMGpQMGZNS2hkNWZrQ1B2eTc3VCtqL3RqQWlNcHJDU3lxRVZJWUx1a2p2TGd2VEJ1bHI5OUcxdUU5VjNTMU8xOXh2Ymt3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 675,
@@ -10137,7 +10138,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/316479006/19399652445?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXhYZ2pJYlRXeEdlVVpqeEliTHhIdzF0THZSbStPM0NKQXFSMDlDMENZb1FjbFJrVGt5SGx6ZkZwV3BNQ2h0S001Y1ZBTFVIM3htbUhLTGlZRzhDMEF2M1l2bTZlVFduZnVVaEJnNVAwU21vVWFzeXdRWHZQaVVPczhMNEdxQU5JPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 676,
@@ -10152,7 +10153,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1547311235/22898636139?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnVJbW5vUmJMVEgxNENmWlJITkRXK290RG9xSk5GdDJtVmRabndIUE84RTQ1aEpRaGlVVVk4THZHMUd0UzBpNHlra3ZaN001SnNFbjYxZHpJNFFGS3dTejRUODBWSm5Ea1JGa2tXMzAxTUxldTFXaDRlZHFERlRwL3YyNzZ5TWNVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Eletrodomésticos"
   },
   {
     "id": 677,
@@ -10167,7 +10168,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/418205294/19165566792?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdTZTL1k2SzdLckt3Q0cxMTN2emZleGtiUVJwL2FNMVVId3hUZlA4am1Ld3NKTmNORzdON1Bra1gvODNEbURsVjBGNDFXQm1vb1BZWTVpMWpTc1ZVRTM0SDM0c01oSGdKcGJGRHF5L2RJNTAxbHd2dGtzWUt6TDZDVTRjYzJCMlVZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 678,
@@ -10182,7 +10183,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1165417797/22793217765?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNlBFNHVhak51MU13cGRKeklHTm1VZUoyeGhlZTM4Q1FXR3IrVEppUmlCMEowT29TUTRINnNybWNMZG9SRW5KUXFPVmpqMTV0alBRUHIrbzFyUGwyV2wwSHEvMTdsNDFuQUtjOUNjN1o1MUNOZFgvZW1pemZKdERsOTBmK3hRc1pnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 679,
@@ -10197,7 +10198,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/409371995/22094245191?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXZ1NkNLTjRvc2dSclJJZUpwS2JQWmFFQkdTUUorS2owNlFXRUN2VCtUb3gyaTZVT3JsSkVaaVMySVhtVUMxbnJibkpscEp3WjdTeWJDcGdMcFVxTE5oaDR0clRidFhlQWF6TitHN1M5OXhtSnNTMTY3ekM0Yytzd1VqM1VJRi9nPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 680,
@@ -10212,7 +10213,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1229219394/23798567497?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNG1aNFMyQ1B0b04wNGNvN2huVEV0YVRFQjF6WTNrWGpQTnpDRDFJaVhnRkVXdFpScGppcDRmRHJWbVRIazBXclV5RE9Za1h5ZkJLdmFmREUvYVQrN243WmMyY0p4RDFYSTVScFBReVVZWUx1WTJ4LzNlalpRWG9pcE1RbkdIYWVvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 681,
@@ -10227,7 +10228,7 @@ export const productsData: Product[] = [
     "location": "Mato Grosso do Sul",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/211647312/23494665378?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdk5CR01pYWVReCt3NWJCNlpNaU1yNzNER1FXSnZXK0prdkxRa1lyRXdCNW1sUk54M3QwYUltZThkNlJScXlXYnArTG92R1ZWR2RpMGVybG5MeHEvOFBZQURsa0ZDVjc2a2FQempQRmkvd2lsOGxqVkFzZCtWMW9ta0VGK2d1aWpnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Saúde"
+    "category": "Moda & Beleza"
   },
   {
     "id": 682,
@@ -10242,7 +10243,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/697901648/20199593572?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1I4MTgzMXNMbmNBcjZoM3J2VWx2NUZEVC91ZUJCV2hGNTB4Qk5tRHRwaldoVmFjeHlKZTNvZkRFQ2t1OGtndXZhUWZFYW5zOFdCZkN0MnUxeE8wcVBvNHVSRlo3UURZMWxmYU1iU3pjbkdNdXI4RjJPV0RGamM0UDF5M0NaZUlJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Automotivo"
+    "category": "Casa & Decoração"
   },
   {
     "id": 683,
@@ -10257,7 +10258,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1574600715/19499850496?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1lxZTV6UUVYb3RlQWRpOUpoak9scjJabkNBenIvR1BIZW90OU1JZVBTRDVSaVdNSE1zOXgrR2Z4WktQVVJ4WWkvZXNSbVhBWVNLSmkzaTFiRkRyMjdqaTFRamZvalF4aVRaRis4UHdIZm1QZ0RrSURCVjZqTzFPVkltbEVXUTR3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 684,
@@ -10272,7 +10273,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/366576468/23192584742?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdE1IR28yT2FYYStIU1FYTzJKNW9XSFRSbkhkSm1TdWg3T2E2Qy9Rcy9qWnJSM3JHZmxMdGc4cGVxc2cvQnR3b0RMNXhrTG8va3M2RXB1NnRqa2Z1dCs1RnNqb2laa21PNHNEZEFuSm15cnJOT001TGRaK3BweG9nRlRPcVZiK0VFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 685,
@@ -10287,7 +10288,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1179613076/23098684896?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN3R6clRXek84YVRNMWhSeW9MRFNFMkN1bElhUURWKzdCZWNxTmhyd0YzZnM4OWU5Mk1uSnBvVVgzd3YxYW9ubXpZSllMYVJwMmwvc2tYZERzTStUZzNZY1BscFNCVUhPMUUrSWppYUJCSXhycHFhcnlrZHM0RHl1RFhnVmt6ZlZZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 686,
@@ -10302,7 +10303,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/296208843/22692991971?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUNnTGg1a0xWRlJGb1B3SytTbEQrVlZKanhGQmZaQ2NFNkw0L1M3bEpwaFVNS1NZMnZNMGVGZlBTTlF5RDhpL2VBZE9HVFRDZ3RLTi9ScE1rcWJFaW1WNXYrTkZDK2R1YXVEM3hlbkl2TndCYlNlWDVNbDlDdysrcFF5T0JlaDBFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Bebês"
+    "category": "Casa & Decoração"
   },
   {
     "id": 687,
@@ -10332,7 +10333,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1502978038/22294183691?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNU1mU0M5RWxpRUpPMTNORXc3cFZmbmRoR0xEZFNxRmd3WGtIY1JIcDJPcHN3cUJvdmh4eVJWd0VkY0NMS2dDbUIyVmdmanZacDNieTJXNkh4dFdiN2dqYzJLSnNRc2QzY21aZC9ZM0ZxSXRxay9uZjF5bXllUXBzZ0FiZkpvM3owPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 689,
@@ -10347,7 +10348,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1107644568/23998816560?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVRBdU9zazlxT0l6c3VUSUwweHVJRU9LMTlwWHA0cEdBb0RubWxuZmx6KzhOV3RjV1RlR3NWZmZLQTVmQXU1cFhMRjRPajNRM1lkNkdIRVB4QzhWRjhSK3dqUksyZ0xLZkZyVzEwR0xOZ2ZTQUZYbm92ZEVaK1dLZGgrMkFYK3hjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 690,
@@ -10362,7 +10363,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/392202270/19697980846?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdklNTFkxMDJUc3JVWE56eWdmR3ZGaGU1VWE2RG4zd3ZYWnlpN2lHcmphS3ZCVzh3TlZzS0o0Z0dGZ2dRRkVTcWRubXpRb0Q3b1lhenVCQkVERUtJZVpmRnRQZ2R0bExabWlHZVZzWHFSUXZsL3VEY0NGOTZtMGZoNXAzZDdnMWZ3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 691,
@@ -10377,7 +10378,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1624913637/22294452092?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNmVtVTJ1SS8wUVVwZWNiMDZUTXRYUXFHWjVISTFoMFo2aTF0QThBRzZ0NXBCOGxEVjJnTnJ0a0s0b1VlME1NQzNwTHUxb1lTMXNWUXJabm13VnZXWG5yZ0JZZGVleDlGRDgrQ0ZldDdsSThsUFgxOEoyQzRSd3NCWHRoTHZvR00wPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 692,
@@ -10392,7 +10393,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1553099932/23394267693?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVlabFNqaXpwaEpuOUdUcSt2ZEcybWN3d3hjUmZLU216RU5lVVoyeHZkQkQwdlFHTkdtUnZORzdhMjRPRUU1Y0hZdlpjZ042cTFqVS8rN2NRd3E3QmNZVUgwUzdKQzFTSXFPMXUxNmJHTGR1S3JRcDk4V0lncXErMmkvNldQV2gwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 693,
@@ -10407,7 +10408,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1558158035/22698577787?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVlabFNqaXpwaEpuOUdUcSt2ZEcybURTb0xjbTVvTVg3STBheklrN05RV3JOSXV6S2JXdmJzc1RaK0RyVFdzZkxUQm53QkV1M2I0aWV2TFU2SDllUnQ3NGZ0V3c1TmJsblNZQWkweDNsV1MxZk54cC9XUko5RkZtSndKTFVjVW8wPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 694,
@@ -10422,7 +10423,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/986450286/23694320777?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdktDclF3QVpPcWQwcVo5cTRXRVZRcSt0MlhiWG5XSTlubnloMGZtTjZVL3lSc1Q0ZDMwNlFzVDBDc2VqVHdBSE40Y1VGMTA4TG91Q0NZTEFMd3hHRnI4WDRaRWp3WjRCTTdGVEhLRi9BYTFxMld1YklMYVh1L2R3R3BUSUFqcitnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 695,
@@ -10437,7 +10438,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1640908085/23699122960?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNzdkNGpzZVRDTW1BUjRPSTB3aE5DZ2VBL0pGRGxKd2tEU3dWOHJtTkhVbWRRMHFOSE1QQkdaelJJdnJBVjZYY1pRdVZpN3VNOTdPTjdmMGNDeTBTUGcyNmxuQjhCMDRtT1VlM2lib2tCSEg4aDdrUTNKRTk2OU5HZkdmWWQvbW5ZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 696,
@@ -10452,7 +10453,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/493208904/20299492651?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmhnMXFSTGhlbGdHeklwRHR0ZEg0NUFORUZuQ2poUm8vcGt4V2FrMXRpcExKa3NJN2tmU25ZTklqb3ZrVDBxS1BDbEtkbmozU0tmajU2ZlZqQUhLNVNWem5yNEpUVUhtalpEU2hZNUZMWENWWnhZSFF5YVo5dHRrZ3ZnTFJTVHJzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 697,
@@ -10467,7 +10468,7 @@ export const productsData: Product[] = [
     "location": "Santa Catarina",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/454067484/23093952561?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1RHaGczcTVYR1BIdjE2TEprSzhLUzc3N0hwUDVQUmh3UmlZTFhoVDUzSkpGSGNqRUdSb1NkazV1YVZBa0h6aG42Q0NpelRyclRwRFEyemFMa3pLZFZnblQ4dDV5OElPeUVZWVNwMnZ5OU1vamlwRWtDQUVvWFVqODN4VHplZmtNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 698,
@@ -10482,7 +10483,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/698887220/18797684276?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdVRtRTJ0OFRtYW1aeVM4ZXVJSUhnQ2lyZkQ4VHk5MEhFQzNmb2ExSWZmSWRMQlI5N1lxdmh5R2xSSitTREJvTGcrZ2dDM0tuU1dTSHpUcCtoNklQTkNUNHNMTG9MS0xVSE1Qb291QWxhSllYcVZUV2UxNXgvZ091WEdxbnBsWnpVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 699,
@@ -10497,7 +10498,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/512962451/22694297955?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWJlRHV5OGZHWHdvbVY0Sm1jVVpaUGFxZi9HRTgvK2w5WEMyeUJNb0ZZMldNbEpSVEFaWER6U0JHR01IdzgxYm45Q2s2azRrOU1SWGd5dmZKY3hCZjBmcWxNZm8vdlJ4T0FTK2V4SE0zd0liZUhoQ3VwVG9CYlJKdmFqc3lTT3RnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 700,
@@ -10512,7 +10513,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1429781525/19499566910?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNGhEWlZ5Z0VBbkhrTnpUVldDQzBwTm5IM1QxQWxZN0RBcFMzRTg5dXdJYXowRlF6dlZiYXZWb1Azcjc3THloN29sWFRTUEltVFVEUy95TjhZRGZJRjJneXh6ZytXelNuYTM3K3ZpYU9iSkl0allUWDR0QmRGNVlnS1VVVGljdDVBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Pets"
+    "category": "Casa & Decoração"
   },
   {
     "id": 701,
@@ -10527,7 +10528,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/663595534/23693066124?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWpvbHhtVk42Rk5LYks3cE9vcndkT0lIYk1LZnlDcVMvbEI1K3AvbFRtNk1ibUJEZU9GbGhFMmVrTHM5eWs4ZlVhNWVUajN4SFkxR3RsZ1FtVGVBODFvZnQrYkw2NmZxeWE3eVYvc2ZYc3duWFVPQ1NGTS9CYmtISmREMHhtS01JPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 702,
@@ -10542,7 +10543,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/967211054/21398139661?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdVFCMEpCTktMSkxFT0RmWW9XRzEwUmJ5WWREYWNBOXp1ZTRSR3orYWtqeXRGeEtlc05jai9sdE4rUVBpY2wwTFFyTWJ1aFlvVUJnT3UzUjVka2dvZHpjcUV6cUJYNzBJdzk0dWRReVNtMml3TFl5WTdKaUF0aHAxKzI2VE1JSDFjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 703,
@@ -10557,7 +10558,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/394786209/8065374301?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkY0tSanlKZU1BU2Y2RTJzOS9neUtnZjd6M3c2OHUwWndBZ0JzSDdqcGJ6K1FPaXQ2RkF6ODRTaDR6QWZXTVIxMFFEL2kvYWpabm9BdmwzamJ2dDJGM2MvdklGQ0h3eDUzRGJ0NnlreE5VWlF6dWo2TkV0UDhtdlFKVWJxamRVOGovSmx0KzZ4K1BOWm93VXFzaWxITndFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 704,
@@ -10572,7 +10573,7 @@ export const productsData: Product[] = [
     "location": "Santa Catarina",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1032186112/41025561045?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWFpQTlGbDR1SUwwMzcwMjJsL3RRdFFZVjJReHkwWnBrekQyM3ZhQ2IrdGdyS1ZXSldaK3VBTVpBNXBSblE4eXRrZVhZZ0N1bkRIYW1ZUFpPaXMrNloxSkpYdmYwSEZhcHZUWlhnNkQremlkd2lBUWppT3FiYlpDNVVHQkVhTjZ3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 705,
@@ -10587,7 +10588,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/697901648/23093674257?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1I4MTgzMXNMbmNBcjZoM3J2VWx2NXZkR2Q1cWhqbFJ2OG9mUlFCZG0yT1JkZVQxd05PQUl5MWpIWlpVYkp3cWFrM3FDZjJRZ1JTM0R6UlBCZGNhVHFxT1kxYlhNTkxneWtlbStjV3BFZmI4SFNCNnB4VFZlWjJqTkNWRDRhc2I4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Automotivo"
+    "category": "Casa & Decoração"
   },
   {
     "id": 706,
@@ -10602,7 +10603,7 @@ export const productsData: Product[] = [
     "location": "Rio Grande do Sul",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/352624277/19698189846?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUsrRmY4Y2dKOWVxMlpoMktmQ1pjR0I1aGd4dHBzL0JEMDVXRGVFUlFRcS9NZ3ltMVFRVXhvZUJtaGR4OTZxZG14dTUvSnFIY1FhSlhMcHE4TThBYm01TCtiRlZud2UrVG1aUitIblBlYkV2WnVhSmRJc09HK0VoMnQ1VWxpaXZRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 707,
@@ -10617,7 +10618,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/699004065/19099325393?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWduUWRSVXZ3K1lFejA0MWUxRnoyTHZlRlpVWlpOY2xzdjlqelNQdUlQQklXcHRuUFpxZFdKNWdMbk9XVklqS0tpZkh3RWRPL0FGWGFwUk1GYmtUU0Y4ODc5MkJFUHFwRDlnbWRWSDVCeGZGSjYvWkJzay9oYXU5TGQwQkZjdG9BPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 708,
@@ -10632,7 +10633,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/969508885/23597689185?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmxMQjZLOVFleTFDRUdhdnBBc0tBMllxYW03bzZVWmVuOUhqdzMzdytERzRrNzcraCsxZFdGSVREazRoOVVIMUpOT0k4OUlVL3FIZUEvTDdQTGMyN2ZLRC9TQ0lhRjIzYjd3VjdLK0FkTzI3WHZ2L1hlM08yLzQxM1lDMWZmWHVVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 709,
@@ -10647,7 +10648,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1339057789/43112660259?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNTVkZ0xWcFgrNGt2QmFEWnQ3QmdtZ1E5dzVnL3d3Z0gzNFFRWHJUbkQ0Rm5veXJQOStzc2NBb1VwNkVDWnBFTmlOaTVveTB3ZWZxUVEvdS9qUkdGamhuTGczRnFqbTl0VEVCd29ZbHdaSGZ0R3F5Z0dPd1pMQWpXckRPazRkQnlNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Saúde"
+    "category": "Casa & Decoração"
   },
   {
     "id": 710,
@@ -10662,7 +10663,7 @@ export const productsData: Product[] = [
     "location": "Bahia",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1141990301/22997912485?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVFHMm5oTEVVSDVPNDh5MmdoNnJxUEl4N3BBMHQzU2FxRkFvMzAwVUcrVmNiMTZqVklDL0wreDd2RXovRFRlTi8vbmxjL1VBS0dDa0pqRnRrK3hOOWlYckpqcmQrZzU1a3luNjh2a3NXZlZubE9HakpVWnBMNCtHUnpaYjRGVnZjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 711,
@@ -10677,7 +10678,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1046470373/22596611329?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEdUZEI0NXFzRUFLRWhUSWtPTm1ZR1lvRXRCdG4yZElUT2lzSWZ3WkdjQmo2RWRmQlVONTRYRytZOCtPdEEwbk15ZTFROHNodzcvL2NpQ01RYkpEOUNGNFIwUmdBc0F6R0JJYUllaS9XYmF2NXd5UnhrMGMwakJBOFF1ODRzQjVvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 712,
@@ -10692,7 +10693,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1479108188/18999619251?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1JocS9UZVVlUXFINkZubXgyUWNZYkY1akt4SmNKeEdHTURvS1VDYS9POTk2dmo3RFMyTUtzcDJ0UFFDaWlWeTYrckRpUUl0Z1lLelk0b2laeEhNQk42M1BzTFNYZ1V4UWFyK1lCeXFIRlRQWHRMdWZsSVRPMTJlM1hiZ0IzQkZrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 713,
@@ -10707,7 +10708,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/752097638/58200158810?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdThhaEZoYStNdk5HSlVXakwrcHUxQXFzUHFKcVJnTnF3dkVmRE9MQmV4NWkyVVRvVjRyUTc4ZzM2ekQzbXFBczZ6cmpYV2YyODJ5alFvaGV1NFl6T1pGQnNHKzdFa2hLR3A4dEozS1kxeUxFSWo5V0lscmtJQ0dpVVpDN2RXUXRBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 714,
@@ -10722,7 +10723,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1029813094/23694423854?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN2FFWnJLSG1wUkVCVmdvV21GWWdSc0VlN3VJMmVzUDZpRzJRcGk4b1RLWmNnME9VWnNHWm1jMWhiNjZSS0lHdEhIdlZZZE5Wemg3dTQ0VjNKMFBEV3phZ2pqODZHbis0M2dmY3VvMW1CTWpXaUNNeXljY1JTNU1NdGhHbmJlTVlvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Casa & Decoração"
   },
   {
     "id": 715,
@@ -10737,7 +10738,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1078273222/23792826814?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN25yakJrbS90NzFHTVl1UjRXSmMyZW1sTWZQQ2ZuWndNZDhDUW1YQ3pUaDFWc2lZRFVSeWRTZGVMMXhaRUtRbndXTHF3S0FaZmE0dW9PZEFRdSs5aVFadklndTRzQktqaHBMVG5LVml5Z0NkZ3NnSDhuZTRyMGdGNDFGWVZ0Q1JNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 716,
@@ -10752,7 +10753,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/410677252/46303184704?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc2xPTjBENGxRUExtSkNiU2hzOXRGYm8zc2dIRnpRSkpzcjhaRnkva29ySFltUnpraGFaYU9MQzVYVlZDa0dkdHF3Z3FnV1R5KzdOSU9mdU81cnB4Y2RacXZBcWtNRm5FUWFrT0ZOaDUxR2Z1d0gxeWczUDRwelMwZHRxM2txZDNBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 717,
@@ -10767,7 +10768,7 @@ export const productsData: Product[] = [
     "location": "Goiás",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1039497506/23498817873?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWFpQTlGbDR1SUwwMzcwMjJsL3RRdFh6S1hrZkgyYUUwT1hIYlFOYlJCY3MvQ1RjbHp0OEFpeTlROGlRem95dXJmWnlLSVAyaUxhTG53eE04WlJWS0kvVUlVLzlwVjh0aDJHbUcrTHJwZUdHQVdZVzlGNHhLTWFqbDFHaTM2T3VjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Moda & Beleza"
   },
   {
     "id": 718,
@@ -10782,7 +10783,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1451525292/23498236521?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0lRanFYdEZNbWtLdlh3OWlUUVBCYzhkWnU0K0x2RUVqdU8xZ3dNdXIwMXJTUklxbmRuVEtWcFY5VnI2QnlkNmFEMCtyV3RISDdQYW5VTndDa2xaMWpKaG5BVEk3WGZ0N2c1SlZ3aWwvUlV1VDBJNUhDaHVaZ2JEL3dMdG9hRXlRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 719,
@@ -10797,7 +10798,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1281426059/43974136798?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWNqc0xWZnFmQTlhNlJ0b1RiNGNUSGZoTnErUjdtazI1K3huZ3lVYUxLc0owNnJxcnUxQUpiMXJwZW1oWER1bDJXZ3pJZUl3d1UxaFJrKzJESFJmZWdoN3RiQVF2bjdyWHI4SVFtbnFUekxORURXa3BtZVR1TExHSFdMMnRBNmFvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 720,
@@ -10812,7 +10813,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/427139496/20797389690?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdkZyMjdpbHgyWFc2VHRUTTZWczRmY0t1MmszYXRDTXozMmpjbFhEK1JndjRKNEdJbGtpRnlJTmg2N3l5RHRGNVo0eUl4dnRrWEc3MUE0QlJXc2U5RVlkNm81Y2hIYkVGc2F4RnZpTld4Zk5GWWdSRHpvY2ptdFdtTnpsNjlTak9vPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Pets"
+    "category": "Casa & Decoração"
   },
   {
     "id": 721,
@@ -10827,7 +10828,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1475261045/19999608346?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1JocS9UZVVlUXFINkZubXgyUWNZYmRNZGQ2SFdZL2ErdEJpQUVrNXRtRGc1NFBxSEFMNjMyRjBpWm9YMm5uOHcrMElCZWhCeGVaVGNUTW5TK3R1NzNjZUZBWDAwbE9LVkpmcXU2UXFDTDAwWkhBUGdMbXRveUZHb2psSEtZUjBnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 722,
@@ -10842,7 +10843,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/432843460/22897135778?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWtXZlNWQWNDT1k5Y1lxNnVhd2FEek1sNTQ4USsya1RMdFREaVRtditYVnB6ZlJrVytEWTVnRGM3MVJLV2s0a1MwNnVVR1BFMzViN2lhdFFmcFVzNW1mVDFmWEF1cDBmc0w0a0I2ZGFGeTkwTUtUSndrNk1OQXI2Q3Bjc0lMVllRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Moda & Beleza"
   },
   {
     "id": 723,
@@ -10857,7 +10858,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/362921023/22497323916?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQczMwdjVxNlkrdUtqREdZNVg5dGlLY01URVVFdHI3Y0F1d1dKa1NMR1NGQ1pXVUJZS3FJL1lRdU9mbXc3OThLK2FDZ2ZVWGlXMHlkelNRc3VrWXFydDd3ZUFsQjlsOTlRTi8zZzFBWXFHOSt2eUFPbDMyZ0tTQnArSVh1UzRISVFzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 724,
@@ -10872,7 +10873,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/594401147/20598187501?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdHRUbktHK2ovUWZRS2NpeDZlZDdkZmZWM1lHU3dKUUlxbDZjeU1YTHhWSURXMDY3VWZoM2loMEwwOWF2WVp6dDRUb1EyWXBPWG84eGdjb21teldrMkEwb0J4Vlo2L0JhdFhEUzJDYk1iNmFNK1UrcHNjZUV2a3UwbmNCQklCcVRJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 725,
@@ -10887,7 +10888,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1534896372/22594445793?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWNkaUJHS2dKRXlBdkd2dG1mZ0psUENMSEh5eEUyNlBINEFwQk5MbmdIekNhT2dMbUIxWnhKdVo3bURWc2lYRUU3NjRaVlBQVitwYWpHSjZ1enhUbXNCMVIrN1pDQVk1cWFBcW5WMTZqUC8rNUhRL05aOEtZYStqOHpjbEU4Y3NnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 726,
@@ -10902,7 +10903,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/572902303/20098036897?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc2hpcGpHRzMweTNzbkJpT0dyNTMyY0lJbjFCYzBUZ0NyZWc3cFE1UUhhU3lQMnRDWC9xR2JsaXhTNnFid2dmNkFZMVkyNk5KNzJYTUJsb1ZadTQyaXVTclowVUlBSXJrazQ1OGlvbVJxWTdHRUVDVncvWFFibHpnYWFoeEdVQnNZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Bebês"
+    "category": "Bebês & Infantil"
   },
   {
     "id": 727,
@@ -10917,7 +10918,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1051950257/22898317257?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0x6dFhUa1NUODlCTnp4OFk5RXpiYkZReGhjbVVGTnEvbUFGWWFyNHNuZElLTC8zOGxwZjNSYmVTVmEyYUUrd1dQT2p1OGRvSjh5R0h2dXV1N25iTGhEQVBJNnlDd0hDS2czcytPMGRZb3FZMTQwdzFpMGRlaElyK0wwNjNaTXRNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 728,
@@ -10932,7 +10933,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/659347495/22598449316?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdGwwVG5NUVhvQlNSSFlLZHBtcE9FTjZtQzdweU1vcG1HN3JESkhuUE5ybTIvbnBXYkJhSWd4a3JUTVloTmR5T0JkaHhORVhqM0xIZ1FJSjB3LzJlc1AzWU9CRXpqQ3BuUDNCNmkwdWVxMnkzdU40K2c4RTdBU3loTW5MMHFnSHpNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Moda & Beleza"
   },
   {
     "id": 729,
@@ -10947,7 +10948,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1534910933/22294726823?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWNkaUJHS2dKRXlBdkd2dG1mZ0psUGU3VFQ1eTJkZXEydlp0RWNYQngyWGRnMXFtQk1SOVVHUTFVekUvQm1NMTIrZlV5aHhkaE1yQi85V0NDem0rN0VMeW9pSlNRSnZYbHA4anVWcGhGS2d0TzNTZlQzTlB5SG1NUGVLTUN6MG5rPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 730,
@@ -10962,7 +10963,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1351555956/58250469331?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnFlajJWZlQyRjNuVGtydksxZlBaenlVUHp5c0V2bHFxQm80MzduM3hXNlB5NktyTGVYRnl0eFQwclZ3NHdrWUF3SHNJdFBUMFRiUWZIYnBtMDRweE8vaTk3Q1AvSGw0Yks3clZFVTd1Z3Z1UjBuYzVjT3NFZHdxdHBjcy9QRm80PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 731,
@@ -10992,7 +10993,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/357422302/22193969700?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdEFSazk1UzBsN1VSc2pKU0pRQ2JxUkdzSWZndVk2SEwwWkx2ck0yRUNxajEyRGk2K0g2NjhIVFFqRmV1c01mZkN2UjhXaUpxTEdYTkZkYmFudTdVUXc5RU15MmtmL1ZRUi9Lcnk3ODRQbnlEMmYvMFNCcmtDbndlZWFBbjhmV2VFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 733,
@@ -11007,7 +11008,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1360570792/20598091382?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNjZxczFjZUpCVzZMY2tOMHBrckhPQ2N1Sys2emdyQ0pyWGZUYVpQSkZOd09jVWdwM0pTU3BwN0k1bEdZMGlZNEh0U3lLZlpXd1ZjVE9VZG45ZDhhNElrTzhPeEV5TVUwRVMrNE5VdzUrR2E2RnhOVkhYNmVYU2FKWE9xMXZRaDI4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 734,
@@ -11022,7 +11023,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/313984108/18899549441?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc2xsV0toV2FuVUJpN2ZFTElVa2hwU3pLNlVoZjhab2NtWnZBc2FUa3psODExZUJ0ODNmMFpuMmVRcEFqWk8rb2p6ZFRsWG9PNmhoSFNwUXV0TW01MDNITVVpNUFqeWowaGdLVUVPSjJPUEJyL2ZKMHljNW0rTGtxTm9ubWN3MndvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 735,
@@ -11037,7 +11038,7 @@ export const productsData: Product[] = [
     "location": "Goiás",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1167945223/42914855132?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNlBFNHVhak51MU13cGRKeklHTm1VZUNKUnZPNDFVVFhjRUc1ZW55WDlQbytLOE9Sc3VhVzhFUDlKUys1UVBESS9WQmxWQnRQNWxZVnlRZ3AwQkZWWHlpcXJJYlZjNWdNWnQ2RENlaC9BV0VFZERmemt4ZnFHUWpEYjNrQy9hTVJzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 736,
@@ -11052,7 +11053,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/463957248/22096628755?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdTZNemFyYXA4S1Foa0FYL0hqR3RpeXBFY0U2ZGxBVWlUeDM4UjA2YjI5V3pBeURxckR1a0tpZ0czY3lGWFVYcmJJTHV0elFPWDZzSXZqSmU1WGdLWEFMSnVYd2RtSmg2L0EwT0JjZy9DbVp6VmFOS2pSNHJxVVY3R1k0MG9GNjZnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 737,
@@ -11067,7 +11068,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/800864347/19897425032?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmdGWktwUW5FMzdmeDQ2MGpJaVcxa0RqYWxIcnptQ3JuVUE1OWdMUkRwNVNnaFJYYzBaYjBHY1I0cXFjcTRIdUlhZFJKQWcwVUUyV01NUStVMlRzUHZSMjB3UW1kTG5sVkUwUmxRZ0c4dUpDYjh4V21zYWtOSUJiWE00eHFOcFhnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 738,
@@ -11082,7 +11083,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1079695638/18297663649?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN25yakJrbS90NzFHTVl1UjRXSmMyZXVLZDdHOUpobnNnbCsvb2ZGMTZ5d3pPTTFXYkRMejhzeGVsd1VyMThpRlN5Tml2ZC9udzhqcnp2NEY0NUoxVVJGcnhkTUFYUnF5U092K2diOTBRQ0RTWjdnblZnUlVrK2VFT2hxYTN6VUtVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 739,
@@ -11097,7 +11098,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1500497716/58201837793?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNU1mU0M5RWxpRUpPMTNORXc3cFZmblJmbFFZUURKd25NWXhJREIrQllBWGkvYmZSTEQxNDR5RnlRQUhaU0xHcWx4Vk9Janp5N2ttMTY4Tk9WbDliM1VrYmp2NXE2SHBmQVlDMHFpdndVMFhHREZ1ZnVIWDJiTzVoSFlrLzMzZ3BNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 740,
@@ -11112,7 +11113,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/422632177/22793483862?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdU5IRjJtOEhBdGY0MEtERSs0VmxydmMzN0k1eURPNUw2VlZOUm1xbVk4TVhxREN0ZmNqdG9kWGxJcjU0VEM0Q1ZJbnFjclNwYUFzeEFOZmM2VjBieFpWUlJnYzlZbU5nNERCT28weTgwL2NNM01RTmxEYkdOZjRkNVJoN0ZmV3RRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 741,
@@ -11127,7 +11128,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/403348140/18798322990?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3BuZzJSTUJWNDRJcmtMVDFzMVBpQUJRVFI2RnlYNUs0S3hrQkFqMVdBbklOdmxLdVNuVVA3MVE1Ylk5REhIdDFLbjRCaTlwZzE5dDFnTWdYQ3dPekdmeW1mY2RDV1NkQXhqOWJTdUJNaEROUU1JMVNTWVZ5M1o5TEVQbnBsMTNvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 742,
@@ -11142,7 +11143,7 @@ export const productsData: Product[] = [
     "location": "Goiás",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1314293823/21097736365?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEpRL2FlUlcybzF4QXBObW5MVjVGZGVwYmM5dFo4WG0zTUJYdnhNYlp2WHBXK21PaUowd0RISmJXZXhiSGFwWTJPT2FXN0J4YWcyMWdqV3JEL0pESHh1SnEzZCt6V2c2dUcxSUQ4RnN2MTQvV0RoRkpxRmRIdHF5YTFtdXJSZkNzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 743,
@@ -11157,7 +11158,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/214736742/21097735565?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdkZGQ3k2dzhLSGFOL1VUMGRTUmNXaFdNNzVaQXQwUktnRTdEQk9uYjl3T0xKRmg0WFFmczUzTytRVU1TM21pUURrd1FLREhSRE1xUlNEUUxhQk9uTmZlSk0rZjVBVkxYVFF4QnVsMk1BOTlSN09ZYTFaVUk1LzlnVEFyRk94aHIwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 744,
@@ -11172,7 +11173,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/479114603/20798078081?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXEyVXBaNEFuNkR3ekx1R2xiT3dEZGRFSTRkdkM4R1dsVGpJYnB6dG03WXNyZFpYeGZkUXU5Q0VXYjc0Qmp0NnJjdGdmU1FmSEl5MnlseGhCaGpId1FBd0tnWkpMWjRkaUJwZ0pTcjgyWGZOUyt1OEE5ajNJSXhXS0hGVWc1S25BPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 745,
@@ -11187,7 +11188,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/959459848/23298353013?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdEdzbjk4RnBCT2NhUG9nR2hIY0ZTNzdZSjBkNEJlNjhmenlEMmNERHRLRGJxSXVqUDYxTWxwa2lLZzB5dnZ4MTFaK1NNY3NyL3hlRW1JWFhyVHdING1xQ0syZUZEMnBCR2NpSy9VOHMrYlJnUndmd0wwQWluTjZkazZIT0dDbkh3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 746,
@@ -11202,7 +11203,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/424793338/23800908149?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc0MrMFd4SmNYTnlsaXNXOGZRMTRWYkQvVzZTMWJSVGVhTSt4bWZzK2RWRGhodUlOdmpWWFZxcjFrSGpmV1djQmVZTDB5UDExR1JLbktDNUUvcXZ3L1czSzd5b2ZnendmZ2NFWmxaY1FyQkZ6TU5IZm9MUlFGcktWSVpnNFNzTlJBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Casa & Decoração"
   },
   {
     "id": 747,
@@ -11217,7 +11218,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/321114889/23898701285?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdlNpRll2cWVMNnRydm9lSlEzUEtuQythTVVTdTMvVUpGVWZDNHNvVGNmSVI4a3hFRHVpOVh2RFZianBOUUF1cDZZT2RhSGpna01KU1g3ejdodFF2YUhBTG1oZHJ4L2lLYXhFdFhabTNIZUhEQ3BZQjVJZkJVMVB4d2FwMEcrM29ZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 748,
@@ -11247,7 +11248,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/531826898/23194703010?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdEJKdlpVV2NmYUN0TUhYMGZUdEJvcHdRYkhxMGRtOEpXazJGV3ZtS3ozbFZta09vd0FFT05EVFVqeUQwa1FkRkNlekZNdWY4TUF1ZXpscHpPM3Z0ZE0vOUtRcUE5SzZQamZ4TStuVXlma0gxeUJiOUhVTzV4RzVNMThsZ3VNd0dBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 750,
@@ -11262,7 +11263,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/532546866/23797487584?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3lRVnhSb214dWRiL3BCNFR5K2JWdEVNU1lwSkczWklzU0JLNnNuZCtueXVyemgwZzVIU0FqZ2lpdmd4RytDUzZIa1NqSkxKWEZORXFyM29HaXc3NjlrNjZmUER3VU9WRGJUSStoYTFMVHdiTGZtTExoMU9GVzUxUlVxY3ByRHljPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 751,
@@ -11277,7 +11278,7 @@ export const productsData: Product[] = [
     "location": "Santa Catarina",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/397696135/22899120763?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdlNkZTJ6cFU1VUttYU9Cc2FOTVBOcXhtazI5ZHIwK2R4ZjVsV1ZwK0ppLy94cHdvQmZYZXM4K0p3bkVsWFlKcXdZZXRtT1VEazNJV3dtcHpUYSsvaGMrNE00TDU1VzlaMUx3Vm1jc21LTUlYWFZSRXpyQ2FNbTE2Z3o5bURFNURnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 752,
@@ -11292,7 +11293,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/436104412/21550045026?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1Uwa3hLOHExZXd3cG15aTdBUHFFTmthTEdndDk1VDRPRU1YY3RhUnNmZUJ4SEd0cE1FTStFbmt4SFRpK29qR1pBVjFmV2swaGp3R1ovUjMrNUJpeHE1eDZKS0hCZ3pRQzRZd0Noc00wMTRxcnZ4Q25zVTdhQ3B1ZWhOcnlmSEswPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 753,
@@ -11307,7 +11308,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/649282936/22698175080?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdjNxWjR4T1BJWkdNSmNmM1NIc2hBYjlEdTdtZzh6MlU1di9uSDd1N2Z3WVV4ZUdySWY1S3lucU1ic3J3TkZSYVZBS0JnODl3ckc2Y3oxQWlSQmFGNmdVY3hkZlRUYkJyTTM3NlgwR0FrY3dqcUFoWDdKY3Y4ZUpjOWZrWDdiQUtZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 754,
@@ -11322,7 +11323,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1008802369/22796593215?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1ZpUFMxL2o1N0RPK0UxdWl1N3FMVnRnUE92Mlh2RHJrVWpFQ2tQNkNLWUZPdnB6UVVobS91KzQ0YmxYbzdoK2pkSWJUYWZSSUVpeDJ5V0hqTE5pTWJDbVYzR1FkZkNibWwzQm9XSFgwd0pTcWF4V0xvOW83UXZ2V2xrQ2RMTFlNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 755,
@@ -11337,7 +11338,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1279196842/18897736051?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNzhFZVJ4NGxLdFNvVzNTbHJ5SUtuRTJHd0xBMXpJc2UrVHRvV1ZOa0xER1FKWERKZU94Nk9TN0lRbTl1U1lKYjFUeEdlVC96VTZQZk4rQ2lZbmYxUVFCU3F3M1g1VG1nMzJZd3l5RzRWNGIvdU9oUG5CUWo4Z2Z0Nm1MWEg3SE5rPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 756,
@@ -11352,7 +11353,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/337636016/22892631625?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc25vZmlrZU1NNDI2cFFkSS9vM25vWG9LNkVjSFBOZkErNmJCSnNnSVk3N0ZJc0VXcCtmWmtPZ2ZxSlh5MTlmSVFjQUpuSGdCbklFU3FnQktlUG1ZRGNZdGRwUUdDRDAybXdWMGdhUHFGTlNnWnVBMGhEZkpMdmhkZ1J3ZFFrUmZnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 757,
@@ -11367,7 +11368,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/421422443/4886594145?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkY0tSanlKZU1BU2Y2RTJzOS9neUtnZmNUWDJvaXVNbnAzdHNubWU4K0c2Q2g4cmJGZTBtbTNHVFFuRnF5cWU1SVdFYm5NNklvMEhUekpmYk95ZkxXZm9HaGYvSlRjTzJaTitoL1E1RzcxRXB0dW1uZW4wN2V3VE04NTdFcGpTanU3WTRpSmlJR1ZPY3RFS2JqNzV2dlRZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 758,
@@ -11382,7 +11383,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/816161995/19697662682?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdGJrSlNUeFVqUi90aU81aU9VVCtkQU40d2ZoOUFnbWNvNHlXMEFYOE0ydHlydE1pK0xxSGFIUVpoMDJRZkQyNzZLRXNEWncraUtmTVg1Zms4TmROeVJTaTJhd2pITTl6QWlEWEsvZ0d5ZHcxN2VySmRReXU0SGdwb1RhRWxEZXVFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 759,
@@ -11397,7 +11398,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1630740918/20299891620?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNTVmUS9CZk9FbXBXL2l5cmxuVFVOaGdseXg5cEZsb2J1UnE2bjlqRVNtdmpnTG42SlV5c1ljMWJybDJGekJGSGRmbG1rS1JncThZZXIrMWpWSm8vTHEyK3hvVW12N2FHNlhrWXp4L3VSVll2eCswV2JBT3g4dmcrdy9CT09ZUlBzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 760,
@@ -11412,7 +11413,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1311644435/20997759464?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEpRL2FlUlcybzF4QXBObW5MVjVGZGNIemNJaC9icUVuUHFvcnExbW1YR2lEZ1FHbE8ranRMdjgrQ3RrOTBnMTZRNGtxN1U5ZVJjMFlOYk1McmdrcUdxV0ZReTlFdnpHeUg2V05MeXdvWEdRRDJuMTlHUG14ZzMwb3ZXaHlzNFh3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 761,
@@ -11427,7 +11428,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/483838536/20999576871?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdHFrYzlNa1dGa1k0dTQ3WHMxaFhMY09Rd1JPM2QyamZtRGVKMW1BdmE1Qkt6YUhUb09EVGtmT0NYdU5oRlRHRzNIOEdxdm9rbWZ3VjZuUVZVcUtZSEU2M2ZLZGs0SUh1cllpU1YrK0RJam4zamZFajRyUFJWSVA0dUJFYzErS2ZjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 762,
@@ -11442,7 +11443,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/960960972/22293920105?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdFBlUWI4SjlVS2RUTEE5c1FaTG9oOWRZdHk2UVdVS2NyTE81WXg4RFZwNFpwb0FIWGZyKzJqOHRZRFN3dFp1RkFPTUxabVYvSS93WXorbjdnczFrdTBzNE1jVGxvNzlPK3l6c0lvOUl5L0tUSjFCdjBWL0o3eVNpYlNUTHpmaHFVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 763,
@@ -11457,7 +11458,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/643719371/22591715229?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3l3cGZaQkRTM0UzUkhEaWdkYXpFaHlTaVZIcUdNODdza2NJSzZTdWdkdVhjTUxVM21hT1hKNGE3L21jdmErSlU0cVZ2V2oybGV2SGswZmxMN2tGdnV0OTkvd0Z5aVpYSmNwbDh2RWlaeTVDdTBQeDJJOWs3aGIyZW95Q2Z5dTBzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Casa & Decoração"
   },
   {
     "id": 764,
@@ -11472,7 +11473,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1368188554/23498637354?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNjZxczFjZUpCVzZMY2tOMHBrckhPQ1VsME9vWENkN2dWQ3lybWlTWkpqLzRVMEtJMWMxeGszL3hRM2pWbldPRytxTmpXb05mdXlrazNXZ2FqOWw1R2p1N0ZaS0VhVnNJVk9TWjFTVWliWE1iSDB0RDZCbisvYUx3WDRVbGxVVm1vPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 765,
@@ -11487,7 +11488,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1419612788/23794025780?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEFrSUpWaitUS3NaQTFHTVJTQmhpZWtDaTN5UFVkbldPd3Bid0NCZTR3NHcvelVGamdsQS82VVcwc1RqYXBrdHI4ZzAyMHN4bXNKT0g3b0tFd2tKSXhPeTh1QnBtVTh4UGd2MW1yUUdWL3E2Zm5zNjhodVFma0J5d0JpbVVvbFRvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 766,
@@ -11502,7 +11503,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1128449458/23093420483?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnNncEZncWwwYm0xN1R5MnJXTThvTXNQUXFBRFp1dmYraGt0VWRiVTFIMmxpL3haZlFNRy9Uc3BJSmJzU3hXM0d1d0pRcG1EWi93dmYxbGtma2phWVNCYTE5M205TURaOUsrNisrYUduOFpMK3pveHpkR0kzQ0dDV3h1OWloZXhZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 767,
@@ -11517,7 +11518,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/410705973/23493883620?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc2xPTjBENGxRUExtSkNiU2hzOXRGYmdPdXF1bHFjMFZnUDA5Tkszc3lnU0VoZG1JOGppc043MTF4ejF0amx2MFY0NjlQZ2FoSGtBRFhEUUlwMmxUYkRFUEl1NkxtYmtDcTM2L3k4SFFzNnVwelY3MVhqZVNLNkxFcjgvWkhLVzMwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 768,
@@ -11532,7 +11533,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1257468988/23793067162?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVkyaHE3aUNyNGd1V0k2Q3RjRFRaakZFcDlxVTRIRHpTTnZtY2pIZkEyTWNxc2Q0V213T0Z5T0hCamFnME9FNzRFQzlLQ0MyRVJzWks3enlVbUtRRzRUMmNJUDlaQ2YvT1h2d0M5WS9aWVgwcEJoNEJoNzcxQ3lpVVdMVi84SjNJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 769,
@@ -11547,7 +11548,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1419612788/22998864044?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEFrSUpWaitUS3NaQTFHTVJTQmhpZTBydEkvUEI1bktZcERSQXlUWlhMSGpQOGpIREJpeTFjdGtjTVhZMEZKNUJkOUJ6T0x3ditiOG8zRkhKV2xaaG9wZDZNWXFpM1ZqQ0hNcDFDL1liTWhHUi9DZjM2c1dRT1FTRmNVazZLdFVBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Saúde"
+    "category": "Casa & Decoração"
   },
   {
     "id": 770,
@@ -11562,7 +11563,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/790794583/22097368520?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdlRMYlo0ZUtualV5czkyLzRUNDNKT2wxaG9kRlJ4SXJpTG5JYjA5VzdTSDBHL04va1NIR1NLdUdsY2MwL0tzVDVZQi96eUlMSzdjZGJsajQ5NnN3a3NSdEF4Z0k1aGhYZU0zQWZoK0dOTC95Y0pJWWRXQTY3YTVRUGNMWitpeTFjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 771,
@@ -11577,7 +11578,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/376022922/22492862633?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdlFyR3VjUGNZWWhRNnNUSWFLaGp0WnRidFdobEZSS2lqRUgzUjFIcXQrK1FrQkZDcndncEIrcVRxTXJuRHc1dHkxRU9aNDQ5NlpXUmQyZDh1YXBsV0VibXNnUi9YS3pSaVlHbWVTa1VnQ25YbCtmRzY2M1J3TnlQU0owRG5DTk5FPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 772,
@@ -11592,7 +11593,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1223525598/23494175775?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNG1aNFMyQ1B0b04wNGNvN2huVEV0YWhGcFBCeUlCd25sTGhZaU5JbDFadGRuY3FFR1IvZDRtOWV3ZFkyOFZpS3dlNGdRWkRoVFNRT0NmeTI1VkFoUzlndDBYZ05JdWs2S3d4cFcwZUFaajMrZ2ttbDNCMWFTak83ZysyaDE2KzJJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 773,
@@ -11607,7 +11608,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1214499708/23998715246?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0p5WlN0ajFLTzdqaTlQaERUZG41M2EvMC94STJ0Zi9ZbWgzREhRK05CYXg0SHBjV0EycUUzeGtkbTZSZDM2amZZT3NQUTdPNElUMVowR1pyUHIrNEVVYW1ac01zRWZYR2lQcXJvREdSK2lVOFU2MU5wT3FtaGdtZWZ0UkR2UkpFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 774,
@@ -11622,7 +11623,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/865540897/20597617885?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc25GbzY1TU0xamU4aEdlMkRjQ0NQK1ZMVmU3V3lEQVE0UUgyYmNjNkdhVXdMRFRzVGdSeUtnUk82aUo3VHY3dG5RNEpSZmJiZ0V0M0xGNkI0bWhicGczL2tFSGRkZXlndVhjb1NUSmlzLzVWemlaSk1EdCtBckY5ZWJhVGZHS1VZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 775,
@@ -11637,7 +11638,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/346865863/17634770281?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3dIRmZia0p2ODRza05FZ0lhajN6MlBmL0J0UWRBZVhWL0VCc0FDUHlYYVJXRk5RYzEvNDlQRng5a2N0bEM3eHoxazJTVVBJMFJCSUtyVC9pOCs3YUFvVFBRMnVJaUlrVFBaVXFQc2Fkamg5eHVSMGdGWThvN1N1L1FIOEZnRUNVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 776,
@@ -11652,7 +11653,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1384073074/23794513159?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNXBkczJ6U2l3VEh5T1haODRWd1FPaU0xMFBzemR1WE9zeFg5am43VzNady9VVE5QUnpZdytFNjhhMzdNN1g3MUVnTzFuZUZ5VEVoN09HenZFK0trTFFSNlFOdHVnUEllVlRWeTRwMVQ3MWVJVDZ4TEpPNG90cVJvNHBzNTlCcExVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Moda & Beleza"
   },
   {
     "id": 777,
@@ -11667,7 +11668,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/482471753/18297832825?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1hPL2J2Q1I2UXl0MHd6Y2Q5Ymk1TEkrS1liVHFtV2lQOFB0bGkxT09TcVNLUld3QXFQS2RCOThEaFJNb0NlTkJtclNnQXJNSkJ0b3QzMDVERDlpSFpJVVExY05GbDJKajlYejFBNUxna1A2L1lwcVFLREVxK2d0ZDdzTzNuZlBzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 778,
@@ -11697,7 +11698,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/472030663/22299164250?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmJiTGMxL0FadU83VkJkNmlRdk1IOHhLSWttNjVsdUVVdHNpdGVaSlZpVWpXUjBFT3RxNEtHQjhvUEgzUkNxSzRyYWo1NkxQVjZwSjZjOU5VQStQaGMrTlYrMW5UVGtxdUQxQlBLdlZmSUhnSCt6Mytyd2pNcDNpU2dtTEQ3TFlnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 780,
@@ -11712,7 +11713,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/582746295/40819079741?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdnNtV05NcUFiSmo1ZmpmNXplVkRBRGtFczUvTTJRVGExaWEvc2cwLzhSd0lseG5wMU9SR3E5aU1OWThUNklTYWx0TnNva0krdERTZ2M2VHU2R0FHb1QxODZ3Qi81SmhORlFyV2U0d1hON256VEJiRFQyVXZtODU2L21FcWNLb0pBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 781,
@@ -11727,7 +11728,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/998725688/22098307547?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUxxNzFhN0J3T3NNS3pqSDFVcWRNdjllMEhkUjJxUStQWk1EY2E1TFMvVmZHSXIyQTluREhpc0djTi9qdnpMSGREV2QvVy8zVUVPb1NWcU84UTJKaWFGYWUrQTJnY01iOGVBeHl1dGE1MGtHV0xWaTM3SjE2NkFCUElRc3lSdk04PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 782,
@@ -11742,7 +11743,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/424195100/22993708027?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc0MrMFd4SmNYTnlsaXNXOGZRMTRWYjM5dnlQSmpUK2JiZ0t1UlRGTStoUDRYUCtEL0wySkpxRnVPNlhWdTl2UlFGdmZ6TEdHUmMwMTdrdWVuMFZYZ1VoWFRNZHNodEQ4Z2lRbFM5TThuZnNYM0h3M3VjTjMvbXF5WDUzNWppSWo0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 783,
@@ -11757,7 +11758,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/461633669/19098604596?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc2lMb0lUVzNFa0dEL1FwTG10ZVJYRjN1dUhWRVRsY0ljb0tzNTZTdStZOXNQcExaNVF5Q3lXRUJGaXZHRVAvRzZMM1F6dWhHZ0plSlgzTFhaUzlEUG1xL216Vnp1dktYa0d1OUhueXhiMEtUQ0FwNTBRcEhpZHV0b0RYYTBUOHFrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 784,
@@ -11772,7 +11773,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1223410424/18399260505?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNG1aNFMyQ1B0b04wNGNvN2huVEV0YWxKUGpRS0xod3djZGJkYUUrWUhkNjJHY0Y0MUV5T2VRdTU2UWJrN3V5MVg3bE5Ea2w3ZlVrWjFnQUx3VFpGYlgxWlBlanRXZXNIRkhKL2VKM3V3aDRnTVNFMXIxaWZBM2pQN1hxb3N6VGtvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 785,
@@ -11787,7 +11788,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/848145230/22593710886?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdHAxdlBIMEVlcmhFQlJBNzZPTERxVFA3YVVFR1VSRVpXNW9YS1FvVzRMbXp2ak9GYVNlcGlHWXBBWDlFRHlrWm9CZml0RjJEN2ZjdGpRTFRidWxOaXFhbHN4RCs1aTVpUFJxTDFUNmJrK1hsSUljempIZUlnd0x6R3pDZ2k4VDRjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 786,
@@ -11802,7 +11803,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/421581203/23898839539?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdnp4aWVRL1VaNkgxZEF2WmJOUGlSZ0EvdHZrZ0FYZzR6NEh5dTlBOGJlK3RIUDFyQXBiTk85S1ptYW5PQzlsaTF0RTgxaFFaUW9MRnFlVFB0NE9hQVI4UkhZQjJycTVDYXlWQWtJcnpWUnVXL1hVaFNYR00zT2NKMzZKVC9pZHdNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 787,
@@ -11817,7 +11818,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1417820753/21698149484?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEFrSUpWaitUS3NaQTFHTVJTQmhpZWYzS3ZkSDJEUGVxWHpRNW81SmpMS0VtdGJtb2plSkt0NmEyeTZ2UlVNY1VLZnJJc0ZzQW5yMTVvMC9vb05MVGpFQXFzeStnODBRYkZKalZxSUswVmwrL2NWdGhnMU42RlZWZlM1ZlRWRHdZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Moda & Beleza"
   },
   {
     "id": 788,
@@ -11832,7 +11833,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1508318145/22398431337?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNU1mU0M5RWxpRUpPMTNORXc3cFZmbklkZVVOaExaQkJ4RDZiZ1NIV0dtVGNGWEpUS010Mm16RlIyNHdTOUZsNDdVQVk0NWNtcUJtbXgrVXdzczNvZ3FFS2ovaVdJRzlRMFV3NTVyQ1JLQzhCMXoxRHBOUG9zamJpcEIwcCtzVWVnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 789,
@@ -11847,7 +11848,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/299604942/21099333118?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc09LOURCRHlFSElVMkpObXQwZ3ZySCtQWFp2R0R5VERLUHNIS3l3Z2xINXJoUUd1Q0k3bndPcEVpY1VNbkNxelg3WHJFbFNmcFhBTlRpbGJuN3VDSk5iT0YzNUFKQytOUi9Qc2tFVFh1NUcya1pxTmh6ZEZPK01PdDBYL0UvcWI4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 790,
@@ -11862,7 +11863,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/436104412/19450049961?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1Uwa3hLOHExZXd3cG15aTdBUHFFTkdwMXZ1VSsrVXduTGdEMXlMbGdlMWZBbGU5L21Qb0ZRRXNCOTNqMGZCVmVjQjI4a3dPTnVSbmxnaGVWK1RKL2tPTlpLQzJrQTdLUW11TjBUa2p1a3RueGo4ZzdYNWhtL0ZvcllQMW11aHVVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 791,
@@ -11877,7 +11878,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1292442722/20298036917?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNGE4aFpPSitIdGlRMWhhWS8yRkUvQ1pOTUV3NHdOb29UUnFFUDhhMjNOMFlmL3lzejRsVVRWTFZEMXp1ZGVzM2dsWFAyRklMS3RzaDMwaHNQZ25YL0tpcnYzSnBmeEp4aDNSMis2TVNqWG5NZHRKRk1MVlhtc1RXWUhnTVBsN0hJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Bebês & Infantil"
   },
   {
     "id": 792,
@@ -11892,7 +11893,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/366576468/22592778083?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdE1IR28yT2FYYStIU1FYTzJKNW9XSFJFNUVLT1crcTc4Z1dtVVJIek5qNGc1Y2NYS2JybFVGR0xqcEcyUDlhZGp0UU91dkxPcy96OU52aW9yR1FkZHpsVnhSbmpvMkZpMXM0QklqMVJGMUtueit1b1JrOWVOT1FtVWdrcnlNMjBBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 793,
@@ -11907,7 +11908,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1618329097/58250934065?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNmZRMXpFdjJvbVdrY2I0ZE52YXdKUHdLR1Z2d3UreWZtRkU2cm81d3g1VHVibWdJUWpqb0Z3R3lZTmtvMEhOQUpkK1hQb3ROTXBpNzUzQjVTcHhmdmhNWko3cENHd09jYWpUY1dLazNjNlU2Z1F2d2c2a1ZqOUdROVZXYnQvaVF3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 794,
@@ -11922,7 +11923,7 @@ export const productsData: Product[] = [
     "location": "Sergipe",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1397812753/22598896444?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN01mNmhVVGFUVHY2TURuZWFZQWt1dXF4aVdWMllwOW42c0RLUmZsczNid2F1K1E2RkNyZkcwK1FlZ2I3TXJhS1ZkT2ZPc2hkeTZOUXVTc25vWDdDeVkyUWdpaUlEVjJrVW5LVUJMOHRkMHRERE9zZm9aWHFNNi9WNHZhWHFrdGZFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 795,
@@ -11937,7 +11938,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1196136457/22097746135?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN01mNFFzOUZXKzNHRUpybTdwb3ZFWk84Yjl2VmdPek9PWWpjVUxWeWY4M2d1dGt1L2FsM3pBN3NSbmhKdXhzRFVLZS8xZVZKRkQzcXdMTyszMGRKSmFOUG5sT3BhaVNTb0lqMmhTYjlyV0U0bnRwMFRnT0JOcFFhOGN5Rm1QaUt3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 796,
@@ -11952,7 +11953,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/955956787/19398273677?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc0R5aVY5dHBIa2JDZUtUbWFhdVY4cVUrbDNpNjA3R1QzcFd4WkJjdG42TUZZWVpxRWE5R2doaE5mdWpPOEtiNnh1SkpCak15bTdXQ0dIY3Zwdi9WTERPeGtOb3lWVDRLNms0T0twQ3dyZnFTTEN5c05oZUtNOFVqbGhiMWFuck5nPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 797,
@@ -11967,7 +11968,7 @@ export const productsData: Product[] = [
     "location": "Sergipe",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/356938796/18797929186?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc0JsVkhlZFlyRlBVK0lSMUlDdUdnT0xGVEhQdndSdGIzSzZKREtqRjhYb2N0VzFzcDJUcWhlZzR2cFRYY2E2ZlhkUkwwT3l2U2s4ZjZqYlgvZzdxajI0TWF6dG4yUHcvOXRhQzhJeTBmdUZXODY1NExzR3BIYkcyWG9BcFBaTldRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 798,
@@ -11982,7 +11983,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1390876053/41703379277?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN01mNmhVVGFUVHY2TURuZWFZQWt1dVhGUW5rZmxrc3dhNWhNd1NnN242Ym8yTUtCQVVWQWthMTlFcFJaQVdJRGxOTU4zd1pXZHpjV1FRZjlaZEVyYy9LN20ramQyd1RtQXdKRjRqUHI3dTl0NGUzbW84R2toRkt4YzdOUnZEZ2NVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 799,
@@ -11997,7 +11998,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1403214375/22098708423?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNFhESTRDay9qVlFVdHRubksreThIRWtFdG82b3k3MGw0NmFQZ3F1R2pSaGJQZnpWRFlPSkxSUzdhb3BxM2VFTE9HSlFSSWMvZ2MzdjNwVlhpeUhHdEloYWl2T2dkV0g2RXFsNm8yRjhzclk0bUdITUY4SnBMb25BNzY5Rmp6R3pNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 800,
@@ -12012,7 +12013,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1417820753/40213880707?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEFrSUpWaitUS3NaQTFHTVJTQmhpZVMzRDlCVkNkSzZNdlpvN2Q5MkpRUm52ek9kbG51amU3RXc0NzR2Y3lva3M2R1ZaNUtEc1M1WDlkZFJJNkpROGNYcFpNM0NZQkxqK05IR2JNR0dOaFJZbXNtMkFacUpqQ0ZyNXphQU00ZS9NPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Casa & Decoração"
   },
   {
     "id": 801,
@@ -12027,7 +12028,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1534896372/22698743726?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWNkaUJHS2dKRXlBdkd2dG1mZ0psUEd6SmZIbzFqUHpVank4V25zODdHWVY4bi9hZ25xTkN2YmUySldlZmo1RmxrWmJ5bVl5bHJtd3B3SGw3bEdMdVlaczV6VE1qb0VmdVpCVjBEMDRuYnorYmJaSW1xRHhZZkpYSSs3ZEFTc2d3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Casa & Decoração"
   },
   {
     "id": 802,
@@ -12042,7 +12043,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/468703210/23392681094?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdEpMbTRxczl0Ym82VWJCYUFES2lPb2Zvbi9RbGsxTDhOWHlnT0tReDVEUVhGcko1UDh5VStlOE1abUlOdytqd0toVGFNVWF2M29wWmtTL0o0cGo3cE9LSWFnNlFsM25meXl5cGZ0T3Z6N2pNSjE1Z241N0Y0cVJVUzFPR2VDYklZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 803,
@@ -12057,7 +12058,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1105376222/23793403174?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVRBdU9zazlxT0l6c3VUSUwweHVJRUR5anJyd1pPeko1cy9WejdjS3dXNzF5SWpsLzBJdFRaOFNoL293MktlQkZTdWtBaDR6cUM2UmNxVmk4MlR3ZDdUaERLMWl2Sko0WnNuaktHNDhOK0pCSVZmWTVGaVpKUS9SbC83dlBDNFVJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 804,
@@ -12087,7 +12088,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/400477897/23396710160?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdGVsYjZoWmFsdmlqZWJ3OVo4Sko4SVpNT3dpSU9DbjZEa0V1dUVqbTVNSmtCSkI4azFwb3c0NWZVd1UrbEMzQmh2NGZaL1lBQjZRZmlKVEdCZnptMEp0ZlJmNzVkNzNUbUtZRWFSbThpL2VoOTNkVldTNHBKMkF4MFd1aW4zaGNJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 806,
@@ -12102,7 +12103,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/418205294/22294379835?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdTZTL1k2SzdLckt3Q0cxMTN2emZleEkrS2JuRno4ZzN4c1lWaFpROWlaeVVmQStTazZuV0hKbFlyVVVoNnJqOVdkS0dQNFVaZ3RiRVpONXAvUEJJdTlrRmh1REVLSVNpQmdwSm15SC8zaUJoVWh5NmNzU0hrME1aeDRMWTh2UjVZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Casa & Decoração"
   },
   {
     "id": 807,
@@ -12117,7 +12118,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1227824002/23394028564?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNG1aNFMyQ1B0b04wNGNvN2huVEV0YUh6NlVqYWJvM0huQXZtMVhWRW9BeG1UdGh3eG1UUWhiWG5QY0QvUitSNVBaa2lRdUlVcTNBUUxrWWxCOS9aN3NMMmV2emg0V01OR1RkdGRXdjhndmxUaFNQRENzdEVhdFdWU1UvcU5mVWw4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 808,
@@ -12132,7 +12133,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/524015837/22219638985?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdVMxM0ZseGdSU1ZSWFlJRU10SC83bGpYU3dNbjZlcjAzdXRUOGdDckQxcEpnaExKaXpPY3hRZUJZaU5jYnlhYkJ0Tk56TmIxQTJLOG00OC80VEowb012YlVoY1h2ZVIrQm5MeEUxa05QSU84UkNPcEgvYmZTQnpVMEYzYUV1S1ZFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 809,
@@ -12147,7 +12148,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/362859393/7472868414?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkY0tSanlKZU1BU2Y2RTJzOS9neUtnZDBDL3AwOWFVTkV5NUt2YXFtR3RyZ3NhUHYvbzFndTJ4R2ZzQjN6dU9MMUU3RlNySWVTek9udmR4Rlovc0VGYXJ0L3BzQ0d5OXZOZlVHWEtHbGtlSmVrVFNLQ3JDOVFXWGM4WkdvVnZjUE5Od1M3UzkzcXFrVTZZRTNtb1hvdVRJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 810,
@@ -12162,7 +12163,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/439461570/23697364741?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1dadjlLdEpQMUJWeFh3bFlicmlYcnVRV2VYVWhmSFkxMk1oeHpGZlUvNzBJd1pGN1VNaU4rYjZVZDRZWk9qZEJqaGgwMGlYMEQxSS9Ja0VuR1VISndwdWwvNTZseGxxT05HQmd5VldJL3FGQ21lb1E0MUFSeWQ1ZWt2d2oxL0hJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Bebês"
+    "category": "Moda & Beleza"
   },
   {
     "id": 811,
@@ -12177,7 +12178,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1407741836/23293549199?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNFhESTRDay9qVlFVdHRubksreThIRVNKTzZLT3h3cDJ4SXJXaGZWQzAvbUZSM3UxTTlxWXNMRE5JSHc0cG43dUJzMW9kejN5ZGI5USt1eUVmQW02TXkxYnUxUkxHajZVT3dTTFJ5TGZLNis4cDBxaUgvYlBleWF4VnA5Y1llTjhBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 812,
@@ -12192,7 +12193,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/955956787/19199664581?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc0R5aVY5dHBIa2JDZUtUbWFhdVY4cTZLZDE5MW1ZUkdqTE9kTzVpMEVOK1R1U1k3cEpLaHBkdmNjN21CVHVFbEo2UUdzNUM0V1dnUTBEWjFIZWFkd1FpRVd4L213UTVBT1pQQ05MdHoyNDNZZFNBOTcwTGt0U3FkWGhhVUtwOFNVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Moda & Beleza"
   },
   {
     "id": 813,
@@ -12207,7 +12208,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/293435711/22198086451?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdW55cEtkYnFCcjNERDNJcEhhUCt4Qnl5QUFVZVIvWVZMU28yWDM2YnBSeEVsMHNvRmxTUUcyMUJCOUVMZGJOZ0RVcUJIb2locG1yMjNtVGMzaVVJQUNoWFE3YkFVeTNSMjNOd0ZLUklpa1l2OU1scUNHc3ppa1FqLytvZzhPeVN3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 814,
@@ -12222,7 +12223,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1281426059/23798764639?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWNqc0xWZnFmQTlhNlJ0b1RiNGNUSGRMSC9pSUdYVTBJbDAydGhCR1JGUFQxYzVvU1ZDV1UyNEMzNmVKUm11ME9LY1hsUE5GbUZrd1YxYnFJWVI3ckUzZW44cE05YStFNGQ4M09CVkwvZ0kxdk53TENkWDhTZGhtbGhUZExvdjdNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 815,
@@ -12237,7 +12238,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/570502401/22291814559?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXNMR3VqT0pEV2E3c2sxTUgvR2Fqd0pGUS9id3RpS2s3RzFsYXMvbTh0UjNlQ1lOM0oxUEZYOE5lNUJ4RDRmVVlPcncxUkg3WFhPR1c3dmhoR1huNTlEbXVKNi84QWI4VkRQSjR1aHNzbXk0ZXlwU2hJUk1JY21IMVI0NGNETEI4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Saúde"
+    "category": "Casa & Decoração"
   },
   {
     "id": 816,
@@ -12252,7 +12253,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/999239250/22791590709?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdjdSUkNIZWF3eGJQK2YxbXJ5ZTRWclZXTWNyMnpMNFVPVElBU3RPc2hDUElVSXIvZlIwNjVjcDMrTldzK2lsQXRrZ0NRNGJjZHhpS0c5Uis3SU8zSXJGUzNuRWdLa3pmOXlSem10ajcvczhnVDFoY25Gdm5vbFRwbHYwblRVVW1JPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 817,
@@ -12267,7 +12268,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1274197348/22397614768?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNzhFZVJ4NGxLdFNvVzNTbHJ5SUtuRUtSOHl3RzdtWWJEMEs4UmhXUWhhbUUvWHBMQlkrc0t1S0w3V1RydzQxQ1lDNW4zVnAyTTdzZnAzbEh2eUI0cW9jMlE2T1RXQUFhUEpBcDJMOEVudUtZVWk1Zmlvb1MxOTF2Ym9OQUltZDFnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 818,
@@ -12282,7 +12283,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/483868012/10152804739?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdHFrYzlNa1dGa1k0dTQ3WHMxaFhMY0locUxoNU0rQUJpVklHZmQ5enJuaFZiVmRvdG5HL3l6eVQ1cGNXR3M5NWdIc0xpcEhMem9rd29UTk4zVkdScDhDRm92aHZhS0tJSGU1S0l3VlBkUU9tdTVlMVhBb3FIN09DcTZjL3FEdXpzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 819,
@@ -12297,7 +12298,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/487305243/23098387837?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQczVlb1Z6c3FDcWFEVjQzZkxreXZOdENORWthU0syeFpWOGVlU0JpU0ZuNkNyalg2YVdNSjdZRTR1UllXVVRrUEVpK1BMWEI4NnNibEw1Rmo1ZWNNMHcwY1JaMVhwdXBJMVRMaUdCc09MNnZaMVhxVStrc1BCdVBPS1QzQzVURGdBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 820,
@@ -12312,7 +12313,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/415213039/18776091118?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmluYlR6bzY0VHE4SHVGL1FJSEkrVUQxeHVoNWFpYVZoYThseUtuNGo3aVgzOUgvSmFZaVExdEJ5U1A3cEdxM0dxSzhUUzBiSzJNb3M4dVd2QzI2TWdhK29ObkE0WER4MnIyRnJoT1dTcGlUL1ZSaXVPbmRWcFJva1Z5NVlJYTBjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 821,
@@ -12327,7 +12328,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/307805620/23098368893?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdkNFRmxhSXFmbk5hYkttMFl4NkZ5ZVkra0wrUTFiejBqSnBQdXdxTVM2b21MQ0VsOFR4c0Y3NTFteXFKSk9BRWtHWklIWHIyVGNwcy9TSWJOTndsa0NrRnhJL09Pcmg3SzRYSFVwNkxXS3pWUFNrbjBHcmVwdEdZbklPM2h0Q0xrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 822,
@@ -12342,7 +12343,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/493208904/40872495946?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmhnMXFSTGhlbGdHeklwRHR0ZEg0NTN5REdNL3hUdkxBbk9OaDhRWEsrSlRhckJnbG1xSlhKbTRXWlV1cCtpQTNHWFVqblowWW90WkZYdlBlYitmajNzRGN3K1FwV2xrbVAxUkVGKzY0dDIzSSs1aWhvM2pJajVBb0tESk5mWTZJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 823,
@@ -12357,7 +12358,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/299604942/27123799517?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc09LOURCRHlFSElVMkpObXQwZ3ZySE85Vk5TTUUrTzhrVnJpZHV2dVBVRjNCcGx3bkxQQUJ1ek1jTmhmaHUyQ3RWQnpTRDBicmd4b1YxN01TakNkVktwY01kYithQ096RE5POTBNUWVlTnEyOW9uek5mc3pxNnloNzVDaU5McnNVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 824,
@@ -12372,7 +12373,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1280640240/22898947133?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWNqc0xWZnFmQTlhNlJ0b1RiNGNUSE9zZVBsd254S2orbHVqUHhMUVdUOUJyWFBwUjdIUkh2NUQyQXJHU2wxSWw5TzZTZmNWbHVVMVl5T0dKUnhlZDBYQ204Tmx2ZHpKZ2krMTk2c2h2UDhLTXZmamkrSmIwUE1PRHg0T3BFbytzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 825,
@@ -12387,7 +12388,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/849085620/23097460377?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdi9hdW5lTC9pY0FGQW1FSERzamhnaUFzR09RaDh2M0NHdENFVXpMaWErbm13M003dVpqclR2MVVKK0dqVmVKa0hkQnZrMVIrYms3MmRGY1A3dVBXbzRMdkZUalZ2QWVhanRBdTdwOUJ2NEZIb3gvM2E1ZWtxb1hmcUpNZDlJOXlzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 826,
@@ -12402,7 +12403,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/487444734/47101593530?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQczVlb1Z6c3FDcWFEVjQzZkxreXZOdGd1UHJ0c1R1ejhnOERUSzZFTW5tRDZ1YmJ6Ull2MDBEL2dncEVWUmYzMjg5a05DVnlPb3RkaGpzK1FhUHkrd1FlVno2QnpoOTFFVXluNDVvVTFLMUdFR1lvRmc4a0JlNFAyODZKUUxZcmhVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 827,
@@ -12417,7 +12418,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/296363855/22197259401?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUNnTGg1a0xWRlJGb1B3SytTbEQrVldteE80anlxZzBqMmtScFhaeTdGNVhrRys5dE9pMFFaSVY1OXVXdlp4RnltR2lMV2F3N2hVekwyQzBIcXhodnBBQlRtTkxXRTVhUnpLdjR6NXBzclFKRGNNMDlQVDFsckpHR3Z6K2FHVEZJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 828,
@@ -12432,7 +12433,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/386629788/20897726624?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdEdQNi9KdENMRFg3TEZKRlNqME1hUlVGelFJYThwVURyV3hkVmx1cHZMeEs1VmVxelJkSkZkQUdteW5GNVV4QVc5UVhYZDBtaUlwMDhZTEhRNVlMNU1PUkthdjZrelRZYzhQRVQrSkxhZzgrWCtZN1RVUUFqcjd1MTJRRW96S2xBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 829,
@@ -12447,7 +12448,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/530370669/23691232955?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUNlU3pEdEwyejZNeFlhdWwxNngzb2VHYy9OZGt5R2pURDRYZk93UE5BcjhQL0Rxa0JMK0tMc3dzOXd6dW10MEJ5OEFaSmM3YU1kZjBrYzcvS3d5ek1LWVlYTUd2YjJjL3BvdS9KM3owdDhUdmdrVHFQMk40akI2SC94eEFBTitjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 830,
@@ -12462,7 +12463,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1087983137/22998317084?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNXlpcUpVdHpzVG5Rekp4clVZb3luMjVkM01RbUtrMUUxZHZ5dkFqL3I2NXJRN2ZJZm42Y3Zpblo5L0xPVVZjdGZoTUNTV1Jnc3djZjcxSDZOZmtnVXdsa21MKzNOSzdxWFZKV1M0aDBxUHlkVDhrdW01M2hOa21aVkd5Z1ptTnJJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 831,
@@ -12477,7 +12478,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/640413729/23204034332?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdkZ3aVdVNFVhbjZleUVuSEw1Nnl5YkdDVjhSQlN5eUNCZXVaQXVleG1hNEpKSit4OCs2NmdiRDlVazFmWWJkeFdRclJmMWR0ek4vOTF2K2pWM1kyaHJEUmVKblcrSlU3NE5aTXIvTm1DcWcwUFJsNW5WZmhSVUhTY2NGY3dDY21NPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 832,
@@ -12492,7 +12493,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/265220244/22697463891?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdFhHVCtRb3U5dU5jbkUyRmEyNzY2b3BHeFRoS05HLzBWbEIxKytkbEw2c09vNVZFTVArZTBBOFhPQ0xRWkJCZUllV2c5a2puSUFZL1VTZlgydVhsN0E4aXBFU2k2aG9DTm42bmhYZnE3Nm9iR2RnYVZ3VndVVTlQcnFVUnlkYktjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 833,
@@ -12507,7 +12508,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1311844091/23299202764?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEpRL2FlUlcybzF4QXBObW5MVjVGZFVCeGxydkJZc3ZybVZtYlRYSjFwamJXRVV2cUNNeXFCdFlicTBBRml5TzdaUzVKaGVmZzJXVmRrZVhVdTZnL2RLeHlBdnB1RmpxblNySHJ5dE9tNjZDTEtybkRNNjgwVzFVM3ZnR3EyVmRNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 834,
@@ -12522,7 +12523,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/293435711/23198512588?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdW55cEtkYnFCcjNERDNJcEhhUCt4Qm10YkY4NFBybGtFbUpBYUU4aDRyaXFVeFBnN2U0bUVLbHhjaVNkN0tocFRUT04rTlJxVSszUjJOVTY3YkJLVVBqaURUT3Vvb3loMFZ3MWhXRUM0UGxFSmFtVmxROEZrb1VEeUU2ZWZkN3g4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 835,
@@ -12537,7 +12538,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/375201738/19697881262?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUN3dnpTV3pTSFZRRHVlQWFEckNQbTFjKzlnMVdzSWl6QllYOG1oVmYySDBYQW5uMUVpc003YXhWa1Nnd1FMMG5nbXZXMUxva2dJcEhTUnM2NFJ1N3V3SWRaeTBXc3IzdXpoYnRsVWtodE1vYXlVRlN2TWFURVhwM2ZXaGhLWWEwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 836,
@@ -12552,7 +12553,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1126924367/23597674059?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnNncEZncWwwYm0xN1R5MnJXTThvTUY5Wkp1TWt4TDd6SWlERlF6azZ3Rm5jN1ptTnJ1cVVmd283dXhXSWt4Zk9vRlJpekR2bGg3MEdnRFlCbER5cFVvNnlMZUplZVZQRS9PV2VXbTBCTnREUE5YNURNN2RhWEZqMGpQL3RBUTJRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Moda & Beleza"
   },
   {
     "id": 837,
@@ -12567,7 +12568,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/344407620/22901849806?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3ZNcGV1MFE4c1huVkdHNFFaOVhZenNPdlk3OXJ2Q3pQMEpHbDJTMWs2NXNIQ2hod3RBWkg1VGxlcDlTUVh1ZUxXQmRxbk5JZlBVUkpTaUwrSERzZEdRd2M4eUFnbDZMRTBlejZEcDY4Y013SExzUmJnQ0pkMHl3S0IyUWxUUTBRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 838,
@@ -12582,7 +12583,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1191715089/22992913047?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN01mNFFzOUZXKzNHRUpybTdwb3ZFWlRwdWJ0d3AvcFlwRTdXZ1lGMVVrQmxVM2wvOXdLWGhDNzByc2xXN2tjQVVJRzFMMy9iSkJHZFYrYTBNYVlHRm5RQnQ3MUVCZGFPd3NDOHZHWU1XamN1ekxVc3V4cyt6UDd4dnV5dUZ6eVVJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Moda & Beleza"
   },
   {
     "id": 839,
@@ -12597,7 +12598,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1397076460/21099760808?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN01mNmhVVGFUVHY2TURuZWFZQWt1dVkvS051R0FPTjlha2pIL250R0dsclEyaytoNGRIcUxDd3oyWTFuUndWbm02Wmw0Sk0zZ2l2dnZXMkE4WEJQZU5zNVVnYmRUQzljNVM3Z0w3U3A1Z05FcjdaMFcyYnk1cmg5cVdybzIyU0ZNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 840,
@@ -12612,7 +12613,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/409268593/58250008777?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXZ1NkNLTjRvc2dSclJJZUpwS2JQWkJsbzRzeW5KZmRVSUNkN1UxY3liN1BoUUVROGlSdDE2Qm9IaHhoMXcvUXRNZXdlZUFNZUtFYkR6QjUyUzdScXhQUFoxL0FBdld2a0V4MWdVQnNad1g4alBJeGhiNHhibE1aYUNlYUI2ZXc4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 841,
@@ -12627,7 +12628,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/305234794/20498267237?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1Z4b1NWbnJGc2ZjdERkVSs1eVhYSVY3dGd4cXI0eFdKcWE4bE1PdlJMVHIxZ0QxMmFIZzIzK2xuZVgwdmdLY2FqNG1VUkIzYXJrYUpwQXFsWkRFd0xyWjZSZFgyczhGY2JiVHN3b0NzaWVjcWFNKy9nU1BTZG9ab0R0ZmpFODlRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 842,
@@ -12642,7 +12643,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1534896372/20198262806?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWNkaUJHS2dKRXlBdkd2dG1mZ0psUCtKZXJwMHZrbnJnS2dwRGVuSk14YUVTRHV3Y1dNM3RZSkhUZmVHOWVlbkNZL0tMV09rc2tNWktaejJLNWFVcjRnTDU1bXh4MDN0VVRtOERJbjhQQUZraVFxdzBkbVVORTI2SndrRGFacFU0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 843,
@@ -12657,7 +12658,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1405493675/22594306912?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNFhESTRDay9qVlFVdHRubksreThIRUdnRks2cUp6OW01WmVnYUZsNU1IQVJTdmYvRDh2bXpnWmZ4R09NSGg0VkFqeHViMmk5bzVUM1JJa3pXSzFvSExTSllOT2RFcm8rZUoxMVB4d1Fzb1F5bGVCSTVNQWdyNGZpQ1pxY201UmlnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 844,
@@ -12672,7 +12673,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/633734514/58200550666?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWp1c2cyOUhNYjUwRFpLUkNvTU8vQ0NWMTZGK1UvZ0M1bHpMazUwdnlRb2gvdmhEbXpsQUQwbnFaeXZTTkgxWFBxU1Y3Y0ZsYjhEVVVOMXE2eUtRS2hUTXN3S2xMVTNXaFh4RlFXU3dnVm83S3U0VGZTdy9zTWdkN2FWdU15d0dvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 845,
@@ -12687,7 +12688,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1242218903/43422463744?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNDlWUHdIbVgxdXFUSEVZTVNaQ1VxNkxkd3UvdTNhSGRxaGY4MDJEbzJ5TGExbzR6cHZMeXg5U2d1dXd0akZMRmhDZGtuMnZzUERFbFgrZUJkdEtJOWxYdWRualFyMExXNnhiYlF3SFdicG5kVWgrZXpwQytKSURGNmp3dlhoaEFVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 846,
@@ -12702,7 +12703,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1108546826/22594277226?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVRBdU9zazlxT0l6c3VUSUwweHVJRWFLaWJqVlNkVTdZdVc5SlZVU2x2TjA4WWN6SGtxTUdzM1g3cUZKc3IxYWVBOUx2T09tcXZ0L3l5dVNFRXJzdGd2SkdOUU45VzBzanJkcVdaYzQ3cW83QWdQVzZhM3pEL25SSzl1RGZWK1RnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 847,
@@ -12717,7 +12718,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/973933899/23835639542?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmhkMkR4NXdGZHVOSVczTWI4bVRHM1A4SEROUDlQd3RQSEVBQXV1ZGlPeEJtejBIS3hlMkdDb2JTN0ZVWDdEN2wweEh3MmxKdEZ4amd3c2lqeHNrclFuOUZkb05FdE9kZzMvYUVyVEdHVTZYMndZaVkyNmJQb0FVTmhKYTRLL0JNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 848,
@@ -12732,7 +12733,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1459307687/22198556064?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0lRanFYdEZNbWtLdlh3OWlUUVBCY3VzMkZoWWVXK1greWJSMmhRUUVRMmN2czlkTXpJUFkxaURqY0kyTTN5U3huWlRiK0JXbzBhODBsdkVpa09HZkJJR0hOdEJNcWNSWXVOcmJFL3ExaHlHdEpuWmhMa3Fla1NSTEFhaUtsTjJzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 849,
@@ -12747,7 +12748,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/436723291/20197689113?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1Uwa3hLOHExZXd3cG15aTdBUHFFTkkra3BvZCtnZUQ5cVhBRmk2ZS85U1pvd3VTN3JaK3FyL1licnpVeXdyQWpINUhtWWpsNDhkMFdGTjYvUVV2dTdLdlFTZzArcUtjWXdNaENIVERoclFDb25TK09mdXY5blpzOXRydzZzSzdZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 850,
@@ -12762,7 +12763,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/923521995/23993410953?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdm45NmsrZU1lU2ZEYUNOaWtXakFBSlNZVEpScGxFWUdZYWZPejdkVnpOS2R5ZWNHNTh4cnBaT3Q0Znd3WllIY3pjdXlhTFBmcHdUTm5EbXZJdFphZ0ZiNXhiWDRQTTdiclpyNENRemtmWWRsUG10Z0lLMGpQbDdONDE0cjduNmFnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 851,
@@ -12777,7 +12778,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1577082066/18298300169?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1lxZTV6UUVYb3RlQWRpOUpoak9sclk0Q1M2Q2dRelZDdGdNZEdZV3gwVUxUWUxNVjJBRWFFc2V6dENzSmROVis2QWpORStHMUlZVUNEOFh1SFhSeThYN2lXa1RzU0lxaEt5MWRoNEVMU3cyMVVOOHVFb3RWNkJUMk11NjlGUmNZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 852,
@@ -12792,7 +12793,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/306509229/22898684440?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdnJtZngwbzkvcUp6MWsvOURPY3lvN1liZkhkR0lDTEcxRjF6MkhKSVhVOEpUUlNGVDdpb0dYNU1tZWdjVlgxbkh6ZWFxQjBqL0tLMDZIK1pXdTJxQnNHM0FtSkcyWDFrTG9wSDhHYy9VUWlHOEV2MEJiRnpvT1J1MnlRNGZXdmpBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Casa & Decoração"
   },
   {
     "id": 853,
@@ -12807,7 +12808,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/608831879/23093639917?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWluZVRYc2RvQnlURVplMkdwcmV3QWtnR09mVEt2OTRlUVB5WmFZZWVSbEhDMnhlblNNYXVRS2VvM2dTelk3TlA1MXlYMUZ3bXVNbVVmK1Fnd0tucWtuRnM4WFE0dVhXUW5CMHRMNTFIMVRGRjBHT1RtcS9lZGhOczhjbzQraHQ0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 854,
@@ -12822,7 +12823,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/444481351/22399312272?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmY1T2s4TnBYb3hMc2M2QmxXSksrSmM5Q0hacmdraXhBRjhQKy83VysrKy9zUlZHN2xUcnZDRWdjOEY3RElMelpZZnFIazVqVGxNZWpZZ1dwRjJDM3I3enZNKzhmcUtUZ2wvSWlHMUZjN2FrbXV6WU0rK2NXOEZ5ZjNpN0c5c1ZjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 855,
@@ -12837,7 +12838,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1454188932/23294336052?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0lRanFYdEZNbWtLdlh3OWlUUVBCY05YLzBsRTBzZzF2cUlXM3loZW91Y3lKTGd0dmdCWE5iazlKcGpFUytIZ3IzTHprUGtVTEZzYTB3YWtLZ2dtcDR6cDF1U21UaGVFSVU5VDRuWGdhdEJUSkJTOEJMeWw1U2FWbTU1d204VlFzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 856,
@@ -12852,7 +12853,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/979730489/23897176041?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUhWMTBkUnErbUVvMDcwMVMrS3VoMzBNTFUwZTdyajFkT1MxanNuWVVZdjdrOUk2TXNYZkkxUGRaQzl3YWNvLzZXSGxMdkZhb1F6OEZ4VUVVRjVRbjBJTEsvdDRobEtOVmtmbGJNY3Rpamo3dlVyTGg0UjNFZW1UQlA0eXREeUpZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 857,
@@ -12882,7 +12883,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/931541390/22697620972?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdklTemhlUmtUaGluWDhybjFrWEN5dHlzSkthakxNYW5nbFJlNHBzZjlKelpGUGtValc4emFrcC9Da0FybXVlZTFiQmpzZTFCVEtUR1dTNE00b0RuY1ArV0x4R2lsM09JZ2ZtcmZkTWZGSzluL09IclYxRDg1QU1UYVJCUWo1cmFVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 859,
@@ -12897,7 +12898,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1636682148/23794618873?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNTVmUS9CZk9FbXBXL2l5cmxuVFVOaExjOXZsSE95TzhEbmdoUFZVazhKQWJycVQxcStlS3hlZHRrL2g4QTZGMkhOVGlmQkNvdUtibk9lcVBid1doc2NrRkl4eHdMYXVZTUVDb2ZCSmZaNzdJZkRDT0Z4UEZZSUlCRE9OLytnS3RZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 860,
@@ -12912,7 +12913,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1521881458/19699841961?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNHV6MnZ3ZU1ZWjZ3eGdVVlFiV1FrRWUvTVZ1TEdxcmJnYUhJbFFlc1BPY1EzeGE5d1NWN1B2Z0UvdzhFSFZUZSt6WU9MM0pPODdvbXlsSUZDcWRyODlTUUpSUktlKzdtSm41eDc4blpSbS9Uc1BUdjBSbVVYcTZjQjNNN3RrZVV3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Gamer"
+    "category": "Games & Hobby"
   },
   {
     "id": 861,
@@ -12927,7 +12928,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1321752074/23497982620?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNTkrc1ZUUkJCVzhDNG9GeUVWU1NleFQ1WTdZSzVoZDZucERMbW1ibVdqS0lrYi9nTUUxOHZCUzBlRHFZNklTWjAvYTdwdFozc3pONjlCTldqL1cwTlZ3dDc4MUJuNnFYRkJHR1lzdm9PVHJYeittbE1rcHJ5NENQYXh4dFVQTzJZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 862,
@@ -12942,7 +12943,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1119548048/22793849188?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNkpIUFF1UVkwQm5VVS9SdnB2dnJJQkdxZE80L1N0ZHp0dUtPWlFkTE1mMDRWWW1jU0hyT3pvb1dxVHBqb21TY1VSTlVsKzBjSUFpaWdHL09DdXQvRHo1TW42OFFzRnErVEE0RkhvM1lCL3BDYUhoeWd6dGhxQmlEVU9kdE91MWkwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 863,
@@ -12957,7 +12958,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/629805123/22396710686?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdm1yODZkak55K0FEaW40MzBPQnpEbXhvQ1p2bFJPWjJkYlhQdXFMVEtIMHBOaWlDMGFRb3kreC9QbVRjYWhRaUVyNkZPU2c1L0Q3aTZuUTFTTEkrbXRsbWU2ZitGWW1KWkxHQ1pOOThRWFkzb1F1ekhmZktzMVRPajNWVjBPUkJzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Bebês"
+    "category": "Casa & Decoração"
   },
   {
     "id": 864,
@@ -12972,7 +12973,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1408338065/23693727464?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNFhESTRDay9qVlFVdHRubksreThIRUdlcEN3RFB3a3E3YVJMOTNCU016dFp6MTlscU1FYWVQOXBON282QnUxdzI1cVZlaEUxNzV1Yk1lbWR5YVMvS2ltdUluRUQrZTlScXVvTWZPNGlGeVpKYmkyTXVjRHFGVHdKOGJKbWtQcE9BPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Pets"
   },
   {
     "id": 865,
@@ -12987,7 +12988,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1530960520/23494617982?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWNkaUJHS2dKRXlBdkd2dG1mZ0psUGpZZngweWtzVzQwYTcvWVQ3cmZ6eEdnb2lDbi85OGNhUHNZQ1k0bzhJOWo1Nk1xYUJ4SXh3U2MyL0dKUXdHQkdyd0VyTFZDVzFIdGxiSllsamF6bzNlOSt3TUNWWUV3M0JPQTFjclhQRFVZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 866,
@@ -13002,7 +13003,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1310348532/22193191638?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEpRL2FlUlcybzF4QXBObW5MVjVGZElmUGlWblVrMkpKU3A4ZitmNVc3UlVEbUNDRzRKdENxL2R1YkxOaXNKOEhWeDdPcXZSVTl2eitTUFlBZ3A0UkZvYitpMFlkSkVTaE13NDJlczZyWVdDZ0dQK2NZL0EyZHRnMzE4eWg2M0Q4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 867,
@@ -13017,7 +13018,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1357069533/19398295877?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnFlajJWZlQyRjNuVGtydksxZlBaenA0ejgwbks1K0VpendKRzdQZlhNVy9xZm9WUjZEMnhLVjdlWndMOWlYWFFHMDk4T3hZcDY1dnZtcEFHSi95SHpvYkZRYlJLbUhuMDZWTXR4QmdseE1QN1BvZnlyVU5HYkVpL29LeEtRYkd3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 868,
@@ -13032,7 +13033,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1007379684/23892379352?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1ZpUFMxL2o1N0RPK0UxdWl1N3FMVjZrSWhLWmVER0h5NFFockd6MmdJZ1NtN1BLRDEwRTdOMU5HMkI1TmhMM2c0ZHl5SEw0bWdHK2R3aHBQRkVvNFRHcGppT3l6cEszNnRERTNGNEI2a2ZIWjlIS25qcnNUOC85NE5BMUZWN1pvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 869,
@@ -13047,7 +13048,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1210495282/22893959313?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0p5WlN0ajFLTzdqaTlQaERUZG41M2d4SzlIeHFhbXNtLzJzb2cwZzNQNVA4bUtKUU8vUHFGYlp0Vm5BNGUvenltcXU5RFlCRjY3Tnp2TmorS0s0WEZvTUVOYWNYeVVXZndCSFdVeVE2UUtSeUxxNnVMMkhZd1plaFk1U1pwak8wPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 870,
@@ -13062,7 +13063,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1577082066/19998289613?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1lxZTV6UUVYb3RlQWRpOUpoak9scmZXaFZ2U0YzRHFVcG9iUVJLcTRQa3dBdkloSVoyR21YOGtGRCsva21NenBJMzU2d1V0d2dKbDllb2VKcjl5dHlMWituMGZPRUdreW1lb1gzWWcyR1ZFeWgrUjY1RHp6REZSMkYxb2kzUVpvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 871,
@@ -13077,7 +13078,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1303713502/22097667466?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNjBqS29UNHNHQVlWREc4aC9FR0ZjRDJCQXZ0RjdnSXFHSGo0b2NWcnFvR2lYNHRaNUMxKzZsN28vcG5UZDlLYXlWdnZidUVKR0NSMmRkOEFmT251SjN3T3NRQ3dSai9jV3g2L2tVc09nOUdSQnRCNkN1NzVaSUg2ZDhsVkorY2xvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 872,
@@ -13092,7 +13093,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/594157579/19699383016?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdHRUbktHK2ovUWZRS2NpeDZlZDdkZkFSYlRsbXc2RFlRQ1FrUmhyZ0J4bG02RkljOTVyNGJjdnJtTU5kNXFPbkFDZ0NmeHRhaEkyRDBJN1hjdnZYUjNaWEIzUTBkRUtFcU9UanpCdTdqekhlRUVyVzZGVGNkcGp4MlArN0FvU1VRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Pets"
   },
   {
     "id": 873,
@@ -13107,7 +13108,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1569804599/23494280787?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNW9hM2xHeVpFYURIRUdOL3MzQTAzeGlzU1VIWGJwV1V1ZzFwUC9rK1A1QWZFdS9Xc04vcjQxbVlDRmhEY0xMWHd5R2pLdDJwSFUxWFVrR1g5TldtSWt4OWFVck90Q1l1MzNiN3VzRi90LzJnaHA4aGlqRUE2bGR4bjZnTE5FcXZBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Casa & Decoração"
   },
   {
     "id": 874,
@@ -13122,7 +13123,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/294809424/21798266290?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdW9uR0NOeEljb1J5YlFjRFd0SUhCRUtnUUFaSTZjUnBnOTgvMURQa3pzd2w2d3ZXTldRRG9ObjZHdktQQnlaaXp2Um52Vk1JNjBPNHFXVUNSQkVBSnhhVWU3STBXK0pxS1B5UWo4WnBLWTlwTTBXYTNQRFF5ajkzaGU2dmJRd25BPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 875,
@@ -13137,7 +13138,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/464145198/22693500306?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmZvUXQ3NFJOMExDMUdUTnhsVHJCdzNBVXRyR3J6V1lRaVl2TCtxNHJHWUE4SVZnS1dMZ0JSSGVqT05GMS81VFQ0dWdvd2R6K0N0TU9yY3U5NEZXaW14ZDJJQngvSldGek9KZm52VmFUWTdZemN6Rit3NE01V1d5RWRLM1RzV0JnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 876,
@@ -13152,7 +13153,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1534910933/58251514807?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWNkaUJHS2dKRXlBdkd2dG1mZ0psUG9kWGVEV1g2NmJ2Ly9SRnI4VXJ1NUpSMUNkU01SRlFneGF0WXV6SUFIQzNqZHhRRGlwUHFSNHpHNWZZdkN4YldpOGRUNCtac3EyR3RvK3RIVTBCWFg4VzFOeDRiS3hUNlZZTEhoM3VHQnVrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 877,
@@ -13167,7 +13168,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/362859393/58201184997?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQczMwdjVxNlkrdUtqREdZNVg5dGlLY3VQN2VwZkdWa0ZXdWhZTDlSZ1hSTUtnQkNqSnRHNXVPc3ZJTkRYVzRENm5adllBRHBmMk5FRStKaDV6Z3UyWXlsQUswNUZDVzdRTmhESkpGTDdSdENORnRYTU9XbW05U1FmT3laVDNEQWlRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 878,
@@ -13182,7 +13183,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/406067718/23092618205?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdHdlZDRIZlV3Y1NwTEorc1p6NWhsKzR4M25qSmpJcUxmQWNITlVidlF3ODFzMzl3R09DMTdJS0RLd08yL1pBK0FuMGgrcHA2dzB4SVFHeFlkcU5ZRXlBTEVBYWh1R25NbGdqUGhvVUJESzNzYUFZQTlzRmxwYVRHZFZUZFlFaFJvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 879,
@@ -13197,7 +13198,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1604293027/23098901216?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVdYZVJwMHhRL1JOQ2k3SEcrRmF6dTFHM2JiYkF2YzRVVHdsdlo2ZGEyNXRwaUFMWi8zd2RTRHR2Vy90R0lySlVwZXBlWXo2b1krSERYSEFTNi9QMHpvNkJxUE5oTXpjTkp0MTZGZHhtM3lEY0M5SGVnWkxOZ2JtOUFubWEwRlBRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 880,
@@ -13212,7 +13213,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1459307687/23093966811?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0lRanFYdEZNbWtLdlh3OWlUUVBCY0M5QkVneEI3aHUrRXR4K0N5NE1saTNuRFo2VnVjcHJiMUovZEkrRmNFMkNZKzhaT1U3dzY3bVhSam8yUUNHcUhHSzdEcEJoV3lRWlpMMzFOTDhvdVBrMHE3SWxxUFh3R0pyUDFRUVpYaWJnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 881,
@@ -13227,7 +13228,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/988030305/20299321793?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdlprZS80Y3RQNVZuR2hWWE1ISGN1bGxOdnF2MFZVMnF2ZVlBbVVDdm5VcUpEVVVNRjJSWnBuT3h4SDZLNWw0dkJMWFE5QUNMc1lMT2Zpd00zT2hhQldwRXJCUHBRZW9yU2szK1czVFlYMC9aNFVqUk1FdUQyMVd0Wk5aL3dEbXNzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 882,
@@ -13242,7 +13243,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1481309741/21398267245?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNk5ZT1dQell2eDl4bW8yNkZpTjAyWXgwS2tzeUd2cEdCKzk0M1ExaDh4aTV0bG5makNrenk4ZEJqREpBOTE4SWtKNWxPSVkvVU9KWE9WMVdsZ1lrcVlHdlErNVJPbTZWcHNIT1RNeXpadXo3UHJEam1PbEx0SG92K3FPOWh6QlJFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 883,
@@ -13257,7 +13258,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1107305320/23893627637?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVRBdU9zazlxT0l6c3VUSUwweHVJRVZINDBTRWNRU1BId1lyYmVFU0xDZlVNc3NyYk5jVlhmVFF2Y3c3REtRaWhPNlhmVW81VlNDVnI3Snl0U1ZiU1RLTEpqZzRhdGE5bXBSdHYxNGhKSTUxcVovcFZSckdESGVvbnNpNFA4YmR3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 884,
@@ -13272,7 +13273,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1482886728/23498424226?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNk5ZT1dQell2eDl4bW8yNkZpTjAyWXVtQjRJNWNTTjgrT0NJVnc5MUFSUnBMU2VQc25OeWYvcnRiTEJramxnVSsxK0lxSGN5Z1RadVNFSmhyRlYwbTNrVXgwSTE4eWhPR0lCdktmWGJBUWxRMk10TENZTzhJVDhaQ1R2d21idWVBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 885,
@@ -13287,7 +13288,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/332667864/9715263398?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkY0tSanlKZU1BU2Y2RTJzOS9neUtnZVRHVldEQ1lEaUJBb2IxcFBQc2o1LzdnSTc5TDdCUEpSWkZPNklVNW1ESkd6TXJqTGlKMy9IR0lYK09wM0luOG1TaWtwQnFoa2JBSGRQazZMdTYzbzM5WWJBeGowcTJzSkJSUEo2UllhWVFSQ2xCWis3Vjd0aUcydXBTRHhQYlRNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 886,
@@ -13302,7 +13303,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1190283987/19398261550?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN01mNFFzOUZXKzNHRUpybTdwb3ZFWmpBQU5vOTN6OGdKbEZLdm5hYmhzZlEvZXR6bW9GSmRGSytkd3Q4ajc1VXIyNTE3RENwL1BmMFZKZUNtcjJ2TVhVSTcrTW1LWkpqVUZpQ0dIbDV4OW9WWU5pTnl5VzRDd0lCcFAzM2tyOFJFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 887,
@@ -13317,7 +13318,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/398928798/19297786196?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdEE4SGRnZWNwRVljQjZsV3BaeEtEd25mUUl3TnVxR2hISWlWcDg0OHFIWm5PUGNySVV0RnR6NVNQQWgxM210VGtQdlJPZXltaW1VaVNrS2lReXZ4aTFPcSt2SkxOZlpDeUM3NlBDWTVlamRVUlFWaUpzNUNNWjVnQmt0ZEhwVGU4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 888,
@@ -13332,7 +13333,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1541959186/58201673220?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnVJbW5vUmJMVEgxNENmWlJITkRXK1pMU1hpdVlzSzI2dW9PeEh3MDNhT1BHK0J6dkFrdkNNbHVoV0VDQWxzSHNrZUVmYlE3ajgyVjBBZUV0a3pnRDNweGo3U3RqeUhCYWdFSGYrc0tCdzdxaTU0WmJoYlA0dFN3WGw2T0NXRDA4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Gamer"
+    "category": "Games & Hobby"
   },
   {
     "id": 889,
@@ -13347,7 +13348,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/329660814/23793806998?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3gyV3VCc2ZrdXJ6RUV5UFhHM1pzbGRYTnExOEVzazVoQUhzNkQxR3lDamM5Y2JJVnBJTm9WelV6d21Za2V4NWhYM1RoRE5MZ3E1QzhUZGRDYmhVeGpwbUFhcjJXRHJwaGc0NnUvSzJVQW02RUt4dnVnK2NLTGpZcU1KMXZHeUJNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 890,
@@ -13362,7 +13363,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/333584116/23094228420?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXpxcnMwMVM1TkM0aEFJSVlvNFJsWVd4a3FlK0dubnFpZkwzeEJHdlRjK2ZVRmxSL2dydFpPaXlpZ2VVOUJtV0J4c1d5VFlMWnB0NFcwNDFKZklBeUVzN2dYUDJRMnNMNW1JM1diSDdXR1M5TEJjemtEN2FvUTVvR01mcVBNcnNzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 891,
@@ -13377,7 +13378,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/462393902/20099862163?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdVZIRlkrZS9uNE01NzEyVkN2bWVDWVpFUVlrZzJUbE0zTm1vZHlqekZqMzk0dTZIOWo4SHFTdlpySGo5c1M4am1hTmg2ZmdqdGtHNnFsWENDVWF4OHlZTlljckNRa3Y4eWZPNm9KS090endIYVMrakZIaFNVdEN6STBYNU1VVlQ4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 892,
@@ -13392,7 +13393,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/979724994/22396125488?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUhWMTBkUnErbUVvMDcwMVMrS3VoM1E1YWFsbWdseW0zdVhRYXBrL2FJQXB0K3pJNEI2alIzTk1lSGg4RGoyUVhqSnF5N3htNHlYTTFveHZ3TVNlcktsT1U5RmFOOWVTL2pvRDdrYlZLS1Z2TUo5U1FEdHlnRjVheWkvcTdrUjJnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Pets"
+    "category": "Casa & Decoração"
   },
   {
     "id": 893,
@@ -13407,7 +13408,7 @@ export const productsData: Product[] = [
     "location": "Goiás",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/253373415/55403861419?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1FKTWhMRkdpUXgwQlYwWjZuV3g1dGJaZDJoU05tSlVqNDlxcFgvdDVrVGdSUVhjM1FXZ3NobDZTdktPcU1VTW1WRk05UnRjbVVaY3g0VDVuNGxnT0tLb2R5M2taK1VZUmtvVDRPVVBYL3pQZmMraHROcTlrV3VGdXdRYkpISkkwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 894,
@@ -13422,7 +13423,7 @@ export const productsData: Product[] = [
     "location": "Santa Catarina",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/882785833/20154584414?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQczRIakNwZzdVM2xBMVNKNnJWWnhkWk9DSXRVdkRDaDZFZTRUTVRuNWlvS1ZCVzNzczRoa2o5NC9UUkVERDdZNGszY1krZkFRTFZQd0hZTFd5Mjc3a2ZmM3Iwc1hlTmI3ZkFZa3lwUjczRmRFYkt2UzAxTDhLdmpDcVAraG96b3YwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 895,
@@ -13437,7 +13438,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/483403330/22894638114?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdHFrYzlNa1dGa1k0dTQ3WHMxaFhMYzJ1QTNtSUZaRnhzMUdOc3pmSVl1YlltV0xLNkdvSmVmTExORmhwOFYrZk9XYk40aE5wWHJ0UkhJM0p6Y0FJSjBBMUNORTZBSSsvVGV1dnlONFo5YnY2Y0R3em4zcE1ja09iTTlZckc4cXpRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 896,
@@ -13452,7 +13453,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/293115208/22097775744?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdW55cEtkYnFCcjNERDNJcEhhUCt4QlgreVVjUURQM1RydnFzV0ltYS90YldXMFhRaVJSSHlGUGRaQmQyMUlnTk0yWTlGem5tVzFveWdld3dneUdDaDR1T0JnMjFFNmlQNkx6SDI3TnB3SWtDVnFWQzVRTXFqRzNsNlI3bnN3SldFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 897,
@@ -13467,7 +13468,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/394731864/20199199070?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdGFwWU55MEl3bGo5cHhWZU01cmFncEJTbUYyeHA3cnNsSFFwNXAybVZIbmJrSUwvYThOOU85R2diYU1FNkpuWC9aeVVRVWZLUnRqWUhpbmRnRVROUVZOQjN0MWVhQlVxU0dpRzhmR0FVZldtT1pLNHZqdXpCQVZrTHFSK3RLL21zPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 898,
@@ -13482,7 +13483,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1242371262/22998459466?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNDlWUHdIbVgxdXFUSEVZTVNaQ1VxNmNEVXlpSHVXa085TnhDZWJhbjJOZWx3R1lJNmhQQmFselo5a2RESnRvZ05tWUJrNUovQ0VkMDlta2kwYUFzV2ZDVUxKM3dyTTltcnFlclgvdnorbTIzRjB5czVDL2JmeVNYMHl4RFo1OGhNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 899,
@@ -13497,7 +13498,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/972515018/19776785575?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXA4Y3I5WUgyTTFZbGJDQnQ0ODJQMGJmOGdwQjk0ZWFiRVUvcStEQlpBd2RwZmV2ME1WbTgxQjJYWWVJaEM3VXdlS1BrSGRoVHBTQjBQdHBQTzVEaEdTc3hFeE5LVGc2UXE0RlRWNzJTd2QvMDhkeHJ0b0R1alRvUjhjTTRQMHM4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 900,
@@ -13512,7 +13513,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/290232575/19499072012?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmFCbjZKQi91ZUg5emtFUlc3cllEM3E3azRLNXEvZ3VtZnNsYWdQbmpra1BPRlJKb2ppZ0VZaFlUNHp5Wkd3YzNDNWVZMzdlSVJPWityMnVUWjB2a3hWa2N4dFhBRlJCOGRNTm1lWVU2VVcwdG94NXFvSTRSZEs3TTBIRldscnFzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 901,
@@ -13527,7 +13528,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/979724994/22499032987?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUhWMTBkUnErbUVvMDcwMVMrS3VoM1NhZS9JdXUxalhnQUg3cGhEU3hXWDVleUxqYnlPWmpkdG1jSlhac1pyNm5wQXZYOVBvcHlrM1JFNnVlVnlqUEpsb2dlaVFnaG56UmIwNE1vaHpoaTJJMFJTRnpkZWJFZFBhekpCQ3JGdTJFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 902,
@@ -13542,7 +13543,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/487528018/22298204492?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQczVlb1Z6c3FDcWFEVjQzZkxreXZOdDgwNlNXc05PU0dUMW5Sa2dOZkYrRURwTUtrWmJwdDdKVHVxOVhoWHBLcUI1elNwU2lDZVYzbUtJUHhBT1BZbWJkQU1qVHgvekJxWUxGa3pna1ViaVBNRUZoWGJYQWwxdE10ODRjV3ZSNnpJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 903,
@@ -13557,7 +13558,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1097148583/23098243780?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNncrczdna3lWdHlHQUREdDZxTGQ2cmJKRW1zSzVTcUZBMDVLeDVWQ0l3L3VJek1YM2FwaHprdnZ4ZVBmRWpsU3JwbnhWbnFhMkFmZUdFWE1HS0FCejdENmZWeUIzRXFNejN5VWdVL0YrLzd2dlEvdlF5cTFpL0xxWkg2UnJGVzQ0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 904,
@@ -13572,7 +13573,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1240652277/58251614409?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNDlWUHdIbVgxdXFUSEVZTVNaQ1VxNkR3Y252MnFnZ1BOZFNJTU1La3F0OWY3K2RuM0ZTcHBsSzlpdWJVVnppWERBcnlFYTlmS0htU2QvMjBLRjZjbk5udW5oL05sTnVVQlYxdXZWK2F4Y3NFM2pnZFdiSDQ4dkhnNFFQV00wQWRBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 905,
@@ -13587,7 +13588,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/954497057/21599679537?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1lXYnNadGY5QmxJTFpqUzdXbXZ1a3g5NGhBZGdJekl0UlhxdmZ2MTNpS3VmN1JBVk5RR2VPdU1PL0tqMlJLVmVWZHFtdlN5M1Y0Nkt1MTU0b2N5bytmUTY4cG1uTEp2Vk8xdVV4a2lETmxQdHpvajlmQSt5aUEvNzhreVRhWWU0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Pets"
+    "category": "Casa & Decoração"
   },
   {
     "id": 906,
@@ -13602,7 +13603,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/406098813/23696895359?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdHdlZDRIZlV3Y1NwTEorc1p6NWhsK2k3Qy9MOUFSZWY2WEI3V25YWEducFN2OUlOMGRJbjM4QTB0ZHQ5cEM2a0k1aWp4MmFOQUxaSEJ4d2ZNRTRIUUFrTCs5ZVhZbU5zMnVYRmRKcnYydGpIZ3lJSmNHT0hpZ3hFUGpFZzExRWYwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Bebês"
+    "category": "Casa & Decoração"
   },
   {
     "id": 907,
@@ -13617,7 +13618,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1257468988/22193062793?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVkyaHE3aUNyNGd1V0k2Q3RjRFRaai8xUzBzN2ZPNWlUNVQzK0loRWZWV0VyTXl1WG5KNFlRczE5NGd3ZFBoRnBlSFV1ZjVFMFR6T1dydkU2SnhIRWpsc2E5V3BPZnk3TEI5T3FqS2tWT21xSUJvK1hmOThSZ0N4bGwzaGNxejQ0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 908,
@@ -13632,7 +13633,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1126062497/22399049048?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnNncEZncWwwYm0xN1R5MnJXTThvTVBnTEQyK2p0QzJUOXlDRWVNZlFiZUxyVmMwYnY5UXUxQ05iNDY0R2JpM2tKRlQ5YW8zNjJXMVIrZWw3R2hhQStzbkUwUXRBSzBnMzdiVjlHamVTMHVqS0FhbFNONUF6blc2dHdqbjRScTNzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 909,
@@ -13647,7 +13648,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1429781525/23598536942?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNGhEWlZ5Z0VBbkhrTnpUVldDQzBwTmRCVkFQWHpjV2lJVENiQ281Wkl5UXMxN0tPNkZ3Q2prVENiV1pjYmZ0ZS9Fc1F6TXFIN1MvY2ZmRmhGcHhES24vT0pLL1RDMkZ6dWU0Zkl4QnhOUStzaGZYeE1SWGpscXkyS2V4T1ZMekhzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 910,
@@ -13662,7 +13663,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/590242499/22097282433?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc0tCZ0ZVbEY4TTBsbm1GcHQ2NjVPYnh0UWkreGlNLzZDZ0VwdXUxMzRQNmNZSVRMTnA0ZkVIWkVrUFRqVGVmNU5sZUsrckRnczJxTzZCNWxwaytDOW5IN09qVC9TbGhubFhCNldNVytHUFFubnl3TjdHNXdJYU4xUUx1UVk2VmFNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 911,
@@ -13677,7 +13678,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/771750144/21797631048?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXNxZU8wcGxxTFhxK040OGt3VnRJRWx6OHl3VkFQVmlZNUpzNDBncFZOblJZSEtVYjRrZWZ3MnZTanFDcFJiUjVMWXViRXV1VmZHdUhOazBsQTk3bXRqK05VNmZKR2YzdzlyR240TGJoYmQxcUZRYis0R1JhSEl6djZEeGFpc3BFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Brinquedos"
+    "category": "Moda & Beleza"
   },
   {
     "id": 912,
@@ -13692,7 +13693,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1215374772/20699234213?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0p5WlN0ajFLTzdqaTlQaERUZG41M3BvczRKc3p5cXJBQUhPQkMrbVhyT0ZFaXhoQTdyQlNxeWxJSW83NEVzOEMyMU1XQ1hHVGxPdFBES1RWZGVDQXFKeWtUa3NEUnRrZFBvNVNtWHpyUERKdkhoMlFSQ1JrWW1VdHdFREI3bWR3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 913,
@@ -13707,7 +13708,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1636682148/58200006447?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNTVmUS9CZk9FbXBXL2l5cmxuVFVOaEN3bjZCZjdSbTFhREhFT2ZENDEwc0svOHNmaEFXYzhhMDhkTVlnR2orYi9NTHdhZE9EVTRodlo4M2dtNVRJcWpwa09Ha0VaQmdoZUJyenFHZGg4c3NMTXBCMFpTUWVZOVFvbUhHamwwOHFnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 914,
@@ -13722,7 +13723,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/313984108/23893102437?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc2xsV0toV2FuVUJpN2ZFTElVa2hwU0N1NGhzd1JSak1yUk9zbnI3dFA0a2kvOFNnMk5idWJ1aTJ3SVM2Q09SYk4wYjhWZHp2eVd0eDFPT09Wei9GelBpZWRrSGFpckFkRkk0N3pBRUxmUGdqTFVuU3NnSU5QUndKNCttMmtoTHZVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 915,
@@ -13737,7 +13738,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/478660399/23497614469?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdnF3SGk4bWdROEU1ZlFyaFBKa2x3d2dCRm9rVDlOa1BRczNWcWFFOFl0ZmVicGJwdzNZUmtjY2laRGJEWGlsRmVzZHhpUnREYTBTZjZSMTZPL1ZBclF2cGxuN1RZZWRUMWxOYjlyMGtYdHVUM3R4VE00Q2Rla1ZRV1c0QTBoNzlFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 916,
@@ -13752,7 +13753,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/424785357/21099609972?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc0MrMFd4SmNYTnlsaXNXOGZRMTRWYnBKUGZBRDF0b0xQc056SjNLSjBTa3orUnJYNGs1M3A0d2QxbUYvbDNTcWFrRnUzVUlZbWVHRFd0MDlaUklZQXVNUnkra1pmbjhsWGNrVWI2bkFGSTg3U1hQU3AvU1phd0pIN0tCeEZ5MndrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 917,
@@ -13767,7 +13768,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/372103398/23298826559?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdEtNSlczeHMrd1N3UlFueDd5cm90d2VqSDZsMkdwQ01lMThENGZIWWpQWTRCcGtSYU5aSkhlcXRQb3hCY0ZNckluZU5nQVVNcXFDdzkxTnhtVzRYNTMrTmVvNGYrKy8rZDZqMTFzaHFuc0J3MDRTdlFuNXVwNThzelBwb3JDSlEwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 918,
@@ -13782,7 +13783,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1415768873/23298237365?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEFrSUpWaitUS3NaQTFHTVJTQmhpZU9qZmtFQUpUODNiUit0YXUvbndtRTNaSWdtbis2dUY3bytXUXZ4V3ljU1VLWWQvclhtZHFsVFZuK2ZJK0lQYUYzdGxiRFlyK0lmQnl0U2VVdlBFeUFOSHhEYWxzRjdyRW1WU0JuWlYvUVJjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 919,
@@ -13797,7 +13798,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1106561215/21299189971?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVRBdU9zazlxT0l6c3VUSUwweHVJRUNhMDRRZ3R0NFNLZ2lSRDFBdDBNVzFwNFlsVHdER0F5bjRsbXp5bGJYYkxsOENTTk52WGwyZXYxUEhaVjlqNmo4UTVGaDVvTldWeFJGaUV4Y1hhOEU0MWhySTRFMjJFNjY3YXZ3QVVpME9nPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 920,
@@ -13812,7 +13813,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1079030158/18898269231?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN25yakJrbS90NzFHTVl1UjRXSmMyZVJkNlF5T3JvNE10SEQrdUxrVEhYZUt5eTNYdUdvb25zK2ZaTEdjOTA5aVZENnVtVkFaWDZFK2xhUUR2N0JMVDNmZE0vYkY4STdvaDcwTS9Pd3o0NDV6aW4valZRdFk5VHVvSklXNmR3OFk0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 921,
@@ -13827,7 +13828,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1623386879/23893740291?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNmVtVTJ1SS8wUVVwZWNiMDZUTXRYUXVJWUVMY2tDc3Fnb1B5ZXZrbFZya1RIT1dOQitRQlJ4S1BDTUE4ZVZ3dlFDN1lXejd1SFppWm9yZEo1b1hyaE9oN0xRMVdtSE9VSndWQ1hOSGZHOGVxR01mWWZXWGFTajNwajJpVVdEQklJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 922,
@@ -13842,7 +13843,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/473483225/23394076562?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmFuYnV6VXY2NWxZSDkwb2xYQWlRaXdGYlIvb3lzd0lEcm81Vm9jcUFNTUt3VG5lR3VseDlTUU1WYzNwSmtxS1ZYbjVHbEpBYjdBWm84c3EwdUV5SkZRK0hOelZxcEhFVHhXVU9FaDJKUXp5SHBVaTB6RUdPUWJhZFJnZE9JUUFJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 923,
@@ -13857,7 +13858,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/332059670/51153073463?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc0tEbjUyVTB4cjMvVmtxbnRCbzQwLy84SmhPNXd6YmxXN0ZTQVJSOHAybStzZ1FoOG54ZUdnYWc3bjNnaWM4QmZ5cHNxaFhOSXpQZ0dtOWlzSWJEclBUb054YXlZN3RPRC9NUFRNLzJTWm1VR2Y1b2k2VU8xZk92amd5RDNNS1lRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 924,
@@ -13872,7 +13873,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1264658578/20297874498?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNFJWTjExaFdMaXlqUWNhOHVUQjBmZ2lRdHNWZ0h1ekdqYWgvemVIb09SanMwdWJrNWNIYmVqdFpxbFdJZWZrMVJhWGtCeGNtUkxWckcxRDExeWo2SHdaQUMzVlRGdU1INGQxU0wzbmdBVmFWWG10RTRic3Y1Y29lbXdQZSt0ZXdRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 925,
@@ -13887,7 +13888,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1214499708/22593484638?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0p5WlN0ajFLTzdqaTlQaERUZG41M3ZuQUhJMUxCVnBWMTBNdHd4UlRTT2pwWW5aSHNrd2c1OEJ6b2Q2MEhncEFZYTFGY3IxNDBIY0F6c2NndWFlT1U4cEZRMnFwYlRtazdSd0FabTE4MTBWaWE3QVFjWHFGclNmVEszMFNGRVY0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 926,
@@ -13902,7 +13903,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/559117269/58252781811?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3dpdXhKMThqNUxWZzkvNE5NRkxKZVI3ellqcnJHMGZaT1ZkdGJvcHhjTkVDTzNYU0ZWRHBJZUxSeWJYMWNlOWgzbDJGeERNWGhkVUxSMVRzN0hyOVVhMUExZU5HWGRUTWRJVnJkVHRqekNJWUpDSUE5blFmUW5wVmdhV1V4L3FvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 927,
@@ -13917,7 +13918,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/807597901/12395259440?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdGM2aU5HSndWVUtiNFdnN2FoMThybVJObHY0SnJ0Z2NvQ3dEd21uV2VlVDhiNWpGbElsVWQ5MWdWVEhrUGxjM0JSYlU3Wk1vaXpMUGloRFJKQnVGQXZDY2Vja3A4VVBSWVFGbEY2WFhYY1dwU2RwMGNPMzNaamgzSHRoMGd0aVRBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 928,
@@ -13932,7 +13933,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1001240198/22094468702?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1ZpUFMxL2o1N0RPK0UxdWl1N3FMVko0RXdVUytXYWM3Q3gvR0pMWldBanVKQ25Bd1JGcCtZSnFOK1BjY0lDclhBNkdlV00vMThSUXdBUElHaGNpVitBQzByZDllbzZuQnNrQWpBWUxhK1hjUHBScURyOHcxK25EcjZWVEYrSER3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 929,
@@ -13947,7 +13948,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1311644435/22393606685?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEpRL2FlUlcybzF4QXBObW5MVjVGZEcrOENkaWxtcGRPSXhwekw5RVQ4bVdQUHVkRkd1QkJNa0dSZ2FMbTVpaUVIVFlLNVFKRC9ITjJCclRXTEZycHBDZXVqcWI1Y2hHc2Uvc0N4a3F6WVRwSG45NzBvelVwQ3c2NFRxRzQyMjFJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 930,
@@ -13962,7 +13963,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/439447070/11203082704?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1dadjlLdEpQMUJWeFh3bFlicmlYcmFuenJwV2JrUjY3NytVZUZxdmdkeU4yTHBwa0hLZ1ZoaTFyM256Yjg4TDU2VE9vRTlwRnRtZ3FrZ0FtNHRRTTYvRnJFM1QwZEdCdTlrcCtuT2pDMXg2dXRIek96b0d0VmYxOWlaa2tlOEdFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 931,
@@ -13977,7 +13978,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1270314430/19199779100?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNzhFZVJ4NGxLdFNvVzNTbHJ5SUtuRVZlRmtSenJVWDlNbVJUVWU2dmliMDlzZE1qaUFtcnQvYzl4UEJuWFdRTDhyU3Y3cGltWkVXRW1Ed2RTRWwvWWhkU0hHcUxoWmcrWXR4MjRPdGQvM25ZTk81YlhrVDNNK0thMENaOEg1T2lNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 932,
@@ -13992,7 +13993,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1130678651/21899890689?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNkRpeEVpK3ZJVjVmMzFMUGRFOXVoUmZrS2RWM2JJbnpiblJ3aHJrVms0cjRGZzBwOEtqdUV3TEcvb2hUV090WjMxczFtQ3JVNVFVZXM5QVpnY1ZRWXZnM0RkVUh4elNLRC9Gd3F4Y2VHaE9VUDNTdTV2Tk8zdmNuN2ErMEdZQWY4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Casa & Decoração"
   },
   {
     "id": 933,
@@ -14007,7 +14008,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1502862388/21899902492?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNU1mU0M5RWxpRUpPMTNORXc3cFZmbjZOR29saU5BSkl4eWFkNTdzVHhzUTBxanoxUnNheWJqMGlJdmNSdEtlamJZWG80c3VCOHU1dGpYYm9UMnpxOFZLb2NMVHMwN0IwVXNYR1pieEs0d1VtcUdVcUU4a05wV2xSbCtIOUsvbnNBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 934,
@@ -14022,7 +14023,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/990429201/48604716619?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUkxbzJGSVdKUStSRkc2YVN0S2dQcEVjcGZ3VkJ4R2RuL08rSDR3RVZaK3FTSVpwallkSVcyeExkY1FLWWRxbmlkUDQvYVliM2cxUVhOTHcrNkx3M2pJSGl6ZGwwUVA3dVIyaEIxSEx1Nzl5d3NUcldnRW5Ga1pCcWpqM0s0ejAwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 935,
@@ -14037,7 +14038,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1495720251/23199206710?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEsxSUFHRCt1Zm5YN25nQUlHSklKS215ZjFNVUs5T1c3UmZDTVhNcGFVMHhLYUs2YmR0bnN2WnNabmVyc0JxcWZwWG02OXJmeERBdUpkZG9aOEhOQU5nMVF1L3A2dWN3YTZWK2RRL2dxK3FXTXVtRlk1cTdZVEwzcGdVRXB6c0I4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Gamer"
+    "category": "Games & Hobby"
   },
   {
     "id": 936,
@@ -14052,7 +14053,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/569114904/22193013399?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdGsrR09VOW00VE9Vei9GWmpsdndyU3RpanpZM21uVlNncmt4YkwzMElKL1J1Ry9QUUtUeWorQ3NPVHZWdWlQaFlWVUk4QW9qbDVTai8yV0NCTFR4YUJmZWVMbjhaVHhEYndtV1NCY0VMVG51ZWJ3bS9xVDJYNHM4TVFuSnJRK3BvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 937,
@@ -14067,7 +14068,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/967211054/22698990344?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdVFCMEpCTktMSkxFT0RmWW9XRzEwUnRUVEtQdzhTaUtjbWREMXQ0S24zc0FOM1d1YjZMcUV0Rm03bDJTeVpzVS94NjBVRTRWNTlCUDQyUTZubi94QWpFQ3drVnpJS0FLV0JyQ3RkNEVTc2NLTVF5b2NlMUhiL0tsSFV0cTBjSWY0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 938,
@@ -14082,7 +14083,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/337572714/23794243599?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc25vZmlrZU1NNDI2cFFkSS9vM25vWGF6SlpQeEE4K3JibGhMbkdqcjUrOVU5Ync0TXNyNllyWFVVd2wzeXdXTGw5bFpvK2k0UUN4czFyTlZreGZzMnhLNjdoRjF1TEIxcnhEc1YxZTFZRm42dGJDR0U4TzRmZjB0OTJvN3ZxMUlFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 939,
@@ -14097,7 +14098,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/928541999/23993050052?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdS9PQ3JKODA3V1ZMWWJlRVFheTEwbTlxUXNCSXJ0akprUXRxdmJkb1FOTlorZzBqSXBzdGhIOTh4RUV3aXRNZ0trZmFQS1QybllscVgyWXp0dHF2WlVrUzFpTjFsV0FBZXh4ejY3aFZ5VXpQUmlUN1Z5VVh0b0tMdlVmYk9GWWM0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 940,
@@ -14112,7 +14113,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1224363395/20497972703?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNG1aNFMyQ1B0b04wNGNvN2huVEV0YVlhWXBTc2xpZjJpRHBBclZPcTNZK2N2aFcyTkl5cXJ5bEZKS0JxVmNLcUJmTDNSK2xVM3hzMnRBQ0ZoQ0NaOTBHUVBEUGZnNmFTamRSb1lkZlhXVzZHd0g1bmNrZUZxWmxyZ3RSTmk5dkdvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 941,
@@ -14127,7 +14128,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1210545163/22093622180?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0p5WlN0ajFLTzdqaTlQaERUZG41M1BmV3QweVphVU1NbkFKTjkzb1duM1ZqanpqTWJVMGdZcXl0UURxYkMwbWJmaGw3RVZraDcyUS9CTkxPekhGMDVRUEMwb1Z5TDFkQU5ySm15clFNUDdnVGptRWhYQnkzUkdBM0NqYTExeDdjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 942,
@@ -14142,7 +14143,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1074008902/22098709787?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN25yakJrbS90NzFHTVl1UjRXSmMyZU9pUTA3RXd5ZVdnaTVwQ01FZ1FkUkZpZzEwanUvd3hZNW9tbE1mM1gzLy9kam12QVE5eTcrSjNwNk5zWTNXbVd1T25yOFNYSE45d1ExbXdidm9UY1lhc3plUFRTUDE1UkFJL0ZSSEZBN3FBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 943,
@@ -14157,7 +14158,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/372357436/23498117531?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdEtNSlczeHMrd1N3UlFueDd5cm90d2dzL0JiRUJZcWRIdUFhTjJ4b1d6bU9jZ0kvbnZqdE4wYytCdExobGdScGlsdHdMVFRpK2pzMmxVNlNySlIzTmNpNkJOZGQxWHVuNmh2SU1aME9mQ2szcDhZb3FPdlZabEJ0MzNZZldWUlkwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 944,
@@ -14172,7 +14173,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/222975446/21998001825?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdDRPSEhqTWdkaTUzc3Q0U2ExLzgxbUlXM3l5Q1hCSFhEWDdHbTdlTXRIWHpwVnQ2SEw0MmlObzR3bE01bkdJdE4xWk9mYWdWWm44bEtpaEtOMXlwbnIxNWZUZ2xKZTNyN2pFeDc5VENZcVk2OFZ5UFNrVG1yemhYMHdldDZ3OXNVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 945,
@@ -14187,7 +14188,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/640413729/19424166010?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdkZ3aVdVNFVhbjZleUVuSEw1Nnl5Ymx1QkJnMnA4cVkrTW4xQjg4ekVyWGx1VWxycUFNbjlieWwyZVFPcVl2Z2htTU5JTmtkVXNMWFhPLzhiUFUwdUR2RXJ0VkJDOURLemZrSFpNWldCbVgvR2hiM0o5dzZoOWc5Q3BmN015NWdBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 946,
@@ -14202,7 +14203,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/849977839/18797739105?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdi9hdW5lTC9pY0FGQW1FSERzamhnaVQvQ2g0Q2h6NlFiOWpoK2RqY05MOW9oWlFiVldlcDJkU0hpdGZ1bU04NXhIVUZCOXRialFML0F4eVVwZUZtSjJWdWpzSEpGNjF4dlBGYkFKSVcrcDVBRUJPZE5vNkJyeVpoL0lPUHk5VFNrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 947,
@@ -14217,7 +14218,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1251375938/48753314575?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVkyaHE3aUNyNGd1V0k2Q3RjRFRaajBwNTFOaVBML1hxQUlNdmp1ZmtsRHBWZWlpL1dsMk95NW5Gc1BDZGErYXowSi9PMjl2UXFTMlgwSFRCd0NnU3NVTWtweEJQRGRGa2wwTmE5emxQencyWlNSMFBkUUFycGtrM3pMR0NVWThzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 948,
@@ -14232,7 +14233,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1274197348/22498234407?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNzhFZVJ4NGxLdFNvVzNTbHJ5SUtuRVkrREZVZzFVcXRSclNrUThnODJIMWJkY0h5Sml4K2FvcXN6VlpxWHQyWHFkRnJtdHVmVnFMNjRQeUhwTURXU0VHVnJpZUdnSUY2dUpmanl4N0YwNlp4MHZSY3d0MEw2Q3NoRXBlOTNCeTAwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 949,
@@ -14247,7 +14248,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/995022276/23898069024?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXpyZUdJVEFVZ1Jzci9iZGw0QmhnSllFLzVBWnJFOWFHV0NjU0JXZ1dFckN6eHBvVTNiNkN0a3FNWmZUWU1KZDVLUkRqbk9rUFNCd0ZoRVJ0dkFNUVVwckRNSmxYTCsrdi9ldWlheGI1NDQzSWkzSkZYSDBzYjhWQTlaT2VWcThrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 950,
@@ -14262,7 +14263,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/552896405/22892381336?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1VZT3o0R2xsMURocnROd2hzZzltZzE3TGQxNjVPMkc3NzZsR2IreTZpUmJvNEVtU3VtUlpQTHBsZHNhT0VTdlBZNGVGY005eFk3dms1REg0MUplT0x5aTdwN1pZcUJzaklnejFidkVOWTN4cDYraXBLMVRZZ003c3NCV3QwamdNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 951,
@@ -14277,7 +14278,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/524520001/21597475362?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdVMxM0ZseGdSU1ZSWFlJRU10SC83bFFwU1FGdDZ4d0ovT3YzOWlSMElWVXJFNTMyaWpNR2ZwMmJrUEFLWnZSNDNSbXVUUDRJZDBYKzU3SG1NRkVCN21BMGkrR2tyenIxelpCQ0NyTVZaWVB1YjFsMXhjT3htQmpIRDRyZmI3SVUwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 952,
@@ -14292,7 +14293,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/296363855/22592853230?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUNnTGg1a0xWRlJGb1B3SytTbEQrVjVxZ3UvazJwZGYzVC9yRWFWamRvbFZvZzR0bzExOExvZDlxb2RPZTFXT1c2eHFVNzJUREk4WFQzbGgvalh0ZEdPSHdKRncyZlJDMVF4Y05nT3NKZDkrYzBwRTFSeG54bThhL3NRUzMvWmFzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 953,
@@ -14307,7 +14308,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1215185317/20999297800?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0p5WlN0ajFLTzdqaTlQaERUZG41MzZRT1F2V3EyMzlNNzIrS0l6R0o5RVFUYndvcHpFNFk0NDFvQVBOV1BSb3EvM1dvQklFS2JTNUtzeXZMdE1SU2NwcVQ3YWQyOXlLRUZSakFkOWltdCtpSkwzREVNZUZCbHQ1L1JGeWV2V3ZZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 954,
@@ -14322,7 +14323,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1299626372/20899568150?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNGE4aFpPSitIdGlRMWhhWS8yRkUvQ0J1TytXUWNaVkN5OUVMdlY3U1A0VmZUQkxlcVY2eldIT0lNNE5jR0pzcTQvSTZQU1JxbGJkSHUrL0tMRWxwdUpPNXl3RkFXY3JCUy9hOGtKWk5UV0tFNFhqS2pjbml2ZFdIUkl3b05vdDVnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 955,
@@ -14337,7 +14338,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1321752074/23494447056?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNTkrc1ZUUkJCVzhDNG9GeUVWU1NleGlKT2xrcktmMjA1aGFtbWZvdDFsS0luWnVKMXFXYThocGgyTS9DcElabG13YzZmNmNhRU5ydkRhQlBLcDRpNjdPQm9WZDJIeCs4dVBFRHlRWHJ2enBMMGY5S0k3N1FSRmFvaSs3U1c1QU5ZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 956,
@@ -14352,7 +14353,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/694125365/21197749562?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmJ6Mk9QMkU2S3VMT3lZSkdybEEwVkVUenhwaU10NGZLamp5QUl3NysvVDBBQzFKRFRIK1RxTGlLa29qSHN1Q1pJZ0dKRTNFVEI3dTQwOVVjTFh3SEFWaTBPSVJGSXZsUTFKZDZpTnQ1dnp4V3gwbmFPbTFscE8vZ0VvY096N0pZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 957,
@@ -14367,7 +14368,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1515741369/22998732448?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVNCRzJrdVJqZ3lReTFNVjgvS3M4SUd0ektRcEN2ZzhEZUovNEwyaEJSd3hJMUxiYit0UGlPUnYwS0hCdTA0VmZZRWd3NXk4elRWWUV3YjV4NWZVU1hOb0JrZ0Vvc0Q2cXl2dW51eDFLTUp1Sm1iRFNNM2tRUWZ5ZmMycnpYTldFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 958,
@@ -14382,7 +14383,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/296363855/42121901827?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUNnTGg1a0xWRlJGb1B3SytTbEQrVjlaMTVlSGhNbi9PYlRPWXBPZlRqYkV4MWZTNUJVVE03dzZ3Mm5ORldmN0g2NkUxR1MyeTd5eTVQRTVxdk1CcHZoOGFYdFVYYmQyNUZpN3FQb09rTlFNZFlleXNtcHAxdVNjL1U5Uk40ejZZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 959,
@@ -14397,7 +14398,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/593088966/18799229716?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3RIeTNoVXZvVDdUY2VlemdPWURwVktBTFFPUHBWMEM2aGxCNmhvSCtEdHF6cjdkOWhlM0QvSkdreU5wZXgyQ09pTWtVTEdNZGJjb1hSRXRpUVZDU0tiQ1grRks3bklqMk56cVpTNFAvRGhqb3l3VyswelVDdlYvT1hnSHU4cmlBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 960,
@@ -14412,7 +14413,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1501374495/22693895539?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNU1mU0M5RWxpRUpPMTNORXc3cFZmbnd2OUpjYWkrblBSZTlFSDkvN2F2OGs4VEplakRsR1dOZDFWR3dQOXo0NWkrUlc1eFlENTVmc3gzckM3WDFhQXJoTWw2TXVUQVgxN1ZmS0tCVXZIdHgxYkFsbmVCMDRuTmw1elFPUGtwRnNVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 961,
@@ -14427,7 +14428,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1210545163/22698184958?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0p5WlN0ajFLTzdqaTlQaERUZG41M3hPZ0dlNDVLOG1JM2RPclA0dnpDMjhWSXMrekFLR1lxUkJrT2Q5NmtlQ2JsSDZya3RjTjJ1Ykk0OUsydDlYamxXUXVabGgwK2ovSmlrSUVhNEJ5VHFpanA5dHVqTisyRXpIVTg2YnRlcFNjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 962,
@@ -14442,7 +14443,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/368429435/23394508451?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdnVvQ3N5TTRrS3A5eEMzN2ZLdHVtNEc3MmVxN2pYTjIxSHEralZaRHp2bG1QaWt2elpRK0hBVXZ2U0RvWGlYYjNoSzI4UkpzTjRMVm1DakRIRjc1cGRkUlVMY0xXdWluTkFMMU8yTStjZ0J4QTNPQ01lR243QzRDRGdHa1RFcGJFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 963,
@@ -14457,7 +14458,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1634348313/23498949920?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNTVmUS9CZk9FbXBXL2l5cmxuVFVOaC9uNVRPMmsxTzVmbVg0TmVFTE1vdmNtc3B6b1l1QWEvVCt0Yk1RT3g3RSthN1IvbDlxMk9YUEsvM0k4ZWV1VEJDa3g1NzlKbE5ybmd6RVVMYUhyT0JHRk5tUHljc1VTUXE1V2w4UU41dXo4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Casa & Decoração"
   },
   {
     "id": 964,
@@ -14472,7 +14473,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/526625785/19197735814?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdDAzbHd0UXVLaGFVZlFlVStxT2NUYTNVV1BUMDljREVMbWl6ZU5nSk9HTm5vQlBLRjB4MXBaK2I5UnVrY0w5d1ZBb3c3TzVIaUFPS2VhTWlJaDg5QXM3RGIvS2pIVGRWT0RoWHU3UjVVMGJLcjdCTkRjZ0UyWVZvamF0d1hyTGFFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 965,
@@ -14487,7 +14488,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1127030290/18198262703?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnNncEZncWwwYm0xN1R5MnJXTThvTWptL3QxODRiK2dmMG80KzJFMzhpbm5xbmtIL2c2aHZqUVVJUGgvK2JrZDZUVzRZdnZoTVB2WEZqUzVGbmw1alhXb00zeGJFUHltREUyblc1VzZNMkhsUHlUQndXdXhqc0VBc0lpc0NoTkEwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 966,
@@ -14502,7 +14503,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/984333861/22792805044?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdnJ1NHBRNFJkeEs5ZHdNY1VNQzJlZXVkT0hNL09UcmYzMUw3RUJrRzlIYkY1aisrc0xya3Y0b0U1WFphaU4xdVR0VVRYbmhqWEhYaG9ZQzRvd2pTSkRpWExEMlEySjR5Y09FSjdheHlNcFZWOWhENnREUldhS3Bab1ZkcTYvV1hVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 967,
@@ -14517,7 +14518,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1315871457/23594314419?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEpRL2FlUlcybzF4QXBObW5MVjVGZEhZSG1lajBkV2MrUEs0Y05JTnpqZGJzazBTRjlOMzl1aFQzU2lEMGJvUGs5R0RRU25pTEFLVW12ZDRwSFFvOXpVS2ZGcHJYV2tUUk9sVm1yUmIxMEdwcFZsYzJadTBOT3JuTmppWVJCcTU4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Pets"
+    "category": "Moda & Beleza"
   },
   {
     "id": 968,
@@ -14532,7 +14533,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1630928956/23794674344?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNTVmUS9CZk9FbXBXL2l5cmxuVFVOaDA2UTRwdkZlYXZjWUszV05zVXNtTkJ5b2d2cnRQaWx2RVk2djdyQnZFK2thS0R2SjBYa05NT3lIcUc1U0dYTElYRWVwVGZHYzVwVVZLV0RBdU9JS2hFSnd1QkJ1VkJybko4Qm9LcmZmS1NNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 969,
@@ -14547,7 +14548,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1655406395/58203332459?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNldidFQ1UzZwa2YvODc3eGR3ckp0YzJucWF0T25xa2E4MTZYRkhvc0hEZDF3aVBtQlc4TGJHLzNSdzdQeitYRTZkUTRBMWlnaUYyaVRKdDh2emp0ZGZWZDFhSUJScE5RbzlZc3ZSQ0k0aGF0WE0zajcxR1dIVkZMYWpGN3hocU4wPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 970,
@@ -14562,7 +14563,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1318410622/58251840214?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEpRL2FlUlcybzF4QXBObW5MVjVGZEhSL0FjOHVVRkg5SmhTdUpMZUtGczFPb2RLTHkwOWtJM0dpd0tNRTRZdlhQck4yait6anZ5c21XTlZuSjd1QVg2ZG14R0NaNS9YVnl1YmRIbkNiaDh3REsrd0VOakl2cFFpR05FdzBETGhvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 971,
@@ -14577,7 +14578,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1252771078/22498213091?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVkyaHE3aUNyNGd1V0k2Q3RjRFRaakJQSExOY2duNEtpWGdhSmRtbzVNNEVDRlBVRUx4bUZ6RUVlNWxvZzZNOWV0TWlFcmlHZWhFSVl6cU1xQm9hNElVa0hpY2NNMTdodFBXOWZEVW1XWkxTbmN1R21VUStmdml4aXo3UG43ZUR3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 972,
@@ -14592,7 +14593,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/343762483/23093103982?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1E0UXRIMXlqZUVIazBialNkMlVnUm5ZT0pTMGQ5V2tUNmFoR2xWcUNNSjQ1SU1ja1hWNnl2R2xKRXM0U3JlYjR3Y1J2QWR5WTE3b0lPT2RCL255ZDlTV1Z6dlFBaWNHK0FHMG1hZ3p6VXB1OERLSGVUUGcxOGxrRFVkUDNha0VZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Automotivo"
   },
   {
     "id": 973,
@@ -14607,7 +14608,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/435265418/23494385494?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdEUwV3BRRDBRNDNuWmo3T1Vta1BNb2xGODBtS3RJK1FFcy8yelR4Qjd3TzMrSHlmSTNZcTJPMjE2OTY2Nnk3UjYxTllBR0ora0sxMzFKMStFaWxaaDR6S2NkZ1krN3NYKzhoU2xHZm82S2owOEM5RmpEUFV4dkxZSXpFdEk3RC93PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 974,
@@ -14622,7 +14623,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/338520789/23098091493?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXFMN2kzZEpkR2YwNW9tbWZpVVNFdW1TT2FCZ0VHODNROTNnalFNam85MllhUzk3a2l4bmgycGhxNml6SjVCSHE5dFozVnRSeHRUSDQ5ZmFZMEpwU0RMNVJqN3ZkT1NqUHRNUW5TSFpyVzltNk50WkhUUDY5VkxiRmJRV3pXWnlZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Casa & Decoração"
   },
   {
     "id": 975,
@@ -14637,7 +14638,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/462426918/23794330101?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdVZIRlkrZS9uNE01NzEyVkN2bWVDWWZ5Q1VPVnJhczhUL3ZVdTd1bG85T2c0bDI2Vkt0cVdQUk1JaXpWWEw3aU1vODB5U1MrSWF0TlVVYmM0bU1IZ0dScEU5OWdLQnEwZHlwMnY0ckpHbG13WS8xVVRYSkI3M2lZcExNU3RmczBJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 976,
@@ -14652,7 +14653,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1357069533/23998637451?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnFlajJWZlQyRjNuVGtydksxZlBaejlQSU5FK2ptREh5VTdxMTdEUlBadk9mYm5ONVduQkJQcXU4K28ybXNQU0NtdkVFaERmSmV3OW1ORzFBL0k1M2NySGRDTlVzU0p1UHVGYU5mb1BmUzh2TlhKL2MvSHlRaSt5QkFvcXJ1UUFBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 977,
@@ -14667,7 +14668,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/629805123/23693233947?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdm1yODZkak55K0FEaW40MzBPQnpEbUdOUzNWUzJoMVh2QWZlOXEyeXZWakpXQW5yOXNlVEQxMGNtd3BlTjZvYmxQcmFLTlpQVldwd0JuWDVBQ05pZENJaHpLZzU0eW5ycGRITVMyVzhBQ3RtZ1VYa256Q0JQcHpvS2NqMUJ6bnBZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 978,
@@ -14682,7 +14683,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/853868216/22394360806?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc2EvV1dqTi9YdjVGQmhtalNGSUZUT05RRFZNMVUvR1RjK01UVHZLcVM4cXFiZ2g5L2pOcHlNTnkxczNhUzV2VURJWnQ4QjdnZTVUTzcwL2NQdzd2UVM2eE5WMXlYcTBMQmhCcFN5cVQ0MHEyVHpGeXd2bDF4M2VBeGhhZGtRWXhBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Casa & Decoração"
   },
   {
     "id": 979,
@@ -14697,7 +14698,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/313984108/23398022532?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc2xsV0toV2FuVUJpN2ZFTElVa2hwU1Nna3dab0FSS2xGYW1LQVhjRWEyc0NjOUw3UCtrMENrbWRhcldFaEorQnc0NHdxR0ZUNW1mcXdQVTJ3SUs5ZytmSE5vdVNjUkg2Wko5TEVueDFzOE4ybElWckdtSXBCM09MbExNU3lXQnEwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 980,
@@ -14712,7 +14713,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1252008226/22294255249?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVkyaHE3aUNyNGd1V0k2Q3RjRFRaak1lSUR6aEZseWU3WXl6eW5iMVFKaGQ0TWZaNmRKUVJMR2N2U0p3bHllM0tQb1dhSGMvRGJWVkhPVnNudzBubG9VY0JHVUZVTTVJQitKR2JyVlgreHo0Y01iQVc1M2dRS1R0clA4bWJkcWlnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 981,
@@ -14727,7 +14728,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/408653169/23896620214?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdjNtR3FWWHRRMDYrYWRVTDJpWG4xV2cxOExIVisyb0JoaDIxek5yRFl3cXphUzRjQStWcXBjeHNtQ1QwYno0Q0xkd3JwR3h3bFIzNldCYlF3Q2lCNDNFUWZWV2pQaW5PaHE3RmxYSnpOSDk4aVVheUVTbVZsZUlPbVo4R0x2eE9JPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 982,
@@ -14742,7 +14743,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/290073877/22298571580?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmFCbjZKQi91ZUg5emtFUlc3cllEM2dLUGN2dlprVGRqUy9sOERXNmtuWFprOUJJWEwvNncyZ2EzdDRWU1J1K2VoZTc5SDRIT08xcnJxbXFJeXNkaG5rbzFaUXIrbWxneVNBZ05PU3VtRS9TaEl6UHVyM3JUNEMwQTgxcU5vc0hFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 983,
@@ -14757,7 +14758,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/995022276/23094185714?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXpyZUdJVEFVZ1Jzci9iZGw0QmhnSmhoenRJS2c2KzhHS1VuMDRtWHBNT2JGVlp4UEZUZnpyVFFEcFNTVEg5QXBaaVY1SHdkVXE3WHpmKzZwN2RhV1cyU3Fza0FHVXB0SkIyTmZLOXZULzJCREdIQ0VLRytDclpyQ0Q2YXQ2dkVRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 984,
@@ -14787,7 +14788,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1035651272/23893956982?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWFpQTlGbDR1SUwwMzcwMjJsL3RRdDlqdlVHQ0taNjJRdU5BZFIwMnVReUg4c3JuM3dTOTA2czh0TjBpVUhFaE5hYTZoSStUbk96WVM2cWlqVlVWazlVMDM1ZXVFM21tRWdyRXFITzJYR25mU29vY2U1QXRGV1piYWFOZ2NTYmVrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 986,
@@ -14802,7 +14803,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/952616792/22138325513?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdHZLcW9WYmtoZEl4dk5QSFVlRXFFaFBQZHZodGhOakFrY0d2Y1haWXVvQTVzeHNJWjFrZy96RStnMHRTSXo2akkwYVhkZzdQQjNyV3NHWG5kaGxrbWFlc3VMT0lkUENLZTQ5YTVBQVR5R0VVTmg3SVJSeWJhNmtxVUVreHQxVm1VPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 987,
@@ -14817,7 +14818,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1059936083/22497587986?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0x6dFhUa1NUODlCTnp4OFk5RXpiYm9yVHY2NXVnYXBCNFU1L213U1dPL3V1dzhjWVFUVUlmQnpCWktTRU5RWUNDT0RmVlU0M01ZZW1EOUlScittMkpVN1RaMTIvZUx1Q2FVNkl4blR3MmNHRnNyejhTd0JhS2R4NzYzeDdiU09NPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 988,
@@ -14832,7 +14833,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1274197348/18298081726?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNzhFZVJ4NGxLdFNvVzNTbHJ5SUtuRUM0WnhZc2RUNlo0cU9FejBmdTNMNkVoUDdyTlZLMVJhSzBYbkN2Tk42WUJ0UlFPOUZSUmR3QkZhQ0tnK0pMZkhoSHl6MXY0bk9oU0tMQng2V3BKT3k5MUtSN1ZQOGhpSjZqTkw1RHJGTHlnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 989,
@@ -14847,7 +14848,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1655434235/22299307508?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNldidFQ1UzZwa2YvODc3eGR3ckp0YzJLNUtSbERTejFUZjYzVUxyUVdDd2l0NmlxZmFlRnpZVVgwdndVMDJJaHFhNmVva3c5dGprTDZiZzJrQVRLclhHTnhkdDNUaDMrSGdrS0dSZUdjNEQ4NElQZEpDTkU2UUtNK0pYSHBxS3djPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 990,
@@ -14862,7 +14863,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/299222557/18430862841?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc09LOURCRHlFSElVMkpObXQwZ3ZySFNNakYxTFUvWm5KbzZKa0JvZEEwUkdHeUlBM1JJSitXUU0rRkN2QnhwSkhXd3VndzBCcUtSckRuM2c3Tzltd1lEQ1JHWXowK1FqMVNwSU1YUHNiMU5sb1Q1TnZOYkVXRTNaSVlDTm9VLzl3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 991,
@@ -14877,7 +14878,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/392233183/21598000970?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdklNTFkxMDJUc3JVWE56eWdmR3ZGaHI1TUMxTVRmVnB0aTIyQmRoRjVFanlKL1EzWjQ2emxCR3BOWHI4UEg0ZlRNaktCOTFsL1JHSXdmZ0IrQ3hScTExSVd2Qjc2WEhmRkxsVUtzZ3hxRXp4U1g4NitLYWtLVWhpS202SjFyS3JrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 992,
@@ -14892,7 +14893,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1167899188/23997434841?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNlBFNHVhak51MU13cGRKeklHTm1VZVhGeWdqcmQzV2lLQ2xMdG1MQTVoRVVGVmlZQUhrWGsyVUhlM0cyUUhVWWtwUzJYc2cwTUxIaDQvWXlkYzFNSmdEKzBpQk1kVHMzUEdPM3JnUW1DSFZGZzF0SXl1NjBBRnJaQ3kxNVJuVnJVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 993,
@@ -14907,7 +14908,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/294602625/23993883300?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdW9uR0NOeEljb1J5YlFjRFd0SUhCRUk0QVMrWWhwUjFPNnlUbHVWVmUxd2gxMXpOOEZNcndhZUVldE5ucy96WVdXZXNuYkloZHBOVUJ0eVltdTBwZTd4RXoxRW1aRGhIY1F3eXVyNmhXU1R1VjgwYkoxUkpVSmd5MzBNVkZGdWdnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 994,
@@ -14922,7 +14923,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/398188570/23594682192?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdEE4SGRnZWNwRVljQjZsV3BaeEtEd1FXc0JtU1hDWTR1cnNHNjVheDU2czZ3Rjh1QUZMNWQ0anRWUkluelh6MnQzbDNTUXFpVWZsQTlyUWVjam1oS0hES1ZsQTNzVFRRQTJYQ2FpRHRXMDgrTG16VHhqdkRDTWFGQm1yWVF4N0hnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Casa & Decoração"
   },
   {
     "id": 995,
@@ -14937,7 +14938,7 @@ export const productsData: Product[] = [
     "location": "Santa Catarina",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1669482170/58251700051?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWtuV3RNZng5UkdXSzhWNjJzcis3STBYNlg2b01lNk5nUjFCUmxoZGhHRGxHZk5jc0pmR1FCclk2by96SVBvM20zQ0pLeVdQd0VxZjN2Y1daMENTcVEvRlRScWlLMzlLR241THV2QkNsd1JIekFqdmhndTZzeWFGaVc4bVNHdTZNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 996,
@@ -14952,7 +14953,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1020185133/40615511670?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN2FFWnJLSG1wUkVCVmdvV21GWWdSc0htazJtdThtNndNWFFWTnArdDVQSHF2OHF1V3hlYUkwR3FQWEsweHJLMmdsTHZVa0Z1WVBSckFJNlpwaThwMW1rR2RZKyt4Y29TdkIza2FGMnRMZmJKcUFxdWloKzRERThFV2lwUE5EVEw0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Beleza"
+    "category": "Moda & Beleza"
   },
   {
     "id": 997,
@@ -14967,7 +14968,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/327165329/23091068454?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWdNVVllaVA1clhSdzNzclkrN3d4YndvWC9hQzl6S21nVVVxMU1Ca3M2ZFRCTkMxc1B3N3MyMEh2ODFtbnhJNDFScXpqQ3pyaVBmNDZQNW5xcW43ZmdKcUpsMmwrYXA3aW8rYk4reGZJVmV3b29iSWFyQ1dDTFFlb0tYdERwZkZBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 998,
@@ -14982,7 +14983,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/960074495/23597289167?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdFBlUWI4SjlVS2RUTEE5c1FaTG9oOXpHMWh1aHdMNWpVZHIxU1dlYktzTVhrb1c0a3ZuZTNUcHhydkQ2a3EzajJpdjdVWXNoaFRCbFgxYXM3N0p5Z1dNc2lZZU0zWFpJVHF4VXVLNG9OZ1dsSlNzVXJWejMwRS9ZbXJadDR1ZERRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 999,
@@ -14997,7 +14998,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/988030305/23397600706?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdlprZS80Y3RQNVZuR2hWWE1ISGN1bDM4eElHL3hhTXpqRmMwVzFIL1djN1E5eElPMmx6aDU5VHFFeFdLaForR0RCWkVtQklJNUJyUVZqMjR0QWs4M1diRDU5RHJ2MkhWN1pjelJreHhWbmZWaWwvdmxXUVA1M2pxR1hQLzcvQ1FJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1000,
@@ -15012,7 +15013,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1177903362/20799212557?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN3R6clRXek84YVRNMWhSeW9MRFNFMkRnaHFnRGM5aGpNZkpVaitXNWZzZloxMmxQVmdPb1dCcVVPZHdMT25NWHpaNG5pcHNnQ1BxVWk5MVB3UHlHWE1Gb2pCNjZaMFV6VWtvdUdJZmZIWmE5c3N1Q3c3OHR1My9WdVdiUDBTQ1hJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1001,
@@ -15027,7 +15028,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/711871061/14163502034?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc2NmY1pGQ21wVHJtaWFpelU4N2NvNW5SckdWSmR3UFQ2NFZYNDl2cC9QU0t6dnZ1cW9KSmRhT29NaUVmTXgzdEg3K3FyVlZKVEVJODFJam85Zzk5Q3J0TVdlSWFuZUJ3TXY0MHFxRW1oR054NDJWRUMxQ0tUVm1ld2Jld0NlTStFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1002,
@@ -15042,7 +15043,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/977249324/23393598645?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdlFIWm02Sk43M2hPOERYMWFHeUk5ZGlsaFJJMElCbjlDR0J1YVV3MXovS2VQQU9DVDMrb3Y4OGtZMGgrOFR3T1U4Si9YWjA5SHNPWHZUaVprNTJIWnFqdW1iQVh6M0ErY1QyRFl3dXZTSmx5VFhuZmVET0tWQit1RWtLRENaZkJ3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1003,
@@ -15057,7 +15058,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/512962451/23893715872?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWJlRHV5OGZHWHdvbVY0Sm1jVVpaUEdzNER4bHVSalJVY2lWc3VrTWpVbmw1UG40K3Y4Q1NyUkVnaHZ1Zmo1dGYrNGpZcVd2endUZGVLa3NNRVhDRmZmUmNMd2Z2THQySmZ2azJua21CWllKdkE1K1N2RFpJcnorSE4xR3ovVnc0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1004,
@@ -15072,7 +15073,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1475271329/22494400592?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1JocS9UZVVlUXFINkZubXgyUWNZYjJNajBoZkVzeFI2cTErVXJZVFJKTTZSUVNYUWlYd1ZsQXc4V2JYSEpPY2JZVTBxRFdVZ2IwVEdKOVpKbHd5LzNsbk5yMWtKVzlDcnlQZHJrS0E5Tm1ZaEFzTEp5YjJpOGRMaWpuYnR6VXdBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1005,
@@ -15087,7 +15088,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1398327824/23294048715?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN01mNmhVVGFUVHY2TURuZWFZQWt1dXA0Ym80TnNJa1hYdko5MUtER0J0aEU0ZFVCZUkzcTJ1TjIwcHB1Zk9MT3FDYjVtN3pVQkMwOUVPMGNialBUVnlPNjc0ZnAzUDN5aCtOTUZJeVY0alZSRnlpbmpYUkFqVjR1Szk1aG5ZVUJvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1006,
@@ -15102,7 +15103,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/231107437/19497925527?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3NLTHBUVFRHcUhSOW1DZjNjUTZrT3VFdGxTcVNZUW1LRlJYdWtXaWRuZVlvWlIwU21oT3cwNEhyL2ZjMnM5dEd6UWlpVkc3em4wMVZmeDBITVpDNHk2b3lKRnNSN2NpZDRtektkZzhzc2U0ZmF6emFLWU40MjVIUUFTYWtUUVpZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1007,
@@ -15117,7 +15118,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/625559139/22394343234?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdFVJWWJ5alpsMWZYNW1Jc2EvWEtYQ3JBUUlSVjhtVlJaenRuUlg4OHpkcWc1UHNKSkpEZFZLcmVraHRsenR3aUQ0YkswNFdubGFqb2xPTVVaUStPL3FHMER6aHdDdVdEd0UrTk5sT0hQSHY4K1hpR2w0V3BERmdHMjBWL2M5YkJzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1008,
@@ -15132,7 +15133,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/279375549/23994504847?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdTQxZnJxVzF4ZFJLL1BySzRRZG5rMDBwMzJZQTY2SktRTW9QOFJzRlJzQloyd3VTSHBEOE1UR01rVENiaTZQRDlzL0JyUkZZZy9ZcFdhZWdrM3A2d2psenJhd29jYU81aWxYd1Bqd0ptVHRqWCtmTC8zVVdmQjBRdTVEQWRhK1dRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1009,
@@ -15147,7 +15148,7 @@ export const productsData: Product[] = [
     "location": "Goiás",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/613232140/19997634123?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWFSalVSNTlEVkVicklLUE5qZEJQM3BkbW1XaDdzcG5aSUVkU2FoT0tqWmpNOEJVaFUrTElUKy91bzZpOUJKbElkOHppS05lbDZFdW1US21RNkNkRi9aZXdjYyt3NnNQRUtUYzVvWFNsVXJ0UUFCV1EyMU5tYWhCOTBzdjdFR0ZnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1010,
@@ -15162,7 +15163,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/340076400/22593262536?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3hNbUFEWEpWOUwxZnJxYVlIcVhHRmhaYzhTOXRuNTlYOWd2dVNhYktvbTRLSXVJenZ6a0Yxd1RCcWQrcGlKSWZNTGdMbmlFd1B2eEVjSGVUakU0eEdxNW9Qd1lOTG1vQ2NSS05qeXdxbUJpOG1ock1wZit1RWYzb3ZvcFBJS253PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1011,
@@ -15177,7 +15178,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/519877848/23893791430?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdEczSFI3cU95TTNPSkJRaTcyQ1h1NkpoellJeDRSWVQ1YTRtNnRSNU9pS1dVQTVOdXZ0T2hEdlhwVHI2RmFDR0lyaTJLQXRTUjROU0JlQ2xPVllqSXF1TkxFekhvOGFxdTFReE9sZmwyRlhvYkZPMkVxZ0xYWG1CZnJoZlJsZS9nPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1012,
@@ -15192,7 +15193,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1579353989/58251838621?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1lxZTV6UUVYb3RlQWRpOUpoak9scnBSNGxhODljV3BWY25mc0dINmExZzV1WnEzQmhWUFlPYWlVMUhqczhNbmFiV1dHMFppdmVtbDJQd0R4Tlp5cTZOUjZIcS9qcWY4RnhZSm9rZDRFSHRubWplOFMvek55RmI1VElvUlRReThzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1013,
@@ -15207,7 +15208,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1534910933/22794193513?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWNkaUJHS2dKRXlBdkd2dG1mZ0psUFA2eEZ5WlJldWlodHdHNWFqWVc5TENUL25ZZkJoS1JjS284TldhNTkyejlpWDFBbm5sMWxYcUlybEQwNFVyT0NDR3NONkZoTlpsYUpUTFJFalprVVE5eGdpZTAwZG9GMWdrUlZSSWVwSDdzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1014,
@@ -15222,7 +15223,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/434674902/23811088567?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmJCR242bk9vZElnM1I3dkZDdEFCN2d5cVhEbGVCZWJTTjhYeGh6OWl5VmFUa25jTGcyT29vKzN0NU91enIyLy9QbTZNYUdSNUNzeGo5RHVMeEY2cmdSM1RySmNxVVRCODRaUm5aT0tma3MyYnp2VDE1ZmNCaHQwWWlXdGdZTi9JPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1015,
@@ -15237,7 +15238,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1528244125/19898140505?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNHV6MnZ3ZU1ZWjZ3eGdVVlFiV1FrRW1PaG1rbkdBVS9pZHc2YWVPWkVOQ0xpclJWVlhPMWdTUnp3VXVCTGpjd0VwblY1WUIrVkJ1bWtGYzdHclhzeEZuOWpTNE9NTDR4YWQwazVwMDVydXYzUnptZEFXS3ZRZFU0cUFxM2NYajhnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1016,
@@ -15252,7 +15253,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/346352973/22598702525?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3dIRmZia0p2ODRza05FZ0lhajN6MlA3VXB5SjM1a3RhRGtCRlQxLzBiaElieTdCS3F2V21ERzYxZFNBVnZCdno4SmtvdWkxRzdlUHJoMEhvTlM3UWwzTi9IaXFjK2VHSDBCM1JOZWZSUnJnQzFTU0J2aE9jQzNaeVhvMEZHNlRrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1017,
@@ -15267,7 +15268,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1177903362/22697843549?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN3R6clRXek84YVRNMWhSeW9MRFNFMlo2bzR6V3I2aWd5dmJxbUFIWHUvL1ZVcjlHZDlsZ3FPU25kWHB6Y1RYUm1yendwZzV5bFNFK1p1SHhscVdJYytjSjlicUY0Z1NqTmZXeW04ajY3QndzbUR1bzNHYjJDRGNzL0VOMEJ5TTNJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Beleza"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1018,
@@ -15282,7 +15283,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/391739739/18798665294?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdjNrY1NPeTBsb1pnV0lOaWYzak5WazljZGQrVGU1QWFEbUtnbVFocFFJVGZqQ1BFdzN1cTJ6N2hxVXF5ajRKNm8vTFJOV1RXZnp4RGhSYWhlcnlsenNDYmhvMUxzUmw3d2ZmVFpuMzJvaytxWnVJeHczMHVlN04rMGt1YzMyMGFjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1019,
@@ -15297,7 +15298,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1360570792/58202465888?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNjZxczFjZUpCVzZMY2tOMHBrckhPQ3RRUjFMOE1DaElFZkg4YVU2bXpxa3VyYXY2NXhYdXdqaGtHcWpnNU9zWFliVDI2WFpQSkxqRFZVRzh3Z3NUaUZuZktuNkVuRFA4ZlZJeENjNWpmYWVVejQyM0NIelJzdzVFR0JVSDArd0dNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1020,
@@ -15312,7 +15313,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1293439067/58252250957?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNGE4aFpPSitIdGlRMWhhWS8yRkUvQ0VGQ0R2aVFxR2thM0pjc0NYbFdLZ2t1eHhZNmp0M05BcXg0aFEwakhWUUFRS1d6Uzl2Nzd5bU5NYjk4MHpUT0tubVYvLzQyQzREaTJwUGFqZGpoOXdrTUVXUDk5ZjFEZWNiQWhpK2RKQnFRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1021,
@@ -15327,7 +15328,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1035651272/21199891742?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWFpQTlGbDR1SUwwMzcwMjJsL3RRdENZUWEydnh1cVFjMVo2aEpLTCtmWWx4V2ZOb1lKcHBKNnM3Q0J2VFhUV2h4ZGtuMlowZGhNYko0eUhKRXZjaEszQ3h6dlU5VllueFJoYjFZK0QvRFViUnlYcjloaUVFTlBwd2tjZ3FubXEwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1022,
@@ -15342,7 +15343,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1004246779/23793734698?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1ZpUFMxL2o1N0RPK0UxdWl1N3FMVk1sb0tTZVUrZjh3K0VJUzBCSzRMenFzUmtHRW9DNDNxM3pzZFV6Q1lRYmtMbERaVnNrdFZEcG50OXF4SkdtVmdmU1ltd3dQa1NNR1dXMUp2K0ZYRk1sM3F5UjR1Tm9kOVVTdGgvdTdCZUd3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1023,
@@ -15357,7 +15358,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1171546418/22498405756?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN3R6clRXek84YVRNMWhSeW9MRFNFMnJZZlhkbjU2ZnV5VElvTUJTSWpkTjZWVXlzbDlnT2oxbmxJcG1sdkhUa2hkRjJaQmNtbUZCdUdwWFkzSElRcDBqaHF2cGlCYnZDN0JWL2w4c2VWaFVwZTdIKzlaSW5LVHorVU9LSVJoRDl3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1024,
@@ -15372,7 +15373,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1630928956/58250993089?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNTVmUS9CZk9FbXBXL2l5cmxuVFVOaFNTdmdwWlNFdStjM1FwVmxjeUpNTTI5RFRLaDZqalJiYlZHOWZxNHJXaVJoWWRncjB2Z0JvUENzTStFWW9kbDI4V1hDNkI3dFdXdUNQU3FxMXdNQW1aVXdWckZTd05LUG0reVpKbHFSNWlnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1025,
@@ -15387,7 +15388,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/591471312/23296992990?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdTQ4UWgzWmwxa1BwdDQzU2NUSDlZLzBTaVhod1BTbjFvVTFzWVlSNnI4eEsybnUzNm9TTDV1YkN2amJhV3FYR0ZCL0dDWnhHTHVPVmw0NHp3MFpLU3o0QTg5Wk5zcm8rSmg4VENyZ1o3QjRjY3dIeEt2bHdLUHZXVXRDVjk5ejJjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1026,
@@ -15402,7 +15403,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1177903362/23194188550?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN3R6clRXek84YVRNMWhSeW9MRFNFMkQrdytkV0dISWcyV1ZuYkh2aTRYZ043VjlicFV0Nks0REo5WGlCRHhwdW9xb21Gc1ZUL3Ziem9uN3IxUW01bzcwZUovSnpicEYxRnNsWDYyWFlRdnJjYnM4a2E0bEhQUTMwUkFBYzhvSG9rPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1027,
@@ -15417,7 +15418,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/570456386/22432627751?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXNMR3VqT0pEV2E3c2sxTUgvR2Fqd0hVdmVRdlhCMlRTaXZHMVF5djhpZTN1UFM5K3drdG14ZTlsbUdWOUpzekZ3TWlocFlwSVVBcTNQQkIxTlNBTkpWeUVnNE0wTVVuYVRGa2ZXSXhsLzBxbGVnOUNndVJDdW5PdXFxTS9KcVJRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1028,
@@ -15432,7 +15433,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1083951020/22898862932?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNXlpcUpVdHpzVG5Rekp4clVZb3luMkJGeTdMNlEvZE9STUlTaEhtbkNYNDR6OW9GS0Q2NTVQbWdVdFJ5Q2VONGZhT1FKNnJrUVp1bXhDWWlVY2ZWYmpocUxIb3gwYXVqZ3VEaG5DWjh2WllSTmpXemhXMSs5NDBrY3JXS0t4OFM0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Eletrodomésticos"
   },
   {
     "id": 1029,
@@ -15447,7 +15448,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/439468085/22998835251?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1dadjlLdEpQMUJWeFh3bFlicmlYckNQTVozcDNrZThYb3hCUXdScmF2U0UyeWxaVzdQOFVUakxDVE1pN0RoOGwvZVJ4MFNZcHdYbm5qZzZvQ0llUnBGQm9zT1FzcHZwWlcybnJEN1RlUExHSjJrZG9lTys1dHJDd29IaytVZkpjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1030,
@@ -15462,7 +15463,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/392545055/21399888983?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdklNTFkxMDJUc3JVWE56eWdmR3ZGaGczYkJaVUYvOTIxZnYzRXI0bkhiTGNjcmZoYjV5R1ZKaVBpSmVsajh4RHFrREk2NEVOUUpxZkFOSWlSOWFUcmQwak1SdXB0bGNBaEVNUDUrYkJncTlCc2dIS0xEYlhqKzNZbnFYekpOVGtnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1031,
@@ -15477,7 +15478,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1242822355/18899249303?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNDlWUHdIbVgxdXFUSEVZTVNaQ1VxNmpCeTBxU3k1VFJTVVBoTTIyV0dCRzdEUHRYTUVaM0ZMRkQxU29YZk15U2lRZXdQbTBkKytzVms5SFFaNURCOUdGN1ZkbjY3ZFBNNXUxclA4Q0J4VEpRMVgwaFdQVGl1OWd0c1NLb0FNTkN3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 1032,
@@ -15492,7 +15493,7 @@ export const productsData: Product[] = [
     "location": "Goiás",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1408950058/23998099045?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNFhESTRDay9qVlFVdHRubksreThIRVMyNUVwOWd1cjRwbG5rVDVaYnNzMFBGNXdwK2F2YTZZNUxGTkpSanowVlNYYTIzajFnK0dOMTdCNG5tUU5NdDhJd08vajVXN0JleW0xMHRsTFU0dGQzWEkzeU9GbmhQeWphZVMxLzJUaERJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1033,
@@ -15507,7 +15508,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1603106316/23899025433?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVdYZVJwMHhRL1JOQ2k3SEcrRmF6dWwzSGlyTU9KeGdDUEVnMmFCR3RTY20zTmJpeFo3a0JqcGwvR0J2a1pSU3hBWWlNQkJJbXd3NUZDN2JFVFFVZ0FNUEdXNHJMUDRnYitoRDVuWTUyZjRvRFhCeDlIT3BuZ2MvZjRHdDFLenc0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1034,
@@ -15522,7 +15523,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/325008325/21071530577?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdDJBNnZ5Y29zcHhTaDREVERkOGtESkN2YjlUTjhRWTBraGxoY1VIdWVWK25jNW5PdXpFRUxReHFtT2pHdUxXVklGcjlvTGFLcWdiWHRNb1lseitvWnhkSysyN0F3d2tLZkZidVpDem1KdzNuWGJYelhpajYxaTVZYkxjQnVUQ1hBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1035,
@@ -15537,7 +15538,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/409229810/21997923532?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXZ1NkNLTjRvc2dSclJJZUpwS2JQWncxZVhYZm4zaDMxQXh6bjBpakhyR2M0THlMWkNkVWJCR2dGL2Rpa3FOS2o1dkdHOGJISFpGUHhBeFdWOXlkMkExdGI1TmZNN1kzYnZEY1Z4Sm5LOWRSc2xaR3JiUXRtV1lWZzJRdzFpb3RZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Automotivo"
   },
   {
     "id": 1036,
@@ -15552,7 +15553,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1340119243/23294389270?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN3pobC9yczJXSEF4NHNHYnBkK1VJeDJVeUFtZVVEaUxsN0YwaXVuZEJaLy9uSHVVNC9LWXIzRENqOVRHZHFqQWE1V01zVG9EQ0JKbTBoeVF0RkVFRE9ob05XcjViWFZFYW1NdUQrc3NLSmE1azQvOTUvOHI4R1VNcStZZFhNZVdrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1037,
@@ -15567,7 +15568,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1592243578/20299870699?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1ZMd0hoWWdZV2M4ZmtCcVRONXpQdm1IM0FIOGtxTWtyaDlXTDRwUnU2THhWcmpRaEZiMk94WGI3WHpUQ1RYVWNrYWZtSUl1VzF5eVhBS3pTZXVadVFlaExVcVVQMU9ROUk2V1FTbS9RWVdtYWtQaUZqSHBYRlFqdkFnRTBlOTlZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1038,
@@ -15582,7 +15583,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/916652740/22994273170?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmpBeHo4SWc3WFJpNDlEbWdjVWFVeHplUjZnN0FRck9lNnVyZGpqYjhkbDZrK1Nac2piV21IdmthVFdrN1hJSUJXVW5Edzg5WWM5SlZSa3dxZXAzNnluS3E5Tm9BVk10N3NyQVJ4WkVnWHY5VUJPcXJMZUZRMGhoWTVEenB3UDZvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1039,
@@ -15597,7 +15598,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/488979461/22094727339?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdks4MFVub1RWSis4L3ArS0ZLR3llMWp0d3ZBckgrTnAzb2RjcWdHMjBHWmhCeVo2a1ZZRnpZSWloOUNkWkdlL2FWbEd1MngvS09aYmFGOHEzcU1jK2prbnRxVkFqT3o4cUgrK21EU0FVSWFQNGpzR0kyVlVETTlxVWtQV1JSMGxzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1040,
@@ -15612,7 +15613,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1558077864/23898812524?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVlabFNqaXpwaEpuOUdUcSt2ZEcybXdJMVVsNURBbHlkbURuU1REeTRHUUJnZEJwQ1p2d0VEcFNmbmNiMUVaamtGU0hjSjBSL1lqeGllaTM1RzJDQWM4T2oxaEEzQXF3cjlGTG1qbTd5U082STc5b1lYaGYxWWUwZUJVbGk0TlpBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1041,
@@ -15627,7 +15628,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/471851703/23198053374?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdGI4TE1hM2RaRzI2d3dvdjVua0hSU1hoQTdZK2NPd214a2NwbzB6WjVYVVp5ZjJLTWd1Rm1hU1NabWlDMWdDV2tNa05uZDBUcnRET0djMkF3RTN6OFBJMWMyWVMyWXNuNzlORnBSbjkrUDBjQm0zZlB0a2M3cGs4SUJMdG9LaDBBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1042,
@@ -15642,7 +15643,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/410705973/22897667217?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc2xPTjBENGxRUExtSkNiU2hzOXRGYnBjNWtIOExuQWRYNWxPemhBQ3Ixc2dYRXZ1a29mbExTNG1sbUxZL3lIY0hSS2QzMm9lcDA4TkZTZUVtcmFVZnJ2MitWMHo5czQ0R0VKVGtZNG1IZ2NQTTdGaE02Y0Q3ZXZvakFPMENpeUw0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 1043,
@@ -15657,7 +15658,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/372103398/21098006467?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdEtNSlczeHMrd1N3UlFueDd5cm90d0tyRGp4MlBNVWR2emNKcDgyanFlazJucThSWTJFTHQzSXRjT3dtc0UyMWwvV1dSaDNNM2ZkRXhmU2tCME1YZnY1aFFndjN3R1YyNHl0L1krdW5hN3BiNXZFOFJoKzBqU1Jmb3U4R2dSWUpnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1044,
@@ -15672,7 +15673,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/372103398/58253755150?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdEtNSlczeHMrd1N3UlFueDd5cm90d0FuekIzZ2kzc2N0c29tdlpaNXJEZ3pqVGVmNmRrYlM3YjNHY01Ra2hHS0hHSGs3S3VMSE9QZGR5KzkwdDJ4NktUWVZibTRlRXI5VjgxcWxQUzFWOVBVY3ZRNUxHMVljSXF3RmJzZC9DQzZjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1045,
@@ -15687,7 +15688,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1346467680/22897997803?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN3pobC9yczJXSEF4NHNHYnBkK1VJeElsUmtWV0Vna0h2ODJFZ0VSMG1razhXaENycXByOXUza0Fsb2kydTdwOXh0TEJsaDlVaWQ1TFJTdWxXY250Uzg4TlozSWprRDd6R3J2a291R0NMRVRBaFFWaVJ1WU9YVlF1WHBCOU9majdVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1046,
@@ -15702,7 +15703,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/322050038/44377112304?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdTRramhBWHJSZkg4a0JzL3Q4eEtSSmtyd2hsQnRDM1NPakhOYWNDNDVPQXJTdzZncUpoakc0L2lzSzNZakZVNzdsRFRXbkNhZGt0UWY0c085bk1OVW5VeTN4OXNsWi9HT2E4NEN0WjQvTlRsYWZCQitVVDJyR3JDekw2RXY3T2s4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1047,
@@ -15717,7 +15718,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1308629416/40814498321?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNjBqS29UNHNHQVlWREc4aC9FR0ZjRHdaaU9WQStJUVEyMllaZHN6SXRFV2FaaVc4ay9HWTJ2ZFNjVUtXRmxJUVcyOEt1TVVvSUdVRGZObFIyUU9FeXZma08yVFQ2NithMUhTVVVBQjBZeUFXSVdRdW9WcWtBbndJYURkL0hJSG1FPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 1048,
@@ -15732,7 +15733,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1547416433/23194253294?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnVJbW5vUmJMVEgxNENmWlJITkRXKy9kUmRTeU5KM0dVREVUQkljTlVUMmtFRWltN3ZmL2Y1ZUdVL2lWOEJmbVkxampienJsSlVsb1BBMkp1ZFoxSnZnakZlR0Y2ZGIrbUpUSU5OSytQb05OR3h4Q0lZNEtjNnJkb2ZIYm1meTJJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1049,
@@ -15747,7 +15748,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1588813077/23598871222?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN01ET3NBTkM4MXQrZ3FuUmxFTmQrZjBiWG5XbHJ4QWVaNGt1TVN4V3Z1VXZld1ZSUHVTdEU2YTllTlRvUW9wSUM1TDd1WTByblo3VnJKdXlLSEhUQi85R3Vsc3NnY0hmKytoWU13MlNXUG9wOGFnODd0MHl0OXN6T3pRQU1ENk9BPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 1050,
@@ -15762,7 +15763,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1357069533/22394329408?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnFlajJWZlQyRjNuVGtydksxZlBaemI0bkI2MzB6WEJpTGFNcEViUEFVbXVvVDhsRlhNcUNEaVNzNVRVdEFUVWJtUzhKRjRrWWVKOWNxcDl1ZUlGeDFpdmN2VlVOaGV6cHNmN09obTE5RXhQdTFIb0IvcnVYQ1pKVzJrOUx4VXBjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Pets"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1051,
@@ -15777,7 +15778,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1264794206/23698395518?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNFJWTjExaFdMaXlqUWNhOHVUQjBmZ0NobE5nTDlzTCtDUU5rU0E1cDlVN2Jaa0U1QnNoWjR2ZURoZitYdXBVR2E3TzRWTmdrT0JkVVc5RTlQTWpiejl3eWJRQy9LbENtc3NqQ0QzU3BSZ0dmL0VCY1gvVHF1WWhTQVZwTnFZQUxjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1052,
@@ -15792,7 +15793,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1454172785/23594154341?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0lRanFYdEZNbWtLdlh3OWlUUVBCY3BvaDExQWFhMzc2bW9peStIME1CZUhMOGswQ1I1THltQ1pLQjN5clhweExYOEx1aFhIaEdDNC9yVGJuZ3FpNGZGbkdQRGRGWWdsdmlUUU9saVp6emx6RStjVFNmU0xjQUlLMDlJNncrQjdJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1053,
@@ -15807,7 +15808,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1210545163/22093622072?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0p5WlN0ajFLTzdqaTlQaERUZG41M1BmV3QweVphVU1NbkFKTjkzb1duM1pVUG95ZHFRSExwR3lJT2ZEbXlPc1hNRlcyays2M0Ntd1JVN0Y3RkJhS2pZMXVRUlpBMG1rb1NzV3V6M2tac0JpWTVzQzhOTmtlTi9Bdmp2RTc2K0FVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1054,
@@ -15822,7 +15823,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1175228752/21697995645?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN3R6clRXek84YVRNMWhSeW9MRFNFMmp6bUxpdENQeU44NVZWcFlPL1NoN3hFMWZjU3VBbkZ4RzlHS0hwaVhPbUlxY3ZESUc5cXhITk5XTkV2V01DTzQrRjhoQnpGS0ozTTRkZWtUWnRCMU1aZWc2Wkh0RnE0SHlPekFpeFpET2c0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1055,
@@ -15837,7 +15838,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/218567787/23097141244?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdVZiZks3Tm5zd1JocDV2MVo3TnQ2M0JMTzBEMnBCMUhNUGIrejVhb2RFYUZTMkZXTEFQL3lZTGt5MXh3UVNGTXhLbXNnTGZxcytkUGx1MGt1UHcvSE9scTVMQ2V4T29PaFRYajRlSHVTZW93TU5JbFF0T1NzQzhIYUF4UDlzcjU0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1056,
@@ -15852,7 +15853,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1404938893/18298349461?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNFhESTRDay9qVlFVdHRubksreThIRVBEa3JyUHhOOHBlcUozT2I0b3dDbno3MlBwTmxLZ0hYV3VPMlVMWHl3b0dicFA1emRnY2pkaXI1bms4OUxDaHpsWE44eGpxbFRPR1pZZ1dMME5iRTNHQ3dtNWVIMXVrbDdRckpTS2pTL3lzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1057,
@@ -15867,7 +15868,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1547995492/22599244908?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnVJbW5vUmJMVEgxNENmWlJITkRXK0hYQjN2Zk0yTFhyUmliYU1VY3laa1NSbXFkUWNZK002VzRNdEpzNVRTNC9GT3VDSzc2M0hWZ2JraittcGkwN240bGxmZkpFZDZMUCsrVGVXK0xmRUp1eGNWZGVDT2FxSTJxdEE0UzRjNnY0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1058,
@@ -15882,7 +15883,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1064041485/58201523970?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNloyRXJNK0dFZFZ1MzRDVXhpYVFrVlNra2dIK0lyVzUzVnlsQmh2cjBJT2dCajNyc0U1RXFXTzRKdzNxK2R2Y1BTT1dwS2ZveTNvRWtGMGVhTjhmYk55Ri9pQ1UvKzdhcGN6WlRxeHpKc0pGeG5wUitMTDNBNjdabnJTTS80dUVFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Pets"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1059,
@@ -15897,7 +15898,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1258087913/41459006046?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVkyaHE3aUNyNGd1V0k2Q3RjRFRaalBkb3dIQ3M0MDlUeGd0eFozZTdKUDRjQVNQRzZWaDJidlQ2STh5UlJ2RHVFWTUzQUVyQ3A2d1o0WFFRS05HMW10N1JMUkxUcnRmSWk1MFFOd01WRUxLazlQaEtubk5tWkRKWkxSYytLR3NvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1060,
@@ -15912,7 +15913,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1412860792/22998089623?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEFrSUpWaitUS3NaQTFHTVJTQmhpZUYzbVk4b2J2dTN3aVlrRUc5NjUrUjhGcy9zdnRMOEdLOXFqN2YyQk10N1VQdTVJZXN5cHVxQU05alh6UG1oRWgyb2haYzR4MzgzUXNWekw0NlhJenBHOUJWei8zYWpXNDRuSVNYTU8zTnM4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1061,
@@ -15927,7 +15928,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/284127598/22393089717?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdTM5OUk0VCtZNnNNaitkZW1HaW9UNSt3bnBYNmgvbnRDZkRHNXJORGpzUExSNGpFVENkZlZ1bHNOUjFqT25VZy9CUDRCL2VHd3N5S3JidTZBWjNCaSswNi95ejAwWGhMbHFHelNtSFZuRVB1Ni8yTTVkY01BV1BNM1RqVTZCZ1RJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Pets"
   },
   {
     "id": 1062,
@@ -15942,7 +15943,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1411099120/23594284991?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEFrSUpWaitUS3NaQTFHTVJTQmhpZWI5TVFWTTRNZ3RQaXM2WEZySldDeWVjdjFoeXFRSkp0QTZ3MDh2RFBVdDR3ejVpK0licWxwRHJ6bnZSS1NVQnRRMU5aZXdtdHN0WWdwYWgxaWUzYWs2U1JvamFVU2xuZytZY1BGRkJvVEZ3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1063,
@@ -15957,7 +15958,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1412103756/23294179074?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEFrSUpWaitUS3NaQTFHTVJTQmhpZXJpcTVOT3FkTmhvTHdDeTVZZytzS2txSG9Zb0l6VlVYMmtBSEJORndjenVOcUpZNVN2UG1wdEpmRzNHMC9FakF3VUFsbXR3S21ZMmlWdFNrSENlUnp3N0IxcXRtenVabW9FSU5Kdnkrb0RFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1064,
@@ -15972,7 +15973,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/794850458/58251555659?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdnVlVW4yMU1FYmY0eXhBQmYxMG5HS1YvT0FFQjdRQk84VlZ4a3JVeUxkODY1OGt3djJVZ0ZEdlpqYkJicHc1WXF6bVJHT0tZS2w3MmhzWW84T3V3c1oyUXFORUg1amgxSEtVT2hMNVJSSjR2dk53R3BKSncxbWQ2c3VSOWorRW84PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1065,
@@ -15987,7 +15988,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1223660575/20797795350?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNG1aNFMyQ1B0b04wNGNvN2huVEV0YXZTa2djR0ExRHRFRUVlL2VuYkU1ZzVLMStvaW96WHQ3bDQxNnNZQXQ4R2xJWkZMT3hmaE9XSDRWV2xkb0NwdXlqd2dTT3RidzBNbUFyOTNobWt5bjlvZFBZQzNid3UxOHMvRnAzay9sM1RjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1066,
@@ -16002,7 +16003,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1508524367/58202885697?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNU1mU0M5RWxpRUpPMTNORXc3cFZmblRhOSs4RWpwc3JJSGtOL0NPa0N6VlZOL2s0a29pb2lDZVp3ZVQxZ1BjVmUzSUZ4RkVhNFVPMnM0YWxqa1lqWmNZYk5rVUt6QVZTNXJISFRaeEkzU1FFMS9OQ29GMGdmWmpoTXEzWTF1TWVNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1067,
@@ -16017,7 +16018,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/386191827/9496563571?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkY0tSanlKZU1BU2Y2RTJzOS9neUtnZDNTU0dDYlhuelFoQVdDcHU3aDZqZlNsdCs0RzFoVis0R3p3SGxmQklmWFllSjJ6d0Z4R05FbnBxbDNLbExocXA2clhueUJTOXM1NGs4WnpjaXhMNExoVFUvR2hkZy9XYmV2ak5waVNqdFFmTnNrc1B1UHRzbjNVWXo3V1dVMmg0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1068,
@@ -16032,7 +16033,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/663461151/23292924612?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWpvbHhtVk42Rk5LYks3cE9vcndkT0hXd00vZ1p4czhER3gwc1grNmtacUN0c2VSTUg2ZlVoY0U2VDQ4cmkyMlJvZ2JYcThNYkdHRVVMMldKQW00YkN1TFlEYUxlOCsxaVFncTZKeSt6YXJwMU4wZ0NrQnZLRndXU2psNlFyQ3NvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1069,
@@ -16047,7 +16048,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1607457575/19398323932?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVdYZVJwMHhRL1JOQ2k3SEcrRmF6dWs2TjRBRzcwRHViSVRmbXBCUXVlREo4TWlvTnA0MmdUU2lobGE4aVcydGhKRTdmVE96VWRLVVljSmRyb3lpUzhlNGpzRDc1RHgvQVJCUXFQUkpiTW1oMEhCRWpGNno1ODZwanBDbDJtN3lvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1070,
@@ -16062,7 +16063,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/432843460/19198648197?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWtXZlNWQWNDT1k5Y1lxNnVhd2FEei9rRzlRRlVWaHpiZUpkQVRZK2tYNEdyeUdxNjVnKzBYM2ZqbVdnSTRtbzJlNUhTRnlWdVA4ZTlxRkxMWm5uby96ZjIvMDJmcnlvNXJSeWxHODFaUjFGdjhIMmsvdGFIaG5NZmcxUCt4VE1JPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1071,
@@ -16077,7 +16078,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/347879211/22898156734?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdnowOFhCM1NaQVVTWEJ1QUxDUUhSdG5EaGtLY05UTmlrdjIvL2hSQzloRFU0L25pWlhwSklpcXU1RFdpc3RST3ZWNExnaFYzbjVGVFRoeVFTcnE1OURKU214V1VBTTVSbSticzZkTGo5QkFNdm5oNEpQc256VERFa0dGU2hmVVBZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1072,
@@ -16092,7 +16093,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/669762073/22294783534?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdDVuSDJyWEY2RUoyLzdVb2ZrNlRUS1RYV24ySG1sSk1tdGlNc1Q3VWtUekd6NW84U2RoUVZMYnR6SXdFTlQ0b0pIdWl5SVVLMmlyWGpBekViOU0rclBXbkxDekE3S2NQNjRueDJRY3NuOGlWS2ZDNFdnRUxMNC9ZWlZacGREdG5FPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1073,
@@ -16107,7 +16108,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/794850458/23294490084?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdnVlVW4yMU1FYmY0eXhBQmYxMG5HS0pCUGh5UU9jZGw1MmRha0hjaU5oSEkrb0s1b1N6RmNxby9zVXR4RlZyTlY3WU5uWit4TTdoSnJTU3krVDhvSzJYVnU5OUtVdlBEWUU4OGVyQzFoMWp0MXc2MzhhL0pUTlh3a040bWh6S084PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Eletrodomésticos"
   },
   {
     "id": 1074,
@@ -16122,7 +16123,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/623310927/23394051108?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdjNEd0VwdUxsNGd0UTdLZlJpeHo0aG43OUF0cWFvSlBmbWxNbk9HT3owUkxpTyt5cys5ZXNiakVsTUQxSndGK3l5L0d2bmNFOExOaDRWWWl3THd4Qk94d2pLdTB3TjdDYXBPSXBxOHZqWmUyQ3E5cHZkSkdJc255ZzJhUHI1NmRVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1075,
@@ -16137,7 +16138,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1508524367/23594186273?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNU1mU0M5RWxpRUpPMTNORXc3cFZmbmwrTTNGUW0zZVpSNlVqOW5Lc1JzMTBEN2NWb3RJWk9Ob0R0aTZlazAwNzJWUXhHZlRjWnVWOXpZV3VqcXAyRE9ucGd6cmljZmh1Q2hhclJUVlRUSXdpZEdpUDNFRnVITjhuZ3FGQU1MSTYwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1076,
@@ -16152,7 +16153,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1070375063/21298986645?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN25yakJrbS90NzFHTVl1UjRXSmMyZURGY09nQUNqMitvS1Btc01rSVhuRldFTmY5dGkzL3hEUlczS0RiSGxpVjVCM3drSk83dGNyc09yZCttenBDUmZLRjRHMkdtbE9qZkc5WXVuK3FtSm93K1MwS08xZDZxbXhvbTlUS1dhb3I4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1077,
@@ -16167,7 +16168,7 @@ export const productsData: Product[] = [
     "location": "Bahia",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/939985901/23594483038?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWZCY2xpL3RxL2J0UTVZKzRkZkJOT0JqNGZzenF0clBwRTFSeFV1SXpkWEVlYjVTcTlHSkNPWFJEVnNQQTNIVkVTS0YxclVzL29mM2o0bjhhekZLckY3OFBuUTdhbFF5a093bFFFN3BMdVZTd0VndVM2R041NHdnQjJac21wdlp3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Pets"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1078,
@@ -16182,7 +16183,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/452121341/22991073365?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdk12NVRHbGRhSGFQalV0RmpMbFBXbVgzeW1JVDFweVFTdjUwL0RrRDZ2RUtwSzhQTEtQWjVIZXd6STZpNG5ZWmR5SDVxdjh2SUgrcjJNTXlWRnhkL25ybjkwdWdDdExtcXFJeFRZbFR4K002dmtVWXA4d3VNYnpFeC9hZk43L25nPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1079,
@@ -16197,7 +16198,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1041517511/19699760947?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEdUZEI0NXFzRUFLRWhUSWtPTm1ZR2VvTll3aGhaK1lneldWemwyNkYwTnpSWnp2cC9tbDYxUVpEa3ZLaVdqbFBxN0VCaitLSkVGQlFiUndJKzBxaVd2ZEI3V2hUYVdJUlZ2a2E0d0dpTFZ4Z29xb3E1NU9VemtGeDdWRk0yeWNnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Pets"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1080,
@@ -16212,7 +16213,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/333002087/51050945178?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXpxcnMwMVM1TkM0aEFJSVlvNFJsWUt4dW9pYWdUSDdkd1R6RUFreVV3empEekJEQ0ZwSGh6dFdkNCttTWRvSGJMNXpMMHBWREhpV1ErRU1iejVTMkJnelZFaFNJaVUyb0pNa21MUXdSRjlLWlpJUUdVNjRRcXJOSUlCWlE0THJvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1081,
@@ -16227,7 +16228,7 @@ export const productsData: Product[] = [
     "location": "Internacional",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/401316974/24280989042?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdTYyK0NiNU5EdnJkblh3MHFzSTlqeTJySTlJN29CdEhiUlhiMmV2MDQ0eEZub0tSK0xuaTFTVGc4UTUwR2xnb3dINU1JWk9ZaUpuSHY5N1k0a3d2RURtZmFRMW85YUQwcWNiM3lzcm4yL2E1YnZ5TjhsY1NuVEIxb2ZHdXJDc0F3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1082,
@@ -16242,7 +16243,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1508524367/22494653097?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNU1mU0M5RWxpRUpPMTNORXc3cFZmbjN1bE53QXpqZEt2MEppK2h2Z0dGV2pNenYwTnJCYTdiQ1BTMHNPL2ViMkdDSWpWS0VyaFNCMnQyMGxiMytWaFcwVXhNVU1UQzNLcXJ2ekk0QkhCQk9DSFgzV0JvdDZGNTBjbkI4bDRadzZNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1083,
@@ -16257,7 +16258,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1459954671/22894640920?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0lRanFYdEZNbWtLdlh3OWlUUVBCYzFSRlgwV215THhoZ0hpQVFlQXBtNjlNbnY1SGc1UE1ZalR3V3lDdFZaODI1QjNLcFZ1b2JPcEJFbHBneW00ckh3MFRlVXRLY0RDeTZmTERESUZNOE5kdkdMQ2V4TVB4M0J3cjRXMU5zd0xRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1084,
@@ -16272,7 +16273,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1185534518/22393664395?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNkp0bHp4akpkRDU0WGxnbUo0MWpuN2VKc25QZTU2SFE0dFRoTFlPV0lJdklrWm9lb0RFSXFPdXRXQUxhcW85aUFUU0dGdWcyNlUwRE8wcFhGMnRFd1c5ZzN0N08yQm1EbGVhQ1JNOFFXZGYrSGJwemdIWnY0NWNkdU8xQXFxS1drPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Games & Hobby"
   },
   {
     "id": 1085,
@@ -16287,7 +16288,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1060693413/19499232449?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNloyRXJNK0dFZFZ1MzRDVXhpYVFrVlhRUEJyWU9aTlBJTGNQT21kMkJnanNoWWRUZWFGV0QzQXR6RHJjRlVhQkwwd3lEcVhEYXJ4QmRqcEx6amRVU0kzSERSRkxOVmk3UFBrUGV5dWh0aUFqdEVJeEFvRFRPeERaSEVUTTcycFBnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1086,
@@ -16302,7 +16303,7 @@ export const productsData: Product[] = [
     "location": "Santa Catarina",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/333540705/19499322859?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXpxcnMwMVM1TkM0aEFJSVlvNFJsWVlKVERRQzBRWGM1NTBDZ2piNGtDUEIvWXpFYjJKN1lJc3MyL1VSdUdOcW4zN0NNcFBQdGM0R0krcktYWEE3aFFiSk51NDVudXV5WGU1c1QrWEkrZVBWWVlMdWF3cjNMWlQ3bkFkUkJ5QXZRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Saúde"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 1087,
@@ -16317,7 +16318,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1384638191/23298166942?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNXBkczJ6U2l3VEh5T1haODRWd1FPaW5pT1Q1S0R4QkNmc1ArT0xQT2UwM3FGdm1TbDMvS1g5czRHc2N2Mzc5UXptaFIveTgwM0x2TldJQjV1MmVubVJzZ1VZSDN0aVo2UUJaQlRBM0YwWk81dDhrczF5SzkrQjBKaGE5WWZsKzZjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1088,
@@ -16332,7 +16333,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1242044379/23293253949?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNDlWUHdIbVgxdXFUSEVZTVNaQ1VxNm4xMFM1VkxYUHBGS0RNUTVrdHpKZVNSTjlrcnJZOWtXd2t4eElBU21EZGJ1TFJFMG8xY0ZsR0NMUDBETHRIWE9vRHhIb0NiWmcrai9oaXdRNDZSVzllV2R1NmhoMVZGVFlvTzRyQXpKNzBVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 1089,
@@ -16347,7 +16348,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1392752117/58200620906?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN01mNmhVVGFUVHY2TURuZWFZQWt1dVVxSVphZmUrVGV3c0NuSWZNbmd5WFh4RHUwdW0zM0xVemQ3NXI2UlhSNXhkQmlhVnpFTVljWmdKZkJUWkxNd1ZDamdCQ2k1RVMyWFlhak9pblRUNDFFc0k2WVZyckpoTjdKdnAvS0RIZEE0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Automotivo"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1090,
@@ -16377,7 +16378,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/406969593/23998275880?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdHdlZDRIZlV3Y1NwTEorc1p6NWhsK0lKM0dYYzB1Ni92bi8ra1NaOTVDeHN0cFAzK3pKK1dkbUYxT0dEQW5veHFEZlZiUVNoMS85SlZPT2VOZFA3c0ZIZG1sYis4WkgvMmgxMlU0ZzZtRk1UTm5RaUptZVh2S2RFZUdmQ1gzWjhnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1092,
@@ -16392,7 +16393,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/296363855/22197737647?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUNnTGg1a0xWRlJGb1B3SytTbEQrVk92YnFUc2Z2WHhWREc1Zy9hWlA5ZDBhR0ZUVEJweXRuM3lvK1FaV1ZZaW1DVnFDNmxiT2VjejdvMzlLQU8xNEFNd0RYZlp3cjdiaDVLdDdQSnNsd0R6aU1HZ3BRU3ZFWXVQTVpDMmhqb3NnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1093,
@@ -16422,7 +16423,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/766258772/21299886038?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3Uwc0ovTVNNQUZsL2FKK3RmTVRGdnlwclptbHYwNGhNT3hzUXlNbEU2TVRqMFVyMCtYN0Vtd2VpeEMrSkdRSlVtSGxnTlhINFJqbkRYK3g5SUxwMHhmZTJ3d0Myb0ZMV3l2TUJnMjVoeHc5anQxdDJ4Z2J6ZFMwMFRNMjRJbThvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Automotivo"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1095,
@@ -16437,7 +16438,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1504788346/18398346899?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNU1mU0M5RWxpRUpPMTNORXc3cFZmbnVHc01QMmlPU04vV2lYVFQ1TjJMY3JPNURDTnF3eXJiMFdUV2lrV21ERG9oeWUwblFyYUdBbHgxVlBaMTArK0RYVE9pQVZ0M0ZsK1RLcUIxVnA2V0FFVXZiSXNFZ1ExUHA4V1c0K1RISFlBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1096,
@@ -16452,7 +16453,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1553995251/23694390955?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVlabFNqaXpwaEpuOUdUcSt2ZEcybUE3NmlxSTRGUENXUHBjdzV1TFNRY1dlWElDVFp5RXV5aXZlSHkwYVphNkd5N2tlQk9FbXJhcEdhZnp1K0pLMVlFanEwajZPNFZGZUgwMnUxK3gxZTh3bDBqbm1uS05hTXR4cGlHbFVqS0lVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1097,
@@ -16467,7 +16468,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/287513018/19998098994?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdjh2LzNiWTlmQnc2UUJEWVpmb2xmMk5raW5DZ2RmV1VpajBLSTk0bzNPLzdUZzUzdjFlOGxBVG5qNlRUdlIwaE1nY1pKd3ppQ1RKK2srNENDL1FRenVDbjkvM2lsSWtrWU16TnhDRmFnN2RqU0NCZDMrRnlTdlJ0bmhOVmJnb1RNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1098,
@@ -16482,7 +16483,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/413049152/22799151860?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdGRUUDBVaThIN0oxMGI5bE96UVkwaE9xV0VBOGNuQVVIaE5WM1F2NEEvdjUvdkRZdjFCUkRhNzBsemhuY0xLMXZlb0pXRkpZMHUyRTRhTi9MWDBxZld3TFdmRDA3WDNTcUdCZWJRSXM3MVg1TG1rZWtIczhOU1BQVWUrd1QxZEtVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1099,
@@ -16497,7 +16498,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1027435385/23698061952?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN2FFWnJLSG1wUkVCVmdvV21GWWdSc0E5aGNnWWhFNUJFcUltdGQrSmxtSkFSK29rTThVUVVoT3RYN1pkdWJxZDc2NUxSUG1lVWZYUEJaUnZkSzhBcE9OSExKUXBneHE4dkwyMHd0dUZ3ZXMzYVc5TXRPbm9lM0pwemh3NkV5aXIwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1100,
@@ -16512,7 +16513,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/436682589/20973207192?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1Uwa3hLOHExZXd3cG15aTdBUHFFTmNJRG5jSlZtNXRDdmRrV1JHSW5YTU1LQmN2OXZOSVhOVDAzejM2V3hjZlRWdlVySmYxQlcwNS94MVhhTW1EMVlSNHNzRHdoN0JjYko5ZkFXdHZEcnIxVVRVRHZ6K2xldlZqZ3U5ZExHRmt3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Automotivo"
   },
   {
     "id": 1101,
@@ -16527,7 +16528,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/985384927/58254623955?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmV5MkFQTUk2SExVMDZQT1pqb3FBcXhQQzZrWFQ5STRqaTVYVVdESCtnS0cvVW9kR2J1L3YxL0hpa2R6MGNGNklOYlhiSGpyRHpZaU81SXQ2QVkzN0JCcGZWRHhSNlhxb1RWMUZzcjNVdTZJUjBhcTdrUVc1V0NWV21BYWFQMFY0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1102,
@@ -16542,7 +16543,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/821955473/23594487714?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc0phS0lGSnZGa1dTUnVSRXBTaDNEcitMeUptQXdiV2g5dzJkOWlZR1NPM2hnWWhtMEhNUmF5bDVEZ1lLMVI0ZDNoRnNEOHo0QVlkem5zN01iWWdjQWNMalYyeDFBNTlLdEdKU0VhSHp1QUZCSFVtS3FueDdvUDFUaTJjcTEvcHc0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1103,
@@ -16557,7 +16558,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1325610951/23998713760?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNTkrc1ZUUkJCVzhDNG9GeUVWU1NleGFsWFF6djhjYitxMGNMQXdYL212Q05SeGRvMzVFcmVtbTVJbWppVGd5blZxRFdzRkF4dXpQaG9Fdld1clZCUXRVdnN4ZXZLSm9ZTGpvQWg5dTZtSGQrbFQzWVFUT2R0Q0drRjhWS0FEKzRZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1104,
@@ -16572,7 +16573,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1506941149/55900821899?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNU1mU0M5RWxpRUpPMTNORXc3cFZmbnhNOTZzOUI2ZG9iYllZMm1xRnZUVnJ5a2M0cHJVN2ZlV0RwYlFYMEtiZFY1ckRwclZaYWF1bVlrMktjajVMRHBhMGxmQ1RIWXJkNHZSMUhZd0dIemlubGh2WXVRd2Y5ZHo5TWQvcUpuUk9VPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1105,
@@ -16587,7 +16588,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1501302960/18198149969?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNU1mU0M5RWxpRUpPMTNORXc3cFZmbk43bEE4T081cnFpeVdPNzE3UDVnQnRuTGc2TVpnMVl2ajIwR3I3QThQUGpoTDgzSDgzbzlUa2RWNTE2TjJYUmVCb2VDNzNBejJMNWlmZFdxOWk0eUpzdGtTWlF0VllLNE9tM1N3ZmNva1ZVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1106,
@@ -16602,7 +16603,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/801682840/22893143878?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdEZLQVpUdXZITElIRnF6YVU3VHM5bk5vZmpoQmV0dU4vMG1vOTNqZStQa21xbTFOZ1BRY24wM2hSZUNoaVVhLytqalNiTjgyM3ZTSkQvRyszQ0tXS1lOamFEQ3F0WUJyVmRGcCtNMVdtS1RmYmIwY21WNm1CS2tKS21VOWxRN0tNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1107,
@@ -16617,7 +16618,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/406969593/23998117702?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdHdlZDRIZlV3Y1NwTEorc1p6NWhsK2daZDZOb216djQrbXNQR0NzL0FBdi9SMExqUXRKRVhncGJoZ3NWU2tTeW1JU2tBZG96SGRXOVZaUlc2RkNnNGJWVE1KN2lYbldIZm1CTHBhZTFvUEk5WUQySDdkRHF6SDg2MTRWeUQzbVZJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1108,
@@ -16632,7 +16633,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1007379684/19698585554?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1ZpUFMxL2o1N0RPK0UxdWl1N3FMVmJFY1FZQ0pZYmlQcmIybWVXaTI0a01MQWpvRDVSekEvWm4wb0ZLQnM0T0ZsVThLVzJKZVJRSGdPdW9UZHdqNHBVbWxWWCtVS25tNVVCSmlBcG1mR2VSMDZhTUVwREhuNCsxMDZwY3J1WmRvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1109,
@@ -16647,7 +16648,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1106771079/22599139773?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVRBdU9zazlxT0l6c3VUSUwweHVJRXk1am4vYnVVRUQxUzNhbEU0U1RIR2g2VHZ4aVBUT3B6MUlHOE53cVBzdFBGSUR5QkhOVXErMGtJdWlPb1h6dEd5U3ZkcHgvd2hUU0ZzRU01alltVG5jaDJmdFpscm1RWDVYVEY3L0dIZEVzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1110,
@@ -16677,7 +16678,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/378486098/23611475927?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdHR4N3hqTUVpcFByZHY2eHVXU0dPeVBtVXVENlRGWHRjaVBBRlptLy9IQkxIVnNCajB2TTBpTDlZMnpxYmFwMjBxOHFjUW4yMk1EQmlSUU5CeG45RTBrdDlnVnkzR3RwaGR2TmU4YkZHNmNLeUEzU2ZXMHlQbUpCbmhDUWJ4OTE0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1112,
@@ -16692,7 +16693,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1613326394/22799036050?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNmZRMXpFdjJvbVdrY2I0ZE52YXdKUG5MMW1nSkRxWUJDNFB4YUY4TlRLM2NGdmRvSmRpUEVKN3h3cWhtTHE1SDZpck12ZnpVK3UxL2F3ZWdkR3lyYUFRSmg2RDE2RXl1N2pkanFxdk5yQWpZMkE5THBrYUlQWDZSL3R3VmpBdW5vPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1113,
@@ -16707,7 +16708,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/969488461/22393748063?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmxMQjZLOVFleTFDRUdhdnBBc0tBMkFQM1VEekxXaGxMUm9LWGFsZWNrRUQ0dWJDa2Z4VURmYlNzNmYxSzR4Z2JwekY3WkRWRkpYUk04NTk2RnJkcThJa1B5WUlDSk13NHVqYnU3UHROUmM5WTdaTm9LZWxsWkhxb3M2eExrQm5zPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1114,
@@ -16722,7 +16723,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/340712945/23392881957?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3hNbUFEWEpWOUwxZnJxYVlIcVhHRnk0bGdDM2hQb1ljNzEvL3N5Q2ZtZlFqeFhqc0lHclJiUEI2MFIyRHpSK3FMTFBHV0lzZzV6ZlVvWVk5YXpGa0I5M01hVG5tYWVMM01CVVVpOW9aZW9adG1wc0JJU1ZWeERrVlVTRTliVjBnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1115,
@@ -16737,7 +16738,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1457299928/22898672201?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0lRanFYdEZNbWtLdlh3OWlUUVBCYzlSU1orak1tQmRkYmVDQzB5ejBvTnM2RjJvM2FXbzZuWUZZR2todUl5M2s4US8yOEJ5a08wNTJLSHlIUmkvbk5KV2hXUDdWK3c0RG9VMDRJejk5U0hKSjRXNjBwUVZlS0NVWW01QWxxNTVVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1116,
@@ -16752,7 +16753,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/397049888/22798945314?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdlNkZTJ6cFU1VUttYU9Cc2FOTVBOcStiS0VVbW1UdzNhdS8xMzdQN05QeTE1NHZ6c241VFJ3Y0NRbVBhV3YzcVhJc3dZTmV2UVB3b3pqQkVCczhPTFgxNDRZNFE2STlkMHc1ODQ5Y3RWSVFHS2dyQllxRVNhN0dvd3NrczFLSWN3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 1117,
@@ -16767,7 +16768,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1044465687/22393136651?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEdUZEI0NXFzRUFLRWhUSWtPTm1ZRzJyVnUxandhaUp4VkRUMHh5SWlqQlJlK2V2QzJ5Z1QwRWl1M05TVUNHTk9yWHJRSEdMamxvYUZUS2diV0JVd2xqamJyK1lLR09UZmowM3VDMThNZWZ0MENrNUV2ak83ZlR5aG4rcHBobE9VPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1118,
@@ -16797,7 +16798,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/518956510/22797495434?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmZNck0zQTBMcFVhNnErT09RaGN2aE1XV3JEVk51N0hRQWRIdWEvazdhNUJISlY1K00zSEtUVTdvbHJnRHBZQUxCanRLa0hvRS9RNVBmWHQxOVo5ZThlbEQ0NjZSV010YU5wOENjSm5oMzAzTWt0M1A4ZHR5OWRaeDJYWVZDaVBrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Pets"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1120,
@@ -16812,7 +16813,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1322932586/21798273301?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNTkrc1ZUUkJCVzhDNG9GeUVWU1NleDN4MFQ2UWh6SmlTOGtCVm55TTZwby9sNzFyVjNTUjlNamF4bHRoTEFMQnNCajV4TWFyZTkranFBVXRrTG9wdGUvYUtaRDBQakRyZk9Nek11WjNHQ2NoaFd0ZkpMVDJZeVdRODhwTWNXR3o4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1121,
@@ -16827,7 +16828,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/290571654/23918047108?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmFCbjZKQi91ZUg5emtFUlc3cllEM3hBYUQ1eEc4UnVnd1VxcVZocEEweTZzY2E4blp6V3puMnBMaTdtdzNHdEdmSFZSMVNnN3lrMXJmTG8yWXZrR0E3bmpmdXJHVXpUcTd5Mk5hTXBZMm1DNjRScFZERWw1M0ZjOWlSLzJ0NHNZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1122,
@@ -16842,7 +16843,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/433856120/21599378249?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUJmK0VGQnpkV2hQSWlZQWR3QVpMZG45VWRhMFhMaVJna3FzeFczVnFZMnV2UUZ2K0NIWGtIeTBua0VsTWdzL0w4L1NHWW4wbHB1THNsb2pnNnJlSkdnT0hQUlBKWXFzWE1sM1ZFdFVqeVdMN1dxaVM4QkZZcklnRUVsY0VTaTA0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1123,
@@ -16857,7 +16858,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/388739239/5786878341?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkY0tSanlKZU1BU2Y2RTJzOS9neUtnZWpFa0lId2J3bWRaaXg3U2NOYTB3ZlhlWStvZFpoNjl2R2NOZ2Y3R2tsaUhvTlVPVGNCckN1VnVVby9DYlIvT2FIZE5nb0llektUOGx1R212NmZSZ05taHZZSGFZL2ljZ1N0RkhBb3hWdTBINVFSYXh1UWxYSExjMGJHdnQwUmZvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1124,
@@ -16872,7 +16873,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/371687721/58203357350?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWVHcytlMHd0MVAyWmtaZk9oVVdIMUZFa0NFcnF6SUpSK0Z3UWZCbzZ3T2VldzR5dGV6dllQT25aOTJsYnA0VTlDMHY2bEhpWUN2OGVQamVXcTF2ZzVLVyt6UlBxR01DSDZ0N0lVSXZ6NkV6bUxJRnl5aTRpQnhOQmxYZzU5WHE4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1125,
@@ -16887,7 +16888,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/318621368/20816888498?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdVkxMHEvanpXOXZ4dkdIOUVHeXhtSDNxVUsxUjZTZmJLcjBQVldSaUxYZWVaM1FsYkVtNVZRUXZEbWJUdWlYMENIeXAyMGVMNDdlM3pUb1Z4OVZYT1k0alhzOHQ2Njd2ZjJQb25TUGFCSjBZN1h6R2Jvd1BCd3RBejloTTdEMzJFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1126,
@@ -16902,7 +16903,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1506941149/23293865458?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNU1mU0M5RWxpRUpPMTNORXc3cFZmbjAyMVFKVzNPeXFpRkx6QVl4dW9jK1JaS0FJQ2xNbEVqR0RXVjdxSkxvNFJMemxBNDhTR0ZUdjlQT1BnR3ZjZ3hCamFBOGN5aUlxeVRzZ2RLUHJoWFNySk5oK1hVSXlMZWhTSzBzREVRMmVFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1127,
@@ -16917,7 +16918,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1210555122/21098074526?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0p5WlN0ajFLTzdqaTlQaERUZG41My9wUU1FWGo2cWxyNitpRzBwWVQ5aTdQOGxDT2FFajdSNGw3WDhUZ0lnRnZBSEt3NmRTZDdBYWROcjQrNnpPeTAwZnI1QUQrdlFpWFV4QXBvWitrdUx3QmVPbjVPNCtmckNUS29ucEdKQ1E0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Automotivo"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1128,
@@ -16932,7 +16933,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/378488048/22892865290?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdHR4N3hqTUVpcFByZHY2eHVXU0dPeTNtRHNkN1ZxVnVrRFp6Z2NlbnVUbjJkVmdaRTBBY3dTbjVOSnlpUWRjS3JYTTF1Q1ptL2J0UFdUUjRsWStVTHREeUlFU2pnclhyc2JZRnRZU2pZY3BReFBLeHpBdkJINWNlM08xYk5oN3NvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1129,
@@ -16947,7 +16948,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/406969593/22798317554?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdHdlZDRIZlV3Y1NwTEorc1p6NWhsK3BINlRSWTFoaTFVTXliekYyQ1EweksydG5jdmp2ZDM1ODNkSUlQV0k2L3NsNW9UeU5Qdm1Ubk9ERjVNcnBkUkhyb0oxdEkzWjNjN08rc2w3YTVRdjM0YWo1d09lTWNqTlBvTlZtNi9tL1VZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1130,
@@ -16962,7 +16963,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1258744084/22898095546?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVkyaHE3aUNyNGd1V0k2Q3RjRFRaajkvMURubkJVOENROCtSbTRVSlNsTHJYWnZWZU5uZkEvQ0V1bHFHYUxQMjZiYWk2TStWSHRaTjFQRnNGb3N4ejUrQ1pDVmYzV1B0ckx4dW5EZW1yTkppczc1ZDNYUzM2U25NOVZocjZ2bmIwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1131,
@@ -16977,7 +16978,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1285485572/23493240936?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWNqc0xWZnFmQTlhNlJ0b1RiNGNUSDJ0M3JVZEtLZXllYTEvbjBRZDgyd056SzR3Rm53Sm9oZzR0TitBdFhPU1hxeURVRit6NWtJQWgzd3Q3MkEwL0l2VlEvanQyTTU3NnhrSUhvUStFbkhZbWUyMUdFaC9qWU0zSXRoTkNMbXU0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1132,
@@ -16992,7 +16993,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/298298179/23394195247?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdnVNNkwxVm5FV1ovcTYxSTZLT0IxcFErclJGUnAwYTNVZUhheS92Nm4zWFZuUjJ4VG5GOE1xZk1wVVJEbFVvMjJUcmtzcDEwOXBtU3ZDWU1lcVlyaG9lYTZwL2svOHVhK0ZzeWRtZUg4ZE1EWmltM1c5dFdhQ1VZR29abGlNcnFVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1133,
@@ -17007,7 +17008,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/789807677/58200534787?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdDdWSWVCSDZQZnJmQ09hV0o0ZDdsejBsL3BjM2V3c0hSV2o1TEpIU3JOMzFNamY1bkZJb0YvSnV0TXFtWUV6SC9RZklzMDVrZ3Q2S2dOZnJjL3lvVWJmamtnOHhPWjVIK2NkMDNHQ1RPaVZRbDN2VGtVZUQ2UkVHbXdBZUdjUXRJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1134,
@@ -17022,7 +17023,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1435327066/23098245574?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNDhpRnBPZkdsYzM2NWF6a3EzN1VwY0FxTERJLzlocWRXY1pBdy9jVlhnTjZlYm5oSklNc1lIa04wUGVGVCtCd2FGVHhHaWFUZkNoc1pYZkpZNFRkdElEQlhJMkNLcFBuNXJRSnB2YmY5RVBmdVRoSzRQdlo2QVMvbW5BRVJJRHRvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Relógios"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1135,
@@ -17037,7 +17038,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1379077822/23498237134?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNGVCUjlYTnE3YjFXWnQ5VUduNWRFaEV3L09UM2ZMQVpqSXB5OTlCY1o0YS9YUTA0SDlkMVpmaE14QjUrbzJ5UC9QdVZkSTNKVjB3ZW5Edi91NTVSbDZHMWRlT0dsZ3V3SEZKTE9yK0d3UVp0c0lnOFQwR3Y3TVpGaVlvQVZ1RFdBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1136,
@@ -17052,7 +17053,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/982283887/26740459377?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdGVPb3ZHQUJaNmtKVmttcVh6aHkrWVdaaVMrQkFYWEhNRWpOYm0xTXpkVXA4emRhR1VROFdzNy9HZXlyUFRTdldpMnlLZHBrOHVRMVpJMzRPSGErdm9KaXJKdmZ4T1FERlhuQWtuSWdWTU04MytrVUhJajI4R0tPRWJRWTVJY3c0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1137,
@@ -17067,7 +17068,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/544014438/12823128886?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc2g1NmVVK0V3aDBDcGI4RFFnQnZLT0ZPZUdEeFprVEhncWxZQjFKY05DZ3RJeVB4dFROMlFIM2xSRTdYZ0Y5TnIzR0dQMC80cTUybHJwVVhKT0JGUFRsWVBJM09GNm1PNVRuR2VuSGZPSElmMHRyb1A0OUc3ODc2aW9LYWtjWGhjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 1138,
@@ -17082,7 +17083,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1024782317/23193407563?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN2FFWnJLSG1wUkVCVmdvV21GWWdSc2h6WGFsa0dMK2lDV1J0TFczWVhSdkFTcUtxMWFYK1ByMFVlTzMvdFZIZ2dRUWxoT2FTaGppRzBpVlBVbmxCU3BXUFFHQUoyRG9DaW92cHBFYnoyYXhYUmhDSDVRTjcwYTVmdTIxMDNKeEZNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 1139,
@@ -17097,7 +17098,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1595320313/22399179194?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1ZMd0hoWWdZV2M4ZmtCcVRONXpQdlMxQUllTTlBN3NCeFJwQkNVMDJ6MklwMTFUa2R3WHQ5akE5L1oyMk1wdDRMLzNzckYrZGo1U1JkNFF0Y3NRVWxjOFpXRHV5b0xkM0ppOVlmYVNwbklQVklaTTQrRzNZOGRqUXI1N0REbjJjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1140,
@@ -17127,7 +17128,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1607558009/58200981693?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVdYZVJwMHhRL1JOQ2k3SEcrRmF6dVBUNVVOZXJnNlhmajdodTg2dXZvLzlGR0E0WUR6SnFPMzNWVFJUL0hOdGp1Z3NxczlUaXlyNzVUbW82QnpjdHh2NWs4RXJqRTJKai9lOHFjVjh6aDFiL3RQN1NST042NTl6OHliN1djaHc4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1142,
@@ -17142,7 +17143,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/453671588/19398017522?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQditHUFV5VENHZW9INkNPNDlKemZUMUtZNForang0cUlOTW10UHR5NGRPZExGSDBEejJHQnJ5MWdoYkFzdStWM0t2SHJuSm9mRGJyV0VnMUdwVk9CMm1pWGNsek16NUpYZHFtU21ZR0pNR3dXU2hvMmd4TUFPUFQzMUk5cDdsVjVjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1143,
@@ -17172,7 +17173,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1388178548/23293791836?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNXBkczJ6U2l3VEh5T1haODRWd1FPaTJ5OHFteFJ4dWxCRUpsTzc5dUtoMWdpLzNoZGVrSnM1YmpVN1ZKMzRzTVFLVHBqVmhHU1dVbVZYWmJTdGpzclJHekM2TkF4cHM0WU9BTnVZYmRmcnZkR3Bya1hDS2luV2RmRHBPdWJXeG9vPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1145,
@@ -17187,7 +17188,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1242044379/22092998564?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNDlWUHdIbVgxdXFUSEVZTVNaQ1VxNnhVWjRDaHZuL2pOaTA2cUd3WkVvbEVjTUZrbWQyeTJIR0tReFNCZDZXaEIza2RJbERNWWgwVDhmQXBXakJrWnNUUHdubGZTNzJBYktBNU1wdUY5K0FiU3ZNbnIvOW9wRHkxR2NYTFVRNnZZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 1146,
@@ -17202,7 +17203,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/704469946/23298800714?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3QyOVNmdm5XL1QxWmJaMytDMjA4NHl5alNtdTJYekZsOUs5V3VlZThoUTk1RkdXbVZsbFZwa094TkZYNTJaZldEcmtMTWIrdkFNZm1UQUplYzFwdEE2eWFXSEN3U01jbVdLbGFEUDNkK0M1TTRqczdYZy9uWk52SUpSS0Q0YWlRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1147,
@@ -17217,7 +17218,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1509466490/27737160552?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNU1mU0M5RWxpRUpPMTNORXc3cFZmbnRxMFk0WDZkNTZrZ25meTJjYURGbkx5QVdkR3FzMjBDNDdOTnM0Uzd4bGpJSW5XemtweTQxdUxCc3o4dENNd1dnWHowVytFKzZMV3grQzdneUdkc3EySlZRdXF2ZUVRL3VrTkhNSUk2c0ZNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1148,
@@ -17232,7 +17233,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/371687721/23597746800?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWVHcytlMHd0MVAyWmtaZk9oVVdIMVU2czhyc1Uvdm0waWFldENQT1B3WjdtL2JiWWVHMGNkcjdlU3RMVVVVS0NQUE1EdUExekxCRDVlVzhBWFdQVkx0V1luMU5YUStYNXF1YjNRWDMzOTlJYW9CbjRQMkJjbFdvNEo4NHJ6cks4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1149,
@@ -17247,7 +17248,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/579103110/58250576005?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdC9TZWU0UzFrZVhjMkFuZ1RsREVTa0V5RDJIa2FIa2Y3c1FPWE55V3BsRXJhaW80K0k3UTJXSnRqRndQVDd5NDdOcGtpU21pZi8vM3ZGUDhFQXNGMXlRSmlraEJHek9zaURKMllTdk4rYm5nNnhzb21RK0MxQWxIeVNjWCtvOGU4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1150,
@@ -17262,7 +17263,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1127030290/19499545730?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnNncEZncWwwYm0xN1R5MnJXTThvTXdRVllPaFRIcXJsTFY3S09SQmJDMFhBbkhraEhOdFpTV3UrUVRDQlA0REFPQTV3eU5VaERwaHoxZzZNTnR1U3ZxTHNrTDNsL2RrbE1vK1VrdVRqY1VGRHljem4ybHVBcTB6cFBhbmFIQ1BBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1151,
@@ -17277,7 +17278,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/353679155/23692118159?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXBqNEJ4bTFpMTdtQmpXWUYvTWYzOS9LUFBRbE8wWUZXVUZTVUZxUThsTE5VZ3gwUHI4Sy9kQ0pJK09iWEJSZXZVSlRpd2toRTZVamQ4UU52b1dLeGNoTDBmemtyT29lcHlRZkdmOUlCRm84UGFTWUFOZ0hTVG1QeS9mZTc4M25zPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1152,
@@ -17292,7 +17293,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1272485650/18897788389?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNzhFZVJ4NGxLdFNvVzNTbHJ5SUtuRTZCdWJ2TDVhZXlablFUampaSkNTNHp4c3o0Z2dwY25EVnhUTmc5eGViMmtpdFZqV3BYbU1QTEFvaVd1ZmRJWGl4cXdOWk11R1pZd04xR1pGV3ZVbTd0R1A1WnFlVTc5b2VwWlBhNnM0aWFrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1153,
@@ -17307,7 +17308,7 @@ export const productsData: Product[] = [
     "location": "Rio Grande do Sul",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/495134429/21999593201?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdTE1WkJKU0RBaVVSRnlneHVVbnB5a1FzM1d2aUtBajhEU3FHaFVVUi9CN3VLa2M1U21hc2tKRG5MaGxGNjZtbEQxSzdXVU1LRFUxc0g3N0pCY1pnUVFoL2ZNRnZwSVY5WUFJTGhlTkpkbDlkcWRlMWRZQ1J2aUhJVVF5ZWR5ZzVJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1154,
@@ -17322,7 +17323,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/441222226/23792864479?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdHZadTlKOFFwRnlzWjFsNk0zODdqWEJHV0NmYWRURUxFQ0hHSGYrSEVIZ2g5S0VJRnFTKzMyeWNlNTF5T3RobFhhZUNuYmRRNG1VcldSdkw3UFlIa2RLQnlxZ0JwWW5CMDlrdFdCZ1ZDS1RHRE9ic2t1NkdRdUp5RUFtQUo2azRRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1155,
@@ -17337,7 +17338,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/403640709/22797916306?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3BuZzJSTUJWNDRJcmtMVDFzMVBpQTNaM3hkcGlVZXdmV0ZSU0pGalZxUzlkQ2JJbXlLdEFpTERBV0E5NTJtRUlGZU5UV3JuU0V6VFRzVTJjNW5xWGhnZDZTYVVqRnFmUUlycFFGejJybHFyRGJNWGZlUGhRdm1pRzZFKy8yd25VPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1156,
@@ -17367,7 +17368,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/970458607/22798643647?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdS93TDFncVV5L3hoVnlPei9waFp5K3BsNWJISm5Qdm5KVmtzb0lhNitibll3MzRrdEVEYmZLZTMvdTU3QytlUG5JUG9qSllRbXFodWh3YlZVc2dhTTdGZFBOMkV0aG5ZN1FNYU5acnJ6bHdLU01Ja296cXNkczQ0MWUwUCsvT0ZRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1158,
@@ -17382,7 +17383,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/406969593/23698786124?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdHdlZDRIZlV3Y1NwTEorc1p6NWhsKy9FVVpDbjdMeHFYdnNNMWpNQzBFV1hibkNJZExabFUrSkhEbklUV0JacE5ycjJkMDVZejF6UEZUbTBpS2hxMmhhNjJJdEFBWlBpZkxBK0IrWEZ1d1ZLZXJGblAwWCtkNlluOUpNM3hqL2RzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1159,
@@ -17397,7 +17398,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1033351071/22891878568?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWFpQTlGbDR1SUwwMzcwMjJsL3RRdHV1blRJaWRlVWRWYWNIQVdYa1pSc3ljWFk2YnVHTnBKNVhzLzRNMjY3emVjYmRaNkFjMDZPQjZzZDkvQ05lQUZLQ052c3FpZ1FTN3U4N1ZSOHFTL0ZjRkhoUzk4V3lyUDNwMHRBaTlpZ2xvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 1160,
@@ -17412,7 +17413,7 @@ export const productsData: Product[] = [
     "location": "Santa Catarina",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/811879342/23994619500?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1VFM1d6TklWZjJFVjFIREtRUzNiMmxWeURBelRHUXI3aEUrSXlJdEp1Z29CRFNvZnZ5U3pQU1JZWjBhcmhwZzZYSWtIYTJPeWozUlY4MmJTUzFIUGZCeDF4ZWhHczNvYTFyTklMczdhSGhPTjRGU09aRUFhcXExTDVlREtzVzgwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1161,
@@ -17427,7 +17428,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1535609701/58200902932?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWNkaUJHS2dKRXlBdkd2dG1mZ0psUFVZYngwNndDdHM5N0JtWDRLTDRmYTh1N2VJLzMxcGpPTjRoNFJST0RVQlhxM04rV0sweHhsWVJJRWpKeEIxaHZBbVR4ZzFueXZVcWNuMUlKSUNjUmlNTzVYbm9RdHU5cTNnNThsNFlvYitzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1162,
@@ -17442,7 +17443,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/316945044/22537905720?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXhYZ2pJYlRXeEdlVVpqeEliTHhId2Q1dnkycmFwcTNlRGx3OHgxUlFhekFPY2x0SHZnSXJiQzhBaGdWc3Q3R0ErbnlQL2l0V1ZBbnFvZCsvVEJzYndqZTZ6RFptRlFsdHZwOUgyT3NwV1V5QmlmblBxbUVlaGczaUFoVExaSVFFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1163,
@@ -17457,7 +17458,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/375556621/23194513476?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUN3dnpTV3pTSFZRRHVlQWFEckNQbTJveFl4YVlkcEptUlJ1YUQzSDJGWWRSM3ZyNlhsMnB0anRjeEdiVEdFYmY2SitCcDVRN1NoaXVsR3M2S2ZVTG9WSzlyZEhPdjRqR1N1RDI0YllRQkx6QjQvMlRHWVc0OW56alB3T1hmMDNNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Relógios"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1164,
@@ -17472,7 +17473,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/346235717/22397351583?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3dIRmZia0p2ODRza05FZ0lhajN6MmJ1b2M5a0U2L3FwYW91ZzdJdEd4ajdYQ0xTMHM3dzV5L2d5eVlJSjFNZGIvZGhLN21hL3JEelhRamFsTzVqVzdPM1VHUWhSd2FDaUdDL0J0QU1GdVRKQUljc0lKRWpHNm5Ib1BLMHV3TkxBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Pets"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1165,
@@ -17487,7 +17488,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1571252793/25197485207?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1lxZTV6UUVYb3RlQWRpOUpoak9sclFKRHErRGZjaHJwUllEOTRyR1JKdG00TktuQU13UU9jdTJXYVpQcEdZbWFGeVByQVFRQ21YNFdIVzYwTDVKK2tVZUxnQVd6MGgzK0VzNGQrK0tPSG9KTHBJVGxxb1lpcCt0bG9XZ2RHcG5zPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Bebês & Infantil"
   },
   {
     "id": 1166,
@@ -17502,7 +17503,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/406969593/22098010438?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdHdlZDRIZlV3Y1NwTEorc1p6NWhsK1NGREVEaEhNWC9qZzBhZmUvRW1jZFNXU1pOSEFXNC9sVVRRVWl5SG5LSEJwTGJIb3RHQ1ZHUDZNRGFnTWx5d0lsL004L2dkTTYrbXZxdnZMbElTNm1OUzBtNHpDQnRvNFQxTGFZdkVTUFZrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1167,
@@ -17517,7 +17518,7 @@ export const productsData: Product[] = [
     "location": "Santa Catarina",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/951968037/23096335176?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdU5DN1JBb0xLdG1yYjRJRnJ1Z1k2SmRPYk0zMDN3ald3bUtMUS9lTlEwMWJ1M1hweGxlOTNVUEQ2aDVVdlpBdDk2M05WclZpWkJaMGZSUldSY1J5eVJHclFmOWpuSXVJVjZmNUNhRnUyNW5jWnBpOFZNZmlEV0xvRVJiRG92VXBzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1168,
@@ -17532,7 +17533,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1418036567/23298201751?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEFrSUpWaitUS3NaQTFHTVJTQmhpZXJCejQ0dHR3OHROWkwwNE9PYndiYnBqZ0NnVVltVmYvZlNrLy95djZCSitwOEVweWFZZGNNMERsMk9ZemJieXBUbnlCTTFmVDRBNUNyZWdxWFo4Y1pEL1dud2RBb0JyeVA2dFp1aEZNYWpFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1169,
@@ -17547,7 +17548,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1346669644/18898141652?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN3pobC9yczJXSEF4NHNHYnBkK1VJeDZwMGxMazVCdWNWOUZtOWdLMXRac21ibTFPTkIyZlZZT1diOE1NVHVyU1ZXM1BDaXZXSVh0em9PbEJFWGFHREJRMFI2V09SNDFRZlNJdXhTQWdVeE96WW1ZN3hGbXVvRjUvN2hQQjhUSGJZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1170,
@@ -17562,7 +17563,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1579330222/58253269557?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1lxZTV6UUVYb3RlQWRpOUpoak9sclZ4eDBoMkdVMDJaUzN2VFErZzBTZG5vSHlFVVRyKy8wSHZHS0pwYTJOMk10aEtCNjJFY3JVVjJMbGxXRFlEa3lPSldUL0dMK3JiTXpVWThQUTVrSk1LQkVLeUZqZmVsZ2FVc1NSQ1kwVXJvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1171,
@@ -17577,7 +17578,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1550102205/23498584336?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVlabFNqaXpwaEpuOUdUcSt2ZEcybUJvL3l1akpIRUZWYXBnN1cya1F1NXl3d093VG5EdUg3c3FTbU80anpVRk9YcjZRQ3dsZWhiek92bzVwK0J5S2RQTTdqczFtRHRJNERMcXNjYjM5L3I5dmdqU0IrU0dzazF3L0tsTGxidXhrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1172,
@@ -17592,7 +17593,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/296363855/23492848273?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUNnTGg1a0xWRlJGb1B3SytTbEQrVi9PQWNZd2duYUtGdXFDeTF6NkgrSEtxTmQvZGVIZ2ZycCtMRmcwT0NacHBpK3ZZazhqSitud1VRU0wzQWFZNHd4WVdOOWo5RkFyN1RvMmZIWjc3SkNUY0RqLzBoL05wWUJFQk9IY1hYMnk4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1173,
@@ -17607,7 +17608,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/865494730/22894297340?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc25GbzY1TU0xamU4aEdlMkRjQ0NQK2FycTNyd0ZjWmVRQWFsZ2ozRzE4Z28wWWZ1cURKaUdZOW1nRmJCcVdWdDl3WVRRSkVsWnZMTjdNVHZkNmErMDBabTYzQUUvYXpKVUZmUlk1dE5QVWQyb1JydkJMWUhMVkNhOTUyUFhMeFBzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1174,
@@ -17622,7 +17623,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1481309741/20998090455?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNk5ZT1dQell2eDl4bW8yNkZpTjAyWW1ZR3NIVHJMRVU2YUpCaWh2b2dlaHhrdE5pcUVlSjZoTSs1TERaZnF6Zm4rYTF5OTNVR0FSdko0L2c0WVFFVC9DcmlhWW05bStOa3hSMC90SXYvOTl4eHBTNlhLVW9uWGNCOU1KT3hhV2drPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1175,
@@ -17637,7 +17638,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/676737455/23194146795?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmZ0WlUrMys5TzVhaXJPNmpEZ0N5OGcvYXZGQWtMdDRZeVBSL1JHS2VhRkgvZTdRUzgxd1J6OGNzSHB1T0RtTmVNaW41RnY0ZGRQdHp0WHNialVvbmoza1N6bWM2bW1DeG8zSGVEanpvYlcwNW5JNlQ2RFY4Wi8wbkMyZVBJNE9JPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Brinquedos"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1176,
@@ -17652,7 +17653,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1643769522/23799012678?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNzdkNGpzZVRDTW1BUjRPSTB3aE5DZzVpT056TW5BMHMrTkNvSHgwZUxZV21HNzNtNURFUS9ZcnBXY3VHajVHNmk2V3V0a240cW9nR29zLzVpcFRocVM4OC8vZHY5R2hDMmhmc0RiK0p4UHA5L2VXNUdaRWVQekY5dFpCUlltS0g0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1177,
@@ -17667,7 +17668,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/434195734/22397606311?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmJCR242bk9vZElnM1I3dkZDdEFCN3FCREw1dDVYdnhNczgyM1ZCWWxqYVdQcUdsUlpVakR6QzV3ekxXcms5N0UwQVdUNlRmVjVoTWNCVHFNVTNZUnJLS1pGeVpHWEJRUDgyNC8vZUR3NnlSdUJJNEVyeTV3UHRqUmFwbitLNXdRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 1178,
@@ -17682,7 +17683,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/670345852/18999210410?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUxJRzdzZXpyaVFTN0JSQy9jM1VUZ3lYVnA3WVlnTG54U0djQ3U2Zi81Q3MvQlNKUU1DWGpEWmpsZEU4KzFXN2RQWlVuRlVkSnJ5bjNSUGlvUy9RVC9Cald6eUZuU0tIK3llaEJxNU5sVEU5NTFOTFdObjlvQUVGVWhBNkJsSGRvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1179,
@@ -17697,7 +17698,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1005980154/19297921250?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1ZpUFMxL2o1N0RPK0UxdWl1N3FMVndJaWNsWFh5cnhaNHMwY3hhVlc1amQ3a1VjcHV3M0ppcFoyVkVKUHhOZHoyUUorelcwd0FyNEJXR2Y5RVYwNnVVbWNqZFpMNzhveGVyMEdYRW1oVklyeVo1bk1abEtzY1NYMEtmM2tWRk5RPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1180,
@@ -17712,7 +17713,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/300779622/28268963712?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUwvcmJtczYyekk2cWRKTkxoc3BMRnRZUHEzYWdXZ01ZMjRiUkZOZHYrWTNMUmw1cGlyYUUybE5mTmQ1OUtjRDVIS0tyaGJpL1hFeS92VjhRU2hrQ2FjdW1qNkJZMWNTeStRQmhwZlROYkJxTHQyNE0vUElsRHowWm1GVVJmOERRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1181,
@@ -17727,7 +17728,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/811051540/20998329172?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1VFM1d6TklWZjJFVjFIREtRUzNiMmR3dEhqMVo2NnBydlZqc1NBazNidHh3djd6SXd2VzlPd1AySDhxTDU5ZFVJclFTL1ZrRTY5K2k3eksremI1U3phRTJPbksvUzdHZ0hHTTZabUNnbWxFMVB6ajZsWVBPV3NFQThJT1kvWDc0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1182,
@@ -17742,7 +17743,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1252131778/23694694519?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVkyaHE3aUNyNGd1V0k2Q3RjRFRaamNtQm1COVpXUlROTXJCS1kzZk5IWFdYSXZKZTdUL21RdngvbDBvQm1QRFNXQVVSOFFiSkkweFpDempYWlpQanRrN1dvZWF3dXpkVkR0a0czcC9DZkJLNW11c3NBd1Njd3ZFUmp0bFhabW9rPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1183,
@@ -17757,7 +17758,7 @@ export const productsData: Product[] = [
     "location": "Santa Catarina",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1363760188/19998099732?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNjZxczFjZUpCVzZMY2tOMHBrckhPQ1pLZHhxZG4yV3NLVThud1U2NDZxekIyTUc5SDQzY1RkVjh6WnVGL05sT0RWSEdUV0EzSUtiQ2p3cGlldHNHZGVIdTJjOHFQTjl1QnN5b2lLSXhwaWZHdzhZa0FrUEJxUUlOamd4WlNaekc0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1184,
@@ -17772,7 +17773,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/434046753/22693731489?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmJCR242bk9vZElnM1I3dkZDdEFCN3VCMFl6SUt2UUhtN3E0VHlDbkN2Z2RxdWs3YzJxRk10STVkRjJRaUFEcGRNZzZtZXVtT2x4UnlrSzExVDQ0dVdxdGY3TWZ0VmcvcDlMTlE0RWlHWHdSVEJZbmxNYTFDalFtSGhCYUZWaDhzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1185,
@@ -17787,7 +17788,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1567171530/22594415722?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNW9hM2xHeVpFYURIRUdOL3MzQTAzeEQ4N1lxdlU4c0RZTzRVWU95dVZYbGVwS0F1WitRRXJMckJHbzhaVmk0OGVmYXBGRnZXc1Y3TUtCQzE0MUs5dFM3eGIyRm9YWXZubkl6MlZWVmRpNkJNQ09hM1pXelp0d3hSR2tIZUtITVdnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1186,
@@ -17802,7 +17803,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1350045638/26980788215?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnFlajJWZlQyRjNuVGtydksxZlBaeit4VWZxa093ZHlmM2xJTUZqVlJvbE9DSnhWUzhyRUM0ZVdCV3hSaHFBSFoxTUxrdnRxYXhXR0txbkRoUGl5OVFXUHNXLzlzcFA2QTlORUUvY3h2R09rVnNnN0gvNlNLR3dETXBxK1ZxTTRvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1187,
@@ -17817,7 +17818,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/552958714/23997758648?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1VZT3o0R2xsMURocnROd2hzZzltZ29SbWd2Y3dyVFFhaTc1d0NUdEgxRWZjc2cxSm8zWDJCN3VpSXkvSEd1REpRS0xYRlExaHA5OE8vemRFUEUrVjUyejN4bVFEWVNXMVUvc1RESnVPbHd3V1hUL1ZiMlFsTktqZU9QYlhaNldRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1188,
@@ -17832,7 +17833,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/860748832/23498094336?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUNoSlRtSGZKZXhoNlNYNm9aeFJsTUk3ZXE5VHF5cmhWbzhGVVYxQWlJV1Q1TDRpaXFaUUM2K0pidWU2ZmNJdWppUTEvelBZK0FJSXIvM2NUdXB6OGJqMUU5N3kyRDFPcVhSVDhQemY1WWFLYlM3SkF4Myt0cXJGRGxSdERraXpnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1189,
@@ -17847,7 +17848,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/455937189/23998289187?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3BBNjVNcGgzYmkwdURtNXBseE00bEE5MFplWVh6RTBHbmRHQVo4dG9wcjR0U3dNbzFIU2V5RE8ycDc0R0dWSWI4NXFydUsrdkFtQzV5emI4TDhzK2hVSE53NExIWXFyMHpxWEdpcnhWdzVFZi9wbDlYdkpGOTdKMUNrZk5Vd2hZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1190,
@@ -17862,7 +17863,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1526791833/23898895635?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNHV6MnZ3ZU1ZWjZ3eGdVVlFiV1FrRWdmQnpxM3B2a0t1SUJ2NXJoaXB5RGVpQXRzU1huQnRGNjV5SCtiZTJEOXZxcHFLZm1WZmlhNTVqUWk0dTZDb1ZhQ0NhZ05pYlpUUk0xT0V3S01ZQVZWN2kyYTFHaXM3dEdmSllnbGZLeG9vPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Automotivo"
   },
   {
     "id": 1191,
@@ -17877,7 +17878,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1630740918/23594439744?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNTVmUS9CZk9FbXBXL2l5cmxuVFVOaFJ2eWNOWHViM3hKNDUzR0J2MFlDb2MvWjhadXR0aWRJOWJGVnNTNW5veEhwS2VjRnU3YWU5T0RlZUEvdlAxK1hSSlU3MENqNjVYVTJkbllLQ0ZTQWZEMmhSUGtDU3FZamZsMktiVnJrQVFzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1192,
@@ -17892,7 +17893,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/500007409/20299598700?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdnk0SlJoVTFUVi85QXkzM0x6UGdTQ2FteExHQkZRQm1vempmMVdBdkRQL3R5T2g5TVlpNlpndU45dDA4N3BRUkNTcjFqSktaQlVPS0RwWGtiUnMyOEpBUU5mSDhNS1M0czE1U29xWUFxeUVidTdpaUpzdWU4RkR3Q3krYms4dEhZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1193,
@@ -17907,7 +17908,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/303947819/27831068666?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdGozckdEejk0RmV6ZjlSN0lZUk8rY3JRUVJPbUdRV0J6RlZRTG1FazBuTmJ3UThobUhwUzcxdGpCbDFVYTIyaXNnaER3ak9qQnpwd01hZE1qbitrckIxMFlha0ZPSDgweEFsRmU2NXNZNUtFOExUeUx1am5CRFM0NDZ3SDE3eWNrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1194,
@@ -17922,7 +17923,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1457191648/22494457132?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0lRanFYdEZNbWtLdlh3OWlUUVBCYzF0UkhRV1gvdlpBYWZqbjFuSE1VY2M5YXJ6bExsRWY5U25wWm44cUtFR3E0dGhBbXdwK3hkczZsY0pKMFVPNVF5WTNmOERjQi9YTWJyRDhrMUxPTCtsbTFSZmVQaXhFSEVzWlQ2ejFWSVM0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1195,
@@ -17937,7 +17938,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/826623534/22294696048?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXdSVENtV2I1eC9RSE45Q2hLM0h3eTYyUUtYY1pVeWxIOG1xSy9HVWN5NWRUYXdHcEtHV1RkMDJZQU5UaTNPbXdDMzBzNTB0YkdOQ1hKamlSTngySmpNZFoyRG0wczc1RDhRWS9GbzVxUWJYd0QyeGtLYnRVdEEwY3N3bjRTYWEwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1196,
@@ -17952,7 +17953,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/739065041/55702430893?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXZSSGNSS0p4WDZ3blBhVnAycmUrWmY3U3A2NVZzZU9LTmtNQk9ESkx1b29HazVlcFJ4eHBJVmhyRXdSbFozWVhoOTFpSjdLR3VCMThWblNCR1pBMnpvL25DdjRVaysvamRZVGdrT1I3cmYrODhZbUlaRmJOQUw2N2VRR1dIbVgwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Automotivo"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1197,
@@ -17967,7 +17968,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1177369665/20697625771?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN3R6clRXek84YVRNMWhSeW9MRFNFMjhiUTNCdzJjK0lmT200d1lpQVhSYjdweWdBbjZjbG9JU0VZMzlHdXdNcWFEQ0s2bFRvcWpCcVRFYWg4YXhoSW4rM3FOWlVhQUpIMFBlV3VIcG9DQWxNZ0tzc2lSUjcycEh3UmRUOWNPNjhRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1198,
@@ -17982,7 +17983,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/290102866/15870117202?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmFCbjZKQi91ZUg5emtFUlc3cllEM29JMnJOVjhFVWREb3ZIVkZIeGJ4b1VFS3BETU45Vi90emVBNnNHdnVidmtUSXU1cEhodVk2VHlGSjNNd3Zibmt0Yit2M2duYXMwQXI0ZjRkOENhV2xJVE5BRzNPYkF3NmhiZTdLWGtINWRNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1199,
@@ -17997,7 +17998,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/763032428/22193538012?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3JuT1pJaFNLQ2F0SkZNVWpEUThXTk9ieUJ4eC9uTldYQnQzY3JtOTQ4TXNlQzl6NFNwTWh6STAxdVZXQnlaTjllWDdkMyt1Qmt4R1lMZ0w0L1RQY1d3RWVDaHNlbmxhTHI0VExGM0tKb2F1OVRuL0I3RFYxVEVqdThBZ2paWUhZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1200,
@@ -18012,7 +18013,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/309437445/20699248658?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdVJ4Y25KTXp6dnl2WFFvQlhTeDYrcU5lc1JIcWlEbTN1eDljM3RRbnM3NzBxTGpSL1Iwb0ozOGFHUVpXdlpLb0lsSFMxYnd4dGE4bmZBMEE4V0ZNWnRwR2dsR3hnYnAzblJ6eG9IUWtnb0V3LytLYUVjUUhvQ2NOZmg3akdMOVZrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1201,
@@ -18027,7 +18028,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/800263385/22097923147?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmdGWktwUW5FMzdmeDQ2MGpJaVcxa2lvYUpLYlpla2tuTlpNa2RGRlRncEFVVHNOVFZBV1ZBSi9DREN5aXVNMWV1VjJYRlFYVktGQ0NiODhJdjhxVlNabzZNWkVUdCtJSnBUbWxRRjJzZkJXSTVESlNHSURSVGszeFlMUXk2SlRBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1202,
@@ -18042,7 +18043,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1483647008/18098210619?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNk5ZT1dQell2eDl4bW8yNkZpTjAyWTJ1bVBqTXpxRzhTWFdsM0FCRFNleHFWWUFaV3lvV2NhbW03eDJJdS9pNk00aTgyalUvbFROT1h5QnNZUW9JeTFvbDNTbFdTZ1FMR1gxOGVZaS9JamN1ZTVkckJCc2lhS3ljejhDVjFlUHhRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 1203,
@@ -18057,7 +18058,7 @@ export const productsData: Product[] = [
     "location": "Internacional",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1458893770/27127446016?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0lRanFYdEZNbWtLdlh3OWlUUVBCY0RLdzczTVoxL3VPUXJ5SlpnTG5xV1VJcWZmMkdTUFh5Q21sZk1qOE54aitXVkZuZHJNaDRISWU2UjBwU3BpN2lCejU0WVFMdzBabXVGVlFrclgrLzZIeHMydFRpS3k0Z1lNMjZoMXJHeUFnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1204,
@@ -18072,7 +18073,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1489642243/28630143344?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNk5ZT1dQell2eDl4bW8yNkZpTjAyWWRYVkp4T2YrcFZrdVRQSkhSaGM3ZG0xTXFRQ08wWFBRYmtlaTc3bkV1N3hrR3I4eDZoVkRSRTFNR0twRVkyaFlxNUs0alJvUXlueTVpVkVxUGJLRHJHeFF6RFdraG41VXFxQnVNVCt3V0J3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1205,
@@ -18087,7 +18088,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/439328620/23094340375?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1dadjlLdEpQMUJWeFh3bFlicmlYclJSZnRyNkwybzQ1eUZRUTF4eE9wUEZ3Ulhhcko4RFp1MGxsYWVUUzZnM3M0Z3hLMTJjT1BBU3VVaXMyd2w2cEMwbis0cjNMdzBmVGoxQTZDbnVGUWxqNTJHeGJodTNlUURyQ2hnL3lNYVNjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1206,
@@ -18102,7 +18103,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1203451725/22597456045?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1IvY0NPaTdIbFo5dElUckRUYzBXdHdHMlNqTFBUUnlZZU8wNjNWclo2U1F4ekVyaDhqbEE4VmZwbzdhMVJ0aVFIN1VJaXJZUFEzZXh4TDN4eVg2ZkpGTTJucmR1c1FiYTQ1V2UzOHYwdWZxNkJTN0Z3Q3F1U095VVVUS045aGZzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1207,
@@ -18117,7 +18118,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/691142802/23794280418?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc0dFdk1SK1pqQk53VUlMVy9IbDBCQ1ZxSm9kem5YbUVRRUthWkhueC9FdnIrb2daOHp3cEtiUFVaaTlSNDlZNjBJUkt2L0tjWTI2eW84NGhvN1RsY2NBS29Wbm1SdmJSa0VZY1ZGVjlGUks0Uk1HVVFCaDcvMjMvT1QyOWxMeU1nPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1208,
@@ -18132,7 +18133,7 @@ export const productsData: Product[] = [
     "location": "Goiás",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/566539029/22498349250?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdU8wczNYL3lNUFArWnVmZzd4VmQ0b3ZIR3dPYUlLeEZLdDZST1VrYU1jdm4vVVRqQjZnKzVLeU85OTRjRGg3UWh4b29GT2liVm5kVUphdHNiRDh2QjUxKzJjZUF5aEpBNzc0dkVCanlSdEkyeDNiWTdoRXVyTEVMK3NzS0RaRzlFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1209,
@@ -18147,7 +18148,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1296526660/22798659215?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNGE4aFpPSitIdGlRMWhhWS8yRkUvQ0M0dVh0Z25RMnIyTC9FN2J5dG9xcU5zTUpHaTZQM0VPQnNKK2t2ZjVNU0dQZmFacTVBMW9HV1A2UCtEc01GTGlOSitjb05Iem9Qcyt6UE53VmhLaFF2cEEvb0dLOGVEeUJhRDRlbGYwQWpjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 1210,
@@ -18162,7 +18163,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1612664450/23698949522?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNmZRMXpFdjJvbVdrY2I0ZE52YXdKUDJiMHBma0NPWE9qcy9mTCtwVlJHMUs0c1ZuTVRSOU1HZDBkK3czdEFBYjZOS3YrQXJIcHgwakxsdmRJaWFjT1dFcFBPNTRmZjVEMUxFek1wM0hDRXhxM25EVGdUNkNFU1dXaG91cmJQWnZ3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1211,
@@ -18177,7 +18178,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/323760756/21297924562?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQczU2a09SeURjOXExVVZKYzIxK0RVbnlFYlFMTE0wNVNmSjY0ZmpQUWY2RlAxdmhtd1JSVFZDYWJ3MXFCWWhmZ01wbmdXbHVieHdLaFAwcUdPNlhSSWt5bkN1UWllWlU0MHlUakNSd0lON0RHVHZTZFRMNDVobUhoaDlaQXNDZUUwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Pets"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1212,
@@ -18192,7 +18193,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/453588830/14335736717?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQditHUFV5VENHZW9INkNPNDlKemZUMUlScGI1aXYxSlQrRWFoR1pSL0RFQllYaVJvODVtaXdnV2I2RHRJRGJhZEZPMGVuZ094UEh0NkRyS1cxT2laUVQ5UW91dTFXcUNFSkhoczhtNytKOFlTcWIzbmVwTXNDb2lyWUFyNmg2VlhFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1213,
@@ -18207,7 +18208,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/871798706/23193094309?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdE9LbzRzSEFaRlc5ODdkSXFjVmllY1IzRkYwVkZrTU1Oa1dNTDlWOXNkNW90S1VMQnpsYk9JMXpsUThiMUM0eEtITStkanNSWTFIeGJzUkorNXU2aXR6UzcrVS8zVEV6RUE5b1VKcHBxaWhoUkhZQnNBY0h2UUpTYm96OGhCVVQwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1214,
@@ -18222,7 +18223,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/347412789/23797481168?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdnowOFhCM1NaQVVTWEJ1QUxDUUhSdGNWc1AvZnRaNXNaV1gxOUdLYzNnaW9SamJUTGRERCtIRENtSWJXMHhzblBZMDN3QlN2T1NDRktYZU1sdFQwU1VLRVpsSDBTcWt1aWlKUitmZWtlMXp2MkFzVjM2Zmx1NXhBWVZzZmo4Z1R3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Automotivo"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1215,
@@ -18237,7 +18238,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1096307206/23497127686?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNncrczdna3lWdHlHQUREdDZxTGQ2ckp3NS9nT1RhRmpNOVMrdFRGejM3NzJtVlBDdSs3dXVHOWx4bmQ2OHcwYWJobXFYQmNyTkZxUXpEMEpsZzRpVzhveFR6cjluNTN1M3BCdmVQTVlmSTVMMGZuU0R1VlpXVTRYTHZSeTE5NW5VPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1216,
@@ -18252,7 +18253,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1384072589/22698306845?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNXBkczJ6U2l3VEh5T1haODRWd1FPaVNDcVlZM3JlZ2c3TTVQY0QvaUhUK1ZGYjMvVGtHUTJCRmp4WGFUa0VCUzdsa0ZvRkx0bnZORHVNZlJKbTNBME5xWVBLTktwQk1PeE5RanE4Zm9sQStDdzU5d2ZtZ3NxMWFQZDJNNDNBUWlVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1217,
@@ -18267,7 +18268,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1314243679/22798152132?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEpRL2FlUlcybzF4QXBObW5MVjVGZDVWenh3R3I3L3E4V3ArTUJQWFZmY05PaXhoVkRmVVlNaVpPajRQQkprNXJJeDNOdWxYVS9oazBBU3B4OVdDbERzRThVYVUvajlMcDgzcWIreFNvZW1XSHQ4ZEVWVDhqc2ZNekZOdkkrMWNFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Eletrodomésticos"
   },
   {
     "id": 1218,
@@ -18282,7 +18283,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1106940271/21698313823?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVRBdU9zazlxT0l6c3VUSUwweHVJRVlITjlGRWdxZURya2w3WjNKQjRVUTJMVVVLTTgxVkpjYkdEaTZRdUNHU3lJd1FFczZ1M1oxQ2hpbitxQ3h1Ym9UOTVlOGhiR0xYa2VVUksyVlQ2R1F2TjZxYlBMTGR0QzdGbG5sSEgzaWM0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1219,
@@ -18297,7 +18298,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1459307687/19898184102?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0lRanFYdEZNbWtLdlh3OWlUUVBCY1VqNkJNdEVKYVNjMjRjUzdqVEFFTDdoVWEzVEdoazJKT1JDZ2lmNHRHUVJaOHQ5OSttZyt0aWxLL2lUbExabkV5VmNNNlpwbElTMmpBRlN2cEhTbHFpZkRIeWpGN0lxRUJqYkYzaGdLdUZZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Bebês"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1220,
@@ -18312,7 +18313,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/876852840/23698200420?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWRNbGNIS2haYnFYc0pyYWJkZEgvYStxOEExNzJwWjBlNVF6WDZGMXhQVmlDTTBCOFhpR3grZEhkanFTczJMY2Z0akdNUSt2OWtXVjlEV2lrM2oyN3NpbmpMOTU1RVZiQkhRKy9pTTRwbThWTVV6MHRxVSttOFJyVHEyM0ZmeTNZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1221,
@@ -18327,7 +18328,7 @@ export const productsData: Product[] = [
     "location": "Goiás",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/322885918/22998826368?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdTRramhBWHJSZkg4a0JzL3Q4eEtSSkdVdzR0RGltalQyOFhJNjFtNGdUOHBWZzg2d09sT0hyRjI3L3RERm5LUG1SNGtRcWQ3djJ5TVJrTnM3ZjRzU0FXQWxKUnRQb2luQVp1VGw5VzNTdzBadFJlUEliY0dVQjFkNlduL09hZ2lnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1222,
@@ -18342,7 +18343,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/909400500/21597675448?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdGo0RVRhQ0VaZ0FTZzFCZzcycmtDUCtZVm5UelpRYjArRWF4S2VPTGM5ZUlMdjVVS2d4eXdWU3R4U2x2TVhKWlE0M2l2cG5jaURWUm10aUZaSjJWTTBOZ1orYXZodjc0Mk1YMzZhQTdTVWdXWEwrck9VNEhadm9meVBWT09PaEI4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Automotivo"
   },
   {
     "id": 1223,
@@ -18357,7 +18358,7 @@ export const productsData: Product[] = [
     "location": "Santa Catarina",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/951968037/22397016856?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdU5DN1JBb0xLdG1yYjRJRnJ1Z1k2SlZjWTFjMWlmOTdHZUd5QzY0RGlLZWRGQi8zbWRkbXVVMy9QOHlkbFdEaDZwM3lLeHlGN1pwWlFyZmU0RWtvREhRNDFwZkdvcExCREpxVkw1d2JQc3F1dmVLWi9ZdERtYXZURVNoZ1plSFZvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1224,
@@ -18372,7 +18373,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1282113786/23898774528?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWNqc0xWZnFmQTlhNlJ0b1RiNGNUSE1YNkdRdFc4dDBSL0hWRVEvQ3pKTXBMbXh0SUMydm9NWUVNQ0tzY2w2YXh1aFFEcTVJZXVWYmhnZWVGTzViRHpJSnJkZTBMMkFCQjdqbGtwRE5NZlhTbkpjTjlVQWtvREpXbi9DNk9jQ0t3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1225,
@@ -18387,7 +18388,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/401461677/22697734408?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdTYyK0NiNU5EdnJkblh3MHFzSTlqeVpzbDN6dDJIY0VONUZ6a0Z3cS95SFVLaFMxVi9XN2VMUG90V3RFUGNNMldiUlBsNzlsYWRkdjN1YndvK2ltUy9LMFVQaThPUHFGTnpZZ1FXcVV0V3JvT0JiL1NPNW9tMC9TYjZNTFRsS3hZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1226,
@@ -18402,7 +18403,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1251375938/56702965861?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVkyaHE3aUNyNGd1V0k2Q3RjRFRaaldPOFYxODFBWk9sVThJRWhKRVNESWN3bWpiS2ZGbkcxaE5zbUFwbkx4a3NTYk9sUWZSQ2x6RnVQc2lzcTNzclU0ek5CSjVYOUdrUlMxR05ranJpZmhhYWRtR05uMGpMcVV4cWo4WkYxMzhZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1227,
@@ -18417,7 +18418,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/401368869/22998773274?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdTYyK0NiNU5EdnJkblh3MHFzSTlqeTAxQklWWjN5TXRuaFgxUzJyM21NYUVEMkVkeVVMRVF6TVlxbHQ5WC9wRjBMekIxTjFDdGtLUU1CS2g2dTdxblAzcHpIbG04R1hsNERJaVZrRk0zRnlRV1BmYTF6dCtKSURqTUVqTGFUL0JVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Automotivo"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1228,
@@ -18432,7 +18433,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/461633669/21098519637?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc2lMb0lUVzNFa0dEL1FwTG10ZVJYRkcxRDNGMGtFNlhMZW0rRENLSS9uNzZNVUdOWU1aZTRrWFpDcWpjdVUxTzFlUEhwODNvWkh4MjZtSlUrZWJ5T2Q3alZhVmZMNDdvbnNteXI5NWZSS1VUbjNpcTkzQ05yNFBaUjRJeHZkMnhzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1229,
@@ -18447,7 +18448,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1180920205/23793172388?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNkp0bHp4akpkRDU0WGxnbUo0MWpuN1kxVVAzS1JsYXN3RkQvT21KcTg4R0xNbkRiNXFETDBjRmpWMjlSb3NDSTBJbWlhc09Wa0ZVYURkZVBSamVFeFYyUVRPcitVUVZKbmVuVVQxbkVHQ3JGYW5wWWpVVDNxSHBsakU1SnZObGFNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1230,
@@ -18462,7 +18463,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/340076400/22098123714?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3hNbUFEWEpWOUwxZnJxYVlIcVhHRkRyMFlIT2cxcDBGN1pURXJLVUE4Q3JlcVpiKytOdDJ0MTdQQ1RGSkRVcGVPZVdXQVhldlIwRXVUWXQ3c1Y3T1M3N3o2dUtiMDhCOTF4Rk5aY3RQNFp5TE1KbXVhaEpzNUhXNkx0bzljTlZnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1231,
@@ -18477,7 +18478,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/729422210/22997359798?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmVSWXk0MVdJQk9CL3lwZjRVamtkSytFMnVOcDlUelNaVG1lWXo0aFJWVU45WlJKVkUwakdhRkR1MHZCMkpTQ01aTFkxNUxqRmVTR1ZKdFZMQjJmTXZWODhFOGRwZFFxd01YN2IyOHZzUDNKM0hldUVZZklKc3NhYklLQnI1c0JRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1232,
@@ -18492,7 +18493,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/378597608/14447777357?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdHR4N3hqTUVpcFByZHY2eHVXU0dPeTNwcXBnTlpJR1ZSZ2RwZEhUYVlpeWgzYXpWVWRpM3dKQnVEcGIyek9leVVreWlXdG9YYjgyUjhBYXpaZ2xvYjVVN1NEajNOUldGVzZ6cVpHQjM0K0taT24wUlA4RHBwL1hNclZYUG01S1FZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Automotivo"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1233,
@@ -18507,7 +18508,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/297931232/18768570659?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1Vtbks1UGZJeFdGS2Z0NTNNaXM2VkQ0NjlKWnVaRis5elMwVHU1dEQ5N2FabENzRkh6WXBENElMVUxpblFHVmd0YnhFcWF2dkVuZHFsVjM3WndhMENuY1JBV3psSzFxRVZMNkNFajRMclIxaHVUUDlXTE1NcHF6eWphT21WR2hJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1234,
@@ -18522,7 +18523,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/352620278/22994028773?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUsrRmY4Y2dKOWVxMlpoMktmQ1pjR2FIc1Z4OTliWXkwS0VadWZEeTJTOXkwV1N4SkZDOTV2U0VwMC96cUM0N1Z1elJmaVpxK1ZYM0FveFNHQyt6RFRCaUJ3RkVtT3VCWWpqUEQrNXdpR0RKRkR6WmxvTFh3c3FUSDdMR3F4cFVJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1235,
@@ -18552,7 +18553,7 @@ export const productsData: Product[] = [
     "location": "Bahia",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1337417367/22298230083?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNTVkZ0xWcFgrNGt2QmFEWnQ3QmdtZ2tKNE9Cd09YeWRBblFqNnlidzZTdjVsTlIxbkJTQjZRVUovUUd0YldPK1pCZkh1THBZc296eWg5cldCM1JHT1FYVnZsTDZvRWtsSE5RMmMwMWdvNlMwZkpmUkl3a1M2bnpSbVpaVjZUZUVJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1237,
@@ -18567,7 +18568,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1485117822/23293861286?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNk5ZT1dQell2eDl4bW8yNkZpTjAyWURQb1BqOHNycDYwZTM3cTVEdDQ3OXhBYmpLZkRXSjI5Tm5jdXY5aTFZYWVlT0p5Nng5QVBCMzllM05TUTFDb3R0YlY2M2FyNHNJUERHeEdCRE5Vd1pzTkdtN3l3bEdFSGpFM05HdHNGTitBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1238,
@@ -18582,7 +18583,7 @@ export const productsData: Product[] = [
     "location": "Rio Grande do Sul",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/443675790/22398448834?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXpxbXdCYXJVdThMU01va3pObXBuQUVrdjI4N09LM3NxdW9zTUVndjJsNnNLUTRrUnlBVWRNVjlwNTRvUGxzOVluN2wxZFhydThsemtVdCtJL2w0bENVWGxYN0Z1bWF0WTFKRUNqVUVyYWlYbkp5WlEvZjFLOGloc1pBL0ZaRHVNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1239,
@@ -18597,7 +18598,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/322584913/21099324291?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdTRramhBWHJSZkg4a0JzL3Q4eEtSSm03NzFOZEl0YnJqcms3SUk1MW5pTXN5YlgxTW9EYjFnM2Yzc3l0ZnZnNjJUMEVSTlFoL1hwMm42QzRRanc3L1dJWmRjNWtHb1RWNVJlbUx0R1c5QlRxNzZaMlJkdlBHUmJNT21ZV3RKaGQ4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1240,
@@ -18612,7 +18613,7 @@ export const productsData: Product[] = [
     "location": "Internacional",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1178277231/27409686846?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN3R6clRXek84YVRNMWhSeW9MRFNFMmpBZWlpMWRFTVRNcFJ0ZVhzZ3NnWFNHWW1SVUYyd1FoODBnV3ZtaVpDQ0VVN1plRmRSSCt5Vk02K09ETFF6RjRlb3RYaE5mSFZGdVBjcVA5a2FCTmRVTTlhZWlza0N3aEd0Z1VYSDcxTEN3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1241,
@@ -18627,7 +18628,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1414966302/21599849503?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEFrSUpWaitUS3NaQTFHTVJTQmhpZUhEM3FreEZCeDFiYWhpbmxaMEtLR2pIRjA3b2wrR3FQNk5NRkgvZitUb0IvTlNzdS9nblBvVElsWG5WOUcwZHZxSmxjRDZ3ajl4WmgvZTdmRUpPdEdCMjRRdU1zalRkK3hWT0F2UHpHQ2o4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1242,
@@ -18642,7 +18643,7 @@ export const productsData: Product[] = [
     "location": "Internacional",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1007653167/27001142380?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1ZpUFMxL2o1N0RPK0UxdWl1N3FMVlNNZExUcTA5MzdGenpuZWRqcm5HN2ViQysraVpjZnFLY08veFVpWlFuQ21adGVZVDUwMHBQRisvNHRqbm5EYUZuSVhNYm9zamo5cGpMNlIwdVZkRVJtQTRDeFVNK24yQTVSSXh4S0cyN2w0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1243,
@@ -18657,7 +18658,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/844004880/22993826318?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdVU1UzlibFhMSXdZd0p0Yyt1bXFSclc3UjJKSTlJR2ZJOElQTmREaU1uNSs0a0VRWTZQUHBwSWpWSllPQmR6NnZ5ZEowaUVJSWYwL2FVUWEweUY0VmZ1NHE0TTVkWXNuRkdHZjZYbXk4QnFYQTZSa3gvZ2twRjlKSWlPaDNENTBJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 1244,
@@ -18672,7 +18673,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1538408030/22598520701?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWNkaUJHS2dKRXlBdkd2dG1mZ0psUHpqcXZ2dW43NFlITDhkMGJFQUlDbUxPRTVySXBpQmtiUkJTOUVkL0V6ZnJYMlorTGIrSnVEd21TdDc2MEt4cGpod2hNMUZxYnRCanBET0t2KzRLS0xJS0NETHpmV1NCK1JxMDUrYlh2VEpBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Pets"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1245,
@@ -18687,7 +18688,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1024782317/20097726712?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN2FFWnJLSG1wUkVCVmdvV21GWWdScytMa3J4Uzkxc0pzc2lObUVyS0ZOZDNUSkM1MUR5Vm5oYi9yMTMxTkdQRHA4YXlDTldPL1FNR3d6MVNQQ0JTUmJzTnB2Q1o3cEVJWUJqenBUN2s1T0piSjVxSEZwYmd2NUszUklXTVZ1RnRjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Gamer"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1246,
@@ -18702,7 +18703,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1321345440/22197735473?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNTkrc1ZUUkJCVzhDNG9GeUVWU1NleE9uVi9DNGR4aHVJUnI1OE8zM1FBOFJwWm9CcmdpbGlVYlhpd3hES05TMjFreS8wR2ducDZvVW9HZVEvUytVZDdEY0VodWg0RmJ1MW1RRjg0R1IwZEJzdWRnWDhtOVVFTm5CMEVOYW5GM0ZRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1247,
@@ -18717,7 +18718,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1258744084/23394028122?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVkyaHE3aUNyNGd1V0k2Q3RjRFRaanBheEtneWdzSEQ5U3c0RXJWSXpTMWJZNzJDOFJyYXdJWmI3dE85U3Mxa21lVHR0VEtlcUJKajFDTEtiRUVVazhkMk1jV2IyL2RGWXlCZGxIWmhvaWVrY2hDRlRnb2l6bEFlL3Q3clJhQ3hRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Automotivo"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1248,
@@ -18732,7 +18733,7 @@ export const productsData: Product[] = [
     "location": "Mato Grosso do Sul",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1354452432/19598032707?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnFlajJWZlQyRjNuVGtydksxZlBaektGQ3ZnVWZCLzhTM1lFWnBiN2ZUeWl4K1ZBanpKUlZvV3F4L3ZzQ1hFcU42ZUdXeFJoTE56VDJJZnlva3VGUFNqRU90b2dRWTBIeHp1QlIzeWJwaHVYSzN6ODRyOHE2cUxkWkh0dERoOXA0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1249,
@@ -18747,7 +18748,7 @@ export const productsData: Product[] = [
     "location": "Mato Grosso do Sul",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1065974139/21797514968?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNloyRXJNK0dFZFZ1MzRDVXhpYVFrVm9XR05qeFJMK2FaeWdVRVByYlM2bysvZzNibUdVL1NYYUJ3TW9BQ2o0TlNGdjNYTUNuRmNDdC9TU2Y5c1VlZlAxeHlMbEdGR1hud0NPU3B0em5JYUpUT0s2RUcxQ0ZmRmI4bWw4RnZDYmNNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1250,
@@ -18762,7 +18763,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1515741369/22698805586?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVNCRzJrdVJqZ3lReTFNVjgvS3M4SWZ1REpweFdTQXRFcHMwU014bFZoU3hLZmI2bThvNGJRa1Y4U2lkam1tenFZZUVxeHo3aWpOREx5dU80MVRudDJuQ3hkdXNWckdnVUNPZDRiVndOVlpja2NpMU91aFZuZlNFaDQ0K0s3ajZJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Pets"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1251,
@@ -18777,7 +18778,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/407995480/22694664574?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc0NTYzRvWW8yNm9BTzN0Wm5rQ0VINEhuQWl1dnFBL1MzWnQwbnBKU0hBU3F3ZzhXZFp0bjNCUzlHblZsdHZNSVpIWG1LS2xZT2taWCs3bGwyd1crVEdYWERKVnoxMHpxWmUzZWI0REg3WElWbXY1UWpacThtYU15RUdLRENBUTVZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1252,
@@ -18792,7 +18793,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1210545163/22093716644?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0p5WlN0ajFLTzdqaTlQaERUZG41MzhzZ2VlRk5wMzNndHBZcHhoUzVKZEZxaEVhMzFaVUJGNDYxUHFTVU5JMllucWgvOVJYaXhYVVVZeHAxbWFaUDZyVWtuUHliUFVpLzFtU2xweGhnKzlYRmFOeHdrRWJ6M1h2aVBxdS9PdVhnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1253,
@@ -18807,7 +18808,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/455937189/20999379396?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3BBNjVNcGgzYmkwdURtNXBseE00bGdQVVllZDlhOEp6c2Z2bVdoRlF1Y1pLa1BNdFZweGtzT2N5djJuYk1QbkRPNk1jdjk5QnpUN05kaWpINmlxSUlWMTB4ZVZVT1ZSUlQ2K01iQUxlK0pabHR6bmJwa2o2dWpkNW0xbnRHQS9VPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1254,
@@ -18822,7 +18823,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1379077822/23593642820?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNGVCUjlYTnE3YjFXWnQ5VUduNWRFaEUrUjViY1BXZDdWZ0VhQjFQbzBkM1doSlUySG1aempraDdhOWhqblFGZmJrY0dGZ3g2aGdva1dnWlB5ZXREQXRMRS90WGFzYUVwR1JBcWhzMkhnTUVnV1p0VW9UU0cwZXB3TDhFWTM3RW00PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1255,
@@ -18837,7 +18838,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/401644182/23394072205?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdTYyK0NiNU5EdnJkblh3MHFzSTlqeVQ0amNKbTk3Q2JQK1F1OEhpYXBhdUZGMjdmcHFlTVhOdXo3NUZKNlord3NxT0tZUjFMaW1vazdjVTR4QWFGUlBLS0E0RzA4MjQvanEvcDZndVdaRHhoQXJSbHQvY3oyeFJZT1d2dk0xb0hrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1256,
@@ -18852,7 +18853,7 @@ export const productsData: Product[] = [
     "location": "Sergipe",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1477632115/22994188332?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1JocS9UZVVlUXFINkZubXgyUWNZYm01dXZzSUttNHZzc1Z2enppb25ZR0lyem5ubVRuT0xUbFM2Y3BuOEwrZnljR1pZZkhVa2xZN285Z09wRmtkbFhsQ0NUNndYeWpjL3NXZFQwM2d0ZDhsd3ZGVkJwTzg4bGVsYU4rQ05mYnJNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1257,
@@ -18867,7 +18868,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/298935340/58202954052?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdnVNNkwxVm5FV1ovcTYxSTZLT0IxcDMrL3lwWmFjeXZVMjhOdGloV3dVc0IvMHA5dWZrWGNvZm9Md01iS2MwOEx6TzBxVG9kV1o5bmpUc09LSDg5VzVuZ0hrcTIyVWNDM2Y1c09aVlFjcXcxaFd1dDkwL3pFOHJvaUsrdE5IVjJnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1258,
@@ -18897,7 +18898,7 @@ export const productsData: Product[] = [
     "location": "Internacional",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/778770826/22736871959?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdkpEbVpqMmNKVERUT283MmhLdkVwd095Mll4QVFKRFNsbGFDYm9Tc2FISGFoZHZJcDlkL1BSOWNCc0oxK3Bzd0JCU1ZBMmdMK2s2Y3BRL0czdVRwWmhmODhPRTdRZTBzMFBsR1hVcXN6QURMTnJhK2Y0WVRvMmcySFhUeXF3T0lVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1260,
@@ -18912,7 +18913,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/375039522/22698797343?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUN3dnpTV3pTSFZRRHVlQWFEckNQbXBQYnRMd2hQNnpQMzZwM2hCYmJPTHliN2QrSDBiYnJKa09Rcjk1UVRoZFNIVis5cEdWUUVmeFY1eXFrYzM5dlpkVUdmSVR3RkdxRWhBWUZENCtLQS80aFpSMm5kY0NmOUc0QkxVRHRYQ2g0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1261,
@@ -18927,7 +18928,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1571166082/23698715514?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1lxZTV6UUVYb3RlQWRpOUpoak9sclk0a2RaV29pY3ByY3V3RDlRZzdmUWJsZVpKUFVBMkdXTTVPQXpNWFBqVlc4bHNCY011dmFpWXlMTDdGcUV2M0lZUVo5bmc2RHE1WmRrbGxqUFZOcmg2UFN0bkVDQlphUW9mNEJjckZZdlY4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1262,
@@ -18942,7 +18943,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/843382678/18297666069?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3Y4bU5pMzQ4WmtwM3ZkVXVYRkQ0bDVOV1BUT3dLV3M3WU1lL1pHMWZxN2o5dW9MYjZMUy91QUROSktaRE80UE4relloMlY5bStIQWo5Z2wzbjBkY1M1VW5kYUY4R0hXOVNidUxkZXQzcWc0N1M3cTBUejFNdURFS3NBclVib0MwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1263,
@@ -18957,7 +18958,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/644980753/22494391164?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdVhDUndsbllpSDZKNmhBMUpLQWY0SXA3RGpyNkJFekdPSXI3MnI2bnFERnFHZDBoaC90SHFJSSsyb0VvQ1dNRDc0aUJ5T1FhTEtseVFqNFlZbi9NRzIzeGk2STlySGRuYStIYTJtUk5Jb1RuRjlsZ2p5RHI4MUlFcmhjVDJjQmdBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1264,
@@ -18972,7 +18973,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1360752092/20098319782?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNjZxczFjZUpCVzZMY2tOMHBrckhPQ0Q0d2Jha1hFcHV0ckFEak9YR0pZODRVdE9VbytKVzVYcUV6Mmhua1BZNXFwcVpMblRFMll3U3ZUNnVMR2szTVArNzZBemhPbTV6dFg0YzNvZEd6WTF2SXE3K3BHelFBWnMrVTNhL3Y3VHJvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1265,
@@ -18987,7 +18988,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/445101578/23193518683?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdVI0SG95UXExcFd5UWpNZ2Fib0pGOW80SWdlN08yYTVZcUl6elNRejJIZ3Zwd1dtZGNRbS8yOWhiN2FqRGtkejlQazFiNE82L0lJNmpyOE5Dd0RnY0RKUVBOQXdvREphZHFtQkdkRHRIVzdjcGFLaVVoNHpySElldWFybUwzaFdZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Saúde"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1266,
@@ -19002,7 +19003,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1372498918/22497914336?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNGVCUjlYTnE3YjFXWnQ5VUduNWRFaEVSaEljSUdUQWFzaFNhbVluRUFKS1FwRG5pYktkT2tiUUVlbTBqeXFaUkU4MEZJTHhZdnNWLzk1bGpBemk3Q3NvNTlXZTlLTHBxcWVHT2dZbVZrZFB5VnZGK3BOaTZ6NjR0Z1d1OW4zU0o4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1267,
@@ -19017,7 +19018,7 @@ export const productsData: Product[] = [
     "location": "Internacional",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1006215031/42654658328?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1ZpUFMxL2o1N0RPK0UxdWl1N3FMVlZwOE9abUxqanR0RWxCaHRoRlZkT242MW1Eb083d0lnS1E2UzZHMGZVWGlvaFdOdXcxT3JjdjZ0MG5IK1pJWVBCSGZHVnE0UFMyYnZzWTl4bW9QOXFyRzRZYThjZlZWZ2t4eWQvdTdZL0dVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1268,
@@ -19032,7 +19033,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/436104412/23997987281?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1Uwa3hLOHExZXd3cG15aTdBUHFFTkNRbG1icHkvRWJHbGVxeVUrRkRIVVE3M2wveFN0MnBvTHloNDQrcFZkYTM2cXRlenhtUGFIc2NnbEt3blFWLzNOL1NuanRUVFpGU1lhSnFtQ3oyNnRERVNEMkNYdDdCZFBkRXlKTW9naVQwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1269,
@@ -19047,7 +19048,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/353891630/20698275228?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXBqNEJ4bTFpMTdtQmpXWUYvTWYzOU84YmJmQ1dHREhuWVdqRkFvV3hYakRMM2tTQ2d5VmJMQ0xsRWZwZ2dYQjFTbmowM1orSUE2MUtIaHgyRmlKdHhMWWhkUjhuUzlHQ3JmcXA0QXRxd0s2MDZnaDhFTmN3OGxLYUhPMm5OV3hJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Automotivo"
   },
   {
     "id": 1270,
@@ -19062,7 +19063,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1547995492/22198797147?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnVJbW5vUmJMVEgxNENmWlJITkRXK0tCT0xmNzMxTnVYZmljVTRpOXFQYWd4emhnVDF4Z21Ib1l6VWlsNW50YmVQRDR0cmgzeTMvOG1pZXRXYWZySTkvblpjQitycStGNVBZenVKRzkyVGkwV3hER25MRkJQS1plY1RvNGQ2YkU4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1271,
@@ -19077,7 +19078,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/961638733/42424923537?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdGt0U3pBb0dsbktIK0VKZlA5TEVxZkJQZ1B3TVZmT3QvNFZmcFQySjBNZGEyMUVNakJFYm5hRDA1c2NyMTEwRXNQY0VHTEQ2bWlpQXkyNkE1VXlVQ2w2enZyRVVadEdVelFUa3ZFUGxRaXhiUjNYNlphVnJzSU5QR3Z5OFR0OExjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 1272,
@@ -19092,7 +19093,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1601586606/58201048170?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVdYZVJwMHhRL1JOQ2k3SEcrRmF6dXlPNCsvZGNTUmZjQTVYam1kbXJ0RlFBV3REWE5Oak9CV2dHdFUzVWY2ZXR6WXkwR1F4MWVqYzBpM3BJQ2llMnlLM004SlBtT05VMlNVU1BJbWZOS0QwY3A4Mk5wZjFjbkc3Uk1GU0JiT2JFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1273,
@@ -19107,7 +19108,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/313660590/22893873080?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc2xsV0toV2FuVUJpN2ZFTElVa2hwU0w2N28wMDRTSENiOHpKUzhZT0ZkN0dVZTR2V2Z1cUJZYWg2bjliU2ltaEJ6ZEQ3MkJ2ZHpiVXRwYVlab3E2bFo4S2t5ZzZGeUFpOVJ4MXpMZGlHc2pHWUg5cVdyQy9sbS9zR2JHQmpxMFE0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1274,
@@ -19122,7 +19123,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/683934771/21057296884?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdVNRUG1TZmRDYUZ4Q1M5Q0twREhBTjBBSmVHNThKMFJVeEFzN0RyVG0vb2hkVDhTY0dqRkplQWNhdDhWU2ZCMmhHcE90SmFNNlFNSjg5U0E2SGhuVmZPaXBRVEdlMmhlRDVNT2lCYXFIV1JBR0FWU1czOENCb25RSWpjTmtpOEJnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1275,
@@ -19137,7 +19138,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1485858369/23593899007?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNk5ZT1dQell2eDl4bW8yNkZpTjAyWXJ0VEZnTmk2Z1ExUGdCbDgzcXRPMjhLU05RZGFEYWN0VUxMR21aK3ZmeWZNYitONUtmRzZrdGNCVGtVOVdUS1ZFeHdBbmZiRGdaN3UzKzVpeDI5YTdlWVJ6ZUNIWWdZaW54ODhJTFhTaTlBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Pets"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1276,
@@ -19152,7 +19153,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/960960972/23594304295?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdFBlUWI4SjlVS2RUTEE5c1FaTG9oOXRWSG5za0ZrSStyKzF2OVYwUXRiNnlwdEhZMllpWVZnZGE1NjQreUl1aHpwZVA4UnNuZCs3YTRsT1ZtSzM1eFRtQm9yT3FwWVNuYVlZNmNoUmtkVUZSdWhPVk5tK1l0RUxPS3BQZTNHOTVFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1277,
@@ -19167,7 +19168,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/419111099/23393729993?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1U4ZDI2dUxQYUs5M1lFb2xFdTc0azgzbWwxRGFhc1JNZC8wSjNHd1RjUS9uUjVhc3NWUW1IUkJmay96ZGhCbG9GMlRKSUNIQUdLUGtMSGNIMnJhalNpSGpPa0VXajlSbi81ekdLWFd3TUxIelhaZUxCUnBOclI2M2JPVkVhUnRzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1278,
@@ -19182,7 +19183,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/347282199/19699680852?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdnowOFhCM1NaQVVTWEJ1QUxDUUhSdFZLdURYYUdnVUhBanh2cmtCeGdYUEdndkc2aTlIK0o1bVNBUWwyOWRDT0FNcExFUGhVRkVxWXpnZ0laV2ZjTGpmaCtLam5zbFFlaExxM1dtL2s4U3M4cVpBaVFubXNpV1JSRzlZYzRHNVd3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1279,
@@ -19197,7 +19198,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1535794969/23994336380?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWNkaUJHS2dKRXlBdkd2dG1mZ0psUDlPUjk4TzArVWwyREJydzkvcEZHYVU3Znp3bEFnbW9JTkdueno3cUVTZ3h6WWhxN0d3Yk9KblgrTCtqSzR6TG9GZmZ4bnVNVDFUZXlxSkVGQWNvNW1GMmp5Y0xROEprY2d2T3hXUTl3bUU4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1280,
@@ -19212,7 +19213,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1214382019/19698015014?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0p5WlN0ajFLTzdqaTlQaERUZG41M1VjbklFaUdISkRZcWRLUlQ5SCt1R0p1RCtOSzFiTHRoaHBpcTUrZjlrLzFmcmlqTk5MZmRRWjdOVlY5dzZzV3RMTEdqaHdlMEN4aHBHbWlvOFU4dGhJcjkzdEw1Zmt3eCsyU3hVWkhCYTVzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Bebês & Infantil"
   },
   {
     "id": 1281,
@@ -19227,7 +19228,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/424928448/22894322494?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc0MrMFd4SmNYTnlsaXNXOGZRMTRWYkZ1cjNucmUwLzkrb0JteTdGTldQZW1CanR4MDJLVkNXSEx3MjFQeHNqWGdCK25wRHV4dmJLQjJkR0FLRHhOMjlmaDAwOER2SncxUlBKeTI5cXF5QThXbTk5b0tWMG1FNzZTMnhNdHNoZTVzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1282,
@@ -19242,7 +19243,7 @@ export const productsData: Product[] = [
     "location": "Internacional",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1006215031/28583751267?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1ZpUFMxL2o1N0RPK0UxdWl1N3FMVllheHVEU2M2SlVyWVg2R1AvOEZRTlRjTitDMUVJcHVrZ1I3VXB6QUpCZjV6VVpCNFdUdkpmV3dTRnpJaGNCRTJSWmFBZ0hvanRJS3RuY3VhamtxVDNHUUdzVG5nelp3UWc3ODFYZlZNM2hvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1283,
@@ -19257,7 +19258,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1630426187/23394437045?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNTVmUS9CZk9FbXBXL2l5cmxuVFVOaFhkMVpkcUxBYkpNVTR3ei9jT0s5MzNNT0N3K1d3Q1E2ejBqbkg3VTQvRlcyL1ZNbjcvRlUrYzRpQ2kvbkJIaVJRSU51OVR5UG9YeC8wUDJUTmxwd0FBR0psb3BDbk0vRUcrbE5jQUNXN3J3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1284,
@@ -19272,7 +19273,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1249391293/21798281030?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNDlWUHdIbVgxdXFUSEVZTVNaQ1VxNktQZnpKVk9jU1ZRa0dtNU9pZnl5RGxVZkdkcWwrQVkxZUorNjM2UjRRcGNUb2ZlODlEZzFwbVVsYUw3VGVJbTJHY0hmWGhSSVI4VkpZTjAxTG9CMG9KWVo3aDE1K2ZBL0JUM3ZjL0U5cFJJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1285,
@@ -19287,7 +19288,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/425326129/22492675357?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdHhkaXlnUDU1MHI0eXQ0U1JSOHRsVHU2bUFJSTA4dnJGdVpPeHBVVi8wdEdNZXFRMVVkOW1zNzZ6UXh4UllxcG1saFFvVmhlL1h2bS9Ma3ZRcEtYZm5DODhNREhKbUZGcGczaGZCOVZvQUZ6cVdLNWdYMjQxVXozTVRsendlV3E4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1286,
@@ -19302,7 +19303,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1099068336/58251084924?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNncrczdna3lWdHlHQUREdDZxTGQ2cndoOFE2TXVRVmJWWUtmU3MvaGg3cGFuNU9YRHBYeGRnd1d5b2o4Ujd1ZndETmRabVhkV0lWejkvVlVqVUN6Y05NWU1TcWRCNWZTK1lpVnd0bXo1THl6UXJoVTkrZW4zVFh4bXhGa2NIT3RZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Ferramentas & Construção"
   },
   {
     "id": 1287,
@@ -19317,7 +19318,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/413762733/22492676165?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdGRUUDBVaThIN0oxMGI5bE96UVkwaFlHZDhjdDVoZHVqUm5tZ2wrL202MmdiSldBcjM3K25hbWZpeUtKdlNwbElFbjc2Z2lxYmVSeE1ST0I2Q3hXM2hCOVBiSlkvVGh4anBheXNlY0wzYWhwVkM2czBjZXRQYzAzazRNZVlLZjlJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1288,
@@ -19332,7 +19333,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1405493675/23893129086?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNFhESTRDay9qVlFVdHRubksreThIRWlRdG1MTVlTM25WRVJLZWR6c01DUHZIdm9ndU9mTURYemY3RFFDZS8xNGk3N2FFamtEeW03R3U4Uzg5TzE1QmprcmJoci9UQlg4WU9oRU9BTzY5cSt0RmFkWkVKRStlLyt1Zi9kOGloSEI0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1289,
@@ -19347,7 +19348,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1580145778/22094281118?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN01ET3NBTkM4MXQrZ3FuUmxFTmQrZnl6NVFseWc5ak1qQXFLTE50UDQyQ3h6aU1vRHU1WHB6eTluSGQ1bFRReTRhZ1l0RVNEcHI3azdmSEdmZVRxMm1QbGljNVAvc1pVSzZpVWczM2ZSeDBSZGxnWUduYlQ1ekVTZ3lCVTkxcHNnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1290,
@@ -19362,7 +19363,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1168608130/23198023637?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNlBFNHVhak51MU13cGRKeklHTm1VZWNDUm5zNlZHOGpiOHlYclU2V2xOdldzaWViZ3RMTlpzWjhFSHVka0pEeTd5bEMvUFVYVzBZbUc3S1JuZmJqb2p2bHVDdW4xR2EzUnpLU2o2MTd4eXU0NURpTUdhbE56WFZQMDQ0ZFlKc1BFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1291,
@@ -19377,7 +19378,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1003085235/23392567785?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1ZpUFMxL2o1N0RPK0UxdWl1N3FMVnk1Ly9xRTV0Vk9YWS9rNmRtUTljUnF1T1dXZkZoYzE4WndHdkhOS0poQnZXV3dmV0xSbkxsY3lVUG0rZXdpaTV5WWFHQ2lCb1FFVTdTMEF2TEFROFltMGFMbkhMcWVSRklxVy9hdEh3cm5NPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1292,
@@ -19392,7 +19393,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/424928448/23329181038?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc0MrMFd4SmNYTnlsaXNXOGZRMTRWYklMMFhKdytic1UyL002TGVYSzdSZlhXNGErQUttOFZoTGduQlJrbURrdDI5eDdKYWNDK3k5dU1vSmtpUmk4a3E4Qld3YlhWeExyRU44cjY2cG5pV2djeVNlYnRldG85T2pvR01hTndQQ2o0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1293,
@@ -19407,7 +19408,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/487020334/18798025770?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQczVlb1Z6c3FDcWFEVjQzZkxreXZOdG52NTB1UmtJSEQ5NVR0WDExaCs4MDA5YUZ5YXJTTTdnMytFd3ZWcE9ETWYyVFlEcG42TzMybVVrRXRuNEFZVE81cDVMeVhiY3lRWjFxS2trdWhFTGcvb215c3N5Z3lSMnRSU1krNm5adVJjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1294,
@@ -19422,7 +19423,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1443204793/24645313309?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEdoZnJQK3J6MXpCYllXdytGNVFrbUd4UVZCTHVVaFR4V3FnUlh3cUFHcXRPc25Td1BGNHIrQXM2TkRoWnRWeWVjcDk1TGh3Q3dzWlcraUNTd2JUanE0ZHQ3NFZvNUM0RjlhWTNyQ29TbDRBbU93S0pnYUovd2pESXR5ZGZYMWx3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1295,
@@ -19437,7 +19438,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/441005685/42260678266?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdHZadTlKOFFwRnlzWjFsNk0zODdqWFFKUDNLSmpmU3o1MnlwMUExdy9tTzlDYjdla0hVbFZuWTNPV0orazIxdUtaRkM1czZwK0lHdzhjSDhOR3Vyb3NaeVZhY0szWmNBWWtuakFSNWxReXVtUzNiYUErcEJ2aU9xVEI1MTlQY0NNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1296,
@@ -19452,7 +19453,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1585429562/22599143898?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN01ET3NBTkM4MXQrZ3FuUmxFTmQrZjczUnBlcTFUVDVycW5MaDhFMzVmaG9IZ2phR0V6S0hCVzM3YmpjZXRHL2JKK3RiVkVkK1A4R2dpL1BxZGlqbzQ5OFdTTkZORzRBRlJ0S3FmRjZ3Zzl2SnRhMHNWRHZzamZwWi9NUjFPcHFZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1297,
@@ -19467,7 +19468,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1367299138/22893392542?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNjZxczFjZUpCVzZMY2tOMHBrckhPQ1Yvemd0bjVXQkluWGtvbHcvdzhRRjZqUG1VMGRINzRyMm1BQjNpQ29EdGltNUFCV1lMTkNOeWxydlFUNS95SCt4YTFMbWtCbURXZGZXT3ZWYVpKQWxlN1p4MllVTm1iUEJSNnRuWVk1THZFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1298,
@@ -19482,7 +19483,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1215185317/23197630028?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0p5WlN0ajFLTzdqaTlQaERUZG41M2lUV2xFUTlXMDhZa1c0Y25aSE56b1kvaFhpbVNwREYxQTY3djV3ZThoeWRraTFwSG1WaW16cUxGZkllMlZTemNGTFV4QnZCNUJrV2xJNys3bzVydmhHdXJiL1BobDFGZ1UyM1d0K3lVT3ZVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Pets"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1299,
@@ -19497,7 +19498,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/407760070/40723848736?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc0NTYzRvWW8yNm9BTzN0Wm5rQ0VINGdPQU5ldXdOWkJHc3pJOGdxc1g0OTlvU1RVSWt1T1k5TnVicVFzRmlkOUpUUXdxaUt4b3k5dGNmZEZ0MXIwZEUzWi9lQnNaTGx4MDlvSjI1Yi9RRUhMclUzc2FEbDdMdStZK1NjblVtZThZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1300,
@@ -19512,7 +19513,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1190430357/41572300838?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN01mNFFzOUZXKzNHRUpybTdwb3ZFWm1WTVRwRVpWL2dPY0d4M3k1eWMvOUpJRzM2VC9zelkrMUhzcDZiM1RMK0hsekhpRlRaV0VrRm1qM29NZ1hjS2VYMHVDL2t4WXpYNkxwWFd1TUVPSU9VT0U0NVJIa0ZkQXoybTJTaFcwei9rPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1301,
@@ -19527,7 +19528,7 @@ export const productsData: Product[] = [
     "location": "Paraíba",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/400294066/19996890385?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdGVsYjZoWmFsdmlqZWJ3OVo4Sko4SUVXOU5sU3B1QW4xcmZYNUpFQUpKazM2dDhqWWs5TDIyakEvckZHMklDaTEzSWJDb1dmV0FxWHNGYzhOZzNmVndDY2NSck5Bd0Y5aCtwUXJLUUR5OHBGWC9SMkhLc1RXMUZ2ZnNmM1gra3FjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1302,
@@ -19542,7 +19543,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/554656453/22398290012?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWk2NDNneW5FRk5TQWdEYVl4aVhBV0ZzYVBqK2dHNTBXaGFrV1Exc3pqRUJlM1NIZlp1L0FOeHJkMnFKbWRTcU12ZHl1MGhzd2l5L1dpNUFzNkNwUHd6MFc0RC9YUVVLeTVtMjBrWmxlNVl1RElxV0YyeklqNXVRQTZQNm5UOC80PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1303,
@@ -19557,7 +19558,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/539941264/21199649036?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdDl5V0JpTDg3YndTTlZWNTVMNEFVazhIeXlDQWs1Q0lBT0ZpYXFvY291T0VRTFA2NDNrSVRxUVVPVVljMWswTHAyckt5OHpPOGtDR1Mrdldtb2wzOUMxaG1KWlVMOVNlYkU0SkpiUHlqUEpHNGUvR3g5SXZSQUV4M1ZHR0Rvbm5JPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1304,
@@ -19572,7 +19573,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1042165059/19597688313?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEdUZEI0NXFzRUFLRWhUSWtPTm1ZR1lkaUZYL01uRXlhems4RmM0ZThadkhSVzVBV21Dck1BUWRkQ3ZxMklmT2xTUGkrWTNBUm1ud0NuSmsxS3QrTzJLbWF6YlU1eEV4c3dNNDNiTkZiZmhsajVNV01Sb1cyOW0rNkVneGtYZ3EwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1305,
@@ -19587,7 +19588,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1357069533/22594205202?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnFlajJWZlQyRjNuVGtydksxZlBaelRESFB4RDQ4U0lmOGpXM2Jla3Z4Vi92OGhhajRqU2JGTVdKUm1TN05RQVdTRUhEaUxkNHhHRXRRQ0YwVWF3MWdyTjVWTCt5N3lTcHlvcEZyTWxaTCtWNEs5dnZUdnlkUWdGR1NPRS9TNEVJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1306,
@@ -19602,7 +19603,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1547995492/23294751350?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnVJbW5vUmJMVEgxNENmWlJITkRXK3o3L01mb0RjaFFuSEUyRXN6REV6WW9ZYWtQSTVhdno2WnFXZUc4ME1MbGs3RkpUc0NxelZHYU5nTEhLN1NWbVpOb01rUGJPOWlsY05ZMmZnSHF3ZVVkWnNLNWJ6R0N0WTlJbjJISUhuTmlRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1307,
@@ -19617,7 +19618,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/984333861/23997067201?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdnJ1NHBRNFJkeEs5ZHdNY1VNQzJlZXArbndXQ2R2a2RRVDlTVmdLNkl0NzF6VUplRVhOZFUyQ1RwOUpyRWxMSUxpYUljOGNXbUhkMkFkbGJEUmpVaGE0UDdqeENZeEtLMTBwZm43WkVrYXQ4Q0VwNWxJSVFic2p5bHFZdkdNTFZFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1308,
@@ -19632,7 +19633,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/371687721/12496562531?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWVHcytlMHd0MVAyWmtaZk9oVVdIMU9xRVBoT3g1Mlk3ZnJKeER2a3hIM0pnelpMNE1sMnNyYjZtK0p3ZmdhVDBPOGpVRnAxa3I2ZmVUTjNsVGUyTzlPZXY2d3dTTW94amptV0xBbHNFZ1pqY0ZpWEJ5b2JBK3dQWlZQOFUwcGpjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1309,
@@ -19647,7 +19648,7 @@ export const productsData: Product[] = [
     "location": "Internacional",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1006215031/41852300105?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1ZpUFMxL2o1N0RPK0UxdWl1N3FMVjlMZG5VbkwveHBaMGpIUTBjL3g5YUVOdzNoVG41bnk0Qk13LzR0QUdKVTBxcHl5bUhzd21LTE5GM0lDRFJORGdWZ1FWOG9NRk1GV3lVQ2tUWVp0WjU1Q3ZKWmtxa3ljZGdxeDRPMDdPUGlnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1310,
@@ -19662,7 +19663,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/487444734/23194028133?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQczVlb1Z6c3FDcWFEVjQzZkxreXZOdEovTXpyVlQwR3Z0VkxkU0Npd1dJTklLN2FWc2dZRlNOSytGRGEzSWd6ZklxMXJub2FITFVwaWwvek12OVV0TEkyb0IreGlRNW40Y3ZQa3Zvc05kQTVYYVE3Z0tCRmo1VVpKcmpDZEcwVWcwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1311,
@@ -19677,7 +19678,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/429888215/22993575936?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdlBOZi8wRmZETlltaG9TTVRxMUJOeVhnTUZSV3BMQWZmZUtYTDBrdlNhbHFzanF4ZXVSRS8xblgrMndFeWVYdkRnVEx3S3I1VVQxV0hyZkp6bkRqb0pZSzNmQlk1cmEyQzFBZzdaYyt1SmtmVFFYc2JSL1NHL1hWZDNVTER2dC9RPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1312,
@@ -19692,7 +19693,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1557323370/22998933749?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVlabFNqaXpwaEpuOUdUcSt2ZEcybVVhNlM5dUFzb2JBdFNIVkpsVTk2Y2wzN2NYR2VQWnYrUlRYcUtuRWVkVVB6NWwwejEyUm9kbm11aEk0S28zNmY4ekQxM1UxZ20ybWVLS1VTNWw1U3pWYzRCK0lVQllUbXpaSVBxUy9hK1dZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1313,
@@ -19707,7 +19708,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1360752092/23598800750?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNjZxczFjZUpCVzZMY2tOMHBrckhPQ2VNVU5Ma2FmeDZKWm13d1BSL0xLY2lrandHeDROODBOYmFJKzllUERmY0J3NkNxdlMxV25DcXB2THBJYy9FVHZma3NKN2I2TUkwUUNTNWxsb1E3ckFCdWJobDhGSndiUGhOdzEvdENseVFFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1314,
@@ -19722,7 +19723,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/397571861/22394496471?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdlNkZTJ6cFU1VUttYU9Cc2FOTVBOcS9XcXprQnd2V3BUa01ycE1PZ0Nxbm9QcDUvTHJxNHZ1WDdkK3MzZG5XY1gvY1dBT0R2U1BiVENOZ3ZNbkFrMWdZZVpqN1gyam1uSkI3NjBwVHlqMmE2dnUrNjdFUWNnZnA2ZmVUWlhsYmRVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1315,
@@ -19737,7 +19738,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/629805123/22099046331?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdm1yODZkak55K0FEaW40MzBPQnpEbU1CSGZVdlRxc0R5MXMvZ3hLNWZjcUJYSldqNTlNUnlocjNORkw2RGZjVUxLcGlNejFvai95NDNoR0J2N3M2REVpR0x4KzhJd2d6VjR0QVRvNjZCTzlaVWt6b3lMYjIrcXExbE5UREJlcEFRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1316,
@@ -19752,7 +19753,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/960960972/23092839024?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdFBlUWI4SjlVS2RUTEE5c1FaTG9oOUxMZjFneDRleEJJcXVtL054eHNGVC9ORzFEUXRtaVJlNytjd0U5R1o2YzVFQ3QweS8rRGpNVXRwRVZ4NWxXZjV6TGRNY1UxekNxSWtDRjdESm5MSnhTQjlOZGlSYTI2VUNjNWtiYWVqSWdzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1317,
@@ -19767,7 +19768,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/407760070/43374111473?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc0NTYzRvWW8yNm9BTzN0Wm5rQ0VINDFEY3c2amhEc0lTbUFMaWFzU1JCNE9DZ21pajRaYkFwaDVrT1hWem1wb3o2L0YxZmw5dTY0L2V5VExJRFFXSGI5TkJxdUM3QU5jaGtQREtnalBCME5pMnNvSnVVaGZlWTJ5RERtaE9zR2w4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1318,
@@ -19782,7 +19783,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/404333042/14368641482?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUxETG1JRUFuSEl1MSsyTkxwa0R4VERlTE1adFlwdU1YdnpNMjBuQlBZcVNkeVlSb09NRFh1OVB2b2VubGREVDdCc2UzS01nZWFwSlhZbjJvQjBvUVM0QmM4Tm84YSt3MktTVnJOQVpVc3hXbnhYc1IxOFlOYTZuZ0pBTlRxc1NNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1319,
@@ -19797,7 +19798,7 @@ export const productsData: Product[] = [
     "location": "Internacional",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1006215031/29963480539?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1ZpUFMxL2o1N0RPK0UxdWl1N3FMVnVTcVl5RFZ2S1QyRWE1N0ZQckxUYy90bHhYVTloelRkaWVQWGtJOGJuU3VsbU1hN2pMQnZvZ0FvajRZYXJYQ1FocW1hVkdteVRhKzFHUFJMNTRkN2dJR0dsZWdrU1VZUjNVTGtjZG80dVprPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1320,
@@ -19812,7 +19813,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/869193731/48701437527?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc0YvRll1aE9nQ2FFRXRMbEZicGc3c1k1VnY1Ujg0V1pLZkNMTUtUK2NOK2J4YmNNR1pRaFFZVXp5QTM2NmI3ZTc1WE5VRXpPYitPVlkrNDdyQ2x0UzhnbWVSZHpkUXVvRXE0LzRZd0QrRGl1TFNTdnJEY0NGZWtBTmx4dXErOEZBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1321,
@@ -19827,7 +19828,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1278493331/22893665585?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNzhFZVJ4NGxLdFNvVzNTbHJ5SUtuRVFwTS92c3Awd1d4UHgza1BVeVBUQU16cVdibHRpeEpNMkdLeW5XR3NTdUZ6aFMwWXNMOEhiaW9rcjM3dmVwZ2w1KzlicG45elRmTEtpanRBUVVxVFdCcDJSVkRTa2VEYWFRWlpVSDJ1MFFRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1322,
@@ -19842,7 +19843,7 @@ export const productsData: Product[] = [
     "location": "Internacional",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1006215031/25445015967?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1ZpUFMxL2o1N0RPK0UxdWl1N3FMVmcwY09VeEhKN0craVY1b1lzQ0NhSjFHTDlndEF4M2NiUlR5YkNYU0xDZTRhcjcreXRvWDRiUW1FVDNrVFNET0FxTmFZVCttNWQxczJVbWR4VVk1Z2E4OGk0RS9ZNDluWnlmV2VTdDVYcGZjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1323,
@@ -19857,7 +19858,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1142052307/21597760869?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVFHMm5oTEVVSDVPNDh5MmdoNnJxUCtESkRqVS9SL3JUUG82OW0wWFNkUFFUSVZRWUMzQVN2bjFjQTZxb2dpTnAwSEFEMUpjQ1Y1QVJ5K2RuUjVpRmNXTGRKMEd6aWsrVEh4TlhxUUJZR1IxNmNERUNpU0Jva21vcUtWNk5MOEg4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1324,
@@ -19872,7 +19873,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/298953477/51654827790?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdnVNNkwxVm5FV1ovcTYxSTZLT0IxcHR3K0ozcjRTaEFSK3NpeVVtK1hVTUpBOHduZ2FhN0tlNlJZNTA5TlZpWnZCWGt2TU9zcE5QU20vVVQyZ1lEeHZpdHZIcFRmNkNJaHdUZVBGMHNFdXRQVitXMTFZM2tnOEl6QTRzYjk1eThRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1325,
@@ -19887,7 +19888,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1462767123/22298202316?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN2lKbXJsVS8yVjMyc2o2ZmdESXoya0NkWlhvZ1FMbmx3b09OTWZCL2RJOWZ1SnNwcFEyam9rZDN4QUEvWld1eERnamZ2NFVKTVhmR2dlc3MwcWI4VFozdG85SWRCU0hpZ2hEOHVKUEZrcFFVdFc3Umo5VG5SVjZ0N3ZVUTlwQXBvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1326,
@@ -19902,7 +19903,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/405535768/18725087530?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdnA2V3kreFhSU1RqQmlsVkxTMXlyNUJrc1JtS3U3ZzBVWUFFcCt1Nm5tUk0wdTNSQk1tT0RNM0M0TnlMbWVGdXdtS3VvSlBBL2VpcFdXT3Y1ZGcrL1ZlbnczMW4yNHQyY2k4eGhJSW9oTkpUN1BSVUNXRnVQekJja2hUbGNRVFRNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1327,
@@ -19917,7 +19918,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/531238819/22994046086?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdEJKdlpVV2NmYUN0TUhYMGZUdEJvcGM5VnZFWGJsd0ljZm5VVm5ISzc1VEt4bGJOMmE3ZjRMMUZqVDBPTzYwdTUzcS9VVnZ0QmxrOENVZnhwTzRYRy9PR1VocDhDeFE3NDdORzBSM0todGRPS3FBU3prNUQ3aTQxNTRtaWlnSTZzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1328,
@@ -19932,7 +19933,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1009348397/22693511862?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1ZpUFMxL2o1N0RPK0UxdWl1N3FMVnJDK0MwbzlPaVpwQllFc0h0V0x3eVlscG8wM1BTSkZRUnFVTHJ0UmJNRXIrSGJsS1V1NkhNMnF2RnI4M1ljQ1JzOUVTWUZnbjlsTHVSQlM0S2luazlieFpqZzhVUE1oMDMyOVh6TlV0My9ZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1329,
@@ -19947,7 +19948,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1232066422/23798771235?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNHU0eGxTN2lFL1lSYkZxZGhhbTBpR3ZWUGY2Wk5CYXU3VVdnREpvZlZYV1NQcHZEbUZkYmJPaEJQZDRWclVXTitYWkpaRzBTekFVcnVrQTU2clNtdmF5SFk1eXdUaWlQd0J0N1Q4TEM1czVnVmJhRzhMRFdIcENqVTRaZy9MR2MwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1330,
@@ -19962,7 +19963,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/372103398/22397507411?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdEtNSlczeHMrd1N3UlFueDd5cm90dzM1SEcyRVBkWmh0bnNLU1FtbHNsVXpLM3FWTHlobmdFMU05Z0I3dmFTZkdsUzIzQ1pmT3FjeUJYU09GeHB0NmthcTY0V0hJdEdtODJKKzIzVFgrMGVZS3NvTUhOOW9sMm44RUQ5c0NoNnVVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Bebês"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1331,
@@ -19977,7 +19978,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/311485828/20548162073?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc2ducTQ3WVgybS9qSFJnNSs1ekpIMldLemoyY0xDZjR4RFRqZXJiQzIwSTNwQkk5cElCVGFSa2UrVERZYnJtTXpyQnFGMFo0dlpoSUlNVmUrUHFDTWczdC9QazdEaFhRMm1QZk9rTUV3eTVjU1Z0bXdrVGhCS2xVVEtuQ2VOWkQ4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1332,
@@ -19992,7 +19993,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/328538026/23597424619?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3NSM29YaTdCREIyVHpST2ZJd1VwL3N0RmMyVlloaTJzUW9EbzIwNnRacjVua0pkbk56RStCM2dHN2RRUHluYlVla1FLbFNjclA4UVpLOS9QOGNkdDJXZVJkV00wVHlyd1M2N0VSOWtZS1M0SVA2RDR1U09Xb0c1ZnUrTzk3eEIwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1333,
@@ -20007,7 +20008,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/740111576/23392973710?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdHZ5TWpYdFRiQ0pYMDFkMld5bkEyYnFVQldDQXFmc2xaRjZBYS9RTE16bkMzOFZRdmk4TlowVk9VSTZERW1BWUozK3g3dVBqTjBMRm5ETTl1ZkdZRXM3by9Qd2F4c0VRa2ZEbjN0UnhtM1p1RVVvZ3BPWXNwQmg1alU3cWY0U05ZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1334,
@@ -20022,7 +20023,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/372103398/22135275342?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdEtNSlczeHMrd1N3UlFueDd5cm90d1JONWEvbEhVVGRSZjJFVzQ4MnRWRjVrT2hoUkg1ZGxONThDU0Rzd2p4TjZoRk44OG5LR05USFJ2TmIxTGpvdWcyRXRlNS9IUCtRSTBmZFFLa3d0S25vbEN1Y2tVKzNPUEJ2RHp6UFMvMWN3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1335,
@@ -20037,7 +20038,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/395166866/21678240017?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWhzaWc2a2loNG84RFg4TDM4Qjk3ZkZTblo5d2RyY3RNN1I5SW9od3ZoTVk3SVNoQVZsQmIwUXhLbDBSK1JSOXdPdXVVZEptRFlyNGk0MnFQbVhaTk9ZbGcraDhkSXpVdzFvY1JNTDRid01kUnl2eHg4cUJPSjg2MmQzeEx2YlJ3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1336,
@@ -20052,7 +20053,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/941012768/23898566928?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQcy9jU0FUQTJueDdDcU9saHdrU0dXZmVOaHZRMHFuMWtPUFZGZnlDOUcrRHc3MGRUV0ZyYnBsUFExaUFhUFlHcVpyV1V4WmFjZmNSM2xVWWdnbWlNSGRFcHk5d3FDbDB3S3ArTnFDQlRaSDBFYmJ1aGZtWWUxZVVqOUN0cnltcXZZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1337,
@@ -20067,7 +20068,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/418205294/22297479933?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdTZTL1k2SzdLckt3Q0cxMTN2emZleG5iSEkvdHdDblE1ZFJJNkwvVlpuR3crQ2dGZVNJdDh6eUM4U0I0TVltRTlxbFB1Q1RBNktMWmk2MjRyY2JVZHFpbXE5YzdJd0tBRzlybWJ3ZzBvaG8xR1VpK0VkdmRyYUJtbThxajIzZ1VRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1338,
@@ -20082,7 +20083,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1355781921/22093304121?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnFlajJWZlQyRjNuVGtydksxZlBaemJMRkoyR0hIYS81R0VHL1JGZGNMMGt1aGRHM3JwcDFZZXpqc1FVTStNSWpuYWlvcnpyUU90TGRsSkVXejBYdFRTWnUvNXhZUXhFV0Fueit0alhFUHVrc3Rid3VyaEZNWjF2ZkVnVVRlcFdnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1339,
@@ -20097,7 +20098,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/463228698/22392982563?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdTZNemFyYXA4S1Foa0FYL0hqR3RpeXJ0clp2WjF3L0pGRnpmOTBjSThUYWtsT2lyR1RPbGxVNTludG93ajM2ejFUd1hReEFGSGMvekNDYzlUTmpzK053ZzN3bkVDMGhqWnI5OU95ZTdzVDJ4TkI5Sk9QYWlOUjhTWGRJdHJWVWxrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1340,
@@ -20112,7 +20113,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/952371980/20697300283?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdHZLcW9WYmtoZEl4dk5QSFVlRXFFaHdSeGlrN2t4WThnSTg3S2FLcE1YLzExUlIxeDRPNUV1V3RteUV0NEZqWVpRSGNGd3VaNWs3em10Z2JuVEYyZXdWb05QemNWTEhvTXJicVhUMlVvTFpxa2F6ZTY0YSt0Z281VzhmUXFjYkhVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1341,
@@ -20127,7 +20128,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/351532582/23698466866?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmgzVWRsN3h5cWpGcEZFaXViWjhJQVlxVFV0N2t5TThLNzVOQ0NXcFhIT2o2QWIzVXJ4T1NUSnpTM3ZJb3hNOTZVemNiZnhwcGlmOG91V1RsamRKTmM3ekhFR0ZxdFFnNnphUENrK2JIcWxLWlgxcktibURyczhMVUw1Z1FlT1M0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1342,
@@ -20142,7 +20143,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/296363855/23997164098?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUNnTGg1a0xWRlJGb1B3SytTbEQrVmQ1OU5rdUkydTdQTkZPeXFWNkNabWRoTjJUL0tnS291TmozTWhmVVFxOVhra21IYWZZc1cxUlBTSGVWZVkwTzZIS3NBT0VqTEt0UjZUYWNXM2ZKc3NGSVdlbVMwU2VPWjYrNlFTR2RLQnNrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1343,
@@ -20157,7 +20158,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/653062442/21897617582?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdGJvMGZSN1QySG5UR0YyMmVIcDZLZFltMWRoZk1BYmJEZzRTTWREVnRUQW1SOU5wakdmc0puaHNtRUJoRjZRbzZVVDJNanQ0cG9aUUNYem1jekFLYXFEMVN1UHZEc0hpcENLS1pSa1VqaTZ4RXFQMU0vRHR1ck4reFJzVGdEaG04PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1344,
@@ -20172,7 +20173,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/479976877/19897519253?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXEyVXBaNEFuNkR3ekx1R2xiT3dEZHhwdW4xZUllTWVEYUJPdnNWdHBUSDVOOEQ4TFhoTk1jZ2cxTzNwMjJ5OVFyQ1RKbDNkeCtaM2cxUkRzTHVMbjk4VkpiZzJDa0J1eE9tK1N6TjZBZG04Ymp0MG9lL2VHQlBrd0djNTVSMlF3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1345,
@@ -20187,7 +20188,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/318555124/9015561498?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkY0tSanlKZU1BU2Y2RTJzOS9neUtnZWlVRXZUcnJlcDkvVEFoMkZvdlBVZVk5RisrUTV1eVFCRlRGUjJmSDB0emx4Z21WMUFoT2lpYVRMZjdNVGlKcVUwWFFGU0pQWm9NNm1yUTIzcXZaZjJBTVdMSEs3M1BJUHFiZ1J5eS81eWowSlQ1TXh5STFLNzVIWnYrQTN6d3VzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1346,
@@ -20202,7 +20203,7 @@ export const productsData: Product[] = [
     "location": "Espírito Santo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1031978847/23799191036?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWFpQTlGbDR1SUwwMzcwMjJsL3RRdDNGMnNsOU5WTDE2cVh3dHdTT3JiZGZrb09teS9hYUZBM2FFaWw4MFBLejlGcDZWRnVIRHR0R2x2dHNqUkEvZ1lFcmxPOFZjTnlCaUtoZ3lKRG9oZGRyaXU2bWZHYXlsM3Q4cVNhTzVzNjQ0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1347,
@@ -20217,7 +20218,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/332578487/23193503682?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc0tEbjUyVTB4cjMvVmtxbnRCbzQwL2NlSHdUNFZmM2wzMWcvN1dBTnBtK0h2TXhyR3RPdlFBMVJFd09xdXBGZTJNVXEwOU04N3hGRmg2Vmh5bnROazNkQ3M0bExkdEVHOHFyUHllOWFPNXlsVGozWng2cFhIc0hKcy8ya1dIS3hJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Saúde"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1348,
@@ -20232,7 +20233,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/313984108/22192874302?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc2xsV0toV2FuVUJpN2ZFTElVa2hwU3BZcEtvNSsrUjN3eGtBYytoS0VPYU9rOW9tUllqWVBhcmZDMEd1N1ROWEZVcGhBOEw2Znk1R1JRS3VuT0dVMWt6Zkl3RTNBcWt0OGJqK3lBSnZ3ZHk0NFAzc0ExdDBoVXFHOE5ncjVKOVA0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1349,
@@ -20247,7 +20248,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/960960972/19699893782?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdFBlUWI4SjlVS2RUTEE5c1FaTG9oOTdveFRHZEhUUEJqbnIwVGx4QXhYTGFKVGlKZU94b1FVcEpqMXo4b29GTEl0a25rOXQrS3lxejZOVkhWdjJnRnllLytpTVk5NDQ4QXkzRzQxTHJqTER6Q0Z2cnVYU2lXZHZZM3l5UlpLTStvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1350,
@@ -20262,7 +20263,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/318555124/22093013951?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdVkxMHEvanpXOXZ4dkdIOUVHeXhtSDZxUkR1TWNjb25nNXViMXFFYW14SEtRVGVqVFhYeGt4bHNBSWg5MVRJcGZOOHRUeFJnSHlVdytqTjNsRDhmR0ZKZmZSU3BOeTNaZHdHbFJSOGZBcEUrOHhMNkRlRTQrYlVnNjhObElxSnhFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1351,
@@ -20277,7 +20278,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1464011835/23798171733?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN2lKbXJsVS8yVjMyc2o2ZmdESXoyazBqUHc4TmYzNThLcXA2azJFOE5GQ0hiZjFoYllUMkRSVk9EbitJQ2lCN2JhMDJrMGhCa2ZPNk02YWtFK0lQQzF5RDA5Skt5akZXZm92em5mMnpIcnh5NEJjL3E0L25aYVNkU09LalNoaTFvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1352,
@@ -20292,7 +20293,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1601586606/22898870187?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVdYZVJwMHhRL1JOQ2k3SEcrRmF6dWVMMjFlRzBDRVdmSi9Mc2hzY2RXZHBqZ1ZpSjl2SXVuVWpCNjNPekMyaGMyV2RSNWNBVTFPaDlLSmQyRjhSeEJ0TWFhVmtJM3VkZmNEbTVBYlZkR3NVTGRzVGpSalI0ejZ1SXZvQ3ovRmNFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1353,
@@ -20307,7 +20308,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/288105257/20697639735?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc2JSdFNtSVRsMUdsQzNmcGpqTktmWVBnZXpJUXRRbG9lVEpFVzhvUVovdlFzNDRkcjlTbzlRODJVSjl6L0VYOFpXbGJUWDRDV3l1bWFzcmd2aStrVHVzVnBnN0pxbXJmQzc3V2ZtbXg4WDNDMGNueFpBL1FEL3hGbFc2NlQ4MmxNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1354,
@@ -20322,7 +20323,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/413694463/40673390454?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdGRUUDBVaThIN0oxMGI5bE96UVkwaHUrMHFSb1A0eXArb0dIajB2V1E3ekRSL2hGTzcrRWVsQXlkNFhONmoyLzJoUDI0RFplZHdiQVVHbzd6THlaYnRkUnVwMVg3bG5wMWxMbVJmMlRmaEw1dEtxblF0Y0JJQWlHdHVhcUZFRmI0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1355,
@@ -20337,7 +20338,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/761647073/23993398101?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc0R5VGdzN2VPaUM2QmVpMitFODhCdURTeU85ZkkwdVV1bmV1WXkzNEtVWmJ3VTB3VzVBMUpmQ29DRmE2ZS9jRjZrYkx3Y3ZYclM1THJ5RTRRYTZaVHNjbitPc2MxN1E4aXIrNUFXcXFud2xpaW9rK1hud2RaK3E4aFZsTXFCMFRBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1356,
@@ -20352,7 +20353,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1096453915/23092969675?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNncrczdna3lWdHlHQUREdDZxTGQ2cmNWeC9QbkJxdGNubndvMVNOaTZSNmZROW4yVU1CK2NIMUdNQmtTamxUd1o0NjkxNUw2NTdtYWg4RkYxdTR1QTkyUkc1TS96bUl2NFJzL1l2T0VLUGNERzk3dit5SDV1WWx0SWkwQVJnTXBFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1357,
@@ -20367,7 +20368,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1634835391/22499043073?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNTVmUS9CZk9FbXBXL2l5cmxuVFVOaHg2SUplOWtPNEJPNHRPMHRRS1ZMK29YekI2SndnckJ2RTIzdkdhOHFLUnp6ZVdVMGFKQlMvb3ZZLzZnZkJiUjdrVE9YQ1ZEZ2tDVUxpajBjL0RPRmJmQURVcnZ5aFF4WjhvaldDR1ZQZlFjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1358,
@@ -20382,7 +20383,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/747844776/23198544980?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdnI3Vy9QUXVuRG9pcmFsc0V4K1hDZGdFV2MvRHhGYVhFTUhxU0dWeHZZcnRsZHlHS1d5NTBkdDM4a2RLcm5tZGVRQVVmZVJBelNUNy9EUWJJSnhvVWVyb2hCQko5dEpBa1NZSHQyZDhPUVZFR2h0Rkg1RFhpUEIvSVE2VnpSSXpnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1359,
@@ -20397,7 +20398,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/823664460/22698073313?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdEtmNlFHMnE4eWFNODVOWWlQbGUwNGR4YmVSNzZ4QWFtWVBYTkkwekZJRnVwaGF1RFFxdzRhaGZhTnRRWElQaURtSDh2b1VvNnF0OVNKWklIVE5UL1IwU05WbStOL1BFaHNjK1hQelI2Z0ZKRFJkMy9wN0F5aVFRM3FobzlPV0hJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Pets"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1360,
@@ -20412,7 +20413,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/723171241/18998041721?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc1dMMG9HKzZjeUNFT1d3ZjBSbFEvZEZjbHR4ZmpQSDJaS3NkQzhWTUhRRVIyYTRHZ2czeUgyUm43VkJTSlREZnVQWGxPWVhZbFN6S3grZTZsZC9KUUwzRnZrWnIwQTYzZjdOQmdsMWIyU1hneUpQSzVoT2JJQ2xVbWVGZXNPa1pvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1361,
@@ -20427,7 +20428,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/888682085/40909875316?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUxrZVNyYy9kOEVndFFQbEs2T1Yvd2IxaUQwbmNYNzkycGwzR011cUdyTG4vRU8rWG5kblBTaW9QSDdqZXhRc20vdjZGbU1wcUoyQ09mNkhrSFVocm1CQmFTRUtsRVFMbmRVT2pMRFkxYnhoQXVNb2RiSkllUGJIWlB3L3AwdkFJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1362,
@@ -20457,7 +20458,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1041517511/18198771437?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEdUZEI0NXFzRUFLRWhUSWtPTm1ZR1prajFoUENrVnMwd1RDUUdMb2RUeHFtUlVwUmpDU0pCSG02MzJsOWdDNFJzUjd4NktoUEorcUNmQ3oybDBOZFdKczFJNm11Q25PMFZWVzR1dlh6Z2JyQkczakxCMXlVZ0RvVXl4TEpNdUkwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Cozinha"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1364,
@@ -20472,7 +20473,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/373261329/22097296846?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc2tsVE1IN2NjN0pURVZESDc0T0RscWUxNEY0UFB0NXgvNG4yQllOSHhvY1p0a3M0czFuY0RDcGJqNGpDd0RyRlp1dzEraU54L0dDYno2MDlnNHBvekN3TTJadGhPUFZHUzJpS1hoK3REYWlBdXZtT0ZjcEdSMlpCRngyNnFscllJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1365,
@@ -20487,7 +20488,7 @@ export const productsData: Product[] = [
     "location": "Goiás",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/294841476/21999543034?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdW9uR0NOeEljb1J5YlFjRFd0SUhCRVIwUnJ4Qkp5Y3NHN3pjUWhnWXVndHBSeGRyZUtoM21Vb3IrL1I3QmFBZmttMDVJNzVISmdEVjh0WkNaQkdZalBoVWYzdjF6cnkwdXdrVHNRLzlGZFBUR09sVm9naWZhU1llYzNqNTh1WjQ0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1366,
@@ -20502,7 +20503,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/394192376/23895716611?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdGFwWU55MEl3bGo5cHhWZU01cmFncHdlQlhPb0wxUzBRcWtwWnJwZkx3a0hqVGpoTzVuOFl0SnNhVW5Qb1dXMzBIOUI0L0xZZWFIdm5vb0tQOThXYllQV2lPa3UveW5TanpCeHM5QVpIcWxobnFFdC9adVphUHNXdkpiNnZSQVBBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1367,
@@ -20517,7 +20518,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1344118295/22894711967?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN3pobC9yczJXSEF4NHNHYnBkK1VJeDBsd2JrSUpTS0h5a0lBSUFxanpwenB0QnZqZEFsd3doeVoyYWJydG5tdGtmMUhMWE1ac3JBdkVIdG83YkVRMnJkOStxUXVGTlhhb29zMlBzYXdUaE5oakFHL29nSFZuNjZTS2ZTRnFJY0hNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Brinquedos"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1368,
@@ -20532,7 +20533,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/678981874/23598639630?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdHNXRTd3dVpBUnk4NGdkM0lEQnZ5Vi9IVGNBSjJYOWlBTy9odEEyd2l1OGxSR2pjaTJpSVdnYzRma0I0cjJwOVEzWFV0cnBBQ2FCK3NVSjZUdm9FS3d6V1o5YTNDYzZnc2pZU05nS1FxTEIyeU9QZHU4bm5jcGVpU1p5V01xMDUwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Beleza"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1369,
@@ -20547,7 +20548,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/313984108/23693530439?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc2xsV0toV2FuVUJpN2ZFTElVa2hwU2dSZ1BvMXFzUk93U05PelgvUmJySHJrZHhnVGdub0dCNnpyMXQ4MXZWeEM1UHZwNU42RlpBZWJsL1N2cERWQ0N5U2RzdTI1Nzh5Z2duWlI2K0wrVTdVQkpXWUNmL3M3Mmh6QnU1bzZBSzBvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1370,
@@ -20562,7 +20563,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1460040589/19898033511?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN2lKbXJsVS8yVjMyc2o2ZmdESXoyazhjRXlSRHpaWElTMk1TNmtPSEdKc1lGQjl5dlEzS2VxNDhnaGo5b21xdXZrcVlVVzVZWFpiOHBRT1owVFlNcmFtYjRybE02aU9vUzhhVEhSOWpaZnNCWkU1UWU5ekVDdmdhUUJXN2JpYnNZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1371,
@@ -20577,7 +20578,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/625559139/22394064681?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdFVJWWJ5alpsMWZYNW1Jc2EvWEtYQ2tNalNFNDl2cFJmWEhtZEZ1SmZnQVRBY2NlZGFMTURtT01oQngwZ2EyblBMYkxVQzZkMitkSkFHYzl3emRzMERFQTgrdTNhaElBOS9ra3cwSUg4cWZLVUhjcnFJQ1c3cVA1eXpWSzYxRDhRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Automotivo"
   },
   {
     "id": 1372,
@@ -20592,7 +20593,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1197145594/20697639367?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN01mNFFzOUZXKzNHRUpybTdwb3ZFWi90MjVHN3FxcE5oVTViWXdMY3ZKWFl1c1FTNTJvcmUyNFZ3dzJVVHNJS1kzdHF6Z0ZpZlc1M05FSUlhNk1RYTRYN043cllUWkZMNlVxVzcvaC8wZUZqbk55WHMvazl1RDAvSVBEQVVhWFNRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1373,
@@ -20607,7 +20608,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/535109067/58252052483?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWowWTNlZTVQd2h2VzZGcXE2OWJFY3gvSzFCU0V5YzFJdWpGd29iLzg2U1dYOUY0clBqRjdvSmZRd1l4b0dHSDdqVExFdE03TUZlYXZ2TXYremV3OTRibnM0K0pPMUhPVUcyTlZnMjFzeHljaHZJeTlVLzNtRi9adlVpVUpaS2MwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1374,
@@ -20622,7 +20623,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1585429562/22494553007?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN01ET3NBTkM4MXQrZ3FuUmxFTmQrZkNTV090Mk9McmF6NUc3NVpjQ0YvdGlMazNpRkpKMmppYzdONW1hanM1YVJjazg0bDN3ckR1UlRUckpIK2x0ZE80Zi9hVFBtVnU1U2pHWmFWRzlBTG5BSTYwdGp0ZW1sSlN1YXMrMS9yTHZVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1375,
@@ -20637,7 +20638,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/349279650/22493965927?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdlo4OEhIck5JN29xaFR0QjJURTFScmd1dUZHc2hjVHU5SXhxZVJUS2x6MmFlVkU0M1hweWwxRkhFSEg1cmVHUnluT3VrbFpLTmFJMWJqNUtRSVdhMm8xdzB2Y0xuWmlya1AyQTRiQ0lmbG1SZEd2Zm5HREZ4MVY4TC9DT0plODV3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1376,
@@ -20652,7 +20653,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1014927528/22693960389?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNFEwdzR0cnZQREgzMG9ONy84NjgrbmVNOWFUVkZWazNPZkxRTW55RGdzR1FId2FmNG9YZWYyc1NraFhqaUxCYklMWWVSNnZyd04xaDZvSW9MZW1oRDJhb1o2Q0FTNEJVSEo3KzJYKzgvbU1JRVNXVUFNR244U0dNdnMrV2F6S2ZRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1377,
@@ -20667,7 +20668,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1351844299/22798224277?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnFlajJWZlQyRjNuVGtydksxZlBaejJ3MTNTcmEvZ1RaaWVPSlAycnpadW1ndmJPQ015Y1VzQTJBYWJRVm45VjJ1eEJzQlNNdUg3LzFlaStENjJaaWh4TllQZlZLbDlLNzdBRjVPQmZSWU95WXlueVNVektIV2tEY2NvOWtnUlJ3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1378,
@@ -20682,7 +20683,7 @@ export const productsData: Product[] = [
     "location": "Paraíba",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/621197759/20398031446?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdE1RbW9JVjVUWVBvWVdpa05sbXVlZzhLSDhZb0loZkdLVERVV1VDenFIWHV3OXRuaWF1KytJVjM0NlNzYnpIOEZWTkJ2V1lwRWNNT29GdkliTVZxUitwQ0p1UG1waEZ0Ly9mSnVONHhjWkNDMnVTcEplNVJ4K09hYlRpaThOUlZJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1379,
@@ -20697,7 +20698,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1127030290/19297812047?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnNncEZncWwwYm0xN1R5MnJXTThvTXhOQ0Q5czFWYUNHQnY2RlU0UTd6akNPb2k5MFNTWnRqTmltdm95dFdJQXk4WHVOV1V6OHo5QmtGaElZeUVaZEVPbFpFb0RzMjlQRyt3d0FDSXZYWFM5eWhOci9LTERQMzN5eHNPQklIRU1nPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1380,
@@ -20712,7 +20713,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/832040275/23995790130?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWVQMWpXRHcxcklXLzV5NmpUU1dmR0kwR2t4T3FodSswbnpRZ1c0MzVDTkdUNjJ0YUVZanhzdzFrVmVMWldOekpmaU5hTmxXL05OcGFWYittOTkvNlBBak9lb3JOYlMwVU5lTStubHdVUlFJNGdJc0pTc0Flcnd5M3JzZnlHSVp3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1381,
@@ -20727,7 +20728,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1180298845/23293287284?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNkp0bHp4akpkRDU0WGxnbUo0MWpuN0ZQeEZXTmNnWTFVWjFnYS9Bb2VpNG5JUkJQMzVYWktsUEExNlRDTnFqNzVQbVVRU0ZKTS9nblU5MWMwLzNGMm5NUmdTT0pCM0JIN3hiZWxPU3dJdndaemNkaUlVejg3TFAvNGpSNjlDTmpVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Eletrodomésticos"
   },
   {
     "id": 1382,
@@ -20757,7 +20758,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1082769865/23992747038?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNXlpcUpVdHpzVG5Rekp4clVZb3luMkowZEpOQ0dicEVkcXpndEZFRGtRaFJWcmlKVkNrNUhsT0VsVkJ0QWFmRm9oWXZmZ3NJZXNNbzcvZlIwZS9wNG42eGowaWl0dFdRbGd3Qzc4WWc1NnZiRkdCTjYvODF1elE0c1RYTFhucXBVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1384,
@@ -20772,7 +20773,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/959065787/20174278321?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdEdzbjk4RnBCT2NhUG9nR2hIY0ZTN1NpK1BVL1hRRDI4Y3NHcGMvdUlzRFNKSEIyNHM0MStUcXBTRHg5NVlCYU9ZcGVEZSt2TC9RTTM4RC9HL0o2aDd1VHRMMW8vWHlad2RtVkxwY28wRUtwbU4zUUd6ZVZ3ZUZLZnlyR1pPNUxJPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1385,
@@ -20787,7 +20788,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/582502779/23194069750?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdnNtV05NcUFiSmo1ZmpmNXplVkRBRHlGWTk0Yy9waTkrY1AwRkRpYkc4SGVZekFEZ2JGVE1VNTNjUU9OZmFtVHQ5MkViTC9sSTRCMktWaFZvVVR2ZFV4bkNFcWRRWERpSjkyTVU0VUIzTE5JSlJKUmNiam9RZXpCNWdUbnlwL0dzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1386,
@@ -20802,7 +20803,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1198548910/22093262019?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN01mNFFzOUZXKzNHRUpybTdwb3ZFWmJ1aE5oQzNFY3E3TFk2V1oyTmEvLzhqeGhiWFEzWElHTWVSMEp1MHNsSk1YYkRaVjJFRzdKVHlZSjdaaG1SVG9MRWwwd20rb1VUR1RWQTFIRTkxL2t5S09nLzFZclh4U2p1SjFYRmY2c3pVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 1387,
@@ -20817,7 +20818,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1129772667/22197623629?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNnNncEZncWwwYm0xN1R5MnJXTThvTXU4cnNMZVBXQzEwSlM0SkZkQ2czN1Z4NWFQZEtXQUxYaGpJQkpFSnFPdVFDMDIrSWkwbUtjZVd0Z1FKSWpwMlBLQ1Vid05GdWJJejJsQkZnME80aUpyZ0w4TndJUmgvZFVVUk00QThwZmxZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Pets"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1388,
@@ -20832,7 +20833,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/347988064/9212570285?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkY0tSanlKZU1BU2Y2RTJzOS9neUtnZk9MWXJjZ2xjNVJWL1lwZ3YvSCtyNFZpTEg1UGNOK2Z3VHJpT01kK2dDWEJGeDNmeVJETnN2RTAzR3FidGVoMm5hdVd1STJIZzAybnFCdU9MSGUxd0MzTTFYYVVHVmpNeTg3MjVQT0crK1M1bUpYYjZtWDlidWdRNjhFeUtyVzZnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 1389,
@@ -20847,7 +20848,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/371687721/22998665581?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdWVHcytlMHd0MVAyWmtaZk9oVVdIMU1IWjl1MURpUWI4YW1zYnVyb1pCYTVoSlQzck1JOGZaVmhlQy92NzBzOEpDN0Y3VkcwY21sY3ZSQ1lzOUROanlGMytTQ3VmTTV5emZxWDhmSUE3eW1PczNqbUExc3VyZ0cyUHhPUkZWT3pZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1390,
@@ -20862,7 +20863,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1420454053/20497997389?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNGhEWlZ5Z0VBbkhrTnpUVldDQzBwTjQrT0o0Qk4rQW9CM0FjZ3E3N2UwNjFac2UvR3MrbXhndHErOThGdVZzK296TDRidURiQ1BBY2RjMWlyQ29keXErWnJJRHY1QXlMYm5pR3JGSlBiQW9mZFFja0EzcmQxZFNaVFIrS29HKzV3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1391,
@@ -20877,7 +20878,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1207257670/18797976243?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1IvY0NPaTdIbFo5dElUckRUYzBXdEloblpaRElZSVowREZUMWlJZ1YwWUVBWk9TZUY0Rm1IVGl4TFB1VUIrdWhvVi85NzltU2FsdnVZM2pCeVRyWjhiT2IxTnIzNzBkN1pPNUhubmVCTjlKRjdtSCswcWRjbng5TTlJbzhpcTY0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1392,
@@ -20892,7 +20893,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/338978918/23294058392?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXFMN2kzZEpkR2YwNW9tbWZpVVNFdXZFRGNDRUp3ZkNpOC9oRTJjbTZUMk9tTFVQNG5OckxVUHhOb3kyL1dnTGlqV2hMVTdQZUoxaGpPaDJnMWw3UmRjaEg4ZkxSVHk3TW9oL1l3a0NEZTNabG5LMkFNNmozRitzQ1FmMlNtZGo4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1393,
@@ -20907,7 +20908,7 @@ export const productsData: Product[] = [
     "location": "Santa Catarina",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/989001237/23397999673?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdjFvQmhvRDlVQ3V3Q2ZXTDIza0ovOWViYmhGRm5uQXFOQjJkR3JwcEQzeWduN3lJK3RNVXF1VWxsRWR6K3lzN2dLaE5RRGYzNGx6YlZnUjRKKytzbzBrLzB4L0g4Tm9nK2p1bExydFdLRTN5SXh5TER4YVQ4N3lkWjJmYXpEUFpzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Bebês & Infantil"
   },
   {
     "id": 1394,
@@ -20922,7 +20923,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/996115988/20499577226?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdkdVVy84d3N2dXVRbnRQTW52cklWTTNrQ2VsRUZ1SHhlREFId3lsVjFWSUhNcWFZMjlGY0Q3SzFRRmI3Q1VIVEtpWU5TbGI1K1dmUHltOXY1NEgzbzFIZnZqRE1kU3h5b3g5WmNyb2cwOEtaVnJmYXp6WXdRZFVQL2NkcFpoZTA0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1395,
@@ -20937,7 +20938,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/296363855/22197552043?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdUNnTGg1a0xWRlJGb1B3SytTbEQrVnNFSU8weFFYRnc3cVFNRmpXVFYwWnN2VG9IY2tQNDM1dlZxU1pRWXQ4K3E3R0NpZWQxOVp6RGFic1hSNWxzUjF2Y01OekpoTWNTa3FFeFI0aFh4VjlHbFpBTUtHdXZkbjcxQlQ4d0dEMjMwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1396,
@@ -20952,7 +20953,7 @@ export const productsData: Product[] = [
     "location": "Internacional",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1006215031/25325926637?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1ZpUFMxL2o1N0RPK0UxdWl1N3FMVmR4d2I1TVg2RXJPaG5sMjlOZW9kU252VXR2MHNEMnlMcGQwSGJHU0FMc0JHTVdOU1o0eWY4V2RSSTl4U0FNR1l0cUllMFZVcURWYUVLL1dBMHg4c2owUDBqbmxmbnB0andCbnl5M3k1MExnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1397,
@@ -20967,7 +20968,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1192714968/23693921882?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN01mNFFzOUZXKzNHRUpybTdwb3ZFWnYwcklHUG5FNTBqQlNXWnBuRDVYdVdxRzNQaGduaVF2K2ZPd3dmRHJlUTZ4eDFFeFpYc0grdHRLeFV3TWlTcUJPRDhRMnpNNlNEZ1E0N0dDa1JXSm04Z2FkY1NRMDlUalU2a3krMkh2L0d3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Casa"
+    "category": "Automotivo"
   },
   {
     "id": 1398,
@@ -20982,7 +20983,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1259637395/21998107258?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVkyaHE3aUNyNGd1V0k2Q3RjRFRaajhRWGZKRW04UjZGZXpuKzYwcU4wUUovckFUT0dTMjRSUDJTY0dvRUovUXpqN3ZXWmF1Y3k3Mm1kZzg2b2F5eUkzWFZjN1E0ckhkcWVIcnlaUmpFaEJSYXRoTUMxY0NNT3B2ZFVmV1lPQm1BPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1399,
@@ -20997,7 +20998,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1452530060/22498910656?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0lRanFYdEZNbWtLdlh3OWlUUVBCY3N1Q2ZOdTh3UnIvTVgzdUF3cVBNUVk3MjZJRGpJWThNNnRmYkNYRVRrU1hyZDQ4dFhaR2t4KzZuQ3NMb3g0YjVZYzRrdzlDY3hHdElCZzRMNlJKM1QyeHFSTjUzMmRPZS9DUW9hZUVPYWgwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Bebês"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1400,
@@ -21012,7 +21013,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1478384555/22298888626?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1JocS9UZVVlUXFINkZubXgyUWNZYjFVeEp2dlgxT3hiczdMWkNvSThNSllhT3hqQXd2Z0Z2cUZnQjh5NFBLRHNDeGJsVjJwWjd4eTM4c09tVE5tY3cyZkRRam5XWUJGVmp6ZTEwZTBSMnhWWEVvNG9oeEYwOUlROEdWZ0lJRVhBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1401,
@@ -21027,7 +21028,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/455834389/57554787520?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3BBNjVNcGgzYmkwdURtNXBseE00bEMxSDhmNWRGd0FmS0lMYXo2clg4NmdXeXV3QzJMbURqOHBiM1FYVHNxSFRtMWQvazhjZ1ZrOXVISDNyQ1BVKzhRSmErcWtPUWJ4S3VYa2FBNThTVnlYaGJMWFBhc1hrZE9iL2w2ZzdvdHFzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1402,
@@ -21042,7 +21043,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1242044379/18699254225?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNDlWUHdIbVgxdXFUSEVZTVNaQ1VxNlc4dFQzVUlIeVFTWnFGQVdMQzhKRi9ZVHJGREtqTkxPMVNoTE9PMUVWOXRpYjUwQXRpVU1xMVhHZDBFUEpqdUtIbzNvL0lEbFlFOHZYUVdnenlNUXNEbG9OQlVPQWVtNmlNa0h1Yk4vQ0hVPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 1403,
@@ -21057,7 +21058,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/969401129/44467503760?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdmxMQjZLOVFleTFDRUdhdnBBc0tBMjkyWmFFV2FsZUpORGJaVEhSRDhYTks4RGs2QU04U0YwbmV0a1RIM0pDUlNLeExHdVVFWHNPUGMzRGQ0eG5MMXRqK3pabVB1cS9hRHlNYXdWTjBLZ0xvbVZ1SDRCZ2E1UEVvbThpZ0VJTGpRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1404,
@@ -21072,7 +21073,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1510721628/23498870645?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVNCRzJrdVJqZ3lReTFNVjgvS3M4SWpYV0x3ZDNhdFFySzQ3WW5sOWxBZkxKbWJCNFVsR2p3enAxZU1ZbVVuZFlYcGFTR3YwdjhLb2ZLTEp2Vmhxby9jLytLM1hCa3ZPVWR2Wnkzd2tDYlNPQU5yeFZ0ZDUyeWtrYnIzb2lXSzhZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1405,
@@ -21087,7 +21088,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1263215792/23298097895?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNFJWTjExaFdMaXlqUWNhOHVUQjBmZ2dKOTJIQVM2N3o5Z09uYTN1YkdGUmNGQ04xR0J4QktvUHdwdnF4cG15Z3RnVGhqdE9jWHRweW42WFh0eHRWUG44L21neXRrQWRlcjdISk1ENC8zZXZhT1lFM2VhbFF2VHBHSzdZVm13VC9BPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1406,
@@ -21102,7 +21103,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1626192390/23199167994?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNmVtVTJ1SS8wUVVwZWNiMDZUTXRYUWczYzRtR0VROGtCVE1iY015RVBET05ydVp5dHpsbkFuZTNVcGZsOG9KVU5kTWxIWWFrWGZUVmxPVERzLzA2ekZPb2xwU0lGRmVSYnRWWS9zSG4zdm1nOVh0T3M1T0crVk5VVlFLVWNSVk5jPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1407,
@@ -21117,7 +21118,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1403314809/23698852519?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNFhESTRDay9qVlFVdHRubksreThIRXdYUjk2bE44UUEyMzNFVzZkRWZ2aENWY2dockMrQ1p6S2NTK0o0cnp2a21mcDJpdFlGaEo1MU4xekFVazgwYlJvaGhzbkZPU1F4eUdzYjhhUG43cTFOZ1FsU1FNaXdENU1RUzM5em5Pbis4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1408,
@@ -21132,7 +21133,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1213072276/22094578098?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0p5WlN0ajFLTzdqaTlQaERUZG41M1RqRTdqZ29NVVVDVUdTdXBjTExGMGNBM2dDTmYrMkFaZkk3UkhQSGNpeC9kZkNlR2FDNjFYcTJ3RFJVdmQyWi9rSzdYenZoa2NXQWZlWFdtaWhPT0IxbXZGTHpyS2I5YzRNZmtaRml3Y0FjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1409,
@@ -21147,7 +21148,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1371960970/22898355496?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNGVCUjlYTnE3YjFXWnQ5VUduNWRFaHVlVERIdmRxbWlXL2duc1FhcWRWdHRTMWlLZmNzcTdZeFo3bE84VkZlbE5TSDJub2pJYXYxTTdZMjlQNXFPZklGVG0wSDlkbjdXNVJkVjk3RDNkY3B2M2srQVU3RlpXaXNrUnY3MEw5elNRPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1410,
@@ -21162,7 +21163,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/511410160/22293513812?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdkFJRFdYcWx3TGZjb3g1enh6bGgxVVg3T0xHVGdZWDJtSW1oYjQ0WXVwWFR0bFlxaTRhSzIxYVR5dk05aDV0Yk5sTExJRGJYYUVLb1kvc0lhc1Vma1ljd2ovNzNFVWNDOTZQM2hUdU9GaS9WQVQwdVFqK2xQRHk0RWNzMzFrd25nPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1411,
@@ -21177,7 +21178,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/400477897/22093511144?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdGVsYjZoWmFsdmlqZWJ3OVo4Sko4SVp4cy9mZ2tnQldXT3FBUUFwUXN4QTNlZWYrejFIZVFycEpFSmtqT1oxdDl6NVQ0MVk1eHRBSmYvNGdQTEVkWjRQR0RESnN5WkoyZ29TVmtHc1lDbnF2a2ZRTmhwRWE2RlpSWFo0SEtQS1NnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1412,
@@ -21192,7 +21193,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/967211054/23194308436?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdVFCMEpCTktMSkxFT0RmWW9XRzEwUkJUdWJCWlhkMzM4emUzYXFub2daeWt3dldRMkJYaUtkQjZmcm9YRTVNeEF4N0gyWkwzVG4vRStIMTFpenQ2TXdGM1d3MVU2R0NRMWxGVkUxTGF6Nlp1YUR1SnUrd1MzWGRyTVVhMFpTRmpZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1413,
@@ -21207,7 +21208,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/347988064/7078628796?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkY0tSanlKZU1BU2Y2RTJzOS9neUtnZk9MWXJjZ2xjNVJWL1lwZ3YvSCtyNGMrL0RmS203UDJOSVVGM1d6VGxldGlnTlRyMWtZTEhhOWI5NEd5dXp0L2drd2NIMms1OERRY1piM0U4cDBCNk54OHY5Wk4vbGNsTzRsNTRSTkNYVlNHZThlSk9mS3VabGM0M1REazhJRWtnPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Esporte & Lazer"
   },
   {
     "id": 1414,
@@ -21222,7 +21223,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/987393610/22397182247?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc2pyakVNcHZIblF0aE9KcFUwcnFvbXNCYnhQbFIrU1J3V1M2ejFMK09BYVNtVC9oM2l3OHdYQ2hCbzdtYWFaZTdSRlN5RHVMNjhvdURJK3ByWXdjRmhEdHBxQVBzbkthVTVvSzVpbjVWaHVGWnFXSmoxdVVTaXdkekVBTkN0aFY4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1415,
@@ -21237,7 +21238,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1446868936/23093642762?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNEdoZnJQK3J6MXpCYllXdytGNVFrbVU1WnVWSzdoVUNnMVZOdWFLOHZ0em5CRU9wSVFMZzk1UVhwYkgxZ3U4dnBQS2Rjd0JGSjRYSmh5UStDN0RrT2RVMUVNMDB2eHhtNTZLTXZFZkc4K3pLYldwNGluTWlvWmZzRlVwejNLaFNrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1416,
@@ -21252,7 +21253,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/775405303/21498604779?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc3Y5UGR0OEMyeW1paksvaXc4bTgxSlhkUUR4UUQ3ZEZ6YlJEWEt4MVZKUkZ6TjJLS3NaT0RsRG4xdTZ1SVd1TUU1ZU1ldjF2QmNsN2FIWUpZSkFkd0xrTFExSFpCazdCWVZrNjQ0OENnaGxFL1YxNVJ5bmFRSENDTExyYmtFaFowPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Pets"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1417,
@@ -21267,7 +21268,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/217167158/22193438605?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdnltdzdyYXYzbVQvc1d6Szg2cTg5c3Vtb2tLZ1g3dkFaaUk3NEoycTFXK05jVzdVcjEweXpnVk54Nmcxd3llWXZPMFdCc2I4Q0VnTEh5enVkdHJ5d3RxZU5ZOHNwMmxOOURMVVlTN2dxSW1hZGJ6NGdPNWwyQklOaHBQcjNaZyt3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1418,
@@ -21282,7 +21283,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/399335094/23594528468?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc09NYVVIMUppcGowTG15U0Zpck9lQXJZYzdlSGgzZThyaGpOOERMSXl4M3hHOTdabDg0TDlzSnlVY284OTRhc252MTYvWkl5M2hsZkNic1ZnSUhHYzdnZWVYUDRMeFBsbm16OHdKNkEvZ2JZellHUlp6d014TjFUTkNJMDhqL1dzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1419,
@@ -21297,7 +21298,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/509869891/22194318769?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdGsrNklQM1ZIOXZqZ2ZLWW04Ukd0ZWZwL0JqeFcwZ01Qb1RzTHNKc2pCY0ZvUFRTQnBsRW5OQ0FaK0xKVE1PbXZHdXA3enlrYWxZOFlhSXBPY0cyNFE2THRpWUFFUnQyUXFGaFhvNmdWTFNuZGR6SGxjMlZ0Uy9qSFJWSk5ZTW5JPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1420,
@@ -21312,7 +21313,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1532748455/22698665260?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNWNkaUJHS2dKRXlBdkd2dG1mZ0psUEFMeTNmYUYzcG5VWk9LK1NQaG9yZ1dWYmI2QmhTVUFuc2ozMlRwY29ycnNYbHlPMmxaYlBiSkdrcHFpQXBjbTIwWjR5TWZ3Y20vZXg3QlhFZHErZnZWWkxLZGl2VXh0SjNkV1B2MHhrSFBzPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1421,
@@ -21327,7 +21328,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/487595969/22796986237?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQczVlb1Z6c3FDcWFEVjQzZkxreXZOdEU0QWZFbTZpbDJwZXZvSHVlNWlxQWZKK29oQ1RNY3RzUFJtM0YwZExkMjZwL01OWXVVUnJXRnJJZGVJdjh4L0Ftc3FmdjZnRUZ3aEJFb3lmbklGTm8zaHNIOE5WTkpjRDR4dTN2eU9kZC9vPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1422,
@@ -21342,7 +21343,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/487444734/55501007337?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQczVlb1Z6c3FDcWFEVjQzZkxreXZOdE5yMDNPTjJlSGQydHA5NUJ5ZUZrN2xtQWZKbWl4dE8zWjNwd3RtQldxZ2R5Ui9WWFlWQ0djSVJLbTlPVlRTazhJb2ZqUFBUaEUwb1FJeWhxNHFFRXpTRml5VVNtUzZHZngzQ2RteTBuTGlZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Esporte"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1423,
@@ -21357,7 +21358,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1607457575/22894428525?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVdYZVJwMHhRL1JOQ2k3SEcrRmF6dW9RSXFZekIxcEZQQUkwLzVZOE8zT2xmcHBnU3JRWEJrdFFuSHBUVHhCZWMwaTRWcUJLSDZiSGR0M2U1NFE5MExPYlc4aXcxYWM1S0prUjR0NFNsSk9FdVl4aGVGcTRLQ1ZJUHM5ajZrNnhrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1424,
@@ -21372,7 +21373,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/313984108/20297980123?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc2xsV0toV2FuVUJpN2ZFTElVa2hwU0tHTC8wQmpCTXBtLzZ5d2twTGZWMi9nbnowQkk0VU92SjVUVW1OSjdGU0NQb1BIbjg1OGx2cWxweEFqRnhWQ3NsTUVLOHlzVVVHeHRyN2pEMmw5VmREM3krcHkxekZSOFVYZ2VQcHFSUWY4PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1425,
@@ -21387,7 +21388,7 @@ export const productsData: Product[] = [
     "location": "Paraná",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/761647073/23193515375?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc0R5VGdzN2VPaUM2QmVpMitFODhCdUN1V3N4eWJoako1UFdia3RHRkhrS2FWRldEaTdYZGZRT0NRV0pJcTZydjRoc2tUQ0JZcHJwck5nMkpsZFlrOS9JWTlzT3pFTUJHUlN5YXVBSFR2d1AvTVNmWTBMellYcExyYmNvSlQvVnJNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1426,
@@ -21402,7 +21403,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1606133140/23498880613?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVdYZVJwMHhRL1JOQ2k3SEcrRmF6dU9sRDRqOVUrNXN5eUpyTUwxV05oNkJJcWlDck5Ndm5UZVBkSVc2bFQ3RElhK3A0cDFkY2JFRTN3TkN5cDhmcjgwQThRMEtaSXZjUWY2dzNTb1REanJxWVlKNTcyRzMzSko0dVhFeWY2N2hrPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1427,
@@ -21417,7 +21418,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/496965331/19998333801?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdXhVVGd1NGM4U3hEVTQydWZwZnc1NWRZZWFzbkNMNFNyS0dVRnpqakllU2NFZklwS1JITnpMZTZkeU85WjhWdHFtNkFVOUFScnMrVmJmcnNoTTdjbTlmaUdxa2E1RUJsVktCczVaQlEzblMrVFhNb2pYVDY5a2FhSTVRMFNmWXlBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1428,
@@ -21432,7 +21433,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1110883009/22498129343?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNkpIUFF1UVkwQm5VVS9SdnB2dnJJQlZQOUc4bjBYL3NaeEkydGVvT1FsWWR4MEQzU3pwYmREdit3amtNYVNRY0NDZjZ5NTArajJpbVNwMkVjN3JKbXB3bjZtMHJmODh1OStPWjFrQlZva0FSRGRXa3RhQlRtS1BTVTUrclRTa21RPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1429,
@@ -21447,7 +21448,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/504121816/21697990140?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdjB4bUNZTFAzdW1wamxFUXozbmhFam9mTlI2RWU4MHA1WmEySXJBNFgxQndLd3Z5c3FFTjJWOE1JM1lHTllZODZTVE5uMFk5MFU0Y2VPSlZ2T3FXdUVkZnVzTjYzaWFXcU5vcThvWkNDU0c2NGNtMzUvczg3T3NHcnZTcFNReWVZPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1430,
@@ -21462,7 +21463,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1210545163/23394224465?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN0p5WlN0ajFLTzdqaTlQaERUZG41M1FNQnNtUWd5NitXb2RIME1Qc3p4SUoyd3NOdGlUcHcrRUlpNGp5S3VJZTlsTTJuME9nWjhobkRROVRrd0ZmeVJPdFB4SVZaTitFampYTSs2UTk0VXpBcUtNTmF3M3R3TzE0cFovRUFZRjAwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1431,
@@ -21477,7 +21478,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/386263059/20797743913?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdEdQNi9KdENMRFg3TEZKRlNqME1hUkJoc3BTQUoxdzFYTXhJb1QwZjExZVNGUlN3cmo4WkhMbHJ5ejhEOUxSVEhJZTMrRjR2OEhhUjM5NkUvSnlMd2diQTEwM041Q05aMndzS0hJYUc5M3FwRGZrSDJZMGVNYWNXNWJmb09XdVB3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1432,
@@ -21492,7 +21493,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/423400603/23698319915?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc2grQ0h1N1Vva3d1VlFtd1JyVVRZaDRodFNoZFUyT0hZb0FSaEtrajdRYVNyRkxFckx2QjRKaDJXaGFlQlN1SGZWV2hpVnkxRjVQYzBpKzBWTDJOOU9Zd1VCUHBJaFM2ZWg3ODl6d0xUTllDYVVpZ2NhU3U4d3lmNUw2YzZva0FvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1433,
@@ -21507,7 +21508,7 @@ export const productsData: Product[] = [
     "location": "Goiás",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/312887832/22198034315?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdTJXRE5XcEZHZ05jdkhkVUlZaGVyWnUvTk9rQ1kxcDlDMGYyQWdhVXNDZ1dOSjAvakowYzNLRlhWWUF4QjFwR2RoU2M4RnBNK0gxODlYWVppemlZTWVkcDgya0RvbFZwdFBId0d3OWg5NFd2WGhySGoxOWVtanMvZ0JwMy9WS2QwPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1434,
@@ -21522,7 +21523,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/386512962/2934125379?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkY0tSanlKZU1BU2Y2RTJzOS9neUtnZDNTU0dDYlhuelFoQVdDcHU3aDZqZmlBV3p6WEQxTktvQ3dvMkVyWU5QWlA3VmVTazZnbURGRkZFdStxR3V2bE5qdnlvNGN0WUc3TDFkK1AvQlAwTEJxcHl1NGZuTDlOYjltdTE0a2xXc3ZoNFowd3ByckF1eC83L2JyUEtlZGNjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Celulares"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1435,
@@ -21567,7 +21568,7 @@ export const productsData: Product[] = [
     "location": "Goiás",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/306423459/8450389973?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkY0tSanlKZU1BU2Y2RTJzOS9neUtnZVB2N2xKRktZeUR6eVQ4REh6bmlGSVdYV3krN0EwWENEUHE3aktWM3FpTXhNV1k2WFkvUGlzNURHbDEvWkt4U0wzYk5rMEE5TDE3SXRCMGllcGpGdHhkd01pRXFucEhxL1NsaXVtSy9idC9GbmRITzhzbGJmWUNHbzV1NkprQmE0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Moda"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1438,
@@ -21582,7 +21583,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1321479779/21999607441?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNTkrc1ZUUkJCVzhDNG9GeUVWU1NleDNJUTVTd09mSUtjVXZ1OWJRazRodVJKS0pSRWFTeE1UR2Y1SG9QVVg3VlFFRTQ2QTdpY1lmVUhkckNkRHRiSjFRUnYyQldHOXRaQ3hFTURHQXllVTI1NVhHMmd0ZWlDZ1BSZVM5OENRUlM0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1439,
@@ -21597,7 +21598,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1606637679/21799852647?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNVdYZVJwMHhRL1JOQ2k3SEcrRmF6dUNTQXozZHBEQy9Kb0R0NzlBSG5mUFBjNU1rd2FMM1dIQ0tWWVJ3aXcrQ1Ztelp3cWQ4bDd3VTFwREVCbWQycXRVU3d1b1hZZHlDSzJCTy96TUFmcGFDMjdKd2ZoQUovUUs3M1FneFBkNk9FPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Tecnologia"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1440,
@@ -21612,7 +21613,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/322874822/23797686527?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdTRramhBWHJSZkg4a0JzL3Q4eEtSSjg1Vm1EbHU3QzJJSkoyZEVFZktiRktoOWxiVDFVNjRIaXUwZkozZFJNRDVnZURWVmlxaU9nUHZrSWo2VXBua1hORENMOGZRR0p3a0VmOUU0VzN6WE1ORDVTdzhCU05OYXdtWGx1VXNYQVA0PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Relógios"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1441,
@@ -21627,7 +21628,7 @@ export const productsData: Product[] = [
     "location": "Rio de Janeiro",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/494325389/22397173213?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdHhJdURWSGsxbEpPVWl4ZFNGN1FpZUN2TVkzRHZqOFFvOVljZ2VqMmRMeWdPMnlyckpVazE1ZGY2V1h0eHM2QXhsSHlkcUErYzQ5a1FBNGJMRzl3d2tuQ0hEOEtjMmdpSDN0OVdBWUVSblgwdnBUMWRZTDU5WnRQdWl2T3ZaYUxBPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1442,
@@ -21642,7 +21643,7 @@ export const productsData: Product[] = [
     "location": "Pernambuco",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/313984108/21297458008?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQc2xsV0toV2FuVUJpN2ZFTElVa2hwUzhrYnZQd0crZXdoMCtCelNsYUFuZ0xrTHd5bTVRZ2tYb3V4WnpNSWZXN0VBRnNCc3NtMndUTjJQLzI2dVlhd2hMMHYrOFBCT3NsdFNObDFKcGNmeTFJa1BhWmwzZFBHaUFhVi9wanY5MHVvPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1443,
@@ -21657,7 +21658,7 @@ export const productsData: Product[] = [
     "location": "Goiás",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1595799043/22394261187?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjN1ZMd0hoWWdZV2M4ZmtCcVRONXpQdllEQTZOb3d0YVpBb1FWa2NlQmpNdVJOVmhBVTgybmRvY1I4RXBKcldKbG5wd0NLTElVK09FbVpWYndkRWdUTE1UVG51cGtpdmNockJCaFE0ZWNsZVZZWHg1blZDVnMyNUs4NmNZdWxHaHFjPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Moda & Beleza"
   },
   {
     "id": 1444,
@@ -21672,7 +21673,7 @@ export const productsData: Product[] = [
     "location": "Minas Gerais",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/279375549/22599021469?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVEdTU3BlMW9zMXB6bGYrZ0J1VEdQdTQxZnJxVzF4ZFJLL1BySzRRZG5rMG1xZjczL0xOSFFuZjMyQThUNDhDWklraU4zbG1QV042bVFjYUkxOS9yL0NuaUZTK09BWG1hOEVuYzlvZ1pDazV2d2JMaFNORCs1V3VpTlVaQ2VyYnBuWDJHOHB6UTNiUHEyck1tRThCUkRNPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1445,
@@ -21687,7 +21688,7 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": false,
     "link": "https://shopee.com.br/universal-link/product/1506941149/55552464167?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNU1mU0M5RWxpRUpPMTNORXc3cFZmbnFjb3Y2dEIwYnhCenRHNllQcTZ3QVZRQ1A0K0pGVm9qUk40SGE2aWlvUHJJd1RjWkxtVE9mRFYwYUdDWWF3QnlIUS83cGNZYzlOVENqREd4MW4rcHJpWHpaVVQyNFNMWndPMlM5ZVFldkVFPQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Tecnologia & Eletrônicos"
   },
   {
     "id": 1446,
@@ -21702,13 +21703,13 @@ export const productsData: Product[] = [
     "location": "São Paulo",
     "isFlashSale": true,
     "link": "https://shopee.com.br/universal-link/product/1403314809/58252279656?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkU1hZSjF1Ym94QW1tdXlLQVFLQ3hjNFhESTRDay9qVlFVdHRubksreThIRXRpWGwzMmp2RDhJMzV2RVJkY3FoTVAvaXh4VUFIekFLWnEyTFRGY3lQeUFOeEc3QlJmbXl6K3BGYm9OTzFpUzcyMno0SG9NNmZVc1BCbkxqWUFCQ1Rhb2FYUEFGWWgrYVorVU4ybUxkMXB3PQ&utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_18376950496",
-    "category": "Outros"
+    "category": "Casa & Decoração"
   },
   {
     "id": 1447,
     "idShopee": "22094219814",
     "name": "Kit Shampoo V-Floc Cera Tok Final Pneu Pretinho Restaurax Vonixx",
-    "category": "Outros",
+    "category": "Moda & Beleza",
     "price": "R$ 118,49",
     "oldPrice": "R$ 147,90",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mbvb9nkg7nvrf1",
@@ -21723,7 +21724,7 @@ export const productsData: Product[] = [
     "id": 1448,
     "idShopee": "23594528394",
     "name": "Body Splash Rosa e Algodão Cuide-se Bem – A suavidade do algodão com o perfume da rosa para sua pele!",
-    "category": "Beleza",
+    "category": "Moda & Beleza",
     "price": "R$ 16,99",
     "oldPrice": "R$ 16,99",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mfbhcdv5sdfr6e",
@@ -21738,7 +21739,7 @@ export const productsData: Product[] = [
     "id": 1449,
     "idShopee": "57300053113",
     "name": "Triturador De Alimentos Picador Elétrico Multiprocessador Com ALÇA 5L 110V E 220V Processador Multifuncional Moedor",
-    "category": "Outros",
+    "category": "Tecnologia & Eletrônicos",
     "price": "R$ 69,99",
     "oldPrice": "R$ 168,90",
     "img": "https://down-br.img.susercontent.com/file/sg-11134201-82580-mg6xb5z54qh63f",
@@ -21753,7 +21754,7 @@ export const productsData: Product[] = [
     "id": 1450,
     "idShopee": "18298307067",
     "name": "Limpa Air Fryer Spray 250ml Super Dom – Remove Gordura Pesada, Limpeza Rápida e Fácil Uso",
-    "category": "Cozinha",
+    "category": "Eletrodomésticos",
     "price": "R$ 26,89",
     "oldPrice": "R$ 40,00",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdb91lc0nke993",
@@ -21783,7 +21784,7 @@ export const productsData: Product[] = [
     "id": 1452,
     "idShopee": "23698467734",
     "name": "Potes de Tempero 200ml - Porta Temperos - Cartela de Temperos com 28 Adesivos Opcional - Cozinha - Variações",
-    "category": "Tecnologia",
+    "category": "Tecnologia & Eletrônicos",
     "price": "R$ 19,90",
     "oldPrice": "R$ 39,90",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81ztn-mkoqjsq62xhd12",
@@ -21798,7 +21799,7 @@ export const productsData: Product[] = [
     "id": 1453,
     "idShopee": "22299045365",
     "name": "Pistola de massagem elétrica, massageador de tecidos profundos",
-    "category": "Outros",
+    "category": "Tecnologia & Eletrônicos",
     "price": "R$ 28,98",
     "oldPrice": "R$ 80,00",
     "img": "https://down-br.img.susercontent.com/file/sg-11134201-825ba-mfuky7ps0m4ra9",
@@ -21813,7 +21814,7 @@ export const productsData: Product[] = [
     "id": 1454,
     "idShopee": "18656872364",
     "name": "Roçadeira 75 Cilindradas 3.5hp - Profissional a Gasolina Knakasaki - Qualidade",
-    "category": "Outros",
+    "category": "Casa & Decoração",
     "price": "R$ 479,99",
     "oldPrice": "R$ 679,00",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mbd3o0b7g92xba",
@@ -21828,7 +21829,7 @@ export const productsData: Product[] = [
     "id": 1455,
     "idShopee": "58200716841",
     "name": "Principia Kit - Anti-manchas- Essencial",
-    "category": "Outros",
+    "category": "Casa & Decoração",
     "price": "R$ 179,41",
     "oldPrice": "R$ 232,99",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mh7w0bl17dad3b",
@@ -21843,7 +21844,7 @@ export const productsData: Product[] = [
     "id": 1456,
     "idShopee": "18099583942",
     "name": "Balança Bioimpedância Medidora Corporal Bluetooth Digital Até 180 Kg",
-    "category": "Outros",
+    "category": "Tecnologia & Eletrônicos",
     "price": "R$ 33,90",
     "oldPrice": "R$ 149,90",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mgnteqhqx7usa8",
@@ -21858,7 +21859,7 @@ export const productsData: Product[] = [
     "id": 1457,
     "idShopee": "21897728259",
     "name": "Shampoo com Cera de carnaúba pH Neutro para Lavagem de Carro e Moto Xampu Automotivo",
-    "category": "Automotivo",
+    "category": "Moda & Beleza",
     "price": "R$ 17,98",
     "oldPrice": "R$ 19,98",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-me67aevr85c100",
@@ -21873,7 +21874,7 @@ export const productsData: Product[] = [
     "id": 1458,
     "idShopee": "58205171633",
     "name": "PROMOCAO SMART-PRO MODELO 2026",
-    "category": "Outros",
+    "category": "Tecnologia & Eletrônicos",
     "price": "R$ 105,99",
     "oldPrice": "R$ 105,99",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81zue-mkn08jtespvlcc",
@@ -21888,7 +21889,7 @@ export const productsData: Product[] = [
     "id": 1459,
     "idShopee": "22793243146",
     "name": "Suporte Para Notebook Base Dobrável de Alumínio Ergonômico Ajustável Fino Portátil Com Estojo",
-    "category": "Tecnologia",
+    "category": "Tecnologia & Eletrônicos",
     "price": "R$ 19,99",
     "oldPrice": "R$ 30,99",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m82ddteagftd2e",
@@ -21903,7 +21904,7 @@ export const productsData: Product[] = [
     "id": 1460,
     "idShopee": "21098270107",
     "name": "Mop Spray PRO Magico Com Reservatorio Rodo De Limpeza Refil Microfibra",
-    "category": "Outros",
+    "category": "Casa & Decoração",
     "price": "R$ 34,99",
     "oldPrice": "R$ 63,50",
     "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rdwf-mclh1vv7hn4ec9",
@@ -21918,7 +21919,7 @@ export const productsData: Product[] = [
     "id": 1461,
     "idShopee": "18698153461",
     "name": "Chinelo Slide Nuvem AS 2.0 Conforto Ergonômico - Envio Imediato!",
-    "category": "Outros",
+    "category": "Moda & Beleza",
     "price": "R$ 54,90",
     "oldPrice": "R$ 199,90",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m942efjao1s25a",
@@ -21933,7 +21934,7 @@ export const productsData: Product[] = [
     "id": 1462,
     "idShopee": "24740902631",
     "name": "Cozedor de Ovos Elétrico Portátil Cozinha à Vapor 110V Cor Aleatória",
-    "category": "Outros",
+    "category": "Tecnologia & Eletrônicos",
     "price": "R$ 28,49",
     "oldPrice": "R$ 52,99",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdg66onj1vipad",
@@ -21948,7 +21949,7 @@ export const productsData: Product[] = [
     "id": 1463,
     "idShopee": "23298846370",
     "name": "Capa Protetora Impermeável De Colchão Casal Queen Solteiro King Matelado Com Elástico Confortável",
-    "category": "Outros",
+    "category": "Esporte & Lazer",
     "price": "R$ 39,90",
     "oldPrice": "R$ 39,90",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mfjo56x6u60wf5",
@@ -21963,7 +21964,7 @@ export const productsData: Product[] = [
     "id": 1464,
     "idShopee": "19599890018",
     "name": "Escova Elétrica de Limpeza USB 5 em 1, Recarregável - Kit Completo com Acessórios",
-    "category": "Outros",
+    "category": "Tecnologia & Eletrônicos",
     "price": "R$ 26,70",
     "oldPrice": "R$ 60,00",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81ztc-mj98stjusbnq22",
@@ -21978,7 +21979,7 @@ export const productsData: Product[] = [
     "id": 1465,
     "idShopee": "23194225000",
     "name": "Kit 06 Bermudas Masculinas Básicas - DryFit - Malha Leve e Confortável - Pronta Entrega",
-    "category": "Outros",
+    "category": "Moda & Beleza",
     "price": "R$ 91,96",
     "oldPrice": "R$ 199,90",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mc7dqotyqrone5",
@@ -21993,7 +21994,7 @@ export const productsData: Product[] = [
     "id": 1466,
     "idShopee": "23694215749",
     "name": "Conjunto Potes de Vidro com Tampa Bambu Cristal Porta Mantimentos Cozinha 3 Peças",
-    "category": "Outros",
+    "category": "Casa & Decoração",
     "price": "R$ 66,19",
     "oldPrice": "R$ 66,19",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-malfycxrosr322",
@@ -22008,7 +22009,7 @@ export const productsData: Product[] = [
     "id": 1467,
     "idShopee": "23692822678",
     "name": "Torneira Bancada Cozinha Gourmet Preta Flexivel 2 Jatos 1/4 de volta para mesa pia bancada e mármore",
-    "category": "Casa",
+    "category": "Casa & Decoração",
     "price": "R$ 64,90",
     "oldPrice": "R$ 79,99",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m0iwk80z24ch1f",
@@ -22023,7 +22024,7 @@ export const productsData: Product[] = [
     "id": 1468,
     "idShopee": "23498101067",
     "name": "QUEIMA DE ESTOQUE! Armário Espelheira com Porta Cle - VÁRIAS CORES",
-    "category": "Outros",
+    "category": "Casa & Decoração",
     "price": "R$ 109,99",
     "oldPrice": "R$ 249,99",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m4eljltmyhj51f",
@@ -22038,7 +22039,7 @@ export const productsData: Product[] = [
     "id": 1469,
     "idShopee": "58202741967",
     "name": "SABÃO LÍQUIDO CONCENTRADO PROFISSIONAL DETERGENTE LAVA ROUPA LIMPEZA PROFUNDA – 5 LITROS",
-    "category": "Moda",
+    "category": "Casa & Decoração",
     "price": "R$ 59,90",
     "oldPrice": "R$ 69,90",
     "img": "https://down-br.img.susercontent.com/file/sg-11134201-8262s-mj4wujuije2q18",
@@ -22053,7 +22054,7 @@ export const productsData: Product[] = [
     "id": 1470,
     "idShopee": "22392955570",
     "name": "Monitor Concórdia Gamer Curvo CZ238F 23.8\" 100hz LED Full HD HDMI VGA SRGB 99%",
-    "category": "Tecnologia",
+    "category": "Tecnologia & Eletrônicos",
     "price": "R$ 569,00",
     "oldPrice": "R$ 604,34",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mgxlbw8lfcw082",
@@ -22068,7 +22069,7 @@ export const productsData: Product[] = [
     "id": 1471,
     "idShopee": "23194269838",
     "name": "Promoção Pijama Curto Em Malha Blogueirinha Short e Blusa Amamentação",
-    "category": "Moda",
+    "category": "Moda & Beleza",
     "price": "R$ 32,86",
     "oldPrice": "R$ 66,90",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mgp9blb4it5060",
@@ -22083,7 +22084,7 @@ export const productsData: Product[] = [
     "id": 1472,
     "idShopee": "22598429917",
     "name": "moletom flowers floral",
-    "category": "Outros",
+    "category": "Moda & Beleza",
     "price": "R$ 84,15",
     "oldPrice": "R$ 99,00",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mbvs2mu0s02h15",
@@ -22098,7 +22099,7 @@ export const productsData: Product[] = [
     "id": 1473,
     "idShopee": "19016875290",
     "name": "Câmera Externa Ip a Prova D'água com Infravermelho Alarme Wifi Hd Sensor De Movimento yoosee / icsee",
-    "category": "Tecnologia",
+    "category": "Tecnologia & Eletrônicos",
     "price": "R$ 87,99",
     "oldPrice": "R$ 199,99",
     "img": "https://down-br.img.susercontent.com/file/br-11134201-23020-cs3o8mnbcjnv12",
@@ -22113,7 +22114,7 @@ export const productsData: Product[] = [
     "id": 1474,
     "idShopee": "22698677025",
     "name": "Varal De Chão 3 Andares Roupa Calcinha Dobrável Grade Reforçado com 4 Rodas Portátil e Compacto",
-    "category": "Moda",
+    "category": "Casa & Decoração",
     "price": "R$ 68,90",
     "oldPrice": "R$ 149,00",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mhg7txeyy7erfb",
@@ -22128,7 +22129,7 @@ export const productsData: Product[] = [
     "id": 1475,
     "idShopee": "22694309852",
     "name": "Kit 2 Mantas Decorativas Para Sofá Luxuosa Tamanho 210X120 Tecido 100% Algodão Casa Nova Elegante",
-    "category": "Casa",
+    "category": "Casa & Decoração",
     "price": "R$ 44,64",
     "oldPrice": "R$ 47,99",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-me7ifrt1fz0ib4",
@@ -22143,7 +22144,7 @@ export const productsData: Product[] = [
     "id": 1476,
     "idShopee": "22193060864",
     "name": "Macaquinho feminino Tercido Alfaiataria Coleção Nova",
-    "category": "Outros",
+    "category": "Casa & Decoração",
     "price": "R$ 79,80",
     "oldPrice": "R$ 143,80",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lvn65iy7oja6fb",
@@ -22158,7 +22159,7 @@ export const productsData: Product[] = [
     "id": 1477,
     "idShopee": "22694421844",
     "name": "Smartphone Xiaomi Poco C85 256GB / 128GB Versão Global NFC Envio Imediato (COM PELÍCULA DE CORTESIA)",
-    "category": "Celulares",
+    "category": "Tecnologia & Eletrônicos",
     "price": "R$ 998,00",
     "oldPrice": "R$ 998,00",
     "img": "https://down-br.img.susercontent.com/file/sg-11134201-824je-merxd8nou4ub20",
@@ -22173,7 +22174,7 @@ export const productsData: Product[] = [
     "id": 1478,
     "idShopee": "22498117558",
     "name": "Carregador Portátil Turbo 20000mah Power Bank Universal Com Indicador De Bateria Original",
-    "category": "Outros",
+    "category": "Tecnologia & Eletrônicos",
     "price": "R$ 55,89",
     "oldPrice": "R$ 100,00",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5yudei1t4tu20",
@@ -22188,7 +22189,7 @@ export const productsData: Product[] = [
     "id": 1479,
     "idShopee": "22994673009",
     "name": "Kit Liquidificador 550W Turbo Power L-99-FR + Batedeira 400W Prática - B-44-R Mondial",
-    "category": "Cozinha",
+    "category": "Eletrodomésticos",
     "price": "R$ 202,90",
     "oldPrice": "R$ 269,75",
     "img": "https://down-br.img.susercontent.com/file/sg-11134201-8260f-ml3anvk3gb9e5a",
@@ -22203,7 +22204,7 @@ export const productsData: Product[] = [
     "id": 1480,
     "idShopee": "22794389865",
     "name": "Relógio esportivo unissex smartwatch 2025 original novo C10 PRO WATCH sem fio para Android e iOS",
-    "category": "Celulares",
+    "category": "Tecnologia & Eletrônicos",
     "price": "R$ 49,90",
     "oldPrice": "R$ 150,00",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mefprczkak1s71",
@@ -22218,7 +22219,7 @@ export const productsData: Product[] = [
     "id": 1481,
     "idShopee": "21597674542",
     "name": "Kit 2 Conjuntos Academia Top e Short Elastico Exposto",
-    "category": "Esporte",
+    "category": "Moda & Beleza",
     "price": "R$ 72,90",
     "oldPrice": "R$ 159,90",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mgqo9zhad79gc9",
@@ -22233,7 +22234,7 @@ export const productsData: Product[] = [
     "id": 1482,
     "idShopee": "40510747333",
     "name": "Carregador de Celular Para Moto Rápido Turbo QC3.0 USB Tomada Prova dágua Impermeavel",
-    "category": "Celulares",
+    "category": "Tecnologia & Eletrônicos",
     "price": "R$ 59,99",
     "oldPrice": "R$ 59,99",
     "img": "https://down-br.img.susercontent.com/file/cn-11134207-7ras8-mcrivfde7a0948",
@@ -22248,7 +22249,7 @@ export const productsData: Product[] = [
     "id": 1483,
     "idShopee": "20199206047",
     "name": "Air Fryer Britânia 4,2L Dura Mais 1500W BFR38",
-    "category": "Cozinha",
+    "category": "Eletrodomésticos",
     "price": "R$ 219,90",
     "oldPrice": "R$ 249,90",
     "img": "https://down-br.img.susercontent.com/file/sg-11134201-8262l-mkcqfwidzvnq06",
@@ -22263,7 +22264,7 @@ export const productsData: Product[] = [
     "id": 1484,
     "idShopee": "22597923270",
     "name": "Copo Térmico Digital Com Sensor de Temperatura 420ml",
-    "category": "Outros",
+    "category": "Tecnologia & Eletrônicos",
     "price": "R$ 24,99",
     "oldPrice": "R$ 42,99",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m1bv5w93zae81e",
@@ -22278,7 +22279,7 @@ export const productsData: Product[] = [
     "id": 1485,
     "idShopee": "22694563672",
     "name": "Celular Motorola Moto G15 NFC Tela IPS 6.72\" Câmera Dupla com IA 50MP + Frontal 8MP",
-    "category": "Celulares",
+    "category": "Automotivo",
     "price": "R$ 769,00",
     "oldPrice": "R$ 900,00",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mg5qe8s5kz5zdc",
@@ -22293,7 +22294,7 @@ export const productsData: Product[] = [
     "id": 1486,
     "idShopee": "20599442176",
     "name": "Jogo de Panelas Kit 9 Pçs Antiaderente Tampa Vidro Teflon",
-    "category": "Cozinha",
+    "category": "Moda & Beleza",
     "price": "R$ 151,90",
     "oldPrice": "R$ 199,90",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m1iyervcg1l412",
@@ -22308,7 +22309,7 @@ export const productsData: Product[] = [
     "id": 1487,
     "idShopee": "23694205612",
     "name": "Conjunto Fitness Roupa de Academia Feminina Top e Calça Suplex Premium Zero Transparência",
-    "category": "Moda",
+    "category": "Moda & Beleza",
     "price": "R$ 89,00",
     "oldPrice": "R$ 119,00",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-me9r4noud43n0a",
@@ -22323,7 +22324,7 @@ export const productsData: Product[] = [
     "id": 1488,
     "idShopee": "23797677332",
     "name": "Calça Cargo Jeans Feminina Bolso Lateral Cintura Alta  Wide Leg Pantalona",
-    "category": "Moda",
+    "category": "Moda & Beleza",
     "price": "R$ 64,90",
     "oldPrice": "R$ 140,00",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-md0p65f3f20x38",
@@ -22338,7 +22339,7 @@ export const productsData: Product[] = [
     "id": 1489,
     "idShopee": "13881352894",
     "name": "Panela Elétrica de Arroz 5 xícaras 1L - Com legumeira - Multifuncional - In Brasil",
-    "category": "Cozinha",
+    "category": "Moda & Beleza",
     "price": "R$ 139,70",
     "oldPrice": "R$ 239,90",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lnke09th32ks43",
@@ -22353,7 +22354,7 @@ export const productsData: Product[] = [
     "id": 1490,
     "idShopee": "22894440179",
     "name": "Kit 6 Organizadores de Geladeira 3,8L com Tampa e Escorredor Interno para Frutas, Legumes e Verduras",
-    "category": "Outros",
+    "category": "Casa & Decoração",
     "price": "R$ 42,63",
     "oldPrice": "R$ 69,90",
     "img": "https://down-br.img.susercontent.com/file/sg-11134201-824hh-mf46r1wb85cfc8",
@@ -22368,7 +22369,7 @@ export const productsData: Product[] = [
     "id": 1491,
     "idShopee": "23797688859",
     "name": "Kit Calças Jeans Masculina Premium Skinny Corte tradicional Basico com Lycra Lavagem Clara Escura ou Preta",
-    "category": "Moda",
+    "category": "Moda & Beleza",
     "price": "R$ 54,90",
     "oldPrice": "R$ 69,99",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lyk6c5jglqedc8",
@@ -22383,7 +22384,7 @@ export const productsData: Product[] = [
     "id": 1492,
     "idShopee": "18799309652",
     "name": "Kit Leve 3 e Pague 2 : 3 Regata Masculina Regata Canelada Básica slin",
-    "category": "Outros",
+    "category": "Moda & Beleza",
     "price": "R$ 51,00",
     "oldPrice": "R$ 60,00",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lydths7fv25120",
@@ -22398,7 +22399,7 @@ export const productsData: Product[] = [
     "id": 1493,
     "idShopee": "22498067516",
     "name": "Kit 1,2 e 4 Organizador de Geladeira 3,8 Litros Cesto ou 2,8 Com Tampa Multiuso Alimento Verdura e Vegetal",
-    "category": "Outros",
+    "category": "Casa & Decoração",
     "price": "R$ 45,90",
     "oldPrice": "R$ 45,90",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mawuakidj1tl1e",
@@ -22413,7 +22414,7 @@ export const productsData: Product[] = [
     "id": 1494,
     "idShopee": "23598387487",
     "name": "kit Tapete para Banheiro de Secagem Rápida e Super Absorvente Ideal para Chuveiro Cozinha e Varanda",
-    "category": "Pets",
+    "category": "Casa & Decoração",
     "price": "R$ 19,89",
     "oldPrice": "R$ 30,00",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m8hpl5yislwxf7",
@@ -22428,7 +22429,7 @@ export const productsData: Product[] = [
     "id": 1495,
     "idShopee": "23097492284",
     "name": "Kit De Ferramentas 40/46 Peças Jogo De Soquetes Chave Catraca Reversível Com Maleta Jogo De Ferramentas Completo",
-    "category": "Outros",
+    "category": "Ferramentas & Construção",
     "price": "R$ 29,00",
     "oldPrice": "R$ 89,00",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lv3di9c52zdp38",
@@ -22443,7 +22444,7 @@ export const productsData: Product[] = [
     "id": 1496,
     "idShopee": "29581840459",
     "name": "Fatiador De Cozinha Multifuncional Profissional Em Aço Inoxidável 16 1 Vegetais/Frutas",
-    "category": "Outros",
+    "category": "Casa & Decoração",
     "price": "R$ 40,00",
     "oldPrice": "R$ 67,00",
     "img": "https://down-br.img.susercontent.com/file/cn-11134207-7ras8-m84hqpq1xac278",
@@ -22458,7 +22459,7 @@ export const productsData: Product[] = [
     "id": 1497,
     "idShopee": "22898480418",
     "name": "KIT Conjunto 10 Marmita Potes 800ml com Travas Laterais BPA FREE - Organizadores de Alimentos para Congelador",
-    "category": "Outros",
+    "category": "Casa & Decoração",
     "price": "R$ 36,04",
     "oldPrice": "R$ 59,90",
     "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rffe-m9txab5pqj9y5e",
@@ -22473,7 +22474,7 @@ export const productsData: Product[] = [
     "id": 1498,
     "idShopee": "42806396653",
     "name": "Carregador 2em1 Portátil: Bateria 10000mAh + Base Sem Fio para iPhone e Android Tipo-C",
-    "category": "Celulares",
+    "category": "Tecnologia & Eletrônicos",
     "price": "R$ 30,99",
     "oldPrice": "R$ 60,00",
     "img": "https://down-br.img.susercontent.com/file/sg-11134201-81zve-miv2p35zllon78",
@@ -22488,7 +22489,7 @@ export const productsData: Product[] = [
     "id": 1499,
     "idShopee": "22898231176",
     "name": "blusa masculina de compressão otima para academia envio rápido blusa de compressão ótima qualidade..",
-    "category": "Moda",
+    "category": "Moda & Beleza",
     "price": "R$ 35,86",
     "oldPrice": "R$ 35,86",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m6paqlxixcnbcb",
@@ -22503,7 +22504,7 @@ export const productsData: Product[] = [
     "id": 1500,
     "idShopee": "23994614825",
     "name": "Sandália Rasteira Feminina H Moderna",
-    "category": "Outros",
+    "category": "Moda & Beleza",
     "price": "R$ 33,90",
     "oldPrice": "R$ 59,90",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mg86ate6w93452",
@@ -22518,7 +22519,7 @@ export const productsData: Product[] = [
     "id": 1501,
     "idShopee": "22592875862",
     "name": "Cpu Gamer Barato I7 8gb Ssd 240gb + Wifi + GT 610 Nvidia",
-    "category": "Tecnologia",
+    "category": "Tecnologia & Eletrônicos",
     "price": "R$ 1394,99",
     "oldPrice": "R$ 1499,99",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m3y0v994pvso75",
@@ -22533,7 +22534,7 @@ export const productsData: Product[] = [
     "id": 1502,
     "idShopee": "21698282617",
     "name": "Chaleira Elétrica de Vidro/Inoxidável,1.8L 127V/220V Tampa e Desligamento Automático",
-    "category": "Outros",
+    "category": "Games & Hobby",
     "price": "R$ 47,58",
     "oldPrice": "R$ 119,96",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-meesecphbbi9dd",
@@ -22548,7 +22549,7 @@ export const productsData: Product[] = [
     "id": 1503,
     "idShopee": "22093221000",
     "name": "Kit Calça Jeans Skinny Masculina Com Lycra Estica Muito Nf super promoção",
-    "category": "Moda",
+    "category": "Moda & Beleza",
     "price": "R$ 54,99",
     "oldPrice": "R$ 69,99",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lypz79pnedn990",
@@ -22563,7 +22564,7 @@ export const productsData: Product[] = [
     "id": 1504,
     "idShopee": "28088314056",
     "name": "Kit 3 Calças Legging Feminina Academia Fitness Cintura Alta Levanta Bumbum Zero Transparência",
-    "category": "Moda",
+    "category": "Moda & Beleza",
     "price": "R$ 59,98",
     "oldPrice": "R$ 89,99",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mbr89tf5jyopa6",
@@ -22578,7 +22579,7 @@ export const productsData: Product[] = [
     "id": 1505,
     "idShopee": "21533616694",
     "name": "Kit 3 Mini Vasinhos com Planta FLOR artificial Enfeite Bob Robert para Decoração Casa vaso de plástico tamanho mini 6 cm",
-    "category": "Casa",
+    "category": "Casa & Decoração",
     "price": "R$ 23,98",
     "oldPrice": "R$ 34,49",
     "img": "https://down-br.img.susercontent.com/file/br-11134201-23030-4cb0m6tksdovc0",
@@ -22593,7 +22594,7 @@ export const productsData: Product[] = [
     "id": 1506,
     "idShopee": "20898199902",
     "name": "Frigideira Antiaderente 3 em 1 para Ovos, Carnes, Bacon",
-    "category": "Outros",
+    "category": "Casa & Decoração",
     "price": "R$ 29,90",
     "oldPrice": "R$ 59,90",
     "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rauk-maa6m1fue1x01c",
@@ -22608,7 +22609,7 @@ export const productsData: Product[] = [
     "id": 1507,
     "idShopee": "22192792890",
     "name": "Faca Para Churrasco Profissional Luxo Personalizado Seu time",
-    "category": "Outros",
+    "category": "Casa & Decoração",
     "price": "R$ 64,90",
     "oldPrice": "R$ 64,90",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mfyfc5895i4l55",
@@ -22623,7 +22624,7 @@ export const productsData: Product[] = [
     "id": 1508,
     "idShopee": "58202493496",
     "name": "Chave de impacto sem escova 450NM (1/2IN) Pol Parafusadeira Chave De Impacto 2 Baterias 21VBrushless",
-    "category": "Outros",
+    "category": "Ferramentas & Construção",
     "price": "R$ 208,98",
     "oldPrice": "R$ 396,00",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81ztc-miti2f76zkeed9",
@@ -22638,7 +22639,7 @@ export const productsData: Product[] = [
     "id": 1509,
     "idShopee": "23498870630",
     "name": "Kit 3 Bermudas Masculinas Básicas  DryFit  Malha Leve e Confortável  Pronta Entrega Origins",
-    "category": "Outros",
+    "category": "Moda & Beleza",
     "price": "R$ 39,90",
     "oldPrice": "R$ 99,90",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81ztf-mkponhmg8hs19b",
@@ -22653,7 +22654,7 @@ export const productsData: Product[] = [
     "id": 1510,
     "idShopee": "23293928759",
     "name": "1, 2, 3 ou 4 Câmeras Lâmpada Wi-Fi 360° com Controle Remoto e Visão Noturna – Fácil Instalação",
-    "category": "Gamer",
+    "category": "Tecnologia & Eletrônicos",
     "price": "R$ 61,52",
     "oldPrice": "R$ 69,90",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m8ywcog17xo94b",
@@ -22668,7 +22669,7 @@ export const productsData: Product[] = [
     "id": 1511,
     "idShopee": "23015815090",
     "name": "Carregador Portátil Pineng Power Bank 10.000mah,5000mah com adaptador iPhone,V8",
-    "category": "Celulares",
+    "category": "Tecnologia & Eletrônicos",
     "price": "R$ 22,98",
     "oldPrice": "R$ 24,99",
     "img": "https://down-br.img.susercontent.com/file/br-11134211-7qukw-lixnx72ulb3zbc",
@@ -22683,7 +22684,7 @@ export const productsData: Product[] = [
     "id": 1512,
     "idShopee": "23098540150",
     "name": "Panela De Pressão Vermelha Fechamento Externo 3 - 4,5 - 7 - 10 Litros Selo Inmetro Garantia 1 Ano",
-    "category": "Cozinha",
+    "category": "Moda & Beleza",
     "price": "R$ 129,90",
     "oldPrice": "R$ 199,99",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-ma60xt0i2arr05",
@@ -22698,7 +22699,7 @@ export const productsData: Product[] = [
     "id": 1513,
     "idShopee": "58201430039",
     "name": "Ventilador de Teto Com Luz 60w Led 3 Tipos de Luz + Controle Remoto Ventilador C/ 6 Hélices Bivolt",
-    "category": "Gamer",
+    "category": "Casa & Decoração",
     "price": "R$ 73,99",
     "oldPrice": "R$ 120,00",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mhuds06v3rb5bb",
@@ -22713,7 +22714,7 @@ export const productsData: Product[] = [
     "id": 1514,
     "idShopee": "23697593504",
     "name": "Capa Chuva Sapato Premium Protetor Pé Tênis Moto Adulto Impermeável Motoqueiro Calçado",
-    "category": "Moda",
+    "category": "Moda & Beleza",
     "price": "R$ 23,99",
     "oldPrice": "R$ 60,00",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lwk0nro3aahebd",
@@ -22728,7 +22729,7 @@ export const productsData: Product[] = [
     "id": 1515,
     "idShopee": "20798265196",
     "name": "Aparelho De Medir Pressão Arterial De Braço Visor Digital Inteligante",
-    "category": "Saúde",
+    "category": "Tecnologia & Eletrônicos",
     "price": "R$ 59,97",
     "oldPrice": "R$ 77,00",
     "img": "https://down-br.img.susercontent.com/file/sg-11134201-7ra11-mba5kx8345u8b8",
@@ -22743,7 +22744,7 @@ export const productsData: Product[] = [
     "id": 1516,
     "idShopee": "29771386517",
     "name": "Suporte prateleira Shampoo Sabonete Banheiro Adesivo Parede Box Luxo Cor Preto",
-    "category": "Outros",
+    "category": "Moda & Beleza",
     "price": "R$ 23,89",
     "oldPrice": "R$ 25,90",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m43lxk4p35flc5",
@@ -22758,7 +22759,7 @@ export const productsData: Product[] = [
     "id": 1517,
     "idShopee": "20398293218",
     "name": "LANÇAMENTO • iPhone 17 Pro / 17 Pro Max 256GB - 512GB - 1TB • Novo Original NF Lacrado",
-    "category": "Celulares",
+    "category": "Casa & Decoração",
     "price": "R$ 7999,00",
     "oldPrice": "R$ 11292,00",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mf3zo49qosg56e",
@@ -22773,7 +22774,7 @@ export const productsData: Product[] = [
     "id": 1518,
     "idShopee": "22198714761",
     "name": "Tênis Feminino Esportivo Academia Treino Caminhada Corrida Fitness Zumba Casual Dia A Dia Leve Macio",
-    "category": "Esporte",
+    "category": "Moda & Beleza",
     "price": "R$ 79,96",
     "oldPrice": "R$ 199,90",
     "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rdvp-mbsekzoxgf1650",
@@ -22788,7 +22789,7 @@ export const productsData: Product[] = [
     "id": 1519,
     "idShopee": "21299238183",
     "name": "Conjunto Marinex Jogo de Travessas 7 peças Variadas em Vidro Temperado próprias P/ Forno",
-    "category": "Outros",
+    "category": "Casa & Decoração",
     "price": "R$ 89,88",
     "oldPrice": "R$ 199,90",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m57fl95y7wky8a",
@@ -22803,7 +22804,7 @@ export const productsData: Product[] = [
     "id": 1520,
     "idShopee": "18399243380",
     "name": "Calça Jeans  Balão larga  baggy bag boca lara masculina Clara, preta, streetwear, oversized unissex",
-    "category": "Moda",
+    "category": "Moda & Beleza",
     "price": "R$ 61,98",
     "oldPrice": "R$ 120,00",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lx5kn3pg71cid2",
@@ -22818,7 +22819,7 @@ export const productsData: Product[] = [
     "id": 1521,
     "idShopee": "58251009288",
     "name": "Jogo com 6 Copos de Vidro 350ml – Ideais para Chopp, Whisky, Água, Drinks, Sucos Design Elegante",
-    "category": "Outros",
+    "category": "Casa & Decoração",
     "price": "R$ 18,90",
     "oldPrice": "R$ 29,99",
     "img": "https://down-br.img.susercontent.com/file/sg-11134201-8227w-mhhufpvn1yitbc",
@@ -22833,7 +22834,7 @@ export const productsData: Product[] = [
     "id": 1522,
     "idShopee": "26589050794",
     "name": "Caixa de Som Grande Potente 2 Alto Falante Puxador Rodinha e 2 Mic sem Fio Karaoke",
-    "category": "Outros",
+    "category": "Tecnologia & Eletrônicos",
     "price": "R$ 999,99",
     "oldPrice": "R$ 1099,00",
     "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rdyt-mck1a6kye06i7d",
@@ -22848,7 +22849,7 @@ export const productsData: Product[] = [
     "id": 1523,
     "idShopee": "22297710968",
     "name": "Máquina Seladora Embalagem A Vácuo Portátil Alimentos Bivolt Elétrica Embala Conservação + 10 Sacos",
-    "category": "Outros",
+    "category": "Casa & Decoração",
     "price": "R$ 36,99",
     "oldPrice": "R$ 45,84",
     "img": "https://down-br.img.susercontent.com/file/sg-11134201-7reph-m2lcr68q7ldlc9",
@@ -22863,7 +22864,7 @@ export const productsData: Product[] = [
     "id": 1524,
     "idShopee": "23698003724",
     "name": "Mini Maquina De Donuts Café Da Manhã Capacidade Para 7 Mini Rosquinha Elétrica 110V Portátil",
-    "category": "Outros",
+    "category": "Casa & Decoração",
     "price": "R$ 54,95",
     "oldPrice": "R$ 129,99",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m3xo6m4zdfzsbc",
@@ -22878,7 +22879,7 @@ export const productsData: Product[] = [
     "id": 1525,
     "idShopee": "22298078581",
     "name": "Kit 5 Escovas de Cabelo  + Touca de Cetim – Raquete Fashion, Mágica, Polvo, Massageadora de Silicone",
-    "category": "Outros",
+    "category": "Moda & Beleza",
     "price": "R$ 22,99",
     "oldPrice": "R$ 44,90",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-may3rf8imbnze8",
@@ -22893,7 +22894,7 @@ export const productsData: Product[] = [
     "id": 1526,
     "idShopee": "23897628189",
     "name": "Short Alfaiataria Feminino Social Cintura Alta Com Cinto Com Bolso ENVIO IMEDIATO",
-    "category": "Outros",
+    "category": "Moda & Beleza",
     "price": "R$ 19,90",
     "oldPrice": "R$ 79,90",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m0mbdra1fj3104",
@@ -22908,7 +22909,7 @@ export const productsData: Product[] = [
     "id": 1527,
     "idShopee": "22598544943",
     "name": "Perfume Feminino ÁRABES SABAH AL WARD 100ML Al Wataniah Eau de Parfum Edp Original",
-    "category": "Beleza",
+    "category": "Moda & Beleza",
     "price": "R$ 149,00",
     "oldPrice": "R$ 249,00",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-ma5yywimmow1b5",
@@ -22923,7 +22924,7 @@ export const productsData: Product[] = [
     "id": 1528,
     "idShopee": "23198789124",
     "name": "Kit 10 Pano de Prato Atoalhado Estampado 100% Algodão",
-    "category": "Outros",
+    "category": "Casa & Decoração",
     "price": "R$ 32,50",
     "oldPrice": "R$ 39,90",
     "img": "https://down-br.img.susercontent.com/file/sg-11134201-7rdvk-md0wbc3wep4n07",
@@ -22938,7 +22939,7 @@ export const productsData: Product[] = [
     "id": 1529,
     "idShopee": "22199232722",
     "name": "Polidor Angular Lixadeira de Mão Politriz Pequena 900w Nakasaki multifunções 5 polegadas Potencia",
-    "category": "Outros",
+    "category": "Casa & Decoração",
     "price": "R$ 105,00",
     "oldPrice": "R$ 199,00",
     "img": "https://down-br.img.susercontent.com/file/sg-11134201-82300-mi7aaaq2uuiv72",
@@ -22953,7 +22954,7 @@ export const productsData: Product[] = [
     "id": 1530,
     "idShopee": "10386271122",
     "name": "Purificador de Água Consul Refrigerado CPB34ASVNA Branco Bivolt",
-    "category": "Outros",
+    "category": "Casa & Decoração",
     "price": "R$ 479,99",
     "oldPrice": "R$ 631,25",
     "img": "https://down-br.img.susercontent.com/file/58d864613fa5a61316e3192d32e84f66",
@@ -22968,7 +22969,7 @@ export const productsData: Product[] = [
     "id": 1531,
     "idShopee": "15981817230",
     "name": "Revitalizador De Farol - MÁGICO - Direto da Fábrica",
-    "category": "Automotivo",
+    "category": "Casa & Decoração",
     "price": "R$ 23,24",
     "oldPrice": "R$ 24,98",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81zu8-mkn2edvunugzbe",
@@ -22983,7 +22984,7 @@ export const productsData: Product[] = [
     "id": 1532,
     "idShopee": "22297767438",
     "name": "Camera Externa Ip a Prova D'água Wifi Dupla 2 Em 1 com Visao Noturna C/ Infravermelho monitor-G1",
-    "category": "Tecnologia",
+    "category": "Tecnologia & Eletrônicos",
     "price": "R$ 129,99",
     "oldPrice": "R$ 259,00",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-metgrkrg2br777",
@@ -22998,7 +22999,7 @@ export const productsData: Product[] = [
     "id": 1533,
     "idShopee": "22193674958",
     "name": "Kit 2 pares Tênis Masculino Leve Confortável Academia",
-    "category": "Esporte",
+    "category": "Moda & Beleza",
     "price": "R$ 86,70",
     "oldPrice": "R$ 139,90",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m5ccm54c1jua8b",
@@ -23013,7 +23014,7 @@ export const productsData: Product[] = [
     "id": 1534,
     "idShopee": "18198181375",
     "name": "Quadro Decorativo Arte Religioso Leão De Judá Fé Bíblico Sempre  Foi Deus 122x60",
-    "category": "Outros",
+    "category": "Casa & Decoração",
     "price": "R$ 21,00",
     "oldPrice": "R$ 35,00",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m95vz0nloc8y12",
@@ -23028,7 +23029,7 @@ export const productsData: Product[] = [
     "id": 1535,
     "idShopee": "8703880670",
     "name": "Kit 10pçs Toalhas de Salão de Beleza 45x62cm 100%Algodão Coleção Trip Clean",
-    "category": "Outros",
+    "category": "Casa & Decoração",
     "price": "R$ 48,00",
     "oldPrice": "R$ 71,99",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mf18tz3g28lh4b",
@@ -23043,7 +23044,7 @@ export const productsData: Product[] = [
     "id": 1536,
     "idShopee": "11755238619",
     "name": "Kit 3 Bermuda Moletom Esporte Com Bolso E Elastico Muito Confortavel",
-    "category": "Esporte",
+    "category": "Moda & Beleza",
     "price": "R$ 67,90",
     "oldPrice": "R$ 79,50",
     "img": "https://down-br.img.susercontent.com/file/16fec5bb2317bc00f5d645957b059e8d",
@@ -23058,7 +23059,7 @@ export const productsData: Product[] = [
     "id": 1537,
     "idShopee": "58251111398",
     "name": "Antena Digital Premium com amplificador de sinal ultrafina, interno e externo 4K, HDTV,YHF,UHF,FM",
-    "category": "Tecnologia",
+    "category": "Tecnologia & Eletrônicos",
     "price": "R$ 11,59",
     "oldPrice": "R$ 17,99",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mhjngh0e4f7l6c",
@@ -23073,7 +23074,7 @@ export const productsData: Product[] = [
     "id": 1538,
     "idShopee": "41413855173",
     "name": "Climatizador de Ar Portátil Ventisol CLIN16 16Litros Evaporativo Umidificador Potente Agua Frio 127v ou 220v ventilador",
-    "category": "Outros",
+    "category": "Casa & Decoração",
     "price": "R$ 419,99",
     "oldPrice": "R$ 700,00",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mfucyard0l5101",
@@ -23088,7 +23089,7 @@ export const productsData: Product[] = [
     "id": 1539,
     "idShopee": "22694663438",
     "name": "Panela de Pressão Elétrica Digital 5 litros Preta ou Inox - kian",
-    "category": "Cozinha",
+    "category": "Moda & Beleza",
     "price": "R$ 319,90",
     "oldPrice": "R$ 500,00",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81ztc-mk10g04dmv4317",
@@ -23103,7 +23104,7 @@ export const productsData: Product[] = [
     "id": 1540,
     "idShopee": "23494622547",
     "name": "Conjunto Academia Corrida Treino Poliamida Zero Transparência shorts e Top de Alça",
-    "category": "Esporte",
+    "category": "Moda & Beleza",
     "price": "R$ 79,10",
     "oldPrice": "R$ 129,90",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mgjpwclyeneo3c",
@@ -23118,7 +23119,7 @@ export const productsData: Product[] = [
     "id": 1541,
     "idShopee": "20899761631",
     "name": "Inova Bateria Portátil Power Bank 20.000mah/10.000mah Universal carregador 22,5W Com Displaya Visor do nível da bateria",
-    "category": "Outros",
+    "category": "Tecnologia & Eletrônicos",
     "price": "R$ 89,90",
     "oldPrice": "R$ 219,98",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-manzmd5jc0l56b",
@@ -23133,7 +23134,7 @@ export const productsData: Product[] = [
     "id": 1542,
     "idShopee": "22994289110",
     "name": "Kit Ferro de Solda Regulagem Temperatura 110/220V 60W Ajustável Estanho 6 Pontas Suporte Esponja",
-    "category": "Outros",
+    "category": "Ferramentas & Construção",
     "price": "R$ 15,99",
     "oldPrice": "R$ 30,00",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdizcc4eryyha1",
@@ -23148,7 +23149,7 @@ export const productsData: Product[] = [
     "id": 1543,
     "idShopee": "22494446722",
     "name": "Sapateira Closet Vertical 79x66 Organizadora 12 Pares Calçados Dakota 1.15x95 com Gancho Bolsa",
-    "category": "Moda",
+    "category": "Moda & Beleza",
     "price": "R$ 185,00",
     "oldPrice": "R$ 209,90",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mg6pourcvbicef",
@@ -23163,7 +23164,7 @@ export const productsData: Product[] = [
     "id": 1544,
     "idShopee": "23798108173",
     "name": "KIT SHAMPOO V-FLOC CERA TOK FINAL VEXUS VONIXX PRETINHO VINTEX",
-    "category": "Outros",
+    "category": "Moda & Beleza",
     "price": "R$ 127,76",
     "oldPrice": "R$ 127,76",
     "img": "https://down-br.img.susercontent.com/file/sg-11134201-7ra22-m4l1vwxx3cug46",
@@ -23178,7 +23179,7 @@ export const productsData: Product[] = [
     "id": 1545,
     "idShopee": "23797127405",
     "name": "Mini Compressor de Ar Portatil Recarregavél Digital USB Calibrador Pneu Envio Imediato",
-    "category": "Outros",
+    "category": "Tecnologia & Eletrônicos",
     "price": "R$ 69,99",
     "oldPrice": "R$ 129,99",
     "img": "https://down-br.img.susercontent.com/file/br-11134211-7r98o-lor192hhl5ma45",
@@ -23193,7 +23194,7 @@ export const productsData: Product[] = [
     "id": 1546,
     "idShopee": "22198860522",
     "name": "kIT 2 Cadeira Lua Decorativa Poltrona Lua Sala de Estar Salão Quarto Estética Decoração Recepção",
-    "category": "Casa",
+    "category": "Moda & Beleza",
     "price": "R$ 197,00",
     "oldPrice": "R$ 599,95",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mdyojtby720x29",
@@ -23208,7 +23209,7 @@ export const productsData: Product[] = [
     "id": 1547,
     "idShopee": "22393894186",
     "name": "Carregador de Baterias Automotivo E Motos 12v Inteligente n",
-    "category": "Automotivo",
+    "category": "Tecnologia & Eletrônicos",
     "price": "R$ 49,99",
     "oldPrice": "R$ 98,00",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m89ze80h7i0hfa",
@@ -23223,7 +23224,7 @@ export const productsData: Product[] = [
     "id": 1548,
     "idShopee": "21933057044",
     "name": "Capacete Escamoteavel Pro Tork Attack Evo Brilhante Fechado Viseira Interna Fumê Articulado",
-    "category": "Outros",
+    "category": "Automotivo",
     "price": "R$ 324,95",
     "oldPrice": "R$ 378,84",
     "img": "https://down-br.img.susercontent.com/file/sg-11134201-22100-g0r33mltdtiv1b",
@@ -23238,7 +23239,7 @@ export const productsData: Product[] = [
     "id": 1549,
     "idShopee": "44852505821",
     "name": "Bike Ergométrica 8kg Fitness Treino musculação Academia 120kg Branco com Painel Digital Squeeze",
-    "category": "Esporte",
+    "category": "Tecnologia & Eletrônicos",
     "price": "R$ 624,00",
     "oldPrice": "R$ 1099,99",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mhs6oqnbvxtu3a",
@@ -23253,7 +23254,7 @@ export const productsData: Product[] = [
     "id": 1550,
     "idShopee": "21248114982",
     "name": "Boia infantil de natação colete flutuante  de 1 a 6 anos",
-    "category": "Outros",
+    "category": "Bebês & Infantil",
     "price": "R$ 38,90",
     "oldPrice": "R$ 47,00",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m62wn3jaexf6d6",
@@ -23268,7 +23269,7 @@ export const productsData: Product[] = [
     "id": 1551,
     "idShopee": "40051253882",
     "name": "Synaworld Estilo Americano Novo Bordado l Emenda Chapéu Com Capuz Moletom",
-    "category": "Outros",
+    "category": "Moda & Beleza",
     "price": "R$ 184,10",
     "oldPrice": "R$ 184,10",
     "img": "https://down-br.img.susercontent.com/file/cn-11134207-7ras8-m9vdnz6fqg7m66",
@@ -23283,7 +23284,7 @@ export const productsData: Product[] = [
     "id": 1552,
     "idShopee": "20899335444",
     "name": "KIT SHAMPOO V-FLOC CERA TOK FINAL VEXUS VONIXX PRETINHO VINTEX",
-    "category": "Outros",
+    "category": "Moda & Beleza",
     "price": "R$ 117,92",
     "oldPrice": "R$ 117,92",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81ztc-mj8x0iafz6rqfd",
@@ -23298,7 +23299,7 @@ export const productsData: Product[] = [
     "id": 1553,
     "idShopee": "23794217292",
     "name": "CHINELA SLIDE MASCULINO EVA PALMILHA REMOVÍVEL CONFORTO MACIO ANATÔMICO LEVE ANTIDERRAPANTE ORTOPÉDICO",
-    "category": "Outros",
+    "category": "Moda & Beleza",
     "price": "R$ 63,68",
     "oldPrice": "R$ 68,90",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81ztc-mk9m00k22qdfe7",
@@ -23313,7 +23314,7 @@ export const productsData: Product[] = [
     "id": 1554,
     "idShopee": "23497583106",
     "name": "Air Fryer Fritadeira Elétrica Digital Extream 4,3L",
-    "category": "Cozinha",
+    "category": "Tecnologia & Eletrônicos",
     "price": "R$ 314,80",
     "oldPrice": "R$ 489,00",
     "img": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mid7bqa04jk1a0",
@@ -23328,7 +23329,7 @@ export const productsData: Product[] = [
     "id": 1555,
     "idShopee": "47603604805",
     "name": "Palmilha de sapato Palmilha de sapato branca",
-    "category": "Outros",
+    "category": "Moda & Beleza",
     "price": "R$ 320,00",
     "oldPrice": "R$ 320,00",
     "img": "https://down-br.img.susercontent.com/file/cn-11134207-820l4-mf4g0xjqpwqz47",
@@ -23343,7 +23344,7 @@ export const productsData: Product[] = [
     "id": 1556,
     "idShopee": "22894519217",
     "name": "Kit de Calcinhas Fio Duplo Levanta Bumbum Fio Dental Confortável Forro em Algodão Sensual",
-    "category": "Outros",
+    "category": "Casa & Decoração",
     "price": "R$ 33,99",
     "oldPrice": "R$ 115,90",
     "img": "https://down-br.img.susercontent.com/file/sg-11134201-824h7-mfo5xv07vitmdc",
