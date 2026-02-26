@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ChevronDown } from 'lucide-react';
 
 const categories = [
@@ -35,6 +35,16 @@ const FilterBar: React.FC<FilterBarProps> = ({
   activeCategory, onSelectCategory, activeStore, onSelectStore, maxPrice, onMaxPriceChange 
 }) => {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+
+  // ✅ LER CATEGORIA DA URL
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const cat = params.get('cat');
+
+    if (cat) {
+      onSelectCategory(cat);
+    }
+  }, []);
 
   return (
     // Ajustado para flex-wrap e centralização
