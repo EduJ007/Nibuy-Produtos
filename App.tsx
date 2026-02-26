@@ -36,6 +36,17 @@ const App: React.FC = () => {
     return () => clearInterval(interval);
   }, []);
 
+  useEffect(() => {
+  if (window.location.hash === '#produtos') {
+    setTimeout(() => {
+      const el = document.getElementById('produtos');
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 300); // espera renderizar
+  }
+}, []);
+
   const parsePrice = (pStr: string) =>
     parseFloat(pStr.replace('R$', '').replace('.', '').replace(',', '.').trim());
 
