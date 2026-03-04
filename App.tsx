@@ -33,20 +33,31 @@ const App: React.FC = () => {
 
   // --- TIMER ---
   const [timeLeft, setTimeLeft] = useState({ h: 0, m: 0, s: 0 });
+
   useEffect(() => {
-    const tick = () => {
+    const updateTimer = () => {
+      // 1. Pega a hora atual exata em Brasília
       const now = new Date();
-      setTimeLeft({
-        h: 23 - now.getHours(),
-        m: 59 - now.getMinutes(),
-        s: 59 - now.getSeconds(),
-      });
+      const brasiliaTime = new Date(now.toLocaleString("en-US", {timeZone: "America/Sao_Paulo"}));
+      
+      // 2. Define o ponto de reset (Próxima meia-noite)
+      const nextReset = new Date(brasiliaTime);
+      nextReset.setHours(24, 0, 0, 0); 
+
+      // 3. Calcula a diferença real
+      const diff = nextReset.getTime() - brasiliaTime.getTime();
+
+      const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const m = Math.floor((diff / (1000 * 60)) % 60);
+      const s = Math.floor((diff / 1000) % 60);
+      
+      setTimeLeft({ h, m, s });
     };
-    tick();
-    const interval = setInterval(tick, 1000);
+
+    updateTimer();
+    const interval = setInterval(updateTimer, 1000);
     return () => clearInterval(interval);
   }, []);
-
   // --- FILTRO E ORDENAÇÃO PRINCIPAL ---
   const filteredProducts = useMemo(() => {
     let result = [...productsData];
