@@ -15,7 +15,8 @@ const stores = ['Todas', 'Shopee', 'Mercado Livre', 'Amazon', 'Magalu'];
 const sortOptions = [
   { label: 'Padrão', value: 'default' },
   { label: 'Mais Vendidos 🔥', value: 'sales' },
-  { label: 'Menor Preço 💸', value: 'price_asc' }
+  { label: 'Menor Preço 💸', value: 'price_asc' },
+  { label: 'Ofertas Relâmpago ⚡', value: 'flash' }
 ];
 
 interface FilterBarProps {
@@ -40,7 +41,7 @@ const FilterBar: React.FC<FilterBarProps> = ({
   const activeSortLabel = sortOptions.find(o => o.value === sortBy)?.label || 'Padrão';
 
   return (
-    <div className="flex flex-wrap justify-center items-start gap-4 md:gap-6 mb-10 w-full max-w-[1300px] mx-auto">
+    <div className="flex flex-wrap justify-center items-start gap-4 md:gap-6 mb-2 w-full max-w-[1300px] mx-auto">
       
       {/* CATEGORIA */}
       <div className="flex flex-col items-center w-full sm:w-[220px]">
@@ -92,14 +93,13 @@ const FilterBar: React.FC<FilterBarProps> = ({
 
       {/* ORDENAR POR (MAIS VENDIDOS) */}
       <div className="flex flex-col items-center w-full sm:w-[220px]">
-        <span className="text-sm font-black text-black uppercase tracking-tighter mb-2">Ordenar</span>
+        <span className="text-sm font-black text-black uppercase tracking-tighter mb-2">Tipo</span>
         <div className="relative w-full">
           <button 
             onClick={() => setOpenDropdown(openDropdown === 'sort' ? null : 'sort')}
             className="w-full flex items-center justify-between px-4 py-2.5 bg-white border-2 border-gray-100 rounded-xl font-bold text-gray-700 hover:border-orange-500 transition-all shadow-sm"
           >
-            <span className="truncate">{activeSortLabel}</span>
-            <TrendingUp size={16} className="text-orange-500" />
+            <span className="whitespace-nowrap">{activeSortLabel}</span>
           </button>
           {openDropdown === 'sort' && (
             <div className="absolute top-[110%] left-0 w-full bg-white border border-gray-100 rounded-xl shadow-2xl z-50 p-2">

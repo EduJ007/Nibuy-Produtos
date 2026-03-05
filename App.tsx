@@ -88,14 +88,18 @@ const App: React.FC = () => {
     }
 
     // 6. ORDENAÇÃO (O que você queria!)
-    if (sortBy === 'sales') {
-      result.sort((a, b) => parseSales(b.sold) - parseSales(a.sold));
-    } else if (sortBy === 'price_asc') {
-      result.sort((a, b) => parsePrice(a.price) - parsePrice(b.price));
-    } else {
-      // Padrão: Ordem aleatória estável baseada no ID para não ficar pulando
-      result.sort((a, b) => a.id - b.id);
-    }
+if (sortBy === 'flash') {
+  result = result.filter(p => p.isFlashSale);
+} 
+else if (sortBy === 'sales') {
+  result.sort((a, b) => parseSales(b.sold) - parseSales(a.sold));
+} 
+else if (sortBy === 'price_asc') {
+  result.sort((a, b) => parsePrice(a.price) - parsePrice(b.price));
+} 
+else {
+  result.sort((a, b) => a.id - b.id);
+}
 
     return result;
   }, [searchTerm, activeCategory, activeStore, maxPrice, onlyFlash, sortBy]);
@@ -204,16 +208,6 @@ const App: React.FC = () => {
             sortBy={sortBy}
             onSortChange={setSortBy}
           />
-
-          <label className="flex items-center gap-2 bg-orange-50 px-4 py-2 rounded-xl cursor-pointer font-bold text-orange-600 border border-orange-100 hover:bg-orange-100 transition-colors">
-            <input
-              type="checkbox"
-              checked={onlyFlash}
-              onChange={() => setOnlyFlash(!onlyFlash)}
-              className="w-4 h-4 accent-[#ff5722]"
-            />
-            ⚡ Ofertas Relâmpago
-          </label>
         </div>
 
         {/* GRID DE PRODUTOS */}
