@@ -137,30 +137,21 @@ else {
   useEffect(() => {
   const params = new URLSearchParams(window.location.search);
 
-  const flash = params.get("flash");
-  const sort = params.get("sort");
-  const official = params.get("official");
-
-  if (flash === "true") {
-    setOnlyFlash(true);
-  }
+  const sort = params.get('sort');
 
   if (sort) {
     setSortBy(sort);
   }
 
-  if (official === "true") {
-    setActiveStore("Shopee");
-  }
-
-  if (window.location.hash === "#produtos") {
-    const element = document.getElementById("produtos");
+  if (window.location.hash === "#filtros") {
+    const element = document.getElementById("filtros");
     if (element) {
       setTimeout(() => {
         element.scrollIntoView({ behavior: "smooth" });
       }, 300);
     }
   }
+
 }, []);
 
   return (
