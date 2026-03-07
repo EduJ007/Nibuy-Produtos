@@ -14,9 +14,11 @@ const stores = ['Todas', 'Shopee', 'Mercado Livre', 'Amazon', 'Magalu'];
 // Opções de ordenação
 const sortOptions = [
   { label: 'Padrão', value: 'default' },
+  { label: 'Recomendados ⭐', value: 'recomend' },
+  { label: 'Achadinhos 🪙', value: 'deals' },
+  { label: 'Ofertas Relâmpago ⚡', value: 'flash' },
   { label: 'Mais Vendidos 🔥', value: 'sales' },
-  { label: 'Menor Preço 💸', value: 'price_asc' },
-  { label: 'Ofertas Relâmpago ⚡', value: 'flash' }
+  { label: 'Mais Baratos 💸', value: 'price_asc' }
 ];
 
 interface FilterBarProps {
@@ -96,11 +98,15 @@ const FilterBar: React.FC<FilterBarProps> = ({
         <span className="text-sm font-black text-black uppercase tracking-tighter mb-2">Tipo</span>
         <div className="relative w-full">
           <button 
-            onClick={() => setOpenDropdown(openDropdown === 'sort' ? null : 'sort')}
-            className="w-full flex items-center justify-between px-4 py-2.5 bg-white border-2 border-gray-100 rounded-xl font-bold text-gray-700 hover:border-orange-500 transition-all shadow-sm"
-          >
-            <span className="whitespace-nowrap">{activeSortLabel}</span>
-          </button>
+                onClick={() => setOpenDropdown(openDropdown === 'sort' ? null : 'sort')}
+                className="w-full flex items-center justify-between px-4 py-2.5 bg-white border-2 border-gray-100 rounded-xl font-bold text-gray-700 hover:border-orange-500 transition-all shadow-sm"
+              >
+                <span className="whitespace-nowrap">{activeSortLabel}</span>
+                <ChevronDown 
+                  size={16} 
+                  className={`transition-transform ${openDropdown === 'sort' ? 'rotate-180' : ''}`} 
+                />
+              </button>
           {openDropdown === 'sort' && (
             <div className="absolute top-[110%] left-0 w-full bg-white border border-gray-100 rounded-xl shadow-2xl z-50 p-2">
               {sortOptions.map(opt => (

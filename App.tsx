@@ -91,6 +91,21 @@ const App: React.FC = () => {
 if (sortBy === 'flash') {
   result = result.filter(p => p.isFlashSale);
 } 
+else if (sortBy === 'recomend') {
+  result = result
+    .filter(p => parseSales(p.sold) >= 1000 && (p.rating || 0) >= 4.5)
+    .sort((a, b) => parseSales(b.sold) - parseSales(a.sold));
+}
+else if (sortBy === 'deals') {
+  result = result
+    .filter(p => {
+      const price = parsePrice(p.price);
+      const rating = p.rating || 0;
+
+      return price <= 50 && rating >= 4.5;
+    })
+    .sort((a, b) => parsePrice(a.price) - parsePrice(b.price));
+}
 else if (sortBy === 'sales') {
   result.sort((a, b) => parseSales(b.sold) - parseSales(a.sold));
 } 
