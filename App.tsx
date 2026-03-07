@@ -104,14 +104,8 @@ else {
     return result;
   }, [searchTerm, activeCategory, activeStore, maxPrice, onlyFlash, sortBy]);
 
-useEffect(() => {
-  const params = new URLSearchParams(window.location.search);
-  const flash = params.get("flash");
 
-  if (flash === "true") {
-    setFlashOnly(true); // ativa o filtro de ofertas relâmpago
-  }
-}, []);
+
 
   // --- SCROLL INFINITO ---
   useEffect(() => {
@@ -141,33 +135,33 @@ useEffect(() => {
   }, []);
 
   useEffect(() => {
-  // Captura os parâmetros da URL
   const params = new URLSearchParams(window.location.search);
-  const sort = params.get('sort');
-  const official = params.get('official');
 
-  // Se na URL tiver ?sort=sales, muda o estado de ordenação
+  const flash = params.get("flash");
+  const sort = params.get("sort");
+  const official = params.get("official");
+
+  if (flash === "true") {
+    setOnlyFlash(true);
+  }
+
   if (sort) {
     setSortBy(sort);
   }
 
-  // Se na URL tiver ?official=true, podemos ativar um filtro de oficiais
-  // (Ou você pode setar para uma loja específica se preferir)
-  if (official === 'true') {
-    setActiveStore('Shopee'); // Exemplo: Lojas oficiais geralmente estão na Shopee/ML
-    // Se você tiver o campo isOfficial nos dados, pode criar um setOnlyOfficial(true)
+  if (official === "true") {
+    setActiveStore("Shopee");
   }
 
-  // Se o link tiver #produtos, ele desce a tela suavemente
-  if (window.location.hash === '#produtos') {
-    const element = document.getElementById('produtos');
+  if (window.location.hash === "#produtos") {
+    const element = document.getElementById("produtos");
     if (element) {
       setTimeout(() => {
-        element.scrollIntoView({ behavior: 'smooth' });
+        element.scrollIntoView({ behavior: "smooth" });
       }, 300);
     }
   }
-}, [window.location.search, window.location.hash]); // Roda sempre que a URL mudar
+}, []);
 
   return (
     <div className="min-h-screen bg-gray-200">
