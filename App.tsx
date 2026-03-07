@@ -104,6 +104,15 @@ else {
     return result;
   }, [searchTerm, activeCategory, activeStore, maxPrice, onlyFlash, sortBy]);
 
+useEffect(() => {
+  const params = new URLSearchParams(window.location.search);
+  const flash = params.get("flash");
+
+  if (flash === "true") {
+    setFlashOnly(true); // ativa o filtro de ofertas relâmpago
+  }
+}, []);
+
   // --- SCROLL INFINITO ---
   useEffect(() => {
     const observer = new IntersectionObserver(
