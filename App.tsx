@@ -148,7 +148,7 @@ else {
     if (element) {
       setTimeout(() => {
         element.scrollIntoView({ behavior: "smooth" });
-      }, 300);
+      }, 200);
     }
   }
 
