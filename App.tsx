@@ -182,12 +182,19 @@ else {
               <h2 className="text-white text-xl md:text-3xl font-black italic uppercase italic">
                 ⚡ Ofertas Relâmpago
               </h2>
-              <div className="flex gap-2">
-                {[timeLeft.h, timeLeft.m, timeLeft.s].map((unit, i) => (
-                  <div key={i} className="bg-white text-[#ff5722] px-3 py-2 rounded-lg font-black shadow-md">
-                    {unit.toString().padStart(2, '0')}
-                  </div>
-                ))}
+              <div className="flex items-center gap-2">
+  {[timeLeft.h, timeLeft.m, timeLeft.s].map((unit, i) => (
+    <React.Fragment key={i}>
+      <div className="bg-white text-[#ff5722] px-3 py-2 rounded-lg font-black shadow-md">
+        {unit.toString().padStart(2, "0")}
+      </div>
+
+      {i < 2 && (
+        <span className="text-white font-black text-xl">:</span>
+      )}
+    </React.Fragment>
+  ))}
+</div>
               </div>
             </div>
 
@@ -198,7 +205,7 @@ else {
                 </div>
               ))}
             </div>
-          </div>
+
         </section>
 
         <GeminiRecommendation products={filteredProducts} />
@@ -206,7 +213,7 @@ else {
         <h1 className="text-3xl font-black text-gray-900 mb-8 mt-12">🔥 Descobertas do Dia</h1>
 
         {/* BARRA DE FILTROS */}
-        <div className="flex flex-col md:flex-row items-center justify-between mb-8 gap-6 bg-white p-4 rounded-2xl shadow-sm">
+        <div className="flex flex-col md:flex-row items-center justify-between mb-8 gap-6 p-4">
           <FilterBar
             activeCategory={activeCategory}
             onSelectCategory={setActiveCategory}
