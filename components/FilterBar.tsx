@@ -43,7 +43,7 @@ const FilterBar: React.FC<FilterBarProps> = ({
   const activeSortLabel = sortOptions.find(o => o.value === sortBy)?.label || 'Padrão';
 
   return (
-    <div id="filtros" className="flex flex-wrap justify-center items-start gap-4 md:gap-6 mb-2 w-full max-w-[1300px] mx-auto">
+    <div id="filtros" className="flex flex-wrap justify-center items-start gap-4 md:gap-6 mb-2 w-full max-w-[1300px] mx-auto mt-12">
       
       {/* CATEGORIA */}
       <div className="flex flex-col items-center w-full sm:w-[220px]">
