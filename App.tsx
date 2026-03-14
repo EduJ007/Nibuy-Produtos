@@ -15,7 +15,10 @@ const parseSales = (sold: string) => {
 
 const parsePrice = (price: string | number) => {
   if (typeof price === 'number') return price;
-  return parseFloat(price.replace('R$', '').replace('.', '').replace(',', '.')) || 0;
+  if (!price) return 0;
+  // Remove tudo que não é número, ponto ou vírgula, e trata a vírgula brasileira
+  const cleanPrice = price.toString().replace('R$', '').replace(/\s/g, '').replace('.', '').replace(',', '.');
+  return parseFloat(cleanPrice) || 0;
 };
 
 // ------------------ APP ------------------
@@ -74,24 +77,34 @@ const App: React.FC = () => {
   const filteredProducts = useMemo(() => {
     let result = [...productsData];
 
+    // Filtro por termo de busca
     if (searchTerm) {
       result = result.filter(p => p.name.toLowerCase().includes(searchTerm.toLowerCase()));
     }
+
+    // Filtro por Categoria
     if (activeCategory !== 'Todos') {
       result = result.filter(p => p.category === activeCategory);
     }
+
+    // --- CORREÇÃO AQUI: FILTRO DE PREÇO ---
+    if (maxPrice && maxPrice > 0) {
+      result = result.filter(p => parsePrice(p.price) <= maxPrice);
+    }
+
+    // Filtro Flash Sale
     if (onlyFlash || sortBy === 'flash') {
       result = result.filter(p => p.isFlashSale);
     }
 
-    // Sorts específicos
+    // --- CORREÇÃO AQUI: SORT E RECOMENDADOS ---
     if (sortBy === 'recomend') {
       result = result
-        .filter(p => parseSales(p.sold) >= 1000 && (p.rating || 0) >= 4.5)
+        .filter(p => (p.rating || 0) >= 4.0) // Reduzi de 4.5 para 4.0 para aparecerem mais itens
         .sort((a, b) => parseSales(b.sold) - parseSales(a.sold));
     } else if (sortBy === 'deals') {
       result = result
-        .filter(p => parsePrice(p.price) <= 50 && (p.rating || 0) >= 4.5)
+        .filter(p => parsePrice(p.price) <= 100) // Ajustado para achadinhos ate 100 reais
         .sort((a, b) => parsePrice(a.price) - parsePrice(b.price));
     } else if (sortBy === 'sales') {
       result.sort((a, b) => parseSales(b.sold) - parseSales(a.sold));
@@ -100,8 +113,8 @@ const App: React.FC = () => {
     }
 
     return result;
-  }, [searchTerm, activeCategory, onlyFlash, sortBy]);
-
+    // Adicionei maxPrice nas dependências para o React perceber a mudança
+  }, [searchTerm, activeCategory, onlyFlash, sortBy, maxPrice]);
   // Resetar página ao filtrar
   useEffect(() => {
     setCurrentPage(1);
@@ -136,7 +149,7 @@ const App: React.FC = () => {
       <div className="min-h-screen bg-gray-200">
         <Navbar onSearch={setSearchTerm} />
 
-        <main className="pt-24 pb-20 px-4 max-w-[1700px] mx-auto">
+        <main className="pt-24 pb-20 px-4 max-w-[1630px] mx-auto">
           
           {/* SEÇÃO OFERTA RELÂMPAGO */}
           <section className="bg-white mt-6 w-full rounded-2xl shadow-sm border border-gray-300 overflow-hidden mb-12">
