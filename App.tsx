@@ -1,256 +1,253 @@
-import React, { useState, useMemo, useEffect, useRef } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import FilterBar from './components/FilterBar';
 import ProductCard from './components/ProductCard';
-import GeminiRecommendation from './components/GeminiRecommendation';
 import Footer from './components/footer';
 import PageLoader from "./components/PageLoader";
 import { productsData } from './products';
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from './firebase';
 
 // ------------------ FUNÇÕES AUXILIARES ------------------
-const parseSales = (sold: string) => {
+const parseSales = (sold: string | number) => {
   if (!sold) return 0;
-  return parseInt(sold.replace(/\D/g, '')) || 0;
+  if (typeof sold === 'number') return sold;
+  const cleanSold = sold.toLowerCase().trim().replace(/\./g, '');
+  if (cleanSold.includes('k')) {
+    const num = parseFloat(cleanSold.replace('k', '').replace(',', '.'));
+    return num * 1000;
+  }
+  return parseInt(cleanSold.replace(/\D/g, '')) || 0;
 };
 
 const parsePrice = (price: string | number) => {
   if (typeof price === 'number') return price;
   if (!price) return 0;
-  // Remove tudo que não é número, ponto ou vírgula, e trata a vírgula brasileira
   const cleanPrice = price.toString().replace('R$', '').replace(/\s/g, '').replace('.', '').replace(',', '.');
   return parseFloat(cleanPrice) || 0;
 };
 
-// ------------------ APP ------------------
 const App: React.FC = () => {
-  // Estados de Filtro
+  const [user, setUser] = useState<any>(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [activeCategory, setActiveCategory] = useState('Todos');
   const [activeStore, setActiveStore] = useState('Todas');
-  const [maxPrice, setMaxPrice] = useState(1000);
+  const [maxPrice, setMaxPrice] = useState<any>('');
   const [sortBy, setSortBy] = useState('default');
-  const [onlyFlash, setOnlyFlash] = useState(false);
-
-  // Estados de Dados e Loading
-  const [flashProducts, setFlashProducts] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [pageLoading, setPageLoading] = useState(false);
-  const [timeLeft, setTimeLeft] = useState({ h: 0, m: 0, s: 0 });
-
-  // Estados de Paginação
   const [currentPage, setCurrentPage] = useState(1);
   const productsPerPage = 24;
 
-  // 1. Setup Inicial e Flash Sales
+  // 1. Auth e URL Params
   useEffect(() => {
-    const flash = productsData
-      .filter(p => p.isFlashSale)
-      .slice(0, 6);
-    setFlashProducts(flash);
-
-    setTimeout(() => setLoading(false), 1000);
+    const unsubscribe = onAuthStateChanged(auth, (firebaseUser) => setUser(firebaseUser));
+    const params = new URLSearchParams(window.location.search);
+    const searchFromUrl = params.get('search');
+    if (searchFromUrl) {
+      setSearchTerm(decodeURIComponent(searchFromUrl));
+      window.history.replaceState({}, '', window.location.pathname);
+    }
+    return () => unsubscribe();
   }, []);
 
-  // 2. Timer Brasília
+  // 2. Loader Inicial
   useEffect(() => {
-    const updateTimer = () => {
-      const now = new Date();
-      const target = new Date();
-      target.setHours(23, 59, 59, 999);
-      
-      const diff = target.getTime() - now.getTime();
-      if (diff > 0) {
-        setTimeLeft({
-          h: Math.floor((diff / (1000 * 60 * 60)) % 24),
-          m: Math.floor((diff / 1000 / 60) % 60),
-          s: Math.floor((diff / 1000) % 60)
-        });
-      }
-    };
-
-    updateTimer();
-    const interval = setInterval(updateTimer, 1000);
-    return () => clearInterval(interval);
+    setTimeout(() => setLoading(false), 800);
   }, []);
 
-  // 3. Lógica de Filtro
+  // 3. Lógica de Filtro e Ordenação (Maior p/ Menor Vendas)
   const filteredProducts = useMemo(() => {
     let result = [...productsData];
 
-    // Filtro por termo de busca
     if (searchTerm) {
-      result = result.filter(p => p.name.toLowerCase().includes(searchTerm.toLowerCase()));
+      const term = searchTerm.toLowerCase();
+      result = result.filter(p => p.name.toLowerCase().includes(term));
     }
-
-    // Filtro por Categoria
     if (activeCategory !== 'Todos') {
       result = result.filter(p => p.category === activeCategory);
     }
-
-    // --- CORREÇÃO AQUI: FILTRO DE PREÇO ---
+    if (activeStore !== 'Todas') {
+      result = result.filter(p => p.store === activeStore);
+    }
     if (maxPrice && maxPrice > 0) {
-      result = result.filter(p => parsePrice(p.price) <= maxPrice);
+      result = result.filter(p => parsePrice(p.price) <= parseFloat(maxPrice));
     }
 
-    // Filtro Flash Sale
-    if (onlyFlash || sortBy === 'flash') {
-      result = result.filter(p => p.isFlashSale);
+    if (sortBy !== 'default') {
+      result.sort((a, b) => {
+        switch (sortBy) {
+          case 'recomend':
+            return (b.rating || 0) - (a.rating || 0);
+          case 'deals':
+            const discA = a.oldPrice ? (parsePrice(a.oldPrice) - parsePrice(a.price)) : 0;
+            const discB = b.oldPrice ? (parsePrice(b.oldPrice) - parsePrice(b.price)) : 0;
+            return discB - discA;
+          case 'sales':
+            return parseSales(b.sold) - parseSales(a.sold); // DO MAIOR PARA O MENOR
+          case 'price_asc':
+            return parsePrice(a.price) - parsePrice(b.price);
+          default:
+            return 0;
+        }
+      });
     }
-
-    // --- CORREÇÃO AQUI: SORT E RECOMENDADOS ---
-    if (sortBy === 'recomend') {
-      result = result
-        .filter(p => (p.rating || 0) >= 4.0) // Reduzi de 4.5 para 4.0 para aparecerem mais itens
-        .sort((a, b) => parseSales(b.sold) - parseSales(a.sold));
-    } else if (sortBy === 'deals') {
-      result = result
-        .filter(p => parsePrice(p.price) <= 100) // Ajustado para achadinhos ate 100 reais
-        .sort((a, b) => parsePrice(a.price) - parsePrice(b.price));
-    } else if (sortBy === 'sales') {
-      result.sort((a, b) => parseSales(b.sold) - parseSales(a.sold));
-    } else if (sortBy === 'price_asc') {
-      result.sort((a, b) => parsePrice(a.price) - parsePrice(b.price));
-    }
-
     return result;
-    // Adicionei maxPrice nas dependências para o React perceber a mudança
-  }, [searchTerm, activeCategory, onlyFlash, sortBy, maxPrice]);
-  // Resetar página ao filtrar
-  useEffect(() => {
-    setCurrentPage(1);
-  }, [searchTerm, activeCategory, sortBy, maxPrice]);
+  }, [searchTerm, activeCategory, activeStore, sortBy, maxPrice]);
 
-  // 4. Cálculos de Paginação
+  useEffect(() => { setCurrentPage(1); }, [searchTerm, activeCategory, activeStore, sortBy, maxPrice]);
+
   const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
-  const startIndex = (currentPage - 1) * productsPerPage;
-  const visibleProducts = filteredProducts.slice(startIndex, startIndex + productsPerPage);
-
-  const pagesPerGroup = 5;
-  const currentGroup = Math.floor((currentPage - 1) / pagesPerGroup);
-  const startPage = currentGroup * pagesPerGroup + 1;
-  const endPage = Math.min(startPage + pagesPerGroup - 1, totalPages);
-
-  const visiblePages = [];
-  for (let i = startPage; i <= endPage; i++) {
-    visiblePages.push(i);
-  }
+  const visibleProducts = filteredProducts.slice((currentPage - 1) * productsPerPage, currentPage * productsPerPage);
 
   const changePage = (page: number) => {
-    if (page < 1 || page > totalPages) return;
     setPageLoading(true);
     setTimeout(() => {
       setCurrentPage(page);
       setPageLoading(false);
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }, 400);
   };
 
+  if (loading) return <PageLoader />;
+
   return (
-      <div className="min-h-screen bg-gray-200">
-        <Navbar onSearch={setSearchTerm} />
+    <div className="min-h-screen bg-gray-200">
+      <Navbar onSearch={setSearchTerm} />
 
-        <main className="pt-24 pb-20 px-4 max-w-[1630px] mx-auto">
-          
-          {/* SEÇÃO OFERTA RELÂMPAGO */}
-          <section className="bg-white mt-6 w-full rounded-2xl shadow-sm border border-gray-300 overflow-hidden mb-12">
-            <div className="flex items-center justify-between px-6 py-4 border-b border-gray-300 bg-gray-50">
-              <h2 className="text-[#ff5722] text-2xl font-bold">⚡ Ofertas  Relâmpago</h2>
-              <div className="flex items-center gap-2">
-                {[timeLeft.h, timeLeft.m, timeLeft.s].map((unit, i) => (
-                  <React.Fragment key={i}>
-                    <div className="bg-black text-white px-3 py-2 rounded-md font-bold text-sm">
-                      {unit.toString().padStart(2, "0")}
-                    </div>
-                    {i < 2 && <span className="font-bold text-gray-600">:</span>}
-                  </React.Fragment>
-                ))}
-              </div>
-            </div>
+      {/* CONTAINER PRINCIPAL COM SIDEBAR */}
+      <main className="flex flex-col md:flex-row min-h-screen w-full">
+  
+  {/* BARRA LATERAL: Altura total e colada na esquerda */}
+  <aside className="w-full md:w-72 lg:w-80 shrink-0 bg-white border-r border-gray-300 z-10">
+    {/* O h-full e o sticky garantem que ele preencha a altura e acompanhe o scroll */}
+    <div className="sticky top-0 h-screen overflow-y-auto p-6 pt-24 md:pt-28">
+      <div className="flex items-center gap-3 mb-8">
+        <div className="w-2 h-8 bg-[#ff5722] rounded-full"></div>
+        <h2 className="text-black font-black text-2xl uppercase tracking-tighter">
+          Filtros
+        </h2>
+      </div>
+      
+      <FilterBar
+        activeCategory={activeCategory}
+        onSelectCategory={setActiveCategory}
+        activeStore={activeStore}
+        onSelectStore={setActiveStore}
+        maxPrice={maxPrice}
+        onMaxPriceChange={setMaxPrice}
+        sortBy={sortBy}
+        onSortChange={setSortBy}
+      />
 
-           <div className="p-6">
-              <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide">
-                {flashProducts.map((product) => (
-                  <div 
-                    key={product.id} 
-                    className="min-w-[240px] bg-white rounded-2xl p-2 shadow-md border border-gray-100 transition-all hover:border-[#ff5722] hover:shadow-lg cursor-pointer"
-                  >
-                    <ProductCard product={product} />
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
+      <div className="mt-10 pt-6 border-t border-gray-100">
+        <button 
+          onClick={() => {/* Sua lógica de reset */}}
+          className="w-full py-3 rounded-xl bg-gray-50 text-gray-500 font-bold hover:bg-[#ff5722] hover:text-white transition-all uppercase text-xs tracking-widest"
+        >
+          Limpar Tudo
+        </button>
+      </div>
+    </div>
+  </aside>
 
-          <GeminiRecommendation products={filteredProducts} />
+  {/* CONTEÚDO PRINCIPAL */}
+  <section className="flex-1 flex flex-col pt-24 md:pt-28 pb-20 px-4 md:px-10">
+    
+    {/* HEADER DA LISTAGEM */}
+    <div className="mt-4 w-full max-w-[1400px] mx-auto">
+      <div className="bg-white border-b-4 border-[#ff5722] py-5 mb-8 shadow-sm px-6 flex justify-center">
+      <h2 className="text-[#ff5722] tracking-[0.15em] font-black text-lg md:text-xl uppercase italic">
+        Lista de Produtos
+      </h2>
+      </div>
+    </div>
 
-          {/* FILTROS */}
-          <div id="filtros" className="mt-12">
-            <FilterBar
-              activeCategory={activeCategory}
-              onSelectCategory={setActiveCategory}
-              activeStore={activeStore}
-              onSelectStore={setActiveStore}
-              maxPrice={maxPrice}
-              onMaxPriceChange={setMaxPrice}
-              sortBy={sortBy}
-              onSortChange={setSortBy}
-            />
-          </div>
-
-          {/* GRID DE PRODUTOS */}
-          <div id="produtos" className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 mt-8">
-            {pageLoading ? (
-              <div className="col-span-full flex justify-center items-center py-20">
-                <PageLoader />
-              </div>
-            ) : (
-              visibleProducts.map((product) => (
-                <div 
-                  key={product.id} 
-                  className="bg-white rounded-xl p-2 border border-transparent transition-all hover:border-[#ff5722] hover:shadow-md cursor-pointer"
-                >
-                  <ProductCard product={product} />
-                </div>
-              ))
-            )}
-          </div>
-
-          {/* PAGINAÇÃO */}
-          {totalPages > 1 && (
-            <div className="flex justify-center items-center gap-2 mt-12 flex-wrap">
-              <button
-                onClick={() => changePage(currentPage - 1)}
-                disabled={currentPage === 1}
-                className="px-4 py-2 bg-[#ff5722] text-white rounded-lg disabled:hidden"
-              >
-                ❮
-              </button>
-
-              {visiblePages.map((page) => (
-                <button
-                  key={page}
-                  onClick={() => changePage(page)}
-                  className={`px-4 py-2 rounded-lg font-bold transition-colors ${
-                    currentPage === page ? "bg-[#ff5722] text-white" : "bg-white text-gray-700 hover:bg-gray-100"
-                  }`}
-                >
-                  {page}
-                </button>
+    {/* GRID DE PRODUTOS (4 colunas - 24 itens) */}
+    <div className="w-full max-w-[1400px] mx-auto flex-1">
+      {pageLoading ? (
+        <div className="flex justify-center items-center h-[50vh]">
+          <PageLoader />
+        </div>
+      ) : (
+        <>
+          {filteredProducts.length > 0 ? (
+            <div id="produtos" className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-7">
+              {visibleProducts.map((product) => (
+                <ProductCard key={product.id} product={product} />
               ))}
-
-              <button
-                onClick={() => changePage(currentPage + 1)}
-                disabled={currentPage === totalPages}
-                className="px-4 py-2 bg-[#ff5722] text-white rounded-lg disabled:opacity-40"
-              >
-                ❯
-              </button>
+            </div>
+          ) : (
+            <div className="flex flex-col items-center justify-center py-40 bg-white rounded-[3rem] border-2 border-dashed border-gray-100 italic text-gray-300">
+              <p className="font-bold text-xl">Nenhum produto por aqui...</p>
             </div>
           )}
-        </main>
+        </>
+      )}
 
-        <Footer />
-      </div>
+      {/* PAGINAÇÃO */}
+      {totalPages > 1 && (
+  <div className="flex justify-center items-center gap-2 md:gap-3 mt-20 mb-10">
+    
+    {/* Botão Anterior */}
+    <button
+      onClick={() => changePage(currentPage - 1)}
+      disabled={currentPage === 1}
+      className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center bg-white border border-gray-200 rounded-lg shadow-sm disabled:opacity-30 hover:bg-gray-50 transition-all"
+    >
+      <span className="text-gray-400 font-bold">❮</span>
+    </button>
+
+    {/* Números das Páginas */}
+    <div className="flex items-center gap-2">
+      {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => {
+        // Lógica básica para não mostrar 50 botões se tiver muita página
+        if (
+          page === 1 || 
+          page === totalPages || 
+          (page >= currentPage - 1 && page <= currentPage + 1)
+        ) {
+          return (
+            <button
+              key={page}
+              onClick={() => changePage(page)}
+              className={`w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-lg font-black text-sm transition-all shadow-md
+                ${currentPage === page 
+                  ? 'bg-[#ff5722] text-white shadow-[#ff5722]/30 -translate-y-1' 
+                  : 'bg-white border border-gray-200 text-gray-600 hover:border-[#ff5722] hover:text-[#ff5722]'
+                }`}
+            >
+              {page}
+            </button>
+          );
+        }
+
+        // Mostrar "..." se necessário
+        if (page === currentPage - 2 || page === currentPage + 2) {
+          return <span key={page} className="text-gray-400 font-bold px-1">...</span>;
+        }
+
+        return null;
+      })}
+    </div>
+
+    {/* Botão Próximo */}
+    <button
+      onClick={() => changePage(currentPage + 1)}
+      disabled={currentPage === totalPages}
+      className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center bg-white border border-gray-200 rounded-lg shadow-sm disabled:opacity-30 hover:bg-gray-50 transition-all"
+    >
+      <span className="text-gray-400 font-bold">❯</span>
+    </button>
+
+  </div>
+)}
+    </div>
+  </section>
+</main>
+
+      <Footer />
+    </div>
   );
 };
 

@@ -43,7 +43,7 @@ const FilterBar: React.FC<FilterBarProps> = ({
   const activeSortLabel = sortOptions.find(o => o.value === sortBy)?.label || 'Padrão';
 
   return (
-    <div id="filtros" className="flex flex-wrap justify-center items-start gap-4 md:gap-6 mb-2 w-full max-w-[1300px] mx-auto mt-12">
+    <div id="filtros" className="flex flex-wrap justify-center items-start gap-4 md:gap-6 mb-2 w-full max-w-[1300px] mx-auto mt-16">
       
       {/* CATEGORIA */}
       <div className="flex flex-col items-center w-full sm:w-[220px]">
@@ -51,7 +51,7 @@ const FilterBar: React.FC<FilterBarProps> = ({
         <div className="relative w-full">
           <button 
             onClick={() => setOpenDropdown(openDropdown === 'cat' ? null : 'cat')}
-            className="w-full flex items-center justify-between px-4 py-2.5 bg-white border-2 border-gray-100 rounded-xl font-bold text-gray-700 hover:border-[#ff5722] transition-all shadow-sm"
+            className="w-full flex items-center justify-between px-4 py-2.5 bg-white border-2 border-gray-200 rounded-xl font-bold text-gray-700 hover:border-[#ff5722] transition-all shadow-sm"
           >
             <span className="truncate">{activeCategory}</span>
             <ChevronDown size={16} className={`transition-transform ${openDropdown === 'cat' ? 'rotate-180' : ''}`} />
@@ -75,7 +75,7 @@ const FilterBar: React.FC<FilterBarProps> = ({
         <div className="relative w-full">
           <button 
             onClick={() => setOpenDropdown(openDropdown === 'store' ? null : 'store')}
-            className="w-full flex items-center justify-between px-4 py-2.5 bg-white border-2 border-gray-100 rounded-xl font-bold text-gray-700 hover:border-[#ff5722] transition-all shadow-sm"
+            className="w-full flex items-center justify-between px-4 py-2.5 bg-white border-2 border-gray-200 rounded-xl font-bold text-gray-700 hover:border-[#ff5722] transition-all shadow-sm"
           >
             <span className="truncate">{activeStore}</span>
             <ChevronDown size={16} className={`transition-transform ${openDropdown === 'store' ? 'rotate-180' : ''}`} />
@@ -99,7 +99,7 @@ const FilterBar: React.FC<FilterBarProps> = ({
         <div className="relative w-full">
           <button 
                 onClick={() => setOpenDropdown(openDropdown === 'sort' ? null : 'sort')}
-                className="w-full flex items-center justify-between px-4 py-2.5 bg-white border-2 border-gray-100 rounded-xl font-bold text-gray-700 hover:border-orange-500 transition-all shadow-sm"
+                className="w-full flex items-center justify-between px-4 py-2.5 bg-white border-2 border-gray-200 rounded-xl font-bold text-gray-700 hover:border-orange-500 transition-all shadow-sm"
               >
                 <span className="whitespace-nowrap">{activeSortLabel}</span>
                 <ChevronDown 
@@ -127,10 +127,10 @@ const FilterBar: React.FC<FilterBarProps> = ({
           <span className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 font-black text-xs">R$</span>
           <input
             type="number"
-            value={maxPrice}
+            value={maxPrice || ''} // Se for 0 ou nulo, fica vazio
             onChange={(e) => onMaxPriceChange(e.target.value)}
             placeholder="Ex: 50"
-            className="w-full pl-10 pr-4 py-2.5 bg-white border-2 border-gray-100 rounded-xl font-bold text-gray-800 focus:outline-none focus:border-[#ff5722] transition-all shadow-sm text-sm"
+            className="w-full pl-10 pr-4 py-2.5 bg-white border-2 border-gray-200 rounded-xl font-bold text-gray-800 focus:outline-none focus:border-[#ff5722] transition-all shadow-sm text-sm"
           />
         </div>
       </div>

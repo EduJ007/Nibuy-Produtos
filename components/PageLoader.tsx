@@ -2,17 +2,15 @@ import React from "react";
 
 const PageLoader: React.FC = () => {
   return (
-    <div className="flex flex-col items-center justify-center py-20 gap-3 col-span-full">
+     <div className="w-full h-screen flex flex-col items-center justify-center bg-white gap-4">
 
-      <h2 className="text-2xl font-black text-[#ff5722]">
-        Nibuy
-      </h2>
+        <h1 className="text-4xl font-black text-[#ff5722]">
+          Nibuy
+        </h1>
 
-      <p className="text-gray-600 font-semibold">
-        Carregando...
-      </p>
+        <div className="w-10 h-10 border-4 border-gray-300 border-t-[#ff5722] rounded-full animate-spin"></div>
 
-    </div>
+      </div>
   );
 };
 

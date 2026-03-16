@@ -12,7 +12,12 @@ const ProductCard: React.FC<{ product: any }> = ({ product }) => {
   const store = getStoreInfo(product.link);
 
   return (
-    <div className="group bg-white rounded-xl border border-gray-100 overflow-hidden hover:shadow-md transition-all duration-200 flex flex-col h-full relative">
+    <div className="
+    group relative bg-white rounded-xl overflow-hidden 
+    transition-all duration-300 ease-in-out
+    border-2 border-transparent 
+    hover:border-[#ff5722] hover:shadow-xl
+     flex flex-col h-full relative">
       
       {/* Badge Discreta de Oferta Relâmpago */}
       {product.isFlashSale && (
@@ -22,7 +27,7 @@ const ProductCard: React.FC<{ product: any }> = ({ product }) => {
       )}
 
       {/* Imagem com respiro (sem ficar gigante) */}
-      <div className="aspect-square relative overflow-hidden bg-white p-4">
+      <div className="relative overflow-hidden bg-white p-2">
         <img 
           src={product.img} 
           alt={product.name} 
