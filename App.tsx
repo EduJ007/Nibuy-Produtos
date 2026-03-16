@@ -4,6 +4,7 @@ import FilterBar from './components/FilterBar';
 import ProductCard from './components/ProductCard';
 import Footer from './components/footer';
 import PageLoader from "./components/PageLoader";
+import StartScreen from "./components/StartScreen";
 import { productsData } from './products';
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from './firebase';
@@ -40,8 +41,12 @@ const App: React.FC = () => {
   const productsPerPage = 24;
 
   // 1. Auth e URL Params
-  useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (firebaseUser) => setUser(firebaseUser));
+ useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (firebaseUser) => {
+      setUser(firebaseUser);
+      setLoading(false); // <--- IMPORTANTE: Avisa que terminou de checar o login
+    });
+
     const params = new URLSearchParams(window.location.search);
     const searchFromUrl = params.get('search');
     if (searchFromUrl) {
@@ -49,11 +54,6 @@ const App: React.FC = () => {
       window.history.replaceState({}, '', window.location.pathname);
     }
     return () => unsubscribe();
-  }, []);
-
-  // 2. Loader Inicial
-  useEffect(() => {
-    setTimeout(() => setLoading(false), 800);
   }, []);
 
   // 3. Lógica de Filtro e Ordenação (Maior p/ Menor Vendas)
@@ -108,9 +108,12 @@ const App: React.FC = () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }, 400);
   };
+ if (loading) return <PageLoader />;
 
-  if (loading) return <PageLoader />;
+  // Se o Firebase respondeu e o usuário é nulo (não logado), mostra o Login
+  if (!user) return <StartScreen />;
 
+  // Se chegou aqui, é porque tem usuário logado! O site de produtos carrega abaixo:
   return (
     <div className="min-h-screen bg-gray-200">
       <Navbar onSearch={setSearchTerm} />
