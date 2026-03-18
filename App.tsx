@@ -43,20 +43,31 @@ const App: React.FC = () => {
   const productsPerPage = 24;
 
   // 1. Auth e URL Params
-  useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (firebaseUser) => {
-      setUser(firebaseUser);
-      setLoading(false);
-    });
+ useEffect(() => {
+  const unsubscribe = onAuthStateChanged(auth, (firebaseUser) => {
+    setUser(firebaseUser);
+    setLoading(false);
+  });
 
-    const params = new URLSearchParams(window.location.search);
-    const searchFromUrl = params.get('search');
-    if (searchFromUrl) {
-      setSearchTerm(decodeURIComponent(searchFromUrl));
-      window.history.replaceState({}, '', window.location.pathname);
-    }
-    return () => unsubscribe();
-  }, []);
+  const params = new URLSearchParams(window.location.search);
+  
+  // Captura a busca
+  const searchFromUrl = params.get('search');
+  if (searchFromUrl) {
+    setSearchTerm(decodeURIComponent(searchFromUrl));
+  }
+
+  // NOVO: Captura a ordenação (Recomendados, Mais vendidos, etc)
+  const sortFromUrl = params.get('sort');
+  if (sortFromUrl) {
+    setSortBy(sortFromUrl);
+  }
+
+  // Opcional: limpa a URL após ler para ficar "bonito"
+  // window.history.replaceState({}, '', window.location.pathname);
+
+  return () => unsubscribe();
+}, []);
 
   // 2. Lógica de Filtro e Ordenação
   const filteredProducts = useMemo(() => {
