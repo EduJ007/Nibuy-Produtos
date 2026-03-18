@@ -72,39 +72,100 @@ const App: React.FC = () => {
   }, []);
 
   // 2. Lógica de Filtro e Ordenação
+  const parseSales = (sold: string | number) => {
+  if (!sold) return 0;
+  if (typeof sold === 'number') return sold;
+  
+  // Limpa a string: "1.2k vendidos" -> "12k" -> "1.2"
+  const cleanSold = sold.toLowerCase().trim()
+    .replace('vendidos', '')
+    .replace('unidades', '')
+    .replace(/\s/g, '');
+
+  if (cleanSold.includes('k')) {
+    // Trata "1.2k" ou "1,2k"
+    const num = parseFloat(cleanSold.replace('k', '').replace(',', '.'));
+    return num * 1000;
+  }
+  if (cleanSold.includes('m')) {
+    // Trata "1.1m" para milhões
+    const num = parseFloat(cleanSold.replace('m', '').replace(',', '.'));
+    return num * 1000000;
+  }
+  // Remove pontos de milhar comuns (ex: 1.500 -> 1500) antes de converter
+  return parseInt(cleanSold.replace(/\./g, '').replace(/\D/g, '')) || 0;
+};
+
+const parsePrice = (price: string | number | undefined | null) => {
+  if (typeof price === 'number') return price;
+  if (!price) return 0;
+  const cleanPrice = price.toString()
+    .replace('R$', '')
+    .replace(/\s/g, '')
+    .replace(/\./g, '') 
+    .replace(',', '.');
+  return parseFloat(cleanPrice) || 0;
+};
+
+const App: React.FC = () => {
+  // ... (mantenha os states iguais)
+
+  // 2. Lógica de Filtro e Ordenação
   const filteredProducts = useMemo(() => {
     let result = [...productsData];
 
-    // --- FILTROS DE TEXTO/CATEGORIA ---
+    // --- 1. FILTROS GLOBAIS (Sempre ativos) ---
     if (searchTerm) {
       const term = searchTerm.toLowerCase();
       result = result.filter(p => p.name.toLowerCase().includes(term));
     }
-    
-    // NOVO: Se for Oferta Relâmpago, mostra APENAS quem tem oldPrice (ou uma flag específica)
-    if (sortBy === 'flash') {
-      result = result.filter(p => p.oldPrice && parsePrice(p.oldPrice) > parsePrice(p.price));
-    }
-
     if (activeCategory !== 'Todos') {
       result = result.filter(p => p.category === activeCategory);
     }
-    // ... resto dos filtros (Store, MaxPrice)
+    if (activeStore !== 'Todas') {
+      result = result.filter(p => p.store === activeStore);
+    }
+    if (maxPrice && maxPrice > 0) {
+      result = result.filter(p => parsePrice(p.price) <= parseFloat(maxPrice));
+    }
 
-    // --- ORDENAÇÃO ---
+    // --- 2. FILTROS DE MODO (Relâmpago / Achadinhos) ---
+    // Se for Oferta Relâmpago, mostra APENAS quem tem desconto
+    if (sortBy === 'flash') {
+      result = result.filter(p => p.oldPrice && parsePrice(p.oldPrice) > parsePrice(p.price));
+    }
+    
+    // Se for Achadinhos, mostra APENAS quem tem mais de 15% de desconto
+    if (sortBy === 'deals') {
+      result = result.filter(p => {
+        const p1 = parsePrice(p.price);
+        const p2 = parsePrice(p.oldPrice);
+        if (!p2) return false;
+        const discount = (p2 - p1) / p2;
+        return discount >= 0.15; // Filtra apenas descontos reais acima de 15%
+      });
+    }
+
+    // --- 3. ORDENAÇÃO FINAL ---
     if (sortBy !== 'default') {
       result.sort((a, b) => {
         switch (sortBy) {
           case 'recomend':
             return (b.rating || 0) - (a.rating || 0);
-          case 'deals': // Achadinhos: Maior % de desconto
-            const descA = a.oldPrice ? (parsePrice(a.oldPrice) - parsePrice(a.price)) / parsePrice(a.oldPrice) : 0;
-            const descB = b.oldPrice ? (parsePrice(b.oldPrice) - parsePrice(b.price)) / parsePrice(b.oldPrice) : 0;
+          
+          case 'deals': // Ordena pelo maior desconto percentual
+            const descA = (parsePrice(a.oldPrice) - parsePrice(a.price)) / parsePrice(a.oldPrice);
+            const descB = (parsePrice(b.oldPrice) - parsePrice(b.price)) / parsePrice(b.oldPrice);
             return descB - descA;
-          case 'flash': // Ofertas Relâmpago: Do mais barato para o mais caro (dentro das ofertas)
+
+          case 'flash': // Ordena pelo menor preço (mais barato primeiro)
             return parsePrice(a.price) - parsePrice(b.price);
-          case 'sales':
-            return parseSales(b.sold) - parseSales(a.sold);
+
+          case 'sales': // CORRIGIDO: Maior para o Menor
+            const soldA = parseSales(a.sold);
+            const soldB = parseSales(b.sold);
+            return soldB - soldA; // Invertido para mostrar os milhões primeiro
+
           case 'price_asc':
             return parsePrice(a.price) - parsePrice(b.price);
           default:
@@ -112,6 +173,7 @@ const App: React.FC = () => {
         }
       });
     }
+
     return result;
   }, [searchTerm, activeCategory, activeStore, sortBy, maxPrice]);
 
