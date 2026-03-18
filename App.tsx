@@ -111,71 +111,87 @@ const App: React.FC = () => {
   // ... (mantenha os states iguais)
 
   // 2. Lógica de Filtro e Ordenação
-  const filteredProducts = useMemo(() => {
-    let result = [...productsData];
+ const parseSales = (sold: string | number) => {
+  if (!sold) return 0;
+  if (typeof sold === 'number') return sold;
+  
+  const cleanSold = sold.toLowerCase().trim()
+    .replace('vendidos', '')
+    .replace('unidades', '')
+    .replace('+', '')
+    .replace(/\s/g, '');
 
-    // --- 1. FILTROS GLOBAIS (Sempre ativos) ---
-    if (searchTerm) {
-      const term = searchTerm.toLowerCase();
-      result = result.filter(p => p.name.toLowerCase().includes(term));
-    }
-    if (activeCategory !== 'Todos') {
-      result = result.filter(p => p.category === activeCategory);
-    }
-    if (activeStore !== 'Todas') {
-      result = result.filter(p => p.store === activeStore);
-    }
-    if (maxPrice && maxPrice > 0) {
-      result = result.filter(p => parsePrice(p.price) <= parseFloat(maxPrice));
-    }
+  if (cleanSold.includes('m')) {
+    return parseFloat(cleanSold.replace('m', '').replace(',', '.')) * 1000000;
+  }
+  if (cleanSold.includes('k') || cleanSold.includes('mil')) {
+    return parseFloat(cleanSold.replace('k', '').replace('mil', '').replace(',', '.')) * 1000;
+  }
+  
+  return parseInt(cleanSold.replace(/\./g, '').replace(/\D/g, '')) || 0;
+};
 
-    // --- 2. FILTROS DE MODO (Relâmpago / Achadinhos) ---
-    // Se for Oferta Relâmpago, mostra APENAS quem tem desconto
-    if (sortBy === 'flash') {
-      result = result.filter(p => p.oldPrice && parsePrice(p.oldPrice) > parsePrice(p.price));
-    }
-    
-    // Se for Achadinhos, mostra APENAS quem tem mais de 15% de desconto
-    if (sortBy === 'deals') {
-      result = result.filter(p => {
-        const p1 = parsePrice(p.price);
-        const p2 = parsePrice(p.oldPrice);
-        if (!p2) return false;
-        const discount = (p2 - p1) / p2;
-        return discount >= 0.15; // Filtra apenas descontos reais acima de 15%
-      });
-    }
+// 2. Atualize a lógica de Filtro e Ordenação
+const filteredProducts = useMemo(() => {
+  let result = [...productsData];
 
-    // --- 3. ORDENAÇÃO FINAL ---
-    if (sortBy !== 'default') {
-      result.sort((a, b) => {
-        switch (sortBy) {
-          case 'recomend':
-            return (b.rating || 0) - (a.rating || 0);
+  // --- FILTROS DE BUSCA E CATEGORIA (Sempre rodam) ---
+  if (searchTerm) {
+    const term = searchTerm.toLowerCase();
+    result = result.filter(p => p.name.toLowerCase().includes(term));
+  }
+  if (activeCategory !== 'Todos') {
+    result = result.filter(p => p.category === activeCategory);
+  }
+
+  // --- 1. IDEA NOVA: RECOMENDADOS (Nota > 4.5 e Vendas > 100) ---
+  if (sortBy === 'recomend') {
+    result = result.filter(p => (p.rating || 0) >= 4.5 && parseSales(p.sold) >= 100);
+  }
+
+  // --- 2. IDEA NOVA: OFERTAS RELÂMPAGO (Usa a flag do seu products.ts) ---
+  if (sortBy === 'flash') {
+    result = result.filter(p => p.isFlashSale === true);
+  }
+
+  // --- FILTRO ACHADINHOS (Mínimo 15% de desconto) ---
+  if (sortBy === 'deals') {
+    result = result.filter(p => {
+      const pCurrent = parsePrice(p.price);
+      const pOld = parsePrice(p.oldPrice);
+      if (!pOld) return false;
+      return ((pOld - pCurrent) / pOld) >= 0.15;
+    });
+  }
+
+  // --- ORDENAÇÃO FINAL ---
+  if (sortBy !== 'default') {
+    result.sort((a, b) => {
+      switch (sortBy) {
+        case 'recomend': // Melhores notas primeiro
+          return (b.rating || 0) - (a.rating || 0);
+        
+        case 'sales': // CORRIGIDO: Do maior para o menor
+          return parseSales(b.sold) - parseSales(a.sold);
+
+        case 'deals': // Maiores descontos primeiro
+          const descA = (parsePrice(a.oldPrice) - parsePrice(a.price)) / parsePrice(a.oldPrice);
+          const descB = (parsePrice(b.oldPrice) - parsePrice(b.price)) / parsePrice(b.oldPrice);
+          return descB - descA;
+
+        case 'flash': // Mais baratos da oferta primeiro
+          return parsePrice(a.price) - parsePrice(b.price);
+
+        case 'price_asc':
+          return parsePrice(a.price) - parsePrice(b.price);
           
-          case 'deals': // Ordena pelo maior desconto percentual
-            const descA = (parsePrice(a.oldPrice) - parsePrice(a.price)) / parsePrice(a.oldPrice);
-            const descB = (parsePrice(b.oldPrice) - parsePrice(b.price)) / parsePrice(b.oldPrice);
-            return descB - descA;
-
-          case 'flash': // Ordena pelo menor preço (mais barato primeiro)
-            return parsePrice(a.price) - parsePrice(b.price);
-
-          case 'sales': // CORRIGIDO: Maior para o Menor
-            const soldA = parseSales(a.sold);
-            const soldB = parseSales(b.sold);
-            return soldB - soldA; // Invertido para mostrar os milhões primeiro
-
-          case 'price_asc':
-            return parsePrice(a.price) - parsePrice(b.price);
-          default:
-            return 0;
-        }
-      });
-    }
-
-    return result;
-  }, [searchTerm, activeCategory, activeStore, sortBy, maxPrice]);
+        default:
+          return 0;
+      }
+    });
+  }
+  return result;
+}, [searchTerm, activeCategory, activeStore, sortBy, maxPrice]);
 
   useEffect(() => { setCurrentPage(1); }, [searchTerm, activeCategory, activeStore, sortBy, maxPrice]);
 
