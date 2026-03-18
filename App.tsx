@@ -21,10 +21,15 @@ const parseSales = (sold: string | number) => {
   return parseInt(cleanSold.replace(/\D/g, '')) || 0;
 };
 
-const parsePrice = (price: string | number) => {
+const parsePrice = (price: string | number | undefined | null) => {
   if (typeof price === 'number') return price;
   if (!price) return 0;
-  const cleanPrice = price.toString().replace('R$', '').replace(/\s/g, '').replace('.', '').replace(',', '.');
+  // Remove R$, espaços, pontos de milhar e troca vírgula por ponto
+  const cleanPrice = price.toString()
+    .replace('R$', '')
+    .replace(/\s/g, '')
+    .replace(/\./g, '') // Remove o ponto de milhar (ex: 1.000 -> 1000)
+    .replace(',', '.'); // Troca a vírgula decimal por ponto
   return parseFloat(cleanPrice) || 0;
 };
 
