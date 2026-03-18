@@ -1,4 +1,5 @@
 import React from 'react';
+import { Instagram, Facebook, Music2 } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -13,8 +14,23 @@ const Footer: React.FC = () => {
             Sua vitrine inteligente de ofertas. Encontramos os melhores preços e você finaliza a compra com total segurança nas maiores lojas do Brasil.
           </p>
           
-          <div className="flex gap-3 mt-6">
-            {/* Ícones do Instagram, WhatsApp e E-mail aqui conforme seu código */}
+           <div className="flex gap-4 mt-6">
+            {/* INSTAGRAM */}
+            <a href="https://instagram.com/nibuyoficial" target="_blank" rel="noopener noreferrer" 
+              className="w-10 h-10 bg-white/5 rounded-full border border-white/10 flex items-center justify-center hover:bg-[#ff5722] transition-all duration-300 group">
+              <Instagram size={18} className="group-hover:scale-110 transition-transform" />
+            </a>
+            
+            {/* FACEBOOK */}
+            <a href="https://www.facebook.com/profile.php?id=61583962855568" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/5 rounded-full border border-white/10 flex items-center justify-center hover:bg-[#4267B2] transition-all duration-300 group">
+              <Facebook size={18} className="group-hover:scale-110 transition-transform" />
+            </a>
+
+            {/* PINTEREST (NO LUGAR DA MÚSICA) */}
+            <a href="https://pin.it/hFv1x89A5" target="_blank" rel="noopener noreferrer" 
+              className="w-10 h-10 bg-white/5 rounded-full border border-white/10 flex items-center justify-center hover:bg-red-600 transition-all duration-300 group">
+              <i className="fa-brands fa-pinterest text-[18px] group-hover:scale-110 transition-transform"></i>
+            </a>
           </div>
         </div>
 
@@ -22,8 +38,9 @@ const Footer: React.FC = () => {
           <h4 className="font-bold mb-6 text-white uppercase text-xs tracking-widest">Navegação</h4>
           <ul className="space-y-4 text-gray-400 text-sm font-medium">
             <li><a href="https://nibuy-home-page.vercel.app/" className="hover:text-[#ff5722] transition-colors">Início</a></li>
-            <li><a href="https://nibuy-about-us.vercel.app/" target="_blank" className="hover:text-[#ff5722] transition-colors">Sobre Nós</a></li>
-            <li><a href="https://nibuy-help-center.vercel.app/" target="_blank" className="hover:text-[#ff5722] transition-colors">Central de Ajuda</a></li>
+            <li><a href="https://nibuy-about-us.vercel.app/" className="hover:text-[#ff5722] transition-colors">Sobre Nós</a></li>
+            <li><a href="https://nibuy-central-ajuda.vercel.app/" className="hover:text-[#ff5722] transition-colors">Central de Ajuda</a></li>
+            <li><a href="https://nibuy-contact.vercel.app/" className="hover:text-[#ff5722] transition-colors">Contato</a></li>
           </ul>
         </div>
 

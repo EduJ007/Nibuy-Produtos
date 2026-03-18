@@ -138,15 +138,17 @@ const App: React.FC = () => {
         
         {/* ASIDE / SIDEBAR ADAPTADA */}
         <aside className={`
-          fixed inset-y-0 left-0 z-50 w-72 bg-white shadow-2xl transform transition-transform duration-300 ease-in-out
+          fixed inset-y-0 left-0 z-[70] w-72 bg-white shadow-2xl transform transition-transform duration-300 ease-in-out
           md:relative md:translate-x-0 md:shadow-none md:z-10 md:w-72 lg:w-80 shrink-0 border-r border-gray-300
           ${isFilterOpen ? 'translate-x-0' : '-translate-x-full'}
         `}>
-          <div className="sticky top-0 h-screen overflow-y-auto p-6 pt-10 md:pt-28">
+          {/* Ajustado pt-32 para o título "Filtros" não sumir atrás da Navbar no Desktop */}
+          <div className="sticky top-0 h-screen overflow-y-auto p-6 pt-32 md:pt-36">
+            
             {/* Botão Fechar (Só Mobile) */}
             <button 
               onClick={() => setIsFilterOpen(false)}
-              className="md:hidden absolute top-4 right-4 text-gray-400 hover:text-[#ff5722]"
+              className="md:hidden absolute top-24 right-4 text-gray-400 hover:text-[#ff5722]"
             >
               <span className="text-2xl font-bold">✕</span>
             </button>
@@ -183,7 +185,7 @@ const App: React.FC = () => {
         {/* CONTEÚDO PRINCIPAL */}
         <section className="flex-1 flex flex-col pt-24 md:pt-28 pb-20 px-4 md:px-10">
           
-          <div className="mt-4 w-full max-w-[1400px] mx-auto">
+          <div className="mt-10 w-full max-w-[1400px] mx-auto">
             <div className="bg-white border-b-4 border-[#ff5722] py-5 mb-8 shadow-sm px-6 flex justify-center">
               <h2 className="text-[#ff5722] tracking-[0.15em] font-black text-lg md:text-xl uppercase italic">
                 Lista de Produtos
