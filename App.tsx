@@ -75,33 +75,34 @@ const App: React.FC = () => {
   const filteredProducts = useMemo(() => {
     let result = [...productsData];
 
+    // --- FILTROS DE TEXTO/CATEGORIA ---
     if (searchTerm) {
       const term = searchTerm.toLowerCase();
       result = result.filter(p => p.name.toLowerCase().includes(term));
     }
+    
+    // NOVO: Se for Oferta Relâmpago, mostra APENAS quem tem oldPrice (ou uma flag específica)
+    if (sortBy === 'flash') {
+      result = result.filter(p => p.oldPrice && parsePrice(p.oldPrice) > parsePrice(p.price));
+    }
+
     if (activeCategory !== 'Todos') {
       result = result.filter(p => p.category === activeCategory);
     }
-    if (activeStore !== 'Todas') {
-      result = result.filter(p => p.store === activeStore);
-    }
-    if (maxPrice && maxPrice > 0) {
-      result = result.filter(p => parsePrice(p.price) <= parseFloat(maxPrice));
-    }
+    // ... resto dos filtros (Store, MaxPrice)
 
-   if (sortBy !== 'default') {
+    // --- ORDENAÇÃO ---
+    if (sortBy !== 'default') {
       result.sort((a, b) => {
         switch (sortBy) {
           case 'recomend':
             return (b.rating || 0) - (a.rating || 0);
-          case 'deals': // Achadinhos (maior desconto em valor real)
-            const discA = a.oldPrice ? (parsePrice(a.oldPrice) - parsePrice(a.price)) : 0;
-            const discB = b.oldPrice ? (parsePrice(b.oldPrice) - parsePrice(b.price)) : 0;
-            return discB - discA;
-          case 'flash': // Ofertas Relâmpago (mesma lógica de achadinhos ou sua preferência)
-            const flashA = a.oldPrice ? (parsePrice(a.oldPrice) - parsePrice(a.price)) : 0;
-            const flashB = b.oldPrice ? (parsePrice(b.oldPrice) - parsePrice(b.price)) : 0;
-            return flashB - flashA;
+          case 'deals': // Achadinhos: Maior % de desconto
+            const descA = a.oldPrice ? (parsePrice(a.oldPrice) - parsePrice(a.price)) / parsePrice(a.oldPrice) : 0;
+            const descB = b.oldPrice ? (parsePrice(b.oldPrice) - parsePrice(b.price)) / parsePrice(b.oldPrice) : 0;
+            return descB - descA;
+          case 'flash': // Ofertas Relâmpago: Do mais barato para o mais caro (dentro das ofertas)
+            return parsePrice(a.price) - parsePrice(b.price);
           case 'sales':
             return parseSales(b.sold) - parseSales(a.sold);
           case 'price_asc':
