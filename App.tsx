@@ -43,31 +43,28 @@ const App: React.FC = () => {
   const productsPerPage = 24;
 
   // 1. Auth e URL Params
- useEffect(() => {
-  const unsubscribe = onAuthStateChanged(auth, (firebaseUser) => {
-    setUser(firebaseUser);
-    setLoading(false);
-  });
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (firebaseUser) => {
+      setUser(firebaseUser);
+      setLoading(false);
+    });
 
-  const params = new URLSearchParams(window.location.search);
-  
-  // Captura a busca
-  const searchFromUrl = params.get('search');
-  if (searchFromUrl) {
-    setSearchTerm(decodeURIComponent(searchFromUrl));
-  }
+    const params = new URLSearchParams(window.location.search);
+    
+    // Pega o termo de busca
+    const searchFromUrl = params.get('search');
+    if (searchFromUrl) setSearchTerm(decodeURIComponent(searchFromUrl));
 
-  // NOVO: Captura a ordenação (Recomendados, Mais vendidos, etc)
-  const sortFromUrl = params.get('sort');
-  if (sortFromUrl) {
-    setSortBy(sortFromUrl);
-  }
+    // Pega a ordenação (IMPORTANTE: Isso faz o "Recomendados", "Flash", etc funcionar)
+    const sortFromUrl = params.get('sort');
+    if (sortFromUrl) setSortBy(sortFromUrl);
 
-  // Opcional: limpa a URL após ler para ficar "bonito"
-  // window.history.replaceState({}, '', window.location.pathname);
+    // Pega a categoria (caso venha de outro link)
+    const catFromUrl = params.get('cat');
+    if (catFromUrl) setActiveCategory(catFromUrl);
 
-  return () => unsubscribe();
-}, []);
+    return () => unsubscribe();
+  }, []);
 
   // 2. Lógica de Filtro e Ordenação
   const filteredProducts = useMemo(() => {
@@ -87,15 +84,19 @@ const App: React.FC = () => {
       result = result.filter(p => parsePrice(p.price) <= parseFloat(maxPrice));
     }
 
-    if (sortBy !== 'default') {
+   if (sortBy !== 'default') {
       result.sort((a, b) => {
         switch (sortBy) {
           case 'recomend':
             return (b.rating || 0) - (a.rating || 0);
-          case 'deals':
+          case 'deals': // Achadinhos (maior desconto em valor real)
             const discA = a.oldPrice ? (parsePrice(a.oldPrice) - parsePrice(a.price)) : 0;
             const discB = b.oldPrice ? (parsePrice(b.oldPrice) - parsePrice(b.price)) : 0;
             return discB - discA;
+          case 'flash': // Ofertas Relâmpago (mesma lógica de achadinhos ou sua preferência)
+            const flashA = a.oldPrice ? (parsePrice(a.oldPrice) - parsePrice(a.price)) : 0;
+            const flashB = b.oldPrice ? (parsePrice(b.oldPrice) - parsePrice(b.price)) : 0;
+            return flashB - flashA;
           case 'sales':
             return parseSales(b.sold) - parseSales(a.sold);
           case 'price_asc':
