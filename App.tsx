@@ -133,65 +133,79 @@ const App: React.FC = () => {
 
 // 2. Atualize a lógica de Filtro e Ordenação
 const filteredProducts = useMemo(() => {
-  let result = [...productsData];
+    let result = [...productsData];
 
-  // --- FILTROS DE BUSCA E CATEGORIA (Sempre rodam) ---
-  if (searchTerm) {
-    const term = searchTerm.toLowerCase();
-    result = result.filter(p => p.name.toLowerCase().includes(term));
-  }
-  if (activeCategory !== 'Todos') {
-    result = result.filter(p => p.category === activeCategory);
-  }
+    // --- 1. FILTROS GLOBAIS ---
+    if (searchTerm) {
+      const term = searchTerm.toLowerCase();
+      result = result.filter(p => p.name.toLowerCase().includes(term));
+    }
+    
+    if (activeCategory !== 'Todos') {
+      result = result.filter(p => p.category === activeCategory);
+    }
 
-  // --- 1. IDEA NOVA: RECOMENDADOS (Nota > 4.5 e Vendas > 100) ---
-  if (sortBy === 'recomend') {
-    result = result.filter(p => (p.rating || 0) >= 4.5 && parseSales(p.sold) >= 100);
-  }
+    if (activeStore && activeStore !== 'Todas') {
+      result = result.filter(p => p.store === activeStore);
+    }
 
-  // --- 2. IDEA NOVA: OFERTAS RELÂMPAGO (Usa a flag do seu products.ts) ---
-  if (sortBy === 'flash') {
-    result = result.filter(p => p.isFlashSale === true);
-  }
+    // --- 2. FILTROS DE MODO (Regras Específicas) ---
+    
+    // RECOMENDADOS: Nota >= 4.5 e Vendas >= 100
+    if (sortBy === 'recomend') {
+      result = result.filter(p => (p.rating || 0) >= 4.5 && parseSales(p.sold) >= 100);
+    }
 
-  // --- FILTRO ACHADINHOS (Mínimo 15% de desconto) ---
-  if (sortBy === 'deals') {
-    result = result.filter(p => {
-      const pCurrent = parsePrice(p.price);
-      const pOld = parsePrice(p.oldPrice);
-      if (!pOld) return false;
-      return ((pOld - pCurrent) / pOld) >= 0.15;
-    });
-  }
+    // OFERTAS RELÂMPAGO: Somente quem tem a flag isFlashSale como true
+    if (sortBy === 'flash') {
+      result = result.filter(p => p.isFlashSale === true);
+    }
 
-  // --- ORDENAÇÃO FINAL ---
-  if (sortBy !== 'default') {
-    result.sort((a, b) => {
-      switch (sortBy) {
-        case 'recomend': // Melhores notas primeiro
-          return (b.rating || 0) - (a.rating || 0);
-        
-        case 'sales': // CORRIGIDO: Do maior para o menor
-          return parseSales(b.sold) - parseSales(a.sold);
+    // ACHADINHOS: Somente descontos reais (acima de 15%)
+    if (sortBy === 'deals') {
+      result = result.filter(p => {
+        const pCurrent = parsePrice(p.price);
+        const pOld = parsePrice(p.oldPrice);
+        if (!pOld || pOld <= pCurrent) return false;
+        const discount = (pOld - pCurrent) / pOld;
+        return discount >= 0.15;
+      });
+    }
 
-        case 'deals': // Maiores descontos primeiro
-          const descA = (parsePrice(a.oldPrice) - parsePrice(a.price)) / parsePrice(a.oldPrice);
-          const descB = (parsePrice(b.oldPrice) - parsePrice(b.price)) / parsePrice(b.oldPrice);
-          return descB - descA;
-
-        case 'flash': // Mais baratos da oferta primeiro
-          return parsePrice(a.price) - parsePrice(b.price);
-
-        case 'price_asc':
-          return parsePrice(a.price) - parsePrice(b.price);
+    // --- 3. ORDENAÇÃO ---
+    if (sortBy !== 'default') {
+      result.sort((a, b) => {
+        switch (sortBy) {
+          case 'recomend':
+            return (b.rating || 0) - (a.rating || 0);
           
-        default:
-          return 0;
-      }
-    });
-  }
-  return result;
-}, [searchTerm, activeCategory, activeStore, sortBy, maxPrice]);
+          case 'sales': // Do maior para o menor (Million > K > Unidade)
+            return parseSales(b.sold) - parseSales(a.sold);
+
+          case 'deals': { // Maiores porcentagens no topo
+            const priceA = parsePrice(a.price);
+            const oldA = parsePrice(a.oldPrice) || priceA;
+            const priceB = parsePrice(b.price);
+            const oldB = parsePrice(b.oldPrice) || priceB;
+            const descA = (oldA - priceA) / (oldA || 1);
+            const descB = (oldB - priceB) / (oldB || 1);
+            return descB - descA;
+          }
+
+          case 'flash': // Nas ofertas, mostra o menor preço primeiro
+            return parsePrice(a.price) - parsePrice(b.price);
+
+          case 'price_asc':
+            return parsePrice(a.price) - parsePrice(b.price);
+            
+          default:
+            return 0;
+        }
+      });
+    }
+
+    return result;
+  }, [searchTerm, activeCategory, activeStore, sortBy, maxPrice]);
 
   useEffect(() => { setCurrentPage(1); }, [searchTerm, activeCategory, activeStore, sortBy, maxPrice]);
 
