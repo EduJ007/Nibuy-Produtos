@@ -4,7 +4,6 @@ import FilterBar from './components/FilterBar';
 import ProductCard from './components/ProductCard';
 import Footer from './components/footer';
 import PageLoader from "./components/PageLoader";
-import StartScreen from "./components/StartScreen";
 import { productsData } from './products';
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from './firebase';
@@ -150,7 +149,6 @@ const App: React.FC = () => {
   };
 
   if (loading) return <PageLoader />;
-  if (!user) return <StartScreen />;
 
   return (
     <div className="min-h-screen bg-gray-200">
