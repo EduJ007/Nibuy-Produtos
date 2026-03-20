@@ -140,7 +140,7 @@ const App: React.FC = () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }, 400);
   };
-
+  
   const resetFilters = () => {
     setActiveCategory('Todos');
     setActiveStore('Todas');

@@ -40,10 +40,9 @@ const Footer: React.FC = () => {
             <li><a href="https://nibuy-home-page.vercel.app/" className="hover:text-[#ff5722] transition-colors">Início</a></li>
             <li><a href="https://sobre-nibuy.vercel.app/" className="hover:text-[#ff5722] transition-colors">Sobre Nós</a></li>
             <li><a href="https://nibuy-central-ajuda.vercel.app/" className="hover:text-[#ff5722] transition-colors">Central de Ajuda</a></li>
-            <li><a href="https://nibuy-contact.vercel.app/" className="hover:text-[#ff5722] transition-colors">Contato</a></li>
             <li>
                <a href="https://nibuy-produtos.vercel.app/#produtos"  className="text-[#ff5722] hover:text-white transition-colors"
->Produto</a>      
+>Lista de Produtos</a>      
                   </li>
           </ul>
         </div>
